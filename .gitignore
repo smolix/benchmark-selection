@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+figures/*.pdf
+figures_logit/*.pdf
+logs/*.json
+logs/*.npz
+logs_logit/*.npz

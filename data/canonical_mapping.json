@@ -1,0 +1,1002 @@
+{
+  "canonical_models": [
+    {
+      "canonical_name": "claude-2.1",
+      "datasets": {
+        "alpaca_eval": "claude-2.1",
+        "arena_hard": "claude-2.1",
+        "helm": "Anthropic Claude 2.1"
+      }
+    },
+    {
+      "canonical_name": "claude-3-5-sonnet-20240620",
+      "datasets": {
+        "alpaca_eval": "claude-3-5-sonnet-20240620",
+        "arena_hard": "claude-3-5-sonnet-20240620",
+        "livebench": "claude-3-5-sonnet-20240620",
+        "wildbench": "claude-3-5-sonnet-20240620",
+        "bigcode": "Claude-3.5-Sonnet-20240620"
+      }
+    },
+    {
+      "canonical_name": "claude-3-haiku-20240307",
+      "datasets": {
+        "arena_hard": "claude-3-haiku-20240307",
+        "livebench": "claude-3-haiku-20240307",
+        "wildbench": "claude-3-haiku-20240307",
+        "bigcode": "Claude-3-Haiku-20240307"
+      }
+    },
+    {
+      "canonical_name": "claude-3-opus-20240229",
+      "datasets": {
+        "alpaca_eval": "claude-3-opus-20240229",
+        "arena_hard": "claude-3-opus-20240229",
+        "livebench": "claude-3-opus-20240229",
+        "wildbench": "claude-3-opus-20240229",
+        "bigcode": "Claude-3-Opus-20240229"
+      }
+    },
+    {
+      "canonical_name": "claude-3-sonnet-20240229",
+      "datasets": {
+        "alpaca_eval": "claude-3-sonnet-20240229",
+        "arena_hard": "claude-3-sonnet-20240229",
+        "livebench": "claude-3-sonnet-20240229",
+        "wildbench": "claude-3-sonnet-20240229",
+        "bigcode": "Claude-3-Sonnet-20240229"
+      }
+    },
+    {
+      "canonical_name": "command-r",
+      "datasets": {
+        "arena_hard": "command-r",
+        "wildbench": "command-r",
+        "mmlu": "CohereForAI/c4ai-command-r-v01",
+        "open_llm": "CohereForAI/c4ai-command-r-v01"
+      }
+    },
+    {
+      "canonical_name": "command-r-plus",
+      "datasets": {
+        "arena_hard": "command-r-plus",
+        "wildbench": "command-r-plus",
+        "bigcode": "Command R+",
+        "mmlu": "CohereForAI/c4ai-command-r-plus",
+        "open_llm": "CohereForAI/c4ai-command-r-plus"
+      }
+    },
+    {
+      "canonical_name": "dbrx-instruct",
+      "datasets": {
+        "alpaca_eval": "dbrx-instruct",
+        "wildbench": "dbrx-instruct",
+        "mmlu": "databricks/dbrx-instruct",
+        "open_llm": "databricks/dbrx-instruct"
+      }
+    },
+    {
+      "canonical_name": "deepseek-coder-v2",
+      "datasets": {
+        "arena_hard": "deepseek-coder-v2",
+        "wildbench": "deepseek-coder-v2"
+      }
+    },
+    {
+      "canonical_name": "gemini-pro",
+      "datasets": {
+        "alpaca_eval": "gemini-pro",
+        "arena_hard": "gemini-pro"
+      }
+    },
+    {
+      "canonical_name": "gemma-1.1-7b-it",
+      "datasets": {
+        "arena_hard": "gemma-1.1-7b-it",
+        "livebench": "gemma-1.1-7b-it",
+        "mmlu": "google/gemma-1.1-7b-it",
+        "open_llm": "google/gemma-1.1-7b-it"
+      }
+    },
+    {
+      "canonical_name": "gemma-2-27b-it",
+      "datasets": {
+        "arena_hard": "gemma-2-27b-it",
+        "livebench": "gemma-2-27b-it",
+        "wildbench": "gemma-2-27b-it",
+        "bigcode": "Gemma-2-27B-Instruct",
+        "open_llm": "google/gemma-2-27b-it"
+      }
+    },
+    {
+      "canonical_name": "gemma-2-9b-it",
+      "datasets": {
+        "livebench": "gemma-2-9b-it",
+        "wildbench": "gemma-2-9b-it",
+        "bigcode": "Gemma-2-9B-Instruct",
+        "open_llm": "google/gemma-2-9b-it"
+      }
+    },
+    {
+      "canonical_name": "gemma-2-9b-it-DPO",
+      "datasets": {
+        "alpaca_eval": "gemma-2-9b-it-DPO",
+        "wildbench": "gemma-2-9b-it-DPO",
+        "open_llm": "princeton-nlp/gemma-2-9b-it-DPO"
+      }
+    },
+    {
+      "canonical_name": "gemma-2-9b-it-SimPO",
+      "datasets": {
+        "alpaca_eval": "gemma-2-9b-it-SimPO",
+        "wildbench": "gemma-2-9b-it-SimPO",
+        "open_llm": "princeton-nlp/gemma-2-9b-it-SimPO"
+      }
+    },
+    {
+      "canonical_name": "gemma-2b-it",
+      "datasets": {
+        "alpaca_eval": "gemma-2b-it",
+        "arena_hard": "gemma-2b-it",
+        "wildbench": "gemma-2b-it",
+        "mmlu": "google/gemma-2b-it",
+        "open_llm": "google/gemma-2b-it"
+      }
+    },
+    {
+      "canonical_name": "gemma-7b-it",
+      "datasets": {
+        "alpaca_eval": "gemma-7b-it",
+        "arena_hard": "gemma-7b-it",
+        "wildbench": "gemma-7b-it",
+        "mmlu": "google/gemma-7b-it",
+        "open_llm": "google/gemma-7b-it"
+      }
+    },
+    {
+      "canonical_name": "gpt-3.5-turbo-0125",
+      "datasets": {
+        "arena_hard": "gpt-3.5-turbo-0125",
+        "livebench": "gpt-3.5-turbo-0125",
+        "wildbench": "gpt-3.5-turbo-0125",
+        "bigcode": "GPT-3.5-Turbo-0125"
+      }
+    },
+    {
+      "canonical_name": "gpt-3.5-turbo-0613",
+      "datasets": {
+        "alpaca_eval": "gpt-3.5-turbo-0613",
+        "arena_hard": "gpt-3.5-turbo-0613",
+        "helm": "GPT-3.5 Turbo (0613)"
+      }
+    },
+    {
+      "canonical_name": "gpt-3.5-turbo-1106",
+      "datasets": {
+        "alpaca_eval": "gpt-3.5-turbo-1106",
+        "arena_hard": "gpt-3.5-turbo-1106",
+        "livebench": "gpt-3.5-turbo-1106"
+      }
+    },
+    {
+      "canonical_name": "gpt-4-0125-preview",
+      "datasets": {
+        "arena_hard": "gpt-4-0125-preview",
+        "livebench": "gpt-4-0125-preview",
+        "wildbench": "gpt-4-0125-preview"
+      }
+    },
+    {
+      "canonical_name": "gpt-4-0613",
+      "datasets": {
+        "alpaca_eval": "gpt4_0613",
+        "arena_hard": "gpt-4-0613",
+        "livebench": "gpt-4-0613",
+        "helm": "GPT-4 (0613)",
+        "bigcode": "GPT-4-0613"
+      }
+    },
+    {
+      "canonical_name": "gpt-4-turbo-2024-04-09",
+      "datasets": {
+        "alpaca_eval": "gpt-4-turbo-2024-04-09",
+        "arena_hard": "gpt-4-turbo-2024-04-09",
+        "livebench": "gpt-4-turbo-2024-04-09",
+        "wildbench": "gpt-4-turbo-2024-04-09",
+        "bigcode": "GPT-4-Turbo-2024-04-09"
+      }
+    },
+    {
+      "canonical_name": "gpt-4o-2024-05-13",
+      "datasets": {
+        "alpaca_eval": "gpt-4o-2024-05-13",
+        "arena_hard": "gpt-4o-2024-05-13",
+        "livebench": "gpt-4o-2024-05-13",
+        "wildbench": "gpt-4o-2024-05-13",
+        "bigcode": "GPT-4o-2024-05-13"
+      }
+    },
+    {
+      "canonical_name": "gpt-4o-mini-2024-07-18",
+      "datasets": {
+        "alpaca_eval": "gpt-4o-mini-2024-07-18",
+        "arena_hard": "gpt-4o-mini-2024-07-18",
+        "livebench": "gpt-4o-mini-2024-07-18",
+        "wildbench": "gpt-4o-mini-2024-07-18",
+        "bigcode": "GPT-4o-mini-2024-07-18"
+      }
+    },
+    {
+      "canonical_name": "Llama-2-70b-chat-hf",
+      "datasets": {
+        "alpaca_eval": "llama-2-70b-chat-hf",
+        "arena_hard": "llama-2-70b-chat",
+        "wildbench": "Llama-2-70b-chat-hf",
+        "open_llm": "meta-llama/Llama-2-70b-chat-hf"
+      }
+    },
+    {
+      "canonical_name": "Llama-2-7b-chat-hf",
+      "datasets": {
+        "alpaca_eval": "llama-2-7b-chat-hf",
+        "livebench": "Llama-2-7b-chat-hf",
+        "wildbench": "Llama-2-7b-chat-hf",
+        "open_llm": "meta-llama/Llama-2-7b-chat-hf"
+      }
+    },
+    {
+      "canonical_name": "Llama-3-Instruct-8B-SimPO",
+      "datasets": {
+        "alpaca_eval": "Llama-3-Instruct-8B-SimPO",
+        "wildbench": "Llama-3-Instruct-8B-SimPO",
+        "open_llm": "princeton-nlp/Llama-3-Instruct-8B-SimPO"
+      }
+    },
+    {
+      "canonical_name": "Llama-3-Instruct-8B-SimPO-ExPO",
+      "datasets": {
+        "alpaca_eval": "Llama-3-Instruct-8B-SimPO-ExPO",
+        "wildbench": "Llama-3-Instruct-8B-SimPO-ExPO",
+        "open_llm": "chujiezheng/Llama-3-Instruct-8B-SimPO-ExPO"
+      }
+    },
+    {
+      "canonical_name": "Meta-Llama-3-70B-Instruct",
+      "datasets": {
+        "alpaca_eval": "Meta-Llama-3-70B-Instruct",
+        "arena_hard": "llama-3-70b-instruct",
+        "livebench": "Meta-Llama-3-70B-Instruct",
+        "wildbench": "Meta-Llama-3-70B-Instruct",
+        "bigcode": "Llama-3-70B-Instruct",
+        "mmlu": "meta-llama/Meta-Llama-3-70B-Instruct",
+        "open_llm": "meta-llama/Meta-Llama-3-70B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "Meta-Llama-3-8B-Instruct",
+      "datasets": {
+        "alpaca_eval": "Meta-Llama-3-8B-Instruct",
+        "arena_hard": "llama-3-8b-instruct",
+        "livebench": "Meta-Llama-3-8B-Instruct",
+        "wildbench": "Meta-Llama-3-8B-Instruct",
+        "bigcode": "Llama-3-8B-Instruct",
+        "mmlu": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "open_llm": "meta-llama/Meta-Llama-3-8B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "Meta-Llama-3.1-405B-Instruct",
+      "datasets": {
+        "alpaca_eval": "Meta-Llama-3.1-405B-Instruct-Turbo",
+        "arena_hard": "llama-3.1-405b-instruct",
+        "livebench": "Meta-Llama-3.1-405B-Instruct-Turbo"
+      }
+    },
+    {
+      "canonical_name": "Meta-Llama-3.1-70B-Instruct",
+      "datasets": {
+        "alpaca_eval": "Meta-Llama-3.1-70B-Instruct-Turbo",
+        "arena_hard": "llama-3.1-70b-instruct",
+        "livebench": "Meta-Llama-3.1-70B-Instruct-Turbo",
+        "bigcode": "Llama-3.1-70B-Instruct",
+        "open_llm": "meta-llama/Llama-3.1-70B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "Meta-Llama-3.1-8B-Instruct",
+      "datasets": {
+        "alpaca_eval": "Meta-Llama-3.1-8B-Instruct-Turbo",
+        "arena_hard": "llama-3.1-8b-instruct",
+        "livebench": "Meta-Llama-3.1-8B-Instruct-Turbo",
+        "bigcode": "Llama-3.1-8B-Instruct",
+        "open_llm": "meta-llama/Llama-3.1-8B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "Mistral-7B-Instruct-v0.2",
+      "datasets": {
+        "alpaca_eval": "Mistral-7B-Instruct-v0.2",
+        "livebench": "Mistral-7B-Instruct-v0.2",
+        "wildbench": "Mistral-7B-Instruct-v0.2",
+        "mmlu": "mistralai/Mistral-7B-Instruct-v0.2",
+        "open_llm": "mistralai/Mistral-7B-Instruct-v0.2"
+      }
+    },
+    {
+      "canonical_name": "Mistral-7B-Instruct-v0.3",
+      "datasets": {
+        "alpaca_eval": "Mistral-7B-Instruct-v0.3",
+        "livebench": "Mistral-7B-Instruct-v0.3",
+        "bigcode": "Mistral-7B-Instruct-v0.3",
+        "open_llm": "mistralai/Mistral-7B-Instruct-v0.3"
+      }
+    },
+    {
+      "canonical_name": "mistral-large-2402",
+      "datasets": {
+        "alpaca_eval": "mistral-large-2402",
+        "arena_hard": "mistral-large-2402",
+        "livebench": "mistral-large-2402",
+        "wildbench": "mistral-large-2402",
+        "bigcode": "Mistral-Large-2402"
+      }
+    },
+    {
+      "canonical_name": "mistral-large-2407",
+      "datasets": {
+        "arena_hard": "mistral-large-2407",
+        "livebench": "mistral-large-2407",
+        "wildbench": "Mistral-Large-2"
+      }
+    },
+    {
+      "canonical_name": "mistral-medium",
+      "datasets": {
+        "alpaca_eval": "mistral-medium",
+        "arena_hard": "mistral-medium"
+      }
+    },
+    {
+      "canonical_name": "Mixtral-8x22B-Instruct-v0.1",
+      "datasets": {
+        "alpaca_eval": "Mixtral-8x22B-Instruct-v0.1",
+        "arena_hard": "mixtral-8x22b-instruct-v0.1",
+        "livebench": "Mixtral-8x22B-Instruct-v0.1",
+        "bigcode": "Mixtral-8x22B-Instruct",
+        "mmlu": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+        "open_llm": "mistralai/Mixtral-8x22B-Instruct-v0.1"
+      }
+    },
+    {
+      "canonical_name": "Mixtral-8x7B-Instruct-v0.1",
+      "datasets": {
+        "alpaca_eval": "Mixtral-8x7B-Instruct-v0.1",
+        "arena_hard": "mixtral-8x7b-instruct-v0.1",
+        "livebench": "Mixtral-8x7B-Instruct-v0.1",
+        "wildbench": "Mixtral-8x7B-Instruct-v0.1",
+        "mmlu": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+        "open_llm": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+        "helm": "Mixtral (8x7B 32K seqlen)"
+      }
+    },
+    {
+      "canonical_name": "OpenHermes-2.5-Mistral-7B",
+      "datasets": {
+        "alpaca_eval": "OpenHermes-2.5-Mistral-7B",
+        "livebench": "OpenHermes-2.5-Mistral-7B",
+        "mmlu": "teknium/OpenHermes-2.5-Mistral-7B",
+        "open_llm": "teknium/OpenHermes-2.5-Mistral-7B"
+      }
+    },
+    {
+      "canonical_name": "Phi-3-medium-128k-instruct",
+      "datasets": {
+        "livebench": "Phi-3-medium-128k-instruct",
+        "wildbench": "Phi-3-medium-128k-instruct",
+        "bigcode": "Phi-3-Medium-128K-Instruct",
+        "mmlu": "microsoft/Phi-3-medium-128k-instruct",
+        "open_llm": "microsoft/Phi-3-medium-128k-instruct"
+      }
+    },
+    {
+      "canonical_name": "Phi-3-medium-4k-instruct",
+      "datasets": {
+        "arena_hard": "phi-3-medium-4k-instruct",
+        "livebench": "Phi-3-medium-4k-instruct",
+        "mmlu": "microsoft/Phi-3-medium-4k-instruct",
+        "open_llm": "microsoft/Phi-3-medium-4k-instruct"
+      }
+    },
+    {
+      "canonical_name": "Phi-3-mini-128k-instruct",
+      "datasets": {
+        "arena_hard": "phi-3-mini-128k-instruct",
+        "livebench": "Phi-3-mini-128k-instruct",
+        "wildbench": "Phi-3-mini-128k-instruct",
+        "bigcode": "Phi-3-Mini-128K-Instruct",
+        "mmlu": "microsoft/Phi-3-mini-128k-instruct",
+        "open_llm": "microsoft/Phi-3-mini-128k-instruct"
+      }
+    },
+    {
+      "canonical_name": "Phi-3-small-8k-instruct",
+      "datasets": {
+        "arena_hard": "phi-3-small-8k-instruct",
+        "livebench": "Phi-3-small-8k-instruct",
+        "open_llm": "microsoft/Phi-3-small-8k-instruct"
+      }
+    },
+    {
+      "canonical_name": "Qwen1.5-1.8B-Chat",
+      "datasets": {
+        "alpaca_eval": "Qwen1.5-1.8B-Chat",
+        "livebench": "Qwen1.5-1.8B-Chat",
+        "mmlu": "Qwen/Qwen1.5-1.8B-Chat",
+        "open_llm": "Qwen/Qwen1.5-1.8B-Chat"
+      }
+    },
+    {
+      "canonical_name": "Qwen1.5-110B-Chat",
+      "datasets": {
+        "alpaca_eval": "Qwen1.5-110B-Chat",
+        "livebench": "Qwen1.5-110B-Chat",
+        "bigcode": "Qwen1.5-110B-Chat",
+        "mmlu": "Qwen/Qwen1.5-110B-Chat",
+        "open_llm": "Qwen/Qwen1.5-110B-Chat"
+      }
+    },
+    {
+      "canonical_name": "Qwen1.5-72B-Chat",
+      "datasets": {
+        "alpaca_eval": "Qwen1.5-72B-Chat",
+        "arena_hard": "qwen1.5-72b-chat",
+        "livebench": "Qwen1.5-72B-Chat",
+        "bigcode": "Qwen1.5-72B-Chat",
+        "mmlu": "Qwen/Qwen1.5-72B-Chat",
+        "wildbench": "Qwen1.5-72B-Chat-greedy"
+      }
+    },
+    {
+      "canonical_name": "Qwen1.5-7B-Chat",
+      "datasets": {
+        "alpaca_eval": "Qwen1.5-7B-Chat",
+        "livebench": "Qwen1.5-7B-Chat",
+        "wildbench": "Qwen1.5-7B-Chat",
+        "mmlu": "Qwen/Qwen1.5-7B-Chat",
+        "open_llm": "Qwen/Qwen1.5-7B-Chat"
+      }
+    },
+    {
+      "canonical_name": "Qwen2-72B-Instruct",
+      "datasets": {
+        "alpaca_eval": "Qwen2-72B-Instruct",
+        "arena_hard": "qwen2-72b-instruct",
+        "livebench": "Qwen2-72B-Instruct",
+        "wildbench": "Qwen2-72B-Instruct",
+        "bigcode": "Qwen2-72B-Chat",
+        "open_llm": "Qwen/Qwen2-72B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "Snorkel-Mistral-PairRM-DPO",
+      "datasets": {
+        "alpaca_eval": "Snorkel-Mistral-PairRM-DPO",
+        "arena_hard": "snorkel-mistral-pairrm-dpo",
+        "mmlu": "snorkelai/Snorkel-Mistral-PairRM-DPO"
+      }
+    },
+    {
+      "canonical_name": "Starling-LM-7B-alpha",
+      "datasets": {
+        "alpaca_eval": "Starling-LM-7B-alpha",
+        "arena_hard": "starling-lm-7b-alpha",
+        "mmlu": "berkeley-nest/Starling-LM-7B-alpha",
+        "open_llm": "berkeley-nest/Starling-LM-7B-alpha"
+      }
+    },
+    {
+      "canonical_name": "Starling-LM-7B-beta",
+      "datasets": {
+        "arena_hard": "starling-lm-7b-beta",
+        "livebench": "Starling-LM-7B-beta",
+        "wildbench": "Starling-LM-7B-beta",
+        "mmlu": "Nexusflow/Starling-LM-7B-beta"
+      }
+    },
+    {
+      "canonical_name": "Starling-LM-7B-beta-ExPO",
+      "datasets": {
+        "alpaca_eval": "Starling-LM-7B-beta-ExPO",
+        "wildbench": "Starling-LM-7B-beta-ExPO",
+        "mmlu": "chujiezheng/Starling-LM-7B-beta-ExPO"
+      }
+    },
+    {
+      "canonical_name": "tulu-2-dpo-70b",
+      "datasets": {
+        "alpaca_eval": "tulu-2-dpo-70b",
+        "arena_hard": "tulu-2-dpo-70b",
+        "wildbench": "tulu-2-dpo-70b",
+        "mmlu": "allenai/tulu-2-dpo-70b"
+      }
+    },
+    {
+      "canonical_name": "vicuna-7b-v1.5",
+      "datasets": {
+        "alpaca_eval": "vicuna-7b-v1.5",
+        "livebench": "vicuna-7b-v1.5",
+        "open_llm": "lmsys/vicuna-7b-v1.5"
+      }
+    },
+    {
+      "canonical_name": "Yi-34B-Chat",
+      "datasets": {
+        "alpaca_eval": "Yi-34B-Chat",
+        "arena_hard": "yi-34b-chat",
+        "mmlu": "01-ai/Yi-34B-Chat",
+        "open_llm": "01-ai/Yi-34B-Chat"
+      }
+    },
+    {
+      "canonical_name": "yi-large",
+      "datasets": {
+        "arena_hard": "yi-large",
+        "wildbench": "yi-large",
+        "bigcode": "Yi-Large"
+      }
+    },
+    {
+      "canonical_name": "yi-large-preview",
+      "datasets": {
+        "alpaca_eval": "yi-large-preview",
+        "arena_hard": "yi-large-preview",
+        "wildbench": "yi-large-preview"
+      }
+    },
+    {
+      "canonical_name": "zephyr-7b-alpha",
+      "datasets": {
+        "alpaca_eval": "zephyr-7b-alpha",
+        "livebench": "zephyr-7b-alpha",
+        "open_llm": "HuggingFaceH4/zephyr-7b-alpha"
+      }
+    },
+    {
+      "canonical_name": "zephyr-7b-beta",
+      "datasets": {
+        "alpaca_eval": "zephyr-7b-beta",
+        "livebench": "zephyr-7b-beta",
+        "open_llm": "HuggingFaceH4/zephyr-7b-beta"
+      }
+    },
+    {
+      "canonical_name": "gpt-4-0314",
+      "datasets": {
+        "alpaca_eval": "gpt4_0314",
+        "arena_hard": "gpt-4-0314"
+      }
+    },
+    {
+      "canonical_name": "gpt-4-1106-preview",
+      "datasets": {
+        "alpaca_eval": "gpt4_1106_preview",
+        "livebench": "gpt-4-1106-preview",
+        "helm": "GPT-4 Turbo (1106 preview)"
+      }
+    },
+    {
+      "canonical_name": "claude-2.0",
+      "datasets": {
+        "helm": "Anthropic Claude 2.0",
+        "arena_hard": "claude-2.0"
+      }
+    },
+    {
+      "canonical_name": "claude-instant-1.2",
+      "datasets": {
+        "helm": "Anthropic Claude Instant 1.2",
+        "alpaca_eval": "claude-instant-1.2"
+      }
+    },
+    {
+      "canonical_name": "llama-2-70b",
+      "datasets": {
+        "helm": "Llama 2 (70B)",
+        "alpaca_eval": "llama-2-70b-chat-hf",
+        "arena_hard": "llama-2-70b-chat",
+        "wildbench": "Llama-2-70b-chat-hf",
+        "open_llm": "meta-llama/Llama-2-70b-chat-hf"
+      }
+    },
+    {
+      "canonical_name": "llama-2-13b",
+      "datasets": {
+        "helm": "Llama 2 (13B)",
+        "alpaca_eval": "llama-2-13b-chat-hf",
+        "open_llm": "meta-llama/Llama-2-13b-chat-hf"
+      }
+    },
+    {
+      "canonical_name": "llama-2-7b",
+      "datasets": {
+        "helm": "Llama 2 (7B)",
+        "alpaca_eval": "llama-2-7b-chat-hf",
+        "livebench": "llama-2-7b-chat-hf",
+        "wildbench": "Llama-2-7b-chat-hf",
+        "open_llm": "meta-llama/Llama-2-7b-chat-hf"
+      }
+    },
+    {
+      "canonical_name": "falcon-40b",
+      "datasets": {
+        "helm": "Falcon (40B)",
+        "alpaca_eval": "falcon-40b-instruct",
+        "mmlu": "tiiuae/falcon-40b",
+        "open_llm": "tiiuae/falcon-40b-instruct"
+      }
+    },
+    {
+      "canonical_name": "falcon-7b",
+      "datasets": {
+        "helm": "Falcon (7B)",
+        "alpaca_eval": "falcon-7b-instruct",
+        "open_llm": "tiiuae/falcon-7b-instruct"
+      }
+    },
+    {
+      "canonical_name": "yi-34b",
+      "datasets": {
+        "helm": "Yi (34B)",
+        "alpaca_eval": "Yi-34B-Chat",
+        "arena_hard": "yi-34b-chat",
+        "mmlu": "01-ai/Yi-34B-Chat",
+        "open_llm": "01-ai/Yi-34B-Chat"
+      }
+    },
+    {
+      "canonical_name": "yi-6b",
+      "datasets": {
+        "helm": "Yi (6B)",
+        "livebench": "Yi-6B-Chat",
+        "mmlu": "01-ai/Yi-6B",
+        "open_llm": "01-ai/Yi-6B-Chat"
+      }
+    },
+    {
+      "canonical_name": "claude-3-5-haiku-20241022",
+      "datasets": {
+        "bigcode": "Claude-3.5-Haiku-20241022",
+        "livebench": "claude-3-5-haiku-20241022"
+      }
+    },
+    {
+      "canonical_name": "claude-3-5-sonnet-20241022",
+      "datasets": {
+        "bigcode": "Claude-3.5-Sonnet-20241022",
+        "livebench": "claude-3-5-sonnet-20241022"
+      }
+    },
+    {
+      "canonical_name": "gpt-4o-2024-11-20",
+      "datasets": {
+        "bigcode": "GPT-4o-2024-11-20",
+        "livebench": "gpt-4o-2024-11-20"
+      }
+    },
+    {
+      "canonical_name": "gemini-1.5-flash-api-0514",
+      "datasets": {
+        "bigcode": "Gemini-1.5-Flash-API-0514",
+        "arena_hard": "gemini-1.5-flash-api-0514"
+      }
+    },
+    {
+      "canonical_name": "gemini-1.5-pro-api-0514",
+      "datasets": {
+        "bigcode": "Gemini-1.5-Pro-API-0514",
+        "arena_hard": "gemini-1.5-pro-api-0514"
+      }
+    },
+    {
+      "canonical_name": "gemini-2.0-flash-exp",
+      "datasets": {
+        "bigcode": "Gemini-2.0-Flash-Exp",
+        "livebench": "gemini-2.0-flash-exp"
+      }
+    },
+    {
+      "canonical_name": "gemini-exp-1114",
+      "datasets": {
+        "bigcode": "Gemini-Exp-1114",
+        "livebench": "gemini-exp-1114"
+      }
+    },
+    {
+      "canonical_name": "gemini-exp-1121",
+      "datasets": {
+        "bigcode": "Gemini-Exp-1121",
+        "livebench": "gemini-exp-1121"
+      }
+    },
+    {
+      "canonical_name": "gemini-exp-1206",
+      "datasets": {
+        "bigcode": "Gemini-Exp-1206",
+        "livebench": "gemini-exp-1206"
+      }
+    },
+    {
+      "canonical_name": "llama-3.1-nemotron-70b-instruct",
+      "datasets": {
+        "bigcode": "Llama-3.1-Nemotron-70B-Instruct",
+        "livebench": "Llama-3.1-Nemotron-70B-Instruct-HF",
+        "open_llm": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF"
+      }
+    },
+    {
+      "canonical_name": "llama-3.3-70b-instruct",
+      "datasets": {
+        "bigcode": "Llama-3.3-70B-Instruct",
+        "livebench": "llama-3.3-70b-instruct-turbo",
+        "open_llm": "meta-llama/Llama-3.3-70B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "llama-4-maverick",
+      "datasets": {
+        "bigcode": "Llama-4-Maverick",
+        "livebench": "llama-4-maverick-17b-128e-instruct"
+      }
+    },
+    {
+      "canonical_name": "mistral-small-2402",
+      "datasets": {
+        "bigcode": "Mistral-Small-2402",
+        "livebench": "mistral-small-2402"
+      }
+    },
+    {
+      "canonical_name": "mistral-small-2501",
+      "datasets": {
+        "bigcode": "Mistral-Small-24B-Instruct-2501",
+        "livebench": "mistral-small-2501"
+      }
+    },
+    {
+      "canonical_name": "mistral-small-2409",
+      "datasets": {
+        "bigcode": "Mistral-Small-Instruct-2409",
+        "livebench": "mistral-small-2409",
+        "open_llm": "mistralai/Mistral-Small-Instruct-2409"
+      }
+    },
+    {
+      "canonical_name": "phi-3-small-128k-instruct",
+      "datasets": {
+        "bigcode": "Phi-3-Small-128K-Instruct",
+        "livebench": "Phi-3-small-128k-instruct",
+        "open_llm": "microsoft/Phi-3-small-128k-instruct"
+      }
+    },
+    {
+      "canonical_name": "phi-3.5-mini-instruct",
+      "datasets": {
+        "bigcode": "Phi-3.5-Mini-Instruct",
+        "livebench": "Phi-3.5-mini-instruct",
+        "open_llm": "microsoft/Phi-3.5-mini-instruct"
+      }
+    },
+    {
+      "canonical_name": "phi-4",
+      "datasets": {
+        "bigcode": "Phi-4",
+        "livebench": "phi-4",
+        "open_llm": "microsoft/phi-4"
+      }
+    },
+    {
+      "canonical_name": "qwq-32b-preview",
+      "datasets": {
+        "bigcode": "QwQ-32B-Preview",
+        "livebench": "QwQ-32B-Preview",
+        "open_llm": "Qwen/QwQ-32B-Preview"
+      }
+    },
+    {
+      "canonical_name": "qwen2-7b-instruct",
+      "datasets": {
+        "bigcode": "Qwen2-7B-Instruct",
+        "livebench": "Qwen2-7B-Instruct",
+        "open_llm": "Qwen/Qwen2-7B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "qwen2.5-72b-instruct",
+      "datasets": {
+        "bigcode": "Qwen2.5-72B-Instruct",
+        "livebench": "Qwen2.5-72B-Instruct-Turbo",
+        "open_llm": "Qwen/Qwen2.5-72B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "qwen2.5-7b-instruct",
+      "datasets": {
+        "bigcode": "Qwen2.5-7B-Instruct",
+        "livebench": "Qwen2.5-7B-Instruct-Turbo",
+        "open_llm": "Qwen/Qwen2.5-7B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "qwen2.5-coder-32b-instruct",
+      "datasets": {
+        "bigcode": "Qwen2.5-Coder-32B-Instruct",
+        "livebench": "Qwen2.5-Coder-32B-Instruct",
+        "open_llm": "Qwen/Qwen2.5-Coder-32B-Instruct"
+      }
+    },
+    {
+      "canonical_name": "deepseek-coder-v2-lite-instruct",
+      "datasets": {
+        "bigcode": "DeepSeek-Coder-V2-Lite-Instruct",
+        "livebench": "DeepSeek-Coder-V2-Lite-Instruct"
+      }
+    },
+    {
+      "canonical_name": "deepseek-r1-distill-qwen-32b",
+      "datasets": {
+        "bigcode": "DeepSeek-R1-Distill-Qwen-32B",
+        "livebench": "DeepSeek-R1-Distill-Qwen-32B",
+        "open_llm": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"
+      }
+    },
+    {
+      "canonical_name": "deepseek-r1-distill-llama-70b",
+      "datasets": {
+        "bigcode": "DeepSeek-R1-Distill-Llama-70B",
+        "livebench": "deepseek-r1-distill-llama-70b",
+        "open_llm": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
+      }
+    },
+    {
+      "canonical_name": "deepseek-v3",
+      "datasets": {
+        "bigcode": "DeepSeek-V3",
+        "livebench": "deepseek-v3"
+      }
+    },
+    {
+      "canonical_name": "yi-1.5-34b-chat",
+      "datasets": {
+        "bigcode": "Yi-1.5-34B-Chat",
+        "wildbench": "Yi-1.5-34B-Chat",
+        "mmlu": "01-ai/Yi-1.5-34B-Chat",
+        "open_llm": "01-ai/Yi-1.5-34B-Chat"
+      }
+    },
+    {
+      "canonical_name": "yi-1.5-6b-chat",
+      "datasets": {
+        "bigcode": "Yi-1.5-6B-Chat",
+        "wildbench": "Yi-1.5-6B-Chat",
+        "mmlu": "01-ai/Yi-1.5-6B-Chat",
+        "open_llm": "01-ai/Yi-1.5-6B-Chat"
+      }
+    },
+    {
+      "canonical_name": "yi-1.5-9b-chat",
+      "datasets": {
+        "bigcode": "Yi-1.5-9B-Chat",
+        "wildbench": "Yi-1.5-9B-Chat",
+        "mmlu": "01-ai/Yi-1.5-9B-Chat",
+        "open_llm": "01-ai/Yi-1.5-9B-Chat"
+      }
+    },
+    {
+      "canonical_name": "athene-70b",
+      "datasets": {
+        "bigcode": "Athene-70B",
+        "wildbench": "Athene-70B"
+      }
+    },
+    {
+      "canonical_name": "sky-t1-32b-preview",
+      "datasets": {
+        "bigcode": "Sky-T1-32B-Preview",
+        "livebench": "sky-t1-32b-preview"
+      }
+    },
+    {
+      "canonical_name": "command-r-08-2024",
+      "datasets": {
+        "bigcode": "C4AI-Command-R-08-2024",
+        "livebench": "command-r-08-2024",
+        "open_llm": "CohereForAI/c4ai-command-r-plus-08-2024"
+      }
+    },
+    {
+      "canonical_name": "GPT-3.5-Turbo",
+      "datasets": {
+        "mt_bench": "gpt-3.5-turbo",
+        "alpaca_eval": "gpt-3.5-turbo-0301"
+      }
+    },
+    {
+      "canonical_name": "GPT-4",
+      "datasets": {
+        "mt_bench": "gpt-4",
+        "alpaca_eval": "gpt4"
+      }
+    },
+    {
+      "canonical_name": "Claude-v1",
+      "datasets": {
+        "mt_bench": "claude-v1",
+        "helm": "Anthropic Claude v1.3",
+        "alpaca_eval": "claude"
+      }
+    },
+    {
+      "canonical_name": "Vicuna-33B-v1.3",
+      "datasets": {
+        "alpaca_eval": "vicuna-33b-v1.3",
+        "arena_hard": "vicuna-33b"
+      }
+    },
+    {
+      "canonical_name": "Mistral-7B-Instruct-v0.1",
+      "datasets": {
+        "helm": "Mistral v0.1 (7B)",
+        "arena_hard": "mistral-7b-instruct"
+      }
+    },
+    {
+      "canonical_name": "DeepSeek-V2-Chat",
+      "datasets": {
+        "bigcode": "DeepSeek-V2-Chat",
+        "wildbench": "deepseekv2-chat"
+      }
+    },
+    {
+      "canonical_name": "DeepSeek-V2-Chat-0628",
+      "datasets": {
+        "bigcode": "DeepSeek-V2-Chat (2024-06-28)",
+        "wildbench": "deepseek-v2-chat-0628"
+      }
+    },
+    {
+      "canonical_name": "Gemini-1.5-Flash",
+      "datasets": {
+        "livebench": "gemini-1.5-flash-001",
+        "wildbench": "gemini-1.5-flash"
+      }
+    },
+    {
+      "canonical_name": "Gemini-1.5-Pro",
+      "datasets": {
+        "livebench": "gemini-1.5-pro-001",
+        "wildbench": "gemini-1.5-pro"
+      }
+    },
+    {
+      "canonical_name": "Mistral-Nemo-Instruct-2407",
+      "datasets": {
+        "livebench": "open-mistral-nemo",
+        "wildbench": "Mistral-Nemo-Instruct-2407"
+      }
+    },
+    {
+      "canonical_name": "Phi-3-Mini-128K-Instruct",
+      "datasets": {
+        "livebench": "phi-3-mini-128k-instruct",
+        "bigcode": "Phi-3.1-Mini-128K-Instruct"
+      }
+    },
+    {
+      "canonical_name": "Cohere-Command",
+      "datasets": {
+        "helm": "Cohere Command",
+        "alpaca_eval": "cohere"
+      }
+    }
+  ]
+}
