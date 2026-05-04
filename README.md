@@ -41,9 +41,10 @@ python code/eval_tabimpute.py      # Figure 15  (requires GPU + tabimpute pkg)
 python code/eval_logit.py          # Figures 16-18
 ```
 
-All scripts are invoked from the release root and resolve their own absolute
-paths via `pathlib.Path(__file__).resolve()`, so they also work when invoked
-from anywhere or with `python -m`.
+All scripts are invoked from the release root and resolve paths through
+`code/path_config.py`, so they also work when invoked from another directory.
+Set `BENCHSELECT_DATA_DIR` or `BENCHSELECT_EXPERIMENT_ROOT` to redirect inputs
+or outputs for scratch runs.
 
 ## Dependencies
 
@@ -60,7 +61,7 @@ Three primary score matrices and a fourth from BenchPress live in `data/`:
 |--------------|-------------|------------|---------------------------------------|
 | MMLU         | 5452 × 57   | 100.0      | per-subject MMLU leaderboard          |
 | MTEB         | 263 × 56    | 77.3       | MTEB embedding leaderboard            |
-| Merged       | 118 × 124   | 32.2       | 9 leaderboards, canonicalized models  |
+| Merged       | 118 × 114   | 31.1       | 9 leaderboards, canonicalized models  |
 | BenchPress   | 83 × 49     | 33.8       | BenchPress release matrix             |
 
 See `data/README.md` for the file format and per-leaderboard sources.
@@ -77,7 +78,7 @@ python code/plot_mi_selection_all.py
 python code/run_normality.py
 python code/eval_benchpress.py
 python code/eval_logit.py
-# TabImpute takes ~3h on a 12 GB GPU
+# TabImpute takes about 2.5--3h on a 12 GB GPU
 python code/eval_tabimpute.py
 ```
 

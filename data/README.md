@@ -6,7 +6,7 @@
 |------|---------------|-----------:|-------------|
 | `mmlu.matrix.npz`       | 5452 × 57   | 100.0 | Per-subject MMLU scores; full grid. |
 | `mteb.matrix.npz`       | 263 × 56    |  77.3 | English MTEB tasks across embedding models. |
-| `merged.matrix.npz`     | 118 × 124   |  32.2 | Models that appear in ≥ 2 leaderboards (Appendix E), with collection-prefixed task columns. |
+| `merged.matrix.npz`     | 118 × 114   |  31.1 | Models that appear in ≥ 2 leaderboards (Appendix E), with score-like collection-prefixed task columns. |
 | `benchpress.matrix.npz` | 83 × 49     |  33.8 | BenchPress release matrix; appendix experiments only. |
 
 CSV mirrors of the same matrices (`*.matrix.csv`) are provided for inspection.
@@ -44,7 +44,9 @@ three primary matrices.
 | `benchpress.json`                   | BenchPress release JSON             | `benchpress.matrix.npz` |
 
 `canonical_mapping.json` lists the model-name canonicalization used to merge
-across leaderboards (Appendix E).
+across leaderboards (Appendix E).  The merged matrix excludes auxiliary count,
+uncertainty, and length columns from AlpacaEval and Arena-Hard; pass
+`--include-auxiliary-metrics` to `build_matrices.py` to retain them.
 
 ## Building from scratch
 

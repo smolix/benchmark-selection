@@ -18,13 +18,15 @@ import numpy as np
 from scipy import stats
 
 CODE = pathlib.Path(__file__).resolve().parent
-ROOT = CODE.parent
-DATA = ROOT / "data"
-OUT = ROOT / "figures"
-LOGS = ROOT / "logs"
+sys.path.insert(0, str(CODE))
+
+from path_config import data_dir, figures_dir, logs_dir
+
+DATA = data_dir()
+OUT = figures_dir()
+LOGS = logs_dir()
 OUT.mkdir(parents=True, exist_ok=True)
 LOGS.mkdir(parents=True, exist_ok=True)
-sys.path.insert(0, str(CODE))
 
 from normality import mardia_test, shapiro_wilk_columns
 

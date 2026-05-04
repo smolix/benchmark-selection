@@ -1,7 +1,7 @@
 # `code/` — modules and experiment scripts
 
-All scripts resolve their paths relative to this file, so they can be invoked
-from any working directory:
+All scripts resolve their paths through `path_config.py`, so they can be
+invoked from any working directory:
 
 ```bash
 python /path/to/release/code/eval_greedy_all.py
@@ -9,6 +9,8 @@ python /path/to/release/code/eval_greedy_all.py
 
 Outputs are written to `release/figures/` (and `release/figures_logit/` for
 the logit-space variants); intermediate JSON/NPZ logs go to `release/logs/`.
+Use `BENCHSELECT_DATA_DIR`, `BENCHSELECT_EXPERIMENT_ROOT`, or the more specific
+`BENCHSELECT_*_DIR` variables in `path_config.py` to redirect a run.
 
 ## Core modules
 
@@ -18,6 +20,7 @@ the logit-space variants); intermediate JSON/NPZ logs go to `release/logs/`.
 | `em_cov.py`        | EM for Gaussian covariance under MAR missingness (Section 4.3 / Appendix G). Supports Ledoit–Wolf shrinkage, PSD projection, and rank-deficient initialization for `M < N`. |
 | `cv_split.py`      | Balanced k-fold splits with optional training-set subsampling — used to vary the holdout fraction in the CV protocol. |
 | `normality.py`     | Mardia's multivariate skewness/kurtosis test, per-column Shapiro–Wilk with Bonferroni / Benjamini–Hochberg correction (Appendix H). |
+| `path_config.py`   | Central path configuration for data, figures, covariance caches, and logs. |
 
 ## Experiment drivers
 
@@ -29,7 +32,7 @@ the logit-space variants); intermediate JSON/NPZ logs go to `release/logs/`.
 | `eval_benchpress.py`      | Figures 13–14 (Appendix I) | Greedy CV + entropy-vs-MI on the BenchPress 83 × 49 matrix. |
 | `eval_tabimpute.py`       | Figure 15, Table 4 (Appendix J) | Same selection protocol, swaps Gaussian conditional mean for TabImpute V2 imputation. Requires the `tabimpute` package and a GPU. |
 | `eval_logit.py`           | Figures 16–18, Table 5 (Appendix K) | Repeats greedy CV and entropy-vs-MI in logit-transformed score space. Outputs to `figures_logit/` and `logs_logit/`. |
-| `run_normality.py`        | Figure 12, `logs/normality_diagnostics.json` (Appendix H) | Per-column Shapiro–Wilk plus Mardia's test on fully-observed sub-blocks. |
+| `run_normality.py`        | Figure 12, `logs/normality_summary.json` (Appendix H) | Per-column Shapiro–Wilk plus Mardia's test on fully-observed sub-blocks. |
 
 ## Plotting helpers
 
@@ -45,6 +48,7 @@ the logit-space variants); intermediate JSON/NPZ logs go to `release/logs/`.
 |------|----------|
 | `test_em_cov.py`     | E-step / M-step identities, PSD projection, pairwise-complete covariance, observed log-likelihood. |
 | `test_normality.py`  | Mardia and Shapiro–Wilk consistency on synthetic Gaussian / non-Gaussian samples; multiple-testing correction. |
+| `test_tabimpute_sanity.py` | Basic TabImpute integration check when the optional package is installed. |
 
 Run with `pytest code/` from the release root.
 

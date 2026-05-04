@@ -5,7 +5,6 @@ across the 10 CV folds. Benchmarks ordered by mean selection rank.
 """
 
 import json
-import pathlib
 import numpy as np
 from collections import defaultdict
 
@@ -13,9 +12,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
-LOGS = ROOT / "logs"
-OUT = ROOT / "figures"
+from path_config import figures_dir, logs_dir
+
+LOGS = logs_dir()
+OUT = figures_dir()
 OUT.mkdir(parents=True, exist_ok=True)
 
 K_MAX = 15

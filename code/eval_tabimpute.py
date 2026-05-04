@@ -9,17 +9,20 @@ Runs entropy, MI, and random selection on all 4 datasets, reports R².
 import pathlib
 import sys
 import time
+import os
 import numpy as np
 from collections import defaultdict
 
 CODE = pathlib.Path(__file__).resolve().parent
-ROOT = CODE.parent
-DATA = ROOT / "data"
-OUT = ROOT / "figures"
-LOGS = ROOT / "logs"
+sys.path.insert(0, str(CODE))
+
+from path_config import data_dir, figures_dir, logs_dir
+
+DATA = data_dir()
+OUT = figures_dir()
+LOGS = logs_dir()
 OUT.mkdir(parents=True, exist_ok=True)
 LOGS.mkdir(parents=True, exist_ok=True)
-sys.path.insert(0, str(CODE))
 
 from greedy_select import greedy_entropy, greedy_mi, random_select
 from em_cov import em_cov
@@ -39,7 +42,9 @@ SEED = 42
 MAX_ROWS = 4000    # max total rows per TabImpute call (GPU memory limit)
 TEST_BATCH = 200   # test rows per batch; context rows = MAX_ROWS - TEST_BATCH
 
-DATASETS = ["mmlu"]
+DEFAULT_DATASETS = ["mmlu", "mteb", "merged", "benchpress"]
+DATASETS = os.environ.get("BENCHSELECT_DATASETS")
+DATASETS = DATASETS.split(",") if DATASETS else DEFAULT_DATASETS
 
 DISPLAY_NAME = {
     "mmlu": "MMLU", "mteb": "MTEB",
@@ -69,6 +74,7 @@ def estimate_corr_pairwise(B_train, O_train):
 
 def estimate_corr_em(B_train, O_train):
     M_tr, N_tr = B_train.shape
+    obs_frac = O_train.sum() / (M_tr * N_tr)
     col_count = np.maximum(O_train.sum(axis=0), 1.0)
     col_mean = (B_train * O_train).sum(axis=0) / col_count
     B_c = O_train * (B_train - col_mean[None, :])
@@ -76,9 +82,11 @@ def estimate_corr_em(B_train, O_train):
     col_std_floor = 0.01 * (np.abs(col_mean) + 1.0)
     col_std = np.sqrt(np.maximum(col_var, col_std_floor ** 2))
     B_std = O_train * (B_train - col_mean[None, :]) / col_std[None, :]
+    regularized = M_tr < N_tr or obs_frac < 0.5
     use_shrink = "auto" if M_tr < N_tr else 0.0
-    em_eps = 1e-3 if M_tr < N_tr else 1e-6
-    result = em_cov(B_std, O_train, max_iter=500, tol=5e-4,
+    em_eps = 1e-3 if regularized else 1e-6
+    em_iter = 1000 if regularized else 500
+    result = em_cov(B_std, O_train, max_iter=em_iter, tol=5e-4,
                     shrinkage=use_shrink, eps_psd=em_eps, verbose=False)
     Sigma = result["Sigma"]
     d_inv = 1.0 / np.sqrt(np.maximum(np.diag(Sigma), 1e-12))
@@ -302,8 +310,11 @@ if __name__ == "__main__":
     total_t0 = time.time()
 
     print("Loading TabImputeV2...")
-    imputer = TabImputeV2(device='cpu')
-    print("Model loaded.\n")
+    device = os.environ.get("BENCHSELECT_TABIMPUTE_DEVICE")
+    if device is None:
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+    imputer = TabImputeV2(device=device)
+    print(f"Model loaded on {device}.\n")
 
     all_metrics = {}
     for ds_name in DATASETS:

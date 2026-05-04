@@ -21,9 +21,13 @@ import numpy as np
 
 # Add code/ and data/ to path
 CODE = pathlib.Path(__file__).resolve().parent
-ROOT = CODE.parent
-DATA = ROOT / "data"
 sys.path.insert(0, str(CODE))
+
+from path_config import covariance_dir, data_dir
+
+DATA = data_dir()
+COV_OUT = covariance_dir()
+COV_OUT.mkdir(parents=True, exist_ok=True)
 sys.path.insert(0, str(DATA))
 
 from em_cov import em_cov
@@ -81,13 +85,18 @@ def main():
         # Standardize
         B_std, col_mean, col_std = standardize(B, O)
 
-        # Run EM — use shrinkage when M < N (rank-deficient covariance)
+        # Run EM with stronger PSD regularization when covariance is
+        # rank-deficient or very sparse. Ledoit-Wolf shrinkage itself is
+        # only used in the rank-deficient case.
+        obs_frac = n_obs / n_total
+        regularized = M < N or obs_frac < 0.5
         use_shrink = "auto" if M < N else 0.0
-        if use_shrink:
-            print(f"  M={M} < N={N}: using Ledoit-Wolf shrinkage + PSD projection")
-        n_iter = 1000 if M < N else 500
-        em_tol = 5e-4 if M < N else 1e-6
-        em_eps = 1e-3 if M < N else 1e-6
+        if regularized:
+            reason = f"M={M} < N={N}" if M < N else f"observed={obs_frac:.1%}"
+            print(f"  {reason}: using regularized EM settings")
+        n_iter = 1000 if regularized else 500
+        em_tol = 5e-4 if regularized else 1e-6
+        em_eps = 1e-3 if regularized else 1e-6
         result = em_cov(B_std, O, verbose=True, max_iter=n_iter, tol=em_tol,
                         shrinkage=use_shrink, eps_psd=em_eps)
 
@@ -115,7 +124,7 @@ def main():
             print(f"  {threshold:.0%} variance explained by {k} components")
 
         # Save
-        out_path = DATA / f"{name}.cov.npz"
+        out_path = COV_OUT / f"{name}.cov.npz"
         np.savez(
             out_path,
             mu=mu_std,
