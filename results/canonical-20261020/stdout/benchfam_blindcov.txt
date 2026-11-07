@@ -1,0 +1,30 @@
+# job      benchfam_blindcov
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_benchfamily_holdout.py --datasets mteb merged --compare-blind-cov
+# started  2026-10-20T02:47:06Z on 4090-1
+
+
+== MTEB: blind arms, refit - sub (50 splits) ==
+method                                   k=1                               k=3                               k=5                              k=10
+mi                set 0.96 seq 0.96 +0.0025         set 0.85 seq 0.83 -0.0022         set 0.82 seq 0.71 -0.0069         set 0.66 seq 0.40 +0.0044 
+entropy           set 0.85 seq 0.85 +0.0011         set 0.80 seq 0.80 -0.0062         set 0.77 seq 0.63 +0.0011         set 0.55 seq 0.32 +0.0041 
+trace             set 0.85 seq 0.85 +0.0011         set 0.74 seq 0.73 -0.0069         set 0.56 seq 0.53 -0.0085         set 0.42 seq 0.31 +0.0048 
+pca                set 0.88 seq   - +0.0005          set 0.55 seq   - -0.0042          set 0.52 seq   - -0.0033          set 0.40 seq   - +0.0067 
+hub               set 0.87 seq 0.87 +0.0003         set 0.74 seq 0.55 -0.0104         set 0.85 seq 0.43 -0.0024         set 0.59 seq 0.15 -0.0064 
+facloc            set 0.87 seq 0.87 +0.0003         set 0.78 seq 0.77 +0.0012         set 0.72 seq 0.63 -0.0089         set 0.45 seq 0.29 -0.0052 
+set / seq: share of (split, family) cells with identical size-k blind sets / pick sequences; then the paired refit - sub R² of 'all' (* = interval excludes 0: 1 of 60 (method, k) rows, k = 1..10; max |diff| 0.0148)
+  hub_blind_refit k=4: -0.0142 [-0.0260, -0.0025], 50 splits
+Comparison saved to ~/benchselect-runs/canonical-20261020/out/logs/benchfamily_holdout_mteb_blindcov.json (123 macros)
+
+== Merged: blind arms, refit - sub (50 splits) ==
+method                                   k=1                               k=3                               k=5                              k=10
+mi                set 0.43 seq 0.43 +0.0173         set 0.09 seq 0.06 -0.0386         set 0.04 seq 0.02 +0.0212         set 0.01 seq 0.00 +0.0891 
+entropy           set 0.27 seq 0.27 -0.0861         set 0.03 seq 0.02 -0.0441         set 0.01 seq 0.00 -0.0706         set 0.00 seq 0.00 -0.0055 
+trace             set 0.27 seq 0.27 -0.0861         set 0.05 seq 0.04 +0.0175         set 0.00 seq 0.00 +0.0499         set 0.00 seq 0.00 +0.0363 
+pca                set 0.27 seq   - -0.0704          set 0.02 seq   - +0.0087          set 0.01 seq   - +0.0089          set 0.00 seq   - -0.0056 
+hub               set 0.16 seq 0.16 -0.0219         set 0.04 seq 0.01 -0.1143         set 0.01 seq 0.00 -0.1368         set 0.01 seq 0.00 -0.0831 
+facloc            set 0.19 seq 0.19 -0.0412         set 0.04 seq 0.04 -0.0042         set 0.02 seq 0.01 -0.0147         set 0.00 seq 0.00 -0.0131 
+set / seq: share of (split, family) cells with identical size-k blind sets / pick sequences; then the paired refit - sub R² of 'all' (* = interval excludes 0: 1 of 60 (method, k) rows, k = 1..10; max |diff| 0.1768)
+  hub_blind_refit k=7: -0.1768 [-0.3528, -0.0008], 50 splits
+Comparison saved to ~/benchselect-runs/canonical-20261020/out/logs/benchfamily_holdout_merged_blindcov.json (123 macros)
+
+# finished 2026-10-20T02:47:10Z  exit=0  status=ok

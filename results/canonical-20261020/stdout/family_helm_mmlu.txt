@@ -1,0 +1,84 @@
+# job      family_helm_mmlu
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_family_holdout.py --datasets helm_mmlu --repeats 5
+# started  2026-10-20T02:47:04Z on 4090-1
+
+
+######################################################################
+# Dataset: HELM_MMLU — family holdout
+######################################################################
+79 models × 57 tasks; meta_org families, 0 models 'other' (always trained on)
+holding out families: anthropic(8), google(13), meta(11), mistral-ai(8), openai(8), qwen(8)
+Families of ≥ 6 models; selectable: benchmarks with ≥ 3 training models; 5 repetition(s) of the random streams
+  Holdout anthropic: 71 train / 8 test, 57/57 eligible  entropy:0.849  mi:0.855  random:0.841  hub:0.750  pca:0.844  trace:0.841  facloc:0.846  (0.0s)
+  Holdout google: 66 train / 13 test, 57/57 eligible  entropy:0.507  mi:0.517  random:0.506  hub:0.374  pca:0.508  trace:0.519  facloc:0.530  (0.0s)
+  Holdout meta: 68 train / 11 test, 57/57 eligible  entropy:0.814  mi:0.851  random:0.852  hub:0.813  pca:0.802  trace:0.847  facloc:0.809  (0.0s)
+  Holdout mistral-ai: 71 train / 8 test, 57/57 eligible  entropy:0.642  mi:0.742  random:0.703  hub:0.674  pca:0.717  trace:0.745  facloc:0.755  (0.0s)
+  Holdout openai: 71 train / 8 test, 57/57 eligible  entropy:0.768  mi:0.809  random:0.815  hub:0.773  pca:0.802  trace:0.814  facloc:0.810  (0.0s)
+  Holdout qwen: 71 train / 8 test, 57/57 eligible  entropy:0.739  mi:0.727  random:0.703  hub:0.696  pca:0.675  trace:0.751  facloc:0.739  (0.0s)
+  Holdout anthropic rep 1:  random:0.824  (0.0s)
+  Holdout google rep 1:  random:0.481  (0.0s)
+  Holdout meta rep 1:  random:0.737  (0.0s)
+  Holdout mistral-ai rep 1:  random:0.706  (0.0s)
+  Holdout openai rep 1:  random:0.755  (0.0s)
+  Holdout qwen rep 1:  random:0.716  (0.0s)
+  Holdout anthropic rep 2:  random:0.854  (0.0s)
+  Holdout google rep 2:  random:0.462  (0.0s)
+  Holdout meta rep 2:  random:0.808  (0.0s)
+  Holdout mistral-ai rep 2:  random:0.569  (0.0s)
+  Holdout openai rep 2:  random:0.788  (0.0s)
+  Holdout qwen rep 2:  random:0.720  (0.0s)
+  Holdout anthropic rep 3:  random:0.776  (0.0s)
+  Holdout google rep 3:  random:0.447  (0.0s)
+  Holdout meta rep 3:  random:0.834  (0.0s)
+  Holdout mistral-ai rep 3:  random:0.785  (0.0s)
+  Holdout openai rep 3:  random:0.756  (0.0s)
+  Holdout qwen rep 3:  random:0.735  (0.0s)
+  Holdout anthropic rep 4:  random:0.826  (0.0s)
+  Holdout google rep 4:  random:0.451  (0.0s)
+  Holdout meta rep 4:  random:0.816  (0.0s)
+  Holdout mistral-ai rep 4:  random:0.706  (0.0s)
+  Holdout openai rep 4:  random:0.792  (0.0s)
+  Holdout qwen rep 4:  random:0.705  (0.0s)
+
+== HELM MMLU: family-holdout imputation R² (mean ± std over 6 families) ==
+   (random: per family, mean over 5 draws)
+method                k=1          k=3          k=5          k=10         k=15         
+Entropy (Alg. 1)      0.655±0.141  0.693±0.116  0.720±0.115  0.740±0.139  0.750±0.144  
+Mutual Info (Alg. 2)  0.553±0.147  0.716±0.124  0.750±0.115  0.727±0.131  0.735±0.131  
+Random                0.589±0.149  0.691±0.148  0.716±0.120  0.733±0.133  0.728±0.131  
+Hub correlation       0.655±0.141  0.690±0.142  0.680±0.144  0.661±0.132  0.621±0.179  
+PCA subset (CSSP)     0.655±0.141  0.707±0.130  0.725±0.112  0.731±0.152  0.742±0.166  
+Greedy trace min.     0.655±0.141  0.736±0.114  0.753±0.112  0.763±0.132  0.759±0.136  
+Facility location     0.655±0.141  0.740±0.110  0.748±0.104  0.768±0.125  0.758±0.146  
+
+   Per-family R² at k=5:
+   family          entropy     mi          random      hub         pca         trace       facloc      
+   anthropic       0.849       0.855       0.824       0.750       0.844       0.841       0.846       
+   google          0.507       0.517       0.470       0.374       0.508       0.519       0.530       
+   meta            0.814       0.851       0.809       0.813       0.802       0.847       0.809       
+   mistral-ai      0.642       0.742       0.694       0.674       0.717       0.745       0.755       
+   openai          0.768       0.809       0.781       0.773       0.802       0.814       0.810       
+   qwen            0.739       0.727       0.716       0.696       0.675       0.751       0.739       
+
+   Selection stability (Jaccard vs full-data selection):
+   Entropy (Alg. 1)      k=5: 0.79  k=10: 0.71  k=15: 0.85
+   Mutual Info (Alg. 2)  k=5: 0.64  k=10: 0.44  k=15: 0.44
+   Hub correlation       k=5: 0.89  k=10: 0.87  k=15: 0.90
+   PCA subset (CSSP)     k=5: 0.78  k=10: 0.47  k=15: 0.59
+   Greedy trace min.     k=5: 0.51  k=10: 0.46  k=15: 0.52
+   Facility location     k=5: 0.64  k=10: 0.62  k=15: 0.68
+
+   Eligible benchmarks (≥ 3 training models): all models 57/57; families all 57
+   entropy     k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 30 in 30/30; all-model reference: 0 index ties
+   mi          k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: 0 index ties
+   random      k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: n/a
+   hub         k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: 0 index ties
+   pca         k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: 0 index ties
+   trace       k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: 0 index ties
+   facloc      k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: 0 index ties
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/family_holdout_helm_mmlu.pdf
+HELM_MMLU completed in 1s
+
+All datasets completed in 1s
+
+# finished 2026-10-20T02:47:06Z  exit=0  status=ok

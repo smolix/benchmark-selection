@@ -1,0 +1,29 @@
+Combining the logs ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_extra_{ds}.npz ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_{ds}.npz (no TabImpute)
+
+Merged: eligible benchmarks per split 106–114 of 114 (14/50 splits restricted)
+index ties (hub, k ≤ 15): 0 picks in 0/50 splits
+index ties (pca, k ≤ 15): 0 picks in 0/50 splits
+index ties (trace, k ≤ 15): 0 picks in 0/50 splits
+context: 106–106 training rows (0/50 splits subsampled, Split.seed(SEED + 20))
+valid-range prediction clip (hub): 0 of 211046 scored predictions, in 0/50 splits
+valid-range prediction clip (pca): 0 of 268303 scored predictions, in 0/50 splits
+valid-range prediction clip (trace): 0 of 267444 scored predictions, in 0/50 splits
+Paired R² differences a − b over 50 splits (Nadeau–Bengio 95% CI, win rate):
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/tabimpute_r2_extra_merged.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_extra_merged.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_extra_merged_paired.csv
+
+MERGED completed in 1s
+
+======================================================================
+SUMMARY: Mean R² at k = 5, 10, 15 (TabImpute V2 imputation)
+======================================================================
+Dataset      Method         R²@5    R²@10    R²@15
+---------------------------------------------------
+Merged       hub          0.0609   0.0983   0.1266
+Merged       pca          0.0398   0.0595   0.0905
+Merged       trace        0.0651   0.0805   0.1080
+---------------------------------------------------
+
+All datasets completed in 1s

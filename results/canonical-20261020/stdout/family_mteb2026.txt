@@ -1,0 +1,138 @@
+# job      family_mteb2026
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_family_holdout.py --datasets mteb2026 --repeats 5
+# started  2026-10-20T02:45:15Z on 4090-1
+
+
+######################################################################
+# Dataset: MTEB2026 — family holdout
+######################################################################
+333 models × 56 tasks; org families, 0 models 'other' (always trained on)
+holding out families: alibaba-nlp(8), baai(9), codefuse-ai(11), ibm-granite(8), intfloat(11), jinaai(10), lightonai(10), mcgill-nlp(9), mihaiii(7), minishlab(9), mongodb(18), nomic-ai(6), omartificial-intelligence-space(6), sentence-transformers(17), snowflake(8)
+Families of ≥ 6 models; selectable: benchmarks with ≥ 3 training models; 5 repetition(s) of the random streams
+  Holdout alibaba-nlp: 325 train / 8 test, 56/56 eligible  entropy:0.681  mi:0.777  random:0.765  hub:0.588  pca:0.684  trace:0.780  facloc:0.780  (5.5s)
+  Holdout baai: 324 train / 9 test, 56/56 eligible  entropy:0.810  mi:0.802  random:0.814  hub:0.723  pca:0.705  trace:0.830  facloc:0.827  (5.1s)
+  Holdout codefuse-ai: 322 train / 11 test, 56/56 eligible  entropy:0.726  mi:0.442  random:0.819  hub:0.786  pca:0.718  trace:0.820  facloc:0.820  (3.6s)
+  Holdout ibm-granite: 325 train / 8 test, 56/56 eligible  entropy:0.111  mi:0.014  random:0.444  hub:-0.186  pca:0.182  trace:0.096  facloc:0.096  (2.9s)
+  Holdout intfloat: 322 train / 11 test, 56/56 eligible  entropy:0.295  mi:0.441  random:0.349  hub:0.347  pca:0.279  trace:0.462  facloc:0.462  (2.8s)
+  Holdout jinaai: 323 train / 10 test, 56/56 eligible  entropy:0.454  mi:0.675  random:0.339  hub:0.124  pca:0.444  trace:0.460  facloc:0.391  (2.7s)
+  Holdout lightonai: 323 train / 10 test, 56/56 eligible  entropy:0.476  mi:0.652  random:0.737  hub:nan  pca:0.476  trace:0.652  facloc:0.652  (2.6s)
+  Holdout mcgill-nlp: 324 train / 9 test, 56/56 eligible  entropy:0.178  mi:0.600  random:0.485  hub:0.280  pca:0.465  trace:0.586  facloc:0.586  (2.8s)
+  Holdout mihaiii: 326 train / 7 test, 56/56 eligible  entropy:0.738  mi:0.677  random:0.626  hub:0.470  pca:0.765  trace:0.662  facloc:0.662  (2.5s)
+  Holdout minishlab: 324 train / 9 test, 56/56 eligible  entropy:0.849  mi:0.879  random:0.873  hub:0.876  pca:0.859  trace:0.884  facloc:0.884  (2.8s)
+  Holdout mongodb: 315 train / 18 test, 56/56 eligible  entropy:0.603  mi:0.559  random:0.566  hub:0.484  pca:0.509  trace:0.587  facloc:0.587  (2.7s)
+  Holdout nomic-ai: 327 train / 6 test, 56/56 eligible  entropy:0.291  mi:0.457  random:0.281  hub:0.318  pca:0.297  trace:0.453  facloc:0.453  (2.6s)
+  Holdout omartificial-intelligence-space: 327 train / 6 test, 56/56 eligible  entropy:0.932  mi:0.931  random:0.939  hub:0.896  pca:0.928  trace:0.949  facloc:0.949  (3.1s)
+  Holdout sentence-transformers: 316 train / 17 test, 56/56 eligible  entropy:0.341  mi:0.473  random:0.020  hub:0.108  pca:0.106  trace:0.446  facloc:0.463  (2.6s)
+  Holdout snowflake: 325 train / 8 test, 56/56 eligible  entropy:0.317  mi:-0.243  random:0.316  hub:0.123  pca:-0.090  trace:0.418  facloc:0.418  (2.9s)
+  Holdout alibaba-nlp rep 1:  random:0.573  (0.0s)
+  Holdout baai rep 1:  random:0.838  (0.0s)
+  Holdout codefuse-ai rep 1:  random:0.718  (0.0s)
+  Holdout ibm-granite rep 1:  random:0.069  (0.0s)
+  Holdout intfloat rep 1:  random:0.290  (0.0s)
+  Holdout jinaai rep 1:  random:0.388  (0.0s)
+  Holdout lightonai rep 1:  random:0.717  (0.0s)
+  Holdout mcgill-nlp rep 1:  random:0.347  (0.0s)
+  Holdout mihaiii rep 1:  random:0.730  (0.0s)
+  Holdout minishlab rep 1:  random:0.859  (0.0s)
+  Holdout mongodb rep 1:  random:0.510  (0.0s)
+  Holdout nomic-ai rep 1:  random:0.076  (0.0s)
+  Holdout omartificial-intelligence-space rep 1:  random:0.901  (0.0s)
+  Holdout sentence-transformers rep 1:  random:0.442  (0.0s)
+  Holdout snowflake rep 1:  random:0.310  (0.0s)
+  Holdout alibaba-nlp rep 2:  random:0.782  (0.0s)
+  Holdout baai rep 2:  random:0.773  (0.0s)
+  Holdout codefuse-ai rep 2:  random:0.749  (0.0s)
+  Holdout ibm-granite rep 2:  random:0.377  (0.0s)
+  Holdout intfloat rep 2:  random:0.447  (0.0s)
+  Holdout jinaai rep 2:  random:0.632  (0.0s)
+  Holdout lightonai rep 2:  random:0.684  (0.0s)
+  Holdout mcgill-nlp rep 2:  random:0.512  (0.0s)
+  Holdout mihaiii rep 2:  random:0.699  (0.0s)
+  Holdout minishlab rep 2:  random:0.759  (0.0s)
+  Holdout mongodb rep 2:  random:0.587  (0.0s)
+  Holdout nomic-ai rep 2:  random:0.276  (0.0s)
+  Holdout omartificial-intelligence-space rep 2:  random:0.911  (0.0s)
+  Holdout sentence-transformers rep 2:  random:0.233  (0.0s)
+  Holdout snowflake rep 2:  random:0.222  (0.0s)
+  Holdout alibaba-nlp rep 3:  random:0.649  (0.0s)
+  Holdout baai rep 3:  random:0.834  (0.0s)
+  Holdout codefuse-ai rep 3:  random:0.257  (0.0s)
+  Holdout ibm-granite rep 3:  random:0.338  (0.0s)
+  Holdout intfloat rep 3:  random:0.419  (0.0s)
+  Holdout jinaai rep 3:  random:0.706  (0.0s)
+  Holdout lightonai rep 3:  random:0.702  (0.0s)
+  Holdout mcgill-nlp rep 3:  random:0.436  (0.0s)
+  Holdout mihaiii rep 3:  random:0.726  (0.0s)
+  Holdout minishlab rep 3:  random:0.830  (0.0s)
+  Holdout mongodb rep 3:  random:0.574  (0.0s)
+  Holdout nomic-ai rep 3:  random:0.427  (0.0s)
+  Holdout omartificial-intelligence-space rep 3:  random:0.900  (0.0s)
+  Holdout sentence-transformers rep 3:  random:0.306  (0.0s)
+  Holdout snowflake rep 3:  random:0.519  (0.0s)
+  Holdout alibaba-nlp rep 4:  random:0.733  (0.0s)
+  Holdout baai rep 4:  random:0.777  (0.0s)
+  Holdout codefuse-ai rep 4:  random:0.764  (0.0s)
+  Holdout ibm-granite rep 4:  random:-0.312  (0.0s)
+  Holdout intfloat rep 4:  random:0.036  (0.0s)
+  Holdout jinaai rep 4:  random:0.440  (0.0s)
+  Holdout lightonai rep 4:  random:0.629  (0.0s)
+  Holdout mcgill-nlp rep 4:  random:0.464  (0.0s)
+  Holdout mihaiii rep 4:  random:0.702  (0.0s)
+  Holdout minishlab rep 4:  random:0.878  (0.0s)
+  Holdout mongodb rep 4:  random:0.494  (0.0s)
+  Holdout nomic-ai rep 4:  random:0.235  (0.0s)
+  Holdout omartificial-intelligence-space rep 4:  random:0.881  (0.0s)
+  Holdout sentence-transformers rep 4:  random:0.023  (0.0s)
+  Holdout snowflake rep 4:  random:0.459  (0.0s)
+
+== MTEB 2026: family-holdout imputation R² (mean ± std over 15 families) ==
+   (random: per family, mean over 5 draws)
+method                k=1          k=3          k=5          k=10         k=15         
+Entropy (Alg. 1)      0.406±0.321  0.463±0.299  0.520±0.252  0.649±0.180  0.680±0.165  
+Mutual Info (Alg. 2)  0.389±0.344  0.480±0.299  0.542±0.302  0.685±0.149  0.705±0.131  
+Random                0.246±0.365  0.438±0.286  0.541±0.230  0.617±0.208  0.673±0.156  
+Hub correlation       0.406±0.321  0.396±0.338  0.424±0.313  0.488±0.281  0.530±0.230  
+PCA subset (CSSP)     0.406±0.321  0.513±0.271  0.489±0.283  0.666±0.152  0.663±0.200  
+Greedy trace min.     0.406±0.321  0.534±0.273  0.606±0.218  0.696±0.148  0.722±0.142  
+Facility location     0.406±0.321  0.541±0.268  0.602±0.221  0.694±0.146  0.722±0.135  
+
+   Per-family R² at k=5:
+   family          entropy     mi          random      hub         pca         trace       facloc      
+   alibaba-nlp     0.681       0.777       0.700       0.588       0.684       0.780       0.780       
+   baai            0.810       0.802       0.807       0.723       0.705       0.830       0.827       
+   codefuse-ai     0.726       0.442       0.661       0.786       0.718       0.820       0.820       
+   ibm-granite     0.111       0.014       0.183       -0.186      0.182       0.096       0.096       
+   intfloat        0.295       0.441       0.308       0.347       0.279       0.462       0.462       
+   jinaai          0.454       0.675       0.501       0.124       0.444       0.460       0.391       
+   lightonai       0.476       0.652       0.694       nan         0.476       0.652       0.652       
+   mcgill-nlp      0.178       0.600       0.449       0.280       0.465       0.586       0.586       
+   mihaiii         0.738       0.677       0.697       0.470       0.765       0.662       0.662       
+   minishlab       0.849       0.879       0.840       0.876       0.859       0.884       0.884       
+   mongodb         0.603       0.559       0.546       0.484       0.509       0.587       0.587       
+   nomic-ai        0.291       0.457       0.259       0.318       0.297       0.453       0.453       
+   omartificial-intelligence-space0.932       0.931       0.906       0.896       0.928       0.949       0.949       
+   sentence-transformers0.341       0.473       0.205       0.108       0.106       0.446       0.463       
+   snowflake       0.317       -0.243      0.365       0.123       -0.090      0.418       0.418       
+
+   Selection stability (Jaccard vs full-data selection):
+   Entropy (Alg. 1)      k=5: 0.96  k=10: 0.98  k=15: 0.96
+   Mutual Info (Alg. 2)  k=5: 0.87  k=10: 0.94  k=15: 0.83
+   Hub correlation       k=5: 0.90  k=10: 0.90  k=15: 0.94
+   PCA subset (CSSP)     k=5: 0.55  k=10: 0.69  k=15: 0.82
+   Greedy trace min.     k=5: 0.93  k=10: 0.97  k=15: 0.85
+   Facility location     k=5: 0.93  k=10: 0.93  k=15: 0.85
+
+   Eligible benchmarks (≥ 3 training models): all models 56/56; families all 56
+   entropy     k ≤ 15: index ties 0 picks in 0/75 splits, near-tie breaks 75 in 75/75; all-model reference: 0 index ties
+   mi          k ≤ 15: index ties 0 picks in 0/75 splits, near-tie breaks 0 in 0/75; all-model reference: 0 index ties
+   random      k ≤ 15: index ties 0 picks in 0/75 splits, near-tie breaks 0 in 0/75; all-model reference: n/a
+   hub         k ≤ 15: index ties 0 picks in 0/75 splits, near-tie breaks 0 in 0/75; all-model reference: 0 index ties
+   pca         k ≤ 15: index ties 0 picks in 0/75 splits, near-tie breaks 0 in 0/75; all-model reference: 0 index ties
+   trace       k ≤ 15: index ties 0 picks in 0/75 splits, near-tie breaks 0 in 0/75; all-model reference: 0 index ties
+   facloc      k ≤ 15: index ties 0 picks in 0/75 splits, near-tie breaks 215 in 75/75; all-model reference: 0 index ties
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/family_holdout_mteb2026.pdf
+MTEB2026 completed in 53s
+
+All datasets completed in 53s
+
+# finished 2026-10-20T02:46:10Z  exit=0  status=ok

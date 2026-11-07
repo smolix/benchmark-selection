@@ -1,0 +1,94 @@
+# job      tabimpute_extra_merged
+# command  cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=merged BENCHSELECT_METHODS=hub\,pca ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5
+# started  2026-10-19T18:05:14Z on 4090-1
+
+Loading TabImputeV2...
+Checkpoint ~/hf-benchselect/hub/models--Tabimpute--TabImpute/snapshots/727574989ddebe71860141c9a8b9f6e7958e3cce/tabimputev2.ckpt
+  Tabimpute/TabImpute/tabimputev2.ckpt revision 727574989ddebe71860141c9a8b9f6e7958e3cce, sha256 b48b5bfdaf496bb949b762377518cd4ddeea7629e44f02aebb9a18ca9e711bce
+torch 2.13.0+cu130, tabimpute 0.0.4, deterministic algorithms True, CUBLAS_WORKSPACE_CONFIG=:4096:8
+Model loaded on cuda:0.
+
+
+######################################################################
+# Dataset: MERGED
+######################################################################
+118 models × 114 tasks, 31.2% observed
+5 × 10-fold CV = 50 matched splits, 10% holdout, selectable: benchmarks with ≥ 3 training models; methods: hub, pca
+  Rep 0 fold 0: 106 train / 12 test, 114/114 eligible  hub R²@5=0.067  pca R²@5=0.064  (8.2s)
+  Rep 0 fold 1: 106 train / 12 test, 106/114 eligible  hub R²@5=0.023  pca R²@5=-0.002  (7.3s)
+  Rep 0 fold 2: 106 train / 12 test, 114/114 eligible  hub R²@5=0.151  pca R²@5=0.064  (15.1s)
+  Rep 0 fold 3: 106 train / 12 test, 106/114 eligible  hub R²@5=0.067  pca R²@5=0.015  (21.8s)
+  Rep 0 fold 4: 106 train / 12 test, 114/114 eligible  hub R²@5=0.051  pca R²@5=0.037  (10.8s)
+  Rep 0 fold 5: 106 train / 12 test, 114/114 eligible  hub R²@5=0.046  pca R²@5=0.025  (9.1s)
+  Rep 0 fold 6: 106 train / 12 test, 114/114 eligible  hub R²@5=0.164  pca R²@5=0.064  (10.9s)
+  Rep 0 fold 7: 106 train / 12 test, 114/114 eligible  hub R²@5=0.114  pca R²@5=0.089  (10.0s)
+  Rep 0 fold 8: 106 train / 11 test, 106/114 eligible  hub R²@5=0.151  pca R²@5=0.042  (5.5s)
+  Rep 0 fold 9: 106 train / 11 test, 114/114 eligible  hub R²@5=0.026  pca R²@5=-0.012  (19.2s)
+  Rep 1 fold 0: 106 train / 12 test, 106/114 eligible  hub R²@5=0.061  pca R²@5=0.034  (12.0s)
+  Rep 1 fold 1: 106 train / 12 test, 114/114 eligible  hub R²@5=0.133  pca R²@5=0.064  (11.7s)
+  Rep 1 fold 2: 106 train / 12 test, 106/114 eligible  hub R²@5=0.083  pca R²@5=0.061  (5.5s)
+  Rep 1 fold 3: 106 train / 12 test, 114/114 eligible  hub R²@5=0.080  pca R²@5=0.056  (9.2s)
+  Rep 1 fold 4: 106 train / 12 test, 114/114 eligible  hub R²@5=0.135  pca R²@5=0.090  (15.1s)
+  Rep 1 fold 5: 106 train / 12 test, 114/114 eligible  hub R²@5=0.014  pca R²@5=-0.024  (11.2s)
+  Rep 1 fold 6: 106 train / 12 test, 114/114 eligible  hub R²@5=0.103  pca R²@5=0.044  (10.4s)
+  Rep 1 fold 7: 106 train / 12 test, 106/114 eligible  hub R²@5=0.031  pca R²@5=0.041  (25.2s)
+  Rep 1 fold 8: 106 train / 11 test, 114/114 eligible  hub R²@5=-0.107  pca R²@5=0.016  (13.2s)
+  Rep 1 fold 9: 106 train / 11 test, 114/114 eligible  hub R²@5=0.017  pca R²@5=0.005  (13.7s)
+  Rep 2 fold 0: 106 train / 12 test, 114/114 eligible  hub R²@5=0.165  pca R²@5=0.024  (9.1s)
+  Rep 2 fold 1: 106 train / 12 test, 106/114 eligible  hub R²@5=0.125  pca R²@5=0.060  (8.4s)
+  Rep 2 fold 2: 106 train / 12 test, 114/114 eligible  hub R²@5=-0.010  pca R²@5=-0.004  (23.6s)
+  Rep 2 fold 3: 106 train / 12 test, 114/114 eligible  hub R²@5=0.085  pca R²@5=0.074  (9.4s)
+  Rep 2 fold 4: 106 train / 12 test, 114/114 eligible  hub R²@5=0.017  pca R²@5=-0.004  (13.1s)
+  Rep 2 fold 5: 106 train / 12 test, 114/114 eligible  hub R²@5=0.011  pca R²@5=-0.004  (9.3s)
+  Rep 2 fold 6: 106 train / 12 test, 106/114 eligible  hub R²@5=0.030  pca R²@5=0.019  (35.1s)
+  Rep 2 fold 7: 106 train / 12 test, 106/114 eligible  hub R²@5=0.017  pca R²@5=0.018  (5.4s)
+  Rep 2 fold 8: 106 train / 11 test, 114/114 eligible  hub R²@5=-0.099  pca R²@5=0.077  (10.4s)
+  Rep 2 fold 9: 106 train / 11 test, 114/114 eligible  hub R²@5=0.059  pca R²@5=0.062  (13.7s)
+  Rep 3 fold 0: 106 train / 12 test, 114/114 eligible  hub R²@5=0.098  pca R²@5=0.054  (13.5s)
+  Rep 3 fold 1: 106 train / 12 test, 114/114 eligible  hub R²@5=0.109  pca R²@5=0.062  (26.4s)
+  Rep 3 fold 2: 106 train / 12 test, 106/114 eligible  hub R²@5=0.010  pca R²@5=-0.019  (8.1s)
+  Rep 3 fold 3: 106 train / 12 test, 114/114 eligible  hub R²@5=0.137  pca R²@5=0.079  (13.0s)
+  Rep 3 fold 4: 106 train / 12 test, 114/114 eligible  hub R²@5=-0.019  pca R²@5=-0.006  (11.6s)
+  Rep 3 fold 5: 106 train / 12 test, 106/114 eligible  hub R²@5=0.045  pca R²@5=0.038  (26.8s)
+  Rep 3 fold 6: 106 train / 12 test, 114/114 eligible  hub R²@5=0.071  pca R²@5=0.060  (10.3s)
+  Rep 3 fold 7: 106 train / 12 test, 114/114 eligible  hub R²@5=-0.040  pca R²@5=-0.021  (11.2s)
+  Rep 3 fold 8: 106 train / 11 test, 114/114 eligible  hub R²@5=0.129  pca R²@5=0.097  (9.5s)
+  Rep 3 fold 9: 106 train / 11 test, 114/114 eligible  hub R²@5=0.134  pca R²@5=0.083  (9.0s)
+  Rep 4 fold 0: 106 train / 12 test, 114/114 eligible  hub R²@5=0.129  pca R²@5=0.104  (18.3s)
+  Rep 4 fold 1: 106 train / 12 test, 106/114 eligible  hub R²@5=0.089  pca R²@5=0.087  (6.9s)
+  Rep 4 fold 2: 106 train / 12 test, 114/114 eligible  hub R²@5=0.144  pca R²@5=0.060  (16.0s)
+  Rep 4 fold 3: 106 train / 12 test, 106/114 eligible  hub R²@5=0.066  pca R²@5=0.040  (30.7s)
+  Rep 4 fold 4: 106 train / 12 test, 114/114 eligible  hub R²@5=-0.070  pca R²@5=-0.006  (9.5s)
+  Rep 4 fold 5: 106 train / 12 test, 114/114 eligible  hub R²@5=0.085  pca R²@5=0.037  (14.3s)
+  Rep 4 fold 6: 106 train / 12 test, 114/114 eligible  hub R²@5=0.073  pca R²@5=0.047  (10.6s)
+  Rep 4 fold 7: 106 train / 12 test, 114/114 eligible  hub R²@5=0.042  pca R²@5=-0.006  (8.9s)
+  Rep 4 fold 8: 106 train / 11 test, 114/114 eligible  hub R²@5=0.125  pca R²@5=0.043  (8.8s)
+  Rep 4 fold 9: 106 train / 11 test, 106/114 eligible  hub R²@5=-0.116  pca R²@5=0.058  (8.5s)
+TabImpute: 1481 imputations, 19 reused (same selected set within a split)
+
+Merged: eligible benchmarks per split 106–114 of 114 (14/50 splits restricted)
+index ties (hub, k ≤ 15): 0 picks in 0/50 splits
+index ties (pca, k ≤ 15): 0 picks in 0/50 splits
+context: 106–106 training rows (0/50 splits subsampled, Split.seed(SEED + 20))
+valid-range prediction clip (hub): 0 of 211046 scored predictions, in 0/50 splits
+valid-range prediction clip (pca): 0 of 268303 scored predictions, in 0/50 splits
+Paired R² differences a − b over 50 splits (Nadeau–Bengio 95% CI, win rate):
+
+Plot saved to ~/benchselect-runs/tabimpute-full/B_out/figures/tabimpute_r2_extra_merged.pdf
+Results saved to ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_extra_merged.npz
+Paired statistics saved to ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_extra_merged_paired.csv
+
+MERGED completed in 656s
+
+======================================================================
+SUMMARY: Mean R² at k = 5, 10, 15 (TabImpute V2 imputation)
+======================================================================
+Dataset      Method         R²@5    R²@10    R²@15
+---------------------------------------------------
+Merged       hub          0.0609   0.0983   0.1266
+Merged       pca          0.0398   0.0595   0.0905
+---------------------------------------------------
+
+All datasets completed in 660s
+
+# finished 2026-10-19T18:16:16Z  exit=0  status=ok

@@ -1,0 +1,431 @@
+# job      reviewer_checks
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_reviewer_checks.py --check all --datasets mmlu mteb merged benchpress --repeats 5
+# started  2026-10-20T01:44:58Z on 4090-1
+
+
+======================================================================
+CHECK 1: valid-range violations of the imputations and the effect of the clip (rule D2), k = 1..15
+======================================================================
+
+mmlu: 5452 models × 57 benchmarks, 50 splits (5 × 10-fold), eligible per split 57–57 of 57; valid ranges: unit_interval 57
+  mi       k=5: outside the valid range  0.02% of 1417520 imputations (0.02% on a 0-1 / 0-100 scale) | R² unclipped 0.9062 → clipped 0.9062
+  entropy  k=5: outside the valid range  0.23% of 1417520 imputations (0.23% on a 0-1 / 0-100 scale) | R² unclipped 0.9129 → clipped 0.9133
+  trace    k=5: outside the valid range  0.04% of 1417520 imputations (0.04% on a 0-1 / 0-100 scale) | R² unclipped 0.9199 → clipped 0.9199
+  facloc   k=5: outside the valid range  0.05% of 1417520 imputations (0.05% on a 0-1 / 0-100 scale) | R² unclipped 0.9187 → clipped 0.9187
+  pca      k=5: outside the valid range  0.07% of 1417520 imputations (0.07% on a 0-1 / 0-100 scale) | R² unclipped 0.9067 → clipped 0.9068
+  hub      k=5: outside the valid range  0.26% of 1417520 imputations (0.26% on a 0-1 / 0-100 scale) | R² unclipped 0.8745 → clipped 0.8747
+  random   k=5: outside the valid range  0.11% of 1417520 imputations (0.11% on a 0-1 / 0-100 scale) | R² unclipped 0.8900 → clipped 0.8904
+  mean R² unclipped → clipped (k = 1, 5, 10, 15; % of predictions outside):
+    mi       k=1: +0.8324 → +0.8324 (0.02%)  k=5: +0.9062 → +0.9062 (0.02%)  k=10: +0.9108 → +0.9108 (0.01%)  k=15: +0.9274 → +0.9274 (0.01%)
+    entropy  k=1: +0.8588 → +0.8598 (0.61%)  k=5: +0.9129 → +0.9133 (0.23%)  k=10: +0.9360 → +0.9363 (0.23%)  k=15: +0.9486 → +0.9489 (0.23%)
+    trace    k=1: +0.8588 → +0.8598 (0.61%)  k=5: +0.9199 → +0.9199 (0.04%)  k=10: +0.9458 → +0.9458 (0.03%)  k=15: +0.9593 → +0.9593 (0.03%)
+    facloc   k=1: +0.8588 → +0.8598 (0.61%)  k=5: +0.9187 → +0.9187 (0.05%)  k=10: +0.9445 → +0.9445 (0.05%)  k=15: +0.9584 → +0.9584 (0.05%)
+    pca      k=1: +0.8588 → +0.8598 (0.61%)  k=5: +0.9067 → +0.9068 (0.07%)  k=10: +0.9399 → +0.9400 (0.10%)  k=15: +0.9467 → +0.9469 (0.18%)
+    hub      k=1: +0.8588 → +0.8598 (0.61%)  k=5: +0.8745 → +0.8747 (0.26%)  k=10: +0.8861 → +0.8862 (0.17%)  k=15: +0.8844 → +0.8845 (0.10%)
+    random   k=1: +0.7475 → +0.7506 (0.51%)  k=5: +0.8900 → +0.8904 (0.11%)  k=10: +0.9105 → +0.9105 (0.04%)  k=15: +0.9197 → +0.9197 (0.02%)
+  paired R² differences a − b (k=5; mean [Nadeau–Bengio 95% CI], * = CI excludes 0, win rate):
+    mi − entropy                       -0.0067 [-0.0079, -0.0055] * win   0.0%  (n=50)
+    mi − trace                         -0.0137 [-0.0148, -0.0125] * win   0.0%  (n=50)
+    trace − facloc                     +0.0012 [+0.0008, +0.0016] * win 100.0%  (n=50)
+    mi − random                        +0.0163 [+0.0074, +0.0251] * win  92.0%  (n=50)
+    trace − random                     +0.0299 [+0.0212, +0.0387] * win 100.0%  (n=50)
+    mi_clipped − entropy_clipped       -0.0071 [-0.0083, -0.0058] * win   0.0%  (n=50)
+    mi_clipped − trace_clipped         -0.0137 [-0.0149, -0.0125] * win   0.0%  (n=50)
+    trace_clipped − facloc_clipped     +0.0012 [+0.0008, +0.0016] * win 100.0%  (n=50)
+    mi_clipped − random_clipped        +0.0158 [+0.0074, +0.0243] * win  92.0%  (n=50)
+    trace_clipped − random_clipped     +0.0295 [+0.0212, +0.0378] * win 100.0%  (n=50)
+    mi_clipped − mi                    +2.2e-06 [+3.7e-07, +3.9e-06] * win  98.0%  (n=50)
+    entropy_clipped − entropy          +0.0003 [+0.0001, +0.0006] * win 100.0%  (n=50)
+    trace_clipped − trace              +1.2e-05 [+4.7e-06, +1.9e-05] * win 100.0%  (n=50)
+    facloc_clipped − facloc            +1.2e-05 [+5.3e-06, +2.0e-05] * win 100.0%  (n=50)
+    pca_clipped − pca                  +0.0001 [-0.0000, +0.0002]   win  98.0%  (n=50)
+    hub_clipped − hub                  +0.0002 [+0.0002, +0.0003] * win 100.0%  (n=50)
+    random_clipped − random            +0.0005 [-0.0015, +0.0024]   win  96.0%  (n=50)
+  paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_clip_mmlu_paired.csv
+  per-split clip arrays saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_clip_mmlu.npz
+
+mteb: 263 models × 56 benchmarks, 50 splits (5 × 10-fold), eligible per split 56–56 of 56; valid ranges: unit_interval 45, correlation 11
+  mi       k=5: outside the valid range  0.78% of 50527 imputations (0.78% on a 0-1 / 0-100 scale) | R² unclipped 0.7635 → clipped 0.7672
+  entropy  k=5: outside the valid range  1.07% of 50672 imputations (1.07% on a 0-1 / 0-100 scale) | R² unclipped 0.7415 → clipped 0.7464
+  trace    k=5: outside the valid range  1.15% of 51552 imputations (1.15% on a 0-1 / 0-100 scale) | R² unclipped 0.7856 → clipped 0.7899
+  facloc   k=5: outside the valid range  1.12% of 51703 imputations (1.11% on a 0-1 / 0-100 scale) | R² unclipped 0.7626 → clipped 0.7671
+  pca      k=5: outside the valid range  0.63% of 51525 imputations (0.62% on a 0-1 / 0-100 scale) | R² unclipped 0.7514 → clipped 0.7554
+  hub      k=5: outside the valid range  1.03% of 48060 imputations (1.02% on a 0-1 / 0-100 scale) | R² unclipped 0.6862 → clipped 0.6872
+  random   k=5: outside the valid range  0.87% of 51131 imputations (0.87% on a 0-1 / 0-100 scale) | R² unclipped 0.7422 → clipped 0.7438
+  mean R² unclipped → clipped (k = 1, 5, 10, 15; % of predictions outside):
+    mi       k=1: +0.6488 → +0.6499 (0.68%)  k=5: +0.7635 → +0.7672 (0.78%)  k=10: +0.8173 → +0.8206 (0.88%)  k=15: +0.8342 → +0.8364 (0.88%)
+    entropy  k=1: +0.6442 → +0.6465 (0.86%)  k=5: +0.7415 → +0.7464 (1.07%)  k=10: +0.8133 → +0.8167 (1.01%)  k=15: +0.8508 → +0.8531 (0.88%)
+    trace    k=1: +0.6442 → +0.6465 (0.86%)  k=5: +0.7856 → +0.7899 (1.15%)  k=10: +0.8337 → +0.8386 (1.09%)  k=15: +0.8620 → +0.8633 (1.03%)
+    facloc   k=1: +0.6568 → +0.6591 (0.93%)  k=5: +0.7626 → +0.7671 (1.12%)  k=10: +0.8229 → +0.8263 (1.12%)  k=15: +0.8408 → +0.8435 (1.18%)
+    pca      k=1: +0.6461 → +0.6484 (0.86%)  k=5: +0.7514 → +0.7554 (0.63%)  k=10: +0.7954 → +0.8010 (0.78%)  k=15: +0.8523 → +0.8545 (0.73%)
+    hub      k=1: +0.6568 → +0.6591 (0.93%)  k=5: +0.6862 → +0.6872 (1.03%)  k=10: +0.7170 → +0.7182 (0.97%)  k=15: +0.7114 → +0.7141 (1.12%)
+    random   k=1: +0.4980 → +0.5021 (0.59%)  k=5: +0.7422 → +0.7438 (0.87%)  k=10: +0.7821 → +0.7840 (0.88%)  k=15: +0.7978 → +0.8003 (0.94%)
+  paired R² differences a − b (k=5; mean [Nadeau–Bengio 95% CI], * = CI excludes 0, win rate):
+    mi − entropy                       +0.0220 [-0.0092, +0.0532]   win  68.0%  (n=50)
+    mi − trace                         -0.0221 [-0.0488, +0.0046]   win  18.0%  (n=50)
+    trace − facloc                     +0.0230 [-0.0434, +0.0894]   win  78.0%  (n=50)
+    mi − random                        +0.0213 [-0.0095, +0.0521]   win  70.0%  (n=50)
+    trace − random                     +0.0434 [+0.0106, +0.0762] * win  90.0%  (n=50)
+    mi_clipped − entropy_clipped       +0.0208 [-0.0110, +0.0526]   win  64.0%  (n=50)
+    mi_clipped − trace_clipped         -0.0227 [-0.0495, +0.0041]   win  18.0%  (n=50)
+    trace_clipped − facloc_clipped     +0.0228 [-0.0432, +0.0888]   win  78.0%  (n=50)
+    mi_clipped − random_clipped        +0.0235 [-0.0084, +0.0553]   win  70.0%  (n=50)
+    trace_clipped − random_clipped     +0.0461 [+0.0111, +0.0812] * win  92.0%  (n=50)
+    mi_clipped − mi                    +0.0037 [-0.0027, +0.0101]   win  96.0%  (n=50)
+    entropy_clipped − entropy          +0.0049 [-0.0026, +0.0124]   win  98.0%  (n=50)
+    trace_clipped − trace              +0.0043 [-0.0030, +0.0115]   win 100.0%  (n=50)
+    facloc_clipped − facloc            +0.0045 [-0.0022, +0.0112]   win 100.0%  (n=50)
+    pca_clipped − pca                  +0.0039 [-0.0053, +0.0132]   win  88.0%  (n=50)
+    hub_clipped − hub                  +0.0010 [+0.0000, +0.0019] * win  98.0%  (n=50)
+    random_clipped − random            +0.0016 [-0.0004, +0.0035]   win 100.0%  (n=50)
+  paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_clip_mteb_paired.csv
+  per-split clip arrays saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_clip_mteb.npz
+
+merged: 118 models × 114 benchmarks, 50 splits (5 × 10-fold), eligible per split 106–114 of 114; valid ranges: unit_interval 77, percent 18, judge_1_10 8, wb_score 11
+  mi       k=5: outside the valid range  0.20% of 17325 imputations (0.20% on a 0-1 / 0-100 scale) | R² unclipped 0.4643 → clipped 0.4650
+  entropy  k=5: outside the valid range  0.25% of 18738 imputations (0.25% on a 0-1 / 0-100 scale) | R² unclipped 0.5024 → clipped 0.5029
+  trace    k=5: outside the valid range  0.40% of 18385 imputations (0.40% on a 0-1 / 0-100 scale) | R² unclipped 0.5911 → clipped 0.5926
+  facloc   k=5: outside the valid range  0.44% of 19104 imputations (0.44% on a 0-1 / 0-100 scale) | R² unclipped 0.6132 → clipped 0.6143
+  pca      k=5: outside the valid range  0.23% of 19002 imputations (0.23% on a 0-1 / 0-100 scale) | R² unclipped 0.4823 → clipped 0.4829
+  hub      k=5: outside the valid range  0.48% of 14282 imputations (0.48% on a 0-1 / 0-100 scale) | R² unclipped 0.4805 → clipped 0.4812
+  random   k=5: outside the valid range  0.31% of 17464 imputations (0.31% on a 0-1 / 0-100 scale) | R² unclipped 0.5613 → clipped 0.5629
+  mean R² unclipped → clipped (k = 1, 5, 10, 15; % of predictions outside):
+    mi       k=1: +0.0836 → +0.0836 (0.00%)  k=5: +0.4643 → +0.4650 (0.20%)  k=10: +0.5269 → +0.5280 (0.36%)  k=15: +0.6317 → +0.6345 (0.66%)
+    entropy  k=1: +0.4901 → +0.4903 (0.25%)  k=5: +0.5024 → +0.5029 (0.25%)  k=10: +0.5478 → +0.5488 (0.49%)  k=15: +0.5905 → +0.5927 (0.56%)
+    trace    k=1: +0.4901 → +0.4903 (0.25%)  k=5: +0.5911 → +0.5926 (0.40%)  k=10: +0.6238 → +0.6257 (0.47%)  k=15: +0.6583 → +0.6606 (0.59%)
+    facloc   k=1: +0.3162 → +0.3166 (0.31%)  k=5: +0.6132 → +0.6143 (0.44%)  k=10: +0.6592 → +0.6608 (0.41%)  k=15: +0.6892 → +0.6911 (0.55%)
+    pca      k=1: +0.4890 → +0.4893 (0.25%)  k=5: +0.4823 → +0.4829 (0.23%)  k=10: +0.5362 → +0.5387 (0.47%)  k=15: +0.5879 → +0.5911 (0.59%)
+    hub      k=1: +0.3197 → +0.3201 (0.32%)  k=5: +0.4805 → +0.4812 (0.48%)  k=10: +0.5357 → +0.5370 (0.53%)  k=15: +0.5600 → +0.5631 (0.63%)
+    random   k=1: +0.2602 → +0.2602 (0.03%)  k=5: +0.5613 → +0.5629 (0.31%)  k=10: +0.6022 → +0.6043 (0.40%)  k=15: +0.6363 → +0.6386 (0.49%)
+  paired R² differences a − b (k=5; mean [Nadeau–Bengio 95% CI], * = CI excludes 0, win rate):
+    mi − entropy                       -0.0380 [-0.1553, +0.0792]   win  46.0%  (n=50)
+    mi − trace                         -0.1268 [-0.2315, -0.0221] * win  18.0%  (n=50)
+    trace − facloc                     -0.0221 [-0.0931, +0.0489]   win  48.0%  (n=50)
+    mi − random                        -0.0970 [-0.2151, +0.0211]   win  30.0%  (n=50)
+    trace − random                     +0.0298 [-0.0588, +0.1184]   win  62.0%  (n=50)
+    mi_clipped − entropy_clipped       -0.0379 [-0.1553, +0.0795]   win  46.0%  (n=50)
+    mi_clipped − trace_clipped         -0.1276 [-0.2324, -0.0228] * win  18.0%  (n=50)
+    trace_clipped − facloc_clipped     -0.0218 [-0.0934, +0.0499]   win  50.0%  (n=50)
+    mi_clipped − random_clipped        -0.0979 [-0.2160, +0.0202]   win  30.0%  (n=50)
+    trace_clipped − random_clipped     +0.0297 [-0.0592, +0.1186]   win  62.0%  (n=50)
+    mi_clipped − mi                    +0.0006 [-0.0004, +0.0016]   win  38.0%  (n=50)
+    entropy_clipped − entropy          +0.0005 [-0.0005, +0.0015]   win  40.0%  (n=50)
+    trace_clipped − trace              +0.0015 [-0.0017, +0.0046]   win  42.0%  (n=50)
+    facloc_clipped − facloc            +0.0011 [-0.0009, +0.0031]   win  54.0%  (n=50)
+    pca_clipped − pca                  +0.0006 [-0.0004, +0.0015]   win  36.0%  (n=50)
+    hub_clipped − hub                  +0.0008 [-0.0004, +0.0020]   win  40.0%  (n=50)
+    random_clipped − random            +0.0015 [-0.0016, +0.0046]   win  44.0%  (n=50)
+  paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_clip_merged_paired.csv
+  per-split clip arrays saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_clip_merged.npz
+
+benchpress: 83 models × 49 benchmarks, 50 splits (5 × 10-fold), eligible per split 46–47 of 49; valid ranges: percent 46, unbounded 3
+  mi       k=5: outside the valid range  4.39% of 4327 imputations (4.39% on a 0-1 / 0-100 scale) | R² unclipped -0.1297 → clipped -0.0591
+  entropy  k=5: outside the valid range  3.45% of 4489 imputations (3.45% on a 0-1 / 0-100 scale) | R² unclipped -0.4927 → clipped -0.2998
+  trace    k=5: outside the valid range  2.81% of 4734 imputations (2.81% on a 0-1 / 0-100 scale) | R² unclipped -0.1551 → clipped -0.0851
+  facloc   k=5: outside the valid range  3.15% of 5084 imputations (3.15% on a 0-1 / 0-100 scale) | R² unclipped -0.0140 → clipped 0.0528
+  pca      k=5: outside the valid range  2.79% of 4594 imputations (2.79% on a 0-1 / 0-100 scale) | R² unclipped -0.0733 → clipped 0.0599
+  hub      k=5: outside the valid range  3.98% of 5282 imputations (3.98% on a 0-1 / 0-100 scale) | R² unclipped -0.0445 → clipped 0.0323
+  random   k=5: outside the valid range  2.01% of 5318 imputations (2.01% on a 0-1 / 0-100 scale) | R² unclipped 0.1103 → clipped 0.1198
+  mean R² unclipped → clipped (k = 1, 5, 10, 15; % of predictions outside):
+    mi       k=1: -0.0418 → -0.0211 (2.97%)  k=5: -0.1297 → -0.0591 (4.39%)  k=10: -0.2163 → -0.0882 (5.18%)  k=15: -0.0511 → +0.0712 (5.38%)
+    entropy  k=1: -0.1514 → -0.1427 (2.01%)  k=5: -0.4927 → -0.2998 (3.45%)  k=10: -0.1949 → -0.0653 (3.38%)  k=15: -0.0932 → +0.0748 (4.40%)
+    trace    k=1: -0.1514 → -0.1427 (2.01%)  k=5: -0.1551 → -0.0851 (2.81%)  k=10: -0.1230 → -0.0087 (3.94%)  k=15: -0.0463 → +0.0739 (4.42%)
+    facloc   k=1: -0.0420 → -0.0332 (1.85%)  k=5: -0.0140 → +0.0528 (3.15%)  k=10: -0.0169 → +0.0665 (3.85%)  k=15: -0.0269 → +0.0947 (4.96%)
+    pca      k=1: -0.1445 → -0.1362 (1.80%)  k=5: -0.0733 → +0.0599 (2.79%)  k=10: -0.1495 → -0.0488 (3.31%)  k=15: +0.1274 → +0.2259 (3.94%)
+    hub      k=1: -0.0798 → -0.0712 (1.78%)  k=5: -0.0445 → +0.0323 (3.98%)  k=10: -0.2291 → +0.0348 (8.20%)  k=15: -0.3784 → -0.0003 (10.95%)
+    random   k=1: -0.0102 → +0.0282 (1.97%)  k=5: +0.1103 → +0.1198 (2.01%)  k=10: +0.1526 → +0.2071 (4.54%)  k=15: -0.0808 → +0.1236 (5.78%)
+  paired R² differences a − b (k=5; mean [Nadeau–Bengio 95% CI], * = CI excludes 0, win rate):
+    mi − entropy                       +0.3464 [-1.0946, +1.7873]   win  49.0%  (n=49)
+    mi − trace                         +0.0330 [-0.5918, +0.6579]   win  42.9%  (n=49)
+    trace − facloc                     -0.1412 [-0.7805, +0.4982]   win  44.0%  (n=50)
+    mi − random                        -0.2434 [-0.7521, +0.2654]   win  28.6%  (n=49)
+    trace − random                     -0.2654 [-0.8474, +0.3166]   win  32.0%  (n=50)
+    mi_clipped − entropy_clipped       +0.2201 [-0.8031, +1.2432]   win  46.9%  (n=49)
+    mi_clipped − trace_clipped         +0.0321 [-0.4787, +0.5430]   win  42.9%  (n=49)
+    trace_clipped − facloc_clipped     -0.1379 [-0.5678, +0.2920]   win  44.0%  (n=50)
+    mi_clipped − random_clipped        -0.1825 [-0.6064, +0.2414]   win  28.6%  (n=49)
+    trace_clipped − random_clipped     -0.2050 [-0.6396, +0.2296]   win  30.0%  (n=50)
+    mi_clipped − mi                    +0.0706 [-0.0804, +0.2215]   win  79.6%  (n=49)
+    entropy_clipped − entropy          +0.1930 [-0.2955, +0.6815]   win  64.0%  (n=50)
+    trace_clipped − trace              +0.0700 [-0.1263, +0.2663]   win  66.0%  (n=50)
+    facloc_clipped − facloc            +0.0667 [-0.1075, +0.2409]   win  80.0%  (n=50)
+    pca_clipped − pca                  +0.1333 [-0.1904, +0.4569]   win  67.3%  (n=49)
+    hub_clipped − hub                  +0.0768 [-0.1411, +0.2947]   win  94.0%  (n=50)
+    random_clipped − random            +0.0095 [-0.0072, +0.0262]   win  70.0%  (n=50)
+  paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_clip_benchpress_paired.csv
+  per-split clip arrays saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_clip_benchpress.npz
+
+[clip] results written to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks.json
+
+======================================================================
+CHECK 2: benchmark contamination (MMLU)
+======================================================================
+5452 models × 57 benchmarks, 100.0% observed; estimator: pairwise (verified by recomputation)
+contaminated benchmark: miscellaneous (top MI pick; mean |corr| = 0.906, R² given the rest = 0.993)
+
+  10% of models +0.10 on miscellaneous (9/545 capped at 1; mean effective +0.100):
+    mean |corr| of miscellaneous: 0.906 → 0.894
+    MI step-0 gain:        2.498 (rank 1) → 1.785 (rank 29);  R² given the rest 0.993 → 0.972
+    rank in MI order:          1 → 34   (top-5 Jaccard 0.67, top-15 0.58)
+    rank in entropy order:     57 → 32   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in trace order:       57 → 38   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in hub order:         20 → 32   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in facloc order:      3 → 38   (top-5 Jaccard 0.67, top-15 0.88)
+
+  10% of models +0.20 on miscellaneous (271/545 capped at 1; mean effective +0.184):
+    mean |corr| of miscellaneous: 0.906 → 0.868
+    MI step-0 gain:        2.498 (rank 1) → 1.272 (rank 44);  R² given the rest 0.993 → 0.921
+    rank in MI order:          1 → 28   (top-5 Jaccard 0.67, top-15 0.58)
+    rank in entropy order:     57 → 15   (top-5 Jaccard 1.00, top-15 0.88)
+    rank in trace order:       57 → 19   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in hub order:         20 → 44   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in facloc order:      3 → 22   (top-5 Jaccard 0.67, top-15 0.88)
+
+  30% of models +0.10 on miscellaneous (57/1635 capped at 1; mean effective +0.099):
+    mean |corr| of miscellaneous: 0.906 → 0.882
+    MI step-0 gain:        2.498 (rank 1) → 1.443 (rank 42);  R² given the rest 0.993 → 0.944
+    rank in MI order:          1 → 28   (top-5 Jaccard 0.67, top-15 0.58)
+    rank in entropy order:     57 → 18   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in trace order:       57 → 23   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in hub order:         20 → 41   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in facloc order:      3 → 27   (top-5 Jaccard 0.67, top-15 0.88)
+
+  30% of models +0.20 on miscellaneous (892/1635 capped at 1; mean effective +0.182):
+    mean |corr| of miscellaneous: 0.906 → 0.826
+    MI step-0 gain:        2.498 (rank 1) → 0.913 (rank 53);  R² given the rest 0.993 → 0.839
+    rank in MI order:          1 → 27   (top-5 Jaccard 0.67, top-15 0.58)
+    rank in entropy order:     57 → 10   (top-5 Jaccard 1.00, top-15 0.88)
+    rank in trace order:       57 → 13   (top-5 Jaccard 1.00, top-15 0.88)
+    rank in hub order:         20 → 47   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in facloc order:      3 → 14   (top-5 Jaccard 0.67, top-15 0.88)
+
+  (ranks are positions in the full greedy order over the 57 eligible of 57 benchmarks; > 15 = not among the top 15)
+
+  rank of miscellaneous over 20 contaminated subsets (before → median [min–max] after; % of draws promoted / demoted / in the top 5 / top 15):
+    10% +0.10 (545–545 contaminated scores):
+      mi            1 →  33.0 [31–35]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      entropy      57 →  32.0 [32–36]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15   0.0%
+      trace        57 →  38.0 [33–38]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15   0.0%
+      hub          20 →  30.0 [28–32]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      facloc        3 →  38.0 [37–40]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+    10% +0.20 (545–545 contaminated scores):
+      mi            1 →  28.0 [28–30]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      entropy      57 →  15.0 [15–15]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15 100.0%
+      trace        57 →  19.0 [19–20]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15   0.0%
+      hub          20 →  44.0 [43–44]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      facloc        3 →  22.0 [22–22]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+    30% +0.10 (1635–1635 contaminated scores):
+      mi            1 →  28.0 [28–31]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      entropy      57 →  17.0 [17–18]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15   0.0%
+      trace        57 →  23.0 [23–24]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15   0.0%
+      hub          20 →  41.0 [41–41]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      facloc        3 →  26.5 [24–28]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+    30% +0.20 (1635–1635 contaminated scores):
+      mi            1 →  27.0 [27–28]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      entropy      57 →  10.0 [9–10]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15 100.0%
+      trace        57 →  13.0 [13–13]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15 100.0%
+      hub          20 →  47.0 [47–47]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      facloc        3 →  14.0 [14–15]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15 100.0%
+
+[contam] results written to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks.json
+
+======================================================================
+CHECK 2: benchmark contamination (MTEB)
+======================================================================
+263 models × 56 benchmarks, 77.3% observed; estimator: em (verified by recomputation)
+contaminated benchmark: BiorxivClusteringS2S (top MI pick; mean |corr| = 0.817, R² given the rest = 0.996)
+
+  10% of models +0.10 on BiorxivClusteringS2S (0/19 capped at 1; mean effective +0.100):
+    mean |corr| of BiorxivClusteringS2S: 0.817 → 0.789
+    MI step-0 gain:        2.801 (rank 1) → 1.426 (rank 50);  R² given the rest 0.996 → 0.942
+    rank in MI order:          1 → 27   (top-5 Jaccard 0.25, top-15 0.50)
+    rank in entropy order:     56 → 17   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in trace order:       56 → 27   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in hub order:         4 → 13   (top-5 Jaccard 0.67, top-15 1.00)
+    rank in facloc order:      11 → 35   (top-5 Jaccard 1.00, top-15 0.88)
+
+  10% of models +0.20 on BiorxivClusteringS2S (0/19 capped at 1; mean effective +0.200):
+    mean |corr| of BiorxivClusteringS2S: 0.817 → 0.717
+    MI step-0 gain:        2.801 (rank 1) → 0.889 (rank 55);  R² given the rest 0.996 → 0.831
+    rank in MI order:          1 → 28   (top-5 Jaccard 0.25, top-15 0.50)
+    rank in entropy order:     56 → 8   (top-5 Jaccard 1.00, top-15 0.88)
+    rank in trace order:       56 → 14   (top-5 Jaccard 1.00, top-15 0.88)
+    rank in hub order:         4 → 39   (top-5 Jaccard 0.67, top-15 0.88)
+    rank in facloc order:      11 → 11   (top-5 Jaccard 1.00, top-15 1.00)
+
+  30% of models +0.10 on BiorxivClusteringS2S (0/58 capped at 1; mean effective +0.100):
+    mean |corr| of BiorxivClusteringS2S: 0.817 → 0.757
+    MI step-0 gain:        2.801 (rank 1) → 1.065 (rank 54);  R² given the rest 0.996 → 0.881
+    rank in MI order:          1 → 26   (top-5 Jaccard 0.25, top-15 0.50)
+    rank in entropy order:     56 → 12   (top-5 Jaccard 1.00, top-15 0.88)
+    rank in trace order:       56 → 20   (top-5 Jaccard 1.00, top-15 1.00)
+    rank in hub order:         4 → 21   (top-5 Jaccard 0.67, top-15 0.88)
+    rank in facloc order:      11 → 19   (top-5 Jaccard 1.00, top-15 0.88)
+
+  30% of models +0.20 on BiorxivClusteringS2S (0/58 capped at 1; mean effective +0.200):
+    mean |corr| of BiorxivClusteringS2S: 0.817 → 0.632
+    MI step-0 gain:        2.801 (rank 1) → 0.582 (rank 55);  R² given the rest 0.996 → 0.688
+    rank in MI order:          1 → 27   (top-5 Jaccard 0.25, top-15 0.50)
+    rank in entropy order:     56 → 5   (top-5 Jaccard 0.67, top-15 0.88)
+    rank in trace order:       56 → 10   (top-5 Jaccard 1.00, top-15 0.76)
+    rank in hub order:         4 → 52   (top-5 Jaccard 0.67, top-15 0.88)
+    rank in facloc order:      11 → 10   (top-5 Jaccard 1.00, top-15 1.00)
+
+  (ranks are positions in the full greedy order over the 56 eligible of 56 benchmarks; > 15 = not among the top 15)
+
+  rank of BiorxivClusteringS2S over 20 contaminated subsets (before → median [min–max] after; % of draws promoted / demoted / in the top 5 / top 15):
+    10% +0.10 (15–23 contaminated scores):
+      mi            1 →  26.0 [21–28]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      entropy      56 →  18.5 [16–23]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15   0.0%
+      trace        56 →  27.0 [26–33]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15   0.0%
+      hub           4 →  16.0 [11–20]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15  50.0%
+      facloc       11 →  35.0 [32–45]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+    10% +0.20 (15–23 contaminated scores):
+      mi            1 →  26.0 [23–28]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      entropy      56 →   8.0 [6–10]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15 100.0%
+      trace        56 →  14.0 [10–17]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15  90.0%
+      hub           4 →  42.0 [30–50]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      facloc       11 →  11.0 [10–16]   promoted   5.0%  demoted  15.0%  top-5   0.0%  top-15  95.0%
+    30% +0.10 (45–59 contaminated scores):
+      mi            1 →  26.0 [23–31]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      entropy      56 →  12.0 [10–13]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15 100.0%
+      trace        56 →  19.0 [15–22]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15   5.0%
+      hub           4 →  27.0 [19–38]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      facloc       11 →  20.0 [16–25]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+    30% +0.20 (45–59 contaminated scores):
+      mi            1 →  27.0 [26–32]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      entropy      56 →   5.0 [4–6]   promoted 100.0%  demoted   0.0%  top-5  90.0%  top-15 100.0%
+      trace        56 →  10.0 [10–10]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15 100.0%
+      hub           4 →  53.5 [49–55]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      facloc       11 →  10.0 [9–10]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15 100.0%
+
+[contam_mteb] results written to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks.json
+
+======================================================================
+CHECK 2: benchmark contamination (Merged)
+======================================================================
+118 models × 114 benchmarks, 31.2% observed; estimator: em (verified by recomputation)
+contaminated benchmark: arena_hard/score (MI rank 4, top MI pick observed for >= 30 models; mt_bench/math has 3; mean |corr| = 0.432, R² given the rest = 0.999)
+  skipped higher MI picks (observed for < 30 models): mt_bench/math (rank 1, 3), mt_bench/writing (rank 2, 3), helm/NarrativeQA (rank 3, 17)
+
+  10% of models +0.10 on arena_hard/score (0/5 capped at 100; mean effective +0.100):
+    mean |corr| of arena_hard/score: 0.432 → 0.419
+    MI step-0 gain:        3.444 (rank 15) → 3.452 (rank 15);  R² given the rest 0.999 → 0.999
+    rank in MI order:          4 → 4   (top-5 Jaccard 1.00, top-15 0.88)
+    rank in entropy order:     103 → 103   (top-5 Jaccard 0.25, top-15 0.67)
+    rank in trace order:       19 → 18   (top-5 Jaccard 1.00, top-15 0.88)
+    rank in hub order:         84 → 87   (top-5 Jaccard 0.43, top-15 0.88)
+    rank in facloc order:      49 → 47   (top-5 Jaccard 1.00, top-15 0.88)
+
+  10% of models +0.20 on arena_hard/score (0/5 capped at 100; mean effective +0.200):
+    mean |corr| of arena_hard/score: 0.432 → 0.400
+    MI step-0 gain:        3.444 (rank 15) → 3.435 (rank 16);  R² given the rest 0.999 → 0.999
+    rank in MI order:          4 → 4   (top-5 Jaccard 1.00, top-15 0.76)
+    rank in entropy order:     103 → 103   (top-5 Jaccard 0.25, top-15 0.67)
+    rank in trace order:       19 → 63   (top-5 Jaccard 0.43, top-15 0.36)
+    rank in hub order:         84 → 90   (top-5 Jaccard 0.67, top-15 0.76)
+    rank in facloc order:      49 → 44   (top-5 Jaccard 1.00, top-15 0.67)
+
+  30% of models +0.10 on arena_hard/score (0/16 capped at 100; mean effective +0.100):
+    mean |corr| of arena_hard/score: 0.432 → 0.409
+    MI step-0 gain:        3.444 (rank 15) → 3.427 (rank 16);  R² given the rest 0.999 → 0.999
+    rank in MI order:          4 → 4   (top-5 Jaccard 1.00, top-15 0.88)
+    rank in entropy order:     103 → 102   (top-5 Jaccard 0.67, top-15 0.58)
+    rank in trace order:       19 → 39   (top-5 Jaccard 1.00, top-15 0.76)
+    rank in hub order:         84 → 88   (top-5 Jaccard 0.43, top-15 0.88)
+    rank in facloc order:      49 → 43   (top-5 Jaccard 1.00, top-15 0.76)
+
+  30% of models +0.20 on arena_hard/score (0/16 capped at 100; mean effective +0.200):
+    mean |corr| of arena_hard/score: 0.432 → 0.399
+    MI step-0 gain:        3.444 (rank 15) → 3.280 (rank 32);  R² given the rest 0.999 → 0.999
+    rank in MI order:          4 → 18   (top-5 Jaccard 0.43, top-15 0.67)
+    rank in entropy order:     103 → 7   (top-5 Jaccard 0.11, top-15 0.25)
+    rank in trace order:       19 → 26   (top-5 Jaccard 0.25, top-15 0.20)
+    rank in hub order:         84 → 91   (top-5 Jaccard 0.67, top-15 0.76)
+    rank in facloc order:      49 → 35   (top-5 Jaccard 0.43, top-15 0.36)
+
+  (ranks are positions in the full greedy order over the 114 eligible of 114 benchmarks; > 15 = not among the top 15)
+
+  rank of arena_hard/score over 20 contaminated subsets (before → median [min–max] after; % of draws promoted / demoted / in the top 5 / top 15):
+    10% +0.10 (2–7 contaminated scores):
+      mi            4 →   8.5 [3–112]   promoted  20.0%  demoted  50.0%  top-5  50.0%  top-15  60.0%
+      entropy     103 → 103.0 [95–104]   promoted  35.0%  demoted  20.0%  top-5   0.0%  top-15   0.0%
+      trace        19 → 102.0 [15–106]   promoted  10.0%  demoted  85.0%  top-5   0.0%  top-15   5.0%
+      hub          84 →  86.0 [78–90]   promoted  15.0%  demoted  65.0%  top-5   0.0%  top-15   0.0%
+      facloc       49 →  46.0 [42–56]   promoted  70.0%  demoted  25.0%  top-5   0.0%  top-15   0.0%
+    10% +0.20 (2–7 contaminated scores):
+      mi            4 →  20.5 [3–112]   promoted  10.0%  demoted  70.0%  top-5  35.0%  top-15  45.0%
+      entropy     103 → 102.0 [21–104]   promoted  60.0%  demoted   5.0%  top-5   0.0%  top-15   0.0%
+      trace        19 → 102.5 [24–106]   promoted   0.0%  demoted 100.0%  top-5   0.0%  top-15   0.0%
+      hub          84 →  87.5 [78–92]   promoted  20.0%  demoted  75.0%  top-5   0.0%  top-15   0.0%
+      facloc       49 →  43.5 [31–61]   promoted  80.0%  demoted  20.0%  top-5   0.0%  top-15   0.0%
+    30% +0.10 (13–19 contaminated scores):
+      mi            4 →  20.5 [3–112]   promoted  10.0%  demoted  60.0%  top-5  40.0%  top-15  50.0%
+      entropy     103 → 102.0 [33–104]   promoted  70.0%  demoted  10.0%  top-5   0.0%  top-15   0.0%
+      trace        19 →  79.5 [18–106]   promoted  10.0%  demoted  90.0%  top-5   0.0%  top-15   0.0%
+      hub          84 →  86.0 [78–89]   promoted  20.0%  demoted  65.0%  top-5   0.0%  top-15   0.0%
+      facloc       49 →  45.0 [40–56]   promoted  75.0%  demoted  15.0%  top-5   0.0%  top-15   0.0%
+    30% +0.20 (13–19 contaminated scores):
+      mi            4 →  23.5 [4–112]   promoted   0.0%  demoted  95.0%  top-5   5.0%  top-15  25.0%
+      entropy     103 →  60.5 [6–102]   promoted 100.0%  demoted   0.0%  top-5   0.0%  top-15  10.0%
+      trace        19 →  43.5 [18–104]   promoted   5.0%  demoted  95.0%  top-5   0.0%  top-15   0.0%
+      hub          84 →  89.5 [73–94]   promoted  20.0%  demoted  75.0%  top-5   0.0%  top-15   0.0%
+      facloc       49 →  37.5 [25–55]   promoted  95.0%  demoted   5.0%  top-5   0.0%  top-15   0.0%
+
+[contam_merged] results written to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks.json
+
+======================================================================
+CHECK 3: MI gain positivity (k≤15) and Random Greedy (Buchbinder et al. 2014)
+======================================================================
+
+mmlu: 50 splits (5 × 10-fold), eligible per split 57–57 of 57 | 750 greedy MI steps | min gain +0.1001 | non-positive-gain steps: 0/750
+   k | det R²         RG R²          | det MI   RG MI    RG/det | RG |S| mean (min) | ties det / RG
+   5 | 0.906 ± 0.005  0.902 ± 0.008  |   5.224    4.906  0.939  |  5.00 (5)         |  0 /  0
+  10 | 0.911 ± 0.005  0.912 ± 0.006  |   6.680    6.233  0.933  | 10.00 (10)         |  0 /  0
+  15 | 0.927 ± 0.004  0.918 ± 0.007  |   7.447    6.996  0.939  | 15.00 (15)         |  0 /  0
+  (deterministic: 50 splits; Random Greedy: 5 seeds × each split with ≥ k eligible benchmarks, run separately for each k; ties = splits / runs in which the lowest index decided a pick)
+  paired R² differences deterministic − Random Greedy (seed mean per split; mean [Nadeau–Bengio 95% CI], * = CI excludes 0, win rate):
+    k=5                                +0.0041 [+0.0022, +0.0060] * win  94.0%  (n=50)
+    k=10                               -0.0012 [-0.0029, +0.0006]   win  40.0%  (n=50)
+    k=15                               +0.0095 [+0.0069, +0.0122] * win  98.0%  (n=50)
+  paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_mono_mmlu_paired.csv
+
+mteb: 50 splits (5 × 10-fold), eligible per split 56–56 of 56 | 750 greedy MI steps | min gain +0.4242 | non-positive-gain steps: 0/750
+   k | det R²         RG R²          | det MI   RG MI    RG/det | RG |S| mean (min) | ties det / RG
+   5 | 0.767 ± 0.082  0.756 ± 0.130  |  10.200    9.841  0.965  |  5.00 (5)         |  0 /  0
+  10 | 0.821 ± 0.075  0.800 ± 0.132  |  15.950   14.870  0.932  | 10.00 (10)         |  0 /  0
+  15 | 0.836 ± 0.074  0.820 ± 0.104  |  18.883   17.718  0.938  | 15.00 (15)         |  0 /  0
+  (deterministic: 50 splits; Random Greedy: 5 seeds × each split with ≥ k eligible benchmarks, run separately for each k; ties = splits / runs in which the lowest index decided a pick)
+  paired R² differences deterministic − Random Greedy (seed mean per split; mean [Nadeau–Bengio 95% CI], * = CI excludes 0, win rate):
+    k=5                                +0.0109 [-0.0220, +0.0439]   win  46.0%  (n=50)
+    k=10                               +0.0203 [-0.0175, +0.0581]   win  76.0%  (n=50)
+    k=15                               +0.0166 [-0.0110, +0.0442]   win  86.0%  (n=50)
+  paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_mono_mteb_paired.csv
+
+merged: 50 splits (5 × 10-fold), eligible per split 106–114 of 114 | 750 greedy MI steps | min gain +0.3956 | non-positive-gain steps: 0/750
+   k | det R²         RG R²          | det MI   RG MI    RG/det | RG |S| mean (min) | ties det / RG
+   5 | 0.465 ± 0.206  0.511 ± 0.199  |   5.859    5.623  0.960  |  5.00 (5)         |  0 /  0
+  10 | 0.528 ± 0.166  0.603 ± 0.143  |   9.578    9.101  0.950  | 10.00 (10)         |  0 /  0
+  15 | 0.635 ± 0.135  0.644 ± 0.133  |  12.255   11.594  0.946  | 15.00 (15)         |  0 /  0
+  (deterministic: 50 splits; Random Greedy: 5 seeds × each split with ≥ k eligible benchmarks, run separately for each k; ties = splits / runs in which the lowest index decided a pick)
+  paired R² differences deterministic − Random Greedy (seed mean per split; mean [Nadeau–Bengio 95% CI], * = CI excludes 0, win rate):
+    k=5                                -0.0461 [-0.1295, +0.0374]   win  38.0%  (n=50)
+    k=10                               -0.0752 [-0.1627, +0.0124]   win  28.0%  (n=50)
+    k=15                               -0.0097 [-0.0875, +0.0681]   win  46.0%  (n=50)
+  paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_mono_merged_paired.csv
+
+benchpress: 50 splits (5 × 10-fold), eligible per split 46–47 of 49 | 750 greedy MI steps | min gain +1.3637 | non-positive-gain steps: 0/750
+   k | det R²         RG R²          | det MI   RG MI    RG/det | RG |S| mean (min) | ties det / RG
+   5 | -0.059 ± 0.451  -0.127 ± 0.712  |  17.267   16.936  0.981  |  5.00 (5)         |  0 /  0
+  10 | -0.088 ± 0.647  -0.075 ± 0.666  |  30.884   30.071  0.974  | 10.00 (10)         |  0 /  0
+  15 | 0.071 ± 0.574  0.059 ± 0.635  |  41.107   39.508  0.961  | 15.00 (15)         |  0 /  0
+  (deterministic: 50 splits; Random Greedy: 5 seeds × each split with ≥ k eligible benchmarks, run separately for each k; ties = splits / runs in which the lowest index decided a pick)
+  paired R² differences deterministic − Random Greedy (seed mean per split; mean [Nadeau–Bengio 95% CI], * = CI excludes 0, win rate):
+    k=5                                +0.0642 [-0.3602, +0.4886]   win  38.8%  (n=49)
+    k=10                               -0.0127 [-0.4385, +0.4131]   win  62.0%  (n=50)
+    k=15                               +0.0121 [-0.3959, +0.4202]   win  60.0%  (n=50)
+  paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks_mono_benchpress_paired.csv
+
+[mono] results written to ~/benchselect-runs/canonical-20261020/out/logs/reviewer_checks.json
+
+# finished 2026-10-20T02:55:53Z  exit=0  status=ok

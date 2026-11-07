@@ -1,0 +1,305 @@
+# job      cost_fixed_mmlu
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_cost_budget.py --dataset mmlu --counts ~/benchselect-runs/canonical-20261020/tree/data/mmlu_test_counts.json --budgets 0.01 0.02 0.03 0.05 0.08 0.12 0.20 --repeats 5 --fixed-cost
+# started  2026-10-20T02:40:04Z on 4090-1
+
+MMLU: 5452 models × 57 tasks, variable cost 14042 (median 173, range 100–1534); fixed overhead per benchmark c0 = ratio × median, ratios [0.0, 0.1, 0.5, 1.0, 2.0]
+  overhead 0 x median: c0 = 0 per benchmark, suite 14042, budgets [140.42, 280.84, 421.26, 702.1, 1123.36, 1685.04, 2808.4]
+  overhead 0.1 x median: c0 = 17.3 per benchmark, suite 15028.1, budgets [150.281, 300.562, 450.843, 751.405, 1202.25, 1803.37, 3005.62]
+  overhead 0.5 x median: c0 = 86.5 per benchmark, suite 18972.5, budgets [189.725, 379.45, 569.175, 948.625, 1517.8, 2276.7, 3794.5]
+  overhead 1 x median: c0 = 173 per benchmark, suite 23903, budgets [239.03, 478.06, 717.09, 1195.15, 1912.24, 2868.36, 4780.6]
+  overhead 2 x median: c0 = 346 per benchmark, suite 33764, budgets [337.64, 675.28, 1012.92, 1688.2, 2701.12, 4051.68, 6752.8]
+5 × 10-fold CV = 50 matched splits, 10% holdout, selectable: benchmarks with >= 3 training models
+  rep 0 fold 0 done (3.1s), 57/57 eligible
+  rep 0 fold 1 done (3.1s), 57/57 eligible
+  rep 0 fold 2 done (3.1s), 57/57 eligible
+  rep 0 fold 3 done (3.3s), 57/57 eligible
+  rep 0 fold 4 done (3.5s), 57/57 eligible
+  rep 0 fold 5 done (3.4s), 57/57 eligible
+  rep 0 fold 6 done (3.6s), 57/57 eligible
+  rep 0 fold 7 done (3.4s), 57/57 eligible
+  rep 0 fold 8 done (3.5s), 57/57 eligible
+  rep 0 fold 9 done (3.5s), 57/57 eligible
+  rep 1 fold 0 done (3.5s), 57/57 eligible
+  rep 1 fold 1 done (3.5s), 57/57 eligible
+  rep 1 fold 2 done (3.6s), 57/57 eligible
+  rep 1 fold 3 done (3.6s), 57/57 eligible
+  rep 1 fold 4 done (3.7s), 57/57 eligible
+  rep 1 fold 5 done (3.7s), 57/57 eligible
+  rep 1 fold 6 done (3.8s), 57/57 eligible
+  rep 1 fold 7 done (3.7s), 57/57 eligible
+  rep 1 fold 8 done (3.6s), 57/57 eligible
+  rep 1 fold 9 done (3.6s), 57/57 eligible
+  rep 2 fold 0 done (3.6s), 57/57 eligible
+  rep 2 fold 1 done (3.5s), 57/57 eligible
+  rep 2 fold 2 done (3.5s), 57/57 eligible
+  rep 2 fold 3 done (3.6s), 57/57 eligible
+  rep 2 fold 4 done (3.6s), 57/57 eligible
+  rep 2 fold 5 done (3.6s), 57/57 eligible
+  rep 2 fold 6 done (3.5s), 57/57 eligible
+  rep 2 fold 7 done (3.6s), 57/57 eligible
+  rep 2 fold 8 done (3.6s), 57/57 eligible
+  rep 2 fold 9 done (3.6s), 57/57 eligible
+  rep 3 fold 0 done (5.1s), 57/57 eligible
+  rep 3 fold 1 done (6.9s), 57/57 eligible
+  rep 3 fold 2 done (6.8s), 57/57 eligible
+  rep 3 fold 3 done (7.2s), 57/57 eligible
+  rep 3 fold 4 done (7.1s), 57/57 eligible
+  rep 3 fold 5 done (6.8s), 57/57 eligible
+  rep 3 fold 6 done (6.8s), 57/57 eligible
+  rep 3 fold 7 done (6.5s), 57/57 eligible
+  rep 3 fold 8 done (4.9s), 57/57 eligible
+  rep 3 fold 9 done (3.6s), 57/57 eligible
+  rep 4 fold 0 done (3.4s), 57/57 eligible
+  rep 4 fold 1 done (3.9s), 57/57 eligible
+  rep 4 fold 2 done (6.7s), 57/57 eligible
+  rep 4 fold 3 done (6.9s), 57/57 eligible
+  rep 4 fold 4 done (6.8s), 57/57 eligible
+  rep 4 fold 5 done (5.0s), 57/57 eligible
+  rep 4 fold 6 done (3.4s), 57/57 eligible
+  rep 4 fold 7 done (3.5s), 57/57 eligible
+  rep 4 fold 8 done (3.5s), 57/57 eligible
+  rep 4 fold 9 done (3.5s), 57/57 eligible
+
+== MMLU, fixed overhead c0 = 0 × median = 0 per benchmark (suite 14042): R² / full-suite R² / #selected vs budget (means over 50 of 50 splits) ==
+method                                        1%                2%                3%                5%                8%               12%               20%
+Knapsack entropy (B.3)           0.832/0.834/1.0   0.853/0.859/2.0   0.877/0.886/4.0   0.903/0.915/7.0  0.929/0.943/11.0  0.940/0.957/16.0  0.952/0.972/24.0
+Knapsack MI (heuristic)          0.809/0.812/1.0   0.869/0.873/2.0   0.897/0.902/3.0   0.902/0.913/6.0   0.921/0.934/9.2  0.930/0.946/13.0  0.940/0.962/21.0
+Cost-blind entropy               0.373/0.384/1.0   0.512/0.530/2.0   0.713/0.733/4.0   0.860/0.862/1.0   0.914/0.923/6.0   0.927/0.939/9.0  0.939/0.951/11.0
+Cost-blind MI                    0.537/0.545/1.0   0.799/0.803/1.0   0.681/0.687/1.0   0.860/0.862/1.0   0.869/0.876/3.0   0.883/0.889/3.0   0.906/0.916/6.0
+Cheapest first                   0.832/0.834/1.0   0.857/0.862/2.0   0.896/0.903/4.0   0.920/0.930/7.0  0.930/0.944/11.0  0.939/0.956/16.0  0.950/0.971/24.0
+Random                           0.707/0.712/1.0   0.819/0.824/1.7   0.853/0.859/2.5   0.877/0.885/3.9   0.888/0.898/5.2   0.899/0.912/7.4  0.913/0.930/11.5
+Knapsack trace                   0.836/0.839/1.0   0.857/0.862/2.0   0.896/0.903/4.0   0.921/0.931/7.0  0.938/0.949/10.0  0.948/0.961/14.0  0.960/0.976/22.0
+Cost-blind trace                 0.373/0.384/1.0   0.799/0.802/1.0   0.681/0.687/1.0   0.860/0.862/1.0   0.897/0.902/3.0   0.927/0.935/6.0   0.942/0.951/9.0
+Knapsack facility location       0.836/0.839/1.0   0.852/0.855/1.0   0.889/0.895/3.0   0.915/0.924/6.0  0.934/0.946/10.0  0.946/0.959/14.3  0.958/0.973/20.0
+Cost-blind facility location     0.373/0.384/1.0   0.512/0.530/2.0   0.681/0.687/1.0   0.860/0.862/1.0   0.897/0.902/3.0   0.921/0.931/7.0  0.946/0.957/11.0
+paired r2 differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random              +0.125*     +0.034      +0.024*     +0.026*     +0.042*     +0.041*     +0.039*
+  knap_mi − random                   +0.102      +0.050*     +0.044*     +0.025*     +0.034*     +0.031*     +0.026*
+  knap_trace − random                +0.129*     +0.038      +0.043*     +0.044*     +0.050*     +0.049*     +0.047*
+  card_trace − random                -0.333*     -0.020      -0.172*     -0.017*     +0.009      +0.028*     +0.029*
+  cheap_first − random               +0.125*     +0.038      +0.043*     +0.043*     +0.043*     +0.040*     +0.037*
+  knap_trace − cheap_first           +0.004*     +0.000      +0.000      +0.001*     +0.007*     +0.009*     +0.010*
+  knap_entropy − card_entropy        +0.458*     +0.341*     +0.164*     +0.043*     +0.015*     +0.013*     +0.013*
+  knap_mi − card_mi                  +0.272*     +0.069*     +0.215*     +0.043*     +0.052*     +0.047*     +0.033*
+  knap_trace − card_trace            +0.463*     +0.058*     +0.214*     +0.061*     +0.041*     +0.021*     +0.018*
+  knap_mi − knap_trace               -0.027*     +0.012*     +0.001      -0.019*     -0.016*     -0.018*     -0.021*
+  knap_facloc − random               +0.129*     +0.033      +0.036*     +0.038*     +0.046*     +0.047*     +0.045*
+  card_facloc − random               -0.333*     -0.307*     -0.172*     -0.017*     +0.009      +0.022*     +0.033*
+  cheap_first − knap_facloc          -0.004*     +0.004*     +0.006*     +0.005*     -0.004*     -0.007*     -0.008*
+  knap_facloc − card_facloc          +0.463*     +0.340*     +0.208*     +0.055*     +0.037*     +0.025*     +0.012*
+  knap_mi − knap_facloc              -0.027*     +0.017*     +0.007*     -0.012*     -0.013*     -0.016*     -0.018*
+  knap_trace − knap_facloc           +0.000      +0.004*     +0.006*     +0.006*     +0.004*     +0.002*     +0.002*
+paired r2_suite differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random              +0.123*     +0.034      +0.027*     +0.029*     +0.045*     +0.046*     +0.042*
+  knap_mi − random                   +0.100      +0.049*     +0.043*     +0.027*     +0.036*     +0.035*     +0.031*
+  knap_trace − random                +0.127*     +0.037      +0.044*     +0.046*     +0.051*     +0.049*     +0.045*
+  card_trace − random                -0.327*     -0.022      -0.172*     -0.023*     +0.004      +0.023*     +0.021*
+  cheap_first − random               +0.123*     +0.037      +0.044*     +0.045*     +0.046*     +0.045*     +0.041*
+  knap_trace − cheap_first           +0.004*     +0.000      +0.000      +0.001*     +0.005*     +0.005*     +0.005*
+  knap_entropy − card_entropy        +0.450*     +0.329*     +0.153*     +0.053*     +0.020*     +0.018*     +0.022*
+  knap_mi − card_mi                  +0.267*     +0.070*     +0.215*     +0.050*     +0.058*     +0.057*     +0.046*
+  knap_trace − card_trace            +0.455*     +0.059*     +0.216*     +0.069*     +0.046*     +0.026*     +0.024*
+  knap_mi − knap_trace               -0.027*     +0.012*     -0.001      -0.018*     -0.015*     -0.015*     -0.014*
+  knap_facloc − random               +0.127*     +0.031      +0.036*     +0.039*     +0.048*     +0.048*     +0.042*
+  card_facloc − random               -0.327*     -0.295*     -0.172*     -0.023*     +0.004      +0.019*     +0.026*
+  cheap_first − knap_facloc          -0.004*     +0.007*     +0.008*     +0.006*     -0.002*     -0.003*     -0.002*
+  knap_facloc − card_facloc          +0.455*     +0.325*     +0.208*     +0.062*     +0.044*     +0.029*     +0.016*
+  knap_mi − knap_facloc              -0.027*     +0.018*     +0.007*     -0.011*     -0.012*     -0.013*     -0.011*
+  knap_trace − knap_facloc           +0.000      +0.007*     +0.008*     +0.007*     +0.003*     +0.002*     +0.003*
+
+== MMLU, fixed overhead c0 = 0.1 × median = 17.3 per benchmark (suite 15028.1): R² / full-suite R² / #selected vs budget (means over 50 of 50 splits) ==
+method                                        1%                2%                3%                5%                8%               12%               20%
+Knapsack entropy (B.3)           0.832/0.834/1.0   0.853/0.859/2.0   0.869/0.876/3.0   0.898/0.909/6.0  0.928/0.941/10.0  0.938/0.954/14.0  0.950/0.970/23.0
+Knapsack MI (heuristic)          0.809/0.812/1.0   0.869/0.873/2.0   0.897/0.902/3.0   0.903/0.912/5.4   0.914/0.926/8.1  0.929/0.944/12.0  0.938/0.960/19.9
+Cost-blind entropy               0.373/0.384/1.0   0.512/0.530/2.0   0.557/0.581/3.0   0.881/0.885/2.0   0.910/0.918/5.0   0.927/0.939/9.0  0.939/0.951/11.0
+Cost-blind MI                    0.537/0.545/1.0   0.799/0.803/1.0   0.681/0.687/1.0   0.881/0.885/2.0   0.892/0.896/2.0   0.903/0.910/4.0   0.913/0.924/7.0
+Cheapest first                   0.832/0.834/1.0   0.857/0.862/2.0   0.881/0.887/3.0   0.914/0.923/6.0  0.925/0.938/10.0  0.937/0.953/15.0  0.950/0.970/23.0
+Random                           0.698/0.703/1.0   0.814/0.820/1.6   0.848/0.854/2.3   0.875/0.883/3.7   0.886/0.896/5.1   0.900/0.912/7.3  0.913/0.930/11.4
+Knapsack trace                   0.836/0.839/1.0   0.857/0.862/2.0   0.881/0.887/3.0   0.919/0.927/6.0   0.935/0.945/9.0  0.947/0.959/13.0  0.959/0.974/21.0
+Cost-blind trace                 0.373/0.384/1.0   0.799/0.802/1.0   0.681/0.687/1.0   0.881/0.885/2.0   0.897/0.902/3.0   0.927/0.935/6.0   0.942/0.951/9.0
+Knapsack facility location       0.836/0.839/1.0   0.852/0.855/1.0   0.889/0.895/3.0   0.908/0.916/5.0   0.931/0.942/9.0  0.944/0.957/13.0  0.957/0.972/20.0
+Cost-blind facility location     0.373/0.384/1.0   0.512/0.530/2.0   0.681/0.687/1.0   0.881/0.885/2.0   0.897/0.902/3.0   0.921/0.931/7.0  0.945/0.955/10.5
+paired r2 differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random              +0.133*     +0.039      +0.022      +0.024*     +0.042*     +0.039*     +0.037*
+  knap_mi − random                   +0.111      +0.054*     +0.049*     +0.028*     +0.028*     +0.029*     +0.025*
+  knap_trace − random                +0.138*     +0.042      +0.033*     +0.044*     +0.049*     +0.047*     +0.046*
+  card_trace − random                -0.325*     -0.016      -0.166*     +0.006      +0.011      +0.027*     +0.029*
+  cheap_first − random               +0.133*     +0.042      +0.033*     +0.039*     +0.039*     +0.037*     +0.037*
+  knap_trace − cheap_first           +0.004*     +0.000      +0.000      +0.005*     +0.009*     +0.010*     +0.009*
+  knap_entropy − card_entropy        +0.458*     +0.341*     +0.312*     +0.018*     +0.018*     +0.011*     +0.011*
+  knap_mi − card_mi                  +0.272*     +0.069*     +0.215*     +0.022*     +0.022*     +0.025*     +0.025*
+  knap_trace − card_trace            +0.463*     +0.058*     +0.200*     +0.038*     +0.038*     +0.020*     +0.017*
+  knap_mi − knap_trace               -0.027*     +0.012*     +0.016*     -0.016*     -0.021*     -0.018*     -0.021*
+  knap_facloc − random               +0.138*     +0.038      +0.042*     +0.034*     +0.045*     +0.044*     +0.044*
+  card_facloc − random               -0.325*     -0.302*     -0.166*     +0.006      +0.011      +0.021*     +0.031*
+  cheap_first − knap_facloc          -0.004*     +0.004*     -0.009*     +0.005*     -0.006*     -0.007*     -0.007*
+  knap_facloc − card_facloc          +0.463*     +0.340*     +0.208*     +0.028*     +0.034*     +0.023*     +0.013*
+  knap_mi − knap_facloc              -0.027*     +0.017*     +0.007*     -0.006*     -0.018*     -0.015*     -0.019*
+  knap_trace − knap_facloc           +0.000      +0.004*     -0.009*     +0.010*     +0.004*     +0.003*     +0.002*
+paired r2_suite differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random              +0.131*     +0.039      +0.023*     +0.026*     +0.045*     +0.041*     +0.040*
+  knap_mi − random                   +0.109      +0.054*     +0.048*     +0.029*     +0.030*     +0.031*     +0.029*
+  knap_trace − random                +0.135*     +0.042      +0.034*     +0.044*     +0.049*     +0.046*     +0.044*
+  card_trace − random                -0.319*     -0.017      -0.167*     +0.002      +0.006      +0.022*     +0.021*
+  cheap_first − random               +0.131*     +0.042      +0.034*     +0.040*     +0.043*     +0.041*     +0.040*
+  knap_trace − cheap_first           +0.004*     +0.000      +0.000      +0.004*     +0.007*     +0.006*     +0.004*
+  knap_entropy − card_entropy        +0.450*     +0.329*     +0.295*     +0.024*     +0.023*     +0.015*     +0.020*
+  knap_mi − card_mi                  +0.267*     +0.070*     +0.215*     +0.027*     +0.030*     +0.033*     +0.036*
+  knap_trace − card_trace            +0.455*     +0.059*     +0.200*     +0.042*     +0.043*     +0.024*     +0.023*
+  knap_mi − knap_trace               -0.027*     +0.012*     +0.015*     -0.015*     -0.019*     -0.015*     -0.014*
+  knap_facloc − random               +0.135*     +0.035      +0.042*     +0.034*     +0.046*     +0.044*     +0.042*
+  card_facloc − random               -0.319*     -0.290*     -0.167*     +0.002      +0.006      +0.018*     +0.024*
+  cheap_first − knap_facloc          -0.004*     +0.007*     -0.008*     +0.006*     -0.004*     -0.003*     -0.002*
+  knap_facloc − card_facloc          +0.455*     +0.325*     +0.208*     +0.032*     +0.040*     +0.026*     +0.017*
+  knap_mi − knap_facloc              -0.027*     +0.018*     +0.007*     -0.005*     -0.016*     -0.013*     -0.013*
+  knap_trace − knap_facloc           +0.000      +0.007*     -0.008*     +0.011*     +0.003*     +0.002*     +0.002*
+
+== MMLU, fixed overhead c0 = 0.5 × median = 86.5 per benchmark (suite 18972.5): R² / full-suite R² / #selected vs budget (means over 50 of 50 splits) ==
+method                                        1%                2%                3%                5%                8%               12%               20%
+Knapsack entropy (B.3)           0.832/0.834/1.0   0.853/0.859/2.0   0.869/0.876/3.0   0.888/0.898/5.0   0.907/0.920/8.0  0.932/0.946/12.0  0.949/0.966/19.0
+Knapsack MI (heuristic)          0.809/0.812/1.0   0.857/0.862/2.0   0.869/0.873/2.0   0.899/0.906/4.0   0.904/0.916/7.0  0.923/0.937/10.0  0.936/0.955/17.0
+Cost-blind entropy               0.373/0.384/1.0   0.512/0.530/2.0   0.557/0.581/3.0   0.881/0.885/2.0   0.910/0.918/5.0   0.913/0.921/5.0  0.939/0.951/11.0
+Cost-blind MI                    0.375/0.386/1.0   0.799/0.803/1.0   0.681/0.687/1.0   0.832/0.835/1.0   0.892/0.896/2.0   0.909/0.915/4.0   0.907/0.919/7.0
+Cheapest first                   0.832/0.834/1.0   0.857/0.862/2.0   0.881/0.887/3.0   0.905/0.913/5.0   0.922/0.933/8.0  0.931/0.946/12.0  0.942/0.961/19.0
+Random                           0.675/0.680/1.0   0.794/0.799/1.3   0.844/0.850/2.1   0.870/0.877/3.3   0.886/0.895/4.6   0.898/0.910/6.8  0.913/0.930/11.1
+Knapsack trace                   0.832/0.834/1.0   0.857/0.862/2.0   0.881/0.887/3.0   0.903/0.911/4.5   0.926/0.935/7.0  0.942/0.953/11.0  0.955/0.969/17.0
+Cost-blind trace                 0.373/0.384/1.0   0.799/0.802/1.0   0.681/0.687/1.0   0.881/0.885/2.0   0.903/0.908/3.0   0.927/0.935/6.0  0.946/0.955/10.0
+Knapsack facility location       0.832/0.834/1.0   0.852/0.855/1.0   0.871/0.877/2.5   0.900/0.907/4.0   0.921/0.931/7.0  0.937/0.948/10.0  0.955/0.968/17.0
+Cost-blind facility location     0.373/0.384/1.0   0.512/0.530/2.0   0.681/0.687/1.0   0.881/0.885/2.0   0.897/0.902/3.0   0.912/0.918/4.0  0.944/0.954/10.3
+paired r2 differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random              +0.157*     +0.059*     +0.025*     +0.018*     +0.020*     +0.034*     +0.036*
+  knap_mi − random                   +0.134*     +0.062*     +0.025      +0.028*     +0.018*     +0.026*     +0.023*
+  knap_trace − random                +0.157*     +0.062*     +0.037*     +0.033*     +0.040*     +0.044*     +0.042*
+  card_trace − random                -0.301*     +0.004      -0.163*     +0.011      +0.017*     +0.029*     +0.033*
+  cheap_first − random               +0.157*     +0.062*     +0.037*     +0.035*     +0.036*     +0.034*     +0.029*
+  knap_trace − cheap_first           +0.000      +0.000      +0.000      -0.002      +0.004*     +0.011*     +0.013*
+  knap_entropy − card_entropy        +0.458*     +0.341*     +0.312*     +0.007*     -0.003*     +0.018*     +0.010*
+  knap_mi − card_mi                  +0.434*     +0.057*     +0.187*     +0.066*     +0.012*     +0.015*     +0.029*
+  knap_trace − card_trace            +0.458*     +0.058*     +0.200*     +0.022*     +0.022*     +0.015*     +0.009*
+  knap_mi − knap_trace               -0.023*     -0.000      -0.012*     -0.005*     -0.022*     -0.019*     -0.019*
+  knap_facloc − random               +0.157*     +0.058*     +0.027*     +0.030*     +0.035*     +0.039*     +0.042*
+  card_facloc − random               -0.301*     -0.282*     -0.163*     +0.011      +0.010      +0.014*     +0.031*
+  cheap_first − knap_facloc          +0.000      +0.005*     +0.010*     +0.005*     +0.001      -0.005*     -0.013*
+  knap_facloc − card_facloc          +0.458*     +0.340*     +0.190*     +0.019*     +0.024*     +0.025*     +0.011*
+  knap_mi − knap_facloc              -0.023*     +0.005*     -0.003      -0.001*     -0.017*     -0.013*     -0.019*
+  knap_trace − knap_facloc           +0.000      +0.005*     +0.010*     +0.003*     +0.005*     +0.006*     +0.001*
+paired r2_suite differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random              +0.154*     +0.060*     +0.027*     +0.020*     +0.024*     +0.036*     +0.036*
+  knap_mi − random                   +0.132*     +0.063*     +0.024      +0.028*     +0.020*     +0.027*     +0.025*
+  knap_trace − random                +0.154*     +0.063*     +0.038*     +0.033*     +0.040*     +0.044*     +0.039*
+  card_trace − random                -0.296*     +0.003      -0.163*     +0.008      +0.013*     +0.025*     +0.026*
+  cheap_first − random               +0.154*     +0.063*     +0.038*     +0.036*     +0.038*     +0.036*     +0.032*
+  knap_trace − cheap_first           +0.000      +0.000      +0.000      -0.003      +0.002*     +0.008*     +0.007*
+  knap_entropy − card_entropy        +0.450*     +0.329*     +0.295*     +0.013*     +0.002*     +0.025*     +0.015*
+  knap_mi − card_mi                  +0.426*     +0.059*     +0.186*     +0.070*     +0.020*     +0.022*     +0.036*
+  knap_trace − card_trace            +0.450*     +0.059*     +0.200*     +0.026*     +0.027*     +0.019*     +0.013*
+  knap_mi − knap_trace               -0.023*     -0.000      -0.014*     -0.005*     -0.019*     -0.017*     -0.014*
+  knap_facloc − random               +0.154*     +0.056*     +0.027*     +0.030*     +0.035*     +0.038*     +0.038*
+  card_facloc − random               -0.296*     -0.269*     -0.163*     +0.008      +0.007      +0.008      +0.024*
+  cheap_first − knap_facloc          +0.000      +0.007*     +0.010*     +0.006*     +0.002*     -0.002*     -0.007*
+  knap_facloc − card_facloc          +0.450*     +0.325*     +0.190*     +0.022*     +0.029*     +0.030*     +0.014*
+  knap_mi − knap_facloc              -0.023*     +0.007*     -0.004      -0.001      -0.015*     -0.011*     -0.013*
+  knap_trace − knap_facloc           +0.000      +0.007*     +0.010*     +0.004*     +0.004*     +0.006*     +0.000*
+
+== MMLU, fixed overhead c0 = 1 × median = 173 per benchmark (suite 23903): R² / full-suite R² / #selected vs budget (means over 50 of 50 splits) ==
+method                                        1%                2%                3%                5%                8%               12%               20%
+Knapsack entropy (B.3)             nan/0.000/0.0   0.832/0.834/1.0   0.853/0.859/2.0   0.877/0.886/4.0   0.898/0.909/6.0  0.917/0.931/10.0  0.945/0.962/17.0
+Knapsack MI (heuristic)            nan/0.000/0.0   0.830/0.833/1.0   0.869/0.873/2.0   0.899/0.906/4.0   0.901/0.910/5.0   0.910/0.923/8.0  0.921/0.941/14.0
+Cost-blind entropy                 nan/0.000/0.0   0.373/0.384/1.0   0.512/0.530/2.0   0.881/0.885/2.0   0.910/0.918/5.0   0.913/0.921/5.0  0.939/0.951/11.0
+Cost-blind MI                      nan/0.000/0.0   0.799/0.803/1.0   0.681/0.687/1.0   0.832/0.835/1.0   0.881/0.885/2.0   0.904/0.911/4.0   0.909/0.921/8.0
+Cheapest first                     nan/0.000/0.0   0.832/0.834/1.0   0.857/0.862/2.0   0.896/0.903/4.0   0.920/0.930/7.0  0.925/0.938/10.0  0.939/0.957/17.0
+Random                             nan/0.000/0.0   0.736/0.741/1.0   0.841/0.846/1.9   0.850/0.857/2.9   0.884/0.893/4.4   0.898/0.910/6.7  0.913/0.929/10.9
+Knapsack trace                     nan/0.000/0.0   0.852/0.855/1.0   0.858/0.863/2.0   0.900/0.907/4.0   0.919/0.928/6.0  0.938/0.949/10.0  0.952/0.965/16.0
+Cost-blind trace                   nan/0.000/0.0   0.799/0.802/1.0   0.681/0.687/1.0   0.882/0.886/2.0   0.903/0.908/3.0   0.927/0.935/6.0  0.946/0.955/10.0
+Knapsack facility location         nan/0.000/0.0   0.852/0.855/1.0   0.862/0.867/2.0   0.900/0.907/4.0   0.914/0.923/6.0  0.934/0.946/10.0  0.951/0.964/15.0
+Cost-blind facility location       nan/0.000/0.0   0.373/0.384/1.0   0.681/0.687/1.0   0.881/0.885/2.0   0.903/0.910/4.0   0.919/0.926/5.0   0.937/0.946/8.0
+paired r2 differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random                  n/a     +0.095      +0.013      +0.028      +0.015*     +0.019*     +0.033*
+  knap_mi − random                       n/a     +0.094      +0.028*     +0.049      +0.018*     +0.012*     +0.009*
+  knap_trace − random                    n/a     +0.116*     +0.017      +0.050      +0.035*     +0.039*     +0.039*
+  card_trace − random                    n/a     +0.062      -0.159*     +0.032      +0.020*     +0.029*     +0.033*
+  cheap_first − random                   n/a     +0.095      +0.016      +0.046      +0.036*     +0.027*     +0.026*
+  knap_trace − cheap_first               n/a     +0.020*     +0.001      +0.004*     -0.001      +0.012*     +0.013*
+  knap_entropy − card_entropy            n/a     +0.458*     +0.341*     -0.003*     -0.012*     +0.003*     +0.007*
+  knap_mi − card_mi                      n/a     +0.031*     +0.187*     +0.067*     +0.021*     +0.006*     +0.013*
+  knap_trace − card_trace                n/a     +0.053*     +0.176*     +0.018*     +0.016*     +0.011*     +0.006*
+  knap_mi − knap_trace                   n/a     -0.022*     +0.011*     -0.001      -0.018*     -0.027*     -0.030*
+  knap_facloc − random                   n/a     +0.116*     +0.021      +0.050      +0.031*     +0.036*     +0.038*
+  card_facloc − random                   n/a     -0.363*     -0.159*     +0.031      +0.019*     +0.021*     +0.024*
+  cheap_first − knap_facloc              n/a     -0.020*     -0.005*     -0.004*     +0.006*     -0.009*     -0.012*
+  knap_facloc − card_facloc              n/a     +0.479*     +0.181*     +0.019*     +0.011*     +0.015*     +0.014*
+  knap_mi − knap_facloc                  n/a     -0.022*     +0.007*     -0.001      -0.013*     -0.024*     -0.029*
+  knap_trace − knap_facloc               n/a     +0.000      -0.004*     +0.000      +0.005*     +0.004*     +0.001*
+paired r2_suite differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random              +0.000      +0.093      +0.013      +0.029      +0.016*     +0.021*     +0.032*
+  knap_mi − random                   +0.000      +0.092      +0.027*     +0.049      +0.017*     +0.013*     +0.011*
+  knap_trace − random                +0.000      +0.114*     +0.017      +0.050      +0.035*     +0.039*     +0.036*
+  card_trace − random                +0.000      +0.061      -0.159*     +0.029      +0.016*     +0.025*     +0.026*
+  cheap_first − random               +0.000      +0.093      +0.016      +0.046      +0.037*     +0.028*     +0.028*
+  knap_trace − cheap_first           +0.000      +0.020*     +0.001      +0.004*     -0.002*     +0.010*     +0.008*
+  knap_entropy − card_entropy        +0.000      +0.450*     +0.329*     +0.001      -0.009*     +0.010*     +0.011*
+  knap_mi − card_mi                  +0.000      +0.030*     +0.186*     +0.071*     +0.025*     +0.012*     +0.019*
+  knap_trace − card_trace            +0.000      +0.052*     +0.176*     +0.021*     +0.019*     +0.014*     +0.010*
+  knap_mi − knap_trace               +0.000      -0.022*     +0.011*     -0.001      -0.018*     -0.026*     -0.025*
+  knap_facloc − random               +0.000      +0.114*     +0.021      +0.050      +0.031*     +0.036*     +0.034*
+  card_facloc − random               +0.000      -0.357*     -0.159*     +0.028      +0.017*     +0.016*     +0.016*
+  cheap_first − knap_facloc          +0.000      -0.020*     -0.005*     -0.004*     +0.006*     -0.007*     -0.007*
+  knap_facloc − card_facloc          +0.000      +0.470*     +0.180*     +0.022*     +0.013*     +0.020*     +0.018*
+  knap_mi − knap_facloc              +0.000      -0.022*     +0.007*     -0.001      -0.013*     -0.023*     -0.023*
+  knap_trace − knap_facloc           +0.000      +0.000      -0.004      +0.000      +0.004*     +0.003*     +0.002*
+
+== MMLU, fixed overhead c0 = 2 × median = 346 per benchmark (suite 33764): R² / full-suite R² / #selected vs budget (means over 50 of 50 splits) ==
+method                                        1%                2%                3%                5%                8%               12%               20%
+Knapsack entropy (B.3)             nan/0.000/0.0   0.832/0.834/1.0   0.853/0.859/2.0   0.869/0.876/3.0   0.898/0.909/6.0   0.914/0.928/9.0  0.940/0.955/14.0
+Knapsack MI (heuristic)            nan/0.000/0.0   0.830/0.833/1.0   0.869/0.873/2.0   0.902/0.907/3.0   0.904/0.913/5.0   0.908/0.919/7.0  0.917/0.934/12.0
+Cost-blind entropy                 nan/0.000/0.0   0.373/0.384/1.0   0.860/0.862/1.0   0.881/0.885/2.0   0.900/0.907/4.0   0.920/0.929/6.0  0.939/0.951/11.0
+Cost-blind MI                      nan/0.000/0.0   0.799/0.803/1.0   0.860/0.862/1.0   0.838/0.844/2.0   0.883/0.889/3.0   0.904/0.911/4.0   0.913/0.927/9.0
+Cheapest first                     nan/0.000/0.0   0.832/0.834/1.0   0.857/0.862/2.0   0.881/0.887/3.0   0.914/0.923/6.0   0.924/0.936/9.0  0.937/0.953/15.0
+Random                             nan/0.000/0.0   0.739/0.743/1.0   0.825/0.830/1.7   0.849/0.856/2.8   0.883/0.892/4.3   0.897/0.909/6.5  0.913/0.929/10.9
+Knapsack trace                     nan/0.000/0.0   0.855/0.857/1.0   0.863/0.868/2.0   0.889/0.895/3.0   0.911/0.919/5.0   0.932/0.942/8.0  0.950/0.962/14.0
+Cost-blind trace                   nan/0.000/0.0   0.799/0.802/1.0   0.860/0.862/1.0   0.887/0.891/2.0   0.903/0.908/3.0   0.927/0.935/6.0  0.946/0.955/10.0
+Knapsack facility location         nan/0.000/0.0   0.855/0.857/1.0   0.860/0.862/1.0   0.889/0.895/3.0   0.906/0.914/5.0   0.926/0.937/8.0  0.945/0.958/13.0
+Cost-blind facility location       nan/0.000/0.0   0.373/0.384/1.0   0.860/0.862/1.0   0.887/0.891/2.0   0.903/0.910/4.0   0.919/0.926/5.0   0.941/0.950/9.0
+paired r2 differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random                  n/a     +0.093      +0.029      +0.021      +0.016*     +0.017*     +0.027*
+  knap_mi − random                       n/a     +0.092      +0.044      +0.053*     +0.021*     +0.011*     +0.004 
+  knap_trace − random                    n/a     +0.116*     +0.038      +0.040      +0.028*     +0.035*     +0.037*
+  card_trace − random                    n/a     +0.060      +0.035      +0.038      +0.020*     +0.030*     +0.033*
+  cheap_first − random                   n/a     +0.093      +0.032      +0.032      +0.031*     +0.027*     +0.024*
+  knap_trace − cheap_first               n/a     +0.023*     +0.006*     +0.008*     -0.003*     +0.008*     +0.013*
+  knap_entropy − card_entropy            n/a     +0.458*     -0.006*     -0.011*     -0.002*     -0.006*     +0.001*
+  knap_mi − card_mi                      n/a     +0.031*     +0.009*     +0.063*     +0.021*     +0.004*     +0.003 
+  knap_trace − card_trace                n/a     +0.056*     +0.003      +0.002*     +0.008*     +0.005*     +0.004*
+  knap_mi − knap_trace                   n/a     -0.024*     +0.006*     +0.012*     -0.007*     -0.024*     -0.033*
+  knap_facloc − random                   n/a     +0.116*     +0.035      +0.040      +0.023*     +0.029*     +0.033*
+  card_facloc − random                   n/a     -0.365*     +0.035      +0.038      +0.020*     +0.022*     +0.029*
+  cheap_first − knap_facloc              n/a     -0.023*     -0.003*     -0.008*     +0.008*     -0.002*     -0.009*
+  knap_facloc − card_facloc              n/a     +0.481*     +0.000      +0.002*     +0.003*     +0.008*     +0.004*
+  knap_mi − knap_facloc                  n/a     -0.024*     +0.009*     +0.012*     -0.002*     -0.018*     -0.029*
+  knap_trace − knap_facloc               n/a     +0.000      +0.003      +0.000      +0.005*     +0.006*     +0.004*
+paired r2_suite differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  knap_entropy − random              +0.000      +0.091      +0.029      +0.020      +0.017*     +0.019*     +0.025*
+  knap_mi − random                   +0.000      +0.090      +0.044      +0.051*     +0.021*     +0.011*     +0.005 
+  knap_trace − random                +0.000      +0.114*     +0.038      +0.039      +0.027*     +0.033*     +0.033*
+  card_trace − random                +0.000      +0.059      +0.033      +0.035      +0.017*     +0.026*     +0.026*
+  cheap_first − random               +0.000      +0.091      +0.032      +0.031      +0.031*     +0.027*     +0.024*
+  knap_trace − cheap_first           +0.000      +0.023*     +0.006*     +0.008*     -0.004*     +0.005*     +0.009*
+  knap_entropy − card_entropy        +0.000      +0.450*     -0.004      -0.009*     +0.002*     -0.001      +0.004*
+  knap_mi − card_mi                  +0.000      +0.030*     +0.011*     +0.063*     +0.024*     +0.008*     +0.007*
+  knap_trace − card_trace            +0.000      +0.055*     +0.005*     +0.004*     +0.010*     +0.007*     +0.007*
+  knap_mi − knap_trace               +0.000      -0.024*     +0.006*     +0.012*     -0.006*     -0.022*     -0.028*
+  knap_facloc − random               +0.000      +0.114*     +0.033      +0.039      +0.022*     +0.028*     +0.029*
+  card_facloc − random               +0.000      -0.359*     +0.033      +0.035      +0.018*     +0.017*     +0.021*
+  cheap_first − knap_facloc          +0.000      -0.023*     -0.001      -0.008*     +0.009*     -0.001      -0.005*
+  knap_facloc − card_facloc          +0.000      +0.473*     +0.000      +0.004*     +0.004*     +0.011*     +0.007*
+  knap_mi − knap_facloc              +0.000      -0.024*     +0.011*     +0.012*     -0.001*     -0.017*     -0.024*
+  knap_trace − knap_facloc           +0.000      +0.000      +0.005*     +0.000      +0.005*     +0.005*     +0.004*
+
+checks: budget violations 0 (every method, level, budget and split); eligible 57–57 of 57; estimation failed on 0 splits
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/cost_fixed_mmlu.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/cost_fixed_mmlu_paired.csv
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/cost_fixed_mmlu.pdf
+Summary saved to ~/benchselect-runs/canonical-20261020/out/logs/cost_fixed_mmlu.json (9024 macros, 200 undefined statistics left out)
+MMLU completed in 218s
+
+# finished 2026-10-20T02:43:43Z  exit=0  status=ok

@@ -1,0 +1,98 @@
+# job      cost_mteb
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_cost_budget.py --dataset mteb --counts ~/benchselect-runs/canonical-20261020/tree/data/mteb_task_sizes.json --budgets 0.002 0.005 0.01 0.02 0.05 0.1 0.2 --repeats 5 --plot-trace
+# started  2026-10-20T02:42:58Z on 4090-1
+
+MTEB: 263 models × 56 tasks, total cost 40232830 examples
+cost range: 100 (BIOSSES) – 8848803 (MSMARCO)
+budgets: [80465, 201164, 402328, 804656, 2011641, 4023283, 8046566]
+5 × 10-fold CV = 50 matched splits, 10% holdout, selectable: benchmarks with >= 3 training models
+  rep 0 fold 0 done (5.1s), 56/56 eligible
+  rep 0 fold 1 done (2.5s), 56/56 eligible
+  rep 0 fold 2 done (2.5s), 56/56 eligible
+  rep 0 fold 3 done (2.9s), 56/56 eligible
+  rep 0 fold 4 done (3.6s), 56/56 eligible
+  rep 0 fold 5 done (2.7s), 56/56 eligible
+  rep 0 fold 6 done (3.0s), 56/56 eligible
+  rep 0 fold 7 done (2.5s), 56/56 eligible
+  rep 0 fold 8 done (2.2s), 56/56 eligible
+  rep 0 fold 9 done (2.3s), 56/56 eligible
+  rep 1 fold 0 done (2.3s), 56/56 eligible
+  rep 1 fold 1 done (2.5s), 56/56 eligible
+  rep 1 fold 2 done (2.3s), 56/56 eligible
+  rep 1 fold 3 done (2.3s), 56/56 eligible
+  rep 1 fold 4 done (2.3s), 56/56 eligible
+  rep 1 fold 5 done (2.3s), 56/56 eligible
+  rep 1 fold 6 done (4.3s), 56/56 eligible
+  rep 1 fold 7 done (3.3s), 56/56 eligible
+  rep 1 fold 8 done (1.6s), 56/56 eligible
+  rep 1 fold 9 done (2.9s), 56/56 eligible
+  rep 2 fold 0 done (3.2s), 56/56 eligible
+  rep 2 fold 1 done (3.6s), 56/56 eligible
+  rep 2 fold 2 done (5.0s), 56/56 eligible
+  rep 2 fold 3 done (4.3s), 56/56 eligible
+  rep 2 fold 4 done (4.4s), 56/56 eligible
+  rep 2 fold 5 done (4.5s), 56/56 eligible
+  rep 2 fold 6 done (4.8s), 56/56 eligible
+  rep 2 fold 7 done (3.0s), 56/56 eligible
+  rep 2 fold 8 done (2.7s), 56/56 eligible
+  rep 2 fold 9 done (1.8s), 56/56 eligible
+  rep 3 fold 0 done (2.5s), 56/56 eligible
+  rep 3 fold 1 done (3.0s), 56/56 eligible
+  rep 3 fold 2 done (3.6s), 56/56 eligible
+  rep 3 fold 3 done (2.7s), 56/56 eligible
+  rep 3 fold 4 done (4.6s), 56/56 eligible
+  rep 3 fold 5 done (4.7s), 56/56 eligible
+  rep 3 fold 6 done (4.3s), 56/56 eligible
+  rep 3 fold 7 done (4.3s), 56/56 eligible
+  rep 3 fold 8 done (4.2s), 56/56 eligible
+  rep 3 fold 9 done (4.1s), 56/56 eligible
+  rep 4 fold 0 done (4.0s), 56/56 eligible
+  rep 4 fold 1 done (3.9s), 56/56 eligible
+  rep 4 fold 2 done (4.3s), 56/56 eligible
+  rep 4 fold 3 done (4.7s), 56/56 eligible
+  rep 4 fold 4 done (4.2s), 56/56 eligible
+  rep 4 fold 5 done (2.3s), 56/56 eligible
+  rep 4 fold 6 done (5.3s), 56/56 eligible
+  rep 4 fold 7 done (4.2s), 56/56 eligible
+  rep 4 fold 8 done (4.2s), 56/56 eligible
+  rep 4 fold 9 done (3.8s), 56/56 eligible
+
+== MTEB: imputation R² vs example budget (mean over 50 splits) ==
+method                            80465 (0.2%)   201164 (0.5%)     402328 (1%)     804656 (2%)    2011641 (5%)   4023283 (10%)   8046566 (20%)
+Knapsack entropy (B.3)                0.825/24        0.860/29        0.861/33        0.867/37        0.889/42        0.885/46        0.905/50
+Knapsack MI (heuristic)               0.840/20        0.861/24        0.866/27        0.879/29        0.887/30        0.890/30        0.896/31
+Cost-blind entropy                    0.793/12        0.825/19        0.800/19        0.851/25        0.901/32        0.884/29        0.906/49
+Cost-blind MI                         0.773/10        0.842/19        0.849/24        0.857/20        0.876/29        0.883/28        0.893/45
+Cheapest first                        0.828/24        0.862/29        0.861/33        0.863/37        0.891/42        0.884/46        0.905/50
+Random                                0.791/13        0.825/17        0.839/22        0.842/23        0.870/31        0.875/36        0.887/38
+Knapsack trace                        0.836/24        0.862/29        0.861/33        0.877/37        0.884/42        0.893/46        0.905/50
+Cost-blind trace                      0.808/13        0.827/15        0.860/24        0.854/22        0.891/32        0.894/30        0.907/42
+Knapsack facility location            0.836/24        0.862/29        0.868/32        0.887/36        0.886/42        0.893/46        0.905/50
+Cost-blind facility location          0.800/12        0.825/15        0.863/26        0.842/23        0.894/33        0.885/30        0.898/37
+(cell = mean R² / mean #benchmarks selected)
+eligible benchmarks per split: 56–56 of 56 (0/50 splits restricted)
+index ties (picks decided by column order), cells affected / total picks over budgets × splits: knap_entropy 0/0, knap_mi 0/0, card_entropy 0/0, card_mi 0/0, cheap_first 0/0, random 0/0, knap_trace 0/0, card_trace 0/0, knap_facloc 0/0, card_facloc 0/0
+best-singleton fallback won (budget × split cells): knap_entropy 0, knap_mi 0, knap_trace 0, knap_facloc 0
+
+== MTEB: paired R² differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0) ==
+pair                                    0.2%      0.5%        1%        2%        5%       10%       20%
+knap_mi − knap_entropy               +0.014*   +0.001    +0.005    +0.012    -0.002    +0.005    -0.009 
+knap_entropy − card_entropy          +0.033    +0.035    +0.061*   +0.016    -0.012    +0.001    -0.001 
+knap_entropy − cheap_first           -0.002    -0.002    +0.000    +0.004    -0.002    +0.001    +0.000 
+knap_entropy − random                +0.034    +0.035*   +0.022    +0.025    +0.019    +0.009    +0.018 
+knap_mi − card_mi                    +0.066    +0.018    +0.017    +0.023*   +0.012    +0.007    +0.003 
+knap_mi − cheap_first                +0.012    -0.001    +0.005    +0.016    -0.004    +0.006    -0.009 
+knap_mi − random                     +0.048    +0.036*   +0.027    +0.037*   +0.017    +0.015    +0.009 
+knap_mi − knap_trace                 +0.003    -0.001    +0.005    +0.002    +0.003    -0.003    -0.009 
+knap_trace − card_trace              +0.028    +0.035*   +0.001    +0.023    -0.006    -0.001    -0.002 
+knap_trace − random                  +0.045    +0.037*   +0.022    +0.035*   +0.014    +0.018    +0.018 
+knap_facloc − card_facloc            +0.035    +0.037    +0.005    +0.045    -0.008    +0.008    +0.007 
+knap_facloc − random                 +0.044    +0.037*   +0.029    +0.045*   +0.015    +0.018    +0.018 
+cheap_first − knap_facloc            -0.008    -0.000    -0.007    -0.024*   +0.005    -0.009*   -0.000 
+knap_mi − knap_facloc                +0.004    -0.001    -0.002    -0.008    +0.002    -0.003    -0.009 
+knap_trace − knap_facloc             +0.001    +0.000    -0.007    -0.010    -0.001    +0.001    -0.000 
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/cost_budget_mteb.pdf
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/cost_budget_mteb_paired.csv
+MTEB completed in 173s
+
+# finished 2026-10-20T02:45:53Z  exit=0  status=ok

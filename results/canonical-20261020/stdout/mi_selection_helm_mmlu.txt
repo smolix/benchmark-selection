@@ -1,0 +1,83 @@
+# job      mi_selection_helm_mmlu
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets helm_mmlu --repeats 5 --selections-json none
+# started  2026-10-20T02:47:04Z on 4090-1
+
+
+######################################################################
+# Dataset: HELM_MMLU
+######################################################################
+79 models x 57 tasks, 100.0% observed
+5 x 10-fold matched splits; selectable: >= 3 observed training models
+Holdout 10%
+
+  Rep 0 fold 0: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_world_history, high_school_macroeconomics, moral_disputes
+  Rep 0 fold 1: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_chemistry, high_school_world_history, moral_disputes
+  Rep 0 fold 2: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, high_school_world_history, professional_psychology
+  Rep 0 fold 3: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, moral_disputes, high_school_world_history
+  Rep 0 fold 4: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_government_and_politics, professional_medicine, high_school_world_history, elementary_mathematics, moral_disputes
+  Rep 0 fold 5: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, high_school_world_history, high_school_macroeconomics
+  Rep 0 fold 6: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, sociology, moral_disputes
+  Rep 0 fold 7: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_world_history, elementary_mathematics, moral_disputes
+  Rep 0 fold 8: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, elementary_mathematics, moral_disputes, professional_medicine, high_school_world_history
+  Rep 0 fold 9: 71 train / 7 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, high_school_world_history, moral_disputes
+  Rep 1 fold 0: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, high_school_physics, moral_disputes, high_school_european_history, professional_medicine
+  Rep 1 fold 1: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_law, high_school_world_history, high_school_physics, moral_disputes
+  Rep 1 fold 2: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, high_school_world_history, clinical_knowledge
+  Rep 1 fold 3: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, high_school_macroeconomics, professional_medicine, miscellaneous, high_school_statistics
+  Rep 1 fold 4: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_macroeconomics, high_school_world_history, moral_disputes
+  Rep 1 fold 5: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_macroeconomics, high_school_world_history, moral_disputes
+  Rep 1 fold 6: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, moral_disputes, high_school_world_history
+  Rep 1 fold 7: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_macroeconomics, high_school_world_history, moral_disputes
+  Rep 1 fold 8: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, high_school_world_history, moral_disputes
+  Rep 1 fold 9: 71 train / 7 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, abstract_algebra, moral_disputes, high_school_world_history
+  Rep 2 fold 0: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, high_school_world_history, moral_disputes
+  Rep 2 fold 1: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, moral_disputes, high_school_world_history
+  Rep 2 fold 2: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: professional_medicine, high_school_psychology, elementary_mathematics, high_school_world_history, moral_disputes
+  Rep 2 fold 3: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, moral_disputes, high_school_macroeconomics, professional_medicine, high_school_world_history
+  Rep 2 fold 4: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, high_school_world_history, moral_disputes
+  Rep 2 fold 5: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: professional_psychology, sociology, high_school_government_and_politics, elementary_mathematics, high_school_european_history
+  Rep 2 fold 6: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_government_and_politics, high_school_macroeconomics, professional_medicine, high_school_world_history, moral_disputes
+  Rep 2 fold 7: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, high_school_macroeconomics, high_school_us_history, professional_medicine, elementary_mathematics
+  Rep 2 fold 8: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, high_school_world_history, moral_disputes
+  Rep 2 fold 9: 71 train / 7 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_macroeconomics, high_school_world_history, moral_disputes
+  Rep 3 fold 0: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, high_school_physics, professional_medicine, high_school_world_history, moral_disputes
+  Rep 3 fold 1: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, high_school_macroeconomics, high_school_psychology, professional_medicine, high_school_world_history
+  Rep 3 fold 2: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, high_school_world_history, moral_disputes
+  Rep 3 fold 3: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, high_school_statistics, professional_medicine, high_school_world_history, moral_disputes
+  Rep 3 fold 4: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, high_school_world_history, moral_disputes
+  Rep 3 fold 5: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, high_school_world_history, moral_disputes
+  Rep 3 fold 6: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, high_school_world_history, moral_disputes
+  Rep 3 fold 7: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, moral_disputes, high_school_macroeconomics
+  Rep 3 fold 8: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, high_school_world_history, moral_disputes
+  Rep 3 fold 9: 71 train / 7 test, 57/57 eligible  (0.0s)  top-5: high_school_macroeconomics, high_school_psychology, professional_medicine, prehistory, high_school_world_history
+  Rep 4 fold 0: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_macroeconomics, moral_disputes, high_school_world_history
+  Rep 4 fold 1: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_government_and_politics, professional_medicine, high_school_world_history, high_school_macroeconomics, moral_disputes
+  Rep 4 fold 2: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, high_school_macroeconomics, moral_disputes, high_school_world_history, abstract_algebra
+  Rep 4 fold 3: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: clinical_knowledge, high_school_psychology, high_school_world_history, high_school_macroeconomics, professional_medicine
+  Rep 4 fold 4: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, elementary_mathematics, professional_medicine, high_school_world_history, prehistory
+  Rep 4 fold 5: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, high_school_world_history, moral_disputes
+  Rep 4 fold 6: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, high_school_macroeconomics, high_school_world_history, professional_medicine, moral_disputes
+  Rep 4 fold 7: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: professional_medicine, high_school_psychology, high_school_physics, sociology, moral_disputes
+  Rep 4 fold 8: 71 train / 8 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, elementary_mathematics, high_school_world_history, moral_disputes
+  Rep 4 fold 9: 71 train / 7 test, 57/57 eligible  (0.0s)  top-5: high_school_psychology, professional_medicine, high_school_physics, moral_disputes, high_school_world_history
+
+  HELM MMLU MI, holdout 10%: 50 splits (reps 0, 1, 2, 3, 4), eligible 57–57, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mi_helm_mmlu.pdf
+  Top-10 by mean rank:
+    high_school_psychology                    count=47/50  mean_rank=2.1
+    professional_medicine                     count=48/50  mean_rank=3.0
+    high_school_world_history                 count=50/50  mean_rank=4.6
+    moral_disputes                            count=50/50  mean_rank=4.9
+    high_school_macroeconomics                count=42/50  mean_rank=6.8
+    elementary_mathematics                    count=33/50  mean_rank=9.3
+    miscellaneous                             count=41/50  mean_rank=9.4
+    high_school_physics                       count=29/50  mean_rank=10.8
+    college_physics                           count=42/50  mean_rank=10.9
+    professional_law                          count=32/50  mean_rank=12.3
+
+HELM_MMLU completed in 2s
+
+
+Total time: 2s
+
+# finished 2026-10-20T02:47:07Z  exit=0  status=ok

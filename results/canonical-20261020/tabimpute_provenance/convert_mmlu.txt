@@ -1,0 +1,44 @@
+Combining the logs ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_{ds}.npz (no TabImpute)
+
+MMLU: eligible benchmarks per split 57–57 of 57 (0/50 splits restricted)
+index ties (entropy, k ≤ 15): 0 picks in 0/50 splits
+index ties (mi, k ≤ 15): 0 picks in 0/50 splits
+index ties (random, k ≤ 15): 0 picks in 0/50 splits
+index ties (facloc, k ≤ 15): 0 picks in 0/50 splits
+context: 3800–3800 training rows (50/50 splits subsampled, Split.seed(SEED + 20))
+valid-range prediction clip (entropy): 82 of 20036100 scored predictions, in 21/50 splits
+valid-range prediction clip (mi): 399 of 20036100 scored predictions, in 45/50 splits
+valid-range prediction clip (random): 185 of 20036100 scored predictions, in 24/50 splits
+valid-range prediction clip (facloc): 59 of 20036100 scored predictions, in 17/50 splits
+Paired R² differences a − b over 50 splits (Nadeau–Bengio 95% CI, win rate):
+  k=5        mi − entropy    +0.189  [+0.183, +0.196]  win 1.00  (n=50)
+  k=5        mi − facloc     +0.071  [+0.066, +0.075]  win 1.00  (n=50)
+  k=5        mi − random     +0.079  [+0.049, +0.109]  win 1.00  (n=50)
+  k=5   entropy − facloc     -0.119  [-0.122, -0.116]  win 0.00  (n=50)
+  k=5   entropy − random     -0.110  [-0.140, -0.080]  win 0.02  (n=50)
+  k=5    facloc − random     +0.009  [-0.021, +0.039]  win 0.44  (n=50)
+  k=10       mi − entropy    +0.206  [+0.198, +0.214]  win 1.00  (n=50)
+  k=10       mi − facloc     +0.103  [+0.097, +0.109]  win 1.00  (n=50)
+  k=10       mi − random     +0.038  [+0.017, +0.058]  win 0.98  (n=50)
+  k=10  entropy − facloc     -0.103  [-0.106, -0.101]  win 0.00  (n=50)
+  k=10  entropy − random     -0.168  [-0.189, -0.148]  win 0.00  (n=50)
+  k=10   facloc − random     -0.065  [-0.085, -0.044]  win 0.04  (n=50)
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/tabimpute_r2_mmlu.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_mmlu.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_mmlu_paired.csv
+
+MMLU completed in 1s
+
+======================================================================
+SUMMARY: Mean R² at k = 5, 10, 15 (TabImpute V2 imputation)
+======================================================================
+Dataset      Method         R²@5    R²@10    R²@15
+---------------------------------------------------
+MMLU         entropy      0.4201   0.5014   0.5742
+MMLU         mi           0.6095   0.7075   0.7795
+MMLU         random       0.5302   0.6698   0.7503
+MMLU         facloc       0.5389   0.6049   0.6465
+---------------------------------------------------
+
+All datasets completed in 1s

@@ -1,0 +1,36 @@
+# job      eigenspectrum_release
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_eigenspectrum.py --datasets olv2sub olv1items epoch helm_lite helm_mmlu helm_classic mteb2026 --recompute-missing
+# started  2026-10-20T02:43:30Z on 4090-1
+
+olv2sub: no olv2sub.cov.npz; estimating Sigma from ~/benchselect-runs/canonical-20261020/tree/data/olv2sub.matrix.npz by EM
+olv1items: no olv1items.cov.npz; estimating Sigma from ~/benchselect-runs/canonical-20261020/tree/data/olv1items.matrix.npz by EM
+epoch: no epoch.cov.npz; estimating Sigma from ~/benchselect-runs/canonical-20261020/tree/data/epoch.matrix.npz by EM
+helm_lite: no helm_lite.cov.npz; estimating Sigma from ~/benchselect-runs/canonical-20261020/tree/data/helm_lite.matrix.npz by EM
+helm_mmlu: no helm_mmlu.cov.npz; estimating Sigma from ~/benchselect-runs/canonical-20261020/tree/data/helm_mmlu.matrix.npz by EM
+helm_classic: no helm_classic.cov.npz; estimating Sigma from ~/benchselect-runs/canonical-20261020/tree/data/helm_classic.matrix.npz by EM
+mteb2026: no mteb2026.cov.npz; estimating Sigma from ~/benchselect-runs/canonical-20261020/tree/data/mteb2026.matrix.npz by EM
+olv2sub : 90% variance at k=11
+olv2sub : 95% variance at k=18
+olv2sub : 99% variance at k=29
+olv1items: 90% variance at k=5
+olv1items: 95% variance at k=14
+olv1items: 99% variance at k=37
+epoch   : 90% variance at k=9
+epoch   : 95% variance at k=12
+epoch   : 99% variance at k=17
+helm_lite: 90% variance at k=4
+helm_lite: 95% variance at k=6
+helm_lite: 99% variance at k=9
+helm_mmlu: 90% variance at k=4
+helm_mmlu: 95% variance at k=10
+helm_mmlu: 99% variance at k=27
+helm_classic: 90% variance at k=5
+helm_classic: 95% variance at k=7
+helm_classic: 99% variance at k=11
+mteb2026: 90% variance at k=7
+mteb2026: 95% variance at k=12
+mteb2026: 99% variance at k=29
+
+Saved to ~/benchselect-runs/canonical-20261020/out/figures/eigenspectrum_olv2sub_olv1items_epoch_helm_lite_helm_mmlu_helm_classic_mteb2026.pdf
+
+# finished 2026-10-20T02:44:39Z  exit=0  status=ok

@@ -1,0 +1,17 @@
+# job      logit
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_logit.py --datasets mmlu mteb merged benchpress --eigenspectrum-only
+# started  2026-10-20T02:46:28Z on 4090-1
+
+
+######################################################################
+# Eigenspectrum (logit space)
+######################################################################
+  MMLU: 90% at k=2, 95% at k=8
+  MTEB: 90% at k=8, 95% at k=13
+  Merged: 90% at k=9, 95% at k=12
+  BenchPress: 90% at k=8, 95% at k=11
+  Saved ~/benchselect-runs/canonical-20261020/out/figures_logit/eigenspectrum_logit.pdf
+
+All experiments completed in 45s
+
+# finished 2026-10-20T02:47:14Z  exit=0  status=ok

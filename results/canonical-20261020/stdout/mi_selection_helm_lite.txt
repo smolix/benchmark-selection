@@ -1,0 +1,83 @@
+# job      mi_selection_helm_lite
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets helm_lite --repeats 5 --selections-json none
+# started  2026-10-20T02:47:03Z on 4090-1
+
+
+######################################################################
+# Dataset: HELM_LITE
+######################################################################
+91 models x 10 tasks, 99.9% observed
+5 x 10-fold matched splits; selectable: >= 3 observed training models
+Holdout 10%
+
+  Rep 0 fold 0: 81 train / 10 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, WMT 2014
+  Rep 0 fold 1: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, LegalBench
+  Rep 0 fold 2: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, LegalBench
+  Rep 0 fold 3: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, NaturalQuestions (closed-book)
+  Rep 0 fold 4: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, LegalBench, NaturalQuestions (closed-book)
+  Rep 0 fold 5: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, WMT 2014
+  Rep 0 fold 6: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, NaturalQuestions (closed-book)
+  Rep 0 fold 7: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, LegalBench
+  Rep 0 fold 8: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, LegalBench, NaturalQuestions (closed-book)
+  Rep 0 fold 9: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+  Rep 1 fold 0: 81 train / 10 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, LegalBench, NaturalQuestions (closed-book)
+  Rep 1 fold 1: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+  Rep 1 fold 2: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+  Rep 1 fold 3: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, NaturalQuestions (closed-book)
+  Rep 1 fold 4: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, LegalBench
+  Rep 1 fold 5: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, NaturalQuestions (closed-book)
+  Rep 1 fold 6: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, LegalBench, NaturalQuestions (closed-book)
+  Rep 1 fold 7: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, NaturalQuestions (closed-book)
+  Rep 1 fold 8: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (closed-book), GSM8K, NaturalQuestions (open-book), WMT 2014
+  Rep 1 fold 9: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, NaturalQuestions (closed-book)
+  Rep 2 fold 0: 81 train / 10 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, WMT 2014
+  Rep 2 fold 1: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+  Rep 2 fold 2: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+  Rep 2 fold 3: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+  Rep 2 fold 4: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, NaturalQuestions (closed-book)
+  Rep 2 fold 5: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, LegalBench
+  Rep 2 fold 6: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, NaturalQuestions (closed-book)
+  Rep 2 fold 7: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, NaturalQuestions (closed-book)
+  Rep 2 fold 8: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, LegalBench, NaturalQuestions (closed-book)
+  Rep 2 fold 9: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+  Rep 3 fold 0: 81 train / 10 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+  Rep 3 fold 1: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, WMT 2014
+  Rep 3 fold 2: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, LegalBench, NaturalQuestions (closed-book)
+  Rep 3 fold 3: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, NaturalQuestions (closed-book)
+  Rep 3 fold 4: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, LegalBench
+  Rep 3 fold 5: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, NaturalQuestions (closed-book)
+  Rep 3 fold 6: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, LegalBench
+  Rep 3 fold 7: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, NaturalQuestions (closed-book)
+  Rep 3 fold 8: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, NaturalQuestions (closed-book), LegalBench
+  Rep 3 fold 9: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, WMT 2014
+  Rep 4 fold 0: 81 train / 10 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, NaturalQuestions (closed-book)
+  Rep 4 fold 1: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, WMT 2014
+  Rep 4 fold 2: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, LegalBench, NaturalQuestions (closed-book)
+  Rep 4 fold 3: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), WMT 2014, GSM8K, LegalBench
+  Rep 4 fold 4: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, NaturalQuestions (closed-book)
+  Rep 4 fold 5: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, NaturalQuestions (closed-book)
+  Rep 4 fold 6: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, WMT 2014, LegalBench
+  Rep 4 fold 7: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), GSM8K, NaturalQuestions (closed-book), LegalBench
+  Rep 4 fold 8: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+  Rep 4 fold 9: 82 train / 9 test, 10/10 eligible  (0.0s)  top-5: MMLU, NaturalQuestions (open-book), NaturalQuestions (closed-book), GSM8K, LegalBench
+
+  HELM Lite MI, holdout 10%: 50 splits (reps 0, 1, 2, 3, 4), eligible 10–10, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mi_helm_lite.pdf
+  Top-10 by mean rank:
+    MMLU                                      count=50/50  mean_rank=1.0
+    NaturalQuestions (open-book)              count=50/50  mean_rank=2.0
+    GSM8K                                     count=50/50  mean_rank=3.5
+    NaturalQuestions (closed-book)            count=50/50  mean_rank=4.4
+    WMT 2014                                  count=50/50  mean_rank=4.9
+    LegalBench                                count=50/50  mean_rank=5.4
+    MATH                                      count=50/50  mean_rank=6.8
+    MedQA                                     count=50/50  mean_rank=8.1
+    NarrativeQA                               count=50/50  mean_rank=8.9
+    OpenbookQA                                count=50/50  mean_rank=10.0
+
+HELM_LITE completed in 1s
+
+
+Total time: 1s
+
+# finished 2026-10-20T02:47:05Z  exit=0  status=ok

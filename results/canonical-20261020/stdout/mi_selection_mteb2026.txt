@@ -1,0 +1,83 @@
+# job      mi_selection_mteb2026
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets mteb2026 --repeats 5 --selections-json none
+# started  2026-10-20T02:42:58Z on 4090-1
+
+
+######################################################################
+# Dataset: MTEB2026
+######################################################################
+333 models x 56 tasks, 72.4% observed
+5 x 10-fold matched splits; selectable: >= 3 observed training models
+Holdout 10%
+
+  Rep 0 fold 0: 299 train / 34 test, 56/56 eligible  (4.2s)  top-5: BiorxivClusteringS2S, STS15, STS17, MassiveIntentClassification, AmazonPolarityClassification
+  Rep 0 fold 1: 299 train / 34 test, 56/56 eligible  (4.6s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, NQ
+  Rep 0 fold 2: 299 train / 34 test, 56/56 eligible  (4.7s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 0 fold 3: 300 train / 33 test, 56/56 eligible  (4.1s)  top-5: BiorxivClusteringP2P, STS15, ArxivClusteringS2S, STS17, MassiveIntentClassification
+  Rep 0 fold 4: 300 train / 33 test, 56/56 eligible  (4.3s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 0 fold 5: 300 train / 33 test, 56/56 eligible  (4.3s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 0 fold 6: 300 train / 33 test, 56/56 eligible  (2.6s)  top-5: BiorxivClusteringS2S, STS14, MassiveIntentClassification, STS17, NQ
+  Rep 0 fold 7: 300 train / 33 test, 56/56 eligible  (2.3s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 0 fold 8: 300 train / 33 test, 56/56 eligible  (1.3s)  top-5: BiorxivClusteringS2S, MassiveIntentClassification, STSBenchmark, STS14, NQ
+  Rep 0 fold 9: 300 train / 33 test, 56/56 eligible  (3.0s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, DBPedia, AmazonPolarityClassification
+  Rep 1 fold 0: 299 train / 34 test, 56/56 eligible  (4.8s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 1 fold 1: 299 train / 34 test, 56/56 eligible  (5.2s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 1 fold 2: 299 train / 34 test, 56/56 eligible  (4.6s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 1 fold 3: 300 train / 33 test, 56/56 eligible  (4.1s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 1 fold 4: 300 train / 33 test, 56/56 eligible  (4.1s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, DBPedia, AmazonPolarityClassification
+  Rep 1 fold 5: 300 train / 33 test, 56/56 eligible  (4.2s)  top-5: BiorxivClusteringS2S, STS14, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 1 fold 6: 300 train / 33 test, 56/56 eligible  (2.2s)  top-5: BiorxivClusteringP2P, STS14, NQ, MassiveIntentClassification, STS17
+  Rep 1 fold 7: 300 train / 33 test, 56/56 eligible  (4.5s)  top-5: BiorxivClusteringS2S, STS15, STS17, MassiveIntentClassification, AmazonPolarityClassification
+  Rep 1 fold 8: 300 train / 33 test, 56/56 eligible  (4.5s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 1 fold 9: 300 train / 33 test, 56/56 eligible  (5.0s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 2 fold 0: 299 train / 34 test, 56/56 eligible  (5.4s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 2 fold 1: 299 train / 34 test, 56/56 eligible  (5.7s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 2 fold 2: 299 train / 34 test, 56/56 eligible  (2.5s)  top-5: BiorxivClusteringS2S, MassiveIntentClassification, STS14, NQ, AmazonPolarityClassification
+  Rep 2 fold 3: 300 train / 33 test, 56/56 eligible  (5.3s)  top-5: BiorxivClusteringS2S, STS14, STS17, MassiveIntentClassification, DBPedia
+  Rep 2 fold 4: 300 train / 33 test, 56/56 eligible  (3.7s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 2 fold 5: 300 train / 33 test, 56/56 eligible  (3.5s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 2 fold 6: 300 train / 33 test, 56/56 eligible  (4.6s)  top-5: BiorxivClusteringS2S, STS14, MassiveScenarioClassification, STS17, DBPedia
+  Rep 2 fold 7: 300 train / 33 test, 56/56 eligible  (4.2s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 2 fold 8: 300 train / 33 test, 56/56 eligible  (3.7s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 2 fold 9: 300 train / 33 test, 56/56 eligible  (4.5s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 3 fold 0: 299 train / 34 test, 56/56 eligible  (2.6s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 3 fold 1: 299 train / 34 test, 56/56 eligible  (2.5s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 3 fold 2: 299 train / 34 test, 56/56 eligible  (2.2s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 3 fold 3: 300 train / 33 test, 56/56 eligible  (3.5s)  top-5: BiorxivClusteringS2S, STS14, STS17, DBPedia, MassiveIntentClassification
+  Rep 3 fold 4: 300 train / 33 test, 56/56 eligible  (4.4s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 3 fold 5: 300 train / 33 test, 56/56 eligible  (5.2s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 3 fold 6: 300 train / 33 test, 56/56 eligible  (5.8s)  top-5: ArxivClusteringS2S, MassiveIntentClassification, STS17, STS14, MedrxivClusteringP2P
+  Rep 3 fold 7: 300 train / 33 test, 56/56 eligible  (2.1s)  top-5: ArxivClusteringS2S, MassiveIntentClassification, STS14, MedrxivClusteringP2P, NQ
+  Rep 3 fold 8: 300 train / 33 test, 56/56 eligible  (3.8s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 3 fold 9: 300 train / 33 test, 56/56 eligible  (2.6s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 4 fold 0: 299 train / 34 test, 56/56 eligible  (3.0s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, AmazonPolarityClassification
+  Rep 4 fold 1: 299 train / 34 test, 56/56 eligible  (2.7s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 4 fold 2: 299 train / 34 test, 56/56 eligible  (2.7s)  top-5: ArxivClusteringS2S, STS15, MassiveIntentClassification, STS17, MedrxivClusteringP2P
+  Rep 4 fold 3: 300 train / 33 test, 56/56 eligible  (2.9s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 4 fold 4: 300 train / 33 test, 56/56 eligible  (2.5s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, STS17, DBPedia
+  Rep 4 fold 5: 300 train / 33 test, 56/56 eligible  (2.4s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, AmazonPolarityClassification, DBPedia
+  Rep 4 fold 6: 300 train / 33 test, 56/56 eligible  (1.4s)  top-5: BiorxivClusteringS2S, MassiveIntentClassification, STSBenchmark, STS15, DBPedia
+  Rep 4 fold 7: 300 train / 33 test, 56/56 eligible  (2.4s)  top-5: BiorxivClusteringS2S, STS14, MassiveIntentClassification, STS17, DBPedia
+  Rep 4 fold 8: 300 train / 33 test, 56/56 eligible  (2.5s)  top-5: BiorxivClusteringP2P, STS14, NQ, MassiveIntentClassification, STS17
+  Rep 4 fold 9: 300 train / 33 test, 56/56 eligible  (2.6s)  top-5: BiorxivClusteringS2S, STS15, MassiveIntentClassification, DBPedia, STS17
+
+  MTEB 2026 MI, holdout 10%: 50 splits (reps 0, 1, 2, 3, 4), eligible 56–56, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mi_mteb2026.pdf
+  Top-10 by mean rank:
+    BiorxivClusteringS2S                      count=45/50  mean_rank=2.8
+    MassiveIntentClassification               count=49/50  mean_rank=3.3
+    STS15                                     count=39/50  mean_rank=5.3
+    STS17                                     count=45/50  mean_rank=5.4
+    AmazonPolarityClassification              count=50/50  mean_rank=5.7
+    DBPedia                                   count=38/50  mean_rank=7.8
+    MedrxivClusteringP2P                      count=47/50  mean_rank=7.9
+    SciDocsRR                                 count=48/50  mean_rank=8.2
+    RedditClustering                          count=50/50  mean_rank=8.4
+    SciFact                                   count=49/50  mean_rank=9.9
+
+MTEB2026 completed in 182s
+
+
+Total time: 182s
+
+# finished 2026-10-20T02:46:02Z  exit=0  status=ok

@@ -1,0 +1,109 @@
+# job      item_budget
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_item_budget.py --repeats 5
+# started  2026-10-20T02:46:28Z on 4090-1
+
+OLL v1 items: 395 models × 62 tasks, 28659 items, task sizes 100 (abstract_algebra) – 10042 (hellaswag); 1 non-binary task(s): truthfulqa_mc2
+budgets Q: [50, 100, 200, 400, 800, 1600, 3200, 6400, 12800]
+5 × 10-fold CV = 50 matched splits, 10% holdout; item samples: Split.seed(SEED + 18)
+  rep 0 fold 0 (0.3s): B-MI 0.930  B-Ent 0.981  B-Tr 0.989  B-FL 0.989  B-Rand 0.970  I-Cent 0.930  I-Gauss 0.917  I-Mean 0.765  (R² at Q=12800)
+  rep 0 fold 1 (0.3s): B-MI 0.950  B-Ent 0.988  B-Tr 0.990  B-FL 0.990  B-Rand 0.951  I-Cent 0.946  I-Gauss 0.936  I-Mean 0.850  (R² at Q=12800)
+  rep 0 fold 2 (0.3s): B-MI 0.945  B-Ent 0.984  B-Tr 0.988  B-FL 0.989  B-Rand 0.961  I-Cent 0.949  I-Gauss 0.943  I-Mean 0.806  (R² at Q=12800)
+  rep 0 fold 3 (0.3s): B-MI 0.942  B-Ent 0.972  B-Tr 0.981  B-FL 0.981  B-Rand 0.880  I-Cent 0.946  I-Gauss 0.932  I-Mean 0.810  (R² at Q=12800)
+  rep 0 fold 4 (0.3s): B-MI 0.946  B-Ent 0.988  B-Tr 0.989  B-FL 0.989  B-Rand 0.959  I-Cent 0.941  I-Gauss 0.925  I-Mean 0.817  (R² at Q=12800)
+  rep 0 fold 5 (0.3s): B-MI 0.946  B-Ent 0.978  B-Tr 0.984  B-FL 0.984  B-Rand 0.963  I-Cent 0.947  I-Gauss 0.938  I-Mean 0.817  (R² at Q=12800)
+  rep 0 fold 6 (0.3s): B-MI 0.935  B-Ent 0.979  B-Tr 0.988  B-FL 0.988  B-Rand 0.954  I-Cent 0.934  I-Gauss 0.916  I-Mean 0.756  (R² at Q=12800)
+  rep 0 fold 7 (0.3s): B-MI 0.954  B-Ent 0.986  B-Tr 0.991  B-FL 0.992  B-Rand 0.968  I-Cent 0.959  I-Gauss 0.953  I-Mean 0.887  (R² at Q=12800)
+  rep 0 fold 8 (0.3s): B-MI 0.951  B-Ent 0.985  B-Tr 0.992  B-FL 0.992  B-Rand 0.963  I-Cent 0.948  I-Gauss 0.942  I-Mean 0.849  (R² at Q=12800)
+  rep 0 fold 9 (0.3s): B-MI 0.945  B-Ent 0.987  B-Tr 0.992  B-FL 0.992  B-Rand 0.963  I-Cent 0.936  I-Gauss 0.923  I-Mean 0.807  (R² at Q=12800)
+  rep 1 fold 0 (0.3s): B-MI 0.903  B-Ent 0.951  B-Tr 0.970  B-FL 0.970  B-Rand 0.927  I-Cent 0.918  I-Gauss 0.891  I-Mean 0.689  (R² at Q=12800)
+  rep 1 fold 1 (0.3s): B-MI 0.963  B-Ent 0.988  B-Tr 0.992  B-FL 0.991  B-Rand 0.978  I-Cent 0.958  I-Gauss 0.951  I-Mean 0.880  (R² at Q=12800)
+  rep 1 fold 2 (0.3s): B-MI 0.946  B-Ent 0.987  B-Tr 0.991  B-FL 0.991  B-Rand 0.955  I-Cent 0.944  I-Gauss 0.934  I-Mean 0.829  (R² at Q=12800)
+  rep 1 fold 3 (0.3s): B-MI 0.949  B-Ent 0.980  B-Tr 0.984  B-FL 0.984  B-Rand 0.969  I-Cent 0.952  I-Gauss 0.934  I-Mean 0.855  (R² at Q=12800)
+  rep 1 fold 4 (0.3s): B-MI 0.955  B-Ent 0.987  B-Tr 0.992  B-FL 0.992  B-Rand 0.962  I-Cent 0.962  I-Gauss 0.955  I-Mean 0.886  (R² at Q=12800)
+  rep 1 fold 5 (0.3s): B-MI 0.957  B-Ent 0.989  B-Tr 0.993  B-FL 0.993  B-Rand 0.908  I-Cent 0.953  I-Gauss 0.943  I-Mean 0.858  (R² at Q=12800)
+  rep 1 fold 6 (0.3s): B-MI 0.939  B-Ent 0.976  B-Tr 0.984  B-FL 0.984  B-Rand 0.890  I-Cent 0.943  I-Gauss 0.930  I-Mean 0.811  (R² at Q=12800)
+  rep 1 fold 7 (0.3s): B-MI 0.948  B-Ent 0.984  B-Tr 0.991  B-FL 0.990  B-Rand 0.940  I-Cent 0.935  I-Gauss 0.924  I-Mean 0.794  (R² at Q=12800)
+  rep 1 fold 8 (0.3s): B-MI 0.940  B-Ent 0.988  B-Tr 0.992  B-FL 0.992  B-Rand 0.897  I-Cent 0.943  I-Gauss 0.930  I-Mean 0.816  (R² at Q=12800)
+  rep 1 fold 9 (0.3s): B-MI 0.946  B-Ent 0.985  B-Tr 0.990  B-FL 0.990  B-Rand 0.958  I-Cent 0.952  I-Gauss 0.940  I-Mean 0.843  (R² at Q=12800)
+  rep 2 fold 0 (0.3s): B-MI 0.950  B-Ent 0.985  B-Tr 0.991  B-FL 0.991  B-Rand 0.969  I-Cent 0.953  I-Gauss 0.946  I-Mean 0.867  (R² at Q=12800)
+  rep 2 fold 1 (0.3s): B-MI 0.951  B-Ent 0.978  B-Tr 0.986  B-FL 0.986  B-Rand 0.960  I-Cent 0.940  I-Gauss 0.926  I-Mean 0.817  (R² at Q=12800)
+  rep 2 fold 2 (0.3s): B-MI 0.943  B-Ent 0.983  B-Tr 0.988  B-FL 0.988  B-Rand 0.839  I-Cent 0.935  I-Gauss 0.921  I-Mean 0.751  (R² at Q=12800)
+  rep 2 fold 3 (0.3s): B-MI 0.958  B-Ent 0.991  B-Tr 0.995  B-FL 0.995  B-Rand 0.975  I-Cent 0.954  I-Gauss 0.941  I-Mean 0.850  (R² at Q=12800)
+  rep 2 fold 4 (0.3s): B-MI 0.963  B-Ent 0.986  B-Tr 0.992  B-FL 0.992  B-Rand 0.973  I-Cent 0.952  I-Gauss 0.941  I-Mean 0.838  (R² at Q=12800)
+  rep 2 fold 5 (0.3s): B-MI 0.939  B-Ent 0.982  B-Tr 0.991  B-FL 0.991  B-Rand 0.946  I-Cent 0.937  I-Gauss 0.921  I-Mean 0.756  (R² at Q=12800)
+  rep 2 fold 6 (0.3s): B-MI 0.947  B-Ent 0.980  B-Tr 0.985  B-FL 0.985  B-Rand 0.964  I-Cent 0.957  I-Gauss 0.948  I-Mean 0.879  (R² at Q=12800)
+  rep 2 fold 7 (0.3s): B-MI 0.953  B-Ent 0.988  B-Tr 0.993  B-FL 0.993  B-Rand 0.898  I-Cent 0.949  I-Gauss 0.934  I-Mean 0.821  (R² at Q=12800)
+  rep 2 fold 8 (0.3s): B-MI 0.908  B-Ent 0.968  B-Tr 0.972  B-FL 0.972  B-Rand 0.934  I-Cent 0.930  I-Gauss 0.912  I-Mean 0.794  (R² at Q=12800)
+  rep 2 fold 9 (0.3s): B-MI 0.940  B-Ent 0.981  B-Tr 0.986  B-FL 0.985  B-Rand 0.867  I-Cent 0.937  I-Gauss 0.927  I-Mean 0.825  (R² at Q=12800)
+  rep 3 fold 0 (0.3s): B-MI 0.952  B-Ent 0.990  B-Tr 0.994  B-FL 0.994  B-Rand 0.966  I-Cent 0.952  I-Gauss 0.944  I-Mean 0.837  (R² at Q=12800)
+  rep 3 fold 1 (0.3s): B-MI 0.955  B-Ent 0.986  B-Tr 0.991  B-FL 0.991  B-Rand 0.969  I-Cent 0.954  I-Gauss 0.944  I-Mean 0.867  (R² at Q=12800)
+  rep 3 fold 2 (0.3s): B-MI 0.936  B-Ent 0.973  B-Tr 0.982  B-FL 0.982  B-Rand 0.938  I-Cent 0.945  I-Gauss 0.937  I-Mean 0.846  (R² at Q=12800)
+  rep 3 fold 3 (0.3s): B-MI 0.929  B-Ent 0.983  B-Tr 0.986  B-FL 0.985  B-Rand 0.969  I-Cent 0.934  I-Gauss 0.919  I-Mean 0.770  (R² at Q=12800)
+  rep 3 fold 4 (0.3s): B-MI 0.936  B-Ent 0.983  B-Tr 0.990  B-FL 0.991  B-Rand 0.855  I-Cent 0.939  I-Gauss 0.924  I-Mean 0.743  (R² at Q=12800)
+  rep 3 fold 5 (0.3s): B-MI 0.949  B-Ent 0.979  B-Tr 0.984  B-FL 0.984  B-Rand 0.976  I-Cent 0.949  I-Gauss 0.939  I-Mean 0.835  (R² at Q=12800)
+  rep 3 fold 6 (0.3s): B-MI 0.953  B-Ent 0.981  B-Tr 0.986  B-FL 0.986  B-Rand 0.964  I-Cent 0.957  I-Gauss 0.948  I-Mean 0.879  (R² at Q=12800)
+  rep 3 fold 7 (0.3s): B-MI 0.943  B-Ent 0.978  B-Tr 0.988  B-FL 0.988  B-Rand 0.962  I-Cent 0.943  I-Gauss 0.928  I-Mean 0.770  (R² at Q=12800)
+  rep 3 fold 8 (0.3s): B-MI 0.944  B-Ent 0.985  B-Tr 0.992  B-FL 0.992  B-Rand 0.967  I-Cent 0.946  I-Gauss 0.933  I-Mean 0.877  (R² at Q=12800)
+  rep 3 fold 9 (0.3s): B-MI 0.943  B-Ent 0.986  B-Tr 0.992  B-FL 0.992  B-Rand 0.980  I-Cent 0.945  I-Gauss 0.938  I-Mean 0.811  (R² at Q=12800)
+  rep 4 fold 0 (0.3s): B-MI 0.949  B-Ent 0.988  B-Tr 0.992  B-FL 0.992  B-Rand 0.978  I-Cent 0.947  I-Gauss 0.939  I-Mean 0.832  (R² at Q=12800)
+  rep 4 fold 1 (0.3s): B-MI 0.938  B-Ent 0.987  B-Tr 0.990  B-FL 0.990  B-Rand 0.951  I-Cent 0.942  I-Gauss 0.928  I-Mean 0.827  (R² at Q=12800)
+  rep 4 fold 2 (0.3s): B-MI 0.934  B-Ent 0.969  B-Tr 0.980  B-FL 0.979  B-Rand 0.949  I-Cent 0.949  I-Gauss 0.931  I-Mean 0.844  (R² at Q=12800)
+  rep 4 fold 3 (0.3s): B-MI 0.946  B-Ent 0.987  B-Tr 0.991  B-FL 0.991  B-Rand 0.970  I-Cent 0.943  I-Gauss 0.934  I-Mean 0.815  (R² at Q=12800)
+  rep 4 fold 4 (0.3s): B-MI 0.930  B-Ent 0.968  B-Tr 0.980  B-FL 0.979  B-Rand 0.866  I-Cent 0.941  I-Gauss 0.927  I-Mean 0.855  (R² at Q=12800)
+  rep 4 fold 5 (0.4s): B-MI 0.955  B-Ent 0.988  B-Tr 0.992  B-FL 0.992  B-Rand 0.971  I-Cent 0.950  I-Gauss 0.933  I-Mean 0.832  (R² at Q=12800)
+  rep 4 fold 6 (0.4s): B-MI 0.950  B-Ent 0.987  B-Tr 0.992  B-FL 0.992  B-Rand 0.972  I-Cent 0.954  I-Gauss 0.944  I-Mean 0.862  (R² at Q=12800)
+  rep 4 fold 7 (0.4s): B-MI 0.943  B-Ent 0.983  B-Tr 0.990  B-FL 0.991  B-Rand 0.953  I-Cent 0.934  I-Gauss 0.925  I-Mean 0.797  (R² at Q=12800)
+  rep 4 fold 8 (0.4s): B-MI 0.952  B-Ent 0.984  B-Tr 0.989  B-FL 0.989  B-Rand 0.960  I-Cent 0.953  I-Gauss 0.944  I-Mean 0.829  (R² at Q=12800)
+  rep 4 fold 9 (0.4s): B-MI 0.950  B-Ent 0.986  B-Tr 0.992  B-FL 0.992  B-Rand 0.957  I-Cent 0.949  I-Gauss 0.935  I-Mean 0.822  (R² at Q=12800)
+
+== OLL v1 items: pooled R² over all tasks vs question budget Q (mean over 50 splits) ==
+method                                                50         100         200         400         800        1600        3200        6400       12800
+Whole tasks, knapsack MI                         0.000/0     0.677/1     0.768/2     0.805/4     0.839/6    0.892/13    0.920/23    0.943/32    0.945/33
+Whole tasks, knapsack entropy                    0.000/0     0.710/1     0.737/2     0.772/4     0.849/7    0.895/15    0.932/26    0.960/41    0.982/56
+Whole tasks, knapsack trace                      0.000/0     0.710/1     0.763/2     0.809/4     0.866/7    0.900/14    0.934/26    0.964/38    0.988/52
+Whole tasks, knapsack facility location          0.000/0     0.708/1     0.766/1     0.800/3     0.864/7    0.900/13    0.931/24    0.963/38    0.988/52
+Whole tasks, random                              0.000/0     0.567/1     0.688/1     0.756/2     0.812/4     0.842/7    0.872/12    0.910/22    0.946/38
+Random items, centered + Gaussian posterior     0.601/22    0.702/33    0.762/45    0.811/56    0.846/61    0.874/62    0.895/62    0.918/62    0.945/62
+Random items, Gaussian posterior                0.500/22    0.629/33    0.722/45    0.780/56    0.826/61    0.858/62    0.882/62    0.905/62    0.933/62
+Random items, sample means                     -6.082/22   -7.533/33   -8.543/45   -8.168/56   -4.867/61   -1.692/62   -0.179/62    0.505/62    0.823/62
+
+== OLL v1 items: pooled R² over tasks not observed exactly vs question budget Q (mean over 50 splits) ==
+method                                                50         100         200         400         800        1600        3200        6400       12800
+Whole tasks, knapsack MI                         0.000/0     0.672/1     0.761/2     0.793/4     0.821/6    0.863/13    0.873/23    0.883/32    0.883/33
+Whole tasks, knapsack entropy                    0.000/0     0.705/1     0.728/2     0.757/4     0.829/7    0.862/15    0.883/26    0.881/41    0.820/56
+Whole tasks, knapsack trace                      0.000/0     0.705/1     0.756/2     0.797/4     0.848/7    0.871/14    0.887/26    0.908/38    0.927/52
+Whole tasks, knapsack facility location          0.000/0     0.703/1     0.762/1     0.790/3     0.847/7    0.873/13    0.887/24    0.905/38    0.927/52
+Whole tasks, random                              0.000/0     0.560/1     0.682/1     0.747/2     0.799/4     0.821/7    0.841/12    0.861/22    0.868/38
+Random items, centered + Gaussian posterior     0.601/22    0.702/33    0.762/45    0.811/56    0.846/61    0.874/62    0.895/62    0.918/62    0.945/62
+Random items, Gaussian posterior                0.500/22    0.629/33    0.722/45    0.780/56    0.826/61    0.858/62    0.882/62    0.905/62    0.933/62
+Random items, sample means                     -6.082/22   -7.533/33   -8.543/45   -8.168/56   -4.867/61   -1.692/62   -0.179/62    0.505/62    0.823/62
+(cell = mean R² / mean #tasks observed: selected whole tasks, or tasks with >= 1 sampled item; the r2_unobs task set is each method's own: unselected tasks for whole tasks, all tasks for items)
+noise model, sum e² / sum Var e (1 = calibrated) | part of the squared error common to all validation models:
+  Random items, centered + Gaussian posterior   1.02|0.03   1.01|0.03   1.00|0.03   0.98|0.03   0.99|0.03   0.99|0.03   1.00|0.03   1.00|0.03   1.01|0.03 
+  Random items, Gaussian posterior              0.97|0.38   0.97|0.37   0.97|0.36   0.96|0.35   0.95|0.34   0.94|0.33   0.95|0.33   0.96|0.34   0.98|0.35 
+mean questions used by the whole-task methods: bench_mi 0/100/200/368/738/1568/3157/6269/6668; bench_entropy 0/100/200/400/712/1541/3085/6252/12542; bench_trace 0/100/198/380/738/1575/3168/6296/12533; bench_facloc 0/100/144/344/757/1535/3171/6319/12523; bench_random 0/100/167/354/757/1561/3158/6357/12758
+best-singleton fallback won (budget × split cells): bench_mi 1, bench_entropy 0, bench_trace 2, bench_facloc 50; index ties: bench_mi 0, bench_entropy 0, bench_trace 0, bench_facloc 0, bench_random 0; clipped validation cells: 0
+
+== OLL v1 items: paired R² differences a − b over all tasks (mean; * = Nadeau–Bengio 95% CI excludes 0) ==
+pair                                    50       100       200       400       800      1600      3200      6400     12800
+bench_mi − items_gauss             -0.500*   +0.048    +0.047*   +0.024*   +0.013    +0.033*   +0.039*   +0.038*   +0.011*
+bench_mi − items_only              +6.082*   +8.210*   +9.311*   +8.973*   +5.706*   +2.583*   +1.099*   +0.438*   +0.121*
+items_gauss − items_only           +6.583*   +8.162*   +9.265*   +8.948*   +5.694*   +2.550*   +1.060*   +0.400*   +0.110*
+bench_trace − items_gauss          -0.500*   +0.081    +0.042*   +0.029*   +0.039*   +0.042*   +0.053*   +0.060*   +0.055*
+bench_mi − bench_random            +0.000    +0.110    +0.080*   +0.049*   +0.027*   +0.050*   +0.049*   +0.034*   -0.002 
+bench_mi − items_center            -0.601*   -0.026    +0.007    -0.006    -0.007    +0.018*   +0.025*   +0.026*   -0.001 
+bench_entropy − items_center       -0.601*   +0.007    -0.025    -0.038*   +0.002    +0.022*   +0.037*   +0.042*   +0.037*
+bench_trace − items_center         -0.601*   +0.007    +0.002    -0.001    +0.019*   +0.027*   +0.039*   +0.047*   +0.043*
+items_center − items_gauss         +0.101    +0.073    +0.040*   +0.030*   +0.020*   +0.015*   +0.014*   +0.013*   +0.012*
+bench_facloc − items_gauss         -0.500*   +0.079    +0.044*   +0.020    +0.037*   +0.041*   +0.049*   +0.058*   +0.055*
+bench_facloc − bench_random        +0.000    +0.141*   +0.078*   +0.044*   +0.051*   +0.058*   +0.059*   +0.053*   +0.042*
+bench_facloc − items_center        -0.601*   +0.006    +0.005    -0.011    +0.017*   +0.026*   +0.036*   +0.046*   +0.043*
+bench_mi − bench_facloc            +0.000    -0.031*   +0.002    +0.005    -0.024*   -0.008*   -0.011*   -0.020*   -0.044*
+bench_trace − bench_facloc         +0.000    +0.002    -0.003    +0.009    +0.002    +0.000    +0.003    +0.001    +0.000 
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/item_budget_olv1items.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/item_budget_olv1items.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/item_budget_olv1items_paired.csv
+Summary saved to ~/benchselect-runs/canonical-20261020/out/logs/item_budget_olv1items.json
+OLL v1 items completed in 19s
+
+# finished 2026-10-20T02:46:48Z  exit=0  status=ok

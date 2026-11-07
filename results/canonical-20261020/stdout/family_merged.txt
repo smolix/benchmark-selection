@@ -1,0 +1,102 @@
+# job      family_merged
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_family_holdout.py --datasets merged --repeats 5
+# started  2026-10-20T02:42:58Z on 4090-1
+
+
+######################################################################
+# Dataset: MERGED — family holdout
+######################################################################
+118 models × 114 tasks; keyword families, 0 models 'other' (always trained on)
+holding out families: claude(10), gemini(9), gemma(7), gpt(13), llama(20), mistral(19), phi(8), qwen(12), yi(8)
+Families of ≥ 7 models; selectable: benchmarks with ≥ 3 training models; 5 repetition(s) of the random streams
+  Holdout claude: 108 train / 10 test, 106/114 eligible  entropy:0.704  mi:0.365  random:0.726  hub:nan  pca:0.119  trace:0.417  facloc:0.561  (34.3s)
+  Holdout gemini: 109 train / 9 test, 114/114 eligible  entropy:0.324  mi:0.488  random:0.488  hub:0.835  pca:0.535  trace:0.555  facloc:0.572  (26.3s)
+  Holdout gemma: 111 train / 7 test, 114/114 eligible  entropy:0.782  mi:0.726  random:0.772  hub:0.794  pca:0.649  trace:0.859  facloc:0.853  (28.6s)
+  Holdout gpt: 105 train / 13 test, 106/114 eligible  entropy:0.414  mi:0.559  random:0.635  hub:nan  pca:0.700  trace:0.771  facloc:0.802  (9.0s)
+  Holdout llama: 98 train / 20 test, 114/114 eligible  entropy:0.333  mi:0.407  random:0.669  hub:0.682  pca:0.350  trace:0.556  facloc:0.673  (17.2s)
+  Holdout mistral: 99 train / 19 test, 114/114 eligible  entropy:0.412  mi:0.571  random:0.310  hub:0.342  pca:0.553  trace:0.626  facloc:0.675  (14.4s)
+  Holdout phi: 110 train / 8 test, 114/114 eligible  entropy:0.438  mi:0.162  random:0.511  hub:0.553  pca:0.425  trace:0.533  facloc:0.570  (21.9s)
+  Holdout qwen: 106 train / 12 test, 114/114 eligible  entropy:0.550  mi:0.591  random:0.591  hub:0.734  pca:0.590  trace:0.666  facloc:0.671  (11.0s)
+  Holdout yi: 110 train / 8 test, 114/114 eligible  entropy:0.472  mi:0.309  random:0.430  hub:0.233  pca:0.620  trace:0.588  facloc:0.587  (11.9s)
+  Holdout claude rep 1:  random:0.463  (0.0s)
+  Holdout gemini rep 1:  random:nan  (0.0s)
+  Holdout gemma rep 1:  random:0.668  (0.0s)
+  Holdout gpt rep 1:  random:0.762  (0.0s)
+  Holdout llama rep 1:  random:0.441  (0.0s)
+  Holdout mistral rep 1:  random:0.289  (0.0s)
+  Holdout phi rep 1:  random:0.334  (0.0s)
+  Holdout qwen rep 1:  random:0.756  (0.0s)
+  Holdout yi rep 1:  random:0.499  (0.0s)
+  Holdout claude rep 2:  random:0.763  (0.0s)
+  Holdout gemini rep 2:  random:0.840  (0.0s)
+  Holdout gemma rep 2:  random:0.811  (0.0s)
+  Holdout gpt rep 2:  random:0.695  (0.0s)
+  Holdout llama rep 2:  random:0.455  (0.0s)
+  Holdout mistral rep 2:  random:0.642  (0.0s)
+  Holdout phi rep 2:  random:0.403  (0.0s)
+  Holdout qwen rep 2:  random:0.664  (0.0s)
+  Holdout yi rep 2:  random:0.469  (0.0s)
+  Holdout claude rep 3:  random:0.276  (0.0s)
+  Holdout gemini rep 3:  random:0.324  (0.0s)
+  Holdout gemma rep 3:  random:0.682  (0.0s)
+  Holdout gpt rep 3:  random:0.652  (0.0s)
+  Holdout llama rep 3:  random:0.592  (0.0s)
+  Holdout mistral rep 3:  random:0.466  (0.0s)
+  Holdout phi rep 3:  random:0.300  (0.0s)
+  Holdout qwen rep 3:  random:0.582  (0.0s)
+  Holdout yi rep 3:  random:0.468  (0.0s)
+  Holdout claude rep 4:  random:0.589  (0.0s)
+  Holdout gemini rep 4:  random:0.633  (0.0s)
+  Holdout gemma rep 4:  random:0.733  (0.0s)
+  Holdout gpt rep 4:  random:0.785  (0.0s)
+  Holdout llama rep 4:  random:0.504  (0.0s)
+  Holdout mistral rep 4:  random:0.596  (0.0s)
+  Holdout phi rep 4:  random:0.408  (0.0s)
+  Holdout qwen rep 4:  random:0.563  (0.0s)
+  Holdout yi rep 4:  random:0.497  (0.0s)
+
+== Merged: family-holdout imputation R² (mean ± std over 9 families) ==
+   (random: per family, mean over 5 draws)
+method                k=1          k=3          k=5          k=10         k=15         
+Entropy (Alg. 1)      0.490±0.210  0.493±0.143  0.492±0.150  0.572±0.116  0.546±0.124  
+Mutual Info (Alg. 2)  0.225±0.287  0.432±0.204  0.464±0.161  0.526±0.187  0.617±0.122  
+Random                0.435±0.153  0.513±0.131  0.562±0.107  0.589±0.125  0.618±0.127  
+Hub correlation       0.068±0.896  0.378±0.611  0.596±0.214  0.619±0.159  0.568±0.146  
+PCA subset (CSSP)     0.545±0.172  0.545±0.135  0.504±0.170  0.493±0.115  0.601±0.137  
+Greedy trace min.     0.490±0.210  0.597±0.076  0.619±0.125  0.640±0.115  0.667±0.112  
+Facility location     0.229±0.861  0.575±0.146  0.663±0.099  0.688±0.109  0.701±0.108  
+
+   Per-family R² at k=5:
+   family          entropy     mi          random      hub         pca         trace       facloc      
+   claude          0.704       0.365       0.563       nan         0.119       0.417       0.561       
+   gemini          0.324       0.488       0.571       0.835       0.535       0.555       0.572       
+   gemma           0.782       0.726       0.733       0.794       0.649       0.859       0.853       
+   gpt             0.414       0.559       0.706       nan         0.700       0.771       0.802       
+   llama           0.333       0.407       0.532       0.682       0.350       0.556       0.673       
+   mistral         0.412       0.571       0.461       0.342       0.553       0.626       0.675       
+   phi             0.438       0.162       0.391       0.553       0.425       0.533       0.570       
+   qwen            0.550       0.591       0.631       0.734       0.590       0.666       0.671       
+   yi              0.472       0.309       0.473       0.233       0.620       0.588       0.587       
+
+   Selection stability (Jaccard vs full-data selection):
+   Entropy (Alg. 1)      k=5: 0.09  k=10: 0.25  k=15: 0.37
+   Mutual Info (Alg. 2)  k=5: 0.20  k=10: 0.29  k=15: 0.36
+   Hub correlation       k=5: 0.16  k=10: 0.23  k=15: 0.35
+   PCA subset (CSSP)     k=5: 0.11  k=10: 0.17  k=15: 0.40
+   Greedy trace min.     k=5: 0.08  k=10: 0.10  k=15: 0.10
+   Facility location     k=5: 0.15  k=10: 0.16  k=15: 0.23
+
+   Eligible benchmarks (≥ 3 training models): all models 114/114; families claude 106, gpt 106 of 114, others all
+   entropy     k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 45 in 45/45; all-model reference: 0 index ties
+   mi          k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: 0 index ties
+   random      k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: n/a
+   hub         k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: 0 index ties
+   pca         k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: 0 index ties
+   trace       k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: 0 index ties
+   facloc      k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 60 in 40/45; all-model reference: 0 index ties
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/family_holdout_merged.pdf
+MERGED completed in 193s
+
+All datasets completed in 193s
+
+# finished 2026-10-20T02:46:13Z  exit=0  status=ok

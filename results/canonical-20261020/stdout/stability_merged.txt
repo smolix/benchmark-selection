@@ -1,0 +1,172 @@
+# job      stability_merged
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_selection_stability.py --datasets merged --repeats 5 --workers 16
+# started  2026-10-20T02:31:39Z on 4090-1
+
+
+######################################################################
+# Dataset: MERGED
+######################################################################
+118 models × 114 tasks, 31.2% observed
+5 × 10-fold CV = 50 matched splits; 10 subsamples of 80% of the training models (Split.seed(SEED + 23)), 10 random subsets (Split.seed(SEED + 24)), 10 random s-swap draws (Split.seed(SEED + 22)); k = [3, 5, 10]; workers = 16
+  Split 0 (rep 0, fold 0): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.18 0.619/0.650  trace:J0.03 0.769/0.768  entropy:J0.16 0.669/0.490  hub:J0.23 0.692/0.482  pca:J0.21 0.709/0.631  facloc:J0.17 0.731/0.771  rand 0.654  (173.5s)
+  Split 1 (rep 0, fold 1): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.26 0.608/0.466  trace:J0.15 0.554/0.592  entropy:J0.31 0.536/0.498  hub:J0.18 0.704/0.531  pca:J0.12 0.423/0.420  facloc:J0.11 0.433/0.635  rand 0.491  (117.6s)
+  Split 2 (rep 0, fold 2): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.18 0.591/0.473  trace:J0.17 0.554/0.649  entropy:J0.04 0.463/0.444  hub:J0.26 0.610/0.641  pca:J0.09 0.657/0.522  facloc:J0.18 0.674/0.656  rand 0.534  (183.1s)
+  Split 3 (rep 0, fold 3): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.33 0.217/0.433  trace:J0.06 0.551/0.566  entropy:J0.10 0.586/0.419  hub:J0.16 0.342/0.272  pca:J0.16 0.535/0.451  facloc:J0.09 0.612/0.614  rand 0.482  (135.1s)
+  Split 4 (rep 0, fold 4): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.19 0.783/0.730  trace:J0.01 0.816/0.765  entropy:J0.07 0.702/0.607  hub:J0.29 0.694/0.666  pca:J0.14 0.573/0.611  facloc:J0.32 0.763/0.740  rand 0.682  (157.3s)
+  Split 5 (rep 0, fold 5): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.21 0.449/0.391  trace:J0.06 0.564/0.536  entropy:J0.23 0.453/0.379  hub:J0.29 0.483/0.483  pca:J0.09 0.469/0.429  facloc:J0.21 0.545/0.543  rand 0.497  (154.8s)
+  Split 6 (rep 0, fold 6): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.25 0.204/0.354  trace:J0.11 0.451/0.476  entropy:J0.16 0.509/0.473  hub:J0.20 0.542/0.604  pca:J0.23 0.389/0.355  facloc:J0.13 0.600/0.586  rand 0.510  (145.2s)
+  Split 7 (rep 0, fold 7): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.19 0.429/0.407  trace:J0.11 0.606/0.613  entropy:J0.17 0.461/0.517  hub:J0.11 0.701/0.679  pca:J0.04 0.626/0.536  facloc:J0.12 0.665/0.665  rand 0.542  (168.3s)
+  Split 8 (rep 0, fold 8): 106 train / 11 test, 106/114 eligible  k=5 mi:J0.33 0.547/0.511  trace:J0.08 0.592/0.630  entropy:J0.14 0.519/0.568  hub:J0.24 0.710/0.609  pca:J0.05 0.365/0.468  facloc:J0.16 0.484/0.645  rand 0.645  (108.3s)
+  Split 9 (rep 0, fold 9): 106 train / 11 test, 114/114 eligible  k=5 mi:J0.29 0.253/0.287  trace:J0.03 0.391/0.435  entropy:J0.13 0.337/0.243  hub:J0.32 0.395/0.217  pca:J0.04 0.307/0.275  facloc:J0.09 0.410/0.445  rand 0.344  (182.0s)
+  Split 10 (rep 1, fold 0): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.36 0.534/0.501  trace:J0.06 0.420/0.606  entropy:J0.43 0.462/0.505  hub:J0.25 0.686/0.586  pca:J0.22 0.420/0.476  facloc:J0.08 0.699/0.644  rand 0.532  (127.6s)
+  Split 11 (rep 1, fold 1): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.24 0.330/0.502  trace:J0.11 0.617/0.618  entropy:J0.09 0.597/0.459  hub:J0.22 0.662/0.537  pca:J0.11 0.506/0.515  facloc:J0.20 0.605/0.626  rand 0.491  (163.7s)
+  Split 12 (rep 1, fold 2): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.22 0.765/0.631  trace:J0.13 0.790/0.782  entropy:J0.09 0.741/0.639  hub:J0.20 0.768/0.651  pca:J0.19 0.519/0.565  facloc:J0.21 0.661/0.760  rand 0.753  (115.0s)
+  Split 13 (rep 1, fold 3): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.21 0.268/0.274  trace:J0.11 0.322/0.396  entropy:J0.21 0.316/0.319  hub:J0.34 0.316/0.326  pca:J0.10 0.400/0.272  facloc:J0.21 0.472/0.452  rand 0.309  (134.4s)
+  Split 14 (rep 1, fold 4): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.26 0.565/0.566  trace:J0.06 0.788/0.735  entropy:J0.12 0.633/0.587  hub:J0.31 0.723/0.686  pca:J0.17 0.624/0.544  facloc:J0.11 0.807/0.780  rand 0.658  (154.7s)
+  Split 15 (rep 1, fold 5): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.29 0.284/0.264  trace:J0.07 0.604/0.527  entropy:J0.30 0.215/0.370  hub:J0.33 0.481/0.484  pca:J0.20 0.279/0.276  facloc:J0.11 0.574/0.570  rand 0.363  (157.8s)
+  Split 16 (rep 1, fold 6): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.37 0.811/0.713  trace:J0.09 0.859/0.789  entropy:J0.24 0.717/0.659  hub:J0.23 0.696/0.686  pca:J0.07 0.736/0.674  facloc:J0.23 0.829/0.798  rand 0.737  (114.7s)
+  Split 17 (rep 1, fold 7): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.25 0.556/0.463  trace:J0.07 0.621/0.579  entropy:J0.33 0.439/0.354  hub:J0.50 0.382/0.450  pca:J0.22 0.492/0.392  facloc:J0.11 0.642/0.598  rand 0.568  (168.8s)
+  Split 18 (rep 1, fold 8): 106 train / 11 test, 114/114 eligible  k=5 mi:J0.34 0.376/0.391  trace:J0.09 0.558/0.525  entropy:J0.11 0.003/0.133  hub:J0.48 -0.681/-0.254  pca:J0.11 0.433/0.402  facloc:J0.08 0.487/0.550  rand 0.401  (151.3s)
+  Split 19 (rep 1, fold 9): 106 train / 11 test, 114/114 eligible  k=5 mi:J0.31 0.194/0.205  trace:J0.13 0.287/0.408  entropy:J0.15 0.419/0.296  hub:J0.21 0.317/0.426  pca:J0.13 0.260/0.300  facloc:J0.07 0.450/0.454  rand 0.429  (152.4s)
+  Split 20 (rep 2, fold 0): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.13 0.585/0.698  trace:J0.19 0.722/0.766  entropy:J0.17 0.711/0.658  hub:J0.15 0.792/0.796  pca:J0.06 0.476/0.708  facloc:J0.16 0.788/0.788  rand 0.726  (158.1s)
+  Split 21 (rep 2, fold 1): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.38 0.596/0.595  trace:J0.04 0.549/0.724  entropy:J0.14 0.632/0.628  hub:J0.25 0.762/0.693  pca:J0.22 0.472/0.539  facloc:J0.13 0.775/0.733  rand 0.644  (91.9s)
+  Split 22 (rep 2, fold 2): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.23 0.208/0.277  trace:J0.04 0.556/0.466  entropy:J0.16 0.510/0.414  hub:J0.15 0.416/0.320  pca:J0.11 0.591/0.409  facloc:J0.04 0.447/0.528  rand 0.465  (200.0s)
+  Split 23 (rep 2, fold 3): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.11 0.435/0.397  trace:J0.09 0.664/0.623  entropy:J0.11 0.493/0.446  hub:J0.20 0.612/0.600  pca:J0.07 0.478/0.436  facloc:J0.08 0.650/0.638  rand 0.557  (153.6s)
+  Split 24 (rep 2, fold 4): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.20 0.336/0.292  trace:J0.07 0.436/0.518  entropy:J0.17 0.326/0.234  hub:J0.37 0.382/0.030  pca:J0.17 -0.129/0.192  facloc:J0.20 0.455/0.550  rand 0.327  (143.9s)
+  Split 25 (rep 2, fold 5): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.24 0.567/0.472  trace:J0.15 0.495/0.564  entropy:J0.16 0.420/0.439  hub:J0.26 0.592/0.397  pca:J0.03 0.561/0.448  facloc:J0.16 0.493/0.563  rand 0.442  (140.6s)
+  Split 26 (rep 2, fold 6): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.24 0.234/0.348  trace:J0.04 0.384/0.437  entropy:J0.20 0.346/0.254  hub:J0.18 0.488/0.232  pca:J0.21 0.290/0.296  facloc:J0.13 0.499/0.504  rand 0.442  (191.6s)
+  Split 27 (rep 2, fold 7): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.36 0.631/0.580  trace:J0.14 0.654/0.674  entropy:J0.21 0.642/0.578  hub:J0.33 0.464/0.503  pca:J0.23 0.389/0.549  facloc:J0.16 0.672/0.702  rand 0.597  (89.1s)
+  Split 28 (rep 2, fold 8): 106 train / 11 test, 114/114 eligible  k=5 mi:J0.23 0.558/0.594  trace:J0.09 0.708/0.724  entropy:J0.14 0.738/0.509  hub:J0.18 -0.111/0.479  pca:J0.06 0.691/0.584  facloc:J0.16 0.746/0.727  rand 0.680  (126.1s)
+  Split 29 (rep 2, fold 9): 106 train / 11 test, 114/114 eligible  k=5 mi:J0.31 0.497/0.734  trace:J0.06 0.769/0.816  entropy:J0.19 0.316/0.560  hub:J0.42 0.602/0.496  pca:J0.09 0.554/0.710  facloc:J0.26 0.730/0.786  rand 0.719  (141.8s)
+  Split 30 (rep 3, fold 0): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.30 0.846/0.725  trace:J0.08 0.826/0.796  entropy:J0.19 0.705/0.680  hub:J0.08 0.764/0.775  pca:J0.02 0.801/0.663  facloc:J0.16 0.824/0.782  rand 0.791  (184.7s)
+  Split 31 (rep 3, fold 1): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.13 -0.224/0.174  trace:J0.07 0.291/0.336  entropy:J0.10 0.113/0.286  hub:J0.21 0.299/0.331  pca:J0.03 0.348/0.213  facloc:J0.14 0.390/0.379  rand 0.300  (226.7s)
+  Split 32 (rep 3, fold 2): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.39 0.179/0.344  trace:J0.10 0.582/0.576  entropy:J0.24 0.449/0.327  hub:J0.31 0.629/0.509  pca:J0.21 0.066/0.385  facloc:J0.22 0.595/0.605  rand 0.514  (130.9s)
+  Split 33 (rep 3, fold 3): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.31 0.553/0.556  trace:J0.07 0.615/0.644  entropy:J0.09 0.606/0.592  hub:J0.36 0.756/0.688  pca:J0.13 0.583/0.569  facloc:J0.13 0.642/0.682  rand 0.645  (139.3s)
+  Split 34 (rep 3, fold 4): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.24 0.527/0.432  trace:J0.10 0.498/0.538  entropy:J0.16 0.457/0.417  hub:J0.23 0.382/0.397  pca:J0.03 0.485/0.445  facloc:J0.09 0.691/0.644  rand 0.416  (132.4s)
+  Split 35 (rep 3, fold 5): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.30 0.431/0.575  trace:J0.18 0.744/0.717  entropy:J0.24 0.555/0.500  hub:J0.28 0.632/0.592  pca:J0.18 0.564/0.551  facloc:J0.09 0.714/0.736  rand 0.608  (169.5s)
+  Split 36 (rep 3, fold 6): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.29 0.735/0.717  trace:J0.05 0.796/0.767  entropy:J0.12 0.712/0.518  hub:J0.51 0.649/0.671  pca:J0.09 0.724/0.642  facloc:J0.14 0.733/0.764  rand 0.737  (127.9s)
+  Split 37 (rep 3, fold 7): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.25 0.152/0.441  trace:J0.09 0.592/0.548  entropy:J0.11 0.578/0.423  hub:J0.35 -0.032/0.131  pca:J0.12 0.441/0.482  facloc:J0.15 0.591/0.599  rand 0.345  (115.1s)
+  Split 38 (rep 3, fold 8): 106 train / 11 test, 114/114 eligible  k=5 mi:J0.20 0.427/0.432  trace:J0.01 0.617/0.551  entropy:J0.06 0.549/0.411  hub:J0.22 0.575/0.463  pca:J0.16 0.529/0.336  facloc:J0.11 0.524/0.571  rand 0.443  (118.5s)
+  Split 39 (rep 3, fold 9): 106 train / 11 test, 114/114 eligible  k=5 mi:J0.18 0.411/0.471  trace:J0.14 0.410/0.451  entropy:J0.18 0.310/0.399  hub:J0.29 0.386/0.418  pca:J0.06 0.459/0.497  facloc:J0.21 0.410/0.487  rand 0.499  (135.3s)
+  Split 40 (rep 4, fold 0): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.11 0.452/0.316  trace:J0.10 0.555/0.486  entropy:J0.11 0.491/0.391  hub:J0.30 0.455/0.337  pca:J0.04 0.593/0.361  facloc:J0.13 0.435/0.500  rand 0.414  (152.5s)
+  Split 41 (rep 4, fold 1): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.32 0.526/0.380  trace:J0.10 0.527/0.505  entropy:J0.21 0.352/0.246  hub:J0.20 0.546/0.409  pca:J0.17 0.306/0.318  facloc:J0.17 0.342/0.492  rand 0.403  (73.2s)
+  Split 42 (rep 4, fold 2): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.13 0.840/0.790  trace:J0.11 0.845/0.849  entropy:J0.07 0.839/0.623  hub:J0.14 0.870/0.658  pca:J0.10 0.760/0.783  facloc:J0.17 0.817/0.835  rand 0.788  (164.5s)
+  Split 43 (rep 4, fold 3): 106 train / 12 test, 106/114 eligible  k=5 mi:J0.21 0.570/0.592  trace:J0.19 0.640/0.640  entropy:J0.46 0.464/0.464  hub:J0.26 0.618/0.587  pca:J0.33 0.545/0.560  facloc:J0.22 0.643/0.661  rand 0.517  (156.8s)
+  Split 44 (rep 4, fold 4): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.32 0.346/0.453  trace:J0.09 0.493/0.493  entropy:J0.08 0.462/0.126  hub:J0.40 -0.380/-0.303  pca:J0.05 0.515/0.373  facloc:J0.14 0.491/0.506  rand 0.410  (104.6s)
+  Split 45 (rep 4, fold 5): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.23 0.314/0.454  trace:J0.07 0.463/0.552  entropy:J0.12 0.534/0.414  hub:J0.31 0.546/0.394  pca:J0.18 0.314/0.395  facloc:J0.12 0.590/0.567  rand 0.566  (110.7s)
+  Split 46 (rep 4, fold 6): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.25 0.491/0.465  trace:J0.11 0.666/0.747  entropy:J0.14 0.442/0.586  hub:J0.12 0.476/0.615  pca:J0.17 0.501/0.488  facloc:J0.14 0.751/0.741  rand 0.605  (98.1s)
+  Split 47 (rep 4, fold 7): 106 train / 12 test, 114/114 eligible  k=5 mi:J0.19 0.360/0.487  trace:J0.11 0.592/0.602  entropy:J0.13 0.464/0.472  hub:J0.18 0.513/0.448  pca:J0.23 0.541/0.546  facloc:J0.15 0.743/0.663  rand 0.551  (129.9s)
+  Split 48 (rep 4, fold 8): 106 train / 11 test, 114/114 eligible  k=5 mi:J0.23 0.617/0.539  trace:J0.07 0.702/0.650  entropy:J0.23 0.534/0.573  hub:J0.34 0.652/0.671  pca:J0.18 0.523/0.557  facloc:J0.10 0.690/0.670  rand 0.639  (109.4s)
+  Split 49 (rep 4, fold 9): 106 train / 11 test, 106/114 eligible  k=5 mi:J0.49 0.666/0.669  trace:J0.12 0.525/0.721  entropy:J0.16 0.620/0.503  hub:J0.23 -0.497/0.486  pca:J0.09 0.449/0.610  facloc:J0.10 0.701/0.756  rand 0.721  (112.7s)
+
+== Merged: selection stability over 50 splits (alternatives: training subsamples; R² with the full training estimate; R² is NaN where no validation model observes a selected benchmark) ==
+k=3  method    Jpair Jfull Jcross ident  R2full   R2alt     sd  range    cost  popRel    gap sd/gap lowSh
+     mi         0.23  0.29   0.38  0.03   0.331   0.424  0.143  0.437  -0.094   0.976 -0.161    n/a  0.66
+     trace      0.12  0.10   0.18  0.00   0.567   0.584  0.067  0.208  -0.017   0.962  0.076    n/a  0.95
+     entropy    0.15  0.10   0.16  0.00   0.496   0.404  0.142  0.437   0.092   0.904  0.005    n/a  0.92
+     hub        0.18  0.23   0.19  0.02   0.440   0.429  0.170  0.468   0.011   0.974 -0.051    n/a  0.72
+     pca        0.08  0.06   0.11  0.00   0.516   0.494  0.087  0.272   0.022   0.921  0.025    n/a  0.98
+     facloc     0.14  0.16   0.12  0.01   0.595   0.588  0.064  0.192   0.007   0.980  0.104   0.62  0.86
+     random     0.01                              0.491  0.130  0.417   (baseline seed+7: 0.490)
+k=5  method    Jpair Jfull Jcross ident  R2full   R2alt     sd  range    cost  popRel    gap sd/gap lowSh
+     mi         0.21  0.26   0.33  0.00   0.465   0.484  0.105  0.329  -0.019   0.946 -0.078    n/a  0.95
+     trace      0.10  0.09   0.15  0.00   0.593   0.610  0.060  0.183  -0.017   0.964  0.050    n/a  1.00
+     entropy    0.20  0.17   0.18  0.00   0.503   0.453  0.117  0.370   0.050   0.934 -0.040    n/a  0.97
+     hub        0.22  0.26   0.22  0.01   0.481   0.472  0.146  0.419   0.010   0.991 -0.061    n/a  0.93
+     pca        0.14  0.13   0.13  0.00   0.483   0.475  0.110  0.340   0.008   0.950 -0.060    n/a  0.99
+     facloc     0.14  0.15   0.18  0.00   0.614   0.634  0.047  0.143  -0.019   0.979  0.072   0.66  0.98
+     random     0.02                              0.543  0.102  0.332   (baseline seed+7: 0.563)
+k=10  method    Jpair Jfull Jcross ident  R2full   R2alt     sd  range    cost  popRel    gap sd/gap lowSh
+     mi         0.25  0.28   0.32  0.00   0.528   0.588  0.067  0.206  -0.060   0.980 -0.070    n/a  0.95
+     trace      0.12  0.12   0.14  0.00   0.626   0.634  0.055  0.174  -0.009   0.976  0.028    n/a  1.00
+     entropy    0.31  0.30   0.32  0.00   0.549   0.544  0.082  0.258   0.005   0.976 -0.049    n/a  0.93
+     hub        0.30  0.35   0.32  0.00   0.537   0.521  0.103  0.302   0.016   1.003 -0.061    n/a  0.81
+     pca        0.25  0.25   0.27  0.00   0.539   0.534  0.101  0.315   0.005   0.970 -0.059    n/a  0.98
+     facloc     0.18  0.18   0.23  0.00   0.661   0.667  0.043  0.130  -0.006   0.990  0.063   0.67  0.99
+     random     0.05                              0.598  0.075  0.232   (baseline seed+7: 0.604)
+
+== Merged: direct test (swapped alternatives vs random s-swaps of the same A_k; 95% Fieller intervals, NB-corrected; n/a below 30 alternatives or 10 splits) ==
+k=3  method     nSw spl  loss/swap [CI]             null/swap  harm [CI]               hPop worst/gap  cells f/a shift  status
+     mi         486  50  -0.0526 [-0.1599, 0.0548]    -0.0610    n/a [  n/a,   n/a]     n/a       n/a  0.74/0.77  0.50  uninformative
+     trace      498  50  -0.0069 [-0.0333, 0.0198]     0.0304    n/a [  n/a,   n/a]    0.22       n/a  0.83/0.83  0.41  uninformative
+     entropy    499  50  0.0364 [0.0033, 0.0675]       0.0074    n/a [  n/a,   n/a]    0.77       n/a  0.86/0.85  0.36  uninformative
+     hub        485  50  0.0057 [-0.0777, 0.0912]     -0.0279    n/a [  n/a,   n/a]     n/a       n/a  0.63/0.63  0.53  uninformative
+     pca        500  50  0.0079 [-0.0152, 0.0309]      0.0112    n/a [  n/a,   n/a]    0.48       n/a  0.88/0.89  0.29  uninformative
+     facloc     493  50  0.0030 [-0.0210, 0.0265]      0.0409  0.07 [-1.56, 0.46]      0.15      0.59  0.86/0.86  0.35  tested
+k=5  method     nSw spl  loss/swap [CI]             null/swap  harm [CI]               hPop worst/gap  cells f/a shift  status
+     mi         500  50  -0.0062 [-0.0343, 0.0218]    -0.0131    n/a [  n/a,   n/a]    0.64       n/a  0.85/0.92  0.46  uninformative
+     trace      500  50  -0.0040 [-0.0154, 0.0072]     0.0131    n/a [  n/a,   n/a]    0.29       n/a  0.91/0.92  0.24  uninformative
+     entropy    499  50  0.0136 [-0.0082, 0.0344]     -0.0030    n/a [  n/a,   n/a]    1.05       n/a  0.94/0.94  0.20  uninformative
+     hub        495  50  0.0031 [-0.0468, 0.0526]     -0.0176    n/a [  n/a,   n/a]     n/a       n/a  0.70/0.70  0.47  uninformative
+     pca        499  50  0.0020 [-0.0202, 0.0229]     -0.0086    n/a [  n/a,   n/a]    0.63       n/a  0.95/0.94  0.16  uninformative
+     facloc     499  50  -0.0051 [-0.0158, 0.0055]     0.0172  -0.30 [-4.00, 0.23]     0.22      0.30  0.95/0.95  0.14  tested
+k=10  method     nSw spl  loss/swap [CI]             null/swap  harm [CI]               hPop worst/gap  cells f/a shift  status
+     mi         500  50  -0.0105 [-0.0231, 0.0020]    -0.0086    n/a [  n/a,   n/a]    0.42       n/a  0.97/0.99  0.07  uninformative
+     trace      500  50  -0.0011 [-0.0081, 0.0059]     0.0039    n/a [  n/a,   n/a]    0.34       n/a  0.98/0.98  0.05  uninformative
+     entropy    500  50  0.0009 [-0.0095, 0.0108]     -0.0057    n/a [  n/a,   n/a]    0.96       n/a  0.96/0.98  0.05  uninformative
+     hub        499  50  0.0032 [-0.0269, 0.0327]     -0.0104    n/a [  n/a,   n/a]     n/a       n/a  0.77/0.79  0.39  uninformative
+     pca        500  50  0.0008 [-0.0101, 0.0116]     -0.0070    n/a [  n/a,   n/a]    0.94       n/a  0.98/0.98  0.02  uninformative
+     facloc     500  50  -0.0009 [-0.0069, 0.0051]     0.0077  -0.12 [-4.12, 0.44]     0.23      0.57  0.99/0.99  0.01  tested
+
+== Merged: paired R² differences (Nadeau–Bengio 95% CI, win rate) ==
+  k=3        mi_alt − mi          +0.0935  [-0.0952, +0.2822]  win 0.56  (n=50)
+  k=3            mi − random_sets -0.1607  [-0.3829, +0.0614]  win 0.30  (n=50)
+  k=3        mi_alt − random_sets -0.0672  [-0.1401, +0.0057]  win 0.24  (n=50)
+  k=3     trace_alt − trace       +0.0174  [-0.0494, +0.0843]  win 0.50  (n=50)
+  k=3         trace − random_sets +0.0756  [-0.0166, +0.1678]  win 0.76  (n=50)
+  k=3     trace_alt − random_sets +0.0931  [+0.0327, +0.1535]  win 0.88  (n=50)
+  k=3   entropy_alt − entropy     -0.0921  [-0.1762, -0.0081]  win 0.20  (n=50)
+  k=3       entropy − random_sets +0.0048  [-0.0943, +0.1040]  win 0.60  (n=50)
+  k=3   entropy_alt − random_sets -0.0873  [-0.1734, -0.0011]  win 0.26  (n=50)
+  k=3       hub_alt − hub         -0.0114  [-0.1794, +0.1566]  win 0.40  (n=50)
+  k=3           hub − random_sets -0.0514  [-0.2685, +0.1657]  win 0.60  (n=50)
+  k=3       hub_alt − random_sets -0.0628  [-0.1918, +0.0662]  win 0.46  (n=50)
+  k=3       pca_alt − pca         -0.0216  [-0.0842, +0.0411]  win 0.34  (n=50)
+  k=3           pca − random_sets +0.0246  [-0.0652, +0.1144]  win 0.68  (n=50)
+  k=3       pca_alt − random_sets +0.0030  [-0.0593, +0.0654]  win 0.48  (n=50)
+  k=3    facloc_alt − facloc      -0.0068  [-0.0613, +0.0477]  win 0.50  (n=50)
+  k=3        facloc − random_sets +0.1037  [+0.0297, +0.1776]  win 0.82  (n=50)
+  k=3    facloc_alt − random_sets +0.0968  [+0.0410, +0.1527]  win 0.90  (n=50)
+  k=5        mi_alt − mi          +0.0192  [-0.0666, +0.1049]  win 0.52  (n=50)
+  k=5            mi − random_sets -0.0777  [-0.1756, +0.0202]  win 0.30  (n=50)
+  k=5        mi_alt − random_sets -0.0585  [-0.1083, -0.0087]  win 0.18  (n=50)
+  k=5     trace_alt − trace       +0.0170  [-0.0307, +0.0647]  win 0.56  (n=50)
+  k=5         trace − random_sets +0.0499  [-0.0164, +0.1162]  win 0.76  (n=50)
+  k=5     trace_alt − random_sets +0.0669  [+0.0255, +0.1082]  win 0.84  (n=50)
+  k=5   entropy_alt − entropy     -0.0502  [-0.1297, +0.0292]  win 0.28  (n=50)
+  k=5       entropy − random_sets -0.0398  [-0.1196, +0.0401]  win 0.30  (n=50)
+  k=5   entropy_alt − random_sets -0.0900  [-0.1465, -0.0335]  win 0.10  (n=50)
+  k=5       hub_alt − hub         -0.0096  [-0.1612, +0.1421]  win 0.40  (n=50)
+  k=5           hub − random_sets -0.0614  [-0.2768, +0.1540]  win 0.58  (n=50)
+  k=5       hub_alt − random_sets -0.0710  [-0.1902, +0.0482]  win 0.38  (n=50)
+  k=5       pca_alt − pca         -0.0077  [-0.0924, +0.0770]  win 0.44  (n=50)
+  k=5           pca − random_sets -0.0598  [-0.1615, +0.0419]  win 0.36  (n=50)
+  k=5       pca_alt − random_sets -0.0675  [-0.1148, -0.0202]  win 0.12  (n=50)
+  k=5    facloc_alt − facloc      +0.0194  [-0.0212, +0.0601]  win 0.58  (n=50)
+  k=5        facloc − random_sets +0.0717  [+0.0106, +0.1328]  win 0.82  (n=50)
+  k=5    facloc_alt − random_sets +0.0911  [+0.0471, +0.1352]  win 0.94  (n=50)
+  k=10       mi_alt − mi          +0.0604  [-0.0114, +0.1322]  win 0.72  (n=50)
+  k=10           mi − random_sets -0.0695  [-0.1462, +0.0071]  win 0.26  (n=50)
+  k=10       mi_alt − random_sets -0.0091  [-0.0458, +0.0275]  win 0.38  (n=50)
+  k=10    trace_alt − trace       +0.0086  [-0.0477, +0.0650]  win 0.42  (n=50)
+  k=10        trace − random_sets +0.0281  [-0.0288, +0.0851]  win 0.74  (n=50)
+  k=10    trace_alt − random_sets +0.0367  [+0.0082, +0.0653]  win 0.84  (n=50)
+  k=10  entropy_alt − entropy     -0.0049  [-0.0608, +0.0511]  win 0.48  (n=50)
+  k=10      entropy − random_sets -0.0488  [-0.1150, +0.0174]  win 0.32  (n=50)
+  k=10  entropy_alt − random_sets -0.0537  [-0.0962, -0.0111]  win 0.20  (n=50)
+  k=10      hub_alt − hub         -0.0161  [-0.1662, +0.1341]  win 0.32  (n=50)
+  k=10          hub − random_sets -0.0605  [-0.2184, +0.0973]  win 0.38  (n=50)
+  k=10      hub_alt − random_sets -0.0766  [-0.1617, +0.0085]  win 0.18  (n=50)
+  k=10      pca_alt − pca         -0.0048  [-0.0704, +0.0608]  win 0.40  (n=50)
+  k=10          pca − random_sets -0.0589  [-0.1232, +0.0054]  win 0.32  (n=50)
+  k=10      pca_alt − random_sets -0.0637  [-0.1091, -0.0183]  win 0.14  (n=50)
+  k=10   facloc_alt − facloc      +0.0065  [-0.0358, +0.0488]  win 0.36  (n=50)
+  k=10       facloc − random_sets +0.0632  [+0.0081, +0.1183]  win 0.84  (n=50)
+  k=10   facloc_alt − random_sets +0.0697  [+0.0365, +0.1029]  win 0.94  (n=50)
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/selection_stability_merged.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/selection_stability_merged.{npz,json} and _paired.csv (1018 macros)
+MERGED completed in 503s
+
+All datasets completed in 503s
+
+# finished 2026-10-20T02:40:04Z  exit=0  status=ok

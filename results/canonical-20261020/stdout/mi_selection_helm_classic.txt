@@ -1,0 +1,83 @@
+# job      mi_selection_helm_classic
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets helm_classic --repeats 5 --selections-json none
+# started  2026-10-20T02:43:12Z on 4090-1
+
+
+######################################################################
+# Dataset: HELM_CLASSIC
+######################################################################
+67 models x 16 tasks, 81.7% observed
+5 x 10-fold matched splits; selectable: >= 3 observed training models
+Holdout 10%
+
+  Rep 0 fold 0: 60 train / 7 test, 16/16 eligible  (1.7s)  top-5: QuAC, MS MARCO (TREC), HellaSwag, MMLU, CivilComments
+  Rep 0 fold 1: 60 train / 7 test, 16/16 eligible  (1.9s)  top-5: MS MARCO (regular), NarrativeQA, OpenbookQA, NaturalQuestions (closed-book), TruthfulQA
+  Rep 0 fold 2: 60 train / 7 test, 16/16 eligible  (1.5s)  top-5: MS MARCO (regular), NaturalQuestions (closed-book), HellaSwag, CivilComments, CNN/DailyMail
+  Rep 0 fold 3: 60 train / 7 test, 16/16 eligible  (1.1s)  top-5: MS MARCO (regular), HellaSwag, CivilComments, MMLU, BoolQ
+  Rep 0 fold 4: 60 train / 7 test, 16/16 eligible  (0.9s)  top-5: MS MARCO (regular), OpenbookQA, NarrativeQA, NaturalQuestions (closed-book), NaturalQuestions (open-book)
+  Rep 0 fold 5: 60 train / 7 test, 16/16 eligible  (0.7s)  top-5: MS MARCO (regular), OpenbookQA, NaturalQuestions (closed-book), NarrativeQA, NaturalQuestions (open-book)
+  Rep 0 fold 6: 60 train / 7 test, 16/16 eligible  (2.3s)  top-5: MS MARCO (regular), HellaSwag, CivilComments, MMLU, XSUM
+  Rep 0 fold 7: 60 train / 6 test, 16/16 eligible  (0.8s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), CivilComments, NaturalQuestions (open-book)
+  Rep 0 fold 8: 60 train / 6 test, 16/16 eligible  (0.6s)  top-5: MS MARCO (regular), NaturalQuestions (closed-book), HellaSwag, CivilComments, TruthfulQA
+  Rep 0 fold 9: 60 train / 6 test, 16/16 eligible  (1.4s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), NaturalQuestions (open-book), CNN/DailyMail
+  Rep 1 fold 0: 60 train / 7 test, 16/16 eligible  (1.6s)  top-5: MS MARCO (regular), NarrativeQA, QuAC, XSUM, TruthfulQA
+  Rep 1 fold 1: 60 train / 7 test, 16/16 eligible  (0.8s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), CivilComments, TruthfulQA
+  Rep 1 fold 2: 60 train / 7 test, 16/16 eligible  (0.9s)  top-5: QuAC, MS MARCO (regular), HellaSwag, MMLU, BoolQ
+  Rep 1 fold 3: 60 train / 7 test, 16/16 eligible  (0.7s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), NaturalQuestions (open-book), CNN/DailyMail
+  Rep 1 fold 4: 60 train / 7 test, 16/16 eligible  (1.1s)  top-5: MS MARCO (regular), HellaSwag, CivilComments, MMLU, QuAC
+  Rep 1 fold 5: 60 train / 7 test, 16/16 eligible  (0.8s)  top-5: NaturalQuestions (closed-book), MS MARCO (TREC), HellaSwag, CivilComments, TruthfulQA
+  Rep 1 fold 6: 60 train / 7 test, 16/16 eligible  (0.9s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), CivilComments, TruthfulQA
+  Rep 1 fold 7: 60 train / 6 test, 16/16 eligible  (2.0s)  top-5: NarrativeQA, MS MARCO (regular), OpenbookQA, NaturalQuestions (closed-book), TruthfulQA
+  Rep 1 fold 8: 60 train / 6 test, 16/16 eligible  (1.6s)  top-5: MS MARCO (regular), NarrativeQA, CivilComments, BoolQ, MMLU
+  Rep 1 fold 9: 60 train / 6 test, 16/16 eligible  (2.1s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), NaturalQuestions (open-book), CNN/DailyMail
+  Rep 2 fold 0: 60 train / 7 test, 16/16 eligible  (1.4s)  top-5: HellaSwag, MS MARCO (TREC), NaturalQuestions (closed-book), CivilComments, QuAC
+  Rep 2 fold 1: 60 train / 7 test, 16/16 eligible  (1.1s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), NaturalQuestions (open-book), CNN/DailyMail
+  Rep 2 fold 2: 60 train / 7 test, 16/16 eligible  (1.2s)  top-5: MS MARCO (regular), NarrativeQA, NaturalQuestions (closed-book), NaturalQuestions (open-book), CivilComments
+  Rep 2 fold 3: 60 train / 7 test, 16/16 eligible  (5.9s)  top-5: MS MARCO (regular), QuAC, NarrativeQA, NaturalQuestions (closed-book), CivilComments
+  Rep 2 fold 4: 60 train / 7 test, 16/16 eligible  (1.8s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), NaturalQuestions (open-book), CNN/DailyMail
+  Rep 2 fold 5: 60 train / 7 test, 16/16 eligible  (1.9s)  top-5: QuAC, HellaSwag, CivilComments, MMLU, BoolQ
+  Rep 2 fold 6: 60 train / 7 test, 16/16 eligible  (1.4s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), CivilComments, NaturalQuestions (open-book)
+  Rep 2 fold 7: 60 train / 6 test, 16/16 eligible  (2.5s)  top-5: MS MARCO (regular), HellaSwag, QuAC, MMLU, CivilComments
+  Rep 2 fold 8: 60 train / 6 test, 16/16 eligible  (2.9s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), CivilComments, TruthfulQA
+  Rep 2 fold 9: 60 train / 6 test, 16/16 eligible  (1.7s)  top-5: MS MARCO (regular), OpenbookQA, NarrativeQA, NaturalQuestions (closed-book), NaturalQuestions (open-book)
+  Rep 3 fold 0: 60 train / 7 test, 16/16 eligible  (1.6s)  top-5: HellaSwag, MS MARCO (regular), NaturalQuestions (closed-book), CivilComments, TruthfulQA
+  Rep 3 fold 1: 60 train / 7 test, 16/16 eligible  (2.0s)  top-5: MS MARCO (TREC), QuAC, HellaSwag, CivilComments, BoolQ
+  Rep 3 fold 2: 60 train / 7 test, 16/16 eligible  (1.8s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), CivilComments, TruthfulQA
+  Rep 3 fold 3: 60 train / 7 test, 16/16 eligible  (1.0s)  top-5: MS MARCO (regular), HellaSwag, CivilComments, MMLU, BoolQ
+  Rep 3 fold 4: 60 train / 7 test, 16/16 eligible  (1.9s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), NaturalQuestions (open-book), CNN/DailyMail
+  Rep 3 fold 5: 60 train / 7 test, 16/16 eligible  (2.2s)  top-5: MS MARCO (regular), HellaSwag, CivilComments, NaturalQuestions (closed-book), TruthfulQA
+  Rep 3 fold 6: 60 train / 7 test, 16/16 eligible  (1.4s)  top-5: QuAC, MS MARCO (TREC), HellaSwag, CivilComments, MMLU
+  Rep 3 fold 7: 60 train / 6 test, 16/16 eligible  (1.0s)  top-5: MS MARCO (regular), NarrativeQA, NaturalQuestions (closed-book), CivilComments, TruthfulQA
+  Rep 3 fold 8: 60 train / 6 test, 16/16 eligible  (1.4s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), NaturalQuestions (open-book), CNN/DailyMail
+  Rep 3 fold 9: 60 train / 6 test, 16/16 eligible  (1.5s)  top-5: MS MARCO (regular), NarrativeQA, NaturalQuestions (closed-book), NaturalQuestions (open-book), OpenbookQA
+  Rep 4 fold 0: 60 train / 7 test, 16/16 eligible  (1.6s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), CivilComments, TruthfulQA
+  Rep 4 fold 1: 60 train / 7 test, 16/16 eligible  (2.6s)  top-5: MS MARCO (regular), NarrativeQA, NaturalQuestions (closed-book), OpenbookQA, BoolQ
+  Rep 4 fold 2: 60 train / 7 test, 16/16 eligible  (1.9s)  top-5: QuAC, MS MARCO (regular), HellaSwag, CivilComments, BoolQ
+  Rep 4 fold 3: 60 train / 7 test, 16/16 eligible  (2.0s)  top-5: QuAC, HellaSwag, CivilComments, MMLU, MS MARCO (TREC)
+  Rep 4 fold 4: 60 train / 7 test, 16/16 eligible  (1.2s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), NaturalQuestions (open-book), QuAC
+  Rep 4 fold 5: 60 train / 7 test, 16/16 eligible  (1.4s)  top-5: MS MARCO (regular), HellaSwag, NaturalQuestions (closed-book), NaturalQuestions (open-book), TruthfulQA
+  Rep 4 fold 6: 60 train / 7 test, 16/16 eligible  (2.8s)  top-5: MS MARCO (regular), HellaSwag, CivilComments, MMLU, BoolQ
+  Rep 4 fold 7: 60 train / 6 test, 16/16 eligible  (1.9s)  top-5: MS MARCO (regular), NaturalQuestions (closed-book), HellaSwag, CivilComments, QuAC
+  Rep 4 fold 8: 60 train / 6 test, 16/16 eligible  (2.6s)  top-5: MS MARCO (regular), QuAC, HellaSwag, BoolQ, MMLU
+  Rep 4 fold 9: 60 train / 6 test, 16/16 eligible  (2.7s)  top-5: MS MARCO (regular), QuAC, HellaSwag, MMLU, BoolQ
+
+  HELM Classic MI, holdout 10%: 50 splits (reps 0, 1, 2, 3, 4), eligible 16–16, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mi_helm_classic.pdf
+  Top-10 by mean rank:
+    MS MARCO (regular)                        count=44/50  mean_rank=3.0
+    HellaSwag                                 count=48/50  mean_rank=5.0
+    CivilComments                             count=50/50  mean_rank=6.1
+    NaturalQuestions (closed-book)            count=48/50  mean_rank=6.4
+    TruthfulQA                                count=50/50  mean_rank=7.4
+    CNN/DailyMail                             count=50/50  mean_rank=8.1
+    RAFT                                      count=50/50  mean_rank=8.5
+    QuAC                                      count=45/50  mean_rank=8.6
+    NaturalQuestions (open-book)              count=50/50  mean_rank=8.9
+    BoolQ                                     count=50/50  mean_rank=8.9
+
+HELM_CLASSIC completed in 85s
+
+
+Total time: 85s
+
+# finished 2026-10-20T02:44:37Z  exit=0  status=ok

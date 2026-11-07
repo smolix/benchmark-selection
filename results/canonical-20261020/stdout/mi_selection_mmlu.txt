@@ -1,0 +1,83 @@
+# job      mi_selection_mmlu
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets mmlu --repeats 5 --selections-json none
+# started  2026-10-20T02:46:59Z on 4090-1
+
+
+######################################################################
+# Dataset: MMLU
+######################################################################
+5452 models x 57 tasks, 100.0% observed
+5 x 10-fold matched splits; selectable: >= 3 observed training models
+Holdout 10%
+
+  Rep 0 fold 0: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 0 fold 1: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 0 fold 2: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 0 fold 3: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 0 fold 4: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 0 fold 5: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 0 fold 6: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 0 fold 7: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 0 fold 8: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 0 fold 9: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 0: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 1: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 2: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 3: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 4: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 5: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 6: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 7: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 8: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 1 fold 9: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 0: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 1: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 2: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 3: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 4: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 5: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 6: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 7: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 8: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 2 fold 9: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, high_school_us_history
+  Rep 3 fold 0: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 3 fold 1: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 3 fold 2: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 3 fold 3: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 3 fold 4: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 3 fold 5: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 3 fold 6: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 3 fold 7: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 3 fold 8: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 3 fold 9: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 0: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 1: 4906 train / 546 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 2: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 3: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 4: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 5: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 6: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 7: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 8: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+  Rep 4 fold 9: 4907 train / 545 test, 57/57 eligible  (0.0s)  top-5: miscellaneous, professional_psychology, elementary_mathematics, high_school_psychology, marketing
+
+  MMLU MI, holdout 10%: 50 splits (reps 0, 1, 2, 3, 4), eligible 57–57, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mi_mmlu.pdf
+  Top-10 by mean rank:
+    miscellaneous                             count=50/50  mean_rank=1.0
+    professional_psychology                   count=50/50  mean_rank=2.0
+    elementary_mathematics                    count=50/50  mean_rank=3.0
+    high_school_psychology                    count=50/50  mean_rank=4.0
+    marketing                                 count=50/50  mean_rank=5.0
+    high_school_us_history                    count=50/50  mean_rank=6.0
+    high_school_biology                       count=50/50  mean_rank=7.0
+    professional_law                          count=50/50  mean_rank=8.5
+    nutrition                                 count=50/50  mean_rank=9.8
+    logical_fallacies                         count=50/50  mean_rank=11.4
+
+MMLU completed in 2s
+
+
+Total time: 2s
+
+# finished 2026-10-20T02:47:02Z  exit=0  status=ok

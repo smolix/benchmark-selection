@@ -1,0 +1,205 @@
+== canonical run 2026-10-20, 4090-1:~/benchselect-runs/canonical-20261020, summary 2026-10-20T03:26:53Z ==
+-- tree
+2026-10-20T03:26:35Z tree: ok (134 files, md5 = tools/tree.md5)
+2026-10-20T03:26:53Z tree: unchanged after the run (0 __pycache__ dirs)
+-- (a) run_all.sh --repeats 5 (MAX_JOBS 60, WORKERS 16): exit 0
+== run_all: 138 job(s), wall 5798s, root ~/benchselect-runs/canonical-20261020/out ==
+artifacts: 474 files (474 from this run, 0 from earlier runs, 0 unknown); manifest: ~/benchselect-runs/canonical-20261020/out/manifest.json
+all 138 job(s) ok
+-- manifest check, longest jobs (report.py)
+full run run_all-20261020T014458Z-17996 (run_all-20261020T014458Z-17996.json): 138 jobs {'ok': 138}, wall 5798 s = 1.61 h (2026-10-20T01:44:58Z -> 2026-10-20T03:21:35Z)
+code tree sha256 4d42305ae210bc66ac54a00f6fb7aad5c260b9002ab85f3c8acd7023090c76d5 (69 code files, 65 inputs)
+artifacts: full run 474; latest manifest (run_all-20261020T032216Z-18293) 498, origins {'this_run': 26, 'earlier_run': 448, 'unknown': 24}
+manifest check:
+  [ok] full run ok 
+  [ok] all jobs ok {'ok': 138}
+  [ok] nothing changed during the run [] []
+  [ok] parameter repeats = '5'
+  [ok] parameter workers = '16'
+  [ok] parameter max_jobs = '60'
+  [ok] parameter datasets = 'mmlu mteb merged benchpress'
+  [ok] parameter datasets_extra = 'olv2sub olv1items epoch helm_lite helm_mmlu helm_classic mteb2026'
+  [ok] git provenance 048f2df dirty {'source': 'env (BENCHSELECT_GIT_*, unchecked; the tree is not a git work tree)', 'commit': '048f2df', 'dirty': True, 'diff_sha256': None}
+  [ok] code sha256 = tree 69 files, 0 mismatches
+  [ok] input sha256 = tree 65 files, 0 mismatches
+  [ok] artifact sha256 = files now (latest manifest) 498 artifacts, 0 mismatches
+15 longest jobs (full run):
+  imputers_merged_rep2               ok          5719.9 s
+  imputers_merged_rep1               ok          5688.6 s
+  imputers_merged_rep4               ok          5658.9 s
+  imputers_merged_rep3               ok          5634.0 s
+  imputers_merged_rep0               ok          5584.0 s
+  greedy_cv_epoch                    ok          4571.3 s
+  reviewer_checks                    ok          4254.6 s
+  logit_merged                       ok          3765.3 s
+  analyze_objectives                 ok          3376.6 s
+  benchpress                         ok          2940.7 s
+  imputers_benchpress_rep4           ok          2600.1 s
+  imputers_mteb_rep0                 ok          2538.3 s
+  imputers_benchpress_rep2           ok          2526.8 s
+  imputers_benchpress_rep3           ok          2523.3 s
+  imputers_mteb_rep3                 ok          2514.5 s
+
+-- (b) TabImpute conversion: exit 0; RUN_ONLY=numbers: exit 0
+== run_all: 1 job(s), wall 69s, root ~/benchselect-runs/canonical-20261020/out ==
+all 1 job(s) ok
+tabimpute_mmlu.npz: 4 methods (entropy mi random facloc), 50 splits
+tabimpute_extra_mmlu.npz: 3 methods (hub pca trace), 50 splits
+tabimpute_mteb.npz: 4 methods (entropy mi random facloc), 50 splits
+tabimpute_extra_mteb.npz: 3 methods (hub pca trace), 50 splits
+tabimpute_merged.npz: 4 methods (entropy mi random facloc), 50 splits
+tabimpute_extra_merged.npz: 3 methods (hub pca trace), 50 splits
+tabimpute_benchpress.npz: 4 methods (entropy mi random facloc), 50 splits
+tabimpute_extra_benchpress.npz: 3 methods (hub pca trace), 50 splits
+TabImpute conversion = verified fix-stage conversion: OK (24 files, 456 npz keys compared, 0 differences)
+   GPU logs unchanged: 0 md5 complaints
+   CPU-only numbers vs with TabImpute (compare_runs, tol 0): exit 0
+reading ~/benchselect-runs/canonical-20261020/results/numbers_cpu/numbers.csv
+reading ~/benchselect-runs/canonical-20261020/out/numbers/numbers.csv
+
+old: 225170 quantities, new: 226906 quantities, tol 0
+  changed: 0, coverage_changed: 0, display_changed: 0, text_changed: 0, only_old: 0, only_new: 1736
+note: 48 quantities come from the same files outside both roots and cannot differ (e.g. DataBenchpressM, DataBenchpressN, DataBenchpressObsPct, DataBenchpressMissPct)
+
+key                                 status                    old          new      delta  detail
+RsqTabBenchpressEntropyKone         only_new                            0.0523
+RsqStdTabBenchpressEntropyKone      only_new                            0.0573
+RsqTabBenchpressEntropyKtwo         only_new                            0.0517
+RsqStdTabBenchpressEntropyKtwo      only_new                            0.0589
+RsqTabBenchpressEntropyKthree       only_new                            0.0557
+RsqStdTabBenchpressEntropyKthree    only_new                            0.0587
+RsqTabBenchpressEntropyKfive        only_new                            0.0541
+RsqStdTabBenchpressEntropyKfive     only_new                            0.0628
+RsqTabBenchpressEntropyKseven       only_new                            0.0729
+RsqStdTabBenchpressEntropyKseven    only_new                            0.0606
+RsqTabBenchpressEntropyKten         only_new                            0.1184
+RsqStdTabBenchpressEntropyKten      only_new                            0.0701
+RsqTabBenchpressEntropyKfifteen     only_new                            0.2241
+RsqStdTabBenchpressEntropyKfifteen  only_new                            0.0923
+RsqTabBenchpressMiKone              only_new                            0.0681
+RsqStdTabBenchpressMiKone           only_new                            0.0676
+RsqTabBenchpressMiKtwo              only_new                            0.0808
+-- (c) provisional (spec-20261018) vs canonical
+   compare_runs --arrays --tol 0 --rtol 0: exit 1
+other: equal 12941, extended 221, not_compared 12, only_new 2903
+logit: differs 94, equal 1096, extended 30, only_new 600
+logit keys not equal (by name, p*_ folded): rand_r2 19, rand_rmse 19, r2 16, rmse 16, entropy_r2 4, entropy_rmse 4, mi_r2 4, mi_rmse 4, random_r2 4, random_rmse 4
+non-logit rows not equal/extended/only_new/not_compared: 0
+   compare_runs numbers.csv --tol 0: exit 0
+reading ~/benchselect-runs/spec-20261018/out/numbers/numbers.csv
+reading ~/benchselect-runs/canonical-20261020/out/numbers/numbers.csv
+
+old: 158222 quantities, new: 226906 quantities, tol 0
+  changed: 942, coverage_changed: 0, display_changed: 0, text_changed: 24, only_old: 0, only_new: 68684
+note: 48 quantities come from the same files outside both roots and cannot differ (e.g. DataBenchpressM, DataBenchpressN, DataBenchpressObsPct, DataBenchpressMissPct)
+
+key                                                                  status                    old          new      delta  detail
+ImpRuntimeMinMerged                                                  changed              431.6800     471.3400    39.6600  macro 431.68 -> 471.34
+ImpRuntimeMinBenchpress                                              changed              223.5000     208.3700   -15.1300  macro 223.50 -> 208.37
+ImpRuntimeMinMteb                                                    changed              212.9500     205.8500    -7.1000  macro 212.95 -> 205.85
+ImpRuntimeMinMmlu                                                    changed               73.2900      67.5300    -5.7600  macro 73.29 -> 67.53
+PairWinsLogitMtebTwothousandtwentysixMiVsEntropyKten                 changed                    30           27    -3.0000  macro 30 -> 27
+PairWinsLogitMtebEntropyVsRandomKten                                 changed                    28           31     3.0000  macro 28 -> 31
+PairWinsLogitMtebEntropyVsRandomKtenPten                             changed                    28           31     3.0000  macro 28 -> 31
+PairWinsLogitMtebTwothousandtwentysixMiVsRandomKten                  changed                    38           36    -2.0000  macro 38 -> 36
+PairWinsLogitMtebMiVsEntropyKthree                                   changed                    35           33    -2.0000  macro 35 -> 33
+PairWinsLogitMtebMiVsEntropyKten                                     changed                    33           31    -2.0000  macro 33 -> 31
+PairWinsLogitMtebMiVsEntropyKfifteen                                 changed                    25           23    -2.0000  macro 25 -> 23
+RsqStdLogitBenchpressRandomKfifteenPtwenty                           changed                0.5791       1.7504     1.1713  macro 0.579 -> 1.750
+PairHiLogitBenchpressEntropyVsRandomKfifteenPtwenty                  changed                0.6836       1.8136     1.1300  macro 0.68 -> 1.81
+PairWinsLogitBenchpressEntropyVsRandomKfifteen                       changed                    32           33     1.0000  macro 32 -> 33
+PairWinsLogitHelmMmluMiVsRandomKten                                  changed                    31           30    -1.0000  macro 31 -> 30
+PairWinsLogitMtebTwothousandtwentysixMiVsRandomKfive                 changed                    35           34    -1.0000  macro 35 -> 34
+PairWinsLogitMtebTwothousandtwentysixMiVsRandomKfifteen              changed                    39           38    -1.0000  macro 39 -> 38
+   sweep_prov.py:
+BIT-IDENTICAL EXCEPT ALLOWED: 298 A result files (npz/json/csv), 1283957 values/rows/macros/jobs/inputs bit-identical, 243772 additions, 1500 logit-fix differences, 0 unexplained
+allowed (all files): axis grows by name boot_pairs x84; axis grows by name methods x28; axis grows by name objectives x9; code hash x21; code hash / runtime macro x25; cost_fixed note reworded x2; input data/SHA256SUMS (gained the score_bounds.json entry) x1; input hashed only by B's driver (same file in A's tree) x15; label list grows x150; list gains new entries x159; n_macros grows x10; rows gain new-method rows x85; rows of the TabImpute logs (none in A) x1260; run directory path x1; runtime (skipped) x64; runtime key (skipped) x52; runtime value (ImpRuntimeMin macros, split_time_*) x12; tex x28; text macro list grows x3; worker count x4; worker count (argv) x8
+unexplained differences: 0
+logit clip fix: 1500 differences in 22 files / tables
+  logit differences by key pattern (first 40): npz p*_rand_r2 x19; npz p*_rand_rmse x19; npz p*_r2 x16; npz p*_rmse x16; macro RsqLogitBenchpressRandomK* x7; macro RsqStdLogitBenchpressRandomK* x7; tex RsqLogitBenchpressRandomK* x7; tex RsqStdLogitBenchpressRandomK* x7; macro RsqLogitMtebMiK* x6; macro RsqStdLogitMtebMiK* x6; macro RsqLogitMtebTwothousandtwentysixEntropyK* x5; macro RsqStdLogitMtebTwothousandtwentysixEntropyK* x5; macro RsqLogitMtebTwothousandtwentysixMiK* x5; macro RsqStdLogitMtebTwothousandtwentysixMiK* x5; macro RsqLogitMtebEntropyK* x5; macro RsqStdLogitMtebEntropyK* x5; macro RsqLogitMtebRandomK* x5; macro RsqStdLogitMtebRandomK* x5; tex PairSeLogitBenchpressMiVsRandomK* x5; tex PairHiLogitBenchpressMiVsRandomK* x5; tex PairDiffLogitBenchpressEntropyVsRandomK* x5; tex PairSeLogitBenchpressEntropyVsRandomK* x5; tex PairHiLogitBenchpressEntropyVsRandomK* x5; npz entropy_r2 x4; npz entropy_rmse x4; npz mi_r2 x4; npz mi_rmse x4; npz random_r2 x4; npz random_rmse x4; macro RsqLogitBenchpressMiK* x4; macro RsqStdLogitBenchpressMiK* x4; macro RsqLogitHelmMmluEntropyK* x4; macro RsqStdLogitHelmMmluEntropyK* x4; macro RsqLogitMtebTwothousandtwentysixRandomK* x4; macro RsqStdLogitMtebTwothousandtwentysixRandomK* x4; tex RsqStdLogitMtebMiK* x4; tex RsqStdLogitMtebRandomK* x4; tex PairDiffLogitBenchpressMiVsRandomK* x4; tex PairLoLogitBenchpressMiVsRandomK* x4; tex PairSeLogitMtebMiVsRandomK* x4
+  logit selection arrays that differ: 0
+additions without facloc/trace in the name: 89
+    logs/analyze_objectives_benchpress.json: $.config.fl_landscape_k
+    logs/analyze_objectives_benchpress.npz: fl_land_k
+    logs/analyze_objectives_merged.json: $.config.fl_landscape_k
+    logs/analyze_objectives_merged.npz: fl_land_k
+    logs/analyze_objectives_merged_fulloracle.json: $.config.fl_landscape_k
+    logs/analyze_objectives_merged_fulloracle.npz: fl_land_k
+    logs/analyze_objectives_mmlu.json: $.config.fl_landscape_k
+    logs/analyze_objectives_mmlu.npz: fl_land_k
+    logs/analyze_objectives_mteb.json: $.config.fl_landscape_k
+    logs/analyze_objectives_mteb.npz: fl_land_k
+    logs/imputers_benchpress.json: $.tables.gaussian_check_maxdiff_all
+    logs/imputers_benchpress.npz: n_sets_all
+    logs/imputers_benchpress.npz: gaussian_check_maxdiff_all
+    logs/imputers_merged.json: $.tables.gaussian_check_maxdiff_all
+    logs/imputers_merged.npz: n_sets_all
+    logs/imputers_merged.npz: gaussian_check_maxdiff_all
+    logs/imputers_mmlu.json: $.tables.gaussian_check_maxdiff_all
+    logs/imputers_mmlu.npz: n_sets_all
+    logs/imputers_mmlu.npz: gaussian_check_maxdiff_all
+    logs/imputers_mteb.json: $.tables.gaussian_check_maxdiff_all
+    logs/imputers_mteb.npz: n_sets_all
+    logs/imputers_mteb.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_benchpress_rep0.npz: n_sets_all
+    logs/imputers_shards/imputers_benchpress_rep0.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_benchpress_rep1.npz: n_sets_all
+    logs/imputers_shards/imputers_benchpress_rep1.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_benchpress_rep2.npz: n_sets_all
+    logs/imputers_shards/imputers_benchpress_rep2.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_benchpress_rep3.npz: n_sets_all
+    logs/imputers_shards/imputers_benchpress_rep3.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_benchpress_rep4.npz: n_sets_all
+    logs/imputers_shards/imputers_benchpress_rep4.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_merged_rep0.npz: n_sets_all
+    logs/imputers_shards/imputers_merged_rep0.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_merged_rep1.npz: n_sets_all
+    logs/imputers_shards/imputers_merged_rep1.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_merged_rep2.npz: n_sets_all
+    logs/imputers_shards/imputers_merged_rep2.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_merged_rep3.npz: n_sets_all
+    logs/imputers_shards/imputers_merged_rep3.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_merged_rep4.npz: n_sets_all
+    logs/imputers_shards/imputers_merged_rep4.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_mmlu_rep0.npz: n_sets_all
+    logs/imputers_shards/imputers_mmlu_rep0.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_mmlu_rep1.npz: n_sets_all
+    logs/imputers_shards/imputers_mmlu_rep1.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_mmlu_rep2.npz: n_sets_all
+    logs/imputers_shards/imputers_mmlu_rep2.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_mmlu_rep3.npz: n_sets_all
+    logs/imputers_shards/imputers_mmlu_rep3.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_mmlu_rep4.npz: n_sets_all
+    logs/imputers_shards/imputers_mmlu_rep4.npz: gaussian_check_maxdiff_all
+    logs/imputers_shards/imputers_mteb_rep0.npz: n_sets_all
+-- (d) pytest: exit 0
+ptest: 892 tests in 32 groups, 892 passed, 0 failed/errors, wall 393s, exit 0
+slowest groups:
+in 388.10s g17.log
+in 57.76s g5.log
+in 56.19s g29.log
+-- (d) stdout grep: 0 Traceback/Error lines
+-- headline / TabImpute (report.py)
+Headline: mean R² over splits (eval_baselines, holdout 0.1), k = 1 / 5 / 10
+  mmlu         (50 splits) facloc 0.860/0.919/0.945; trace 0.860/0.920/0.946; mi 0.832/0.906/0.911; entropy 0.860/0.913/0.936; hub 0.860/0.875/0.886; pca 0.860/0.907/0.940; random 0.751/0.890/0.911
+  mteb         (50 splits) facloc 0.659/0.767/0.826; trace 0.646/0.790/0.839; mi 0.650/0.767/0.821; entropy 0.646/0.746/0.817; hub 0.659/0.687/0.718; pca 0.648/0.755/0.801; random 0.502/0.744/0.784
+  merged       (50 splits) facloc 0.317/0.614/0.661; trace 0.490/0.593/0.626; mi 0.084/0.465/0.528; entropy 0.490/0.503/0.549; hub 0.320/0.481/0.537; pca 0.489/0.483/0.539; random 0.260/0.563/0.604
+  benchpress   (50 splits) facloc -0.033/0.053/0.066; trace -0.143/-0.085/-0.009; mi -0.021/-0.059/-0.088; entropy -0.143/-0.300/-0.065; hub -0.071/0.032/0.035; pca -0.136/0.060/-0.049; random 0.028/0.120/0.207
+  olv2sub      (50 splits) facloc 0.557/0.736/0.806; trace 0.557/0.738/0.810; mi 0.306/0.680/0.744; entropy 0.557/0.649/0.795; hub 0.557/0.570/0.579; pca 0.557/0.706/0.786; random 0.326/0.643/0.716
+  olv1items    (50 splits) facloc 0.777/0.844/0.879; trace 0.777/0.845/0.883; mi 0.777/0.838/0.850; entropy 0.777/0.832/0.871; hub 0.777/0.795/0.804; pca 0.777/0.801/0.870; random 0.660/0.813/0.840
+  epoch        (50 splits) facloc 0.417/0.475/0.508; trace 0.399/0.458/0.474; mi -0.134/0.183/0.316; entropy 0.399/0.426/0.445; hub 0.393/0.416/0.395; pca 0.398/0.303/0.287; random 0.161/0.306/0.432
+  helm_lite    (50 splits) facloc 0.501/0.719/n/a; trace 0.519/0.727/n/a; mi 0.519/0.720/n/a; entropy 0.519/0.729/n/a; hub 0.501/0.472/n/a; pca 0.519/0.661/n/a; random 0.348/0.669/n/a
+  helm_mmlu    (50 splits) facloc 0.680/0.780/0.812; trace 0.679/0.786/0.812; mi 0.596/0.774/0.780; entropy 0.679/0.761/0.793; hub 0.680/0.702/0.674; pca 0.679/0.759/0.794; random 0.598/0.740/0.764
+  helm_classic (50 splits) facloc 0.371/0.541/0.634; trace 0.413/0.352/0.620; mi 0.349/0.450/0.592; entropy 0.413/0.508/0.584; hub 0.371/0.417/0.356; pca 0.405/0.339/0.657; random 0.293/0.418/0.509
+  mteb2026     (50 splits) facloc 0.624/0.764/0.816; trace 0.624/0.752/0.816; mi 0.608/0.752/0.802; entropy 0.624/0.720/0.792; hub 0.624/0.651/0.707; pca 0.629/0.716/0.787; random 0.493/0.710/0.765
+  merged_v1    (50 splits) facloc 0.311/0.619/0.665; trace 0.502/0.596/0.630; mi 0.134/0.486/0.561; entropy 0.502/0.514/0.547; hub 0.324/0.466/0.569; pca 0.494/0.471/0.550; random 0.260/0.564/0.603
+  cross-check with the RsqBase macros: 252 values, 0 mismatches
+
+TabImpute (50-split GPU run, converted): mean R², k = 1 / 5 / 10
+  mmlu        (50 splits) facloc 0.332/0.539/0.605; trace 0.332/0.539/0.612; mi 0.311/0.609/0.708; entropy 0.332/0.420/0.501; hub 0.332/0.557/0.665; pca 0.332/0.423/0.529; random 0.223/0.530/0.670
+  mteb        (50 splits) facloc 0.210/0.337/0.444; trace 0.209/0.328/0.437; mi 0.199/0.331/0.430; entropy 0.209/0.325/0.425; hub 0.210/0.349/0.429; pca 0.208/0.305/0.429; random 0.138/0.323/0.434
+  merged      (50 splits) facloc 0.002/0.060/0.090; trace 0.022/0.065/0.080; mi 0.000/0.039/0.060; entropy 0.022/0.043/0.069; hub 0.004/0.061/0.098; pca 0.022/0.040/0.060; random -0.003/0.057/0.090
+  benchpress  (50 splits) facloc 0.063/0.107/0.150; trace 0.052/0.092/0.147; mi 0.068/0.093/0.132; entropy 0.052/0.054/0.118; hub 0.060/0.158/0.223; pca 0.056/0.078/0.130; random 0.054/0.118/0.186
+
+report: OK
+-- fails: none

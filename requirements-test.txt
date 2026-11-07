@@ -1,0 +1,6 @@
+# Test-only additions for running the unit tests in parallel (pytest -n auto).
+# Not part of the experiment lock: run_all.sh checks the interpreter against
+# requirements.txt only, so these can be installed on top of it.
+-r requirements.txt
+pytest-xdist==3.8.0
+execnet==2.1.2

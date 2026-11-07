@@ -1,0 +1,35 @@
+[17:42:14] run_tabimpute: 8 job(s) into ~/benchselect-runs/tabimpute-full/B_out (run id run_tabimpute-20261019T174214Z-31612)
+python   ~/venvs/tabimpute/bin/python (3.12.3)
+git      048f2df dirty=True [env (BENCHSELECT_GIT_*, unchecked; the tree is not a git work tree)]
+code     tree sha256 43720b4f60131f20… (69 files)
+inputs   65 data files hashed
+[17:42:15] start  tabimpute_mteb
+[17:48:22] done   tabimpute_mteb             ok               exit=0       366.6s  
+[17:48:22] start  tabimpute_extra_mteb
+[17:51:40] done   tabimpute_extra_mteb       ok               exit=0       198.2s  
+[17:51:40] start  tabimpute_merged
+[18:05:14] done   tabimpute_merged           ok               exit=0       814.7s  
+[18:05:14] start  tabimpute_extra_merged
+[18:16:17] done   tabimpute_extra_merged     ok               exit=0       662.0s  
+[18:16:17] start  tabimpute_benchpress
+[18:28:35] done   tabimpute_benchpress       ok               exit=0       738.5s  
+[18:28:35] start  tabimpute_extra_benchpress
+[18:39:59] done   tabimpute_extra_benchpress ok               exit=0       683.7s  
+[18:39:59] start  tabimpute_mmlu
+[22:37:18] done   tabimpute_mmlu             ok               exit=0     14239.4s  
+[22:37:18] start  tabimpute_extra_mmlu
+[00:13:51] done   tabimpute_extra_mmlu       ok               exit=0      5792.9s  
+[00:13:51] note: no ~/hf-benchselect/hub/models--Tabimpute--TabImpute/refs/main (pinned-commit download only); the manifest does not list the checkpoint, the logs' ckpt_revision / ckpt_sha256 record it
+
+== run_tabimpute: 8 job(s), wall 23497s, root ~/benchselect-runs/tabimpute-full/B_out ==
+job                         status           exit   duration
+tabimpute_mteb              ok                  0     366.6s
+tabimpute_extra_mteb        ok                  0     198.2s
+tabimpute_merged            ok                  0     814.7s
+tabimpute_extra_merged      ok                  0     662.0s
+tabimpute_benchpress        ok                  0     738.5s
+tabimpute_extra_benchpress  ok                  0     683.7s
+tabimpute_mmlu              ok                  0   14239.4s
+tabimpute_extra_mmlu        ok                  0    5792.9s
+artifacts: 24 files (24 from this run, 0 from earlier runs, 0 unknown); manifest: ~/benchselect-runs/tabimpute-full/B_out/manifest_tabimpute_mteb+merged+benchpress+mmlu.json
+all 8 job(s) ok

@@ -1,0 +1,15 @@
+[2026-10-19T17:27:18Z] chain start (pid 8055)
+[2026-10-19T17:27:18Z] A1 start facloc mmlu
+[2026-10-19T17:37:08Z] A1 done  facloc mmlu
+[2026-10-19T17:37:08Z] A1 start facloc mteb
+[2026-10-19T17:37:44Z] A1 done  facloc mteb
+[2026-10-19T17:37:44Z] A1 start facloc merged
+[2026-10-19T17:39:42Z] A1 done  facloc merged
+[2026-10-19T17:39:42Z] A1 start facloc benchpress
+[2026-10-19T17:42:09Z] A1 done  facloc benchpress
+[2026-10-19T17:42:09Z] A2 merge
+[2026-10-19T17:42:14Z] A2 done
+[2026-10-19T17:42:14Z] B start: run_tabimpute.sh --repeats 5
+[2026-10-20T00:13:51Z] B done
+[2026-10-20T00:13:51Z] C compare + summary
+[2026-10-20T00:13:52Z] chain DONE

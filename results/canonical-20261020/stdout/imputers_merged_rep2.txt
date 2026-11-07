@@ -1,0 +1,25 @@
+# job      imputers_merged_rep2
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_imputers.py --datasets merged --repeats 5 --reps 2
+# started  2026-10-20T01:44:58Z on 4090-1
+
+
+######################################################################
+# Dataset: MERGED
+######################################################################
+118 models × 114 tasks, 31.2% observed
+5 × 10-fold CV = 10 matched splits; k in [1, 2, 3, 5, 7, 10, 15]; imputers ['gaussian', 'softimpute', 'hardimpute']; inner holdout 20% (seed tag SEED + 21)
+  Split 20 (rep 2, fold 0): 106 train / 12 test, 114/114 eligible  45 sets  k=5: mi:0.585/0.334/0.453  entropy:0.711/0.484/0.758  trace:0.722/0.553/0.702  pca:0.476/0.301/0.334  hub:0.792/0.745/0.798  random:0.784/0.570/0.798  facloc:0.788/0.631/0.798  (762.1s)
+  Split 21 (rep 2, fold 1): 106 train / 12 test, 106/114 eligible  45 sets  k=5: mi:0.596/0.440/0.433  entropy:0.632/0.321/0.585  trace:0.549/0.373/0.496  pca:0.472/0.328/0.368  hub:0.762/0.681/0.705  random:0.713/0.543/0.648  facloc:0.775/0.596/0.735  (730.7s)
+  Split 22 (rep 2, fold 2): 106 train / 12 test, 114/114 eligible  46 sets  k=5: mi:0.208/0.362/0.359  entropy:0.510/0.351/-0.041  trace:0.556/0.432/0.119  pca:0.591/0.383/0.408  hub:0.416/0.365/-0.629  random:0.479/0.364/0.342  facloc:0.447/0.405/0.014  (725.0s)
+  Split 23 (rep 2, fold 3): 106 train / 12 test, 114/114 eligible  48 sets  k=5: mi:0.435/0.286/-0.373  entropy:0.493/0.340/0.061  trace:0.664/0.506/0.527  pca:0.478/0.367/0.076  hub:0.612/0.488/0.525  random:0.518/0.410/0.476  facloc:0.650/0.534/0.610  (727.9s)
+  Split 24 (rep 2, fold 4): 106 train / 12 test, 114/114 eligible  45 sets  k=5: mi:0.336/0.391/-0.193  entropy:0.326/0.307/0.165  trace:0.436/0.399/0.487  pca:-0.129/0.064/-0.875  hub:0.382/0.302/-0.478  random:0.548/0.404/0.287  facloc:0.455/0.421/0.367  (613.7s)
+  Split 25 (rep 2, fold 5): 106 train / 12 test, 114/114 eligible  46 sets  k=5: mi:0.567/0.398/0.224  entropy:0.420/0.278/0.112  trace:0.495/0.409/0.477  pca:0.561/0.421/0.334  hub:0.592/0.395/0.482  random:0.355/0.177/-0.808  facloc:0.493/0.425/0.513  (504.2s)
+  Split 26 (rep 2, fold 6): 106 train / 12 test, 106/114 eligible  45 sets  k=5: mi:0.234/0.229/0.047  entropy:0.346/0.184/-0.182  trace:0.384/0.343/0.222  pca:0.290/0.204/0.185  hub:0.488/0.352/0.393  random:0.517/0.428/0.408  facloc:0.499/0.425/0.472  (451.4s)
+  Split 27 (rep 2, fold 7): 106 train / 12 test, 106/114 eligible  45 sets  k=5: mi:0.631/0.274/0.508  entropy:0.642/0.352/0.638  trace:0.654/0.458/0.648  pca:0.389/0.209/0.123  hub:0.464/0.257/0.550  random:0.690/0.557/0.706  facloc:0.672/0.517/0.578  (404.9s)
+  Split 28 (rep 2, fold 8): 106 train / 11 test, 114/114 eligible  46 sets  k=5: mi:0.558/0.263/0.348  entropy:0.738/0.361/0.604  trace:0.708/0.467/0.663  pca:0.691/0.354/0.321  hub:-0.111/-0.021/-0.250  random:0.672/0.428/0.613  facloc:0.746/0.413/0.692  (403.9s)
+  Split 29 (rep 2, fold 9): 106 train / 11 test, 114/114 eligible  45 sets  k=5: mi:0.497/0.144/0.401  entropy:0.316/0.086/0.228  trace:0.769/0.293/0.773  pca:0.554/0.181/0.736  hub:0.602/0.234/0.622  random:0.743/0.273/0.584  facloc:0.730/0.328/0.740  (395.2s)
+Shard saved to ~/benchselect-runs/canonical-20261020/out/logs/imputers_shards/imputers_merged_rep2.npz
+
+All shards completed in 5719s
+
+# finished 2026-10-20T03:20:18Z  exit=0  status=ok

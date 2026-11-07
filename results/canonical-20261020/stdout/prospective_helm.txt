@@ -1,0 +1,74 @@
+# job      prospective_helm
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_prospective.py --datasets helm --repeats 5
+# started  2026-10-20T02:46:28Z on 4090-1
+
+
+######################################################################
+# Prospective: helm (HELM Lite, v1.0 → v1.13)
+######################################################################
+
+== Check: helm_lite in_snapshot rows vs data/helm.npz and merged helm/* ==
+  helm.npz: 30 rows, 300 cells compared, max |diff| 0; 0 cells in 0 rows differ by > 1e-09; observation pattern differs in 0 rows (0 cells only in the reference, 0 only in the new matrix)
+  merged: 17 rows, 170 cells compared, max |diff| 8.33e-17; 0 cells in 0 rows differ by > 1e-09; observation pattern differs in 0 rows (0 cells only in the reference, 0 only in the new matrix)
+  not compared: helm.npz ['Mean win rate'], merged ['helm/Mean win rate']
+
+  [helm] v1.0.0 models → later releases: 30 train / 61 test, 10/10 benchmarks, 10/10 eligible; test cells 609 (0 without training data, 0 with < 2 training models); max |R²_all − impute_and_evaluate| 4.4e-16 (facloc 3.3e-16)  (0.3s)
+    control splits 10/50 (2s)
+    control splits 20/50 (4s)
+    control splits 30/50 (6s)
+    control splits 40/50 (9s)
+    control splits 50/50 (13s)
+
+== HELM Lite, v1.0 → v1.13 — v1.0.0 models → later releases: 30 train / 61 test, 10 benchmarks, 10 eligible; R² prospective / random-split control mean (penalty); * = fewer than 10 contributing test models ==
+   new to the leaderboard but not in time: 2 of 61 (release_date <= 2023-12-19 (HELM Lite v1.0.0))
+   test-cell fill: prospective 0.998, control mean 0.999
+method                  k=1                   k=3                   k=5                   k=10                  
+Mutual Info (Alg. 2)    0.243/0.448 (-0.205)  0.508/0.605 (-0.097)  0.509/0.658 (-0.149)  nan/nan (+nan)*       
+Entropy (Alg. 1)        0.243/0.462 (-0.219)  0.548/0.654 (-0.107)  0.581/0.708 (-0.127)  nan/nan (+nan)*       
+Greedy trace min.       0.243/0.462 (-0.219)  0.548/0.652 (-0.104)  0.581/0.699 (-0.117)  nan/nan (+nan)*       
+Hub correlation         0.243/0.409 (-0.166)  0.154/0.441 (-0.287)  0.145/0.357 (-0.213)  nan/nan (+nan)*       
+PCA subset (CSSP)       0.243/0.453 (-0.210)  0.194/0.594 (-0.401)  0.586/0.648 (-0.062)  nan/nan (+nan)*       
+Facility location       0.243/0.409 (-0.166)  0.548/0.641 (-0.093)  0.718/0.694 (+0.024)  nan/nan (+nan)*       
+Random                  0.161/0.345 (-0.184)  0.351/0.520 (-0.169)  0.382/0.559 (-0.177)  nan/nan (+nan)*       
+   shift-adjusted R² (SS_tot about the test-set means) prospective / control (penalty):
+   mi                   0.048/0.426 (-0.378)  0.349/0.588 (-0.240)  0.339/0.645 (-0.306)  nan/nan (+nan)        
+   entropy              0.048/0.440 (-0.392)  0.194/0.641 (-0.447)  0.316/0.698 (-0.381)  nan/nan (+nan)        
+   trace                0.048/0.440 (-0.392)  0.194/0.637 (-0.443)  0.316/0.686 (-0.370)  nan/nan (+nan)        
+   hub                  0.048/0.385 (-0.337)  -0.014/0.418 (-0.432) 0.049/0.332 (-0.283)  nan/nan (+nan)        
+   pca                  0.048/0.431 (-0.383)  -0.508/0.579 (-1.088) 0.313/0.635 (-0.322)  nan/nan (+nan)        
+   facloc               0.048/0.385 (-0.337)  0.194/0.626 (-0.431)  0.371/0.683 (-0.311)  nan/nan (+nan)        
+   random               -0.084/0.319 (-0.403) 0.155/0.501 (-0.346)  0.203/0.541 (-0.338)  nan/nan (+nan)        
+   RMSE (train-std units) prospective / control mean:
+   mi                   1.357/0.808           0.934/0.679           1.011/0.620           nan/nan               
+   entropy              1.357/0.797           0.800/0.607           0.788/0.538           nan/nan               
+   trace                1.357/0.797           0.800/0.619           0.788/0.550           nan/nan               
+   hub                  1.357/0.833           1.542/0.824           1.672/0.896           nan/nan               
+   pca                  1.357/0.804           1.105/0.665           0.808/0.594           nan/nan               
+   facloc               1.357/0.833           0.800/0.627           0.652/0.551           nan/nan               
+   random               1.400/0.874           1.238/0.746           1.217/0.713           nan/nan               
+   contributing test models (of 61) prospective / control mean:
+   mi                   61/61.0               61/61.0               61/61.0               0/0.0                 
+   entropy              61/61.0               61/61.0               61/61.0               0/0.0                 
+   trace                61/61.0               61/61.0               61/61.0               0/0.0                 
+   hub                  61/61.0               61/61.0               61/61.0               0/0.0                 
+   pca                  61/61.0               61/61.0               61/61.0               0/0.0                 
+   facloc               61/61.0               61/61.0               61/61.0               0/0.0                 
+   random               61/60.9               61/61.0               61/61.0               0/0.0                 
+   paired bootstrap over test models (B = 2000): diff [95% CI] P(diff > 0)
+   mi − random       k=1 +0.082 [+0.032, +0.162] 1.00  k=3 +0.157 [+0.100, +0.193] 1.00  k=5 +0.127 [+0.078, +0.177] 1.00  k=10 +nan [+nan, +nan] nan*
+   mi − entropy      k=1 +0.000 [+0.000, +0.000] 0.00  k=3 -0.040 [-0.096, +0.029] 0.11  k=5 -0.072 [-0.136, +0.006] 0.03  k=10 +nan [+nan, +nan] nan*
+   mi − trace        k=1 +0.000 [+0.000, +0.000] 0.00  k=3 -0.040 [-0.096, +0.029] 0.11  k=5 -0.072 [-0.136, +0.006] 0.03  k=10 +nan [+nan, +nan] nan*
+   trace − random    k=1 +0.082 [+0.032, +0.162] 1.00  k=3 +0.197 [+0.143, +0.236] 1.00  k=5 +0.199 [+0.138, +0.237] 1.00  k=10 +nan [+nan, +nan] nan*
+   entropy − random  k=1 +0.082 [+0.032, +0.162] 1.00  k=3 +0.197 [+0.143, +0.236] 1.00  k=5 +0.199 [+0.138, +0.237] 1.00  k=10 +nan [+nan, +nan] nan*
+   mi − facloc       k=1 +0.000 [+0.000, +0.000] 0.00  k=3 -0.040 [-0.096, +0.029] 0.11  k=5 -0.209 [-0.303, -0.107] 0.00  k=10 +nan [+nan, +nan] nan*
+   entropy − facloc  k=1 +0.000 [+0.000, +0.000] 0.00  k=3 +0.000 [+0.000, +0.000] 0.00  k=5 -0.137 [-0.222, -0.066] 0.00  k=10 +nan [+nan, +nan] nan*
+   trace − facloc    k=1 +0.000 [+0.000, +0.000] 0.00  k=3 +0.000 [+0.000, +0.000] 0.00  k=5 -0.137 [-0.222, -0.066] 0.00  k=10 +nan [+nan, +nan] nan*
+   facloc − random   k=1 +0.082 [+0.032, +0.162] 1.00  k=3 +0.197 [+0.143, +0.236] 1.00  k=5 +0.336 [+0.252, +0.413] 1.00  k=10 +nan [+nan, +nan] nan*
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/prospective_helm.npz and ~/benchselect-runs/canonical-20261020/out/logs/prospective_helm.json (507 macros, 0 withheld for coverage < 10 test models)
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/prospective_helm.pdf
+
+helm completed in 14s
+
+All settings completed in 15s
+
+# finished 2026-10-20T02:46:44Z  exit=0  status=ok

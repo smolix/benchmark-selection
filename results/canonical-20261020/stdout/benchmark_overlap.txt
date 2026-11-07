@@ -1,0 +1,80 @@
+# job      benchmark_overlap
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_benchmark_overlap.py --summary ~/benchselect-runs/canonical-20261020/out/logs/benchmark_overlap.json
+# started  2026-10-20T02:47:06Z on 4090-1
+
+~/benchselect-runs/canonical-20261020/tree/data/canonical_mapping.json: 118 canonical models; by number of collections: 2: 33, 3: 36, 4: 21, 5: 21, 6: 4, 7: 3
+
+Nodes (canonical models per collection):
+  MMLU             31   [knowledge]
+  Open LLM v2      60   [knowledge]
+  HELM Lite        17   [knowledge]
+  AlpacaEval 2     60   [chat]
+  Arena-Hard       52   [chat]
+  LiveBench        74   [chat]
+  WildBench        50   [chat]
+  MT-Bench          3   [chat]
+  BigCodeBench     61   [code]
+Omitted (no canonical model): MTEB
+
+Edges: 30 of 36 collection pairs share models; 16 labeled (>= 20)
+       LiveBench - BigCodeBench     51  width 6.375 pt  labeled
+     Open LLM v2 - LiveBench        40  width 5.000 pt  labeled
+    AlpacaEval 2 - Arena-Hard       34  width 4.250 pt  labeled
+     Open LLM v2 - AlpacaEval 2     33  width 4.125 pt  labeled
+     Open LLM v2 - BigCodeBench     30  width 3.750 pt  labeled
+    AlpacaEval 2 - LiveBench        30  width 3.750 pt  labeled
+      Arena-Hard - WildBench        29  width 3.625 pt  labeled
+    AlpacaEval 2 - WildBench        28  width 3.500 pt  labeled
+      Arena-Hard - LiveBench        28  width 3.500 pt  labeled
+       LiveBench - WildBench        28  width 3.500 pt  labeled
+            MMLU - Open LLM v2      26  width 3.250 pt  labeled
+     Open LLM v2 - WildBench        26  width 3.250 pt  labeled
+       WildBench - BigCodeBench     25  width 3.125 pt  labeled
+      Arena-Hard - BigCodeBench     23  width 2.875 pt  labeled
+     Open LLM v2 - Arena-Hard       21  width 2.625 pt  labeled
+            MMLU - AlpacaEval 2     20  width 2.500 pt  labeled
+            MMLU - WildBench        19  width 2.375 pt
+            MMLU - Arena-Hard       18  width 2.250 pt
+    AlpacaEval 2 - BigCodeBench     17  width 2.125 pt
+            MMLU - LiveBench        16  width 2.000 pt
+       HELM Lite - AlpacaEval 2     14  width 1.750 pt
+            MMLU - BigCodeBench     11  width 1.375 pt
+     Open LLM v2 - HELM Lite         8  width 1.000 pt
+       HELM Lite - Arena-Hard        8  width 1.000 pt
+       HELM Lite - LiveBench         5  width 0.625 pt
+            MMLU - HELM Lite         4  width 0.500 pt
+       HELM Lite - WildBench         3  width 0.500 pt
+    AlpacaEval 2 - MT-Bench          3  width 0.500 pt
+       HELM Lite - MT-Bench          1  width 0.500 pt
+       HELM Lite - BigCodeBench      1  width 0.500 pt
+
+Shared raw rows (one leaderboard row, several canonical models; counted for each): 11
+  alpaca_eval/llama-2-70b-chat-hf <- Llama-2-70b-chat-hf, llama-2-70b
+  arena_hard/llama-2-70b-chat <- Llama-2-70b-chat-hf, llama-2-70b
+  wildbench/Llama-2-70b-chat-hf <- Llama-2-70b-chat-hf, llama-2-70b
+  open_llm/meta-llama/Llama-2-70b-chat-hf <- Llama-2-70b-chat-hf, llama-2-70b
+  alpaca_eval/llama-2-7b-chat-hf <- Llama-2-7b-chat-hf, llama-2-7b
+  wildbench/Llama-2-7b-chat-hf <- Llama-2-7b-chat-hf, llama-2-7b
+  open_llm/meta-llama/Llama-2-7b-chat-hf <- Llama-2-7b-chat-hf, llama-2-7b
+  alpaca_eval/Yi-34B-Chat <- Yi-34B-Chat, yi-34b
+  arena_hard/yi-34b-chat <- Yi-34B-Chat, yi-34b
+  mmlu/01-ai/Yi-34B-Chat <- Yi-34B-Chat, yi-34b
+  open_llm/01-ai/Yi-34B-Chat <- Yi-34B-Chat, yi-34b
+
+Collection tables in ~/benchselect-runs/canonical-20261020/tree/data (Table tab:unmatched):
+  collection       rows  matched unmatched canonical
+  MMLU             5454       30      5424        31
+  Open LLM v2      4507       57      4450        60
+  HELM Lite          30       17        13        17
+  AlpacaEval 2      223       57       166        60
+  Arena-Hard         60       50        10        52
+  LiveBench         195       74       121        74
+  WildBench          63       48        15        50
+  MT-Bench            5        3         2         3
+  BigCodeBench      155       61        94        61
+  MTEB              268        0       268         0
+
+Saved to ~/benchselect-runs/canonical-20261020/out/figures/benchmark_overlap.pdf
+Summary written to ~/benchselect-runs/canonical-20261020/out/logs/benchmark_overlap.json
+
+# finished 2026-10-20T02:47:07Z  exit=0  status=ok

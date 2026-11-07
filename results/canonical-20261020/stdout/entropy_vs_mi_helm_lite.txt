@@ -1,0 +1,83 @@
+# job      entropy_vs_mi_helm_lite
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_entropy_vs_mi.py --datasets helm_lite --repeats 5
+# started  2026-10-20T02:47:02Z on 4090-1
+
+
+######################################################################
+# Dataset: HELM_LITE
+######################################################################
+91 models × 10 tasks, 99.9% observed
+5 × 10-fold CV, 10% holdout, selectable: benchmarks with ≥ 3 training models; targets: ≥ 2; predictions clipped to the valid range: True
+  Rep 0 fold 0: 81 train / 10 test, 10/10 eligible  Ent R²@5=0.794  MI R²@5=0.720  Rand R²@5=0.738  Trace R²@5=0.794  FL R²@5=0.776  (0.0s)
+  Rep 0 fold 1: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.753  MI R²@5=0.602  Rand R²@5=0.555  Trace R²@5=0.753  FL R²@5=0.725  (0.0s)
+  Rep 0 fold 2: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.811  MI R²@5=0.763  Rand R²@5=0.710  Trace R²@5=0.811  FL R²@5=0.777  (0.0s)
+  Rep 0 fold 3: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.782  MI R²@5=0.753  Rand R²@5=0.646  Trace R²@5=0.782  FL R²@5=0.742  (0.0s)
+  Rep 0 fold 4: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.820  MI R²@5=0.746  Rand R²@5=0.346  Trace R²@5=0.820  FL R²@5=0.802  (0.0s)
+  Rep 0 fold 5: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.721  MI R²@5=0.736  Rand R²@5=0.688  Trace R²@5=0.721  FL R²@5=0.785  (0.1s)
+  Rep 0 fold 6: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.727  MI R²@5=0.712  Rand R²@5=0.571  Trace R²@5=0.727  FL R²@5=0.707  (0.0s)
+  Rep 0 fold 7: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.813  MI R²@5=0.789  Rand R²@5=0.824  Trace R²@5=0.813  FL R²@5=0.812  (0.0s)
+  Rep 0 fold 8: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.859  MI R²@5=0.777  Rand R²@5=0.803  Trace R²@5=0.819  FL R²@5=0.804  (0.0s)
+  Rep 0 fold 9: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.471  MI R²@5=0.698  Rand R²@5=0.747  Trace R²@5=0.471  FL R²@5=0.471  (0.0s)
+  Rep 1 fold 0: 81 train / 10 test, 10/10 eligible  Ent R²@5=0.827  MI R²@5=0.803  Rand R²@5=0.559  Trace R²@5=0.827  FL R²@5=0.858  (0.0s)
+  Rep 1 fold 1: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.667  MI R²@5=0.718  Rand R²@5=0.615  Trace R²@5=0.667  FL R²@5=0.530  (0.0s)
+  Rep 1 fold 2: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.716  MI R²@5=0.681  Rand R²@5=0.525  Trace R²@5=0.716  FL R²@5=0.686  (0.0s)
+  Rep 1 fold 3: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.257  MI R²@5=0.337  Rand R²@5=0.470  Trace R²@5=0.257  FL R²@5=0.176  (0.0s)
+  Rep 1 fold 4: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.802  MI R²@5=0.691  Rand R²@5=0.629  Trace R²@5=0.802  FL R²@5=0.769  (0.0s)
+  Rep 1 fold 5: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.896  MI R²@5=0.889  Rand R²@5=0.832  Trace R²@5=0.879  FL R²@5=0.877  (0.1s)
+  Rep 1 fold 6: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.805  MI R²@5=0.754  Rand R²@5=0.755  Trace R²@5=0.805  FL R²@5=0.774  (0.0s)
+  Rep 1 fold 7: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.818  MI R²@5=0.787  Rand R²@5=0.826  Trace R²@5=0.818  FL R²@5=0.814  (0.0s)
+  Rep 1 fold 8: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.306  MI R²@5=0.703  Rand R²@5=0.716  Trace R²@5=0.306  FL R²@5=0.306  (0.0s)
+  Rep 1 fold 9: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.851  MI R²@5=0.838  Rand R²@5=0.879  Trace R²@5=0.851  FL R²@5=0.881  (0.0s)
+  Rep 2 fold 0: 81 train / 10 test, 10/10 eligible  Ent R²@5=0.695  MI R²@5=0.775  Rand R²@5=0.613  Trace R²@5=0.695  FL R²@5=0.695  (0.0s)
+  Rep 2 fold 1: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.628  MI R²@5=0.562  Rand R²@5=0.471  Trace R²@5=0.628  FL R²@5=0.592  (0.0s)
+  Rep 2 fold 2: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.856  MI R²@5=0.825  Rand R²@5=0.764  Trace R²@5=0.833  FL R²@5=0.820  (0.0s)
+  Rep 2 fold 3: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.672  MI R²@5=0.638  Rand R²@5=0.715  Trace R²@5=0.672  FL R²@5=0.636  (0.0s)
+  Rep 2 fold 4: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.836  MI R²@5=0.843  Rand R²@5=0.841  Trace R²@5=0.836  FL R²@5=0.853  (0.0s)
+  Rep 2 fold 5: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.630  MI R²@5=0.566  Rand R²@5=0.574  Trace R²@5=0.630  FL R²@5=0.678  (0.0s)
+  Rep 2 fold 6: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.811  MI R²@5=0.780  Rand R²@5=0.818  Trace R²@5=0.811  FL R²@5=0.798  (0.1s)
+  Rep 2 fold 7: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.885  MI R²@5=0.862  Rand R²@5=0.787  Trace R²@5=0.885  FL R²@5=0.891  (0.0s)
+  Rep 2 fold 8: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.831  MI R²@5=0.731  Rand R²@5=0.710  Trace R²@5=0.831  FL R²@5=0.774  (0.0s)
+  Rep 2 fold 9: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.808  MI R²@5=0.736  Rand R²@5=0.722  Trace R²@5=0.808  FL R²@5=0.757  (0.0s)
+  Rep 3 fold 0: 81 train / 10 test, 10/10 eligible  Ent R²@5=0.645  MI R²@5=0.637  Rand R²@5=0.658  Trace R²@5=0.645  FL R²@5=0.636  (0.0s)
+  Rep 3 fold 1: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.748  MI R²@5=0.814  Rand R²@5=0.738  Trace R²@5=0.748  FL R²@5=0.748  (0.0s)
+  Rep 3 fold 2: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.864  MI R²@5=0.822  Rand R²@5=0.844  Trace R²@5=0.864  FL R²@5=0.863  (0.0s)
+  Rep 3 fold 3: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.914  MI R²@5=0.856  Rand R²@5=0.870  Trace R²@5=0.879  FL R²@5=0.873  (0.1s)
+  Rep 3 fold 4: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.378  MI R²@5=0.414  Rand R²@5=0.422  Trace R²@5=0.378  FL R²@5=0.412  (0.0s)
+  Rep 3 fold 5: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.802  MI R²@5=0.794  Rand R²@5=0.814  Trace R²@5=0.802  FL R²@5=0.775  (0.0s)
+  Rep 3 fold 6: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.895  MI R²@5=0.844  Rand R²@5=0.857  Trace R²@5=0.895  FL R²@5=0.893  (0.0s)
+  Rep 3 fold 7: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.712  MI R²@5=0.717  Rand R²@5=0.507  Trace R²@5=0.712  FL R²@5=0.742  (0.0s)
+  Rep 3 fold 8: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.537  MI R²@5=0.537  Rand R²@5=0.577  Trace R²@5=0.537  FL R²@5=0.552  (0.0s)
+  Rep 3 fold 9: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.783  MI R²@5=0.759  Rand R²@5=0.752  Trace R²@5=0.783  FL R²@5=0.782  (0.0s)
+  Rep 4 fold 0: 81 train / 10 test, 10/10 eligible  Ent R²@5=0.565  MI R²@5=0.598  Rand R²@5=0.497  Trace R²@5=0.565  FL R²@5=0.515  (0.0s)
+  Rep 4 fold 1: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.790  MI R²@5=0.840  Rand R²@5=0.383  Trace R²@5=0.790  FL R²@5=0.790  (0.0s)
+  Rep 4 fold 2: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.640  MI R²@5=0.503  Rand R²@5=0.213  Trace R²@5=0.640  FL R²@5=0.597  (0.0s)
+  Rep 4 fold 3: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.596  MI R²@5=0.617  Rand R²@5=0.364  Trace R²@5=0.596  FL R²@5=0.638  (0.0s)
+  Rep 4 fold 4: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.869  MI R²@5=0.847  Rand R²@5=0.870  Trace R²@5=0.869  FL R²@5=0.868  (0.0s)
+  Rep 4 fold 5: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.674  MI R²@5=0.697  Rand R²@5=0.662  Trace R²@5=0.674  FL R²@5=0.718  (0.1s)
+  Rep 4 fold 6: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.617  MI R²@5=0.598  Rand R²@5=0.835  Trace R²@5=0.617  FL R²@5=0.665  (0.0s)
+  Rep 4 fold 7: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.897  MI R²@5=0.811  Rand R²@5=0.766  Trace R²@5=0.897  FL R²@5=0.864  (0.0s)
+  Rep 4 fold 8: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.870  MI R²@5=0.793  Rand R²@5=0.761  Trace R²@5=0.866  FL R²@5=0.839  (0.0s)
+  Rep 4 fold 9: 82 train / 9 test, 10/10 eligible  Ent R²@5=0.513  MI R²@5=0.680  Rand R²@5=0.599  Trace R²@5=0.513  FL R²@5=0.610  (0.0s)
+
+== HELM Lite: imputation R² (mean ± std over 50 splits) ==
+method                  k=1           k=3           k=5           k=10          
+Entropy (Alg. 1)        0.519±0.216   0.707±0.123   0.729±0.150   nan±nan       
+Mutual Info (Alg. 2)    0.519±0.216   0.653±0.152   0.720±0.116   nan±nan       
+Random                  0.348±0.248   0.573±0.186   0.669±0.157   nan±nan       
+Greedy trace min.       0.519±0.216   0.708±0.122   0.727±0.148   nan±nan       
+Facility location       0.501±0.225   0.708±0.125   0.719±0.150   nan±nan       
+eligible benchmarks per split: 10–10 of 10 (0/50 splits restricted)
+index ties (entropy, k ≤ 10): 0 picks in 0/50 splits
+index ties (mi, k ≤ 10): 0 picks in 0/50 splits
+index ties (random, k ≤ 10): 0 picks in 0/50 splits
+index ties (trace, k ≤ 10): 0 picks in 0/50 splits
+index ties (facloc, k ≤ 10): 0 picks in 0/50 splits
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/entropy_vs_mi_helm_lite.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/entropy_vs_mi_helm_lite.npz
+
+HELM_LITE completed in 3s
+
+All datasets completed in 3s
+
+# finished 2026-10-20T02:47:06Z  exit=0  status=ok

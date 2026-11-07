@@ -1,0 +1,11 @@
+# job      prospective_plot
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_prospective.py --datasets mteb2026 helm epoch olv2sub --plot-only
+# started  2026-10-20T02:48:15Z on 4090-1
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/prospective_mteb2026.pdf
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/prospective_helm.pdf
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/prospective_epoch.pdf
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/prospective_olv2sub.pdf
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/prospective.pdf
+
+# finished 2026-10-20T02:48:20Z  exit=0  status=ok

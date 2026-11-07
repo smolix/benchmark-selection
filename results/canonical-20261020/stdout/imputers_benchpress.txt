@@ -1,0 +1,136 @@
+# job      imputers_benchpress
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_imputers.py --datasets benchpress --repeats 5 --merge
+# started  2026-10-20T02:46:28Z on 4090-1
+
+benchpress: merged 5 shards (12502 s in the shard processes)
+
+== BenchPress: imputation R² (mean ± std over 50 splits) ==
+method    imputer     k=1          k=3          k=5          k=10         k=15         
+mi        gaussian    -0.021±0.520    -0.051±0.562    -0.059±0.451    -0.088±0.647    0.071±0.574     
+mi        softimpute  0.111±0.100     0.113±0.106     0.135±0.102     0.204±0.098     0.318±0.123     
+mi        hardimpute  -0.277±0.999    -0.146±1.072    -0.148±0.956    -0.306±0.803    0.115±0.614     
+entropy   gaussian    -0.143±0.550    -0.252±1.135    -0.300±1.324    -0.065±0.589    0.075±0.620     
+entropy   softimpute  0.084±0.107     0.085±0.136     0.085±0.081     0.161±0.110     0.297±0.139     
+entropy   hardimpute  -0.232±0.767    -0.734±2.758    -0.564±1.401    -0.575±1.604    -0.027±0.663    
+trace     gaussian    -0.143±0.550    -0.133±0.719    -0.085±0.583    -0.009±0.462    0.074±0.453     
+trace     softimpute  0.084±0.107     0.100±0.114     0.132±0.100     0.204±0.108     0.302±0.121     
+trace     hardimpute  -0.232±0.767    -0.318±1.322    -0.144±0.674    -0.044±0.653    0.131±0.445     
+pca       gaussian    -0.136±0.540    -0.078±0.876    0.060±0.427     -0.049±0.672    0.226±0.282     
+pca       softimpute  0.095±0.106     0.126±0.111     0.126±0.111     0.180±0.117     0.311±0.130     
+pca       hardimpute  -0.197±0.735    -0.685±3.029    -0.139±0.657    -0.589±1.760    0.140±0.371     
+hub       gaussian    -0.071±0.493    0.054±0.278     0.032±0.321     0.035±0.504     -0.000±0.535    
+hub       softimpute  0.090±0.101     0.206±0.095     0.243±0.100     0.323±0.111     0.341±0.119     
+hub       hardimpute  -0.118±0.612    0.105±0.341     0.170±0.250     0.254±0.384     0.258±0.313     
+random    gaussian    0.028±0.322     0.110±0.441     0.120±0.370     0.207±0.202     0.124±0.330     
+random    softimpute  0.093±0.095     0.145±0.112     0.193±0.105     0.276±0.108     0.332±0.127     
+random    hardimpute  -0.602±1.412    0.044±0.489     0.049±0.514     0.121±0.649     0.244±0.365     
+facloc    gaussian    -0.033±0.401    -0.026±0.516    0.053±0.343     0.066±0.370     0.095±0.393     
+facloc    softimpute  0.100±0.108     0.156±0.087     0.179±0.098     0.228±0.101     0.287±0.120     
+facloc    hardimpute  -0.058±0.480    -0.157±1.082    0.022±0.434     -0.029±0.529    -0.086±1.188    
+
+== BenchPress: median R² over splits ==
+mi        gaus 0.047  0.046  0.042  0.087  0.241   soft 0.101  0.108  0.118  0.192  0.315   hard 0.003  0.049  0.010  0.016  0.292 
+entropy   gaus 0.033  0.058  0.033  0.076  0.261   soft 0.083  0.092  0.089  0.149  0.285   hard -0.013 0.010  -0.083 -0.219 0.160 
+trace     gaus 0.033  0.059  0.047  0.110  0.154   soft 0.083  0.109  0.130  0.182  0.287   hard -0.013 0.019  0.033  0.118  0.202 
+pca       gaus 0.033  0.115  0.135  0.071  0.269   soft 0.107  0.126  0.122  0.163  0.316   hard 0.006  0.067  0.060  -0.051 0.245 
+hub       gaus 0.048  0.096  0.103  0.135  0.073   soft 0.083  0.203  0.236  0.322  0.348   hard -0.009 0.166  0.209  0.300  0.290 
+random    gaus 0.064  0.150  0.182  0.243  0.201   soft 0.069  0.115  0.188  0.267  0.314   hard 0.021  0.114  0.146  0.259  0.355 
+facloc    gaus 0.043  0.120  0.126  0.173  0.162   soft 0.095  0.144  0.154  0.224  0.278   hard 0.049  0.114  0.168  0.133  0.190 
+  exploded fits (R² < -1): gaussian 112/2081, softimpute 0/2081, hardimpute 188/2081
+
+== BenchPress: paired R² differences of the imputers (Nadeau–Bengio 95% CI, win rate) ==
+  k=1  mi        softimpute − gaussian   +0.132  [-0.237, +0.501]  win 0.60
+  k=1  entropy   softimpute − gaussian   +0.227  [-0.149, +0.603]  win 0.60
+  k=1  trace     softimpute − gaussian   +0.227  [-0.149, +0.603]  win 0.60
+  k=1  pca       softimpute − gaussian   +0.231  [-0.137, +0.598]  win 0.60
+  k=1  hub       softimpute − gaussian   +0.161  [-0.173, +0.496]  win 0.60
+  k=1  random    softimpute − gaussian   +0.064  [-0.185, +0.314]  win 0.46
+  k=1  mi        hardimpute − gaussian   -0.256  [-0.669, +0.156]  win 0.33
+  k=1  entropy   hardimpute − gaussian   -0.090  [-0.319, +0.139]  win 0.44
+  k=1  trace     hardimpute − gaussian   -0.090  [-0.319, +0.139]  win 0.44
+  k=1  pca       hardimpute − gaussian   -0.061  [-0.269, +0.148]  win 0.46
+  k=1  hub       hardimpute − gaussian   -0.047  [-0.212, +0.119]  win 0.44
+  k=1  random    hardimpute − gaussian   -0.630  [-1.594, +0.334]  win 0.41
+  k=1  mi        softimpute − hardimpute +0.388  [-0.339, +1.115]  win 0.69
+  k=1  entropy   softimpute − hardimpute +0.317  [-0.218, +0.852]  win 0.62
+  k=1  trace     softimpute − hardimpute +0.317  [-0.218, +0.852]  win 0.62
+  k=1  pca       softimpute − hardimpute +0.292  [-0.221, +0.804]  win 0.64
+  k=1  hub       softimpute − hardimpute +0.208  [-0.211, +0.627]  win 0.64
+  k=1  random    softimpute − hardimpute +0.694  [-0.372, +1.760]  win 0.63
+  k=5  mi        softimpute − gaussian   +0.195  [-0.113, +0.502]  win 0.69
+  k=5  entropy   softimpute − gaussian   +0.384  [-0.562, +1.331]  win 0.66
+  k=5  trace     softimpute − gaussian   +0.217  [-0.181, +0.615]  win 0.68
+  k=5  pca       softimpute − gaussian   +0.066  [-0.210, +0.342]  win 0.41
+  k=5  hub       softimpute − gaussian   +0.211  [-0.021, +0.442]  win 0.72
+  k=5  random    softimpute − gaussian   +0.073  [-0.190, +0.335]  win 0.46
+  k=5  mi        hardimpute − gaussian   -0.088  [-0.633, +0.456]  win 0.49
+  k=5  entropy   hardimpute − gaussian   -0.264  [-1.043, +0.515]  win 0.48
+  k=5  trace     hardimpute − gaussian   -0.059  [-0.292, +0.174]  win 0.46
+  k=5  pca       hardimpute − gaussian   -0.199  [-0.649, +0.250]  win 0.29
+  k=5  hub       hardimpute − gaussian   +0.137  [-0.062, +0.337]  win 0.74
+  k=5  random    hardimpute − gaussian   -0.071  [-0.351, +0.209]  win 0.38
+  k=5  mi        softimpute − hardimpute +0.283  [-0.396, +0.962]  win 0.59
+  k=5  entropy   softimpute − hardimpute +0.648  [-0.347, +1.644]  win 0.66
+  k=5  trace     softimpute − hardimpute +0.276  [-0.190, +0.742]  win 0.70
+  k=5  pca       softimpute − hardimpute +0.265  [-0.192, +0.723]  win 0.61
+  k=5  hub       softimpute − hardimpute +0.073  [-0.100, +0.246]  win 0.56
+  k=5  random    softimpute − hardimpute +0.144  [-0.215, +0.503]  win 0.52
+  k=10 mi        softimpute − gaussian   +0.293  [-0.164, +0.750]  win 0.70
+  k=10 entropy   softimpute − gaussian   +0.226  [-0.172, +0.624]  win 0.62
+  k=10 trace     softimpute − gaussian   +0.213  [-0.099, +0.525]  win 0.64
+  k=10 pca       softimpute − gaussian   +0.228  [-0.249, +0.706]  win 0.68
+  k=10 hub       softimpute − gaussian   +0.288  [-0.072, +0.648]  win 0.80
+  k=10 random    softimpute − gaussian   +0.069  [-0.045, +0.183]  win 0.64
+  k=10 mi        hardimpute − gaussian   -0.218  [-0.606, +0.171]  win 0.42
+  k=10 entropy   hardimpute − gaussian   -0.510  [-1.469, +0.448]  win 0.36
+  k=10 trace     hardimpute − gaussian   -0.036  [-0.298, +0.226]  win 0.54
+  k=10 pca       hardimpute − gaussian   -0.540  [-1.558, +0.478]  win 0.32
+  k=10 hub       hardimpute − gaussian   +0.220  [+0.000, +0.439]  win 0.82
+  k=10 random    hardimpute − gaussian   -0.086  [-0.498, +0.327]  win 0.56
+  k=10 mi        softimpute − hardimpute +0.510  [-0.058, +1.078]  win 0.78
+  k=10 entropy   softimpute − hardimpute +0.736  [-0.422, +1.894]  win 0.72
+  k=10 trace     softimpute − hardimpute +0.249  [-0.203, +0.700]  win 0.62
+  k=10 pca       softimpute − hardimpute +0.768  [-0.510, +2.047]  win 0.76
+  k=10 hub       softimpute − hardimpute +0.068  [-0.205, +0.342]  win 0.48
+  k=10 random    softimpute − hardimpute +0.155  [-0.297, +0.606]  win 0.56
+  k=1  facloc    softimpute − gaussian   +0.133  [-0.142, +0.408]  win 0.58
+  k=1  facloc    hardimpute − gaussian   -0.025  [-0.180, +0.130]  win 0.46
+  k=1  facloc    softimpute − hardimpute +0.158  [-0.165, +0.481]  win 0.60
+  k=5  facloc    softimpute − gaussian   +0.126  [-0.102, +0.354]  win 0.62
+  k=5  facloc    hardimpute − gaussian   -0.031  [-0.233, +0.172]  win 0.52
+  k=5  facloc    softimpute − hardimpute +0.157  [-0.137, +0.450]  win 0.58
+  k=10 facloc    softimpute − gaussian   +0.161  [-0.082, +0.404]  win 0.66
+  k=10 facloc    hardimpute − gaussian   -0.095  [-0.412, +0.221]  win 0.50
+  k=10 facloc    softimpute − hardimpute +0.256  [-0.127, +0.639]  win 0.62
+
+== BenchPress: method ranks by mean R² (1 = best) ==
+  gaussian    k=1  random > mi > hub > pca > entropy > trace; facloc rank 3 of 7
+  gaussian    k=3  random > hub > mi > pca > trace > entropy; facloc rank 3 of 7
+  gaussian    k=5  random > pca > hub > mi > trace > entropy; facloc rank 3 of 7
+  gaussian    k=10 random > hub > trace > pca > entropy > mi; facloc rank 2 of 7
+  gaussian    k=15 pca > random > entropy > trace > mi > hub; facloc rank 3 of 7
+  softimpute  k=1  mi > pca > random > hub > entropy > trace; facloc rank 2 of 7
+  softimpute  k=3  hub > random > pca > mi > trace > entropy; facloc rank 2 of 7
+  softimpute  k=5  hub > random > mi > trace > pca > entropy; facloc rank 3 of 7
+  softimpute  k=10 hub > random > mi > trace > pca > entropy; facloc rank 3 of 7
+  softimpute  k=15 hub > random > mi > pca > trace > entropy; facloc rank 7 of 7
+  hardimpute  k=1  hub > pca > entropy > trace > mi > random; facloc rank 1 of 7
+  hardimpute  k=3  hub > random > mi > trace > pca > entropy; facloc rank 4 of 7
+  hardimpute  k=5  hub > random > pca > trace > mi > entropy; facloc rank 3 of 7
+  hardimpute  k=10 hub > random > trace > mi > entropy > pca; facloc rank 3 of 7
+  hardimpute  k=15 hub > random > pca > trace > mi > entropy; facloc rank 7 of 7
+  softimpute vs gaussian: Spearman k=1 0.71, k=2 0.49, k=3 0.89, k=5 0.54, k=7 0.71, k=10 0.60, k=15 -0.37
+  hardimpute vs gaussian: Spearman k=1 -0.47, k=2 0.20, k=3 0.89, k=5 0.77, k=7 0.66, k=10 0.71, k=15 -0.09
+  mi − trace: gaussian k=5 +0.032 [-0.479, +0.543]; gaussian k=10 -0.079 [-0.494, +0.335]; softimpute k=5 +0.007 [-0.068, +0.081]; softimpute k=10 +0.000 [-0.086, +0.086]; hardimpute k=5 +0.006 [-0.837, +0.850]; hardimpute k=10 -0.261 [-0.770, +0.247]
+  softimpute: lambda* at lambda_max in 0.02857142857142857, at the smallest grid value in 0.023809523809523808 of the fits; nonconverged fits 0
+  hardimpute: rank at max 0.15777777777777777, at 1 0.4988888888888889; nonconverged fits 6547
+  hardimpute reported fits converged: 1052/2081; median R² converged 0.0977526378160295, not converged 0.0928644053167047; R² < -1: 60 converged, 128 not
+  inner holdout without cells: 0
+  Gaussian check (impute_and_evaluate vs per-model): max |ΔR²| = 7.105427357601002e-15
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/imputers_benchpress.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/imputers_benchpress.{npz,json} and _paired.csv (5421 macros)
+BENCHPRESS completed in 2s
+
+All datasets completed in 2s
+
+# finished 2026-10-20T02:46:31Z  exit=0  status=ok

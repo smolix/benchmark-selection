@@ -1,0 +1,83 @@
+# job      entropy_vs_mi_epoch
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_entropy_vs_mi.py --datasets epoch --repeats 5
+# started  2026-10-20T01:44:59Z on 4090-1
+
+
+######################################################################
+# Dataset: EPOCH
+######################################################################
+277 models × 61 tasks, 17.7% observed
+5 × 10-fold CV, 10% holdout, selectable: benchmarks with ≥ 3 training models; targets: ≥ 2; predictions clipped to the valid range: True
+  Rep 0 fold 0: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.527  MI R²@5=0.051  Rand R²@5=0.379  Trace R²@5=0.608  FL R²@5=0.466  (57.9s)
+  Rep 0 fold 1: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.307  MI R²@5=0.255  Rand R²@5=0.272  Trace R²@5=0.434  FL R²@5=0.448  (43.4s)
+  Rep 0 fold 2: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.400  MI R²@5=0.354  Rand R²@5=0.385  Trace R²@5=0.436  FL R²@5=0.483  (46.1s)
+  Rep 0 fold 3: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.568  MI R²@5=0.166  Rand R²@5=0.443  Trace R²@5=0.523  FL R²@5=0.541  (32.7s)
+  Rep 0 fold 4: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.281  MI R²@5=0.045  Rand R²@5=0.550  Trace R²@5=0.610  FL R²@5=0.520  (51.0s)
+  Rep 0 fold 5: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.261  MI R²@5=0.061  Rand R²@5=0.456  Trace R²@5=0.431  FL R²@5=0.460  (27.7s)
+  Rep 0 fold 6: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.349  MI R²@5=-0.221  Rand R²@5=0.445  Trace R²@5=0.401  FL R²@5=0.420  (32.1s)
+  Rep 0 fold 7: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.464  MI R²@5=0.256  Rand R²@5=-0.446  Trace R²@5=0.522  FL R²@5=0.493  (42.9s)
+  Rep 0 fold 8: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.400  MI R²@5=0.301  Rand R²@5=0.397  Trace R²@5=0.391  FL R²@5=0.487  (49.6s)
+  Rep 0 fold 9: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.354  MI R²@5=0.351  Rand R²@5=-0.029  Trace R²@5=0.521  FL R²@5=0.443  (49.8s)
+  Rep 1 fold 0: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.381  MI R²@5=0.267  Rand R²@5=0.323  Trace R²@5=0.418  FL R²@5=0.426  (43.4s)
+  Rep 1 fold 1: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.164  MI R²@5=0.097  Rand R²@5=0.113  Trace R²@5=0.197  FL R²@5=0.284  (47.1s)
+  Rep 1 fold 2: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.503  MI R²@5=0.457  Rand R²@5=0.441  Trace R²@5=0.469  FL R²@5=0.459  (26.7s)
+  Rep 1 fold 3: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.516  MI R²@5=0.296  Rand R²@5=0.325  Trace R²@5=0.513  FL R²@5=0.601  (47.0s)
+  Rep 1 fold 4: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.330  MI R²@5=0.132  Rand R²@5=0.279  Trace R²@5=0.250  FL R²@5=0.361  (46.2s)
+  Rep 1 fold 5: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.449  MI R²@5=0.287  Rand R²@5=0.420  Trace R²@5=0.603  FL R²@5=0.585  (34.1s)
+  Rep 1 fold 6: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.597  MI R²@5=0.072  Rand R²@5=0.363  Trace R²@5=0.560  FL R²@5=0.481  (27.4s)
+  Rep 1 fold 7: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.544  MI R²@5=0.289  Rand R²@5=0.200  Trace R²@5=0.585  FL R²@5=0.567  (38.3s)
+  Rep 1 fold 8: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.518  MI R²@5=0.458  Rand R²@5=0.158  Trace R²@5=0.487  FL R²@5=0.604  (55.9s)
+  Rep 1 fold 9: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.429  MI R²@5=0.127  Rand R²@5=-0.076  Trace R²@5=0.515  FL R²@5=0.528  (35.1s)
+  Rep 2 fold 0: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.466  MI R²@5=0.169  Rand R²@5=0.470  Trace R²@5=0.530  FL R²@5=0.447  (57.5s)
+  Rep 2 fold 1: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.396  MI R²@5=0.031  Rand R²@5=0.120  Trace R²@5=0.156  FL R²@5=0.299  (53.0s)
+  Rep 2 fold 2: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.413  MI R²@5=0.356  Rand R²@5=0.479  Trace R²@5=0.541  FL R²@5=0.494  (34.6s)
+  Rep 2 fold 3: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.370  MI R²@5=0.417  Rand R²@5=0.315  Trace R²@5=0.486  FL R²@5=0.559  (34.1s)
+  Rep 2 fold 4: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.383  MI R²@5=0.370  Rand R²@5=-0.032  Trace R²@5=0.270  FL R²@5=0.462  (34.5s)
+  Rep 2 fold 5: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.328  MI R²@5=0.004  Rand R²@5=0.269  Trace R²@5=0.414  FL R²@5=0.357  (31.5s)
+  Rep 2 fold 6: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.598  MI R²@5=0.281  Rand R²@5=0.469  Trace R²@5=0.601  FL R²@5=0.577  (26.7s)
+  Rep 2 fold 7: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.391  MI R²@5=-0.038  Rand R²@5=0.354  Trace R²@5=0.468  FL R²@5=0.587  (35.7s)
+  Rep 2 fold 8: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.548  MI R²@5=0.351  Rand R²@5=0.205  Trace R²@5=0.482  FL R²@5=0.456  (32.0s)
+  Rep 2 fold 9: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.551  MI R²@5=0.430  Rand R²@5=0.367  Trace R²@5=0.454  FL R²@5=0.495  (71.6s)
+  Rep 3 fold 0: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.535  MI R²@5=0.349  Rand R²@5=0.518  Trace R²@5=0.550  FL R²@5=0.524  (31.1s)
+  Rep 3 fold 1: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.634  MI R²@5=0.124  Rand R²@5=0.282  Trace R²@5=0.645  FL R²@5=0.622  (58.7s)
+  Rep 3 fold 2: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.557  MI R²@5=-0.091  Rand R²@5=0.569  Trace R²@5=0.587  FL R²@5=0.579  (80.3s)
+  Rep 3 fold 3: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.523  MI R²@5=0.175  Rand R²@5=0.326  Trace R²@5=0.364  FL R²@5=0.466  (60.2s)
+  Rep 3 fold 4: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.358  MI R²@5=0.376  Rand R²@5=0.359  Trace R²@5=0.527  FL R²@5=0.478  (35.0s)
+  Rep 3 fold 5: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.522  MI R²@5=0.085  Rand R²@5=0.230  Trace R²@5=0.553  FL R²@5=0.564  (46.9s)
+  Rep 3 fold 6: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.335  MI R²@5=0.149  Rand R²@5=0.258  Trace R²@5=0.369  FL R²@5=0.479  (39.8s)
+  Rep 3 fold 7: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.391  MI R²@5=0.313  Rand R²@5=0.176  Trace R²@5=0.557  FL R²@5=0.371  (32.6s)
+  Rep 3 fold 8: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.255  MI R²@5=0.227  Rand R²@5=0.463  Trace R²@5=0.294  FL R²@5=0.402  (54.2s)
+  Rep 3 fold 9: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.275  MI R²@5=0.020  Rand R²@5=0.301  Trace R²@5=-0.021  FL R²@5=0.262  (27.4s)
+  Rep 4 fold 0: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.506  MI R²@5=-0.007  Rand R²@5=0.190  Trace R²@5=0.535  FL R²@5=0.434  (27.8s)
+  Rep 4 fold 1: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.241  MI R²@5=0.077  Rand R²@5=0.376  Trace R²@5=0.380  FL R²@5=0.428  (42.9s)
+  Rep 4 fold 2: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.177  MI R²@5=0.005  Rand R²@5=0.004  Trace R²@5=0.375  FL R²@5=0.436  (54.2s)
+  Rep 4 fold 3: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.270  MI R²@5=-0.052  Rand R²@5=0.396  Trace R²@5=0.277  FL R²@5=0.272  (58.1s)
+  Rep 4 fold 4: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.653  MI R²@5=0.236  Rand R²@5=0.573  Trace R²@5=0.586  FL R²@5=0.700  (39.2s)
+  Rep 4 fold 5: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.535  MI R²@5=0.088  Rand R²@5=0.257  Trace R²@5=0.513  FL R²@5=0.556  (26.7s)
+  Rep 4 fold 6: 249 train / 28 test, 61/61 eligible  Ent R²@5=0.541  MI R²@5=0.288  Rand R²@5=0.444  Trace R²@5=0.568  FL R²@5=0.588  (26.9s)
+  Rep 4 fold 7: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.543  MI R²@5=0.126  Rand R²@5=0.479  Trace R²@5=0.553  FL R²@5=0.569  (23.0s)
+  Rep 4 fold 8: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.371  MI R²@5=0.302  Rand R²@5=0.254  Trace R²@5=0.402  FL R²@5=0.173  (44.2s)
+  Rep 4 fold 9: 249 train / 27 test, 61/61 eligible  Ent R²@5=0.296  MI R²@5=-0.106  Rand R²@5=0.439  Trace R²@5=0.428  FL R²@5=0.478  (53.5s)
+
+== Epoch AI: imputation R² (mean ± std over 50 splits) ==
+method                  k=1           k=3           k=5           k=10          k=15          
+Entropy (Alg. 1)        0.399±0.107   0.424±0.116   0.426±0.120   0.445±0.132   0.482±0.115   
+Mutual Info (Alg. 2)    -0.134±0.566  0.120±0.209   0.183±0.161   0.316±0.129   0.392±0.140   
+Random                  0.161±0.232   0.293±0.169   0.306±0.187   0.432±0.127   0.477±0.110   
+Greedy trace min.       0.399±0.107   0.481±0.107   0.458±0.130   0.474±0.121   0.491±0.117   
+Facility location       0.417±0.109   0.462±0.112   0.475±0.102   0.508±0.095   0.519±0.105   
+eligible benchmarks per split: 61–61 of 61 (0/50 splits restricted)
+index ties (entropy, k ≤ 15): 0 picks in 0/50 splits
+index ties (mi, k ≤ 15): 0 picks in 0/50 splits
+index ties (random, k ≤ 15): 0 picks in 0/50 splits
+index ties (trace, k ≤ 15): 0 picks in 0/50 splits
+index ties (facloc, k ≤ 15): 0 picks in 0/50 splits
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/entropy_vs_mi_epoch.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/entropy_vs_mi_epoch.npz
+
+EPOCH completed in 2110s
+
+All datasets completed in 2110s
+
+# finished 2026-10-20T02:20:10Z  exit=0  status=ok

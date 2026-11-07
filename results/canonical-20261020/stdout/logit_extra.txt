@@ -1,0 +1,19 @@
+# job      logit_extra
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && env BENCHSELECT_LOGIT_FIGURES_DIR=~/benchselect-runs/canonical-20261020/out/figures_logit/extra ~/venvs/benchselect/bin/python eval_logit.py --datasets olv2sub olv1items helm_lite helm_mmlu helm_classic mteb2026 --eigenspectrum-only
+# started  2026-10-20T02:46:49Z on 4090-1
+
+
+######################################################################
+# Eigenspectrum (logit space)
+######################################################################
+  olv2sub: 90% at k=13, 95% at k=20
+  olv1items: 90% at k=7, 95% at k=16
+  helm_lite: 90% at k=5, 95% at k=7
+  helm_mmlu: 90% at k=8, 95% at k=14
+  helm_classic: 90% at k=6, 95% at k=8
+  mteb2026: 90% at k=9, 95% at k=15
+  Saved ~/benchselect-runs/canonical-20261020/out/figures_logit/extra/eigenspectrum_logit.pdf
+
+All experiments completed in 8s
+
+# finished 2026-10-20T02:46:59Z  exit=0  status=ok

@@ -1,0 +1,102 @@
+# job      family_olv2sub
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_family_holdout.py --datasets olv2sub --repeats 5
+# started  2026-10-20T02:47:00Z on 4090-1
+
+
+######################################################################
+# Dataset: OLV2SUB — family holdout
+######################################################################
+4493 models × 42 tasks; keyword families, 2051 models 'other' (always trained on)
+holding out families: falcon(45), gemma(238), gpt(31), llama(869), mistral(192), phi(107), qwen(780), smollm(46), yi(35)
+Families of ≥ 30 models; selectable: benchmarks with ≥ 3 training models; 5 repetition(s) of the random streams
+  Holdout falcon: 4448 train / 45 test, 42/42 eligible  entropy:0.537  mi:0.591  random:0.475  hub:0.496  pca:0.647  trace:0.646  facloc:0.644  (0.1s)
+  Holdout gemma: 4255 train / 238 test, 42/42 eligible  entropy:0.475  mi:0.594  random:0.544  hub:0.451  pca:0.341  trace:0.646  facloc:0.718  (0.1s)
+  Holdout gpt: 4462 train / 31 test, 42/42 eligible  entropy:0.750  mi:0.738  random:0.756  hub:0.553  pca:0.809  trace:0.878  facloc:0.877  (0.1s)
+  Holdout llama: 3624 train / 869 test, 42/42 eligible  entropy:0.531  mi:0.563  random:0.506  hub:0.474  pca:0.592  trace:0.617  facloc:0.612  (0.1s)
+  Holdout mistral: 4301 train / 192 test, 42/42 eligible  entropy:0.404  mi:0.516  random:0.453  hub:0.352  pca:0.532  trace:0.565  facloc:0.566  (0.1s)
+  Holdout phi: 4386 train / 107 test, 42/42 eligible  entropy:0.658  mi:0.693  random:0.737  hub:0.525  pca:0.712  trace:0.789  facloc:0.793  (0.1s)
+  Holdout qwen: 3713 train / 780 test, 42/42 eligible  entropy:0.737  mi:0.781  random:0.652  hub:0.646  pca:0.792  trace:0.822  facloc:0.829  (0.1s)
+  Holdout smollm: 4447 train / 46 test, 42/42 eligible  entropy:0.886  mi:0.858  random:0.856  hub:0.827  pca:0.896  trace:0.901  facloc:0.896  (0.1s)
+  Holdout yi: 4458 train / 35 test, 42/42 eligible  entropy:0.354  mi:0.397  random:0.506  hub:0.314  pca:0.474  trace:0.595  facloc:0.597  (0.1s)
+  Holdout falcon rep 1:  random:0.618  (0.0s)
+  Holdout gemma rep 1:  random:0.467  (0.0s)
+  Holdout gpt rep 1:  random:0.646  (0.0s)
+  Holdout llama rep 1:  random:0.474  (0.0s)
+  Holdout mistral rep 1:  random:0.471  (0.0s)
+  Holdout phi rep 1:  random:0.726  (0.0s)
+  Holdout qwen rep 1:  random:0.705  (0.0s)
+  Holdout smollm rep 1:  random:0.833  (0.0s)
+  Holdout yi rep 1:  random:0.454  (0.0s)
+  Holdout falcon rep 2:  random:0.619  (0.0s)
+  Holdout gemma rep 2:  random:0.556  (0.0s)
+  Holdout gpt rep 2:  random:0.701  (0.0s)
+  Holdout llama rep 2:  random:0.582  (0.0s)
+  Holdout mistral rep 2:  random:0.446  (0.0s)
+  Holdout phi rep 2:  random:0.743  (0.0s)
+  Holdout qwen rep 2:  random:0.660  (0.0s)
+  Holdout smollm rep 2:  random:0.879  (0.0s)
+  Holdout yi rep 2:  random:0.484  (0.0s)
+  Holdout falcon rep 3:  random:0.581  (0.0s)
+  Holdout gemma rep 3:  random:0.551  (0.0s)
+  Holdout gpt rep 3:  random:0.737  (0.0s)
+  Holdout llama rep 3:  random:0.478  (0.0s)
+  Holdout mistral rep 3:  random:0.458  (0.0s)
+  Holdout phi rep 3:  random:0.553  (0.0s)
+  Holdout qwen rep 3:  random:0.597  (0.0s)
+  Holdout smollm rep 3:  random:0.848  (0.0s)
+  Holdout yi rep 3:  random:0.399  (0.0s)
+  Holdout falcon rep 4:  random:0.481  (0.0s)
+  Holdout gemma rep 4:  random:0.545  (0.0s)
+  Holdout gpt rep 4:  random:0.710  (0.0s)
+  Holdout llama rep 4:  random:0.473  (0.0s)
+  Holdout mistral rep 4:  random:0.550  (0.0s)
+  Holdout phi rep 4:  random:0.613  (0.0s)
+  Holdout qwen rep 4:  random:0.781  (0.0s)
+  Holdout smollm rep 4:  random:0.869  (0.0s)
+  Holdout yi rep 4:  random:0.531  (0.0s)
+
+== OLL v2 sub-tasks: family-holdout imputation R² (mean ± std over 9 families) ==
+   (random: per family, mean over 5 draws)
+method                k=1          k=3          k=5          k=10         k=15         
+Entropy (Alg. 1)      0.523±0.153  0.561±0.147  0.592±0.166  0.766±0.108  0.826±0.082  
+Mutual Info (Alg. 2)  0.253±0.226  0.638±0.134  0.637±0.135  0.702±0.121  0.733±0.110  
+Random                0.348±0.145  0.526±0.140  0.607±0.123  0.673±0.117  0.716±0.114  
+Hub correlation       0.523±0.153  0.521±0.146  0.515±0.145  0.534±0.151  0.569±0.158  
+PCA subset (CSSP)     0.523±0.153  0.497±0.196  0.644±0.168  0.743±0.116  0.816±0.089  
+Greedy trace min.     0.523±0.153  0.665±0.120  0.717±0.122  0.783±0.101  0.828±0.082  
+Facility location     0.523±0.153  0.665±0.121  0.726±0.120  0.779±0.103  0.825±0.082  
+
+   Per-family R² at k=5:
+   family          entropy     mi          random      hub         pca         trace       facloc      
+   falcon          0.537       0.591       0.555       0.496       0.647       0.646       0.644       
+   gemma           0.475       0.594       0.533       0.451       0.341       0.646       0.718       
+   gpt             0.750       0.738       0.710       0.553       0.809       0.878       0.877       
+   llama           0.531       0.563       0.503       0.474       0.592       0.617       0.612       
+   mistral         0.404       0.516       0.475       0.352       0.532       0.565       0.566       
+   phi             0.658       0.693       0.674       0.525       0.712       0.789       0.793       
+   qwen            0.737       0.781       0.679       0.646       0.792       0.822       0.829       
+   smollm          0.886       0.858       0.857       0.827       0.896       0.901       0.896       
+   yi              0.354       0.397       0.475       0.314       0.474       0.595       0.597       
+
+   Selection stability (Jaccard vs full-data selection):
+   Entropy (Alg. 1)      k=5: 1.00  k=10: 0.90  k=15: 0.83
+   Mutual Info (Alg. 2)  k=5: 1.00  k=10: 0.96  k=15: 0.97
+   Hub correlation       k=5: 1.00  k=10: 0.96  k=15: 0.96
+   PCA subset (CSSP)     k=5: 0.93  k=10: 0.89  k=15: 0.92
+   Greedy trace min.     k=5: 0.90  k=10: 0.98  k=15: 0.95
+   Facility location     k=5: 0.89  k=10: 0.92  k=15: 0.92
+
+   Eligible benchmarks (≥ 3 training models): all models 42/42; families all 42
+   entropy     k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 45 in 45/45; all-model reference: 0 index ties
+   mi          k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: 0 index ties
+   random      k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: n/a
+   hub         k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: 0 index ties
+   pca         k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: 0 index ties
+   trace       k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 0 in 0/45; all-model reference: 0 index ties
+   facloc      k ≤ 15: index ties 0 picks in 0/45 splits, near-tie breaks 5 in 5/45; all-model reference: 0 index ties
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/family_holdout_olv2sub.pdf
+OLV2SUB completed in 2s
+
+All datasets completed in 2s
+
+# finished 2026-10-20T02:47:04Z  exit=0  status=ok

@@ -1,0 +1,78 @@
+# job      family_olv1items
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_family_holdout.py --datasets olv1items --repeats 5
+# started  2026-10-20T02:47:02Z on 4090-1
+
+
+######################################################################
+# Dataset: OLV1ITEMS — family holdout
+######################################################################
+395 models × 62 tasks; keyword families, 203 models 'other' (always trained on)
+holding out families: gpt(11), llama(91), mistral(61), solar(11), yi(9)
+Families of ≥ 6 models; selectable: benchmarks with ≥ 3 training models; 5 repetition(s) of the random streams
+  Holdout gpt: 384 train / 11 test, 62/62 eligible  entropy:0.826  mi:0.799  random:0.829  hub:0.802  pca:0.812  trace:0.823  facloc:0.783  (0.1s)
+  Holdout llama: 304 train / 91 test, 62/62 eligible  entropy:0.845  mi:0.870  random:0.827  hub:0.831  pca:0.793  trace:0.881  facloc:0.878  (0.1s)
+  Holdout mistral: 334 train / 61 test, 62/62 eligible  entropy:0.772  mi:0.733  random:0.689  hub:0.722  pca:0.702  trace:0.746  facloc:0.753  (0.1s)
+  Holdout solar: 384 train / 11 test, 62/62 eligible  entropy:0.845  mi:0.782  random:0.687  hub:0.724  pca:0.723  trace:0.769  facloc:0.775  (0.1s)
+  Holdout yi: 386 train / 9 test, 62/62 eligible  entropy:0.898  mi:0.913  random:0.817  hub:0.859  pca:0.862  trace:0.926  facloc:0.919  (0.1s)
+  Holdout gpt rep 1:  random:0.793  (0.0s)
+  Holdout llama rep 1:  random:0.868  (0.0s)
+  Holdout mistral rep 1:  random:0.722  (0.0s)
+  Holdout solar rep 1:  random:0.724  (0.0s)
+  Holdout yi rep 1:  random:0.902  (0.0s)
+  Holdout gpt rep 2:  random:0.821  (0.0s)
+  Holdout llama rep 2:  random:0.825  (0.0s)
+  Holdout mistral rep 2:  random:0.719  (0.0s)
+  Holdout solar rep 2:  random:0.683  (0.0s)
+  Holdout yi rep 2:  random:0.857  (0.0s)
+  Holdout gpt rep 3:  random:0.827  (0.0s)
+  Holdout llama rep 3:  random:0.859  (0.0s)
+  Holdout mistral rep 3:  random:0.709  (0.0s)
+  Holdout solar rep 3:  random:0.720  (0.0s)
+  Holdout yi rep 3:  random:0.866  (0.0s)
+  Holdout gpt rep 4:  random:0.825  (0.0s)
+  Holdout llama rep 4:  random:0.843  (0.0s)
+  Holdout mistral rep 4:  random:0.663  (0.0s)
+  Holdout solar rep 4:  random:0.724  (0.0s)
+  Holdout yi rep 4:  random:0.839  (0.0s)
+
+== OLL v1 tasks: family-holdout imputation R² (mean ± std over 5 families) ==
+   (random: per family, mean over 5 draws)
+method                k=1          k=3          k=5          k=10         k=15         
+Entropy (Alg. 1)      0.771±0.049  0.808±0.046  0.837±0.040  0.871±0.040  0.883±0.041  
+Mutual Info (Alg. 2)  0.754±0.055  0.788±0.085  0.819±0.064  0.833±0.060  0.835±0.060  
+Random                0.644±0.020  0.762±0.062  0.786±0.068  0.822±0.062  0.834±0.059  
+Hub correlation       0.771±0.049  0.785±0.054  0.788±0.056  0.793±0.058  0.789±0.063  
+PCA subset (CSSP)     0.771±0.049  0.742±0.108  0.778±0.059  0.864±0.046  0.885±0.040  
+Greedy trace min.     0.771±0.049  0.801±0.073  0.829±0.067  0.874±0.046  0.890±0.042  
+Facility location     0.771±0.049  0.789±0.081  0.822±0.065  0.860±0.050  0.883±0.043  
+
+   Per-family R² at k=5:
+   family          entropy     mi          random      hub         pca         trace       facloc      
+   gpt             0.826       0.799       0.819       0.802       0.812       0.823       0.783       
+   llama           0.845       0.870       0.844       0.831       0.793       0.881       0.878       
+   mistral         0.772       0.733       0.700       0.722       0.702       0.746       0.753       
+   solar           0.845       0.782       0.707       0.724       0.723       0.769       0.775       
+   yi              0.898       0.913       0.856       0.859       0.862       0.926       0.919       
+
+   Selection stability (Jaccard vs full-data selection):
+   Entropy (Alg. 1)      k=5: 1.00  k=10: 0.96  k=15: 0.88
+   Mutual Info (Alg. 2)  k=5: 0.87  k=10: 0.75  k=15: 0.73
+   Hub correlation       k=5: 0.80  k=10: 0.89  k=15: 0.97
+   PCA subset (CSSP)     k=5: 0.75  k=10: 0.83  k=15: 0.90
+   Greedy trace min.     k=5: 0.87  k=10: 0.93  k=15: 0.82
+   Facility location     k=5: 0.87  k=10: 0.85  k=15: 0.95
+
+   Eligible benchmarks (≥ 3 training models): all models 62/62; families all 62
+   entropy     k ≤ 15: index ties 0 picks in 0/25 splits, near-tie breaks 25 in 25/25; all-model reference: 0 index ties
+   mi          k ≤ 15: index ties 0 picks in 0/25 splits, near-tie breaks 0 in 0/25; all-model reference: 0 index ties
+   random      k ≤ 15: index ties 0 picks in 0/25 splits, near-tie breaks 0 in 0/25; all-model reference: n/a
+   hub         k ≤ 15: index ties 0 picks in 0/25 splits, near-tie breaks 0 in 0/25; all-model reference: 0 index ties
+   pca         k ≤ 15: index ties 0 picks in 0/25 splits, near-tie breaks 0 in 0/25; all-model reference: 0 index ties
+   trace       k ≤ 15: index ties 0 picks in 0/25 splits, near-tie breaks 0 in 0/25; all-model reference: 0 index ties
+   facloc      k ≤ 15: index ties 0 picks in 0/25 splits, near-tie breaks 0 in 0/25; all-model reference: 0 index ties
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/family_holdout_olv1items.pdf
+OLV1ITEMS completed in 1s
+
+All datasets completed in 1s
+
+# finished 2026-10-20T02:47:04Z  exit=0  status=ok

@@ -1,0 +1,138 @@
+# job      prospective_mteb2026
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_prospective.py --datasets mteb2026 --repeats 5 --workers 16
+# started  2026-10-20T02:46:28Z on 4090-1
+
+
+######################################################################
+# Prospective: mteb2026 (MTEB, snapshot → 2026)
+######################################################################
+
+== Check: mteb2026 in_snapshot rows vs data/mteb.matrix.npz (17 renamed) ==
+  mteb2026: 263 rows, 11385 cells compared, max |diff| 0.0223; 16 cells in 8 rows differ by > 1e-09; observation pattern differs in 6 rows (3 cells only in the reference, 130 only in the new matrix)
+     BAAI/bge-multilingual-gemma2: 1 cells, max 0.0223; obs only ref 0, only new 0
+     intfloat/multilingual-e5-large-instruct: 2 cells, max 0.00901; obs only ref 0, only new 0
+     openai/text-embedding-3-large: 2 cells, max 0.00627; obs only ref 0, only new 0
+     openai/text-embedding-3-small: 2 cells, max 0.00443; obs only ref 0, only new 0
+     intfloat/multilingual-e5-large: 3 cells, max 0.00422; obs only ref 0, only new 0
+     intfloat/multilingual-e5-base: 3 cells, max 0.00408; obs only ref 0, only new 0
+     BAAI/bge-m3: 2 cells, max 0.0013; obs only ref 0, only new 0
+     jinaai/jina-embeddings-v5-text-small: 1 cells, max 0.000135; obs only ref 3, only new 0
+     Alibaba-NLP/gte-Qwen1.5-7B-instruct: 0 cells, max 0; obs only ref 0, only new 45
+     deepfile/embedder-100p: 0 cells, max 0; obs only ref 0, only new 43
+     minishlab/potion-multilingual-128M: 0 cells, max 0; obs only ref 0, only new 27
+     mongodb/voyage-large-2-instruct (= voyageai/voyage-large-2-instruct): 0 cells, max 0; obs only ref 0, only new 11
+     mteb/baseline-bm25s: 0 cells, max 0; obs only ref 0, only new 4
+
+  [mteb2026] 57 models added after the snapshot: 263 train / 57 test, 56/56 benchmarks, 56/56 eligible; test cells 1404 (0 without training data, 0 with < 2 training models); max |R²_all − impute_and_evaluate| 2.2e-16 (facloc 1.1e-16)  (3.2s)
+    control splits 10/50 (19s)
+    control splits 20/50 (24s)
+    control splits 30/50 (30s)
+    control splits 40/50 (33s)
+    control splits 50/50 (37s)
+
+  [mteb2026] release_date > 2026-03-14: 263 train / 36 test, 56/56 benchmarks, 56/56 eligible; test cells 698 (0 without training data, 0 with < 2 training models); max |R²_all − impute_and_evaluate| 2.2e-16 (facloc 1.1e-16)  (3.0s)
+    control splits 10/50 (17s)
+    control splits 20/50 (18s)
+    control splits 30/50 (23s)
+    control splits 40/50 (26s)
+    control splits 50/50 (28s)
+
+== MTEB, snapshot → 2026 — 57 models added after the snapshot: 263 train / 57 test, 56 benchmarks, 56 eligible; R² prospective / random-split control mean (penalty); * = fewer than 10 contributing test models ==
+   new to the leaderboard but not in time: 21 of 57 (release_date <= 2026-03-14 (snapshot commit 2026-03-13))
+   test-cell fill: prospective 0.440, control mean 0.717
+method                  k=1                   k=3                   k=5                   k=10                  k=15                  
+Mutual Info (Alg. 2)    -0.014/0.648 (-0.662)*0.431/0.721 (-0.290)  0.457/0.770 (-0.313)  0.697/0.821 (-0.124)  0.787/0.843 (-0.055)  
+Entropy (Alg. 1)        0.566/0.675 (-0.108)* 0.593/0.692 (-0.099)  0.674/0.757 (-0.083)  0.767/0.827 (-0.060)  0.791/0.856 (-0.065)  
+Greedy trace min.       0.566/0.675 (-0.108)* 0.690/0.753 (-0.062)  0.727/0.789 (-0.062)  0.775/0.843 (-0.069)  0.840/0.870 (-0.030)  
+Hub correlation         0.566/0.681 (-0.114)* 0.604/0.685 (-0.081)* 0.751/0.708 (+0.043)  0.683/0.732 (-0.049)  0.658/0.738 (-0.080)  
+PCA subset (CSSP)       0.566/0.680 (-0.114)* 0.683/0.745 (-0.063)  0.681/0.759 (-0.078)  0.723/0.815 (-0.092)  0.806/0.863 (-0.057)  
+Facility location       0.566/0.681 (-0.114)* 0.642/0.733 (-0.091)  0.734/0.784 (-0.050)  0.767/0.839 (-0.072)  0.755/0.855 (-0.101)  
+Random                  0.383/0.532 (-0.149)  0.562/0.694 (-0.132)  0.647/0.741 (-0.095)  0.718/0.794 (-0.076)  0.747/0.818 (-0.071)  
+   shift-adjusted R² (SS_tot about the test-set means) prospective / control (penalty):
+   mi                   -2.741/0.639 (-3.380) -0.014/0.713 (-0.727) 0.037/0.763 (-0.726)  0.475/0.816 (-0.341)  0.611/0.838 (-0.227)  
+   entropy              -0.637/0.667 (-1.305) 0.236/0.683 (-0.447)  0.386/0.750 (-0.364)  0.540/0.822 (-0.282)  0.535/0.852 (-0.316)  
+   trace                -0.637/0.667 (-1.305) 0.417/0.746 (-0.328)  0.466/0.783 (-0.317)  0.577/0.839 (-0.262)  0.669/0.866 (-0.197)  
+   hub                  -0.637/0.673 (-1.311) -0.493/0.678 (-1.171) 0.225/0.701 (-0.476)  0.004/0.724 (-0.720)  0.430/0.730 (-0.300)  
+   pca                  -0.637/0.673 (-1.310) 0.386/0.738 (-0.352)  0.380/0.752 (-0.373)  0.458/0.810 (-0.352)  0.595/0.859 (-0.264)  
+   facloc               -0.637/0.673 (-1.311) 0.372/0.725 (-0.353)  0.515/0.778 (-0.262)  0.552/0.835 (-0.283)  0.500/0.851 (-0.351)  
+   random               -0.780/0.520 (-1.300) 0.116/0.686 (-0.570)  0.339/0.734 (-0.394)  0.473/0.788 (-0.315)  0.527/0.813 (-0.286)  
+   RMSE (train-std units) prospective / control mean:
+   mi                   1.138/0.597           0.705/0.532           0.698/0.483           0.504/0.424           0.427/0.397           
+   entropy              0.773/0.565           0.594/0.561           0.543/0.497           0.459/0.416           0.437/0.380           
+   trace                0.773/0.565           0.525/0.499           0.487/0.458           0.438/0.397           0.373/0.361           
+   hub                  0.773/0.559           0.742/0.559           0.495/0.531           0.567/0.523           0.535/0.514           
+   pca                  0.773/0.560           0.524/0.501           0.528/0.492           0.502/0.431           0.437/0.370           
+   facloc               0.773/0.559           0.560/0.518           0.477/0.461           0.446/0.400           0.440/0.379           
+   random               0.811/0.679           0.625/0.552           0.555/0.508           0.493/0.451           0.468/0.424           
+   contributing test models (of 57) prospective / control mean:
+   mi                   9/34.5                42/49.5               42/52.9               52/55.7               53/56.2               
+   entropy              9/34.4                41/47.5               41/50.0               54/53.7               54/53.9               
+   trace                9/34.4                41/48.0               50/54.2               50/55.1               53/55.7               
+   hub                  9/34.4                9/34.8                24/41.3               24/50.3               45/51.5               
+   pca                  9/34.4                49/52.5               49/52.6               49/53.2               54/54.3               
+   facloc               9/34.4                41/47.6               50/54.7               50/55.4               51/55.8               
+   random               25/40.8               42/49.0               49/52.3               53/54.4               54/55.0               
+   paired bootstrap over test models (B = 2000): diff [95% CI] P(diff > 0)
+   mi − random       k=1 -0.397 [-0.492, -0.230] 0.00*  k=3 -0.131 [-0.218, +0.010] 0.03  k=5 -0.190 [-0.266, -0.073] 0.00  k=10 -0.021 [-0.034, -0.004] 0.01
+   mi − entropy      k=1 -0.580 [-0.684, -0.388] 0.00*  k=3 -0.162 [-0.285, +0.039] 0.05  k=5 -0.217 [-0.297, -0.085] 0.00  k=10 -0.070 [-0.101, -0.047] 0.00
+   mi − trace        k=1 -0.580 [-0.684, -0.388] 0.00*  k=3 -0.259 [-0.348, -0.118] 0.00  k=5 -0.270 [-0.336, -0.176] 0.00  k=10 -0.078 [-0.101, -0.053] 0.00
+   trace − random    k=1 +0.183 [+0.136, +0.214] 1.00*  k=3 +0.128 [+0.081, +0.176] 1.00  k=5 +0.080 [+0.054, +0.122] 1.00  k=10 +0.056 [+0.032, +0.081] 1.00
+   entropy − random  k=1 +0.183 [+0.136, +0.214] 1.00*  k=3 +0.030 [-0.081, +0.106] 0.75  k=5 +0.027 [-0.023, +0.070] 0.88  k=10 +0.049 [+0.027, +0.081] 1.00
+   mi − facloc       k=1 -0.580 [-0.684, -0.388] 0.00*  k=3 -0.211 [-0.321, -0.036] 0.01  k=5 -0.278 [-0.360, -0.150] 0.00  k=10 -0.070 [-0.085, -0.044] 0.00
+   entropy − facloc  k=1 +0.000 [+0.000, +0.000] 0.00*  k=3 -0.050 [-0.141, +0.025] 0.08  k=5 -0.061 [-0.107, -0.020] 0.00  k=10 +0.000 [-0.027, +0.045] 0.50
+   trace − facloc    k=1 +0.000 [+0.000, +0.000] 0.00*  k=3 +0.048 [+0.006, +0.108] 0.99  k=5 -0.007 [-0.032, +0.034] 0.34  k=10 +0.008 [-0.013, +0.038] 0.77
+   facloc − random   k=1 +0.183 [+0.136, +0.214] 1.00*  k=3 +0.080 [+0.023, +0.126] 1.00  k=5 +0.088 [+0.067, +0.109] 1.00  k=10 +0.048 [+0.031, +0.061] 1.00
+
+== MTEB, snapshot → 2026 — release_date > 2026-03-14: 263 train / 36 test, 56 benchmarks, 56 eligible; R² prospective / random-split control mean (penalty); * = fewer than 10 contributing test models ==
+   new to the leaderboard but not in time: 0 of 36 (release_date <= 2026-03-14 (snapshot commit 2026-03-13))
+   test-cell fill: prospective 0.346, control mean 0.720
+method                  k=1                   k=3                   k=5                   k=10                  k=15                  
+Mutual Info (Alg. 2)    0.004/0.680 (-0.676)* 0.681/0.757 (-0.076)  0.676/0.780 (-0.104)  0.745/0.827 (-0.082)  0.810/0.844 (-0.034)  
+Entropy (Alg. 1)        0.270/0.681 (-0.411)* 0.464/0.706 (-0.243)  0.660/0.763 (-0.103)  0.794/0.828 (-0.034)  0.815/0.860 (-0.044)  
+Greedy trace min.       0.270/0.681 (-0.411)* 0.732/0.759 (-0.027)  0.764/0.798 (-0.034)  0.787/0.844 (-0.057)  0.833/0.869 (-0.036)  
+Hub correlation         0.270/0.691 (-0.421)* 0.268/0.695 (-0.427)* 0.595/0.715 (-0.120)  0.554/0.739 (-0.184)  0.709/0.733 (-0.025)  
+PCA subset (CSSP)       0.270/0.686 (-0.416)* 0.748/0.753 (-0.005)  0.728/0.771 (-0.042)  0.735/0.823 (-0.088)  0.836/0.862 (-0.026)  
+Facility location       0.270/0.691 (-0.421)* 0.529/0.732 (-0.203)  0.731/0.789 (-0.058)  0.769/0.840 (-0.071)  0.814/0.853 (-0.039)  
+Random                  0.334/0.549 (-0.215)  0.579/0.707 (-0.128)  0.661/0.750 (-0.088)  0.742/0.798 (-0.056)  0.770/0.821 (-0.051)  
+   shift-adjusted R² (SS_tot about the test-set means) prospective / control (penalty):
+   mi                   -0.546/0.672 (-1.218) 0.598/0.749 (-0.151)  0.592/0.773 (-0.181)  0.641/0.820 (-0.179)  0.727/0.839 (-0.111)  
+   entropy              0.179/0.672 (-0.494)  0.313/0.697 (-0.383)  0.571/0.755 (-0.184)  0.700/0.822 (-0.122)  0.721/0.855 (-0.134)  
+   trace                0.179/0.672 (-0.494)  0.665/0.751 (-0.085)  0.677/0.791 (-0.114)  0.696/0.838 (-0.143)  0.753/0.864 (-0.111)  
+   hub                  0.179/0.682 (-0.504)  -0.030/0.687 (-0.717) 0.358/0.706 (-0.349)  0.341/0.731 (-0.390)  0.627/0.724 (-0.097)  
+   pca                  0.179/0.678 (-0.499)  0.662/0.745 (-0.083)  0.631/0.763 (-0.132)  0.610/0.816 (-0.206)  0.760/0.858 (-0.098)  
+   facloc               0.179/0.682 (-0.504)  0.394/0.723 (-0.329)  0.617/0.782 (-0.165)  0.666/0.835 (-0.169)  0.730/0.848 (-0.118)  
+   random               0.189/0.535 (-0.346)  0.443/0.697 (-0.254)  0.534/0.741 (-0.207)  0.635/0.791 (-0.156)  0.673/0.815 (-0.142)  
+   RMSE (train-std units) prospective / control mean:
+   mi                   0.631/0.563           0.440/0.496           0.450/0.473           0.400/0.416           0.341/0.394           
+   entropy              0.547/0.559           0.548/0.544           0.444/0.492           0.351/0.415           0.321/0.374           
+   trace                0.547/0.559           0.392/0.493           0.367/0.448           0.352/0.395           0.307/0.361           
+   hub                  0.547/0.547           0.545/0.546           0.405/0.520           0.426/0.509           0.429/0.519           
+   pca                  0.547/0.552           0.382/0.495           0.397/0.479           0.397/0.421           0.319/0.372           
+   facloc               0.547/0.547           0.539/0.516           0.405/0.454           0.369/0.397           0.319/0.380           
+   random               0.550/0.663           0.487/0.539           0.450/0.498           0.395/0.446           0.375/0.419           
+   contributing test models (of 36) prospective / control mean:
+   mi                   1/22.1                23/31.3               23/32.1               33/35.4               34/35.6               
+   entropy              1/22.1                23/29.7               23/30.7               34/33.6               34/33.8               
+   trace                1/22.1                23/30.5               31/34.4               31/34.7               34/35.1               
+   hub                  1/22.1                1/22.3                16/27.4               16/29.5               27/32.1               
+   pca                  1/22.1                31/33.2               31/33.1               31/33.3               34/33.7               
+   facloc               1/22.1                23/30.1               31/34.6               31/34.9               32/35.0               
+   random               12/25.9               25/31.0               30/33.0               33/34.4               34/34.7               
+   paired bootstrap over test models (B = 2000): diff [95% CI] P(diff > 0)
+   mi − random       k=1 -0.330 [-0.390, -0.156] 0.00*  k=3 +0.102 [+0.029, +0.183] 1.00  k=5 +0.014 [-0.063, +0.078] 0.67  k=10 +0.003 [-0.029, +0.034] 0.57
+   mi − entropy      k=1 -0.265 [-0.265, -0.265] 0.00*  k=3 +0.218 [+0.006, +0.492] 0.98  k=5 +0.015 [-0.096, +0.155] 0.58  k=10 -0.049 [-0.088, -0.011] 0.01
+   mi − trace        k=1 -0.265 [-0.265, -0.265] 0.00*  k=3 -0.051 [-0.134, +0.038] 0.13  k=5 -0.088 [-0.179, -0.022] 0.00  k=10 -0.042 [-0.081, -0.010] 0.01
+   trace − random    k=1 -0.064 [-0.125, +0.109] 0.34*  k=3 +0.153 [+0.046, +0.262] 1.00  k=5 +0.102 [+0.051, +0.158] 1.00  k=10 +0.045 [-0.005, +0.094] 0.96
+   entropy − random  k=1 -0.064 [-0.125, +0.109] 0.34*  k=3 -0.115 [-0.387, +0.102] 0.17  k=5 -0.001 [-0.165, +0.115] 0.53  k=10 +0.052 [+0.023, +0.083] 1.00
+   mi − facloc       k=1 -0.265 [-0.265, -0.265] 0.00*  k=3 +0.153 [+0.066, +0.232] 1.00  k=5 -0.055 [-0.160, +0.008] 0.07  k=10 -0.024 [-0.052, +0.010] 0.08
+   entropy − facloc  k=1 +0.000 [+0.000, +0.000] 0.00*  k=3 -0.065 [-0.360, +0.154] 0.31  k=5 -0.070 [-0.227, +0.037] 0.11  k=10 +0.026 [-0.017, +0.074] 0.87
+   trace − facloc    k=1 +0.000 [+0.000, +0.000] 0.00*  k=3 +0.203 [+0.093, +0.308] 1.00  k=5 +0.033 [-0.005, +0.073] 0.96  k=10 +0.018 [-0.029, +0.075] 0.76
+   facloc − random   k=1 -0.064 [-0.125, +0.109] 0.34*  k=3 -0.050 [-0.113, +0.025] 0.09  k=5 +0.069 [+0.027, +0.119] 1.00  k=10 +0.027 [-0.004, +0.056] 0.95
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/prospective_mteb2026.npz and ~/benchselect-runs/canonical-20261020/out/logs/prospective_mteb2026.json (1292 macros, 170 withheld for coverage < 10 test models)
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/prospective_mteb2026.pdf
+
+mteb2026 completed in 73s
+
+All settings completed in 74s
+
+# finished 2026-10-20T02:47:43Z  exit=0  status=ok

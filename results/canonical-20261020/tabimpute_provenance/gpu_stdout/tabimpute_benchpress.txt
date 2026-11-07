@@ -1,0 +1,121 @@
+# job      tabimpute_benchpress
+# command  cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=benchpress ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5
+# started  2026-10-19T18:16:17Z on 4090-1
+
+Loading TabImputeV2...
+Checkpoint ~/hf-benchselect/hub/models--Tabimpute--TabImpute/snapshots/727574989ddebe71860141c9a8b9f6e7958e3cce/tabimputev2.ckpt
+  Tabimpute/TabImpute/tabimputev2.ckpt revision 727574989ddebe71860141c9a8b9f6e7958e3cce, sha256 b48b5bfdaf496bb949b762377518cd4ddeea7629e44f02aebb9a18ca9e711bce
+torch 2.13.0+cu130, tabimpute 0.0.4, deterministic algorithms True, CUBLAS_WORKSPACE_CONFIG=:4096:8
+Model loaded on cuda:0.
+
+
+######################################################################
+# Dataset: BENCHPRESS
+######################################################################
+83 models × 49 tasks, 33.8% observed
+5 × 10-fold CV = 50 matched splits, 10% holdout, selectable: benchmarks with ≥ 3 training models; methods: entropy, mi, random, trace, facloc
+  Rep 0 fold 0: 74 train / 9 test, 46/49 eligible  entropy R²@5=0.139  mi R²@5=0.136  random R²@5=0.164  trace R²@5=0.109  facloc R²@5=0.169  (18.0s)
+  Rep 0 fold 1: 74 train / 9 test, 47/49 eligible  entropy R²@5=0.017  mi R²@5=0.078  random R²@5=0.016  trace R²@5=0.068  facloc R²@5=0.057  (17.7s)
+  Rep 0 fold 2: 74 train / 9 test, 46/49 eligible  entropy R²@5=0.076  mi R²@5=0.104  random R²@5=0.067  trace R²@5=0.128  facloc R²@5=0.105  (12.3s)
+  Rep 0 fold 3: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.069  mi R²@5=0.056  random R²@5=0.186  trace R²@5=0.080  facloc R²@5=0.059  (17.7s)
+  Rep 0 fold 4: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.173  mi R²@5=0.126  random R²@5=0.099  trace R²@5=0.182  facloc R²@5=0.055  (16.6s)
+  Rep 0 fold 5: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.041  mi R²@5=0.024  random R²@5=0.109  trace R²@5=0.065  facloc R²@5=0.165  (14.0s)
+  Rep 0 fold 6: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.107  mi R²@5=0.160  random R²@5=0.153  trace R²@5=0.177  facloc R²@5=0.183  (10.3s)
+  Rep 0 fold 7: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.121  mi R²@5=0.151  random R²@5=0.177  trace R²@5=0.231  facloc R²@5=0.089  (18.0s)
+  Rep 0 fold 8: 75 train / 8 test, 47/49 eligible  entropy R²@5=-0.008  mi R²@5=0.054  random R²@5=0.064  trace R²@5=0.110  facloc R²@5=0.006  (14.3s)
+  Rep 0 fold 9: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.044  mi R²@5=-0.018  random R²@5=0.016  trace R²@5=0.066  facloc R²@5=0.046  (11.6s)
+  Rep 1 fold 0: 74 train / 9 test, 46/49 eligible  entropy R²@5=0.112  mi R²@5=0.133  random R²@5=0.101  trace R²@5=0.126  facloc R²@5=0.164  (17.6s)
+  Rep 1 fold 1: 74 train / 9 test, 47/49 eligible  entropy R²@5=0.035  mi R²@5=0.144  random R²@5=0.131  trace R²@5=0.128  facloc R²@5=0.109  (16.7s)
+  Rep 1 fold 2: 74 train / 9 test, 47/49 eligible  entropy R²@5=0.009  mi R²@5=0.035  random R²@5=0.073  trace R²@5=0.101  facloc R²@5=0.078  (13.7s)
+  Rep 1 fold 3: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.163  mi R²@5=0.179  random R²@5=0.214  trace R²@5=0.198  facloc R²@5=0.199  (15.5s)
+  Rep 1 fold 4: 75 train / 8 test, 47/49 eligible  entropy R²@5=-0.026  mi R²@5=0.047  random R²@5=0.094  trace R²@5=-0.047  facloc R²@5=0.073  (17.8s)
+  Rep 1 fold 5: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.055  mi R²@5=0.048  random R²@5=0.127  trace R²@5=0.078  facloc R²@5=0.058  (14.3s)
+  Rep 1 fold 6: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.062  mi R²@5=0.138  random R²@5=0.138  trace R²@5=0.105  facloc R²@5=0.118  (17.8s)
+  Rep 1 fold 7: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.030  mi R²@5=0.106  random R²@5=0.090  trace R²@5=0.108  facloc R²@5=0.158  (15.2s)
+  Rep 1 fold 8: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.024  mi R²@5=0.038  random R²@5=0.133  trace R²@5=0.111  facloc R²@5=0.149  (11.0s)
+  Rep 1 fold 9: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.025  mi R²@5=0.013  random R²@5=0.061  trace R²@5=0.027  facloc R²@5=0.001  (18.8s)
+  Rep 2 fold 0: 74 train / 9 test, 46/49 eligible  entropy R²@5=0.147  mi R²@5=0.271  random R²@5=0.166  trace R²@5=0.115  facloc R²@5=0.259  (14.5s)
+  Rep 2 fold 1: 74 train / 9 test, 47/49 eligible  entropy R²@5=-0.000  mi R²@5=0.036  random R²@5=0.017  trace R²@5=0.047  facloc R²@5=0.025  (13.6s)
+  Rep 2 fold 2: 74 train / 9 test, 47/49 eligible  entropy R²@5=0.032  mi R²@5=0.140  random R²@5=0.062  trace R²@5=0.057  facloc R²@5=0.051  (14.7s)
+  Rep 2 fold 3: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.156  mi R²@5=0.267  random R²@5=0.175  trace R²@5=0.201  facloc R²@5=0.158  (14.1s)
+  Rep 2 fold 4: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.181  mi R²@5=0.105  random R²@5=0.310  trace R²@5=0.241  facloc R²@5=0.248  (14.7s)
+  Rep 2 fold 5: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.053  mi R²@5=0.052  random R²@5=0.121  trace R²@5=0.042  facloc R²@5=0.051  (14.2s)
+  Rep 2 fold 6: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.074  mi R²@5=0.032  random R²@5=0.049  trace R²@5=0.035  facloc R²@5=0.036  (16.1s)
+  Rep 2 fold 7: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.052  mi R²@5=0.026  random R²@5=0.103  trace R²@5=0.079  facloc R²@5=0.099  (11.2s)
+  Rep 2 fold 8: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.129  mi R²@5=0.129  random R²@5=0.171  trace R²@5=0.178  facloc R²@5=0.149  (18.4s)
+  Rep 2 fold 9: 75 train / 8 test, 47/49 eligible  entropy R²@5=-0.002  mi R²@5=0.032  random R²@5=0.055  trace R²@5=-0.004  facloc R²@5=0.089  (9.0s)
+  Rep 3 fold 0: 74 train / 9 test, 46/49 eligible  entropy R²@5=0.108  mi R²@5=0.213  random R²@5=0.157  trace R²@5=0.184  facloc R²@5=0.085  (15.7s)
+  Rep 3 fold 1: 74 train / 9 test, 47/49 eligible  entropy R²@5=0.025  mi R²@5=0.069  random R²@5=0.209  trace R²@5=0.024  facloc R²@5=0.160  (9.3s)
+  Rep 3 fold 2: 74 train / 9 test, 46/49 eligible  entropy R²@5=0.041  mi R²@5=0.052  random R²@5=0.132  trace R²@5=0.086  facloc R²@5=0.087  (10.8s)
+  Rep 3 fold 3: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.045  mi R²@5=0.152  random R²@5=0.069  trace R²@5=0.096  facloc R²@5=0.167  (18.1s)
+  Rep 3 fold 4: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.145  mi R²@5=0.123  random R²@5=0.088  trace R²@5=0.154  facloc R²@5=0.113  (12.5s)
+  Rep 3 fold 5: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.023  mi R²@5=0.019  random R²@5=0.080  trace R²@5=0.020  facloc R²@5=0.064  (11.5s)
+  Rep 3 fold 6: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.069  mi R²@5=0.095  random R²@5=0.300  trace R²@5=0.079  facloc R²@5=0.214  (15.1s)
+  Rep 3 fold 7: 75 train / 8 test, 47/49 eligible  entropy R²@5=-0.036  mi R²@5=nan  random R²@5=0.099  trace R²@5=0.071  facloc R²@5=0.122  (18.4s)
+  Rep 3 fold 8: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.037  mi R²@5=0.039  random R²@5=0.084  trace R²@5=0.057  facloc R²@5=0.051  (12.9s)
+  Rep 3 fold 9: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.026  mi R²@5=0.048  random R²@5=0.113  trace R²@5=-0.003  facloc R²@5=0.061  (13.3s)
+  Rep 4 fold 0: 74 train / 9 test, 47/49 eligible  entropy R²@5=0.029  mi R²@5=0.039  random R²@5=0.159  trace R²@5=0.047  facloc R²@5=0.160  (18.4s)
+  Rep 4 fold 1: 74 train / 9 test, 46/49 eligible  entropy R²@5=0.031  mi R²@5=0.114  random R²@5=0.119  trace R²@5=0.079  facloc R²@5=0.107  (13.0s)
+  Rep 4 fold 2: 74 train / 9 test, 47/49 eligible  entropy R²@5=0.006  mi R²@5=0.018  random R²@5=0.098  trace R²@5=0.030  facloc R²@5=0.082  (7.2s)
+  Rep 4 fold 3: 75 train / 8 test, 47/49 eligible  entropy R²@5=-0.140  mi R²@5=0.052  random R²@5=0.039  trace R²@5=0.037  facloc R²@5=0.034  (12.5s)
+  Rep 4 fold 4: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.025  mi R²@5=0.082  random R²@5=0.156  trace R²@5=0.102  facloc R²@5=0.086  (12.6s)
+  Rep 4 fold 5: 75 train / 8 test, 47/49 eligible  entropy R²@5=-0.020  mi R²@5=0.045  random R²@5=0.140  trace R²@5=-0.020  facloc R²@5=0.024  (13.8s)
+  Rep 4 fold 6: 75 train / 8 test, 46/49 eligible  entropy R²@5=0.106  mi R²@5=0.140  random R²@5=0.151  trace R²@5=0.135  facloc R²@5=0.169  (12.2s)
+  Rep 4 fold 7: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.118  mi R²@5=0.242  random R²@5=0.148  trace R²@5=0.129  facloc R²@5=0.106  (17.5s)
+  Rep 4 fold 8: 75 train / 8 test, 47/49 eligible  entropy R²@5=-0.047  mi R²@5=0.093  random R²@5=0.087  trace R²@5=0.109  facloc R²@5=0.174  (18.3s)
+  Rep 4 fold 9: 75 train / 8 test, 47/49 eligible  entropy R²@5=0.018  mi R²@5=0.078  random R²@5=0.050  trace R²@5=0.060  facloc R²@5=0.080  (18.4s)
+TabImpute: 3635 imputations, 115 reused (same selected set within a split)
+
+BenchPress: eligible benchmarks per split 46–47 of 49 (50/50 splits restricted)
+index ties (entropy, k ≤ 15): 0 picks in 0/50 splits
+index ties (mi, k ≤ 15): 0 picks in 0/50 splits
+index ties (random, k ≤ 15): 0 picks in 0/50 splits
+index ties (trace, k ≤ 15): 0 picks in 0/50 splits
+index ties (facloc, k ≤ 15): 0 picks in 0/50 splits
+context: 74–75 training rows (0/50 splits subsampled, Split.seed(SEED + 20))
+valid-range prediction clip (entropy): 0 of 70533 scored predictions, in 0/50 splits
+valid-range prediction clip (mi): 0 of 67639 scored predictions, in 0/50 splits
+valid-range prediction clip (random): 0 of 72748 scored predictions, in 0/50 splits
+valid-range prediction clip (trace): 0 of 71624 scored predictions, in 0/50 splits
+valid-range prediction clip (facloc): 2 of 75111 scored predictions, in 1/50 splits
+Paired R² differences a − b over 50 splits (Nadeau–Bengio 95% CI, win rate):
+  k=5        mi − entropy    +0.037  [-0.004, +0.078]  win 0.71  (n=49)
+  k=5        mi − trace      +0.000  [-0.039, +0.039]  win 0.45  (n=49)
+  k=5        mi − facloc     -0.014  [-0.059, +0.032]  win 0.37  (n=49)
+  k=5        mi − random     -0.026  [-0.077, +0.026]  win 0.37  (n=49)
+  k=5   entropy − trace      -0.038  [-0.072, -0.005]  win 0.18  (n=50)
+  k=5   entropy − facloc     -0.053  [-0.099, -0.007]  win 0.18  (n=50)
+  k=5   entropy − random     -0.064  [-0.109, -0.020]  win 0.14  (n=50)
+  k=5     trace − facloc     -0.015  [-0.060, +0.031]  win 0.42  (n=50)
+  k=5    facloc − random     -0.011  [-0.049, +0.026]  win 0.40  (n=50)
+  k=10       mi − entropy    +0.014  [-0.035, +0.062]  win 0.62  (n=50)
+  k=10       mi − trace      -0.015  [-0.065, +0.034]  win 0.38  (n=50)
+  k=10       mi − facloc     -0.018  [-0.075, +0.038]  win 0.34  (n=50)
+  k=10       mi − random     -0.054  [-0.115, +0.007]  win 0.28  (n=50)
+  k=10  entropy − trace      -0.029  [-0.087, +0.030]  win 0.24  (n=50)
+  k=10  entropy − facloc     -0.032  [-0.096, +0.032]  win 0.30  (n=50)
+  k=10  entropy − random     -0.068  [-0.133, -0.003]  win 0.18  (n=50)
+  k=10    trace − facloc     -0.003  [-0.060, +0.053]  win 0.50  (n=50)
+  k=10   facloc − random     -0.036  [-0.095, +0.024]  win 0.34  (n=50)
+
+Plot saved to ~/benchselect-runs/tabimpute-full/B_out/figures/tabimpute_r2_benchpress.pdf
+Results saved to ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_benchpress.npz
+Paired statistics saved to ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_benchpress_paired.csv
+
+BENCHPRESS completed in 732s
+
+======================================================================
+SUMMARY: Mean R² at k = 5, 10, 15 (TabImpute V2 imputation)
+======================================================================
+Dataset      Method         R²@5    R²@10    R²@15
+---------------------------------------------------
+BenchPress   entropy      0.0541   0.1184   0.2241
+BenchPress   mi           0.0929   0.1319   0.2140
+BenchPress   random       0.1184   0.1860   0.2288
+BenchPress   trace        0.0923   0.1471   0.2054
+BenchPress   facloc       0.1071   0.1503   0.1918
+---------------------------------------------------
+
+All datasets completed in 737s
+
+# finished 2026-10-19T18:28:35Z  exit=0  status=ok

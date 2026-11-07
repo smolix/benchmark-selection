@@ -1,82 +1,64 @@
-# `code/` — modules and experiment scripts
+# code/
 
-All scripts resolve their paths through `path_config.py`, so they can be
-invoked from any working directory:
+Everything here is driven by two entry points; run them from any directory (paths resolve relative to the
+scripts, `path_config.py`):
 
-```bash
-python /path/to/release/code/eval_greedy_all.py
-```
+- `run_all.sh`: all CPU experiments (138 jobs), the figures and the paper numbers. Its header documents every
+  option, the job graph, the outputs and the manifest. `--list` shows the jobs, `--dry-run` the commands.
+- `run_tabimpute.sh`: the GPU experiment (TabImpute, appendix note only); sources `run_all.sh` for its helpers.
 
-Outputs are written to `release/figures/` (and `release/figures_logit/` for
-the logit-space variants); intermediate JSON/NPZ logs go to `release/logs/`.
-Use `BENCHSELECT_DATA_DIR`, `BENCHSELECT_EXPERIMENT_ROOT`, or the more specific
-`BENCHSELECT_*_DIR` variables in `path_config.py` to redirect a run.
+Outputs go to `$BENCHSELECT_EXPERIMENT_ROOT/{logs,logs_logit,figures,figures_logit,cov,numbers,stdout}` and
+`manifest.json`. Inputs are read from `../data` (override with `BENCHSELECT_DATA_DIR`).
 
-## Core modules
+## Modules
 
-| File | Description |
-|------|-------------|
-| `greedy_select.py` | Algorithms 1 (`greedy_entropy`) and 2 (`greedy_mi`) plus a `random_select` baseline. Pivoted-Cholesky entropy in `O(k²N)`; numerically stable MI via fresh complement Cholesky each step. |
-| `em_cov.py`        | EM for Gaussian covariance under MAR missingness (Section 4.3 / Appendix G). Supports Ledoit–Wolf shrinkage, PSD projection, and rank-deficient initialization for `M < N`. |
-| `cv_split.py`      | Balanced k-fold splits with optional training-set subsampling — used to vary the holdout fraction in the CV protocol. |
-| `normality.py`     | Mardia's multivariate skewness/kurtosis test, per-column Shapiro–Wilk with Bonferroni / Benjamini–Hochberg correction (Appendix H). |
-| `path_config.py`   | Central path configuration for data, figures, covariance caches, and logs. |
+| File | Role |
+|---|---|
+| `greedy_select.py` | entropy and MI greedy selection, random selection, near-tie rule (`TIE_RTOL`) |
+| `baseline_select.py` | facility location (`facility_location_select`), explained variance (`greedy_trace_select`), hub, PCA |
+| `cv_split.py` | the matched 5 x 10 CV splits, eligibility (>= 3 training observations) and target rule (>= 2) |
+| `em_cov.py`, `estimate_covariance.py` | EM correlation estimate for incomplete matrices; the cov files of Figure 1 |
+| `score_bounds.py` | valid score range per benchmark; predictions are clipped to it (rule D2) |
+| `paired_stats.py` | paired differences with Nadeau-Bengio-corrected intervals, win counts |
+| `model_families.py` | model families for the family holdout |
+| `make_numbers.py` | every paper number from the logs: `numbers.csv`, `numbers*.tex`, `paired_<ds>.csv` |
+| `compare_runs.py` | diff the numbers of two experiment roots |
+| `plot_paper.py` | the five main-text figures (`fig0`-`fig4`, paper Figures 1-5) from a root's logs |
+| `path_config.py` | data/log/figure directories from environment variables |
 
-## Experiment drivers
+## Experiments (job names of `run_all.sh --list`)
 
-| Script | Paper output | Notes |
-|--------|--------------|-------|
-| `estimate_covariance.py`  | caches `data/{name}.cov.npz` | Standardize columns, run EM, save (`mu`, `Sigma`, `B_imp`). Recommended one-time precomputation; downstream scripts auto-cache as needed. |
-| `eval_greedy_all.py`      | Figures 2–4, `logs/greedy_cv_*.npz`, `logs/greedy_cv_selections.json` | 10-fold CV across all four holdout fractions on MMLU/MTEB/Merged. Pairwise covariance for fully observed (MMLU); EM for the rest. Dominant runtime on Merged. |
-| `eval_entropy_vs_mi.py`   | Figures 5–7 | Same protocol at 10% holdout, compares `greedy_entropy` vs `greedy_mi` vs random. |
-| `eval_benchpress.py`      | Figures 13–14 (Appendix I) | Greedy CV + entropy-vs-MI on the BenchPress 83 × 49 matrix. |
-| `eval_tabimpute.py`       | Figure 15, Table 4 (Appendix J) | Same selection protocol, swaps Gaussian conditional mean for TabImpute V2 imputation. Requires the `tabimpute` package and a GPU. |
-| `eval_logit.py`           | Figures 16–18, Table 5 (Appendix K) | Repeats greedy CV and entropy-vs-MI in logit-transformed score space. Outputs to `figures_logit/` and `logs_logit/`. |
-| `run_normality.py`        | Figure 12, `logs/normality_summary.json` (Appendix H) | Per-column Shapiro–Wilk plus Mardia's test on fully-observed sub-blocks. |
-
-## Plotting helpers
-
-| Script | Paper output | Inputs |
-|--------|--------------|--------|
-| `plot_eigenspectrum.py`     | Figure 1 | Matrices in `data/`; auto-runs EM if `*.cov.npz` is missing and caches the result. |
-| `plot_selection_order.py`   | Figures 9a, 10a, 11a (entropy selection order) | Reads `logs/greedy_cv_selections.json` produced by `eval_greedy_all.py`. |
-| `plot_mi_selection_all.py`  | Figures 9b, 10b, 11b (MI selection order on MMLU/MTEB/Merged) | Runs MI selection itself; writes selection logs to `logs/`. |
+| Script | Jobs | Paper |
+|---|---|---|
+| `eval_baselines.py` | `baselines_<ds>`, `baselines_merged_v1` | Figure 2, Tables 2 and 4 |
+| `eval_greedy_all.py`, `eval_entropy_vs_mi.py`, `plot_mi_selection_all.py`, `plot_selection_order.py` | `greedy_cv_*`, `entropy_vs_mi_*`, `mi_selection_*`, `selection_order*` | standard battery, selection orders |
+| `eval_benchpress.py` | `benchpress` | BenchPress battery |
+| `analyze_objectives.py` | `analyze_objectives[_fulloracle]` | Figure 3, Table 12 |
+| `eval_prospective.py` | `prospective_*` | Figure 4, Table 5 |
+| `eval_family_holdout.py` | `family_<ds>` | Table 6 |
+| `eval_cost_budget.py` | `cost_<ds>`, `cost_fixed_<ds>` | Figure 5, Table 7 |
+| `eval_item_budget.py` | `item_budget`, `item_fixed` | Figure 5(c) |
+| `eval_token_costs.py` | `token_costs*`, `token_fixed` | Table 8 |
+| `eval_estimator_ablation.py` | `estimator_<ds>` | Table 9 |
+| `eval_benchfamily_holdout.py` | `benchfam_*` | Table 10 |
+| `eval_imputers.py` | `imputers_<ds>_rep<r>`, `imputers_<ds>`, `imputers_all` | Table 11 |
+| `eval_tabimpute.py` | `run_tabimpute.sh` | App. G (TabImpute note) |
+| `eval_reviewer_checks.py`, `eval_selection_stability.py`, `eval_logit.py`, `run_normality.py` (`normality.py`) | `reviewer_checks`, `stability_*`, `logit*`, `normality` | App. G checks |
+| `plot_eigenspectrum.py`, `plot_benchmark_overlap.py` | `eigenspectrum*`, `benchmark_overlap` | Figure 1 (run figure), App. C |
 
 ## Tests
 
-| File | Coverage |
-|------|----------|
-| `test_em_cov.py`     | E-step / M-step identities, PSD projection, pairwise-complete covariance, observed log-likelihood. |
-| `test_normality.py`  | Mardia and Shapiro–Wilk consistency on synthetic Gaussian / non-Gaussian samples; multiple-testing correction. |
-| `test_tabimpute_sanity.py` | Basic TabImpute integration check when the optional package is installed. |
+`test_*.py` are pytest modules (`test_tabimpute_sanity.py` is a GPU script, not a test module):
 
-Run with `pytest code/` from the release root.
-
-## Selection-algorithm interface
-
-```python
-from greedy_select import greedy_entropy, greedy_mi, random_select
-
-# All three return the indices of the selected benchmarks (length k).
-S = greedy_entropy(Sigma, k)             # Algorithm 1
-S = greedy_mi(Sigma, k)                  # Algorithm 2
-S = random_select(Sigma, k, seed=0)      # baseline
+```
+cd code && OMP_NUM_THREADS=1 MPLBACKEND=Agg python -m pytest -n auto -q --ignore=test_tabimpute_sanity.py
 ```
 
-`Sigma` is the `N × N` correlation (or covariance) matrix of benchmark scores;
-no other state is required.
+(`pytest-xdist` from `../requirements-test.txt`; `RUN_ONLY=tests bash run_all.sh` runs them serially.)
+Tests that need a matrix that is not shipped (BenchPress, full Epoch) skip.
 
-## EM-covariance interface
+## Not in the release
 
-```python
-from em_cov import em_cov
-
-result = em_cov(B_std, O,                 # standardized scores, observation mask
-                max_iter=500, tol=1e-6,
-                shrinkage="auto",          # "auto" applies Ledoit-Wolf when M < N
-                eps_psd=1e-6, verbose=True)
-result["mu"]        # (N,)  estimated mean
-result["Sigma"]     # (N,N) estimated covariance
-result["B_imp"]     # (M,N) imputed standardized matrix
-result["loglik"]    # convergence trace
-```
+The single-dataset predecessors `eval_greedy_mmlu.py`, `eval_greedy_merged.py`, `plot_mi_selection_mmlu.py` and
+`run_greedy_mmlu.py` of the submission are not shipped; `run_all.sh` mentions them only in a comment and never runs
+them. The two tests that inspect them skip when they are absent.

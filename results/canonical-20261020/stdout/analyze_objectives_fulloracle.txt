@@ -1,0 +1,150 @@
+# job      analyze_objectives_fulloracle
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python analyze_objectives.py --datasets merged --repeats 5 --oracle full
+# started  2026-10-20T01:44:59Z on 4090-1
+
+
+######################################################################
+# Dataset: MERGED
+######################################################################
+input merged.matrix.npz sha256 43216e82174b0902… (SHA256SUMS: match)
+118 models × 114 tasks, 31.2% observed
+oracle correlation (all 118 models, estimator of M): 21.1s, lambda_min 1.36e-04
+  Split 0 (rep 0, fold 0): 106 train / 12 test, 114/114 eligible  trace 0.769 mi 0.619 facloc 0.731 @5, oracle-sel trace 0.814 mi 0.719  (18.0s)
+  Split 1 (rep 0, fold 1): 106 train / 12 test, 106/114 eligible  trace 0.554 mi 0.608 facloc 0.433 @5, oracle-sel trace 0.422 mi 0.356  (18.0s)
+  Split 2 (rep 0, fold 2): 106 train / 12 test, 114/114 eligible  trace 0.554 mi 0.591 facloc 0.674 @5, oracle-sel trace 0.643 mi 0.538  (34.9s)
+  Split 3 (rep 0, fold 3): 106 train / 12 test, 106/114 eligible  trace 0.551 mi 0.217 facloc 0.612 @5, oracle-sel trace 0.586 mi 0.340  (50.0s)
+  Split 4 (rep 0, fold 4): 106 train / 12 test, 114/114 eligible  trace 0.816 mi 0.783 facloc 0.763 @5, oracle-sel trace 0.770 mi 0.569  (23.2s)
+  Split 5 (rep 0, fold 5): 106 train / 12 test, 114/114 eligible  trace 0.564 mi 0.449 facloc 0.545 @5, oracle-sel trace 0.555 mi 0.391  (21.1s)
+  Split 6 (rep 0, fold 6): 106 train / 12 test, 114/114 eligible  trace 0.451 mi 0.204 facloc 0.600 @5, oracle-sel trace 0.557 mi 0.249  (23.2s)
+  Split 7 (rep 0, fold 7): 106 train / 12 test, 114/114 eligible  trace 0.606 mi 0.429 facloc 0.665 @5, oracle-sel trace 0.575 mi 0.384  (21.3s)
+  Split 8 (rep 0, fold 8): 106 train / 11 test, 106/114 eligible  trace 0.592 mi 0.547 facloc 0.484 @5, oracle-sel trace 0.475 mi 0.451  (14.1s)
+  Split 9 (rep 0, fold 9): 106 train / 11 test, 114/114 eligible  trace 0.391 mi 0.253 facloc 0.410 @5, oracle-sel trace 0.405 mi 0.479  (38.8s)
+  Split 10 (rep 1, fold 0): 106 train / 12 test, 106/114 eligible  trace 0.420 mi 0.534 facloc 0.699 @5, oracle-sel trace 0.474 mi 0.331  (26.6s)
+  Split 11 (rep 1, fold 1): 106 train / 12 test, 114/114 eligible  trace 0.617 mi 0.330 facloc 0.605 @5, oracle-sel trace 0.573 mi 0.608  (25.2s)
+  Split 12 (rep 1, fold 2): 106 train / 12 test, 106/114 eligible  trace 0.790 mi 0.765 facloc 0.661 @5, oracle-sel trace 0.677 mi 0.618  (14.6s)
+  Split 13 (rep 1, fold 3): 106 train / 12 test, 114/114 eligible  trace 0.322 mi 0.268 facloc 0.472 @5, oracle-sel trace 0.498 mi 0.291  (22.7s)
+  Split 14 (rep 1, fold 4): 106 train / 12 test, 114/114 eligible  trace 0.788 mi 0.565 facloc 0.807 @5, oracle-sel trace 0.714 mi 0.400  (35.0s)
+  Split 15 (rep 1, fold 5): 106 train / 12 test, 114/114 eligible  trace 0.604 mi 0.284 facloc 0.574 @5, oracle-sel trace 0.570 mi 0.295  (26.9s)
+  Split 16 (rep 1, fold 6): 106 train / 12 test, 114/114 eligible  trace 0.859 mi 0.811 facloc 0.829 @5, oracle-sel trace 0.785 mi 0.648  (26.2s)
+  Split 17 (rep 1, fold 7): 106 train / 12 test, 106/114 eligible  trace 0.621 mi 0.556 facloc 0.642 @5, oracle-sel trace 0.626 mi 0.306  (56.3s)
+  Split 18 (rep 1, fold 8): 106 train / 11 test, 114/114 eligible  trace 0.558 mi 0.376 facloc 0.487 @5, oracle-sel trace 0.521 mi 0.495  (31.2s)
+  Split 19 (rep 1, fold 9): 106 train / 11 test, 114/114 eligible  trace 0.287 mi 0.194 facloc 0.450 @5, oracle-sel trace 0.475 mi -0.084  (31.1s)
+  Split 20 (rep 2, fold 0): 106 train / 12 test, 114/114 eligible  trace 0.722 mi 0.585 facloc 0.788 @5, oracle-sel trace 0.816 mi 0.554  (22.6s)
+  Split 21 (rep 2, fold 1): 106 train / 12 test, 106/114 eligible  trace 0.549 mi 0.596 facloc 0.775 @5, oracle-sel trace 0.557 mi 0.413  (20.7s)
+  Split 22 (rep 2, fold 2): 106 train / 12 test, 114/114 eligible  trace 0.556 mi 0.208 facloc 0.447 @5, oracle-sel trace 0.532 mi 0.273  (38.2s)
+  Split 23 (rep 2, fold 3): 106 train / 12 test, 114/114 eligible  trace 0.664 mi 0.435 facloc 0.650 @5, oracle-sel trace 0.553 mi 0.429  (16.6s)
+  Split 24 (rep 2, fold 4): 106 train / 12 test, 114/114 eligible  trace 0.436 mi 0.336 facloc 0.455 @5, oracle-sel trace 0.498 mi 0.335  (27.0s)
+  Split 25 (rep 2, fold 5): 106 train / 12 test, 114/114 eligible  trace 0.495 mi 0.567 facloc 0.493 @5, oracle-sel trace 0.475 mi 0.555  (22.1s)
+  Split 26 (rep 2, fold 6): 106 train / 12 test, 106/114 eligible  trace 0.384 mi 0.234 facloc 0.499 @5, oracle-sel trace 0.543 mi -0.056  (67.5s)
+  Split 27 (rep 2, fold 7): 106 train / 12 test, 106/114 eligible  trace 0.654 mi 0.631 facloc 0.672 @5, oracle-sel trace 0.629 mi 0.358  (14.7s)
+  Split 28 (rep 2, fold 8): 106 train / 11 test, 114/114 eligible  trace 0.708 mi 0.558 facloc 0.746 @5, oracle-sel trace 0.747 mi 0.751  (23.2s)
+  Split 29 (rep 2, fold 9): 106 train / 11 test, 114/114 eligible  trace 0.769 mi 0.497 facloc 0.730 @5, oracle-sel trace 0.793 mi 0.667  (30.1s)
+  Split 30 (rep 3, fold 0): 106 train / 12 test, 114/114 eligible  trace 0.826 mi 0.846 facloc 0.824 @5, oracle-sel trace 0.788 mi 0.610  (27.8s)
+  Split 31 (rep 3, fold 1): 106 train / 12 test, 114/114 eligible  trace 0.291 mi -0.224 facloc 0.390 @5, oracle-sel trace 0.415 mi 0.134  (51.1s)
+  Split 32 (rep 3, fold 2): 106 train / 12 test, 106/114 eligible  trace 0.582 mi 0.179 facloc 0.595 @5, oracle-sel trace 0.667 mi 0.229  (16.5s)
+  Split 33 (rep 3, fold 3): 106 train / 12 test, 114/114 eligible  trace 0.615 mi 0.553 facloc 0.642 @5, oracle-sel trace 0.625 mi 0.436  (29.0s)
+  Split 34 (rep 3, fold 4): 106 train / 12 test, 114/114 eligible  trace 0.498 mi 0.527 facloc 0.691 @5, oracle-sel trace 0.635 mi -0.002  (25.9s)
+  Split 35 (rep 3, fold 5): 106 train / 12 test, 106/114 eligible  trace 0.744 mi 0.431 facloc 0.714 @5, oracle-sel trace 0.723 mi 0.542  (58.3s)
+  Split 36 (rep 3, fold 6): 106 train / 12 test, 114/114 eligible  trace 0.796 mi 0.735 facloc 0.733 @5, oracle-sel trace 0.748 mi 0.757  (21.0s)
+  Split 37 (rep 3, fold 7): 106 train / 12 test, 114/114 eligible  trace 0.592 mi 0.152 facloc 0.591 @5, oracle-sel trace 0.575 mi 0.394  (27.5s)
+  Split 38 (rep 3, fold 8): 106 train / 11 test, 114/114 eligible  trace 0.617 mi 0.427 facloc 0.524 @5, oracle-sel trace 0.556 mi 0.466  (23.3s)
+  Split 39 (rep 3, fold 9): 106 train / 11 test, 114/114 eligible  trace 0.410 mi 0.411 facloc 0.410 @5, oracle-sel trace 0.542 mi 0.318  (21.1s)
+  Split 40 (rep 4, fold 0): 106 train / 12 test, 114/114 eligible  trace 0.555 mi 0.452 facloc 0.435 @5, oracle-sel trace 0.518 mi 0.244  (41.1s)
+  Split 41 (rep 4, fold 1): 106 train / 12 test, 106/114 eligible  trace 0.527 mi 0.526 facloc 0.342 @5, oracle-sel trace 0.366 mi 0.214  (15.1s)
+  Split 42 (rep 4, fold 2): 106 train / 12 test, 114/114 eligible  trace 0.845 mi 0.840 facloc 0.817 @5, oracle-sel trace 0.836 mi 0.665  (29.6s)
+  Split 43 (rep 4, fold 3): 106 train / 12 test, 106/114 eligible  trace 0.640 mi 0.570 facloc 0.643 @5, oracle-sel trace 0.671 mi 0.446  (61.0s)
+  Split 44 (rep 4, fold 4): 106 train / 12 test, 114/114 eligible  trace 0.493 mi 0.346 facloc 0.491 @5, oracle-sel trace 0.476 mi 0.461  (24.7s)
+  Split 45 (rep 4, fold 5): 106 train / 12 test, 114/114 eligible  trace 0.463 mi 0.314 facloc 0.590 @5, oracle-sel trace 0.566 mi 0.384  (34.3s)
+  Split 46 (rep 4, fold 6): 106 train / 12 test, 114/114 eligible  trace 0.666 mi 0.491 facloc 0.751 @5, oracle-sel trace 0.731 mi 0.292  (26.3s)
+  Split 47 (rep 4, fold 7): 106 train / 12 test, 114/114 eligible  trace 0.592 mi 0.360 facloc 0.743 @5, oracle-sel trace 0.658 mi 0.471  (24.4s)
+  Split 48 (rep 4, fold 8): 106 train / 11 test, 114/114 eligible  trace 0.702 mi 0.617 facloc 0.690 @5, oracle-sel trace 0.650 mi 0.536  (22.9s)
+  Split 49 (rep 4, fold 9): 106 train / 11 test, 106/114 eligible  trace 0.525 mi 0.666 facloc 0.701 @5, oracle-sel trace 0.582 mi 0.558  (23.0s)
+
+== Merged: mechanism summary ==
+k = 1: method   R²     popR²tr popR²or expR²or  |r|in  effrk  cover  k_eff  oracle-sel  gain [95% CI]
+  mi           0.084  0.292  0.231  0.263    n/a  1.000  0.486   1.00     0.201    0.063 [-0.555,  0.681]
+  entropy      0.490  0.425  0.460  0.568    n/a  1.000  0.545   1.00     0.526    0.036 [-0.083,  0.154]
+  trace        0.490  0.425  0.460  0.568    n/a  1.000  0.545   1.00     0.526    0.036 [-0.083,  0.154]
+  pca          0.489  0.424  0.456  0.561    n/a  1.000  0.543   1.00     0.526    0.037 [-0.083,  0.156]
+  hub          0.320  0.415  0.415  0.499    n/a  1.000  0.486   1.00     0.526    0.206 [-0.037,  0.449]
+  random       0.260  0.282  0.300  0.385    n/a  1.000  0.490   1.00     0.260    0.000 [ 0.000,  0.000]
+  facloc       0.317  0.415  0.416  0.501    n/a  1.000  0.512   1.00     0.526    0.209 [-0.033,  0.451]
+  trace has the largest in-sample R²_pop in 1.0 of splits, the largest realized R² in 0.6 (of mi, entropy, trace, pca, hub, random)
+  with facloc: trace largest R²_pop / realized R² in 1.0 / 0.6, facloc in 0.34 / 0.3333333333333333 of splits
+k = 5: method   R²     popR²tr popR²or expR²or  |r|in  effrk  cover  k_eff  oracle-sel  gain [95% CI]
+  mi           0.465  0.683  0.713  0.517  0.276  0.702  0.854   1.87     0.416   -0.049 [-0.178,  0.080]
+  entropy      0.503  0.656  0.717  0.546  0.275  0.704  0.935   2.06     0.459   -0.044 [-0.134,  0.047]
+  trace        0.593  0.709  0.766  0.640  0.369  0.572  0.907   1.88     0.604    0.011 [-0.048,  0.070]
+  pca          0.483  0.674  0.725  0.534  0.258  0.739  0.945   1.81     0.461   -0.022 [-0.117,  0.073]
+  hub          0.481  0.542  0.632  0.587  0.835  0.264  0.699   3.44     0.555    0.073 [-0.166,  0.312]
+  random       0.563  0.616  0.692  0.587  0.496  0.467  0.870   2.30     0.563    0.000 [ 0.000,  0.000]
+  facloc       0.614  0.694  0.773  0.654  0.430  0.514  0.949   1.77     0.625    0.011 [-0.046,  0.068]
+  trace has the largest in-sample R²_pop in 0.94 of splits, the largest realized R² in 0.34 (of mi, entropy, trace, pca, hub, random)
+  with facloc: trace largest R²_pop / realized R² in 0.9 / 0.26, facloc in 0.04 / 0.32 of splits
+k = 10: method   R²     popR²tr popR²or expR²or  |r|in  effrk  cover  k_eff  oracle-sel  gain [95% CI]
+  mi           0.528  0.779  0.847  0.616  0.320  0.444  0.972   3.25     0.490   -0.038 [-0.142,  0.066]
+  entropy      0.549  0.750  0.825  0.618  0.303  0.469  0.963   4.31     0.501   -0.048 [-0.113,  0.018]
+  trace        0.626  0.786  0.867  0.692  0.387  0.360  0.983   3.20     0.648    0.023 [-0.038,  0.084]
+  pca          0.539  0.757  0.833  0.601  0.294  0.489  0.983   3.82     0.519   -0.019 [-0.104,  0.065]
+  hub          0.537  0.617  0.751  0.616  0.803  0.145  0.767   5.70     0.543    0.006 [-0.176,  0.187]
+  random       0.604  0.727  0.827  0.655  0.496  0.273  0.954   3.58     0.604    0.000 [ 0.000,  0.000]
+  facloc       0.661  0.766  0.868  0.720  0.467  0.288  0.991   3.12     0.658   -0.003 [-0.034,  0.029]
+  trace has the largest in-sample R²_pop in 0.78 of splits, the largest realized R² in 0.46 (of mi, entropy, trace, pca, hub, random)
+  with facloc: trace largest R²_pop / realized R² in 0.78 / 0.24, facloc in 0.0 / 0.44 of splits
+k = 1 picks (modal pick, splits; R²_j|rest; MI score; R²_pop; realized R²; models covered):
+  mi         arena_hard/score                     48  0.950  1.50  0.292  0.084  0.42  P_jj low-10% share 0.976
+  entropy    mmlu/astronomy                       28  0.914  1.23  0.425  0.490  0.26  P_jj low-10% share 0.042
+  trace      mmlu/astronomy                       28  0.914  1.23  0.425  0.490  0.26  P_jj low-10% share 0.042
+  pca        mmlu/astronomy                       24  0.913  1.23  0.424  0.489  0.27  P_jj low-10% share 0.043
+  hub        wildbench/Reasoning                  17  0.927  1.31  0.415  0.320  0.31  P_jj low-10% share 0.314
+  random     mmlu/international_law                3  0.909  1.21  0.282  0.260  0.32  P_jj low-10% share 0.133
+  facloc     wildbench/Reasoning                  20  0.927  1.32  0.415  0.317  0.33  P_jj low-10% share 0.331
+  all eligible singletons: R²_j|rest min 0.78588, median of split minima 0.81896, median 0.9071; P_jj low-10% share median 0.015
+Within-split Spearman with realized R² (mean over splits):
+  k = 1: trace +0.35, mi -0.03, hub +0.28, exp_train +0.35, exp_oracle +0.47, pop_oracle +0.47, facloc +0.28
+  k = 5: trace +0.29, entropy -0.09, mi -0.00, hub +0.12, exp_train +0.52, exp_oracle +0.59, pop_oracle +0.33, facloc +0.31, mean_abs_r_or +0.04, eff_rank_or -0.08, cov_cells -0.02, k_eff +0.13
+  k = 10: trace +0.20, entropy -0.09, mi +0.04, hub +0.02, exp_train +0.59, exp_oracle +0.67, pop_oracle +0.21, facloc +0.31, mean_abs_r_or -0.06, eff_rank_or +0.05, cov_cells +0.14, k_eff +0.18
+  exact optimum k = 1: trace same 1.00 gap 0 R² opt 0.490 / greedy 0.490 ratio mean 1.0000 min 1.0000, entropy same n/a gap n/a R² opt n/a / greedy n/a, mi same 1.00 gap 0 R² opt 0.084 / greedy 0.084 ratio mean 1.0000 min 1.0000, facloc same 1.00 gap 0 R² opt 0.317 / greedy 0.317 ratio mean 1.0000 min 1.0000
+  exact optimum k = 2: trace same 0.10 gap 0.945 R² opt 0.548 / greedy 0.558 ratio mean 0.9854 min 0.9304, entropy same 0.00 gap 0.00566 R² opt 0.450 / greedy 0.487, mi same 0.94 gap 0.000925 R² opt 0.278 / greedy 0.195 ratio mean 0.9997 min 0.9876, facloc same 0.02 gap 1.84 R² opt 0.551 / greedy 0.560 ratio mean 0.9772 min 0.9326
+  exact optimum k = 3: trace same 0.00 gap 1.45 R² opt 0.562 / greedy 0.567 ratio mean 0.9797 min 0.9455, entropy same 0.00 gap 0.0681 R² opt 0.442 / greedy 0.496, mi same 0.82 gap 0.00657 R² opt 0.390 / greedy 0.331 ratio mean 0.9983 min 0.9758, facloc same 0.06 gap 1.01 R² opt 0.586 / greedy 0.595 ratio mean 0.9883 min 0.9610
+  theory: trace gains increasing along its path in 0.131 of (step, candidate) pairs (max step-to-step ratio 1.18, max ratio to the first gain 1.16); submodularity ratio gamma median 0.760 [min 0.679], bound 1-e^-gamma median 0.533 vs spectral 1-e^-lam_min 0.0425, sparse-eigenvalue bound <= 0.069
+  theory: MI's own negative gains per split 0.00; but some eligible candidate has a negative gain in 0.00 of splits (path min 0.061, share of negative candidate gains 0.000, pairs min 0.196); Krause epsilon >= 0.000 (median; max 0.000), k·eps / MI(greedy) at k = 5: median 0.00
+  theory: entropy steps with sigma² < 1/(2πe) per split 0.00; λ_min(R_tr) median 4.34e-02, oracle 1.36e-04
+  gap r2 - R²_pop = mask + rest, per truth (train | oracle): total, mask, mask share
+    k = 1: mi -0.208 +0.040 -0.19 | -0.148 +0.032 -0.22; trace +0.065 +0.093 1.42 | +0.030 +0.107 3.58; random -0.043 +0.068 -1.60 | -0.062 +0.063 -1.02
+    k = 5: mi -0.218 -0.155 0.71 | -0.248 -0.196 0.79; trace -0.116 -0.103 0.89 | -0.173 -0.125 0.73; random -0.054 -0.060 1.13 | -0.129 -0.104 0.81
+    k = 10: mi -0.251 -0.160 0.64 | -0.319 -0.231 0.73; trace -0.160 -0.119 0.74 | -0.241 -0.175 0.73; random -0.123 -0.096 0.79 | -0.223 -0.172 0.77
+  largest |mean(r2 - R²_pop,tr)| over methods and k: 0.2553 (pca, k = 7); trace 0.1683
+  oracle_sel - train: 1/30 significant (0 +, 1 -), 8 with |diff| > 0.05; largest -0.485 (mi k = 3, CI [-1.248, +0.277]); CI half-width median 0.084, max 0.762
+  oracle_imp - train: 24/30 significant (24 +, 0 -), 17 with |diff| > 0.05; largest +0.119 (pca k = 15, CI [+0.074, +0.164]); CI half-width median 0.033, max 0.124
+  oracle_both - train: 8/30 significant (8 +, 0 -), 21 with |diff| > 0.05; largest -0.319 (mi k = 3, CI [-0.990, +0.353]); CI half-width median 0.084, max 0.672
+  k = 1 score stability (Spearman train vs oracle; same pick): trace 0.896/0.14, mi 0.646/0.00, hub 0.877/0.02, facloc 0.881/0.02
+  greedy-path terms, mean over picks 1-5 (nats): novelty_mi -0.10, bonus_mi +1.27, gain_mi +1.17, min_gain_mi +0.50, novelty_entropy -0.06, novelty_trace -0.22, novelty_facloc -0.30
+  picks' neighbourhoods (oracle R; first pick | size-5 set): max |r|, # with |r| >= 0.9, mean r², # training models observing, share observed by < 10
+    mi         0.911   1.9 0.231    46.1 0.00 | 0.872   1.4 0.220    29.2 0.09
+    entropy    0.950  12.7 0.460    28.3 0.00 | 0.831   3.1 0.215    36.2 0.18
+    trace      0.950  12.7 0.460    28.3 0.00 | 0.935   5.9 0.293    33.1 0.12
+    pca        0.948  11.7 0.456    28.8 0.00 | 0.872   2.1 0.210    32.5 0.15
+    hub        0.951   8.4 0.415    35.7 0.00 | 0.955   8.4 0.412    35.9 0.00
+    random     0.901   3.4 0.300    34.0 0.10 | 0.903   4.0 0.305    33.8 0.06
+    facloc     0.957   8.7 0.416    37.1 0.00 | 0.952   7.2 0.309    33.2 0.14
+  facility location vs trace (train side): realized R² facloc - trace [95% NB CI], facloc ahead; shared picks / k, Jaccard, identical sets:
+    k =  1: R² 0.317 vs 0.490, diff -0.174 [-0.382, +0.035], ahead in 0.14; shared 0.34, Jaccard 0.34, same 0.34
+    k =  3: R² 0.595 vs 0.567, diff +0.028 [-0.060, +0.117], ahead in 0.48; shared 0.23, Jaccard 0.15, same 0.00
+    k =  5: R² 0.614 vs 0.593, diff +0.022 [-0.050, +0.093], ahead in 0.50; shared 0.21, Jaccard 0.12, same 0.00
+    k = 10: R² 0.661 vs 0.626, diff +0.035 [-0.024, +0.094], ahead in 0.66; shared 0.22, Jaccard 0.13, same 0.00
+    k = 15: R² 0.691 vs 0.661, diff +0.030 [-0.019, +0.080], ahead in 0.74; shared 0.31, Jaccard 0.19, same 0.00
+    Spearman of objective gains and realized R² gains along each greedy path (mean over splits):
+      path facloc facloc gains +0.26, trace gains +0.27
+      path trace  facloc gains +0.32, trace gains +0.24
+    gain landscape (all candidates of a greedy state; picks 1-5): Spearman with the realized gain | regret of the objective's pick:
+      states of facloc facloc +0.20 | 0.1413, trace +0.20 | 0.1075
+      states of trace  facloc +0.18 | 0.1424, trace +0.16 | 0.1171
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/analyze_objectives_merged_fulloracle.pdf
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/analyze_objectives_facloc_merged_fulloracle.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/analyze_objectives_merged_fulloracle.{npz,json} and _paired.csv (1091 macros)
+MERGED completed in 1474s
+
+All datasets completed in 1474s
+
+# finished 2026-10-20T02:09:34Z  exit=0  status=ok

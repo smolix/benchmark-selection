@@ -1,0 +1,83 @@
+# job      mi_selection_epoch
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets epoch --repeats 5 --selections-json none
+# started  2026-10-20T01:44:59Z on 4090-1
+
+
+######################################################################
+# Dataset: EPOCH
+######################################################################
+277 models x 61 tasks, 17.7% observed
+5 x 10-fold matched splits; selectable: >= 3 observed training models
+Holdout 10%
+
+  Rep 0 fold 0: 249 train / 28 test, 61/61 eligible  (58.6s)  top-5: Surface Evolver Bench, Remote Labor Index, OSWorld, CL-bench Life, OSWorld 2.0
+  Rep 0 fold 1: 249 train / 28 test, 61/61 eligible  (43.1s)  top-5: Surface Evolver Bench, MirrorCode, FrontierMath-2025-02-28-Private, GDPval, Mystery Game Puzzles
+  Rep 0 fold 2: 249 train / 28 test, 61/61 eligible  (46.9s)  top-5: Surface Evolver Bench, Remote Labor Index, CL-bench, OSWorld, FrontierMath-Tier-4-2025-07-01-Private
+  Rep 0 fold 3: 249 train / 28 test, 61/61 eligible  (26.3s)  top-5: ExploitBench, OSWorld, Remote Labor Index, MirrorCode, FrontierMath-Tier-4-2025-07-01-Private
+  Rep 0 fold 4: 249 train / 28 test, 61/61 eligible  (51.3s)  top-5: Surface Evolver Bench, FrontierMath-2025-02-28-Private, MirrorCode, FrontierMath-Tier-4-2025-07-01-Private, OSWorld 2.0
+  Rep 0 fold 5: 249 train / 28 test, 61/61 eligible  (38.0s)  top-5: Surface Evolver Bench, CadEval, CL-bench, DeepSWE, FrontierCode
+  Rep 0 fold 6: 249 train / 28 test, 61/61 eligible  (27.5s)  top-5: Surface Evolver Bench, Remote Labor Index, CL-bench Life, OSWorld, GDPval
+  Rep 0 fold 7: 249 train / 27 test, 61/61 eligible  (44.6s)  top-5: Surface Evolver Bench, OSWorld, MATH level 5, CL-bench, SWE-Bench verified
+  Rep 0 fold 8: 249 train / 27 test, 61/61 eligible  (43.1s)  top-5: OSWorld, SimpleBench, PostTrainBench, MirrorCode, DeepSWE
+  Rep 0 fold 9: 249 train / 27 test, 61/61 eligible  (44.8s)  top-5: ExploitBench, Remote Labor Index, Aider polyglot, SimpleQA Verified, FrontierMath-2025-02-28-Private
+  Rep 1 fold 0: 249 train / 28 test, 61/61 eligible  (27.1s)  top-5: ExploitBench, Remote Labor Index, CL-bench, FrontierMath-Tier-4-2025-07-01-Private, DeepResearch Bench
+  Rep 1 fold 1: 249 train / 28 test, 61/61 eligible  (31.1s)  top-5: Surface Evolver Bench, CL-bench, FrontierMath-Tier-4-v2-Private, FrontierMath-2025-02-28-Private, CadEval
+  Rep 1 fold 2: 249 train / 28 test, 61/61 eligible  (17.9s)  top-5: CL-bench Life, Remote Labor Index, CadEval, SimpleQA Verified, CL-bench
+  Rep 1 fold 3: 249 train / 28 test, 61/61 eligible  (38.0s)  top-5: Surface Evolver Bench, OSWorld, Remote Labor Index, GDPval, MATH level 5
+  Rep 1 fold 4: 249 train / 28 test, 61/61 eligible  (31.8s)  top-5: Surface Evolver Bench, Remote Labor Index, MirrorCode, GDPval, CL-bench
+  Rep 1 fold 5: 249 train / 28 test, 61/61 eligible  (38.4s)  top-5: Surface Evolver Bench, Remote Labor Index, VPCT, OSWorld 2.0, CadEval
+  Rep 1 fold 6: 249 train / 28 test, 61/61 eligible  (27.5s)  top-5: Surface Evolver Bench, FrontierMath-Tier-4-v2-Private, FrontierMath-2025-02-28-Private, CL-bench, OSWorld
+  Rep 1 fold 7: 249 train / 27 test, 61/61 eligible  (44.2s)  top-5: Terminal Bench, FrontierMath-Tier-4-2025-07-01-Private, DeepResearch Bench, MirrorCode, FrontierMath-Tier-4-v2-Private
+  Rep 1 fold 8: 249 train / 27 test, 61/61 eligible  (45.6s)  top-5: Surface Evolver Bench, CadEval, MirrorCode, Cybench, VPCT
+  Rep 1 fold 9: 249 train / 27 test, 61/61 eligible  (33.3s)  top-5: Surface Evolver Bench, Remote Labor Index, CadEval, CL-bench, VPCT
+  Rep 2 fold 0: 249 train / 28 test, 61/61 eligible  (48.0s)  top-5: Surface Evolver Bench, Remote Labor Index, CadEval, CL-bench, FrontierMath-Tier-4-2025-07-01-Private
+  Rep 2 fold 1: 249 train / 28 test, 61/61 eligible  (43.3s)  top-5: Surface Evolver Bench, CadEval, Remote Labor Index, FrontierMath-2025-02-28-Private, CL-bench Life
+  Rep 2 fold 2: 249 train / 28 test, 61/61 eligible  (26.2s)  top-5: Terminal Bench, CadEval, EBR-bench, DeepResearch Bench, MirrorCode
+  Rep 2 fold 3: 249 train / 28 test, 61/61 eligible  (34.8s)  top-5: Surface Evolver Bench, Remote Labor Index, CL-bench, OSWorld, SWE-Bench verified
+  Rep 2 fold 4: 249 train / 28 test, 61/61 eligible  (37.9s)  top-5: DeepResearch Bench, LMCA, Remote Labor Index, CL-bench, Furniture Assembly
+  Rep 2 fold 5: 249 train / 28 test, 61/61 eligible  (36.9s)  top-5: Surface Evolver Bench, MirrorCode, FrontierCode, FrontierMath-Tier-4-2025-07-01-Private, Lech Mazur Writing
+  Rep 2 fold 6: 249 train / 28 test, 61/61 eligible  (29.5s)  top-5: Surface Evolver Bench, Remote Labor Index, OSWorld, CL-bench Life, PIQA
+  Rep 2 fold 7: 249 train / 27 test, 61/61 eligible  (36.6s)  top-5: Surface Evolver Bench, CadEval, Remote Labor Index, FrontierMath-2025-02-28-Private, CL-bench Life
+  Rep 2 fold 8: 249 train / 27 test, 61/61 eligible  (35.6s)  top-5: ExploitBench, Remote Labor Index, FrontierMath-2025-02-28-Private, CL-bench, PIQA
+  Rep 2 fold 9: 249 train / 27 test, 61/61 eligible  (55.8s)  top-5: Surface Evolver Bench, Remote Labor Index, FrontierMath-Tier-4-2025-07-01-Private, CadEval, GDPval
+  Rep 3 fold 0: 249 train / 28 test, 61/61 eligible  (28.1s)  top-5: Surface Evolver Bench, Remote Labor Index, Cybench, MATH level 5, MirrorCode
+  Rep 3 fold 1: 249 train / 28 test, 61/61 eligible  (57.6s)  top-5: Surface Evolver Bench, Fiction.LiveBench, PostTrainBench, FrontierMath-2025-02-28-Private, EBR-bench
+  Rep 3 fold 2: 249 train / 28 test, 61/61 eligible  (81.3s)  top-5: ExploitBench, CL-bench, EBR-bench, SWE-Bench verified, CadEval
+  Rep 3 fold 3: 249 train / 28 test, 61/61 eligible  (59.5s)  top-5: Surface Evolver Bench, FrontierMath-2025-02-28-Private, MirrorCode, FrontierMath-Tier-4-v2-Private, CL-bench
+  Rep 3 fold 4: 249 train / 28 test, 61/61 eligible  (36.2s)  top-5: Surface Evolver Bench, Remote Labor Index, OSWorld, FrontierMath-2025-02-28-Private, CL-bench
+  Rep 3 fold 5: 249 train / 28 test, 61/61 eligible  (43.9s)  top-5: Surface Evolver Bench, OSWorld, Remote Labor Index, VPCT, CL-bench
+  Rep 3 fold 6: 249 train / 28 test, 61/61 eligible  (41.6s)  top-5: Surface Evolver Bench, CadEval, Remote Labor Index, CL-bench, VPCT
+  Rep 3 fold 7: 249 train / 27 test, 61/61 eligible  (37.1s)  top-5: Surface Evolver Bench, OSWorld, Remote Labor Index, FrontierMath-Tier-4-2025-07-01-Private, PostTrainBench
+  Rep 3 fold 8: 249 train / 27 test, 61/61 eligible  (62.2s)  top-5: CL-bench Life, CL-bench, OSWorld, Remote Labor Index, DeepSWE
+  Rep 3 fold 9: 249 train / 27 test, 61/61 eligible  (39.9s)  top-5: Surface Evolver Bench, CadEval, OSWorld 2.0, Lech Mazur Writing, CL-bench Life
+  Rep 4 fold 0: 249 train / 28 test, 61/61 eligible  (37.2s)  top-5: CL-bench Life, Remote Labor Index, CadEval, Surface Evolver Bench, VPCT
+  Rep 4 fold 1: 249 train / 28 test, 61/61 eligible  (35.4s)  top-5: ExploitBench, Remote Labor Index, CL-bench, FrontierMath-2025-02-28-Private, SimpleQA Verified
+  Rep 4 fold 2: 249 train / 28 test, 61/61 eligible  (33.5s)  top-5: Surface Evolver Bench, Remote Labor Index, GDPval, CL-bench, VPCT
+  Rep 4 fold 3: 249 train / 28 test, 61/61 eligible  (35.7s)  top-5: CadEval, MirrorCode, DeepSWE, GSO-Bench, CL-bench
+  Rep 4 fold 4: 249 train / 28 test, 61/61 eligible  (50.7s)  top-5: Surface Evolver Bench, CadEval, Remote Labor Index, FrontierMath-2025-02-28-Private, CL-bench
+  Rep 4 fold 5: 249 train / 28 test, 61/61 eligible  (40.4s)  top-5: Terminal Bench, Remote Labor Index, DeepResearch Bench, OSWorld, The Agent Company
+  Rep 4 fold 6: 249 train / 28 test, 61/61 eligible  (38.7s)  top-5: Surface Evolver Bench, FrontierMath-2025-02-28-Private, CL-bench Life, OSWorld, Remote Labor Index
+  Rep 4 fold 7: 249 train / 27 test, 61/61 eligible  (19.7s)  top-5: ExploitBench, Remote Labor Index, FrontierMath-Tier-4-2025-07-01-Private, DeepResearch Bench, OSWorld
+  Rep 4 fold 8: 249 train / 27 test, 61/61 eligible  (25.1s)  top-5: Surface Evolver Bench, Remote Labor Index, OSWorld 2.0, VPCT, Cybench
+  Rep 4 fold 9: 249 train / 27 test, 61/61 eligible  (40.5s)  top-5: ExploitBench, OSWorld, Remote Labor Index, DeepSWE, GeoBench
+
+  Epoch AI MI, holdout 10%: 50 splits (reps 0, 1, 2, 3, 4), eligible 61–61, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mi_epoch.pdf
+  Top-10 by mean rank:
+    Surface Evolver Bench                     count=37/50  mean_rank=5.5
+    Remote Labor Index                        count=36/50  mean_rank=6.6
+    CL-bench                                  count=33/50  mean_rank=8.9
+    OSWorld                                   count=29/50  mean_rank=9.6
+    CadEval                                   count=22/50  mean_rank=10.7
+    FrontierMath-2025-02-28-Private           count=22/50  mean_rank=11.4
+    MirrorCode                                count=20/50  mean_rank=12.0
+    CL-bench Life                             count=21/50  mean_rank=12.3
+    VPCT                                      count=20/50  mean_rank=12.4
+    GDPval                                    count=21/50  mean_rank=12.7
+
+EPOCH completed in 1988s
+
+
+Total time: 1988s
+
+# finished 2026-10-20T02:18:08Z  exit=0  status=ok

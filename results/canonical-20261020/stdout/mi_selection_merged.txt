@@ -1,0 +1,83 @@
+# job      mi_selection_merged
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets merged --repeats 5 --selections-json none
+# started  2026-10-20T02:35:24Z on 4090-1
+
+
+######################################################################
+# Dataset: MERGED
+######################################################################
+118 models x 114 tasks, 31.2% observed
+5 x 10-fold matched splits; selectable: >= 3 observed training models
+Holdout 10%
+
+  Rep 0 fold 0: 106 train / 12 test, 114/114 eligible  (12.9s)  top-5: arena_hard/score, helm/NarrativeQA, mt_bench/humanities, mmlu/college_physics, helm/WMT 2014
+  Rep 0 fold 1: 106 train / 12 test, 106/114 eligible  (11.6s)  top-5: arena_hard/score, helm/NarrativeQA, mmlu/high_school_us_history, helm/NaturalQuestions (open-book), mmlu/elementary_mathematics
+  Rep 0 fold 2: 106 train / 12 test, 114/114 eligible  (25.3s)  top-5: arena_hard/score, helm/NarrativeQA, mmlu/college_physics, mt_bench/humanities, mmlu/sociology
+  Rep 0 fold 3: 106 train / 12 test, 106/114 eligible  (37.9s)  top-5: arena_hard/score, mmlu/security_studies, helm/NarrativeQA, helm/WMT 2014, mmlu/abstract_algebra
+  Rep 0 fold 4: 106 train / 12 test, 114/114 eligible  (12.5s)  top-5: arena_hard/score, mmlu/world_religions, mmlu/global_facts, bigcode/System_complete, open_llm/MATH_Lvl5
+  Rep 0 fold 5: 106 train / 12 test, 114/114 eligible  (9.4s)  top-5: arena_hard/score, helm/NarrativeQA, mt_bench/humanities, mmlu/formal_logic, helm/WMT 2014
+  Rep 0 fold 6: 106 train / 12 test, 114/114 eligible  (11.8s)  top-5: arena_hard/score, mt_bench/humanities, helm/WMT 2014, helm/NarrativeQA, mmlu/abstract_algebra
+  Rep 0 fold 7: 106 train / 12 test, 114/114 eligible  (10.0s)  top-5: arena_hard/score, helm/NarrativeQA, mmlu/formal_logic, mt_bench/humanities, helm/WMT 2014
+  Rep 0 fold 8: 106 train / 11 test, 106/114 eligible  (4.2s)  top-5: arena_hard/score, helm/WMT 2014, mmlu/sociology, helm/NarrativeQA, mmlu/abstract_algebra
+  Rep 0 fold 9: 106 train / 11 test, 114/114 eligible  (21.5s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, mt_bench/writing, mmlu/marketing
+  Rep 1 fold 0: 106 train / 12 test, 106/114 eligible  (12.7s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, mmlu/computer_security, bigcode/Cryptography_complete
+  Rep 1 fold 1: 106 train / 12 test, 114/114 eligible  (17.4s)  top-5: arena_hard/score, mmlu/security_studies, mt_bench/humanities, bigcode/Time_instruct, helm/WMT 2014
+  Rep 1 fold 2: 106 train / 12 test, 106/114 eligible  (6.6s)  top-5: arena_hard/score, mmlu/high_school_us_history, helm/WMT 2014, helm/NarrativeQA, mmlu/abstract_algebra
+  Rep 1 fold 3: 106 train / 12 test, 114/114 eligible  (14.4s)  top-5: arena_hard/score, helm/NarrativeQA, mt_bench/roleplay, mmlu/formal_logic, mmlu/college_mathematics
+  Rep 1 fold 4: 106 train / 12 test, 114/114 eligible  (20.3s)  top-5: arena_hard/score, helm/WMT 2014, mmlu/sociology, helm/NarrativeQA, mmlu/college_physics
+  Rep 1 fold 5: 106 train / 12 test, 114/114 eligible  (11.2s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, mt_bench/humanities, mmlu/marketing
+  Rep 1 fold 6: 106 train / 12 test, 114/114 eligible  (10.0s)  top-5: arena_hard/score, mmlu/sociology, mmlu/abstract_algebra, helm/WMT 2014, helm/NarrativeQA
+  Rep 1 fold 7: 106 train / 12 test, 106/114 eligible  (26.6s)  top-5: arena_hard/score, helm/NarrativeQA, mmlu/elementary_mathematics, helm/WMT 2014, mmlu/world_religions
+  Rep 1 fold 8: 106 train / 11 test, 114/114 eligible  (12.0s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, mmlu/sociology, mt_bench/humanities
+  Rep 1 fold 9: 106 train / 11 test, 114/114 eligible  (13.5s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, bigcode/Cryptography_complete, mmlu/college_mathematics
+  Rep 2 fold 0: 106 train / 12 test, 114/114 eligible  (8.4s)  top-5: arena_hard/score, mmlu/computer_security, helm/WMT 2014, mt_bench/humanities, helm/NarrativeQA
+  Rep 2 fold 1: 106 train / 12 test, 106/114 eligible  (7.5s)  top-5: arena_hard/score, mmlu/security_studies, helm/NarrativeQA, mmlu/abstract_algebra, helm/WMT 2014
+  Rep 2 fold 2: 106 train / 12 test, 114/114 eligible  (34.6s)  top-5: arena_hard/score, mt_bench/roleplay, mmlu/college_biology, helm/NarrativeQA, mmlu/abstract_algebra
+  Rep 2 fold 3: 106 train / 12 test, 114/114 eligible  (8.7s)  top-5: arena_hard/score, mmlu/computer_security, mt_bench/roleplay, bigcode/General_instruct, open_llm/IFEval
+  Rep 2 fold 4: 106 train / 12 test, 114/114 eligible  (12.7s)  top-5: arena_hard/score, mt_bench/humanities, helm/NarrativeQA, mmlu/high_school_microeconomics, helm/WMT 2014
+  Rep 2 fold 5: 106 train / 12 test, 114/114 eligible  (10.2s)  top-5: arena_hard/score, helm/NarrativeQA, mmlu/formal_logic, helm/WMT 2014, mmlu/global_facts
+  Rep 2 fold 6: 106 train / 12 test, 106/114 eligible  (46.5s)  top-5: arena_hard/score, helm/WMT 2014, helm/NarrativeQA, mmlu/elementary_mathematics, bigcode/Cryptography_complete
+  Rep 2 fold 7: 106 train / 12 test, 106/114 eligible  (4.0s)  top-5: arena_hard/score, helm/NarrativeQA, mmlu/abstract_algebra, helm/WMT 2014, mmlu/sociology
+  Rep 2 fold 8: 106 train / 11 test, 114/114 eligible  (9.9s)  top-5: arena_hard/score, helm/NarrativeQA, mmlu/high_school_mathematics, bigcode/Cryptography_complete, mmlu/virology
+  Rep 2 fold 9: 106 train / 11 test, 114/114 eligible  (14.1s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, bigcode/Cryptography_complete, mt_bench/writing
+  Rep 3 fold 0: 106 train / 12 test, 114/114 eligible  (17.2s)  top-5: arena_hard/score, mmlu/high_school_us_history, helm/WMT 2014, helm/NarrativeQA, mmlu/global_facts
+  Rep 3 fold 1: 106 train / 12 test, 114/114 eligible  (30.2s)  top-5: mmlu/moral_scenarios, mt_bench/humanities, helm/NarrativeQA, mmlu/security_studies, helm/WMT 2014
+  Rep 3 fold 2: 106 train / 12 test, 106/114 eligible  (9.5s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, bigcode/Cryptography_complete, mmlu/sociology
+  Rep 3 fold 3: 106 train / 12 test, 114/114 eligible  (24.7s)  top-5: arena_hard/score, helm/NarrativeQA, helm/WMT 2014, mmlu/machine_learning, mmlu/world_religions
+  Rep 3 fold 4: 106 train / 12 test, 114/114 eligible  (20.9s)  top-5: arena_hard/score, open_llm/IFEval, mmlu/computer_security, bigcode/System_complete, mmlu/abstract_algebra
+  Rep 3 fold 5: 106 train / 12 test, 106/114 eligible  (29.7s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, mmlu/abstract_algebra, bigcode/Cryptography_complete
+  Rep 3 fold 6: 106 train / 12 test, 114/114 eligible  (10.0s)  top-5: arena_hard/score, helm/NarrativeQA, mmlu/marketing, open_llm/IFEval, mmlu/abstract_algebra
+  Rep 3 fold 7: 106 train / 12 test, 114/114 eligible  (14.4s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, mmlu/abstract_algebra, mmlu/sociology
+  Rep 3 fold 8: 106 train / 11 test, 114/114 eligible  (9.9s)  top-5: arena_hard/score, helm/NarrativeQA, mt_bench/roleplay, mmlu/college_physics, mmlu/college_mathematics
+  Rep 3 fold 9: 106 train / 11 test, 114/114 eligible  (7.9s)  top-5: arena_hard/score, mt_bench/roleplay, mmlu/computer_security, helm/WMT 2014, bigcode/General_instruct
+  Rep 4 fold 0: 106 train / 12 test, 114/114 eligible  (18.7s)  top-5: mmlu/college_mathematics, mt_bench/humanities, mmlu/computer_security, bigcode/General_instruct, helm/WMT 2014
+  Rep 4 fold 1: 106 train / 12 test, 106/114 eligible  (5.3s)  top-5: arena_hard/score, mmlu/college_mathematics, mmlu/security_studies, helm/NarrativeQA, mmlu/moral_scenarios
+  Rep 4 fold 2: 106 train / 12 test, 114/114 eligible  (15.9s)  top-5: arena_hard/score, mmlu/high_school_us_history, helm/NarrativeQA, helm/WMT 2014, mmlu/abstract_algebra
+  Rep 4 fold 3: 106 train / 12 test, 106/114 eligible  (42.7s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, mmlu/abstract_algebra, bigcode/Cryptography_complete
+  Rep 4 fold 4: 106 train / 12 test, 114/114 eligible  (12.0s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, mt_bench/humanities, mmlu/abstract_algebra
+  Rep 4 fold 5: 106 train / 12 test, 114/114 eligible  (15.6s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, mmlu/abstract_algebra, bigcode/Cryptography_complete
+  Rep 4 fold 6: 106 train / 12 test, 114/114 eligible  (9.1s)  top-5: arena_hard/score, mmlu/human_aging, helm/WMT 2014, helm/NarrativeQA, mmlu/college_physics
+  Rep 4 fold 7: 106 train / 12 test, 114/114 eligible  (7.1s)  top-5: arena_hard/score, mt_bench/humanities, helm/NarrativeQA, mmlu/marketing, helm/WMT 2014
+  Rep 4 fold 8: 106 train / 11 test, 114/114 eligible  (6.8s)  top-5: arena_hard/score, mmlu/college_medicine, helm/NarrativeQA, mt_bench/humanities, mmlu/abstract_algebra
+  Rep 4 fold 9: 106 train / 11 test, 106/114 eligible  (6.4s)  top-5: arena_hard/score, helm/NarrativeQA, open_llm/IFEval, bigcode/Cryptography_complete, mmlu/sociology
+
+  Merged MI, holdout 10%: 50 splits (reps 0, 1, 2, 3, 4), eligible 106–114, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mi_merged.pdf
+  Top-10 by mean rank:
+    arena_hard/score                          count=48/50  mean_rank=1.6
+    helm/NarrativeQA                          count=48/50  mean_rank=3.7
+    helm/WMT 2014                             count=36/50  mean_rank=8.2
+    mmlu/college_mathematics                  count=48/50  mean_rank=8.4
+    open_llm/IFEval                           count=34/50  mean_rank=9.7
+    mmlu/abstract_algebra                     count=29/50  mean_rank=10.4
+    open_llm/MUSR                             count=46/50  mean_rank=10.9
+    mt_bench/humanities                       count=21/50  mean_rank=11.2
+    bigcode/Cryptography_complete             count=33/50  mean_rank=11.3
+    mmlu/global_facts                         count=36/50  mean_rank=11.4
+
+MERGED completed in 773s
+
+
+Total time: 773s
+
+# finished 2026-10-20T02:48:19Z  exit=0  status=ok

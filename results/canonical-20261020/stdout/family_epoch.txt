@@ -1,0 +1,114 @@
+# job      family_epoch
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_family_holdout.py --datasets epoch --repeats 5
+# started  2026-10-20T02:33:59Z on 4090-1
+
+
+######################################################################
+# Dataset: EPOCH — family holdout
+######################################################################
+277 models × 61 tasks; meta_org families, 1 models 'other' (always trained on)
+holding out families: alibaba(44), anthropic(27), deepseek(18), google(39), meta-ai(25), microsoft(6), mistral-ai(17), moonshot(6), openai(46), xai(10), z-ai-zhipu-ai(7)
+Families of ≥ 6 models; selectable: benchmarks with ≥ 3 training models; 5 repetition(s) of the random streams
+  Holdout alibaba: 233 train / 44 test, 61/61 eligible  entropy:0.170  mi:0.149  random:0.365  hub:0.122  pca:0.257  trace:0.206  facloc:0.169  (29.1s)
+  Holdout anthropic: 250 train / 27 test, 61/61 eligible  entropy:0.510  mi:0.287  random:0.366  hub:0.350  pca:0.385  trace:0.543  facloc:0.502  (32.5s)
+  Holdout deepseek: 259 train / 18 test, 61/61 eligible  entropy:0.086  mi:-0.863  random:-0.159  hub:0.408  pca:0.400  trace:-0.031  facloc:0.300  (29.9s)
+  Holdout google: 238 train / 39 test, 61/61 eligible  entropy:0.522  mi:0.278  random:0.181  hub:0.416  pca:0.251  trace:0.382  facloc:0.431  (39.8s)
+  Holdout meta-ai: 252 train / 25 test, 60/61 eligible  entropy:0.542  mi:-0.069  random:0.233  hub:0.378  pca:0.290  trace:0.528  facloc:0.457  (38.7s)
+  Holdout microsoft: 271 train / 6 test, 61/61 eligible  entropy:-0.219  mi:nan  random:nan  hub:0.439  pca:0.297  trace:0.212  facloc:-0.177  (41.3s)
+  Holdout mistral-ai: 260 train / 17 test, 61/61 eligible  entropy:0.741  mi:-1.130  random:-0.194  hub:0.474  pca:0.471  trace:0.741  facloc:0.605  (35.8s)
+  Holdout moonshot: 271 train / 6 test, 61/61 eligible  entropy:0.204  mi:0.049  random:0.243  hub:0.055  pca:-0.051  trace:0.169  facloc:0.616  (37.4s)
+  Holdout openai: 231 train / 46 test, 61/61 eligible  entropy:0.437  mi:-0.082  random:0.411  hub:0.335  pca:0.381  trace:0.394  facloc:0.402  (34.3s)
+  Holdout xai: 267 train / 10 test, 61/61 eligible  entropy:0.397  mi:0.117  random:-0.470  hub:0.130  pca:0.217  trace:0.282  facloc:0.383  (30.8s)
+  Holdout z-ai-zhipu-ai: 270 train / 7 test, 61/61 eligible  entropy:0.378  mi:-0.142  random:0.060  hub:-0.252  pca:-0.050  trace:0.271  facloc:0.377  (41.0s)
+  Holdout alibaba rep 1:  random:-0.213  (0.1s)
+  Holdout anthropic rep 1:  random:0.471  (0.1s)
+  Holdout deepseek rep 1:  random:0.381  (0.0s)
+  Holdout google rep 1:  random:0.433  (0.1s)
+  Holdout meta-ai rep 1:  random:nan  (0.0s)
+  Holdout microsoft rep 1:  random:nan  (0.0s)
+  Holdout mistral-ai rep 1:  random:0.270  (0.0s)
+  Holdout moonshot rep 1:  random:0.180  (0.0s)
+  Holdout openai rep 1:  random:0.338  (0.1s)
+  Holdout xai rep 1:  random:0.242  (0.0s)
+  Holdout z-ai-zhipu-ai rep 1:  random:0.191  (0.0s)
+  Holdout alibaba rep 2:  random:-0.030  (0.1s)
+  Holdout anthropic rep 2:  random:0.405  (0.1s)
+  Holdout deepseek rep 2:  random:-0.025  (0.0s)
+  Holdout google rep 2:  random:0.363  (0.1s)
+  Holdout meta-ai rep 2:  random:0.520  (0.0s)
+  Holdout microsoft rep 2:  random:0.233  (0.0s)
+  Holdout mistral-ai rep 2:  random:0.199  (0.0s)
+  Holdout moonshot rep 2:  random:0.218  (0.0s)
+  Holdout openai rep 2:  random:0.359  (0.1s)
+  Holdout xai rep 2:  random:-0.141  (0.0s)
+  Holdout z-ai-zhipu-ai rep 2:  random:-0.067  (0.0s)
+  Holdout alibaba rep 3:  random:-0.319  (0.1s)
+  Holdout anthropic rep 3:  random:0.320  (0.1s)
+  Holdout deepseek rep 3:  random:0.269  (0.0s)
+  Holdout google rep 3:  random:0.291  (0.1s)
+  Holdout meta-ai rep 3:  random:0.322  (0.0s)
+  Holdout microsoft rep 3:  random:-0.177  (0.0s)
+  Holdout mistral-ai rep 3:  random:0.539  (0.0s)
+  Holdout moonshot rep 3:  random:0.288  (0.0s)
+  Holdout openai rep 3:  random:0.249  (0.1s)
+  Holdout xai rep 3:  random:0.122  (0.0s)
+  Holdout z-ai-zhipu-ai rep 3:  random:-0.073  (0.0s)
+  Holdout alibaba rep 4:  random:-0.297  (0.1s)
+  Holdout anthropic rep 4:  random:0.322  (0.1s)
+  Holdout deepseek rep 4:  random:-0.025  (0.0s)
+  Holdout google rep 4:  random:0.355  (0.1s)
+  Holdout meta-ai rep 4:  random:0.657  (0.0s)
+  Holdout microsoft rep 4:  random:0.243  (0.0s)
+  Holdout mistral-ai rep 4:  random:0.636  (0.0s)
+  Holdout moonshot rep 4:  random:0.273  (0.0s)
+  Holdout openai rep 4:  random:0.385  (0.1s)
+  Holdout xai rep 4:  random:0.161  (0.0s)
+  Holdout z-ai-zhipu-ai rep 4:  random:0.223  (0.0s)
+
+== Epoch AI: family-holdout imputation R² (mean ± std over 11 families) ==
+   (random: per family, mean over 5 draws)
+method                k=1          k=3          k=5          k=10         k=15         
+Entropy (Alg. 1)      0.347±0.201  0.314±0.266  0.342±0.253  0.262±0.342  0.292±0.327  
+Mutual Info (Alg. 2)  -0.328±0.532 -0.245±0.471 -0.141±0.453 0.017±0.299  0.248±0.152  
+Random                0.095±0.255  0.130±0.202  0.196±0.168  0.270±0.126  0.352±0.132  
+Hub correlation       0.347±0.201  0.286±0.247  0.260±0.211  0.224±0.180  0.200±0.184  
+PCA subset (CSSP)     0.347±0.201  0.299±0.195  0.259±0.163  0.098±0.124  0.263±0.143  
+Greedy trace min.     0.347±0.201  0.393±0.195  0.336±0.203  0.342±0.166  0.360±0.159  
+Facility location     0.360±0.157  0.350±0.206  0.369±0.211  0.435±0.119  0.435±0.118  
+
+   Per-family R² at k=5:
+   family          entropy     mi          random      hub         pca         trace       facloc      
+   alibaba         0.170       0.149       -0.099      0.122       0.257       0.206       0.169       
+   anthropic       0.510       0.287       0.377       0.350       0.385       0.543       0.502       
+   deepseek        0.086       -0.863      0.088       0.408       0.400       -0.031      0.300       
+   google          0.522       0.278       0.325       0.416       0.251       0.382       0.431       
+   meta-ai         0.542       -0.069      0.433       0.378       0.290       0.528       0.457       
+   microsoft       -0.219      nan         0.099       0.439       0.297       0.212       -0.177      
+   mistral-ai      0.741       -1.130      0.290       0.474       0.471       0.741       0.605       
+   moonshot        0.204       0.049       0.241       0.055       -0.051      0.169       0.616       
+   openai          0.437       -0.082      0.349       0.335       0.381       0.394       0.402       
+   xai             0.397       0.117       -0.017      0.130       0.217       0.282       0.383       
+   z-ai-zhipu-ai   0.378       -0.142      0.067       -0.252      -0.050      0.271       0.377       
+
+   Selection stability (Jaccard vs full-data selection):
+   Entropy (Alg. 1)      k=5: 0.26  k=10: 0.37  k=15: 0.47
+   Mutual Info (Alg. 2)  k=5: 0.27  k=10: 0.27  k=15: 0.30
+   Hub correlation       k=5: 0.71  k=10: 0.70  k=15: 0.76
+   PCA subset (CSSP)     k=5: 0.19  k=10: 0.28  k=15: 0.53
+   Greedy trace min.     k=5: 0.38  k=10: 0.34  k=15: 0.35
+   Facility location     k=5: 0.35  k=10: 0.34  k=15: 0.42
+
+   Eligible benchmarks (≥ 3 training models): all models 61/61; families meta-ai 60 of 61, others all
+   entropy     k ≤ 15: index ties 0 picks in 0/55 splits, near-tie breaks 55 in 55/55; all-model reference: 0 index ties
+   mi          k ≤ 15: index ties 0 picks in 0/55 splits, near-tie breaks 0 in 0/55; all-model reference: 0 index ties
+   random      k ≤ 15: index ties 0 picks in 0/55 splits, near-tie breaks 0 in 0/55; all-model reference: n/a
+   hub         k ≤ 15: index ties 0 picks in 0/55 splits, near-tie breaks 0 in 0/55; all-model reference: 0 index ties
+   pca         k ≤ 15: index ties 0 picks in 0/55 splits, near-tie breaks 0 in 0/55; all-model reference: 0 index ties
+   trace       k ≤ 15: index ties 0 picks in 0/55 splits, near-tie breaks 0 in 0/55; all-model reference: 0 index ties
+   facloc      k ≤ 15: index ties 0 picks in 0/55 splits, near-tie breaks 70 in 45/55; all-model reference: 0 index ties
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/family_holdout_epoch.pdf
+EPOCH completed in 420s
+
+All datasets completed in 420s
+
+# finished 2026-10-20T02:41:01Z  exit=0  status=ok

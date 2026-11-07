@@ -1,0 +1,611 @@
+# job      covariance
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python estimate_covariance.py
+# started  2026-10-20T02:46:28Z on 4090-1
+
+============================================================
+  mmlu
+============================================================
+  Shape: 5452 models x 57 tasks
+  Missing: 0/310764 (0.0%)
+EM init  | missing 0.0% | loglik 30869.1825
+EM iter   1 | loglik 30869.1851 | Δ +2.61e-03 | ΔΣ 1.83e-04
+EM iter   2 | loglik 30869.1851 | Δ +0.00e+00 | ΔΣ 0.00e+00
+EM converged after 2 iterations (ΔΣ/‖Σ‖ = 0.00e+00).
+  EM: 2 iterations, converged=True
+  Eigenvalue spectrum (top 10):
+    λ_ 1 = 49.9807  (cumulative: 0.877)
+    λ_ 2 = 2.3925  (cumulative: 0.919)
+    λ_ 3 = 0.7313  (cumulative: 0.932)
+    λ_ 4 = 0.4786  (cumulative: 0.940)
+    λ_ 5 = 0.3854  (cumulative: 0.947)
+    λ_ 6 = 0.3288  (cumulative: 0.953)
+    λ_ 7 = 0.2409  (cumulative: 0.957)
+    λ_ 8 = 0.1960  (cumulative: 0.960)
+    λ_ 9 = 0.1757  (cumulative: 0.964)
+    λ_10 = 0.1562  (cumulative: 0.966)
+  90% variance explained by 2 components
+  95% variance explained by 6 components
+  99% variance explained by 27 components
+  Saved to ~/benchselect-runs/canonical-20261020/out/cov/mmlu.cov.npz
+
+============================================================
+  mteb
+============================================================
+  Shape: 263 models x 56 tasks
+  Missing: 3340/14728 (22.7%)
+EM init  | missing 22.7% | loglik -22818793.2314
+EM iter   1 | loglik -1536.0488 | Δ +2.28e+07 | ΔΣ 1.08e-01
+EM iter   2 | loglik -1166.6901 | Δ +3.69e+02 | ΔΣ 3.56e-02
+EM iter   3 | loglik -1011.6047 | Δ +1.55e+02 | ΔΣ 2.66e-02
+EM iter   4 | loglik -923.1448 | Δ +8.85e+01 | ΔΣ 1.94e-02
+EM iter   5 | loglik -865.0127 | Δ +5.81e+01 | ΔΣ 1.49e-02
+EM iter   6 | loglik -823.7190 | Δ +4.13e+01 | ΔΣ 1.20e-02
+EM iter   7 | loglik -792.9742 | Δ +3.07e+01 | ΔΣ 1.00e-02
+EM iter   8 | loglik -769.3719 | Δ +2.36e+01 | ΔΣ 8.51e-03
+EM iter   9 | loglik -750.8806 | Δ +1.85e+01 | ΔΣ 7.34e-03
+EM iter  10 | loglik -736.1995 | Δ +1.47e+01 | ΔΣ 6.40e-03
+EM iter  11 | loglik -724.4431 | Δ +1.18e+01 | ΔΣ 5.63e-03
+EM iter  12 | loglik -714.9763 | Δ +9.47e+00 | ΔΣ 4.97e-03
+EM iter  13 | loglik -707.3249 | Δ +7.65e+00 | ΔΣ 4.41e-03
+EM iter  14 | loglik -701.1244 | Δ +6.20e+00 | ΔΣ 3.93e-03
+EM iter  15 | loglik -696.0897 | Δ +5.03e+00 | ΔΣ 3.51e-03
+EM iter  16 | loglik -691.9950 | Δ +4.09e+00 | ΔΣ 3.14e-03
+EM iter  17 | loglik -688.6600 | Δ +3.34e+00 | ΔΣ 2.81e-03
+EM iter  18 | loglik -685.9398 | Δ +2.72e+00 | ΔΣ 2.52e-03
+EM iter  19 | loglik -683.7179 | Δ +2.22e+00 | ΔΣ 2.26e-03
+EM iter  20 | loglik -681.9001 | Δ +1.82e+00 | ΔΣ 2.03e-03
+EM iter  21 | loglik -680.4102 | Δ +1.49e+00 | ΔΣ 1.83e-03
+EM iter  22 | loglik -679.1869 | Δ +1.22e+00 | ΔΣ 1.65e-03
+EM iter  23 | loglik -678.1802 | Δ +1.01e+00 | ΔΣ 1.48e-03
+EM iter  24 | loglik -677.3500 | Δ +8.30e-01 | ΔΣ 1.34e-03
+EM iter  25 | loglik -676.6637 | Δ +6.86e-01 | ΔΣ 1.20e-03
+EM iter  26 | loglik -676.0950 | Δ +5.69e-01 | ΔΣ 1.09e-03
+EM iter  27 | loglik -675.6223 | Δ +4.73e-01 | ΔΣ 9.81e-04
+EM iter  28 | loglik -675.2285 | Δ +3.94e-01 | ΔΣ 8.86e-04
+EM iter  29 | loglik -674.8993 | Δ +3.29e-01 | ΔΣ 8.01e-04
+EM iter  30 | loglik -674.6235 | Δ +2.76e-01 | ΔΣ 7.24e-04
+EM iter  31 | loglik -674.3917 | Δ +2.32e-01 | ΔΣ 6.56e-04
+EM iter  32 | loglik -674.1962 | Δ +1.95e-01 | ΔΣ 5.94e-04
+EM iter  33 | loglik -674.0308 | Δ +1.65e-01 | ΔΣ 5.39e-04
+EM iter  34 | loglik -673.8906 | Δ +1.40e-01 | ΔΣ 4.89e-04
+EM iter  35 | loglik -673.7712 | Δ +1.19e-01 | ΔΣ 4.44e-04
+EM iter  36 | loglik -673.6693 | Δ +1.02e-01 | ΔΣ 4.04e-04
+EM iter  37 | loglik -673.5819 | Δ +8.73e-02 | ΔΣ 3.67e-04
+EM iter  38 | loglik -673.5069 | Δ +7.50e-02 | ΔΣ 3.34e-04
+EM iter  39 | loglik -673.4422 | Δ +6.47e-02 | ΔΣ 3.05e-04
+EM iter  40 | loglik -673.3862 | Δ +5.60e-02 | ΔΣ 2.78e-04
+EM iter  41 | loglik -673.3376 | Δ +4.86e-02 | ΔΣ 2.55e-04
+EM iter  42 | loglik -673.2953 | Δ +4.23e-02 | ΔΣ 2.33e-04
+EM iter  43 | loglik -673.2584 | Δ +3.70e-02 | ΔΣ 2.13e-04
+EM iter  44 | loglik -673.2259 | Δ +3.24e-02 | ΔΣ 1.96e-04
+EM iter  45 | loglik -673.1974 | Δ +2.85e-02 | ΔΣ 1.80e-04
+EM iter  46 | loglik -673.1722 | Δ +2.52e-02 | ΔΣ 1.65e-04
+EM iter  47 | loglik -673.1499 | Δ +2.23e-02 | ΔΣ 1.52e-04
+EM iter  48 | loglik -673.1301 | Δ +1.98e-02 | ΔΣ 1.41e-04
+EM iter  49 | loglik -673.1124 | Δ +1.77e-02 | ΔΣ 1.30e-04
+EM iter  50 | loglik -673.0966 | Δ +1.58e-02 | ΔΣ 1.20e-04
+EM iter  51 | loglik -673.0824 | Δ +1.42e-02 | ΔΣ 1.11e-04
+EM iter  52 | loglik -673.0696 | Δ +1.28e-02 | ΔΣ 1.03e-04
+EM iter  53 | loglik -673.0580 | Δ +1.16e-02 | ΔΣ 9.61e-05
+EM iter  54 | loglik -673.0475 | Δ +1.05e-02 | ΔΣ 8.94e-05
+EM iter  55 | loglik -673.0379 | Δ +9.57e-03 | ΔΣ 8.34e-05
+EM iter  56 | loglik -673.0291 | Δ +8.74e-03 | ΔΣ 7.80e-05
+EM iter  57 | loglik -673.0211 | Δ +8.01e-03 | ΔΣ 7.30e-05
+EM iter  58 | loglik -673.0138 | Δ +7.36e-03 | ΔΣ 6.85e-05
+EM iter  59 | loglik -673.0070 | Δ +6.79e-03 | ΔΣ 6.43e-05
+EM iter  60 | loglik -673.0007 | Δ +6.27e-03 | ΔΣ 6.05e-05
+EM iter  61 | loglik -672.9949 | Δ +5.82e-03 | ΔΣ 5.71e-05
+EM iter  62 | loglik -672.9895 | Δ +5.41e-03 | ΔΣ 5.39e-05
+EM iter  63 | loglik -672.9844 | Δ +5.05e-03 | ΔΣ 5.11e-05
+EM iter  64 | loglik -672.9797 | Δ +4.72e-03 | ΔΣ 4.84e-05
+EM iter  65 | loglik -672.9753 | Δ +4.42e-03 | ΔΣ 4.60e-05
+EM iter  66 | loglik -672.9711 | Δ +4.16e-03 | ΔΣ 4.38e-05
+EM iter  67 | loglik -672.9672 | Δ +3.92e-03 | ΔΣ 4.18e-05
+EM iter  68 | loglik -672.9635 | Δ +3.70e-03 | ΔΣ 3.99e-05
+EM iter  69 | loglik -672.9600 | Δ +3.49e-03 | ΔΣ 3.82e-05
+EM iter  70 | loglik -672.9567 | Δ +3.31e-03 | ΔΣ 3.67e-05
+EM iter  71 | loglik -672.9536 | Δ +3.14e-03 | ΔΣ 3.52e-05
+EM iter  72 | loglik -672.9506 | Δ +2.99e-03 | ΔΣ 3.39e-05
+EM iter  73 | loglik -672.9477 | Δ +2.85e-03 | ΔΣ 3.27e-05
+EM iter  74 | loglik -672.9450 | Δ +2.72e-03 | ΔΣ 3.15e-05
+EM iter  75 | loglik -672.9424 | Δ +2.60e-03 | ΔΣ 3.05e-05
+EM iter  76 | loglik -672.9399 | Δ +2.48e-03 | ΔΣ 2.95e-05
+EM iter  77 | loglik -672.9376 | Δ +2.38e-03 | ΔΣ 2.86e-05
+EM iter  78 | loglik -672.9353 | Δ +2.28e-03 | ΔΣ 2.77e-05
+EM iter  79 | loglik -672.9331 | Δ +2.19e-03 | ΔΣ 2.69e-05
+EM iter  80 | loglik -672.9310 | Δ +2.10e-03 | ΔΣ 2.62e-05
+EM iter  81 | loglik -672.9290 | Δ +2.02e-03 | ΔΣ 2.55e-05
+EM iter  82 | loglik -672.9270 | Δ +1.95e-03 | ΔΣ 2.48e-05
+EM iter  83 | loglik -672.9251 | Δ +1.88e-03 | ΔΣ 2.42e-05
+EM iter  84 | loglik -672.9233 | Δ +1.81e-03 | ΔΣ 2.36e-05
+EM iter  85 | loglik -672.9216 | Δ +1.75e-03 | ΔΣ 2.31e-05
+EM iter  86 | loglik -672.9199 | Δ +1.69e-03 | ΔΣ 2.26e-05
+EM iter  87 | loglik -672.9183 | Δ +1.63e-03 | ΔΣ 2.21e-05
+EM iter  88 | loglik -672.9167 | Δ +1.57e-03 | ΔΣ 2.16e-05
+EM iter  89 | loglik -672.9152 | Δ +1.52e-03 | ΔΣ 2.12e-05
+EM iter  90 | loglik -672.9137 | Δ +1.47e-03 | ΔΣ 2.07e-05
+EM iter  91 | loglik -672.9123 | Δ +1.42e-03 | ΔΣ 2.03e-05
+EM iter  92 | loglik -672.9109 | Δ +1.38e-03 | ΔΣ 1.99e-05
+EM iter  93 | loglik -672.9096 | Δ +1.34e-03 | ΔΣ 1.96e-05
+EM iter  94 | loglik -672.9083 | Δ +1.29e-03 | ΔΣ 1.92e-05
+EM iter  95 | loglik -672.9070 | Δ +1.25e-03 | ΔΣ 1.89e-05
+EM iter  96 | loglik -672.9058 | Δ +1.22e-03 | ΔΣ 1.85e-05
+EM iter  97 | loglik -672.9046 | Δ +1.18e-03 | ΔΣ 1.82e-05
+EM iter  98 | loglik -672.9035 | Δ +1.14e-03 | ΔΣ 1.79e-05
+EM iter  99 | loglik -672.9024 | Δ +1.11e-03 | ΔΣ 1.76e-05
+EM iter 100 | loglik -672.9013 | Δ +1.08e-03 | ΔΣ 1.73e-05
+EM iter 101 | loglik -672.9002 | Δ +1.05e-03 | ΔΣ 1.70e-05
+EM iter 102 | loglik -672.8992 | Δ +1.01e-03 | ΔΣ 1.67e-05
+EM iter 103 | loglik -672.8982 | Δ +9.85e-04 | ΔΣ 1.65e-05
+EM iter 104 | loglik -672.8973 | Δ +9.57e-04 | ΔΣ 1.62e-05
+EM iter 105 | loglik -672.8964 | Δ +9.29e-04 | ΔΣ 1.60e-05
+EM iter 106 | loglik -672.8955 | Δ +9.02e-04 | ΔΣ 1.57e-05
+EM iter 107 | loglik -672.8946 | Δ +8.77e-04 | ΔΣ 1.55e-05
+EM iter 108 | loglik -672.8937 | Δ +8.52e-04 | ΔΣ 1.52e-05
+EM iter 109 | loglik -672.8929 | Δ +8.27e-04 | ΔΣ 1.50e-05
+EM iter 110 | loglik -672.8921 | Δ +8.04e-04 | ΔΣ 1.48e-05
+EM iter 111 | loglik -672.8913 | Δ +7.81e-04 | ΔΣ 1.45e-05
+EM iter 112 | loglik -672.8906 | Δ +7.59e-04 | ΔΣ 1.43e-05
+EM iter 113 | loglik -672.8898 | Δ +7.38e-04 | ΔΣ 1.41e-05
+EM iter 114 | loglik -672.8891 | Δ +7.17e-04 | ΔΣ 1.39e-05
+EM iter 115 | loglik -672.8884 | Δ +6.97e-04 | ΔΣ 1.37e-05
+EM iter 116 | loglik -672.8877 | Δ +6.78e-04 | ΔΣ 1.35e-05
+EM iter 117 | loglik -672.8871 | Δ +6.59e-04 | ΔΣ 1.33e-05
+EM iter 118 | loglik -672.8864 | Δ +6.41e-04 | ΔΣ 1.31e-05
+EM iter 119 | loglik -672.8858 | Δ +6.23e-04 | ΔΣ 1.29e-05
+EM iter 120 | loglik -672.8852 | Δ +6.06e-04 | ΔΣ 1.28e-05
+EM iter 121 | loglik -672.8846 | Δ +5.89e-04 | ΔΣ 1.26e-05
+EM iter 122 | loglik -672.8840 | Δ +5.73e-04 | ΔΣ 1.24e-05
+EM iter 123 | loglik -672.8835 | Δ +5.57e-04 | ΔΣ 1.22e-05
+EM iter 124 | loglik -672.8829 | Δ +5.42e-04 | ΔΣ 1.20e-05
+EM iter 125 | loglik -672.8824 | Δ +5.27e-04 | ΔΣ 1.19e-05
+EM iter 126 | loglik -672.8819 | Δ +5.12e-04 | ΔΣ 1.17e-05
+EM iter 127 | loglik -672.8814 | Δ +4.98e-04 | ΔΣ 1.15e-05
+EM iter 128 | loglik -672.8809 | Δ +4.84e-04 | ΔΣ 1.14e-05
+EM iter 129 | loglik -672.8804 | Δ +4.71e-04 | ΔΣ 1.12e-05
+EM iter 130 | loglik -672.8800 | Δ +4.58e-04 | ΔΣ 1.11e-05
+EM iter 131 | loglik -672.8795 | Δ +4.46e-04 | ΔΣ 1.09e-05
+EM iter 132 | loglik -672.8791 | Δ +4.34e-04 | ΔΣ 1.08e-05
+EM iter 133 | loglik -672.8787 | Δ +4.22e-04 | ΔΣ 1.06e-05
+EM iter 134 | loglik -672.8783 | Δ +4.10e-04 | ΔΣ 1.05e-05
+EM iter 135 | loglik -672.8779 | Δ +3.99e-04 | ΔΣ 1.03e-05
+EM iter 136 | loglik -672.8775 | Δ +3.88e-04 | ΔΣ 1.02e-05
+EM iter 137 | loglik -672.8771 | Δ +3.77e-04 | ΔΣ 1.00e-05
+EM iter 138 | loglik -672.8767 | Δ +3.67e-04 | ΔΣ 9.90e-06
+EM iter 139 | loglik -672.8764 | Δ +3.57e-04 | ΔΣ 9.76e-06
+EM iter 140 | loglik -672.8760 | Δ +3.47e-04 | ΔΣ 9.63e-06
+EM iter 141 | loglik -672.8757 | Δ +3.38e-04 | ΔΣ 9.49e-06
+EM iter 142 | loglik -672.8754 | Δ +3.29e-04 | ΔΣ 9.36e-06
+EM iter 143 | loglik -672.8751 | Δ +3.20e-04 | ΔΣ 9.23e-06
+EM iter 144 | loglik -672.8747 | Δ +3.11e-04 | ΔΣ 9.11e-06
+EM iter 145 | loglik -672.8744 | Δ +3.03e-04 | ΔΣ 8.98e-06
+EM iter 146 | loglik -672.8741 | Δ +2.94e-04 | ΔΣ 8.86e-06
+EM iter 147 | loglik -672.8739 | Δ +2.86e-04 | ΔΣ 8.74e-06
+EM iter 148 | loglik -672.8736 | Δ +2.79e-04 | ΔΣ 8.62e-06
+EM iter 149 | loglik -672.8733 | Δ +2.71e-04 | ΔΣ 8.50e-06
+EM iter 150 | loglik -672.8730 | Δ +2.64e-04 | ΔΣ 8.38e-06
+EM iter 151 | loglik -672.8728 | Δ +2.56e-04 | ΔΣ 8.27e-06
+EM iter 152 | loglik -672.8725 | Δ +2.49e-04 | ΔΣ 8.15e-06
+EM iter 153 | loglik -672.8723 | Δ +2.43e-04 | ΔΣ 8.04e-06
+EM iter 154 | loglik -672.8721 | Δ +2.36e-04 | ΔΣ 7.93e-06
+EM iter 155 | loglik -672.8718 | Δ +2.30e-04 | ΔΣ 7.82e-06
+EM iter 156 | loglik -672.8716 | Δ +2.23e-04 | ΔΣ 7.72e-06
+EM iter 157 | loglik -672.8714 | Δ +2.17e-04 | ΔΣ 7.61e-06
+EM iter 158 | loglik -672.8712 | Δ +2.11e-04 | ΔΣ 7.51e-06
+EM iter 159 | loglik -672.8710 | Δ +2.06e-04 | ΔΣ 7.40e-06
+EM iter 160 | loglik -672.8708 | Δ +2.00e-04 | ΔΣ 7.30e-06
+EM iter 161 | loglik -672.8706 | Δ +1.95e-04 | ΔΣ 7.20e-06
+EM iter 162 | loglik -672.8704 | Δ +1.89e-04 | ΔΣ 7.10e-06
+EM iter 163 | loglik -672.8702 | Δ +1.84e-04 | ΔΣ 7.01e-06
+EM iter 164 | loglik -672.8700 | Δ +1.79e-04 | ΔΣ 6.91e-06
+EM iter 165 | loglik -672.8699 | Δ +1.74e-04 | ΔΣ 6.82e-06
+EM iter 166 | loglik -672.8697 | Δ +1.70e-04 | ΔΣ 6.72e-06
+EM iter 167 | loglik -672.8695 | Δ +1.65e-04 | ΔΣ 6.63e-06
+EM iter 168 | loglik -672.8694 | Δ +1.60e-04 | ΔΣ 6.54e-06
+EM iter 169 | loglik -672.8692 | Δ +1.56e-04 | ΔΣ 6.45e-06
+EM iter 170 | loglik -672.8691 | Δ +1.52e-04 | ΔΣ 6.36e-06
+EM iter 171 | loglik -672.8689 | Δ +1.48e-04 | ΔΣ 6.28e-06
+EM iter 172 | loglik -672.8688 | Δ +1.44e-04 | ΔΣ 6.19e-06
+EM iter 173 | loglik -672.8686 | Δ +1.40e-04 | ΔΣ 6.11e-06
+EM iter 174 | loglik -672.8685 | Δ +1.36e-04 | ΔΣ 6.02e-06
+EM iter 175 | loglik -672.8684 | Δ +1.32e-04 | ΔΣ 5.94e-06
+EM iter 176 | loglik -672.8682 | Δ +1.29e-04 | ΔΣ 5.86e-06
+EM iter 177 | loglik -672.8681 | Δ +1.25e-04 | ΔΣ 5.78e-06
+EM iter 178 | loglik -672.8680 | Δ +1.22e-04 | ΔΣ 5.70e-06
+EM iter 179 | loglik -672.8679 | Δ +1.19e-04 | ΔΣ 5.62e-06
+EM iter 180 | loglik -672.8677 | Δ +1.15e-04 | ΔΣ 5.55e-06
+EM iter 181 | loglik -672.8676 | Δ +1.12e-04 | ΔΣ 5.47e-06
+EM iter 182 | loglik -672.8675 | Δ +1.09e-04 | ΔΣ 5.40e-06
+EM iter 183 | loglik -672.8674 | Δ +1.06e-04 | ΔΣ 5.32e-06
+EM iter 184 | loglik -672.8673 | Δ +1.03e-04 | ΔΣ 5.25e-06
+EM iter 185 | loglik -672.8672 | Δ +1.00e-04 | ΔΣ 5.18e-06
+EM iter 186 | loglik -672.8671 | Δ +9.78e-05 | ΔΣ 5.11e-06
+EM iter 187 | loglik -672.8670 | Δ +9.51e-05 | ΔΣ 5.04e-06
+EM iter 188 | loglik -672.8669 | Δ +9.25e-05 | ΔΣ 4.97e-06
+EM iter 189 | loglik -672.8668 | Δ +9.00e-05 | ΔΣ 4.90e-06
+EM iter 190 | loglik -672.8668 | Δ +8.76e-05 | ΔΣ 4.83e-06
+EM iter 191 | loglik -672.8667 | Δ +8.52e-05 | ΔΣ 4.77e-06
+EM iter 192 | loglik -672.8666 | Δ +8.29e-05 | ΔΣ 4.70e-06
+EM iter 193 | loglik -672.8665 | Δ +8.06e-05 | ΔΣ 4.64e-06
+EM iter 194 | loglik -672.8664 | Δ +7.84e-05 | ΔΣ 4.57e-06
+EM iter 195 | loglik -672.8663 | Δ +7.63e-05 | ΔΣ 4.51e-06
+EM iter 196 | loglik -672.8663 | Δ +7.42e-05 | ΔΣ 4.45e-06
+EM iter 197 | loglik -672.8662 | Δ +7.22e-05 | ΔΣ 4.39e-06
+EM iter 198 | loglik -672.8661 | Δ +7.03e-05 | ΔΣ 4.33e-06
+EM iter 199 | loglik -672.8661 | Δ +6.84e-05 | ΔΣ 4.27e-06
+EM iter 200 | loglik -672.8660 | Δ +6.65e-05 | ΔΣ 4.21e-06
+EM iter 201 | loglik -672.8659 | Δ +6.47e-05 | ΔΣ 4.15e-06
+EM iter 202 | loglik -672.8659 | Δ +6.29e-05 | ΔΣ 4.10e-06
+EM iter 203 | loglik -672.8658 | Δ +6.12e-05 | ΔΣ 4.04e-06
+EM iter 204 | loglik -672.8657 | Δ +5.96e-05 | ΔΣ 3.99e-06
+EM iter 205 | loglik -672.8657 | Δ +5.79e-05 | ΔΣ 3.93e-06
+EM iter 206 | loglik -672.8656 | Δ +5.64e-05 | ΔΣ 3.88e-06
+EM iter 207 | loglik -672.8656 | Δ +5.48e-05 | ΔΣ 3.83e-06
+EM iter 208 | loglik -672.8655 | Δ +5.34e-05 | ΔΣ 3.77e-06
+EM iter 209 | loglik -672.8655 | Δ +5.19e-05 | ΔΣ 3.72e-06
+EM iter 210 | loglik -672.8654 | Δ +5.05e-05 | ΔΣ 3.67e-06
+EM iter 211 | loglik -672.8654 | Δ +4.91e-05 | ΔΣ 3.62e-06
+EM iter 212 | loglik -672.8653 | Δ +4.78e-05 | ΔΣ 3.57e-06
+EM iter 213 | loglik -672.8653 | Δ +4.65e-05 | ΔΣ 3.52e-06
+EM iter 214 | loglik -672.8652 | Δ +4.52e-05 | ΔΣ 3.48e-06
+EM iter 215 | loglik -672.8652 | Δ +4.40e-05 | ΔΣ 3.43e-06
+EM iter 216 | loglik -672.8651 | Δ +4.28e-05 | ΔΣ 3.38e-06
+EM iter 217 | loglik -672.8651 | Δ +4.16e-05 | ΔΣ 3.33e-06
+EM iter 218 | loglik -672.8651 | Δ +4.05e-05 | ΔΣ 3.29e-06
+EM iter 219 | loglik -672.8650 | Δ +3.94e-05 | ΔΣ 3.24e-06
+EM iter 220 | loglik -672.8650 | Δ +3.83e-05 | ΔΣ 3.20e-06
+EM iter 221 | loglik -672.8649 | Δ +3.73e-05 | ΔΣ 3.16e-06
+EM iter 222 | loglik -672.8649 | Δ +3.63e-05 | ΔΣ 3.11e-06
+EM iter 223 | loglik -672.8649 | Δ +3.53e-05 | ΔΣ 3.07e-06
+EM iter 224 | loglik -672.8648 | Δ +3.44e-05 | ΔΣ 3.03e-06
+EM iter 225 | loglik -672.8648 | Δ +3.34e-05 | ΔΣ 2.99e-06
+EM iter 226 | loglik -672.8648 | Δ +3.25e-05 | ΔΣ 2.95e-06
+EM iter 227 | loglik -672.8647 | Δ +3.16e-05 | ΔΣ 2.91e-06
+EM iter 228 | loglik -672.8647 | Δ +3.08e-05 | ΔΣ 2.87e-06
+EM iter 229 | loglik -672.8647 | Δ +2.99e-05 | ΔΣ 2.83e-06
+EM iter 230 | loglik -672.8647 | Δ +2.91e-05 | ΔΣ 2.79e-06
+EM iter 231 | loglik -672.8646 | Δ +2.83e-05 | ΔΣ 2.75e-06
+EM iter 232 | loglik -672.8646 | Δ +2.76e-05 | ΔΣ 2.71e-06
+EM iter 233 | loglik -672.8646 | Δ +2.68e-05 | ΔΣ 2.68e-06
+EM iter 234 | loglik -672.8645 | Δ +2.61e-05 | ΔΣ 2.64e-06
+EM iter 235 | loglik -672.8645 | Δ +2.54e-05 | ΔΣ 2.60e-06
+EM iter 236 | loglik -672.8645 | Δ +2.47e-05 | ΔΣ 2.57e-06
+EM iter 237 | loglik -672.8645 | Δ +2.40e-05 | ΔΣ 2.53e-06
+EM iter 238 | loglik -672.8644 | Δ +2.34e-05 | ΔΣ 2.50e-06
+EM iter 239 | loglik -672.8644 | Δ +2.27e-05 | ΔΣ 2.46e-06
+EM iter 240 | loglik -672.8644 | Δ +2.21e-05 | ΔΣ 2.43e-06
+EM iter 241 | loglik -672.8644 | Δ +2.15e-05 | ΔΣ 2.40e-06
+EM iter 242 | loglik -672.8644 | Δ +2.09e-05 | ΔΣ 2.36e-06
+EM iter 243 | loglik -672.8643 | Δ +2.04e-05 | ΔΣ 2.33e-06
+EM iter 244 | loglik -672.8643 | Δ +1.98e-05 | ΔΣ 2.30e-06
+EM iter 245 | loglik -672.8643 | Δ +1.93e-05 | ΔΣ 2.27e-06
+EM iter 246 | loglik -672.8643 | Δ +1.88e-05 | ΔΣ 2.24e-06
+EM iter 247 | loglik -672.8643 | Δ +1.82e-05 | ΔΣ 2.21e-06
+EM iter 248 | loglik -672.8642 | Δ +1.77e-05 | ΔΣ 2.18e-06
+EM iter 249 | loglik -672.8642 | Δ +1.73e-05 | ΔΣ 2.15e-06
+EM iter 250 | loglik -672.8642 | Δ +1.68e-05 | ΔΣ 2.12e-06
+EM iter 251 | loglik -672.8642 | Δ +1.63e-05 | ΔΣ 2.09e-06
+EM iter 252 | loglik -672.8642 | Δ +1.59e-05 | ΔΣ 2.06e-06
+EM iter 253 | loglik -672.8642 | Δ +1.55e-05 | ΔΣ 2.03e-06
+EM iter 254 | loglik -672.8642 | Δ +1.50e-05 | ΔΣ 2.01e-06
+EM iter 255 | loglik -672.8641 | Δ +1.46e-05 | ΔΣ 1.98e-06
+EM iter 256 | loglik -672.8641 | Δ +1.42e-05 | ΔΣ 1.95e-06
+EM iter 257 | loglik -672.8641 | Δ +1.39e-05 | ΔΣ 1.92e-06
+EM iter 258 | loglik -672.8641 | Δ +1.35e-05 | ΔΣ 1.90e-06
+EM iter 259 | loglik -672.8641 | Δ +1.31e-05 | ΔΣ 1.87e-06
+EM iter 260 | loglik -672.8641 | Δ +1.28e-05 | ΔΣ 1.85e-06
+EM iter 261 | loglik -672.8641 | Δ +1.24e-05 | ΔΣ 1.82e-06
+EM iter 262 | loglik -672.8640 | Δ +1.21e-05 | ΔΣ 1.80e-06
+EM iter 263 | loglik -672.8640 | Δ +1.17e-05 | ΔΣ 1.77e-06
+EM iter 264 | loglik -672.8640 | Δ +1.14e-05 | ΔΣ 1.75e-06
+EM iter 265 | loglik -672.8640 | Δ +1.11e-05 | ΔΣ 1.72e-06
+EM iter 266 | loglik -672.8640 | Δ +1.08e-05 | ΔΣ 1.70e-06
+EM iter 267 | loglik -672.8640 | Δ +1.05e-05 | ΔΣ 1.68e-06
+EM iter 268 | loglik -672.8640 | Δ +1.02e-05 | ΔΣ 1.65e-06
+EM iter 269 | loglik -672.8640 | Δ +9.96e-06 | ΔΣ 1.63e-06
+EM iter 270 | loglik -672.8640 | Δ +9.69e-06 | ΔΣ 1.61e-06
+EM iter 271 | loglik -672.8639 | Δ +9.42e-06 | ΔΣ 1.59e-06
+EM iter 272 | loglik -672.8639 | Δ +9.17e-06 | ΔΣ 1.57e-06
+EM iter 273 | loglik -672.8639 | Δ +8.92e-06 | ΔΣ 1.54e-06
+EM iter 274 | loglik -672.8639 | Δ +8.68e-06 | ΔΣ 1.52e-06
+EM iter 275 | loglik -672.8639 | Δ +8.44e-06 | ΔΣ 1.50e-06
+EM iter 276 | loglik -672.8639 | Δ +8.21e-06 | ΔΣ 1.48e-06
+EM iter 277 | loglik -672.8639 | Δ +7.99e-06 | ΔΣ 1.46e-06
+EM iter 278 | loglik -672.8639 | Δ +7.77e-06 | ΔΣ 1.44e-06
+EM iter 279 | loglik -672.8639 | Δ +7.56e-06 | ΔΣ 1.42e-06
+EM iter 280 | loglik -672.8639 | Δ +7.36e-06 | ΔΣ 1.40e-06
+EM iter 281 | loglik -672.8639 | Δ +7.16e-06 | ΔΣ 1.38e-06
+EM iter 282 | loglik -672.8639 | Δ +6.96e-06 | ΔΣ 1.36e-06
+EM iter 283 | loglik -672.8639 | Δ +6.77e-06 | ΔΣ 1.35e-06
+EM iter 284 | loglik -672.8638 | Δ +6.59e-06 | ΔΣ 1.33e-06
+EM iter 285 | loglik -672.8638 | Δ +6.41e-06 | ΔΣ 1.31e-06
+EM iter 286 | loglik -672.8638 | Δ +6.24e-06 | ΔΣ 1.29e-06
+EM iter 287 | loglik -672.8638 | Δ +6.07e-06 | ΔΣ 1.27e-06
+EM iter 288 | loglik -672.8638 | Δ +5.90e-06 | ΔΣ 1.26e-06
+EM iter 289 | loglik -672.8638 | Δ +5.74e-06 | ΔΣ 1.24e-06
+EM iter 290 | loglik -672.8638 | Δ +5.59e-06 | ΔΣ 1.22e-06
+EM iter 291 | loglik -672.8638 | Δ +5.44e-06 | ΔΣ 1.21e-06
+EM iter 292 | loglik -672.8638 | Δ +5.29e-06 | ΔΣ 1.19e-06
+EM iter 293 | loglik -672.8638 | Δ +5.15e-06 | ΔΣ 1.17e-06
+EM iter 294 | loglik -672.8638 | Δ +5.01e-06 | ΔΣ 1.16e-06
+EM iter 295 | loglik -672.8638 | Δ +4.87e-06 | ΔΣ 1.14e-06
+EM iter 296 | loglik -672.8638 | Δ +4.74e-06 | ΔΣ 1.13e-06
+EM iter 297 | loglik -672.8638 | Δ +4.61e-06 | ΔΣ 1.11e-06
+EM iter 298 | loglik -672.8638 | Δ +4.48e-06 | ΔΣ 1.09e-06
+EM iter 299 | loglik -672.8638 | Δ +4.36e-06 | ΔΣ 1.08e-06
+EM iter 300 | loglik -672.8638 | Δ +4.24e-06 | ΔΣ 1.07e-06
+EM iter 301 | loglik -672.8638 | Δ +4.13e-06 | ΔΣ 1.05e-06
+EM iter 302 | loglik -672.8638 | Δ +4.02e-06 | ΔΣ 1.04e-06
+EM iter 303 | loglik -672.8638 | Δ +3.91e-06 | ΔΣ 1.02e-06
+EM iter 304 | loglik -672.8637 | Δ +3.80e-06 | ΔΣ 1.01e-06
+EM iter 305 | loglik -672.8637 | Δ +3.70e-06 | ΔΣ 9.94e-07
+EM converged after 305 iterations (ΔΣ/‖Σ‖ = 9.94e-07).
+  EM: 305 iterations, converged=True
+  Eigenvalue spectrum (top 10):
+    λ_ 1 = 43.3542  (cumulative: 0.749)
+    λ_ 2 = 3.8949  (cumulative: 0.816)
+    λ_ 3 = 2.7906  (cumulative: 0.864)
+    λ_ 4 = 1.1114  (cumulative: 0.884)
+    λ_ 5 = 0.8916  (cumulative: 0.899)
+    λ_ 6 = 0.7621  (cumulative: 0.912)
+    λ_ 7 = 0.6910  (cumulative: 0.924)
+    λ_ 8 = 0.5928  (cumulative: 0.934)
+    λ_ 9 = 0.4418  (cumulative: 0.942)
+    λ_10 = 0.3552  (cumulative: 0.948)
+  90% variance explained by 6 components
+  95% variance explained by 11 components
+  99% variance explained by 27 components
+  Saved to ~/benchselect-runs/canonical-20261020/out/cov/mteb.cov.npz
+
+============================================================
+  merged
+============================================================
+  Shape: 118 models x 114 tasks
+  Missing: 9259/13452 (68.8%)
+  observed=31.2%: using regularized EM settings
+EM init  | missing 68.8% | loglik -5335.9001
+EM iter   1 | loglik 1185.8386 | Δ +6.52e+03 | ΔΣ 6.10e-01
+EM iter   2 | loglik 1518.7790 | Δ +3.33e+02 | ΔΣ 2.42e-01
+EM iter   3 | loglik 1673.7761 | Δ +1.55e+02 | ΔΣ 8.39e-02
+EM iter   4 | loglik 1773.7476 | Δ +1.00e+02 | ΔΣ 4.53e-02
+EM iter   5 | loglik 1848.3818 | Δ +7.46e+01 | ΔΣ 3.60e-02
+EM iter   6 | loglik 1908.9910 | Δ +6.06e+01 | ΔΣ 3.18e-02
+EM iter   7 | loglik 1960.9941 | Δ +5.20e+01 | ΔΣ 2.84e-02
+EM iter   8 | loglik 2007.2425 | Δ +4.62e+01 | ΔΣ 2.53e-02
+EM iter   9 | loglik 2049.1633 | Δ +4.19e+01 | ΔΣ 2.25e-02
+EM iter  10 | loglik 2087.5763 | Δ +3.84e+01 | ΔΣ 1.99e-02
+EM iter  11 | loglik 2123.1133 | Δ +3.55e+01 | ΔΣ 1.76e-02
+EM iter  12 | loglik 2156.0057 | Δ +3.29e+01 | ΔΣ 1.56e-02
+EM iter  13 | loglik 2186.5896 | Δ +3.06e+01 | ΔΣ 1.37e-02
+EM iter  14 | loglik 2214.9733 | Δ +2.84e+01 | ΔΣ 1.21e-02
+EM iter  15 | loglik 2241.4197 | Δ +2.64e+01 | ΔΣ 1.08e-02
+EM iter  16 | loglik 2266.3687 | Δ +2.49e+01 | ΔΣ 9.65e-03
+EM iter  17 | loglik 2290.0402 | Δ +2.37e+01 | ΔΣ 8.68e-03
+EM iter  18 | loglik 2312.5526 | Δ +2.25e+01 | ΔΣ 7.88e-03
+EM iter  19 | loglik 2333.9455 | Δ +2.14e+01 | ΔΣ 7.20e-03
+EM iter  20 | loglik 2354.2624 | Δ +2.03e+01 | ΔΣ 6.61e-03
+EM iter  21 | loglik 2373.5893 | Δ +1.93e+01 | ΔΣ 6.08e-03
+EM iter  22 | loglik 2391.9035 | Δ +1.83e+01 | ΔΣ 5.61e-03
+EM iter  23 | loglik 2409.2119 | Δ +1.73e+01 | ΔΣ 5.19e-03
+EM iter  24 | loglik 2425.5572 | Δ +1.63e+01 | ΔΣ 4.80e-03
+EM iter  25 | loglik 2440.9982 | Δ +1.54e+01 | ΔΣ 4.44e-03
+EM iter  26 | loglik 2455.6607 | Δ +1.47e+01 | ΔΣ 4.10e-03
+EM iter  27 | loglik 2469.5846 | Δ +1.39e+01 | ΔΣ 3.79e-03
+EM iter  28 | loglik 2482.7266 | Δ +1.31e+01 | ΔΣ 3.50e-03
+EM iter  29 | loglik 2495.1182 | Δ +1.24e+01 | ΔΣ 3.25e-03
+EM iter  30 | loglik 2506.7526 | Δ +1.16e+01 | ΔΣ 3.02e-03
+EM iter  31 | loglik 2517.6661 | Δ +1.09e+01 | ΔΣ 2.81e-03
+EM iter  32 | loglik 2528.0311 | Δ +1.04e+01 | ΔΣ 2.64e-03
+EM iter  33 | loglik 2537.9188 | Δ +9.89e+00 | ΔΣ 2.51e-03
+EM iter  34 | loglik 2547.3510 | Δ +9.43e+00 | ΔΣ 2.42e-03
+EM iter  35 | loglik 2556.3412 | Δ +8.99e+00 | ΔΣ 2.35e-03
+EM iter  36 | loglik 2564.8969 | Δ +8.56e+00 | ΔΣ 2.30e-03
+EM iter  37 | loglik 2573.0085 | Δ +8.11e+00 | ΔΣ 2.27e-03
+EM iter  38 | loglik 2580.6532 | Δ +7.64e+00 | ΔΣ 2.25e-03
+EM iter  39 | loglik 2587.8777 | Δ +7.22e+00 | ΔΣ 2.23e-03
+EM iter  40 | loglik 2594.7264 | Δ +6.85e+00 | ΔΣ 2.22e-03
+EM iter  41 | loglik 2601.2429 | Δ +6.52e+00 | ΔΣ 2.21e-03
+EM iter  42 | loglik 2607.4184 | Δ +6.18e+00 | ΔΣ 2.19e-03
+EM iter  43 | loglik 2613.2874 | Δ +5.87e+00 | ΔΣ 2.17e-03
+EM iter  44 | loglik 2618.8928 | Δ +5.61e+00 | ΔΣ 2.15e-03
+EM iter  45 | loglik 2624.2403 | Δ +5.35e+00 | ΔΣ 2.12e-03
+EM iter  46 | loglik 2629.3271 | Δ +5.09e+00 | ΔΣ 2.08e-03
+EM iter  47 | loglik 2634.1604 | Δ +4.83e+00 | ΔΣ 2.05e-03
+EM iter  48 | loglik 2638.7545 | Δ +4.59e+00 | ΔΣ 2.01e-03
+EM iter  49 | loglik 2643.1206 | Δ +4.37e+00 | ΔΣ 1.96e-03
+EM iter  50 | loglik 2647.2793 | Δ +4.16e+00 | ΔΣ 1.92e-03
+EM iter  51 | loglik 2651.2288 | Δ +3.95e+00 | ΔΣ 1.87e-03
+EM iter  52 | loglik 2655.0337 | Δ +3.80e+00 | ΔΣ 1.81e-03
+EM iter  53 | loglik 2658.7307 | Δ +3.70e+00 | ΔΣ 1.76e-03
+EM iter  54 | loglik 2662.3412 | Δ +3.61e+00 | ΔΣ 1.70e-03
+EM iter  55 | loglik 2665.8817 | Δ +3.54e+00 | ΔΣ 1.65e-03
+EM iter  56 | loglik 2669.3465 | Δ +3.46e+00 | ΔΣ 1.60e-03
+EM iter  57 | loglik 2672.7414 | Δ +3.39e+00 | ΔΣ 1.55e-03
+EM iter  58 | loglik 2676.0743 | Δ +3.33e+00 | ΔΣ 1.50e-03
+EM iter  59 | loglik 2679.3442 | Δ +3.27e+00 | ΔΣ 1.45e-03
+EM iter  60 | loglik 2682.5396 | Δ +3.20e+00 | ΔΣ 1.41e-03
+EM iter  61 | loglik 2685.6513 | Δ +3.11e+00 | ΔΣ 1.37e-03
+EM iter  62 | loglik 2688.6804 | Δ +3.03e+00 | ΔΣ 1.33e-03
+EM iter  63 | loglik 2691.6109 | Δ +2.93e+00 | ΔΣ 1.29e-03
+EM iter  64 | loglik 2694.4264 | Δ +2.82e+00 | ΔΣ 1.26e-03
+EM iter  65 | loglik 2697.1180 | Δ +2.69e+00 | ΔΣ 1.23e-03
+EM iter  66 | loglik 2699.6921 | Δ +2.57e+00 | ΔΣ 1.21e-03
+EM iter  67 | loglik 2702.1586 | Δ +2.47e+00 | ΔΣ 1.19e-03
+EM iter  68 | loglik 2704.5284 | Δ +2.37e+00 | ΔΣ 1.17e-03
+EM iter  69 | loglik 2706.8281 | Δ +2.30e+00 | ΔΣ 1.15e-03
+EM iter  70 | loglik 2709.0730 | Δ +2.24e+00 | ΔΣ 1.14e-03
+EM iter  71 | loglik 2711.2700 | Δ +2.20e+00 | ΔΣ 1.12e-03
+EM iter  72 | loglik 2713.4200 | Δ +2.15e+00 | ΔΣ 1.11e-03
+EM iter  73 | loglik 2715.5297 | Δ +2.11e+00 | ΔΣ 1.10e-03
+EM iter  74 | loglik 2717.5989 | Δ +2.07e+00 | ΔΣ 1.09e-03
+EM iter  75 | loglik 2719.6273 | Δ +2.03e+00 | ΔΣ 1.07e-03
+EM iter  76 | loglik 2721.6146 | Δ +1.99e+00 | ΔΣ 1.06e-03
+EM iter  77 | loglik 2723.5542 | Δ +1.94e+00 | ΔΣ 1.05e-03
+EM iter  78 | loglik 2725.4452 | Δ +1.89e+00 | ΔΣ 1.04e-03
+EM iter  79 | loglik 2727.2957 | Δ +1.85e+00 | ΔΣ 1.03e-03
+EM iter  80 | loglik 2729.1032 | Δ +1.81e+00 | ΔΣ 1.02e-03
+EM iter  81 | loglik 2730.8640 | Δ +1.76e+00 | ΔΣ 1.01e-03
+EM iter  82 | loglik 2732.5731 | Δ +1.71e+00 | ΔΣ 1.00e-03
+EM iter  83 | loglik 2734.2238 | Δ +1.65e+00 | ΔΣ 9.95e-04
+EM iter  84 | loglik 2735.8042 | Δ +1.58e+00 | ΔΣ 9.87e-04
+EM iter  85 | loglik 2737.2999 | Δ +1.50e+00 | ΔΣ 9.80e-04
+EM iter  86 | loglik 2738.7147 | Δ +1.41e+00 | ΔΣ 9.75e-04
+EM iter  87 | loglik 2740.0512 | Δ +1.34e+00 | ΔΣ 9.71e-04
+EM iter  88 | loglik 2741.3183 | Δ +1.27e+00 | ΔΣ 9.68e-04
+EM iter  89 | loglik 2742.5280 | Δ +1.21e+00 | ΔΣ 9.65e-04
+EM iter  90 | loglik 2743.6917 | Δ +1.16e+00 | ΔΣ 9.61e-04
+EM iter  91 | loglik 2744.8191 | Δ +1.13e+00 | ΔΣ 9.57e-04
+EM iter  92 | loglik 2745.9174 | Δ +1.10e+00 | ΔΣ 9.52e-04
+EM iter  93 | loglik 2746.9920 | Δ +1.07e+00 | ΔΣ 9.46e-04
+EM iter  94 | loglik 2748.0469 | Δ +1.05e+00 | ΔΣ 9.40e-04
+EM iter  95 | loglik 2749.0848 | Δ +1.04e+00 | ΔΣ 9.33e-04
+EM iter  96 | loglik 2750.1028 | Δ +1.02e+00 | ΔΣ 9.26e-04
+EM iter  97 | loglik 2751.1061 | Δ +1.00e+00 | ΔΣ 9.20e-04
+EM iter  98 | loglik 2752.0973 | Δ +9.91e-01 | ΔΣ 9.13e-04
+EM iter  99 | loglik 2753.0773 | Δ +9.80e-01 | ΔΣ 9.07e-04
+EM iter 100 | loglik 2754.0467 | Δ +9.69e-01 | ΔΣ 9.00e-04
+EM iter 101 | loglik 2755.0006 | Δ +9.54e-01 | ΔΣ 8.93e-04
+EM iter 102 | loglik 2755.9445 | Δ +9.44e-01 | ΔΣ 8.87e-04
+EM iter 103 | loglik 2756.8791 | Δ +9.35e-01 | ΔΣ 8.81e-04
+EM iter 104 | loglik 2757.8047 | Δ +9.26e-01 | ΔΣ 8.75e-04
+EM iter 105 | loglik 2758.7219 | Δ +9.17e-01 | ΔΣ 8.69e-04
+EM iter 106 | loglik 2759.6310 | Δ +9.09e-01 | ΔΣ 8.63e-04
+EM iter 107 | loglik 2760.5325 | Δ +9.01e-01 | ΔΣ 8.57e-04
+EM iter 108 | loglik 2761.4267 | Δ +8.94e-01 | ΔΣ 8.52e-04
+EM iter 109 | loglik 2762.3141 | Δ +8.87e-01 | ΔΣ 8.46e-04
+EM iter 110 | loglik 2763.1949 | Δ +8.81e-01 | ΔΣ 8.41e-04
+EM iter 111 | loglik 2764.0694 | Δ +8.75e-01 | ΔΣ 8.36e-04
+EM iter 112 | loglik 2764.9380 | Δ +8.69e-01 | ΔΣ 8.31e-04
+EM iter 113 | loglik 2765.8008 | Δ +8.63e-01 | ΔΣ 8.26e-04
+EM iter 114 | loglik 2766.6581 | Δ +8.57e-01 | ΔΣ 8.21e-04
+EM iter 115 | loglik 2767.5101 | Δ +8.52e-01 | ΔΣ 8.16e-04
+EM iter 116 | loglik 2768.3570 | Δ +8.47e-01 | ΔΣ 8.11e-04
+EM iter 117 | loglik 2769.1990 | Δ +8.42e-01 | ΔΣ 8.07e-04
+EM iter 118 | loglik 2770.0362 | Δ +8.37e-01 | ΔΣ 8.02e-04
+EM iter 119 | loglik 2770.8688 | Δ +8.33e-01 | ΔΣ 7.98e-04
+EM iter 120 | loglik 2771.6969 | Δ +8.28e-01 | ΔΣ 7.94e-04
+EM iter 121 | loglik 2772.5207 | Δ +8.24e-01 | ΔΣ 7.90e-04
+EM iter 122 | loglik 2773.3402 | Δ +8.20e-01 | ΔΣ 7.86e-04
+EM iter 123 | loglik 2774.1557 | Δ +8.15e-01 | ΔΣ 7.82e-04
+EM iter 124 | loglik 2774.9671 | Δ +8.11e-01 | ΔΣ 7.78e-04
+EM iter 125 | loglik 2775.7745 | Δ +8.07e-01 | ΔΣ 7.74e-04
+EM iter 126 | loglik 2776.5782 | Δ +8.04e-01 | ΔΣ 7.71e-04
+EM iter 127 | loglik 2777.3782 | Δ +8.00e-01 | ΔΣ 7.67e-04
+EM iter 128 | loglik 2778.1745 | Δ +7.96e-01 | ΔΣ 7.64e-04
+EM iter 129 | loglik 2778.9672 | Δ +7.93e-01 | ΔΣ 7.60e-04
+EM iter 130 | loglik 2779.7564 | Δ +7.89e-01 | ΔΣ 7.57e-04
+EM iter 131 | loglik 2780.5422 | Δ +7.86e-01 | ΔΣ 7.54e-04
+EM iter 132 | loglik 2781.3247 | Δ +7.82e-01 | ΔΣ 7.51e-04
+EM iter 133 | loglik 2782.1038 | Δ +7.79e-01 | ΔΣ 7.48e-04
+EM iter 134 | loglik 2782.8797 | Δ +7.76e-01 | ΔΣ 7.45e-04
+EM iter 135 | loglik 2783.6525 | Δ +7.73e-01 | ΔΣ 7.42e-04
+EM iter 136 | loglik 2784.4220 | Δ +7.70e-01 | ΔΣ 7.40e-04
+EM iter 137 | loglik 2785.1885 | Δ +7.66e-01 | ΔΣ 7.37e-04
+EM iter 138 | loglik 2785.9519 | Δ +7.63e-01 | ΔΣ 7.34e-04
+EM iter 139 | loglik 2786.7123 | Δ +7.60e-01 | ΔΣ 7.32e-04
+EM iter 140 | loglik 2787.4697 | Δ +7.57e-01 | ΔΣ 7.29e-04
+EM iter 141 | loglik 2788.2242 | Δ +7.54e-01 | ΔΣ 7.27e-04
+EM iter 142 | loglik 2788.9757 | Δ +7.52e-01 | ΔΣ 7.25e-04
+EM iter 143 | loglik 2789.7244 | Δ +7.49e-01 | ΔΣ 7.22e-04
+EM iter 144 | loglik 2790.4703 | Δ +7.46e-01 | ΔΣ 7.20e-04
+EM iter 145 | loglik 2791.2133 | Δ +7.43e-01 | ΔΣ 7.18e-04
+EM iter 146 | loglik 2791.9535 | Δ +7.40e-01 | ΔΣ 7.16e-04
+EM iter 147 | loglik 2792.6910 | Δ +7.37e-01 | ΔΣ 7.13e-04
+EM iter 148 | loglik 2793.4257 | Δ +7.35e-01 | ΔΣ 7.11e-04
+EM iter 149 | loglik 2794.1576 | Δ +7.32e-01 | ΔΣ 7.09e-04
+EM iter 150 | loglik 2794.8869 | Δ +7.29e-01 | ΔΣ 7.07e-04
+EM iter 151 | loglik 2795.6135 | Δ +7.27e-01 | ΔΣ 7.05e-04
+EM iter 152 | loglik 2796.3375 | Δ +7.24e-01 | ΔΣ 7.03e-04
+EM iter 153 | loglik 2797.0588 | Δ +7.21e-01 | ΔΣ 7.01e-04
+EM iter 154 | loglik 2797.7774 | Δ +7.19e-01 | ΔΣ 6.99e-04
+EM iter 155 | loglik 2798.4935 | Δ +7.16e-01 | ΔΣ 6.97e-04
+EM iter 156 | loglik 2799.2070 | Δ +7.13e-01 | ΔΣ 6.95e-04
+EM iter 157 | loglik 2799.9179 | Δ +7.11e-01 | ΔΣ 6.93e-04
+EM iter 158 | loglik 2800.6262 | Δ +7.08e-01 | ΔΣ 6.90e-04
+EM iter 159 | loglik 2801.3320 | Δ +7.06e-01 | ΔΣ 6.88e-04
+EM iter 160 | loglik 2802.0353 | Δ +7.03e-01 | ΔΣ 6.86e-04
+EM iter 161 | loglik 2802.7360 | Δ +7.01e-01 | ΔΣ 6.84e-04
+EM iter 162 | loglik 2803.4343 | Δ +6.98e-01 | ΔΣ 6.82e-04
+EM iter 163 | loglik 2804.1301 | Δ +6.96e-01 | ΔΣ 6.80e-04
+EM iter 164 | loglik 2804.8233 | Δ +6.93e-01 | ΔΣ 6.78e-04
+EM iter 165 | loglik 2805.5142 | Δ +6.91e-01 | ΔΣ 6.75e-04
+EM iter 166 | loglik 2806.2025 | Δ +6.88e-01 | ΔΣ 6.73e-04
+EM iter 167 | loglik 2806.8885 | Δ +6.86e-01 | ΔΣ 6.71e-04
+EM iter 168 | loglik 2807.5719 | Δ +6.83e-01 | ΔΣ 6.68e-04
+EM iter 169 | loglik 2808.2529 | Δ +6.81e-01 | ΔΣ 6.66e-04
+EM iter 170 | loglik 2808.9312 | Δ +6.78e-01 | ΔΣ 6.64e-04
+EM iter 171 | loglik 2809.6072 | Δ +6.76e-01 | ΔΣ 6.61e-04
+EM iter 172 | loglik 2810.2807 | Δ +6.74e-01 | ΔΣ 6.59e-04
+EM iter 173 | loglik 2810.9519 | Δ +6.71e-01 | ΔΣ 6.56e-04
+EM iter 174 | loglik 2811.6206 | Δ +6.69e-01 | ΔΣ 6.54e-04
+EM iter 175 | loglik 2812.2869 | Δ +6.66e-01 | ΔΣ 6.51e-04
+EM iter 176 | loglik 2812.9508 | Δ +6.64e-01 | ΔΣ 6.49e-04
+EM iter 177 | loglik 2813.6123 | Δ +6.62e-01 | ΔΣ 6.46e-04
+EM iter 178 | loglik 2814.2714 | Δ +6.59e-01 | ΔΣ 6.43e-04
+EM iter 179 | loglik 2814.9281 | Δ +6.57e-01 | ΔΣ 6.41e-04
+EM iter 180 | loglik 2815.5824 | Δ +6.54e-01 | ΔΣ 6.38e-04
+EM iter 181 | loglik 2816.2343 | Δ +6.52e-01 | ΔΣ 6.35e-04
+EM iter 182 | loglik 2816.8837 | Δ +6.49e-01 | ΔΣ 6.32e-04
+EM iter 183 | loglik 2817.5307 | Δ +6.47e-01 | ΔΣ 6.29e-04
+EM iter 184 | loglik 2818.1752 | Δ +6.45e-01 | ΔΣ 6.26e-04
+EM iter 185 | loglik 2818.8173 | Δ +6.42e-01 | ΔΣ 6.23e-04
+EM iter 186 | loglik 2819.4569 | Δ +6.40e-01 | ΔΣ 6.20e-04
+EM iter 187 | loglik 2820.0940 | Δ +6.37e-01 | ΔΣ 6.17e-04
+EM iter 188 | loglik 2820.7286 | Δ +6.35e-01 | ΔΣ 6.14e-04
+EM iter 189 | loglik 2821.3607 | Δ +6.32e-01 | ΔΣ 6.11e-04
+EM iter 190 | loglik 2821.9903 | Δ +6.30e-01 | ΔΣ 6.08e-04
+EM iter 191 | loglik 2822.6172 | Δ +6.27e-01 | ΔΣ 6.05e-04
+EM iter 192 | loglik 2823.2416 | Δ +6.24e-01 | ΔΣ 6.02e-04
+EM iter 193 | loglik 2823.8634 | Δ +6.22e-01 | ΔΣ 5.99e-04
+EM iter 194 | loglik 2824.4825 | Δ +6.19e-01 | ΔΣ 5.96e-04
+EM iter 195 | loglik 2825.0989 | Δ +6.16e-01 | ΔΣ 5.92e-04
+EM iter 196 | loglik 2825.7127 | Δ +6.14e-01 | ΔΣ 5.89e-04
+EM iter 197 | loglik 2826.3237 | Δ +6.11e-01 | ΔΣ 5.86e-04
+EM iter 198 | loglik 2826.9320 | Δ +6.08e-01 | ΔΣ 5.83e-04
+EM iter 199 | loglik 2827.5375 | Δ +6.05e-01 | ΔΣ 5.80e-04
+EM iter 200 | loglik 2828.1402 | Δ +6.03e-01 | ΔΣ 5.76e-04
+EM iter 201 | loglik 2828.7400 | Δ +6.00e-01 | ΔΣ 5.73e-04
+EM iter 202 | loglik 2829.3369 | Δ +5.97e-01 | ΔΣ 5.70e-04
+EM iter 203 | loglik 2829.9308 | Δ +5.94e-01 | ΔΣ 5.67e-04
+EM iter 204 | loglik 2830.5218 | Δ +5.91e-01 | ΔΣ 5.63e-04
+EM iter 205 | loglik 2831.1098 | Δ +5.88e-01 | ΔΣ 5.60e-04
+EM iter 206 | loglik 2831.6947 | Δ +5.85e-01 | ΔΣ 5.57e-04
+EM iter 207 | loglik 2832.2766 | Δ +5.82e-01 | ΔΣ 5.53e-04
+EM iter 208 | loglik 2832.8553 | Δ +5.79e-01 | ΔΣ 5.50e-04
+EM iter 209 | loglik 2833.4308 | Δ +5.76e-01 | ΔΣ 5.47e-04
+EM iter 210 | loglik 2834.0030 | Δ +5.72e-01 | ΔΣ 5.44e-04
+EM iter 211 | loglik 2834.5721 | Δ +5.69e-01 | ΔΣ 5.41e-04
+EM iter 212 | loglik 2835.1378 | Δ +5.66e-01 | ΔΣ 5.37e-04
+EM iter 213 | loglik 2835.7001 | Δ +5.62e-01 | ΔΣ 5.34e-04
+EM iter 214 | loglik 2836.2591 | Δ +5.59e-01 | ΔΣ 5.31e-04
+EM iter 215 | loglik 2836.8146 | Δ +5.56e-01 | ΔΣ 5.28e-04
+EM iter 216 | loglik 2837.3667 | Δ +5.52e-01 | ΔΣ 5.25e-04
+EM iter 217 | loglik 2837.9152 | Δ +5.49e-01 | ΔΣ 5.22e-04
+EM iter 218 | loglik 2838.4602 | Δ +5.45e-01 | ΔΣ 5.19e-04
+EM iter 219 | loglik 2839.0016 | Δ +5.41e-01 | ΔΣ 5.16e-04
+EM iter 220 | loglik 2839.5393 | Δ +5.38e-01 | ΔΣ 5.13e-04
+EM iter 221 | loglik 2840.0734 | Δ +5.34e-01 | ΔΣ 5.10e-04
+EM iter 222 | loglik 2840.6038 | Δ +5.30e-01 | ΔΣ 5.07e-04
+EM iter 223 | loglik 2841.1305 | Δ +5.27e-01 | ΔΣ 5.04e-04
+EM iter 224 | loglik 2841.6533 | Δ +5.23e-01 | ΔΣ 5.01e-04
+EM iter 225 | loglik 2842.1724 | Δ +5.19e-01 | ΔΣ 4.99e-04
+EM converged after 225 iterations (ΔΣ/‖Σ‖ = 4.99e-04).
+  EM: 225 iterations, converged=True
+  Eigenvalue spectrum (top 10):
+    λ_ 1 = 61.2768  (cumulative: 0.470)
+    λ_ 2 = 20.6702  (cumulative: 0.628)
+    λ_ 3 = 18.5502  (cumulative: 0.770)
+    λ_ 4 = 10.7390  (cumulative: 0.852)
+    λ_ 5 = 4.7753  (cumulative: 0.889)
+    λ_ 6 = 2.5489  (cumulative: 0.909)
+    λ_ 7 = 1.8680  (cumulative: 0.923)
+    λ_ 8 = 1.4876  (cumulative: 0.934)
+    λ_ 9 = 1.2206  (cumulative: 0.944)
+    λ_10 = 1.0172  (cumulative: 0.951)
+  90% variance explained by 6 components
+  95% variance explained by 10 components
+  99% variance explained by 20 components
+  Saved to ~/benchselect-runs/canonical-20261020/out/cov/merged.cov.npz
+
+
+# finished 2026-10-20T02:47:03Z  exit=0  status=ok

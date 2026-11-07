@@ -1,0 +1,8 @@
+# job      mi_cv_selections
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets mmlu mteb merged --selections-from-logs
+# started  2026-10-20T02:48:19Z on 4090-1
+
+
+All selection logs saved to ~/benchselect-runs/canonical-20261020/out/logs/greedy_mi_cv_selections_all.json
+
+# finished 2026-10-20T02:48:19Z  exit=0  status=ok

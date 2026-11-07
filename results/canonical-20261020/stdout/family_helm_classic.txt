@@ -1,0 +1,72 @@
+# job      family_helm_classic
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_family_holdout.py --datasets helm_classic --repeats 5
+# started  2026-10-20T02:46:31Z on 4090-1
+
+
+######################################################################
+# Dataset: HELM_CLASSIC — family holdout
+######################################################################
+67 models × 16 tasks; meta_org families, 0 models 'other' (always trained on)
+holding out families: ai21-labs(7), cohere(8), meta(12), openai(11)
+Families of ≥ 6 models; selectable: benchmarks with ≥ 3 training models; 5 repetition(s) of the random streams
+  Holdout ai21-labs: 60 train / 7 test, 16/16 eligible  entropy:0.762  mi:0.664  random:0.411  hub:0.550  pca:0.690  trace:0.716  facloc:0.687  (1.8s)
+  Holdout cohere: 59 train / 8 test, 16/16 eligible  entropy:0.464  mi:0.670  random:0.551  hub:0.399  pca:0.514  trace:0.685  facloc:0.704  (1.1s)
+  Holdout meta: 55 train / 12 test, 16/16 eligible  entropy:0.720  mi:0.687  random:0.552  hub:0.560  pca:0.802  trace:0.720  facloc:0.720  (0.8s)
+  Holdout openai: 56 train / 11 test, 16/16 eligible  entropy:0.531  mi:0.568  random:0.472  hub:0.233  pca:0.571  trace:0.531  facloc:0.620  (2.9s)
+  Holdout ai21-labs rep 1:  random:0.563  (0.0s)
+  Holdout cohere rep 1:  random:0.603  (0.0s)
+  Holdout meta rep 1:  random:0.701  (0.0s)
+  Holdout openai rep 1:  random:0.638  (0.0s)
+  Holdout ai21-labs rep 2:  random:0.244  (0.0s)
+  Holdout cohere rep 2:  random:0.548  (0.0s)
+  Holdout meta rep 2:  random:0.679  (0.0s)
+  Holdout openai rep 2:  random:0.637  (0.0s)
+  Holdout ai21-labs rep 3:  random:0.706  (0.0s)
+  Holdout cohere rep 3:  random:0.597  (0.0s)
+  Holdout meta rep 3:  random:0.681  (0.0s)
+  Holdout openai rep 3:  random:0.310  (0.0s)
+  Holdout ai21-labs rep 4:  random:0.520  (0.0s)
+  Holdout cohere rep 4:  random:0.644  (0.0s)
+  Holdout meta rep 4:  random:0.695  (0.0s)
+  Holdout openai rep 4:  random:0.146  (0.0s)
+
+== HELM Classic: family-holdout imputation R² (mean ± std over 4 families) ==
+   (random: per family, mean over 5 draws)
+method                k=1          k=3          k=5          k=10         k=15         
+Entropy (Alg. 1)      0.407±0.084  0.552±0.160  0.619±0.125  0.714±0.120  0.594±0.391  
+Mutual Info (Alg. 2)  0.321±0.223  0.562±0.082  0.648±0.046  0.695±0.129  -0.739±1.504 
+Random                0.316±0.100  0.477±0.092  0.545±0.086  0.627±0.078  0.248±0.564  
+Hub correlation       0.472±0.103  0.483±0.149  0.436±0.133  0.419±0.161  -1.162±2.396 
+PCA subset (CSSP)     0.437±0.059  0.540±0.100  0.644±0.111  0.794±0.049  0.563±0.385  
+Greedy trace min.     0.407±0.084  0.599±0.176  0.663±0.078  0.735±0.120  0.569±0.383  
+Facility location     0.472±0.103  0.646±0.048  0.683±0.038  0.650±0.131  0.124±1.308  
+
+   Per-family R² at k=5:
+   family          entropy     mi          random      hub         pca         trace       facloc      
+   ai21-labs       0.762       0.664       0.489       0.550       0.690       0.716       0.687       
+   cohere          0.464       0.670       0.589       0.399       0.514       0.685       0.704       
+   meta            0.720       0.687       0.662       0.560       0.802       0.720       0.720       
+   openai          0.531       0.568       0.441       0.233       0.571       0.531       0.620       
+
+   Selection stability (Jaccard vs full-data selection):
+   Entropy (Alg. 1)      k=5: 0.75  k=10: 0.83  k=15: 0.97
+   Mutual Info (Alg. 2)  k=5: 0.36  k=10: 0.58  k=15: 0.91
+   Hub correlation       k=5: 0.83  k=10: 0.86  k=15: 0.97
+   PCA subset (CSSP)     k=5: 0.69  k=10: 0.81  k=15: 0.94
+   Greedy trace min.     k=5: 0.63  k=10: 0.76  k=15: 0.94
+   Facility location     k=5: 0.58  k=10: 0.58  k=15: 0.94
+
+   Eligible benchmarks (≥ 3 training models): all models 16/16; families all 16
+   entropy     k ≤ 15: index ties 0 picks in 0/20 splits, near-tie breaks 20 in 20/20; all-model reference: 0 index ties
+   mi          k ≤ 15: index ties 0 picks in 0/20 splits, near-tie breaks 0 in 0/20; all-model reference: 0 index ties
+   random      k ≤ 15: index ties 0 picks in 0/20 splits, near-tie breaks 0 in 0/20; all-model reference: n/a
+   hub         k ≤ 15: index ties 0 picks in 0/20 splits, near-tie breaks 0 in 0/20; all-model reference: 0 index ties
+   pca         k ≤ 15: index ties 0 picks in 0/20 splits, near-tie breaks 0 in 0/20; all-model reference: 0 index ties
+   trace       k ≤ 15: index ties 0 picks in 0/20 splits, near-tie breaks 0 in 0/20; all-model reference: 0 index ties
+   facloc      k ≤ 15: index ties 0 picks in 0/20 splits, near-tie breaks 15 in 5/20; all-model reference: 0 index ties
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/family_holdout_helm_classic.pdf
+HELM_CLASSIC completed in 8s
+
+All datasets completed in 8s
+
+# finished 2026-10-20T02:46:40Z  exit=0  status=ok

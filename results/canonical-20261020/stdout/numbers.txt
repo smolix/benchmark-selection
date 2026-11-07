@@ -1,0 +1,122 @@
+# job      numbers
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python make_numbers.py --root ~/benchselect-runs/canonical-20261020/out --cov-dir ~/benchselect-runs/canonical-20261020/out/cov --data-dir ~/benchselect-runs/canonical-20261020/tree/data --datasets mmlu mteb merged benchpress olv2sub olv1items epoch helm_lite helm_mmlu helm_classic mteb2026 merged_v1 --out-tex ~/benchselect-runs/canonical-20261020/out/numbers/numbers.tex --out-csv ~/benchselect-runs/canonical-20261020/out/numbers/numbers.csv --tex-dir ~/benchselect-runs/canonical-20261020/out/numbers --paired-dir ~/benchselect-runs/canonical-20261020/out/numbers
+# started  2026-10-20T03:22:17Z on 4090-1
+
+WARNING: logs/entropy_vs_mi_helm_lite.npz:entropy_r2: all splits NaN at k = 10
+WARNING: logs/entropy_vs_mi_helm_lite.npz:mi_r2: all splits NaN at k = 10
+WARNING: logs/entropy_vs_mi_helm_lite.npz:random_r2: all splits NaN at k = 10
+WARNING: logs/entropy_vs_mi_helm_lite.npz:trace_r2: all splits NaN at k = 10
+WARNING: logs/entropy_vs_mi_helm_lite.npz:facloc_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p10_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p10_rand_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p10_trace_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p10_facloc_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p20_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p20_rand_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p20_trace_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p20_facloc_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p50_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p50_rand_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p50_trace_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p50_facloc_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p90_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p90_rand_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p90_trace_r2: all splits NaN at k = 10
+WARNING: logs/greedy_cv_helm_lite.npz:p90_facloc_r2: all splits NaN at k = 10
+WARNING: logs/baselines_helm_lite.npz:entropy_r2: all splits NaN at k = 10
+WARNING: logs/baselines_helm_lite.npz:mi_r2: all splits NaN at k = 10
+WARNING: logs/baselines_helm_lite.npz:random_r2: all splits NaN at k = 10
+WARNING: logs/baselines_helm_lite.npz:hub_r2: all splits NaN at k = 10
+WARNING: logs/baselines_helm_lite.npz:pca_r2: all splits NaN at k = 10
+WARNING: logs/baselines_helm_lite.npz:trace_r2: all splits NaN at k = 10
+WARNING: logs/baselines_helm_lite.npz:facloc_r2: all splits NaN at k = 10
+WARNING: logs/baselines_helm_lite.npz:facloc_abs_r2: all splits NaN at k = 10
+WARNING: logs/baselines_helm_lite.npz:facloc_sq_r2: all splits NaN at k = 10
+WARNING: logs_logit/entropy_vs_mi_helm_lite_logit.npz:entropy_r2: all splits NaN at k = 10
+WARNING: logs_logit/entropy_vs_mi_helm_lite_logit.npz:mi_r2: all splits NaN at k = 10
+WARNING: logs_logit/entropy_vs_mi_helm_lite_logit.npz:random_r2: all splits NaN at k = 10
+WARNING: logs_logit/entropy_vs_mi_helm_lite_logit.npz:trace_r2: all splits NaN at k = 10
+WARNING: logs_logit/entropy_vs_mi_helm_lite_logit.npz:facloc_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p10_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p10_rand_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p10_trace_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p10_facloc_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p20_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p20_rand_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p20_trace_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p20_facloc_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p50_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p50_rand_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p50_trace_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p50_facloc_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p90_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p90_rand_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p90_trace_r2: all splits NaN at k = 10
+WARNING: logs_logit/greedy_cv_helm_lite_logit.npz:p90_facloc_r2: all splits NaN at k = 10
+WARNING: logs/family_holdout_helm_lite.npz:entropy_r2: all families NaN at k = 10
+WARNING: logs/family_holdout_helm_lite.npz:mi_r2: all families NaN at k = 10
+WARNING: logs/family_holdout_helm_lite.npz:random_r2: all families NaN at k = 10
+WARNING: logs/family_holdout_helm_lite.npz:hub_r2: all families NaN at k = 10
+WARNING: logs/family_holdout_helm_lite.npz:pca_r2: all families NaN at k = 10
+WARNING: logs/family_holdout_helm_lite.npz:trace_r2: all families NaN at k = 10
+WARNING: logs/family_holdout_helm_lite.npz:facloc_r2: all families NaN at k = 10
+226906 quantities from ~/benchselect-runs/canonical-20261020/out:
+   1520  R^2, entropy vs MI vs random (entropy_vs_mi_*, {ds}_results emi_*)
+   4864  R^2, greedy entropy CV by holdout fraction (greedy_cv_*, {ds}_results cv_*)
+   1494  R^2, baselines (baselines_*)
+    392  R^2, TabImpute imputation (tabimpute_*, tabimpute_extra_*)
+   5796  R^2, logit score space (logs_logit/)
+  26712  Paired R^2 differences over the matched splits (paired_stats.py)
+   1951  Matched design: splits, eligibility, index ties
+  10069  Selection order per split (greedy_cv_splits_*, greedy_mi_cv_splits_*; else greedy_cv_selections.json, greedy_mi_cv_selections_all.json)
+   2093  Model-family holdout (family_holdout_*)
+    559  Cost-budgeted selection (cost_budget_*)
+    101  Normality diagnostics (normality_summary.json)
+  10130  Reviewer checks (reviewer_checks*.json)
+     76  Columns redundant by construction (baselines_*_redundancy.json macros)
+  11666  eval_prospective.py (logs/prospective_*.json macros)
+   1288  eval_item_budget.py (logs/item_budget_*.json macros)
+   6871  eval_item_budget.py --fixed-cost (logs/item_fixed_*.json macros)
+  21565  eval_token_costs.py (logs/token_costs_*.json macros)
+  23188  eval_token_costs.py --fixed-cost (logs/token_fixed_*.json macros)
+  18248  eval_cost_budget.py --fixed-cost (logs/cost_fixed_*.json macros)
+   5392  analyze_objectives.py (logs/analyze_objectives_*.json macros)
+  19837  eval_benchfamily_holdout.py (logs/benchfamily_holdout_*.json macros)
+   4072  eval_selection_stability.py (logs/selection_stability_*.json macros)
+  27255  eval_estimator_ablation.py (logs/estimator_ablation_*.json macros)
+  21684  eval_imputers.py (logs/imputers_*.json macros)
+     29  Eigenspectrum (variance explained by top-k components)
+      6  EM convergence (cov files)
+     48  Dataset shapes (data/*.matrix.npz)
+by macro group: main 32422, datasets 33418, prospective 11666, item_budget 1288, item_fixed 6871, token_costs 21565, token_fixed 23188, cost_fixed 18248, analyze_objectives 5392, benchfamily_holdout 19837, selection_stability 4072, estimator_ablation 27255, imputers 21684
+3827 means/stds cover only some folds or families (marked 'partial' in the .tex), e.g. RsqEpochMiKone, RsqStdEpochMiKone, RsqEpochMiKtwo
+48 quantities read from outside the root (scope 'shared'), e.g. DataBenchpressM, DataBenchpressN, DataBenchpressObsPct
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers.tex (32422 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_datasets.tex (33418 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_prospective.tex (11666 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_item_budget.tex (1288 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_item_fixed.tex (6871 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_token_costs.tex (21565 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_token_fixed.tex (23188 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_cost_fixed.tex (18248 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_analyze_objectives.tex (5392 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_benchfamily_holdout.tex (19837 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_selection_stability.tex (4072 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_estimator_ablation.tex (27255 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers_imputers.tex (21684 macros)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/numbers.csv (226906 rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_epoch.csv (3570 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_helm_classic.csv (1560 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_helm_lite.csv (1250 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_helm_mmlu.csv (1560 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_merged.csv (4316 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_mmlu.csv (4316 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_mteb.csv (4316 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_mteb2026.csv (2190 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_olv1items.csv (1560 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_olv2sub.csv (3450 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_benchpress.csv (4316 paired rows)
+wrote ~/benchselect-runs/canonical-20261020/out/numbers/paired_merged_v1.csv (540 paired rows)
+58 warning(s), see stderr
+
+# finished 2026-10-20T03:23:25Z  exit=0  status=ok

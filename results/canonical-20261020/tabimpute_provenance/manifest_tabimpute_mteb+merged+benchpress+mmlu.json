@@ -1,0 +1,1001 @@
+{
+ "schema": 2,
+ "driver": "run_tabimpute",
+ "run_id": "run_tabimpute-20261019T174214Z-31612",
+ "command_line": "~/benchselect-runs/tabimpute-full/tree/code/run_tabimpute.sh",
+ "ok": true,
+ "interrupted": false,
+ "start_utc": "2026-10-19T17:42:14Z",
+ "end_utc": "2026-10-20T00:13:51Z",
+ "wall_s": 23496.8,
+ "repo": "~/benchselect-runs/tabimpute-full/tree",
+ "experiment_root": "~/benchselect-runs/tabimpute-full/B_out",
+ "data_dir": "~/benchselect-runs/tabimpute-full/tree/data",
+ "git": {
+  "source": "env (BENCHSELECT_GIT_*, unchecked; the tree is not a git work tree)",
+  "commit": "048f2df",
+  "dirty": true,
+  "diff_sha256": null
+ },
+ "code_tree_sha256": "43720b4f60131f208cd00a52d282fddf3307d097d7ea2c7237bd69548e8a5b0d",
+ "code_sha256": {
+  "code/analyze_objectives.py": "e18841f3fbbe4276915f6e74beac8756daf3e20c69e1d7dbfa09c38ed6cceffe",
+  "code/baseline_select.py": "dda4e110c0ee43965b89f8ea460fd49999125b8a84cd84fbe67948909ee3e6f5",
+  "code/compare_runs.py": "909c703d54ab837182c3fc522447123f73f241d80603ee5b91068d712980d06c",
+  "code/cv_split.py": "e19f785d4af73e9cbbc0149a906008e89659ceb1ce2bc7d96ca84fc1fa1f234d",
+  "code/em_cov.py": "5ef013bf7c40cdf4ee7f9840d12870b9f1d5b17c25f32dbf18506cfe2cdee1d9",
+  "code/estimate_covariance.py": "0e87c2c231c9d6862aa67c5a6154c98531d55ea1adfaeeb5c2e3941dc58a0c9c",
+  "code/eval_baselines.py": "2f702324b562f47e08f7ffc9b2e86999b1155df765df4cd47a253eb4cb61116b",
+  "code/eval_benchfamily_holdout.py": "a740df61d9f1015d49a0f2004a0eeac2cbcdd91cf178d255a9f9d5cb91d749c5",
+  "code/eval_benchpress.py": "b2dbc743ce70b18596fb98e9b5df275bcd0367991d92a6bbe6cdc8be14f72f09",
+  "code/eval_cost_budget.py": "b7f869fc1143e50d5eac00c8b8061c88c46c4d1fc26a04c00f9f49a33b21fb15",
+  "code/eval_entropy_vs_mi.py": "cddfa1e9cbbd05fc3052d0e1760704d6a5d7ffb63b5b33b9d55613c7c142b838",
+  "code/eval_estimator_ablation.py": "e9bd18471c386e59a3e00e7c32b41d284f8fac75cd23d16b524acaabbaaaec5a",
+  "code/eval_family_holdout.py": "2ae5c9d8d2dcd4753295c0dd243301d2a2d134270bb69e39370a97b9e5b9b06a",
+  "code/eval_greedy_all.py": "d9112fda86dfe624b9469cd50f3c9931b02e1deec6f08435e693d9313b1ec2cf",
+  "code/eval_greedy_merged.py": "ac2bb0177bd9468927a3b9de123e1ff0d2e5aeaee384f9713492b07aa573933f",
+  "code/eval_greedy_mmlu.py": "304d8284236e60a6724d885fe295ac1d9653958e6cbf7df957fba88510406365",
+  "code/eval_imputers.py": "ead0853fef2e766f7ac97403fac4e666be0ccc6357da024d1443d4f43156c752",
+  "code/eval_item_budget.py": "bd4efc349f8b0ef329e75969a1ced1bc5985ae5d1eeba9b9e75b3b96970cfa63",
+  "code/eval_logit.py": "9b230257bd10497f46d19af50f4e8bf93a385467fd1ad9a286804f5b67daa91d",
+  "code/eval_prospective.py": "b6dc8967b043942509e3ad3fa238c61561a883dc96a76cf74cc0dec3fffc18a7",
+  "code/eval_reviewer_checks.py": "74e4c262da489585be56a897510f4135d3cffc50b0ad5c8e27cc8fce3636b9cf",
+  "code/eval_selection_stability.py": "64b45452e706ae750c20ce84c104c1af66080f03560ee08c93e3c3bcea4eab0f",
+  "code/eval_tabimpute.py": "9baf59268cc990ee8fa078bc02a4bb3c80bd114d52a44c473889d5d0fe6794d8",
+  "code/eval_token_costs.py": "380b35d086a1bfac0d9e7386df18502e3a393251d4ac81c9d3008c9c7e8a7767",
+  "code/greedy_select.py": "a0c368511dfb4ab9db197920e4414abe8c750c7a5c2215fd0a8d12bbbb42880f",
+  "code/make_numbers.py": "54c173172d68016361d1d21fcca8a123c32706a05a449be3b58e2e5f6bc79e27",
+  "code/model_families.py": "09836134bc3f7102e09f669e94e8a1bc0790c03a904fe318ba6696ffa22dc869",
+  "code/normality.py": "52566a3ee6c42dbe0bb26f0f7a644f731b4363fa98b897a83d79e8dd41d9c1cf",
+  "code/paired_stats.py": "41f8d6fd52e97a6c27de8bbf6bca12d688c0361d8170baa14cb0595419f60e79",
+  "code/path_config.py": "f9947e0fbabaf5b929557ee88abe719f62e220ede5bd35b5c61c8c8a43eaa643",
+  "code/plot_benchmark_overlap.py": "6bd8c0fc2fe9a77481368f345774ac16a1dbd29d304e787f94accdf729b5855e",
+  "code/plot_eigenspectrum.py": "1d4c809ae9ca6c25c5c3f1ee85eddc95d7de068d1db56c4a191f657d2bd2bb6b",
+  "code/plot_mi_selection_all.py": "550fba1df6d808d23bbc4481f3988cbea4d55ce1241fa1c0ef1bc3d2788aa3ac",
+  "code/plot_mi_selection_mmlu.py": "a1b2776cbc7b6128106cb2219d218f10b2c91e8eeac083d6bf5b90d2401c3811",
+  "code/plot_selection_order.py": "f8f658975b8ebb9caad0d27b6f22572a9110d8f1fc0876abd1579b5d3ce75d7b",
+  "code/run_all.sh": "210a2d4e7c5fdbbd3eaf570a85a969b440445d52bbdcdc7def31c81835aa0316",
+  "code/run_greedy_mmlu.py": "a80db5fbeb086d08fb55c2e40f04b61be3de173603db43ae7906b5599996140e",
+  "code/run_normality.py": "9f23f7e5a664d0a83b6c14e85260e03ae6ed2249e891f177f06d70db6c18bb6f",
+  "code/run_tabimpute.sh": "0472a2bf7f6f8b44c5424c8bd87eafa4b4a95e2b9f478249c1c04a3e3d15be62",
+  "code/score_bounds.py": "a857b9bd70253d31d69645862a476590afd8866ca5692d51f43be89cc8510eeb",
+  "code/test_analyze_objectives.py": "a14fc69894dcd6e94d70fd31bc92a4be5759b04ae1bb78d086c51ab35af85e8a",
+  "code/test_battery_generic.py": "ec237e735eee2a5d36b03fb052f730e77253c269ca44d46d8aa22866aff7108e",
+  "code/test_compare_runs.py": "d62debf13a3f8af71243ea6466f326f7dcc1e576c14085ac7375ab90f0e07861",
+  "code/test_em_cov.py": "7468d26c9e4118eaf82d7370a000308a7c486d4ce1dfe900f71966d05488cbd5",
+  "code/test_eval_benchfamily_holdout.py": "81650a05686be2b1b5426e1087d141fe9f4c94d5c752f320a9cd4d8a2e6e3796",
+  "code/test_eval_cost_budget.py": "621eef4edf4c5955a4595d32cc54923ece183c91703d664b504b4e53fc56c721",
+  "code/test_eval_estimator_ablation.py": "8b640b3e808fddd4caa4e984ae1196467f4b921ddb47fe3ea035b9b73da04852",
+  "code/test_eval_family_holdout.py": "6ee5584641bc157e26122d033635acb17d189599f4a1681f9261af31294d0462",
+  "code/test_eval_imputers.py": "3b6727dd4e6cd0be65531a8471373c76dd1f8680c710abee70460a5918b28ad8",
+  "code/test_eval_item_budget.py": "8c6347b8d7548a611eb7a0a9cd0da1388bd6b6a60d46bb98738c632b3cf022b1",
+  "code/test_eval_prospective.py": "b6ad8fd4a1f429be60981adf0d2d72e4472998e62940dbe0faa19acdb5a0c209",
+  "code/test_eval_reviewer_checks.py": "48e0fcd8005c34f5588362e774ca14087d1f6c6a321b63c37926935770030d99",
+  "code/test_eval_selection_stability.py": "6064685b5dde7ec96d04fed94acf9cbd2c6dc699bc5a79d1f507a7a7854d3796",
+  "code/test_eval_tabimpute.py": "b9bb7f0111f9a2c156fe8c8dcf2987595601dea25c067c6687c3c6dc657040bb",
+  "code/test_eval_token_costs.py": "7bb4fb5e4e9f73ee96ec14557eb86c073a5eb138d0c1864ff621661f8b705762",
+  "code/test_facloc.py": "9e755d014bf901ffd5973fa21d506e614229b492b4af7b9cadd737f02e514055",
+  "code/test_facloc_battery.py": "ceaf269cf84281aa2b3e06e2bab922359b9f6552a2e036a03eeeffadabed6f46",
+  "code/test_greedy_tiebreak.py": "d2b3dbc2ee96efd870f6d3f34ee6ff38987e2facd1fb35c3798184016b5a4265",
+  "code/test_impute_and_evaluate.py": "c74a5137fc3d7e1e8c93d428dd0b865267e6c0748072ed11b0e20d84a29a1cb4",
+  "code/test_make_numbers.py": "a5e02fecd2e824f3ee0e06f17802d5bfd3307c2ab4d03b418adc7da6068c0b0a",
+  "code/test_matched_splits.py": "89118309a96e22ef70a2f57fb98beb6349ee361f46fc2553b4b5e2533798e509",
+  "code/test_model_families.py": "176d6672cfb1887b1ca927b04fe8ad241cf1d1d21901eecfe0f7ea3b6e5df3fb",
+  "code/test_normality.py": "9a4c24e83f048bad45fba75293d0bfecf6047a5373a0286d7b71bf1fca7fddff",
+  "code/test_run_all.py": "cfa41dca132cd9a4e128fef0cdcd438b440d2cb21a6beb44e117d1ae8aca5fb8",
+  "code/test_score_bounds.py": "51d07b115cf10499a4de3c2ced2bdaaac4bccc4b1973a23654f37a07aee210d4",
+  "code/test_tabimpute_sanity.py": "585c3b684e541502aefff3e85c0d2d78c15ee10a0a9463b3849007ad3f8a0437",
+  "requirements-data.txt": "e3d233e4555f1dcc3fe8c1bb6c11515691395d12416f298d3b51974d42d69712",
+  "requirements-tabimpute.txt": "6854ab510f0afca5e948f6c75b257c1f7a3e6b25f4e1287784ba71863f0d4d22",
+  "requirements.txt": "b5cee387dfdf47cffa34decf75c1973fbf0d37bb3a8b5a8c22f2b46ac1abe2fe"
+ },
+ "inputs": {
+  "data/SHA256SUMS": {
+   "bytes": 5958,
+   "sha256": "ad45a053bcf74d4290d44b68a724f8e89e67f46e940b00a245bded9c2f9db437"
+  },
+  "data/alpaca_eval.csv": {
+   "bytes": 26267,
+   "sha256": "68f6cf0bde43b7677badbef8236f647b83d1c21ba5ebc1e7fb148d2659085e24"
+  },
+  "data/alpaca_eval.npz": {
+   "bytes": 70690,
+   "sha256": "5a7bae3da4233bad1f45f485852c3c75a4c1bbad98af8bde41a603defdb09920",
+   "content_sha256": "c7a19baaf09613ce28c0c4d64d22434161b02f515f5f32976f8bd1d407ad8789"
+  },
+  "data/arena_hard.csv": {
+   "bytes": 2569,
+   "sha256": "2c66ca58c8e5b213ce57ca967d3309b12efd6c7d2759514de6b3f40e612395de"
+  },
+  "data/arena_hard.npz": {
+   "bytes": 12462,
+   "sha256": "51ea762a30519024673ec53fc97d818d6b10c91253ec5d7933b3b21076a42c2b",
+   "content_sha256": "bc4ad67fcc62087fa0637ce3728d73cd2d662bb9478dff6b60e1c9335fda0292"
+  },
+  "data/benchpress.json": {
+   "bytes": 279594,
+   "sha256": "255ea00914119403032f90f9568e9b6236483ff8b6858f18c22b62fd5bebe449"
+  },
+  "data/benchpress.matrix.npz": {
+   "bytes": 80802,
+   "sha256": "f72d3a44b912e0314884189c596231480ecaf86c1d09d7e3a4001335edaa2f42",
+   "content_sha256": "c4740852850e0863d291145c1b1135563dbcd0363c0da268c922d8260a794556"
+  },
+  "data/bigbench.csv": {
+   "bytes": 15044,
+   "sha256": "714c6a1ab443f327566f67bec2c5a213deac687a32c3efb2177cfd37ee0d6a89"
+  },
+  "data/bigbench.npz": {
+   "bytes": 29322,
+   "sha256": "e3da8aa30953d70c0a0ae13470442981a861f1ae6459e7bf3797082f2d79f3dc",
+   "content_sha256": "62982b1dc799167212f6d0b39b077b5d28279b78bd6f6a3c9a8f59afcacbfe94"
+  },
+  "data/bigcode.csv": {
+   "bytes": 13494,
+   "sha256": "45d224a54494fbd302d3262d325cf4be98e2db5635e3e5431528c8693256e46e"
+  },
+  "data/bigcode.npz": {
+   "bytes": 56178,
+   "sha256": "f98ddc7a4e9c4c65ff98b19d29c1f748923e4e79b76d01c22035289c7febef76",
+   "content_sha256": "4fa9355be536d81051d01b82536c1fc848f88ad9fdfeb6b0687f524d8dfb73e5"
+  },
+  "data/canonical_mapping.json": {
+   "bytes": 28667,
+   "sha256": "d487e388e8c62d7b6feac893db1c1e3402b6c8cf868df25feef611623e403ae0"
+  },
+  "data/epoch.matrix.csv": {
+   "bytes": 59790,
+   "sha256": "bf0dac53f40657d0c32a5d618629c60db5ee02080fabbad4e005a7b2b047b184"
+  },
+  "data/epoch.matrix.npz": {
+   "bytes": 320518,
+   "sha256": "ab2a38966ec94a9f4594dc319d5b5a32cc26ecb623cde71b09dd27faacaddaa6",
+   "content_sha256": "450a5191de5dd2956a6e9fe8166a43b2e277532bc70cb46c9e00e7072afbef0a"
+  },
+  "data/epoch.meta.json": {
+   "bytes": 768304,
+   "sha256": "00770c0d359ca028ce6750a7018ef5ec106eb6fac738a6efe75501c12460a584"
+  },
+  "data/helm.csv": {
+   "bytes": 6232,
+   "sha256": "d4a89d842ad312eff1f536934e2ef64659bb31efb9cca417465ddd3d81c83a9d"
+  },
+  "data/helm.npz": {
+   "bytes": 10966,
+   "sha256": "80e5d2ac613084277b04a2efe2dd3234b642bcfe81f65fcdb69a4449e3afeca2",
+   "content_sha256": "85ea6b0f351c62bc2dae70455e533b77c882b1be5ef5a18e5037ceb2e39582c5"
+  },
+  "data/helm_classic.matrix.csv": {
+   "bytes": 16811,
+   "sha256": "3b47b7ebfb6fb9c390984d45aeeeeb4e4ed7b1f4a93b955093a72b4e05d054f6"
+  },
+  "data/helm_classic.matrix.npz": {
+   "bytes": 28922,
+   "sha256": "039f64dfbc1954ada7d795e183b1c965dde84017ac9a166d59431fee91dde16f",
+   "content_sha256": "bb4c0042b14593dc5c865a3c70d7541795ac20e30821743f485a125be43a2a6b"
+  },
+  "data/helm_classic.meta.json": {
+   "bytes": 335714,
+   "sha256": "fb3854c0d11201084f4120b39ae696863e8d2f5b01669693c465fc5953ec044d"
+  },
+  "data/helm_lite.matrix.csv": {
+   "bytes": 16871,
+   "sha256": "b2996b5828cb250021f77f115f54ac13c4d2a02ea57ebbf25e2f5732730d62c4"
+  },
+  "data/helm_lite.matrix.npz": {
+   "bytes": 30234,
+   "sha256": "570ece4d9d1117a490a9eb59efe91a8650a74483be92ead8894b6be42778f9b9",
+   "content_sha256": "4a83954233643095d0948013bc3ae439fee0677710dd187713f1b1e286e567af"
+  },
+  "data/helm_lite.meta.json": {
+   "bytes": 246407,
+   "sha256": "d5d2c75a00fb35d144087389bbc74ca09ea885ae6dcdbf00a81b0ba4f7fa265b"
+  },
+  "data/helm_mmlu.matrix.csv": {
+   "bytes": 75851,
+   "sha256": "11513282a7d84cc8e82ccbe7ab4806a537b3dd2747cba503bdde0d11dc58e089"
+  },
+  "data/helm_mmlu.matrix.npz": {
+   "bytes": 92726,
+   "sha256": "e8e5bbbb5a29e461f4a527377cae4d7cdb7db570afe7d20aa569df0d2a81cab3",
+   "content_sha256": "f487b5d8b5472c9f99b2305c96d6968eb87d7d63faaf12127a419ce35b2218bf"
+  },
+  "data/helm_mmlu.meta.json": {
+   "bytes": 796986,
+   "sha256": "bb3c4e120a65c9659b19ab03f1a3df1699c495c8a0fc712ed875802e44674510"
+  },
+  "data/livebench.csv": {
+   "bytes": 12425,
+   "sha256": "8b21101b130ff5f6fbeda002c4bed42e86ec9a356824c4241a9e9c43280de7f9"
+  },
+  "data/livebench.npz": {
+   "bytes": 62878,
+   "sha256": "9807cbef0f27d53d08314c039938ddb1afefa663b3f0aa26840c97b7e60f3af5",
+   "content_sha256": "46510ffd72f0cfa58f446f2cd86a0299f031a4c0917e3eed3cd83ee93cba0949"
+  },
+  "data/merged.cov.npz": {
+   "bytes": 252657,
+   "sha256": "391b5ba1be303598a30d1aefd1d58e0b471ff321d417fea41fd63b541e7bcc85",
+   "content_sha256": "d27e698c55e41aa4edefb5fa4f1fac5c7523a789e08f5c493304ddca72591647"
+  },
+  "data/merged.matrix.csv": {
+   "bytes": 73528,
+   "sha256": "801d77830de73dfe9d35e86fc54a6dca2a0b04ad7cafb7807496c87b27421479"
+  },
+  "data/merged.matrix.npz": {
+   "bytes": 249110,
+   "sha256": "43216e82174b090252b43b18a433957d4a80b82a2e761854a60686bc27bfbbdd",
+   "content_sha256": "a181d680dc96f33b9e2538dc122cbf3ffd8347b3229d3e8d572e71193359a78a"
+  },
+  "data/merged_v1.matrix.csv": {
+   "bytes": 73385,
+   "sha256": "fcb1a53d1efcb7a8d9cc26c9ee123e4c28b6ab844a380b0c5b866c81a8de5c22"
+  },
+  "data/merged_v1.matrix.npz": {
+   "bytes": 249110,
+   "sha256": "68ced5b62799c5cd5cac9058f93614ec77ca9f7399b4d401a8b3a0d1e27deb91",
+   "content_sha256": "271e2d859f739c14dde1071124640a48a8737fd807ebe432fb2a9a462145418a"
+  },
+  "data/merged_v1.meta.json": {
+   "bytes": 1891,
+   "sha256": "a6c30429de4f8059b25a73941b73993d97a0db8ede17efb3482f0cc71312eaf9"
+  },
+  "data/mmlu.cov.npz": {
+   "bytes": 4312933,
+   "sha256": "2a5360f2ab3a0fc3abb5bd4ffbfbefae39384f51b0d780d9ab69e96307c60c95",
+   "content_sha256": "2266bb9dce034efc13ee1290f2c861fe0105c331f5ab534e771ee5076afc959d"
+  },
+  "data/mmlu.csv": {
+   "bytes": 5266061,
+   "sha256": "d2c17d5b2ec94b8cd254a314776567a8552bf232a5af0f5bedda4ebfd3342302"
+  },
+  "data/mmlu.matrix.csv": {
+   "bytes": 5211676,
+   "sha256": "932d67ff5fcc1936a7a0df1cc4b487578705473d20f389c2044fbdbaaca521b5"
+  },
+  "data/mmlu.matrix.npz": {
+   "bytes": 6769466,
+   "sha256": "eb26007a1f23bb285b1fa0740350c5537837d88cdea0cd99943b5895e2593bec",
+   "content_sha256": "6559ae2a07f13fed4a8e3ff2616d26d007eb0623c0c1251c1aa4520eb44cdf05"
+  },
+  "data/mmlu.npz": {
+   "bytes": 6771946,
+   "sha256": "302cb7b14fbf7bcc110387dff8ff8fd6df21edccefa7c5bb2708004d94bd298c",
+   "content_sha256": "ae623ca18a246bdaa5d7ed4da219bf6be75c30766d9b03a3439554290d5685ea"
+  },
+  "data/mmlu_test_counts.json": {
+   "bytes": 1555,
+   "sha256": "87330f3dda8482442f7dc5c13ffb6d393240d45af99e82cab32425e89fd48b67"
+  },
+  "data/mt_bench.csv": {
+   "bytes": 303,
+   "sha256": "3d371e01b1249abb149641a532e7f92bedb9f2bacd57f868f53fc2d6e19143d8"
+  },
+  "data/mt_bench.npz": {
+   "bytes": 2226,
+   "sha256": "9330809291f172eb20045e991de24ff536ae8aab5f67933b96736329891eb9ad",
+   "content_sha256": "7317ec66031fceffcd735adcb540627a7b09cf11efb563e80f9acf72905a214a"
+  },
+  "data/mteb.cov.npz": {
+   "bytes": 229945,
+   "sha256": "6b7c99b0c6239dbac2d155e1c47563558f86c89045d32e5349843f7aa08e6c16",
+   "content_sha256": "e8f797eef4b9aa63e2f7696ee03a49e0c2885b8820b1125166e761080517901e"
+  },
+  "data/mteb.csv": {
+   "bytes": 157143,
+   "sha256": "35a203ee771b95f230a392464521e04efa620b895643be59b8c1d538341a1b83"
+  },
+  "data/mteb.matrix.csv": {
+   "bytes": 154100,
+   "sha256": "fc886c63c326162ac4e2fe0cd9ccf5c88b261ec163657418c61ebf791789d656"
+  },
+  "data/mteb.matrix.npz": {
+   "bytes": 316702,
+   "sha256": "d8bcf3e242064210f2fb048cd2433f97051d5c4a27c8ed5774064514af326910",
+   "content_sha256": "55483de538d026d01820322e48290af27cced64484465de3816aef22b2fc1b28"
+  },
+  "data/mteb.npz": {
+   "bytes": 322542,
+   "sha256": "ff5230ce43808867c2598ec59903f53729c2e483013c154f6b499fc46cb1bf12",
+   "content_sha256": "6a76b08861c77884309cc0b7e9916685c4dcd9afa83799967ca9d4f2ba0a08e3"
+  },
+  "data/mteb2026.matrix.csv": {
+   "bytes": 182598,
+   "sha256": "c7cd1e455b684774350fc7c4c53e5f3bcdb72f954582a57f25371cd1dd3af37d"
+  },
+  "data/mteb2026.matrix.npz": {
+   "bytes": 398462,
+   "sha256": "7897a82d3342557e0bd201ab511c48a8649705fad20d715477b8d35b0c57cb8a",
+   "content_sha256": "f7a82ddc38fcb9b9d45895c4612db6da301d9866d954488d5b0b872ef5bd3dc0"
+  },
+  "data/mteb2026.meta.json": {
+   "bytes": 682504,
+   "sha256": "7d02618ff4225d55c970aebe268e6b851b1594f56010e208469943884387d7d2"
+  },
+  "data/mteb_task_sizes.json": {
+   "bytes": 1552,
+   "sha256": "b14d16209881a1811c9b57a4ec6eb7b6b3f9a4268c7af9d0c92daf1475bf1636"
+  },
+  "data/olv1items.items.npz": {
+   "bytes": 3318116,
+   "sha256": "40e8bbad89eec1ddd1b96155f6393ee4752268a431957729e373ee83cf456972",
+   "content_sha256": "8158b1617714d9149b00a05f9041216d5bd422481da50e1febe2215ebb93c1f1"
+  },
+  "data/olv1items.matrix.csv": {
+   "bytes": 419841,
+   "sha256": "b4c918530a67ea5743abd9cfbdd75c73845d7d7a7859d23ff830dc43be90a66d"
+  },
+  "data/olv1items.matrix.npz": {
+   "bytes": 501066,
+   "sha256": "2963c30ad72ee23958bec37c326c868a93f96f52cccbf1e2e2c07a6ba3afff0b",
+   "content_sha256": "df86ee5f90caee925c4477b9116807c231d40c23599beabcf14e5317372b551f"
+  },
+  "data/olv1items.meta.json": {
+   "bytes": 626990,
+   "sha256": "0bdf5a5fa810250b3b4722f24b815b3b27610b06dd88e6760917301ba740afdc"
+  },
+  "data/olv2sub.matrix.csv": {
+   "bytes": 2320152,
+   "sha256": "5f9150dfab310389aa250018fef90a7fbf0e1a83dda3ad0117efefaf7c8fb7c3"
+  },
+  "data/olv2sub.matrix.npz": {
+   "bytes": 4860670,
+   "sha256": "e1ae7ae659d4d65ded39dce05def44bd520b73d175692c3262b2542328490b99",
+   "content_sha256": "2587ab2401c309109eea359f3caaac4c0cc63960d90370e803acadc08056fffb"
+  },
+  "data/olv2sub.meta.json": {
+   "bytes": 2853657,
+   "sha256": "37bba2d5c95f885f85e4883706646adcf2039acea5507347e148f40ec367cfae"
+  },
+  "data/open_llm.csv": {
+   "bytes": 675038,
+   "sha256": "612a77b6cbc26f8cc6806272e385acc4322d15a587c55ead93d36de9fed0b4e3"
+  },
+  "data/open_llm.npz": {
+   "bytes": 2272750,
+   "sha256": "948c68146e6c034b0d71c79a71c8382489fbec2dd6807de1cad7b315c1188c12",
+   "content_sha256": "4f543873cdefb09e11bb8ddccbe51210fcfb2bbbea6e98932eeca32c32b2ab17"
+  },
+  "data/open_llm_v1.csv": {
+   "bytes": 674126,
+   "sha256": "375ee4d9a56d3a72ccf51b27972f60a2d758694734f1598e61bdf6356f5bc09e"
+  },
+  "data/open_llm_v1.npz": {
+   "bytes": 2272750,
+   "sha256": "8d0a4d949e927d3dc853e4f527752236c44bbeabade356b4a4e779fbab15304c",
+   "content_sha256": "ea1444079734929d6e7da7503c157e099f156290c34257cb8c196f5d23189195"
+  },
+  "data/score_bounds.json": {
+   "bytes": 180382,
+   "sha256": "f9a8a16a4c03519d67e1453186ee4c454f02edb3169ab959220f1a763091384a"
+  },
+  "data/wildbench.csv": {
+   "bytes": 13835,
+   "sha256": "5e6bcd6955510c47f7c820630684dc2d72e78edb811992b0ab8b66258adb6bac"
+  },
+  "data/wildbench.npz": {
+   "bytes": 20742,
+   "sha256": "743c9f088b8841a3c8852f95a89ff509b5827a6351a529aec234133d82486876",
+   "content_sha256": "c059087b93cc2fa0a4493f0d76f65d20429a5967b254006dc9cce2163a72bd05"
+  }
+ },
+ "host": {
+  "hostname": "4090-1",
+  "platform": "Linux-6.8.0-139-generic-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "cpu_model": "AMD EPYC 7502 32-Core Processor",
+  "cpu_count": 64
+ },
+ "gpus": [
+  "0, NVIDIA GeForce RTX 4090, 595.71.05, 24564 MiB",
+  "1, NVIDIA GeForce RTX 4090, 595.71.05, 24564 MiB",
+  "2, NVIDIA GeForce RTX 4090, 595.71.05, 24564 MiB"
+ ],
+ "python": {
+  "executable": "~/venvs/tabimpute/bin/python",
+  "version": "3.12.3",
+  "implementation": "CPython"
+ },
+ "requirements": {
+  "file": "~/benchselect-runs/tabimpute-full/tree/requirements-tabimpute.txt",
+  "python": "3.12",
+  "pins": {
+   "torch": "2.13.0",
+   "tabimpute": "0.0.4",
+   "tabpfn": "6.0.0",
+   "einops": "0.8.2",
+   "huggingface-hub": "1.24.0",
+   "numpy": "2.4.6",
+   "scipy": "1.18.0",
+   "matplotlib": "3.11.1",
+   "pandas": "2.3.3",
+   "annotated-types": "0.8.0",
+   "anyio": "4.14.2",
+   "backoff": "2.2.1",
+   "certifi": "2026.7.22",
+   "charset-normalizer": "3.4.9",
+   "click": "8.4.2",
+   "contourpy": "1.3.3",
+   "cuda-bindings": "13.3.1",
+   "cuda-pathfinder": "1.6.0",
+   "cuda-toolkit": "13.0.3.0",
+   "cycler": "0.12.1",
+   "distro": "1.9.0",
+   "eval-type-backport": "0.4.0",
+   "filelock": "3.32.0",
+   "fonttools": "4.63.0",
+   "fsspec": "2026.6.0",
+   "h11": "0.16.0",
+   "hf-xet": "1.5.2",
+   "httpcore": "1.0.9",
+   "httpx": "0.28.1",
+   "idna": "3.18",
+   "jinja2": "3.1.6",
+   "joblib": "1.5.3",
+   "kditransform": "1.2.0",
+   "kiwisolver": "1.5.0",
+   "llvmlite": "0.48.0",
+   "markupsafe": "3.0.3",
+   "mpmath": "1.3.0",
+   "networkx": "3.6.1",
+   "numba": "0.66.0",
+   "nvidia-cublas": "13.1.1.3",
+   "nvidia-cuda-cupti": "13.0.85",
+   "nvidia-cuda-nvrtc": "13.0.88",
+   "nvidia-cuda-runtime": "13.0.96",
+   "nvidia-cudnn-cu13": "9.20.0.48",
+   "nvidia-cufft": "12.0.0.61",
+   "nvidia-cufile": "1.15.1.6",
+   "nvidia-curand": "10.4.0.35",
+   "nvidia-cusolver": "12.0.4.66",
+   "nvidia-cusparse": "12.6.3.3",
+   "nvidia-cusparselt-cu13": "0.8.1",
+   "nvidia-ml-py": "13.610.43",
+   "nvidia-nccl-cu13": "2.29.7",
+   "nvidia-nvjitlink": "13.3.33",
+   "nvidia-nvshmem-cu13": "3.4.5",
+   "nvidia-nvtx": "13.0.85",
+   "packaging": "26.2",
+   "pillow": "12.3.0",
+   "platformdirs": "4.11.0",
+   "posthog": "7.29.0",
+   "pydantic": "2.13.4",
+   "pydantic-core": "2.46.4",
+   "pydantic-settings": "2.14.2",
+   "pyparsing": "3.3.2",
+   "python-dateutil": "2.9.0.post0",
+   "python-dotenv": "1.2.2",
+   "pytz": "2026.3.post1",
+   "pyyaml": "6.0.3",
+   "requests": "2.34.2",
+   "scikit-learn": "1.7.2",
+   "setuptools": "83.0.0",
+   "six": "1.17.0",
+   "sympy": "1.14.0",
+   "tabpfn-common-utils": "0.2.23",
+   "threadpoolctl": "3.6.0",
+   "tqdm": "4.69.1",
+   "triton": "3.7.1",
+   "typing-extensions": "4.16.0",
+   "typing-inspection": "0.4.2",
+   "tzdata": "2026.3",
+   "urllib3": "2.7.0"
+  },
+  "mismatches": [],
+  "unpinned_installed": []
+ },
+ "allow_unpinned": false,
+ "numpy_build": {
+  "blas": {
+   "name": "scipy-openblas",
+   "version": "0.3.31.188.0",
+   "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=64"
+  },
+  "lapack": {
+   "name": "scipy-openblas",
+   "version": "0.3.31.188.0",
+   "openblas configuration": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=64"
+  }
+ },
+ "packages": {
+  "annotated-types": "0.8.0",
+  "anyio": "4.14.2",
+  "backoff": "2.2.1",
+  "certifi": "2026.7.22",
+  "charset-normalizer": "3.4.9",
+  "click": "8.4.2",
+  "contourpy": "1.3.3",
+  "cuda-bindings": "13.3.1",
+  "cuda-pathfinder": "1.6.0",
+  "cuda-toolkit": "13.0.3.0",
+  "cycler": "0.12.1",
+  "distro": "1.9.0",
+  "einops": "0.8.2",
+  "eval-type-backport": "0.4.0",
+  "filelock": "3.32.0",
+  "fonttools": "4.63.0",
+  "fsspec": "2026.6.0",
+  "h11": "0.16.0",
+  "hf-xet": "1.5.2",
+  "httpcore": "1.0.9",
+  "httpx": "0.28.1",
+  "huggingface-hub": "1.24.0",
+  "idna": "3.18",
+  "jinja2": "3.1.6",
+  "joblib": "1.5.3",
+  "kditransform": "1.2.0",
+  "kiwisolver": "1.5.0",
+  "llvmlite": "0.48.0",
+  "markupsafe": "3.0.3",
+  "matplotlib": "3.11.1",
+  "mpmath": "1.3.0",
+  "networkx": "3.6.1",
+  "numba": "0.66.0",
+  "numpy": "2.4.6",
+  "nvidia-cublas": "13.1.1.3",
+  "nvidia-cuda-cupti": "13.0.85",
+  "nvidia-cuda-nvrtc": "13.0.88",
+  "nvidia-cuda-runtime": "13.0.96",
+  "nvidia-cudnn-cu13": "9.20.0.48",
+  "nvidia-cufft": "12.0.0.61",
+  "nvidia-cufile": "1.15.1.6",
+  "nvidia-curand": "10.4.0.35",
+  "nvidia-cusolver": "12.0.4.66",
+  "nvidia-cusparse": "12.6.3.3",
+  "nvidia-cusparselt-cu13": "0.8.1",
+  "nvidia-ml-py": "13.610.43",
+  "nvidia-nccl-cu13": "2.29.7",
+  "nvidia-nvjitlink": "13.3.33",
+  "nvidia-nvshmem-cu13": "3.4.5",
+  "nvidia-nvtx": "13.0.85",
+  "packaging": "26.2",
+  "pandas": "2.3.3",
+  "pillow": "12.3.0",
+  "platformdirs": "4.11.0",
+  "posthog": "7.29.0",
+  "pydantic": "2.13.4",
+  "pydantic-core": "2.46.4",
+  "pydantic-settings": "2.14.2",
+  "pyparsing": "3.3.2",
+  "python-dateutil": "2.9.0.post0",
+  "python-dotenv": "1.2.2",
+  "pytz": "2026.3.post1",
+  "pyyaml": "6.0.3",
+  "requests": "2.34.2",
+  "scikit-learn": "1.7.2",
+  "scipy": "1.18.0",
+  "setuptools": "83.0.0",
+  "six": "1.17.0",
+  "sympy": "1.14.0",
+  "tabimpute": "0.0.4",
+  "tabpfn": "6.0.0",
+  "tabpfn-common-utils": "0.2.23",
+  "threadpoolctl": "3.6.0",
+  "torch": "2.13.0",
+  "tqdm": "4.69.1",
+  "triton": "3.7.1",
+  "typing-extensions": "4.16.0",
+  "typing-inspection": "0.4.2",
+  "tzdata": "2026.3",
+  "urllib3": "2.7.0"
+ },
+ "env": {
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+  "CUDA_VISIBLE_DEVICES": "GPU-3cf2d23e-ca42-7348-1627-f4f75e0ae700",
+  "HF_HOME": "~/hf-benchselect",
+  "HF_HUB_OFFLINE": "1",
+  "MKL_NUM_THREADS": "1",
+  "MPLBACKEND": "Agg",
+  "NUMEXPR_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "PYTHON": "~/venvs/tabimpute/bin/python",
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "PYTHONHASHSEED": "0",
+  "PYTHONNOUSERSITE": "1",
+  "PYTHONUNBUFFERED": "1",
+  "SOURCE_DATE_EPOCH": "0",
+  "VECLIB_MAXIMUM_THREADS": "1"
+ },
+ "benchselect_env": {
+  "BENCHSELECT_COV_DIR": "~/benchselect-runs/tabimpute-full/B_out/cov",
+  "BENCHSELECT_DATA_DIR": "~/benchselect-runs/tabimpute-full/tree/data",
+  "BENCHSELECT_EXPERIMENT_ROOT": "~/benchselect-runs/tabimpute-full/B_out",
+  "BENCHSELECT_FIGURES_DIR": "~/benchselect-runs/tabimpute-full/B_out/figures",
+  "BENCHSELECT_LOGIT_FIGURES_DIR": "~/benchselect-runs/tabimpute-full/B_out/figures_logit",
+  "BENCHSELECT_LOGIT_LOGS_DIR": "~/benchselect-runs/tabimpute-full/B_out/logs_logit",
+  "BENCHSELECT_LOGS_DIR": "~/benchselect-runs/tabimpute-full/B_out/logs",
+  "BENCHSELECT_TABIMPUTE_DEVICE": "cuda:0",
+  "BENCHSELECT_TABIMPUTE_REPEATS": "5"
+ },
+ "changed_during_run": [],
+ "guarded_repo_dirs": [
+  "data",
+  "logs",
+  "logs_logit",
+  "paper",
+  "code",
+  "(top-level files)"
+ ],
+ "repo_writes": [],
+ "log_error_pattern": "estimation failed($|[^ ]| [^o]| o[^n]| on [^0]| on 0[0-9])|extraction failed|EM failed|test failed:| (\u2014|--) failed: |Fold [0-9]+: failed \\(|cannot read .*; skipped|Traceback \\(most recent call last\\)",
+ "jobs": [
+  {
+   "name": "tabimpute_mteb",
+   "group": "tabimpute",
+   "status": "ok",
+   "exit_code": 0,
+   "start_utc": "2026-10-19T17:42:15Z",
+   "end_utc": "2026-10-19T17:48:21Z",
+   "duration_s": 366.583,
+   "depends_on": [],
+   "command": "cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=mteb ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5",
+   "stdout": "stdout/tabimpute_mteb.txt",
+   "outputs": [
+    "logs/tabimpute_mteb.npz",
+    "logs/tabimpute_mteb_paired.csv",
+    "figures/tabimpute_r2_mteb.pdf"
+   ],
+   "missing_outputs": [],
+   "log_error_lines": 0,
+   "log_errors": [],
+   "note": null
+  },
+  {
+   "name": "tabimpute_extra_mteb",
+   "group": "tabimpute_extra",
+   "status": "ok",
+   "exit_code": 0,
+   "start_utc": "2026-10-19T17:48:22Z",
+   "end_utc": "2026-10-19T17:51:40Z",
+   "duration_s": 198.188,
+   "depends_on": [],
+   "command": "cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=mteb BENCHSELECT_METHODS=hub\\,pca ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5",
+   "stdout": "stdout/tabimpute_extra_mteb.txt",
+   "outputs": [
+    "logs/tabimpute_extra_mteb.npz",
+    "logs/tabimpute_extra_mteb_paired.csv",
+    "figures/tabimpute_r2_extra_mteb.pdf"
+   ],
+   "missing_outputs": [],
+   "log_error_lines": 0,
+   "log_errors": [],
+   "note": null
+  },
+  {
+   "name": "tabimpute_merged",
+   "group": "tabimpute",
+   "status": "ok",
+   "exit_code": 0,
+   "start_utc": "2026-10-19T17:51:40Z",
+   "end_utc": "2026-10-19T18:05:14Z",
+   "duration_s": 814.706,
+   "depends_on": [],
+   "command": "cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=merged ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5",
+   "stdout": "stdout/tabimpute_merged.txt",
+   "outputs": [
+    "logs/tabimpute_merged.npz",
+    "logs/tabimpute_merged_paired.csv",
+    "figures/tabimpute_r2_merged.pdf"
+   ],
+   "missing_outputs": [],
+   "log_error_lines": 0,
+   "log_errors": [],
+   "note": null
+  },
+  {
+   "name": "tabimpute_extra_merged",
+   "group": "tabimpute_extra",
+   "status": "ok",
+   "exit_code": 0,
+   "start_utc": "2026-10-19T18:05:14Z",
+   "end_utc": "2026-10-19T18:16:16Z",
+   "duration_s": 661.996,
+   "depends_on": [],
+   "command": "cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=merged BENCHSELECT_METHODS=hub\\,pca ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5",
+   "stdout": "stdout/tabimpute_extra_merged.txt",
+   "outputs": [
+    "logs/tabimpute_extra_merged.npz",
+    "logs/tabimpute_extra_merged_paired.csv",
+    "figures/tabimpute_r2_extra_merged.pdf"
+   ],
+   "missing_outputs": [],
+   "log_error_lines": 0,
+   "log_errors": [],
+   "note": null
+  },
+  {
+   "name": "tabimpute_benchpress",
+   "group": "tabimpute",
+   "status": "ok",
+   "exit_code": 0,
+   "start_utc": "2026-10-19T18:16:17Z",
+   "end_utc": "2026-10-19T18:28:35Z",
+   "duration_s": 738.511,
+   "depends_on": [],
+   "command": "cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=benchpress ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5",
+   "stdout": "stdout/tabimpute_benchpress.txt",
+   "outputs": [
+    "logs/tabimpute_benchpress.npz",
+    "logs/tabimpute_benchpress_paired.csv",
+    "figures/tabimpute_r2_benchpress.pdf"
+   ],
+   "missing_outputs": [],
+   "log_error_lines": 0,
+   "log_errors": [],
+   "note": null
+  },
+  {
+   "name": "tabimpute_extra_benchpress",
+   "group": "tabimpute_extra",
+   "status": "ok",
+   "exit_code": 0,
+   "start_utc": "2026-10-19T18:28:35Z",
+   "end_utc": "2026-10-19T18:39:59Z",
+   "duration_s": 683.707,
+   "depends_on": [],
+   "command": "cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=benchpress BENCHSELECT_METHODS=hub\\,pca ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5",
+   "stdout": "stdout/tabimpute_extra_benchpress.txt",
+   "outputs": [
+    "logs/tabimpute_extra_benchpress.npz",
+    "logs/tabimpute_extra_benchpress_paired.csv",
+    "figures/tabimpute_r2_extra_benchpress.pdf"
+   ],
+   "missing_outputs": [],
+   "log_error_lines": 0,
+   "log_errors": [],
+   "note": null
+  },
+  {
+   "name": "tabimpute_mmlu",
+   "group": "tabimpute",
+   "status": "ok",
+   "exit_code": 0,
+   "start_utc": "2026-10-19T18:39:59Z",
+   "end_utc": "2026-10-19T22:37:18Z",
+   "duration_s": 14239.363,
+   "depends_on": [],
+   "command": "cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=mmlu ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5",
+   "stdout": "stdout/tabimpute_mmlu.txt",
+   "outputs": [
+    "logs/tabimpute_mmlu.npz",
+    "logs/tabimpute_mmlu_paired.csv",
+    "figures/tabimpute_r2_mmlu.pdf"
+   ],
+   "missing_outputs": [],
+   "log_error_lines": 0,
+   "log_errors": [],
+   "note": null
+  },
+  {
+   "name": "tabimpute_extra_mmlu",
+   "group": "tabimpute_extra",
+   "status": "ok",
+   "exit_code": 0,
+   "start_utc": "2026-10-19T22:37:18Z",
+   "end_utc": "2026-10-20T00:13:51Z",
+   "duration_s": 5792.944,
+   "depends_on": [],
+   "command": "cd ~/benchselect-runs/tabimpute-full/tree/code && env BENCHSELECT_DATASETS=mmlu BENCHSELECT_METHODS=hub\\,pca ~/venvs/tabimpute/bin/python eval_tabimpute.py --repeats 5",
+   "stdout": "stdout/tabimpute_extra_mmlu.txt",
+   "outputs": [
+    "logs/tabimpute_extra_mmlu.npz",
+    "logs/tabimpute_extra_mmlu_paired.csv",
+    "figures/tabimpute_r2_extra_mmlu.pdf"
+   ],
+   "missing_outputs": [],
+   "log_error_lines": 0,
+   "log_errors": [],
+   "note": null
+  }
+ ],
+ "artifact_origins": {
+  "this_run": 24,
+  "earlier_run": 0,
+  "unknown": 0
+ },
+ "provenance_warnings": [],
+ "artifacts": {
+  "logs/tabimpute_benchpress.npz": {
+   "bytes": 238472,
+   "sha256": "86e1becacb915db6076f8a7c403c0e4f54688797956655b82db0ccf9aa50a07c",
+   "content_sha256": "0df4e48647a58c72a6ca1e184df8f10746544816dbba6b0e0835c76fc2eb85c7",
+   "origin": "this_run",
+   "job": "tabimpute_benchpress",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_benchpress_paired.csv": {
+   "bytes": 40131,
+   "sha256": "26ca65ebb9625019f8656e3553216e5961653ca19043752ec9903feb675d8c69",
+   "origin": "this_run",
+   "job": "tabimpute_benchpress",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_extra_benchpress.npz": {
+   "bytes": 197136,
+   "sha256": "757cff440ccffbc5ad4f70e9be44190b9208a1f81b6ac93279e671796820df7d",
+   "content_sha256": "69ddbe98077c547fdb95a642d7430d90c5ff69b08e2812f0cb6c405ed3d14029",
+   "origin": "this_run",
+   "job": "tabimpute_extra_benchpress",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_extra_benchpress_paired.csv": {
+   "bytes": 4106,
+   "sha256": "7be6c3571e12294130c3981b041723c137577ab40840d03323cb0e435dad5740",
+   "origin": "this_run",
+   "job": "tabimpute_extra_benchpress",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_extra_merged.npz": {
+   "bytes": 213530,
+   "sha256": "b53f920f8446c6bdc0961001d4180b71da7e31adea51f9f744bb9854ebd37b8d",
+   "content_sha256": "2a255d1e43185409f917c6c1002512507bde5919be3ca38b2513713f6e3d8005",
+   "origin": "this_run",
+   "job": "tabimpute_extra_merged",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_extra_merged_paired.csv": {
+   "bytes": 3979,
+   "sha256": "9cc4b128578f19d4747f40f07570f587d01df274c45b4c124d08178f23fde76a",
+   "origin": "this_run",
+   "job": "tabimpute_extra_merged",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_extra_mmlu.npz": {
+   "bytes": 200420,
+   "sha256": "21786becd983260e38a16daa8195d3b70266b6f599b600fa6ae976c779659ad4",
+   "content_sha256": "6865399b4f94c7898270d5b3e81eedd33f966ad77e3b255705574ac4cc4bc12a",
+   "origin": "this_run",
+   "job": "tabimpute_extra_mmlu",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_extra_mmlu_paired.csv": {
+   "bytes": 3797,
+   "sha256": "d33f36465c927d9f498b4687c4768370537379b7d0e5240065cfb67a97b4355f",
+   "origin": "this_run",
+   "job": "tabimpute_extra_mmlu",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_extra_mteb.npz": {
+   "bytes": 200902,
+   "sha256": "18eb5a32170f59fb44261b8e9c7fb76bf54dc2d7988e8f62cb4fa2365e97a8ff",
+   "content_sha256": "9c94b0e066f644073e11c14e23dc2fccefafe054962b73b1bd7a3303fcf66052",
+   "origin": "this_run",
+   "job": "tabimpute_extra_mteb",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_extra_mteb_paired.csv": {
+   "bytes": 3928,
+   "sha256": "04a5a4cbbf3913a535d8a05232d904cc4e101e95656d68737d53236e9aa139d2",
+   "origin": "this_run",
+   "job": "tabimpute_extra_mteb",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_merged.npz": {
+   "bytes": 254866,
+   "sha256": "7458f4084df56e0d3ae2eb7d99a9196e39b77381447e8cd3f95a337c890f0a3e",
+   "content_sha256": "b3d3b16b9cc267389bb3d0a2a6c240a0db88b8b09b3431d44fbf579788a2550e",
+   "origin": "this_run",
+   "job": "tabimpute_merged",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_merged_paired.csv": {
+   "bytes": 39189,
+   "sha256": "e8bb4463f7d29918fa93b00a3303a9b71715ebbcb926235acf0fca908162a0cb",
+   "origin": "this_run",
+   "job": "tabimpute_merged",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_mmlu.npz": {
+   "bytes": 241756,
+   "sha256": "8fbc040e9abe1d97a435b1751fba6341d7823dc33748060c1519684f4ab48f64",
+   "content_sha256": "3b4990d685e6d6c949969a524ded9759f64eb85c50cbecf1545cf53eabd9ceb4",
+   "origin": "this_run",
+   "job": "tabimpute_mmlu",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_mmlu_paired.csv": {
+   "bytes": 37394,
+   "sha256": "1e82f11270a59a00c55fac7df2a2471a6fa4eedb69bd4893ad1b9cb122702888",
+   "origin": "this_run",
+   "job": "tabimpute_mmlu",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_mteb.npz": {
+   "bytes": 242238,
+   "sha256": "72fa21c47c02926b9870a40cddf7b99eb8321d8fb1da48e54802b993a7b6badc",
+   "content_sha256": "95bc17f06f08e9b0a70d1356240be8521b6b600297a8deb56995f1bc82c6c6f9",
+   "origin": "this_run",
+   "job": "tabimpute_mteb",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "logs/tabimpute_mteb_paired.csv": {
+   "bytes": 38104,
+   "sha256": "47419671d769eeeee3d0ff3dd55a844a488ef097449436c7ddf0b98948a21159",
+   "origin": "this_run",
+   "job": "tabimpute_mteb",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "figures/tabimpute_r2_benchpress.pdf": {
+   "bytes": 22478,
+   "sha256": "9bbfb914b037bb3cb2a1123fe0d0de2ff905917432933e68f599868f1393b778",
+   "origin": "this_run",
+   "job": "tabimpute_benchpress",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "figures/tabimpute_r2_extra_benchpress.pdf": {
+   "bytes": 18003,
+   "sha256": "3ee55cd7bdf2125255c1d88166b333265da011471832c6a4a13d2a548550dc8b",
+   "origin": "this_run",
+   "job": "tabimpute_extra_benchpress",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "figures/tabimpute_r2_extra_merged.pdf": {
+   "bytes": 19421,
+   "sha256": "246c4eb729a3dd9ec01b0c1f1cda03e17b8bb9ecbbbd771af72fcab28ff53f5f",
+   "origin": "this_run",
+   "job": "tabimpute_extra_merged",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "figures/tabimpute_r2_extra_mmlu.pdf": {
+   "bytes": 18889,
+   "sha256": "6e41662e85b806791b4c45ff02bd98a070fcc22e097cb14dd9520f1f7825ddc6",
+   "origin": "this_run",
+   "job": "tabimpute_extra_mmlu",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "figures/tabimpute_r2_extra_mteb.pdf": {
+   "bytes": 18927,
+   "sha256": "d2e8806c9d6a4fb6bdcca18bff7dacae4068da9f2584b890807274c0bfaf11ce",
+   "origin": "this_run",
+   "job": "tabimpute_extra_mteb",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "figures/tabimpute_r2_merged.pdf": {
+   "bytes": 22911,
+   "sha256": "1f85aef0ca25f2e89319ef72de659a919fcf9524d07f001e05ec386f7c6eb9ea",
+   "origin": "this_run",
+   "job": "tabimpute_merged",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "figures/tabimpute_r2_mmlu.pdf": {
+   "bytes": 23297,
+   "sha256": "a41ca8f41ea66c278582a38c80e82d0ef3b3d89adfa6e5cabb3526c1fdcff207",
+   "origin": "this_run",
+   "job": "tabimpute_mmlu",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  },
+  "figures/tabimpute_r2_mteb.pdf": {
+   "bytes": 22689,
+   "sha256": "3740c4fed4874c7f9a3133817d9b9fd450d354832eacf42e414ee730f4e6ca01",
+   "origin": "this_run",
+   "job": "tabimpute_mteb",
+   "job_status": "ok",
+   "run_id": "run_tabimpute-20261019T174214Z-31612"
+  }
+ }
+}

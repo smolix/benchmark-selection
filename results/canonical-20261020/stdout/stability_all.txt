@@ -1,0 +1,7 @@
+# job      stability_all
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_selection_stability.py --datasets mmlu mteb merged benchpress --all-figure
+# started  2026-10-20T02:47:06Z on 4090-1
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/selection_stability_all.pdf
+
+# finished 2026-10-20T02:47:09Z  exit=0  status=ok

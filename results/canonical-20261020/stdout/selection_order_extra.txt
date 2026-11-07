@@ -1,0 +1,323 @@
+# job      selection_order_extra
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_selection_order.py --datasets olv2sub olv1items epoch helm_lite helm_mmlu helm_classic mteb2026 --repeats 5 --methods entropy facloc trace
+# started  2026-10-20T03:01:10Z on 4090-1
+
+
+OLL v2 sub-tasks (entropy, holdout 10%): greedy_cv_splits_olv2sub.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 42–42, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_olv2sub.pdf
+  Top-10 by mean rank:
+    mmlu_pro                                  count=50/50  mean_rank=1.0
+    bbh/tracking_shuffled_objects_three_objects  count=50/50  mean_rank=2.0
+    bbh/web_of_lies                           count=50/50  mean_rank=3.0
+    musr/object_placements                    count=50/50  mean_rank=4.0
+    musr/team_allocation                      count=50/50  mean_rank=5.0
+    bbh/tracking_shuffled_objects_five_objects  count=50/50  mean_rank=6.0
+    musr/murder_mysteries                     count=50/50  mean_rank=8.1
+    ifeval/inst_level_loose_acc               count=44/50  mean_rank=8.3
+    bbh/hyperbaton                            count=50/50  mean_rank=8.7
+    bbh/navigate                              count=50/50  mean_rank=10.8
+
+OLL v2 sub-tasks (facloc, holdout 10%): greedy_cv_splits_olv2sub.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 42–42, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_facloc_olv2sub.pdf
+  Top-10 by mean rank:
+    mmlu_pro                                  count=50/50  mean_rank=1.0
+    math_hard/num_theory                      count=50/50  mean_rank=2.0
+    ifeval/inst_level_strict_acc              count=50/50  mean_rank=3.0
+    bbh/tracking_shuffled_objects_seven_objects  count=49/50  mean_rank=4.2
+    bbh/tracking_shuffled_objects_three_objects  count=50/50  mean_rank=5.0
+    musr/object_placements                    count=50/50  mean_rank=6.4
+    musr/team_allocation                      count=50/50  mean_rank=6.6
+    bbh/web_of_lies                           count=50/50  mean_rank=8.0
+    musr/murder_mysteries                     count=50/50  mean_rank=9.0
+    bbh/hyperbaton                            count=50/50  mean_rank=10.0
+
+OLL v2 sub-tasks (trace, holdout 10%): greedy_cv_splits_olv2sub.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 42–42, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_trace_olv2sub.pdf
+  Top-10 by mean rank:
+    mmlu_pro                                  count=50/50  mean_rank=1.0
+    math_hard/num_theory                      count=50/50  mean_rank=2.0
+    ifeval/prompt_level_loose_acc             count=50/50  mean_rank=3.0
+    bbh/tracking_shuffled_objects_five_objects  count=50/50  mean_rank=4.0
+    bbh/tracking_shuffled_objects_three_objects  count=50/50  mean_rank=5.0
+    bbh/logical_deduction_five_objects        count=50/50  mean_rank=6.3
+    musr/team_allocation                      count=50/50  mean_rank=6.9
+    musr/object_placements                    count=50/50  mean_rank=7.8
+    bbh/web_of_lies                           count=50/50  mean_rank=8.9
+    musr/murder_mysteries                     count=50/50  mean_rank=10.0
+
+OLL v1 tasks (entropy, holdout 10%): greedy_cv_splits_olv1items.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 62–62, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_olv1items.pdf
+  Top-10 by mean rank:
+    professional_psychology                   count=50/50  mean_rank=1.0
+    college_mathematics                       count=50/50  mean_rank=2.1
+    abstract_algebra                          count=50/50  mean_rank=2.9
+    truthfulqa_mc2                            count=50/50  mean_rank=4.0
+    global_facts                              count=50/50  mean_rank=5.0
+    hellaswag                                 count=50/50  mean_rank=6.0
+    gsm8k                                     count=50/50  mean_rank=7.0
+    machine_learning                          count=50/50  mean_rank=8.6
+    college_chemistry                         count=50/50  mean_rank=9.1
+    moral_scenarios                           count=50/50  mean_rank=10.0
+
+OLL v1 tasks (facloc, holdout 10%): greedy_cv_splits_olv1items.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 62–62, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_facloc_olv1items.pdf
+  Top-10 by mean rank:
+    professional_psychology                   count=50/50  mean_rank=1.0
+    elementary_mathematics                    count=50/50  mean_rank=2.0
+    arc_challenge                             count=50/50  mean_rank=4.0
+    college_mathematics                       count=50/50  mean_rank=5.0
+    high_school_psychology                    count=41/50  mean_rank=5.3
+    abstract_algebra                          count=50/50  mean_rank=6.1
+    gsm8k                                     count=50/50  mean_rank=7.0
+    global_facts                              count=50/50  mean_rank=8.0
+    truthfulqa_mc2                            count=50/50  mean_rank=8.8
+    machine_learning                          count=50/50  mean_rank=10.2
+
+OLL v1 tasks (trace, holdout 10%): greedy_cv_splits_olv1items.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 62–62, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_trace_olv1items.pdf
+  Top-10 by mean rank:
+    professional_psychology                   count=50/50  mean_rank=1.0
+    elementary_mathematics                    count=50/50  mean_rank=2.0
+    gsm8k                                     count=50/50  mean_rank=4.0
+    high_school_psychology                    count=47/50  mean_rank=4.0
+    college_mathematics                       count=50/50  mean_rank=6.2
+    abstract_algebra                          count=50/50  mean_rank=6.7
+    hellaswag                                 count=39/50  mean_rank=7.7
+    truthfulqa_mc2                            count=50/50  mean_rank=8.4
+    global_facts                              count=50/50  mean_rank=9.1
+    college_chemistry                         count=50/50  mean_rank=9.5
+
+Epoch AI (entropy, holdout 10%): greedy_cv_splits_epoch.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 61–61, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_epoch.pdf
+  Top-10 by mean rank:
+    DTBench                                   count=41/50  mean_rank=3.7
+    SpireClimb                                count=39/50  mean_rank=8.7
+    OSWorld                                   count=35/50  mean_rank=8.9
+    GeoBench                                  count=39/50  mean_rank=9.2
+    Lech Mazur Writing                        count=37/50  mean_rank=9.6
+    FrontierSWE                               count=34/50  mean_rank=10.2
+    GDPval                                    count=30/50  mean_rank=10.5
+    CL-bench                                  count=25/50  mean_rank=10.9
+    ANLI                                      count=34/50  mean_rank=10.9
+    APEX-Agents                               count=30/50  mean_rank=11.4
+
+Epoch AI (facloc, holdout 10%): greedy_cv_splits_epoch.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 61–61, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_facloc_epoch.pdf
+  Top-10 by mean rank:
+    LMCA                                      count=49/50  mean_rank=1.3
+    HellaSwag                                 count=34/50  mean_rank=7.7
+    ARC AI2                                   count=37/50  mean_rank=8.4
+    Aider polyglot                            count=32/50  mean_rank=9.3
+    EBR-bench                                 count=32/50  mean_rank=9.8
+    Remote Labor Index                        count=18/50  mean_rank=11.4
+    FrontierMath-Tier-4-2025-07-01-Private    count=25/50  mean_rank=11.8
+    SpireClimb                                count=33/50  mean_rank=12.0
+    ProofBench                                count=21/50  mean_rank=12.0
+    MirrorCode                                count=21/50  mean_rank=12.6
+
+Epoch AI (trace, holdout 10%): greedy_cv_splits_epoch.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 61–61, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_trace_epoch.pdf
+  Top-10 by mean rank:
+    DTBench                                   count=41/50  mean_rank=3.7
+    EBR-bench                                 count=30/50  mean_rank=8.5
+    FrontierMath-Tier-4-2025-07-01-Private    count=30/50  mean_rank=10.2
+    OSWorld                                   count=31/50  mean_rank=10.6
+    CL-bench                                  count=26/50  mean_rank=11.6
+    GDPval                                    count=25/50  mean_rank=12.0
+    ProofBench                                count=22/50  mean_rank=12.0
+    PIQA                                      count=21/50  mean_rank=12.1
+    SpireClimb                                count=26/50  mean_rank=12.3
+    MirrorCode                                count=18/50  mean_rank=12.4
+
+HELM Lite (entropy, holdout 10%): greedy_cv_splits_helm_lite.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 10–10, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_helm_lite.pdf
+  Top-10 by mean rank:
+    MMLU                                      count=50/50  mean_rank=1.0
+    NarrativeQA                               count=50/50  mean_rank=2.0
+    NaturalQuestions (closed-book)            count=50/50  mean_rank=3.0
+    WMT 2014                                  count=50/50  mean_rank=4.2
+    NaturalQuestions (open-book)              count=50/50  mean_rank=5.0
+    MATH                                      count=50/50  mean_rank=5.9
+    LegalBench                                count=50/50  mean_rank=6.9
+    GSM8K                                     count=50/50  mean_rank=8.1
+    MedQA                                     count=50/50  mean_rank=8.9
+    OpenbookQA                                count=50/50  mean_rank=10.0
+
+HELM Lite (facloc, holdout 10%): greedy_cv_splits_helm_lite.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 10–10, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_facloc_helm_lite.pdf
+  Top-10 by mean rank:
+    MMLU                                      count=50/50  mean_rank=1.1
+    NaturalQuestions (closed-book)            count=50/50  mean_rank=3.1
+    NarrativeQA                               count=50/50  mean_rank=3.8
+    WMT 2014                                  count=50/50  mean_rank=4.4
+    LegalBench                                count=50/50  mean_rank=4.6
+    NaturalQuestions (open-book)              count=50/50  mean_rank=4.6
+    MATH                                      count=50/50  mean_rank=6.4
+    GSM8K                                     count=50/50  mean_rank=8.0
+    MedQA                                     count=50/50  mean_rank=9.2
+    OpenbookQA                                count=50/50  mean_rank=9.8
+
+HELM Lite (trace, holdout 10%): greedy_cv_splits_helm_lite.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 10–10, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_trace_helm_lite.pdf
+  Top-10 by mean rank:
+    MMLU                                      count=50/50  mean_rank=1.0
+    NarrativeQA                               count=50/50  mean_rank=2.1
+    NaturalQuestions (closed-book)            count=50/50  mean_rank=3.0
+    WMT 2014                                  count=50/50  mean_rank=4.1
+    NaturalQuestions (open-book)              count=50/50  mean_rank=5.1
+    MATH                                      count=50/50  mean_rank=5.8
+    LegalBench                                count=50/50  mean_rank=6.9
+    GSM8K                                     count=50/50  mean_rank=8.0
+    MedQA                                     count=50/50  mean_rank=9.0
+    OpenbookQA                                count=50/50  mean_rank=10.0
+
+HELM MMLU (entropy, holdout 10%): greedy_cv_splits_helm_mmlu.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 57–57, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_helm_mmlu.pdf
+  Top-10 by mean rank:
+    human_sexuality                           count=50/50  mean_rank=2.1
+    high_school_mathematics                   count=49/50  mean_rank=3.2
+    clinical_knowledge                        count=42/50  mean_rank=3.4
+    moral_scenarios                           count=50/50  mean_rank=4.7
+    business_ethics                           count=50/50  mean_rank=5.2
+    virology                                  count=50/50  mean_rank=6.6
+    high_school_european_history              count=48/50  mean_rank=7.7
+    world_religions                           count=48/50  mean_rank=8.2
+    security_studies                          count=48/50  mean_rank=9.9
+    college_chemistry                         count=47/50  mean_rank=10.0
+
+HELM MMLU (facloc, holdout 10%): greedy_cv_splits_helm_mmlu.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 57–57, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_facloc_helm_mmlu.pdf
+  Top-10 by mean rank:
+    elementary_mathematics                    count=50/50  mean_rank=2.0
+    clinical_knowledge                        count=43/50  mean_rank=3.1
+    high_school_psychology                    count=50/50  mean_rank=3.1
+    human_sexuality                           count=50/50  mean_rank=4.2
+    moral_disputes                            count=45/50  mean_rank=7.5
+    professional_law                          count=40/50  mean_rank=8.4
+    moral_scenarios                           count=50/50  mean_rank=10.2
+    high_school_world_history                 count=27/50  mean_rank=10.3
+    high_school_macroeconomics                count=38/50  mean_rank=10.6
+    high_school_mathematics                   count=48/50  mean_rank=11.0
+
+HELM MMLU (trace, holdout 10%): greedy_cv_splits_helm_mmlu.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 57–57, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_trace_helm_mmlu.pdf
+  Top-10 by mean rank:
+    high_school_physics                       count=48/50  mean_rank=2.7
+    clinical_knowledge                        count=42/50  mean_rank=3.4
+    human_sexuality                           count=50/50  mean_rank=5.3
+    high_school_world_history                 count=40/50  mean_rank=7.9
+    professional_law                          count=36/50  mean_rank=8.9
+    high_school_mathematics                   count=41/50  mean_rank=9.4
+    high_school_psychology                    count=25/50  mean_rank=9.9
+    moral_scenarios                           count=47/50  mean_rank=10.3
+    us_foreign_policy                         count=22/50  mean_rank=10.4
+    business_ethics                           count=48/50  mean_rank=10.9
+
+HELM Classic (entropy, holdout 10%): greedy_cv_splits_helm_classic.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 16–16, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_helm_classic.pdf
+  Top-10 by mean rank:
+    CivilComments                             count=50/50  mean_rank=2.7
+    TruthfulQA                                count=50/50  mean_rank=3.1
+    HellaSwag                                 count=48/50  mean_rank=4.4
+    IMDB                                      count=50/50  mean_rank=5.8
+    BoolQ                                     count=50/50  mean_rank=5.9
+    MS MARCO (TREC)                           count=43/50  mean_rank=6.4
+    CNN/DailyMail                             count=50/50  mean_rank=6.7
+    RAFT                                      count=50/50  mean_rank=8.9
+    QuAC                                      count=49/50  mean_rank=9.1
+    XSUM                                      count=50/50  mean_rank=9.1
+
+HELM Classic (facloc, holdout 10%): greedy_cv_splits_helm_classic.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 16–16, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_facloc_helm_classic.pdf
+  Top-10 by mean rank:
+    HellaSwag                                 count=47/50  mean_rank=4.6
+    CivilComments                             count=50/50  mean_rank=4.9
+    MMLU                                      count=50/50  mean_rank=5.7
+    CNN/DailyMail                             count=50/50  mean_rank=6.4
+    MS MARCO (regular)                        count=39/50  mean_rank=6.9
+    IMDB                                      count=50/50  mean_rank=7.2
+    NaturalQuestions (closed-book)            count=50/50  mean_rank=8.0
+    BoolQ                                     count=50/50  mean_rank=8.2
+    TruthfulQA                                count=50/50  mean_rank=8.5
+    RAFT                                      count=50/50  mean_rank=9.1
+
+HELM Classic (trace, holdout 10%): greedy_cv_splits_helm_classic.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 16–16, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_trace_helm_classic.pdf
+  Top-10 by mean rank:
+    MMLU                                      count=50/50  mean_rank=3.8
+    CivilComments                             count=50/50  mean_rank=4.2
+    HellaSwag                                 count=48/50  mean_rank=4.3
+    BoolQ                                     count=50/50  mean_rank=6.0
+    MS MARCO (TREC)                           count=39/50  mean_rank=6.8
+    IMDB                                      count=50/50  mean_rank=7.2
+    CNN/DailyMail                             count=50/50  mean_rank=7.6
+    QuAC                                      count=49/50  mean_rank=8.0
+    TruthfulQA                                count=50/50  mean_rank=8.0
+    XSUM                                      count=49/50  mean_rank=9.2
+
+MTEB 2026 (entropy, holdout 10%): greedy_cv_splits_mteb2026.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 56–56, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mteb2026.pdf
+  Top-10 by mean rank:
+    SummEval                                  count=50/50  mean_rank=2.0
+    RedditClusteringP2P                       count=46/50  mean_rank=2.2
+    AmazonCounterfactualClassification        count=49/50  mean_rank=3.3
+    STS17                                     count=45/50  mean_rank=5.4
+    Touche2020                                count=50/50  mean_rank=5.4
+    MTOPDomainClassification                  count=50/50  mean_rank=5.8
+    STS12                                     count=46/50  mean_rank=8.0
+    MindSmallReranking                        count=50/50  mean_rank=8.3
+    SCIDOCS                                   count=50/50  mean_rank=9.1
+    ToxicConversationsClassification          count=48/50  mean_rank=10.7
+
+MTEB 2026 (facloc, holdout 10%): greedy_cv_splits_mteb2026.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 56–56, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_facloc_mteb2026.pdf
+  Top-10 by mean rank:
+    RedditClusteringP2P                       count=46/50  mean_rank=2.2
+    STS15                                     count=49/50  mean_rank=2.4
+    MedrxivClusteringS2S                      count=50/50  mean_rank=3.0
+    MassiveIntentClassification               count=50/50  mean_rank=5.1
+    SummEval                                  count=50/50  mean_rank=5.9
+    DBPedia                                   count=49/50  mean_rank=6.1
+    STS17                                     count=45/50  mean_rank=7.9
+    ImdbClassification                        count=47/50  mean_rank=8.9
+    AmazonCounterfactualClassification        count=46/50  mean_rank=10.0
+    NFCorpus                                  count=34/50  mean_rank=10.2
+
+MTEB 2026 (trace, holdout 10%): greedy_cv_splits_mteb2026.json
+  50 splits (reps 0, 1, 2, 3, 4), eligible 56–56, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_trace_mteb2026.pdf
+  Top-10 by mean rank:
+    RedditClusteringP2P                       count=46/50  mean_rank=2.2
+    STS15                                     count=47/50  mean_rank=2.9
+    MedrxivClusteringS2S                      count=50/50  mean_rank=3.4
+    MassiveIntentClassification               count=50/50  mean_rank=5.3
+    DBPedia                                   count=40/50  mean_rank=6.3
+    SummEval                                  count=50/50  mean_rank=6.9
+    AmazonPolarityClassification              count=49/50  mean_rank=7.4
+    STS17                                     count=45/50  mean_rank=8.7
+    AmazonCounterfactualClassification        count=38/50  mean_rank=8.9
+    Touche2020                                count=48/50  mean_rank=11.6
+
+Done.
+
+# finished 2026-10-20T03:01:17Z  exit=0  status=ok

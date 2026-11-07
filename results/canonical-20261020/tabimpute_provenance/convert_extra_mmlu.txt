@@ -1,0 +1,29 @@
+Combining the logs ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_extra_{ds}.npz ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_{ds}.npz (no TabImpute)
+
+MMLU: eligible benchmarks per split 57–57 of 57 (0/50 splits restricted)
+index ties (hub, k ≤ 15): 0 picks in 0/50 splits
+index ties (pca, k ≤ 15): 0 picks in 0/50 splits
+index ties (trace, k ≤ 15): 0 picks in 0/50 splits
+context: 3800–3800 training rows (50/50 splits subsampled, Split.seed(SEED + 20))
+valid-range prediction clip (hub): 601 of 20036100 scored predictions, in 49/50 splits
+valid-range prediction clip (pca): 81 of 20036100 scored predictions, in 19/50 splits
+valid-range prediction clip (trace): 54 of 20036100 scored predictions, in 16/50 splits
+Paired R² differences a − b over 50 splits (Nadeau–Bengio 95% CI, win rate):
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/tabimpute_r2_extra_mmlu.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_extra_mmlu.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_extra_mmlu_paired.csv
+
+MMLU completed in 1s
+
+======================================================================
+SUMMARY: Mean R² at k = 5, 10, 15 (TabImpute V2 imputation)
+======================================================================
+Dataset      Method         R²@5    R²@10    R²@15
+---------------------------------------------------
+MMLU         hub          0.5567   0.6650   0.7161
+MMLU         pca          0.4233   0.5291   0.5940
+MMLU         trace        0.5386   0.6125   0.6615
+---------------------------------------------------
+
+All datasets completed in 1s

@@ -1,0 +1,44 @@
+Combining the logs ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_{ds}.npz (no TabImpute)
+
+Merged: eligible benchmarks per split 106–114 of 114 (14/50 splits restricted)
+index ties (entropy, k ≤ 15): 0 picks in 0/50 splits
+index ties (mi, k ≤ 15): 0 picks in 0/50 splits
+index ties (random, k ≤ 15): 0 picks in 0/50 splits
+index ties (facloc, k ≤ 15): 0 picks in 0/50 splits
+context: 106–106 training rows (0/50 splits subsampled, Split.seed(SEED + 20))
+valid-range prediction clip (entropy): 0 of 261239 scored predictions, in 0/50 splits
+valid-range prediction clip (mi): 0 of 254824 scored predictions, in 0/50 splits
+valid-range prediction clip (random): 0 of 254467 scored predictions, in 0/50 splits
+valid-range prediction clip (facloc): 0 of 270784 scored predictions, in 0/50 splits
+Paired R² differences a − b over 50 splits (Nadeau–Bengio 95% CI, win rate):
+  k=5        mi − entropy    -0.004  [-0.017, +0.010]  win 0.46  (n=50)
+  k=5        mi − facloc     -0.021  [-0.036, -0.007]  win 0.16  (n=50)
+  k=5        mi − random     -0.018  [-0.034, -0.001]  win 0.24  (n=50)
+  k=5   entropy − facloc     -0.017  [-0.030, -0.005]  win 0.12  (n=50)
+  k=5   entropy − random     -0.014  [-0.028, +0.001]  win 0.28  (n=50)
+  k=5    facloc − random     +0.004  [-0.011, +0.018]  win 0.62  (n=50)
+  k=10       mi − entropy    -0.008  [-0.023, +0.006]  win 0.34  (n=50)
+  k=10       mi − facloc     -0.029  [-0.047, -0.012]  win 0.12  (n=50)
+  k=10       mi − random     -0.030  [-0.049, -0.010]  win 0.16  (n=50)
+  k=10  entropy − facloc     -0.021  [-0.037, -0.004]  win 0.18  (n=50)
+  k=10  entropy − random     -0.021  [-0.040, -0.002]  win 0.16  (n=50)
+  k=10   facloc − random     -0.000  [-0.017, +0.017]  win 0.52  (n=50)
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/tabimpute_r2_merged.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_merged.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_merged_paired.csv
+
+MERGED completed in 1s
+
+======================================================================
+SUMMARY: Mean R² at k = 5, 10, 15 (TabImpute V2 imputation)
+======================================================================
+Dataset      Method         R²@5    R²@10    R²@15
+---------------------------------------------------
+Merged       entropy      0.0430   0.0688   0.0972
+Merged       mi           0.0392   0.0603   0.0967
+Merged       random       0.0567   0.0899   0.1220
+Merged       facloc       0.0604   0.0896   0.1106
+---------------------------------------------------
+
+All datasets completed in 1s

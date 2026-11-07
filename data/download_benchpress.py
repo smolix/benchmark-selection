@@ -1,99 +1,68 @@
-"""Build score matrix from BenchPress llm_benchmark_data.json.
+"""Download the BenchPress score table at its pinned revision and build the matrix.
 
-Produces benchpress.matrix.npz with:
-  B : (M, N) score matrix (NaN for missing)
-  O : (M, N) observation mask
-  model_names : (M,) array of model names
-  benchmark_names : (N,) array of benchmark names
+BenchPress (Papailiopoulos et al., 2026) collects scores of frontier models
+from papers, model cards and leaderboards, each with a source URL:
+https://github.com/anadim/llm-benchmark-matrix.  The repository's README
+states "License: MIT" but it has no license file and names no copyright
+holder, so this release does not redistribute the JSON (nor the matrix built
+from it).  This script fetches it from GitHub at the commit used in the
+paper, verifies its SHA-256 and builds data/benchpress.matrix.npz:
+
+    python data/download_benchpress.py            # fetch, verify, build
+    python data/download_benchpress.py --no-build # fetch and verify only
+
+Pinned input (retrieved 2026-04-10):
+    commit  e93b33f11f4a818d0e18f6914e256bfe320be54b
+    file    data/llm_benchmark_data.json  -> data/benchpress.json
+    sha256  255ea00914119403032f90f9568e9b6236483ff8b6858f18c22b62fd5bebe449
+A file whose checksum differs is refused (and not written).  The built
+benchpress.matrix.npz is listed in data/SHA256SUMS
+(f72d3a44b912e0314884189c596231480ecaf86c1d09d7e3a4001335edaa2f42).
+Standard library only for the download; numpy for the build.
 """
 
-import json
+import argparse
+import hashlib
 import pathlib
-import numpy as np
+import sys
+import urllib.request
+
+COMMIT = "e93b33f11f4a818d0e18f6914e256bfe320be54b"
+URL = ("https://raw.githubusercontent.com/anadim/llm-benchmark-matrix/"
+       f"{COMMIT}/data/llm_benchmark_data.json")
+SHA256 = "255ea00914119403032f90f9568e9b6236483ff8b6858f18c22b62fd5bebe449"
+HERE = pathlib.Path(__file__).resolve().parent
 
 
-DEFAULT_DATA = pathlib.Path(__file__).resolve().parent
+def fetch(dest, url=URL, expected=SHA256):
+    dest = pathlib.Path(dest)
+    if dest.is_file() and hashlib.sha256(dest.read_bytes()).hexdigest() == expected:
+        print(f"{dest}: present, sha256 ok")
+        return dest
+    with urllib.request.urlopen(url, timeout=120) as r:
+        body = r.read()
+    got = hashlib.sha256(body).hexdigest()
+    if got != expected:
+        sys.exit(f"download_benchpress: sha256 mismatch for {url}: "
+                 f"got {got}, expected {expected}; nothing written")
+    dest.write_bytes(body)
+    print(f"{dest}: {len(body)} bytes from {url}, sha256 ok")
+    return dest
 
 
-def build_benchpress(input_dir, output_dir):
-    input_dir = pathlib.Path(input_dir).resolve()
-    output_dir = pathlib.Path(output_dir).resolve()
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    src = input_dir / "benchpress.json"
-    with open(src) as f:
-        d = json.load(f)
-
-    models = d["models"]
-    benchmarks = d["benchmarks"]
-    scores = d["scores"]
-
-    model_ids = [m["id"] for m in models]
-    bench_ids = [b["id"] for b in benchmarks]
-    model_names = np.array([m["name"] for m in models])
-    benchmark_names = np.array([b["name"] for b in benchmarks])
-
-    model_idx = {mid: i for i, mid in enumerate(model_ids)}
-    bench_idx = {bid: i for i, bid in enumerate(bench_ids)}
-
-    M, N = len(models), len(benchmarks)
-    B = np.full((M, N), np.nan, dtype=np.float64)
-    O = np.zeros((M, N), dtype=np.float64)
-
-    for s in scores:
-        i = model_idx[s["model_id"]]
-        j = bench_idx[s["benchmark_id"]]
-        B[i, j] = s["score"]
-        O[i, j] = 1.0
-
-    # Replace NaN with 0 in B (our convention: unobserved = 0, mask in O)
-    B_out = np.where(O == 1, B, 0.0)
-
-    obs_frac = O.sum() / (M * N)
-    print(f"BenchPress: {M} models × {N} benchmarks, {obs_frac:.1%} observed")
-    print(f"Total scores: {int(O.sum())}")
-
-    # Check for models or benchmarks with very few observations
-    model_obs = O.sum(axis=1)
-    bench_obs = O.sum(axis=0)
-    print(f"Models: min {int(model_obs.min())} obs, max {int(model_obs.max())} obs")
-    print(f"Benchmarks: min {int(bench_obs.min())} obs, max {int(bench_obs.max())} obs")
-
-    # Drop models with fewer than 2 observations (can't contribute to covariance)
-    keep = model_obs >= 2
-    if not keep.all():
-        print(f"Dropping {(~keep).sum()} models with <2 observations")
-        B_out = B_out[keep]
-        O = O[keep]
-        model_names = model_names[keep]
-        M = len(model_names)
-
-    out = output_dir / "benchpress.matrix.npz"
-    np.savez(out, B=B_out, O=O, model_names=model_names, benchmark_names=benchmark_names)
-    print(f"Saved {out} ({M} x {N})")
-
-
-def parse_args():
-    import argparse
-
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--input-dir",
-        type=pathlib.Path,
-        default=DEFAULT_DATA,
-        help="Directory containing benchpress.json.",
-    )
-    parser.add_argument(
-        "--output-dir",
-        type=pathlib.Path,
-        help="Directory for benchpress.matrix.npz. Defaults to --input-dir.",
-    )
-    args = parser.parse_args()
-    if args.output_dir is None:
-        args.output_dir = args.input_dir
-    return args
+def main():
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--data-dir", type=pathlib.Path, default=HERE)
+    ap.add_argument("--no-build", action="store_true")
+    args = ap.parse_args()
+    args.data_dir.mkdir(parents=True, exist_ok=True)
+    fetch(args.data_dir / "benchpress.json")
+    if not args.no_build:
+        sys.path.insert(0, str(HERE))
+        from build_benchpress import build_benchpress
+        build_benchpress(args.data_dir, args.data_dir)
 
 
 if __name__ == "__main__":
-    args = parse_args()
-    build_benchpress(args.input_dir, args.output_dir)
+    main()

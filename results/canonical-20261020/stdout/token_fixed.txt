@@ -1,0 +1,679 @@
+# job      token_fixed
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_token_costs.py --repeats 5 --fixed-cost
+# started  2026-10-20T02:05:24Z on 4090-1
+
+HELM Lite: 91 models x 10 benchmarks (10 priced), 99.9% observed; total 9.477e+06 tokens (all requests), 10184 instances
+token cost range: 1.301e+05 (OpenbookQA) – 3.072e+06 (LegalBench)
+  overhead 0 x median: c0 = 0 tokens (0 instances) per benchmark, suite 9.4766e+06 tokens; 50 splits done (7.4s)
+  overhead 0.1 x median: c0 = 55894.7 tokens (75.7 instances) per benchmark, suite 1.00356e+07 tokens; 50 splits done (7.2s)
+  overhead 0.5 x median: c0 = 279473 tokens (378.5 instances) per benchmark, suite 1.22713e+07 tokens; 50 splits done (6.8s)
+  overhead 1 x median: c0 = 558947 tokens (757 instances) per benchmark, suite 1.50661e+07 tokens; 50 splits done (6.1s)
+  overhead 2 x median: c0 = 1.11789e+06 tokens (1514 instances) per benchmark, suite 2.06555e+07 tokens; 50 splits done (5.5s)
+
+== HELM Lite [main, knap], fixed overhead c0 = 0 x median = 0 tokens per benchmark (suite 9.477e+06): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                  0.000/nan/0.0       0.506/0.466/1.0       0.640/0.559/2.0       0.682/0.563/3.0       0.783/0.646/4.1       0.868/0.713/5.5       0.870/0.714/5.6
+mi / instances               0.000/nan/0.0       0.506/0.466/1.0       0.670/0.590/2.0       0.643/0.536/2.5       0.797/0.707/3.0       0.862/0.732/4.7       0.868/0.733/4.9
+mi / uniform                 0.000/nan/0.0       0.506/0.466/1.0       0.670/0.590/2.0       0.706/0.589/3.0       0.788/0.698/3.0       0.846/0.743/4.0       0.828/0.708/4.1
+trace / tokens               0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.683/0.567/3.0       0.777/0.601/4.5       0.894/0.742/6.0       0.931/0.624/8.0
+trace / instances            0.000/nan/0.0       0.506/0.466/1.0       0.670/0.590/2.0       0.609/0.515/2.1       0.681/0.569/3.0       0.868/0.670/6.0       0.925/0.673/7.1
+trace / uniform              0.000/nan/0.0       0.506/0.466/1.0       0.670/0.590/2.0       0.706/0.589/3.0       0.813/0.697/4.0       0.892/0.742/5.9       0.935/0.769/7.0
+entropy / tokens             0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.683/0.567/3.0       0.789/0.598/5.0       0.805/0.528/6.0       0.931/0.624/8.0
+entropy / instances          0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.710/0.595/3.0       0.607/0.501/2.0       0.868/0.670/6.0       0.931/0.624/8.0
+entropy / uniform            0.000/nan/0.0       0.506/0.466/1.0       0.670/0.590/2.0       0.706/0.589/3.0       0.813/0.697/4.0       0.894/0.742/6.0       0.935/0.769/7.0
+facloc / tokens              0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.683/0.567/3.0       0.813/0.697/4.0       0.894/0.742/6.0       0.931/0.603/7.9
+facloc / instances           0.000/nan/0.0       0.506/0.466/1.0       0.670/0.590/2.0       0.595/0.502/2.0       0.607/0.501/2.0       0.868/0.670/6.0       0.898/0.689/6.2
+facloc / uniform             0.000/nan/0.0       0.506/0.466/1.0       0.670/0.590/2.0       0.706/0.589/3.0       0.813/0.697/4.0       0.878/0.749/5.2       0.916/0.751/6.5
+random                       0.000/nan/0.0       0.452/0.393/1.0       0.624/0.541/2.0       0.670/0.544/3.0       0.712/0.547/3.8       0.812/0.596/5.4       0.867/0.664/6.4
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.000       -0.030*      +0.039       -0.014       +0.007       +0.003 
+  mi_tokens − mi_uniform                    +0.000       +0.000       -0.030*      -0.024*      -0.004       +0.023       +0.042*
+  mi_tokens − random                        +0.000       +0.053       +0.016       +0.012       +0.071       +0.056       +0.003 
+  trace_tokens − trace_instances            +0.000       +0.000       -0.029*      +0.075*      +0.096       +0.026*      +0.006 
+  trace_tokens − trace_uniform              +0.000       +0.000       -0.029*      -0.023*      -0.036       +0.002       -0.004 
+  trace_tokens − random                     +0.000       +0.053       +0.017       +0.014       +0.065       +0.082*      +0.064*
+  entropy_tokens − entropy_instances        +0.000       +0.000       +0.072       -0.027       +0.182*      -0.063       +0.000 
+  entropy_tokens − entropy_uniform          +0.000       +0.000       -0.029*      -0.023*      -0.024       -0.089*      -0.004 
+  entropy_tokens − random                   +0.000       +0.053       +0.017       +0.014       +0.077       -0.007       +0.064*
+  facloc_tokens − facloc_instances          +0.000       +0.000       -0.029*      +0.088*      +0.207*      +0.026*      +0.033 
+  facloc_tokens − facloc_uniform            +0.000       +0.000       -0.029*      -0.023*      +0.000       +0.016       +0.015 
+  facloc_tokens − random                    +0.000       +0.053       +0.017       +0.014       +0.101*      +0.082*      +0.064*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                      n/a      +0.000       -0.031*      +0.027       -0.061       -0.020       -0.019 
+  mi_tokens − mi_uniform                        n/a      +0.000       -0.031*      -0.026       -0.052       -0.031       +0.006 
+  mi_tokens − random                            n/a      +0.073       +0.018       +0.019       +0.099       +0.117       +0.050 
+  trace_tokens − trace_instances                n/a      +0.000       -0.030*      +0.052       +0.032       +0.071*      -0.049 
+  trace_tokens − trace_uniform                  n/a      +0.000       -0.030*      -0.022       -0.096       -0.000       -0.145 
+  trace_tokens − random                         n/a      +0.073       +0.019       +0.023       +0.053       +0.146*      -0.041 
+  entropy_tokens − entropy_instances            n/a      +0.000       +0.071       -0.028       +0.097       -0.142*      +0.000 
+  entropy_tokens − entropy_uniform              n/a      +0.000       -0.030*      -0.022       -0.099       -0.214*      -0.145 
+  entropy_tokens − random                       n/a      +0.073       +0.019       +0.023       +0.050       -0.068       -0.041 
+  facloc_tokens − facloc_instances              n/a      +0.000       -0.030*      +0.065       +0.195*      +0.071*      -0.086 
+  facloc_tokens − facloc_uniform                n/a      +0.000       -0.030*      -0.022       +0.000       -0.007       -0.147 
+  facloc_tokens − random                        n/a      +0.073       +0.019       +0.023       +0.149*      +0.146*      -0.061 
+
+== HELM Lite [main, knap], fixed overhead c0 = 0.1 x median = 5.589e+04 tokens per benchmark (suite 1.004e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                  0.000/nan/0.0       0.506/0.466/1.0       0.640/0.559/2.0       0.680/0.561/3.0       0.781/0.642/4.1       0.847/0.702/5.0       0.871/0.714/5.6
+mi / instances               0.000/nan/0.0       0.506/0.466/1.0       0.558/0.517/1.0       0.634/0.551/2.0       0.797/0.707/3.0       0.855/0.729/4.5       0.868/0.732/4.9
+mi / uniform                 0.000/nan/0.0       0.506/0.466/1.0       0.558/0.517/1.0       0.670/0.590/2.0       0.788/0.698/3.0       0.788/0.695/3.0       0.828/0.708/4.1
+trace / tokens               0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.683/0.567/3.0       0.783/0.624/4.3       0.814/0.626/5.2       0.931/0.624/8.0
+trace / instances            0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.626/0.517/2.5       0.773/0.658/3.8       0.854/0.712/5.0       0.891/0.625/6.3
+trace / uniform              0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.683/0.567/3.0       0.813/0.697/4.0       0.875/0.747/5.0       0.921/0.777/6.0
+entropy / tokens             0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.683/0.567/3.0       0.789/0.598/5.0       0.805/0.528/6.0       0.931/0.624/8.0
+entropy / instances          0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.571/0.478/2.0       0.607/0.501/2.0       0.798/0.604/5.0       0.931/0.624/8.0
+entropy / uniform            0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.683/0.567/3.0       0.813/0.697/4.0       0.877/0.748/5.0       0.921/0.777/6.0
+facloc / tokens              0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.683/0.567/3.0       0.813/0.697/4.0       0.855/0.722/5.0       0.931/0.624/8.0
+facloc / instances           0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.595/0.502/2.0       0.607/0.501/2.0       0.849/0.687/5.0       0.892/0.682/6.0
+facloc / uniform             0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.683/0.567/3.0       0.813/0.697/4.0       0.853/0.738/4.6       0.905/0.758/5.6
+random                       0.000/nan/0.0       0.506/0.466/1.0       0.609/0.526/2.0       0.641/0.528/2.6       0.667/0.511/3.6       0.792/0.609/4.7       0.851/0.667/5.8
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.000       +0.082       +0.047       -0.016       -0.009       +0.003 
+  mi_tokens − mi_uniform                    +0.000       +0.000       +0.082       +0.011       -0.006       +0.059*      +0.043*
+  mi_tokens − random                        +0.000       +0.000       +0.031       +0.040       +0.114       +0.055       +0.021 
+  trace_tokens − trace_instances            +0.000       +0.000       +0.072       +0.058*      +0.010       -0.040       +0.040*
+  trace_tokens − trace_uniform              +0.000       +0.000       +0.072       +0.000       -0.030       -0.060       +0.010 
+  trace_tokens − random                     +0.000       +0.000       +0.032       +0.043       +0.116       +0.023       +0.080*
+  entropy_tokens − entropy_instances        +0.000       +0.000       +0.072       +0.113*      +0.182*      +0.007       +0.000 
+  entropy_tokens − entropy_uniform          +0.000       +0.000       +0.072       +0.000       -0.024       -0.072       +0.010 
+  entropy_tokens − random                   +0.000       +0.000       +0.032       +0.043       +0.122       +0.013       +0.080*
+  facloc_tokens − facloc_instances          +0.000       +0.000       +0.072       +0.088*      +0.207*      +0.006       +0.039*
+  facloc_tokens − facloc_uniform            +0.000       +0.000       +0.072       +0.000       +0.000       +0.002       +0.026 
+  facloc_tokens − random                    +0.000       +0.000       +0.032       +0.043       +0.147*      +0.064       +0.080*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                      n/a      +0.000       +0.042       +0.010       -0.065       -0.027       -0.018 
+  mi_tokens − mi_uniform                        n/a      +0.000       +0.042       -0.029*      -0.056       +0.007       +0.006 
+  mi_tokens − random                            n/a      +0.000       +0.033       +0.033       +0.131       +0.093       +0.047 
+  trace_tokens − trace_instances                n/a      +0.000       +0.071       +0.050       -0.035       -0.086       -0.001 
+  trace_tokens − trace_uniform                  n/a      +0.000       +0.071       +0.000       -0.073       -0.120       -0.153 
+  trace_tokens − random                         n/a      +0.000       +0.034       +0.039       +0.113       +0.017       -0.043 
+  entropy_tokens − entropy_instances            n/a      +0.000       +0.071       +0.089*      +0.097       -0.076       +0.000 
+  entropy_tokens − entropy_uniform              n/a      +0.000       +0.071       +0.000       -0.099       -0.220*      -0.153 
+  entropy_tokens − random                       n/a      +0.000       +0.034       +0.039       +0.087       -0.081       -0.043 
+  facloc_tokens − facloc_instances              n/a      +0.000       +0.071       +0.065       +0.195*      +0.035       -0.058 
+  facloc_tokens − facloc_uniform                n/a      +0.000       +0.071       +0.000       +0.000       -0.016       -0.135 
+  facloc_tokens − random                        n/a      +0.000       +0.034       +0.039       +0.186*      +0.113       -0.043 
+
+== HELM Lite [main, knap], fixed overhead c0 = 0.5 x median = 2.795e+05 tokens per benchmark (suite 1.227e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                  0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.644/0.566/2.0       0.736/0.592/3.6       0.790/0.634/4.5       0.873/0.721/5.5
+mi / instances               0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.670/0.590/2.0       0.797/0.707/3.0       0.802/0.689/3.6       0.863/0.726/4.9
+mi / uniform                 0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.670/0.590/2.0       0.788/0.698/3.0       0.778/0.687/3.0       0.828/0.708/4.1
+trace / tokens               0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.641/0.560/2.0       0.741/0.608/3.4       0.846/0.706/5.0       0.910/0.701/7.0
+trace / instances            0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.670/0.590/2.0       0.797/0.707/3.0       0.838/0.723/4.0       0.894/0.703/6.0
+trace / uniform              0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.670/0.590/2.0       0.797/0.707/3.0       0.854/0.720/4.9       0.895/0.694/6.2
+entropy / tokens             0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.721/0.562/4.0       0.789/0.598/5.0       0.910/0.701/7.0
+entropy / instances          0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.461/0.400/1.0       0.607/0.501/2.0       0.788/0.649/4.0       0.888/0.622/7.0
+entropy / uniform            0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.670/0.590/2.0       0.797/0.707/3.0       0.855/0.722/5.0       0.894/0.700/6.1
+facloc / tokens              0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.641/0.560/2.0       0.737/0.596/3.5       0.855/0.722/5.0       0.907/0.694/7.0
+facloc / instances           0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.558/0.519/1.0       0.607/0.501/2.0       0.838/0.723/4.0       0.895/0.708/6.0
+facloc / uniform             0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.670/0.590/2.0       0.797/0.707/3.0       0.815/0.694/4.4       0.887/0.673/6.1
+random                       0.000/nan/0.0         0.000/nan/0.0       0.470/0.415/1.0       0.586/0.501/1.9       0.642/0.517/3.0       0.717/0.562/3.7       0.825/0.646/5.4
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.000       +0.000       -0.025*      -0.061       -0.012       +0.010 
+  mi_tokens − mi_uniform                    +0.000       +0.000       +0.000       -0.025*      -0.052       +0.011       +0.045*
+  mi_tokens − random                        +0.000       +0.000       +0.088       +0.059       +0.094       +0.073       +0.048 
+  trace_tokens − trace_instances            +0.000       +0.000       +0.000       -0.029*      -0.057       +0.008       +0.016 
+  trace_tokens − trace_uniform              +0.000       +0.000       +0.000       -0.029*      -0.057       -0.008       +0.015 
+  trace_tokens − random                     +0.000       +0.000       +0.088       +0.055       +0.098       +0.129*      +0.085*
+  entropy_tokens − entropy_instances        +0.000       +0.000       +0.000       +0.179*      +0.114*      +0.001       +0.022*
+  entropy_tokens − entropy_uniform          +0.000       +0.000       -0.052*      -0.029*      -0.077       -0.066       +0.016 
+  entropy_tokens − random                   +0.000       +0.000       +0.036       +0.055       +0.078       +0.072       +0.085*
+  facloc_tokens − facloc_instances          +0.000       +0.000       +0.000       +0.083       +0.131*      +0.018       +0.012 
+  facloc_tokens − facloc_uniform            +0.000       +0.000       +0.000       -0.029*      -0.060       +0.040       +0.020 
+  facloc_tokens − random                    +0.000       +0.000       +0.088       +0.055       +0.095       +0.139*      +0.081*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                      n/a          n/a      +0.000       -0.024*      -0.115*      -0.055       -0.005 
+  mi_tokens − mi_uniform                        n/a          n/a      +0.000       -0.024*      -0.105*      -0.053       +0.013 
+  mi_tokens − random                            n/a          n/a      +0.104*      +0.065       +0.076       +0.072       +0.075 
+  trace_tokens − trace_instances                n/a          n/a      +0.000       -0.030*      -0.099*      -0.017       -0.002 
+  trace_tokens − trace_uniform                  n/a          n/a      +0.000       -0.030*      -0.099*      -0.014       +0.007 
+  trace_tokens − random                         n/a          n/a      +0.104*      +0.059       +0.091       +0.143*      +0.055 
+  entropy_tokens − entropy_instances            n/a          n/a      +0.000       +0.160*      +0.061       -0.051       +0.079*
+  entropy_tokens − entropy_uniform              n/a          n/a      -0.053*      -0.030*      -0.145*      -0.124*      +0.001 
+  entropy_tokens − random                       n/a          n/a      +0.051       +0.059       +0.046       +0.036       +0.055 
+  facloc_tokens − facloc_instances              n/a          n/a      +0.000       +0.042       +0.095       -0.001       -0.014 
+  facloc_tokens − facloc_uniform                n/a          n/a      +0.000       -0.030*      -0.111*      +0.028       +0.021 
+  facloc_tokens − random                        n/a          n/a      +0.104*      +0.059       +0.079       +0.159*      +0.048 
+
+== HELM Lite [main, knap], fixed overhead c0 = 1 x median = 5.589e+05 tokens per benchmark (suite 1.507e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                  0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.558/0.517/1.0       0.719/0.601/3.0       0.836/0.723/4.0       0.864/0.729/4.9
+mi / instances               0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.558/0.517/1.0       0.726/0.659/2.0       0.797/0.685/3.6       0.862/0.726/4.9
+mi / uniform                 0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.558/0.517/1.0       0.716/0.648/2.0       0.778/0.687/3.0       0.828/0.708/4.1
+trace / tokens               0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.704/0.586/3.0       0.812/0.693/4.0       0.910/0.701/7.0
+trace / instances            0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.726/0.659/2.0       0.838/0.723/4.0       0.874/0.686/5.1
+trace / uniform              0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.726/0.659/2.0       0.838/0.729/4.0       0.891/0.706/6.0
+entropy / tokens             0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.683/0.567/3.0       0.789/0.598/5.0       0.910/0.701/7.0
+entropy / instances          0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.461/0.400/1.0       0.607/0.501/2.0       0.757/0.639/3.1       0.910/0.701/7.0
+entropy / uniform            0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.726/0.659/2.0       0.839/0.731/4.0       0.891/0.710/6.0
+facloc / tokens              0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.641/0.560/2.0       0.683/0.567/3.0       0.813/0.697/4.0       0.910/0.701/7.0
+facloc / instances           0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.558/0.515/1.1       0.617/0.520/2.0       0.838/0.723/4.0       0.880/0.720/5.0
+facloc / uniform             0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.569/0.489/2.0       0.726/0.659/2.0       0.813/0.713/3.5       0.878/0.691/5.6
+random                       0.000/nan/0.0         0.000/nan/0.0       0.452/0.393/1.0       0.563/0.488/1.7       0.588/0.479/2.3       0.693/0.555/3.3       0.814/0.635/5.2
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.000       +0.000       +0.000       -0.007       +0.039       +0.002 
+  mi_tokens − mi_uniform                    +0.000       +0.000       +0.000       +0.000       +0.003       +0.058*      +0.036*
+  mi_tokens − random                        +0.000       +0.000       +0.053       -0.005       +0.131       +0.143*      +0.050 
+  trace_tokens − trace_instances            +0.000       +0.000       +0.000       +0.072       -0.022       -0.026*      +0.036*
+  trace_tokens − trace_uniform              +0.000       +0.000       +0.000       +0.072       -0.022       -0.027*      +0.020*
+  trace_tokens − random                     +0.000       +0.000       +0.053       +0.078       +0.115       +0.118*      +0.096*
+  entropy_tokens − entropy_instances        +0.000       +0.000       +0.000       +0.179*      +0.077       +0.032       +0.000 
+  entropy_tokens − entropy_uniform          +0.000       +0.000       +0.000       +0.072       -0.043       -0.050       +0.019 
+  entropy_tokens − random                   +0.000       +0.000       +0.053       +0.078       +0.095       +0.096       +0.096*
+  facloc_tokens − facloc_instances          +0.000       +0.000       +0.000       +0.083       +0.066       -0.024*      +0.031 
+  facloc_tokens − facloc_uniform            +0.000       +0.000       +0.000       +0.072       -0.043       +0.001       +0.032 
+  facloc_tokens − random                    +0.000       +0.000       +0.053       +0.078       +0.095       +0.120*      +0.096*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                      n/a          n/a      +0.000       +0.000       -0.059       +0.038       +0.003 
+  mi_tokens − mi_uniform                        n/a          n/a      +0.000       +0.000       -0.048       +0.036       +0.021 
+  mi_tokens − random                            n/a          n/a      +0.073       +0.029       +0.122       +0.167*      +0.093 
+  trace_tokens − trace_instances                n/a          n/a      +0.000       +0.071       -0.074       -0.030*      +0.015 
+  trace_tokens − trace_uniform                  n/a          n/a      +0.000       +0.071       -0.074       -0.036*      -0.006 
+  trace_tokens − random                         n/a          n/a      +0.073       +0.073       +0.107       +0.137*      +0.066 
+  entropy_tokens − entropy_instances            n/a          n/a      +0.000       +0.160*      +0.065       -0.041       +0.000 
+  entropy_tokens − entropy_uniform              n/a          n/a      +0.000       +0.071       -0.093*      -0.133*      -0.009 
+  entropy_tokens − random                       n/a          n/a      +0.073       +0.073       +0.088       +0.043       +0.066 
+  facloc_tokens − facloc_instances              n/a          n/a      +0.000       +0.046       +0.047       -0.026*      -0.019 
+  facloc_tokens − facloc_uniform                n/a          n/a      +0.000       +0.071       -0.093*      -0.016       +0.010 
+  facloc_tokens − random                        n/a          n/a      +0.073       +0.073       +0.088       +0.141*      +0.066 
+
+== HELM Lite [main, knap], fixed overhead c0 = 2 x median = 1.118e+06 tokens per benchmark (suite 2.066e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                  0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.661/0.579/2.0       0.782/0.687/3.0       0.864/0.728/4.9
+mi / instances               0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.726/0.659/2.0       0.770/0.670/3.0       0.861/0.726/4.9
+mi / uniform                 0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.712/0.646/2.0       0.778/0.687/3.0       0.828/0.708/4.1
+trace / tokens               0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.683/0.567/3.0       0.804/0.685/4.0       0.895/0.742/6.0
+trace / instances            0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.726/0.659/2.0       0.813/0.697/4.0       0.880/0.720/5.0
+trace / uniform              0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.726/0.659/2.0       0.814/0.698/4.0       0.881/0.720/5.2
+entropy / tokens             0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.506/0.466/1.0       0.683/0.567/3.0       0.721/0.562/4.0       0.805/0.528/6.0
+entropy / instances          0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.461/0.400/1.0       0.607/0.501/2.0       0.746/0.631/3.0       0.868/0.662/6.0
+entropy / uniform            0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.726/0.659/2.0       0.813/0.697/4.0       0.880/0.717/5.1
+facloc / tokens              0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.683/0.567/3.0       0.813/0.697/4.0       0.894/0.742/6.0
+facloc / instances           0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.681/0.601/2.0       0.805/0.696/3.8       0.880/0.720/5.0
+facloc / uniform             0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.558/0.519/1.0       0.726/0.659/2.0       0.801/0.694/3.5       0.865/0.694/5.1
+random                       0.000/nan/0.0         0.000/nan/0.0         0.000/nan/0.0       0.467/0.409/1.0       0.572/0.477/2.0       0.670/0.558/2.8       0.807/0.629/4.9
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.000       +0.000       +0.000       -0.065       +0.012       +0.003 
+  mi_tokens − mi_uniform                    +0.000       +0.000       +0.000       +0.000       -0.051       +0.004       +0.036*
+  mi_tokens − random                        +0.000       +0.000       +0.000       +0.091*      +0.089       +0.112*      +0.058 
+  trace_tokens − trace_instances            +0.000       +0.000       +0.000       +0.000       -0.043       -0.010       +0.015 
+  trace_tokens − trace_uniform              +0.000       +0.000       +0.000       +0.000       -0.043       -0.010       +0.014 
+  trace_tokens − random                     +0.000       +0.000       +0.000       +0.091*      +0.112       +0.134*      +0.088*
+  entropy_tokens − entropy_instances        +0.000       +0.000       +0.000       +0.044       +0.077       -0.026       -0.063 
+  entropy_tokens − entropy_uniform          +0.000       +0.000       +0.000       -0.052*      -0.043       -0.093*      -0.075 
+  entropy_tokens − random                   +0.000       +0.000       +0.000       +0.039       +0.112       +0.051       -0.002 
+  facloc_tokens − facloc_instances          +0.000       +0.000       +0.000       +0.000       +0.002       +0.008       +0.014 
+  facloc_tokens − facloc_uniform            +0.000       +0.000       +0.000       +0.000       -0.043       +0.012       +0.029 
+  facloc_tokens − random                    +0.000       +0.000       +0.000       +0.091*      +0.112       +0.144*      +0.088*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                      n/a          n/a          n/a      +0.000       -0.080*      +0.016       +0.002 
+  mi_tokens − mi_uniform                        n/a          n/a          n/a      +0.000       -0.067*      -0.000       +0.020 
+  mi_tokens − random                            n/a          n/a          n/a      +0.110*      +0.102       +0.128*      +0.098 
+  trace_tokens − trace_instances                n/a          n/a          n/a      +0.000       -0.093*      -0.012       +0.022 
+  trace_tokens − trace_uniform                  n/a          n/a          n/a      +0.000       -0.093*      -0.013       +0.022 
+  trace_tokens − random                         n/a          n/a          n/a      +0.110*      +0.089       +0.127       +0.113*
+  entropy_tokens − entropy_instances            n/a          n/a          n/a      +0.066       +0.065       -0.069       -0.133 
+  entropy_tokens − entropy_uniform              n/a          n/a          n/a      -0.053*      -0.093*      -0.135*      -0.189*
+  entropy_tokens − random                       n/a          n/a          n/a      +0.057       +0.089       +0.004       -0.101 
+  facloc_tokens − facloc_instances              n/a          n/a          n/a      +0.000       -0.034       +0.001       +0.022 
+  facloc_tokens − facloc_uniform                n/a          n/a          n/a      +0.000       -0.093*      +0.002       +0.048 
+  facloc_tokens − random                        n/a          n/a          n/a      +0.110*      +0.089       +0.139*      +0.113*
+
+checks: budget violations 0 (every level, design, method and budget); {o}_tokens vs direct knapsack mismatches 0; estimation failed on 0 splits
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/token_fixed_helm_lite.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/token_fixed_helm_lite_paired.csv
+Summary saved to ~/benchselect-runs/canonical-20261020/out/logs/token_fixed_helm_lite.json (7328 macros, 774 undefined statistics left out)
+HELM Lite completed in 38s
+HELM MMLU: 79 models x 57 benchmarks (57 priced), 100.0% observed; total 1.03e+07 tokens (all requests), 14042 instances
+token cost range: 3.036e+04 (management) – 2.613e+06 (professional_law)
+  overhead 0 x median: c0 = 0 tokens (0 instances) per benchmark, suite 1.02954e+07 tokens; 50 splits done (76.9s)
+  overhead 0.1 x median: c0 = 9151.11 tokens (17.3 instances) per benchmark, suite 1.0817e+07 tokens; 50 splits done (71.0s)
+  overhead 0.5 x median: c0 = 45755.6 tokens (86.5 instances) per benchmark, suite 1.29035e+07 tokens; 50 splits done (67.4s)
+  overhead 1 x median: c0 = 91511.1 tokens (173 instances) per benchmark, suite 1.55116e+07 tokens; 50 splits done (62.3s)
+  overhead 2 x median: c0 = 183022 tokens (346 instances) per benchmark, suite 2.07277e+07 tokens; 50 splits done (57.7s)
+
+== HELM MMLU [main, knap], fixed overhead c0 = 0 x median = 0 tokens per benchmark (suite 1.03e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                0.703/0.691/2.0       0.760/0.738/5.0      0.819/0.780/11.0      0.858/0.795/18.6      0.895/0.798/28.0      0.907/0.807/30.3      0.907/0.807/30.4
+mi / instances             0.571/0.567/1.1       0.760/0.745/3.5       0.802/0.762/9.2      0.823/0.777/12.0      0.878/0.784/24.5      0.899/0.785/30.1      0.900/0.785/30.3
+mi / uniform               0.559/0.554/1.0       0.672/0.662/2.0       0.766/0.752/3.5       0.791/0.771/5.4      0.826/0.783/11.2      0.846/0.779/17.6      0.857/0.765/20.6
+trace / tokens             0.702/0.690/2.0       0.773/0.750/4.9      0.838/0.799/11.0      0.870/0.798/19.0      0.912/0.794/30.9      0.944/0.806/39.8      0.977/0.814/48.4
+trace / instances          0.659/0.654/1.0       0.746/0.730/3.7       0.815/0.779/8.4      0.829/0.782/11.1      0.910/0.821/26.8      0.941/0.838/34.2      0.970/0.835/46.0
+trace / uniform            0.659/0.654/1.0       0.762/0.752/2.0       0.799/0.781/4.8       0.818/0.792/7.1      0.859/0.810/13.5      0.872/0.807/17.0      0.901/0.821/24.2
+entropy / tokens           0.704/0.692/2.0       0.770/0.747/5.0      0.823/0.783/11.0      0.878/0.810/19.0      0.914/0.796/32.0      0.942/0.802/40.0      0.978/0.792/50.0
+entropy / instances        0.655/0.649/1.0       0.736/0.719/3.0       0.808/0.761/9.3      0.866/0.795/18.0      0.911/0.821/27.0      0.942/0.840/35.0      0.968/0.833/45.8
+entropy / uniform          0.659/0.654/1.0       0.767/0.751/3.0       0.798/0.768/6.5       0.810/0.779/7.0      0.848/0.793/13.1      0.916/0.832/25.6      0.970/0.845/43.4
+facloc / tokens            0.648/0.640/1.8       0.762/0.741/4.9       0.826/0.784/9.9      0.869/0.798/18.8      0.911/0.798/30.5      0.943/0.800/39.2      0.975/0.808/48.9
+facloc / instances         0.655/0.649/1.0       0.688/0.672/2.9       0.810/0.775/8.1      0.834/0.791/11.2      0.909/0.822/26.1      0.938/0.838/33.3      0.972/0.831/46.2
+facloc / uniform           0.655/0.649/1.0       0.746/0.737/2.0       0.782/0.765/4.6       0.808/0.785/6.2      0.860/0.813/13.4      0.884/0.816/18.8      0.879/0.818/18.7
+random                     0.588/0.570/1.5       0.716/0.700/3.0       0.760/0.735/5.2       0.796/0.761/8.9      0.835/0.772/16.0      0.857/0.771/21.5      0.901/0.778/32.5
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.132*      -0.000       +0.017       +0.035*      +0.017*      +0.007       +0.007 
+  mi_tokens − mi_uniform                    +0.144*      +0.088       +0.052*      +0.067*      +0.069*      +0.060*      +0.050*
+  mi_tokens − random                        +0.115       +0.045       +0.059*      +0.062*      +0.061*      +0.049*      +0.006 
+  trace_tokens − trace_instances            +0.043       +0.027       +0.023*      +0.041*      +0.002       +0.004       +0.008 
+  trace_tokens − trace_uniform              +0.043       +0.012       +0.039*      +0.052*      +0.053*      +0.072*      +0.076*
+  trace_tokens − random                     +0.114       +0.058*      +0.078*      +0.073*      +0.077*      +0.087*      +0.076*
+  entropy_tokens − entropy_instances        +0.049       +0.034       +0.015       +0.012*      +0.003       +0.000       +0.010*
+  entropy_tokens − entropy_uniform          +0.045       +0.003       +0.024       +0.068*      +0.066*      +0.026*      +0.008 
+  entropy_tokens − random                   +0.116       +0.054*      +0.063*      +0.082*      +0.080*      +0.085*      +0.077*
+  facloc_tokens − facloc_instances          -0.007       +0.074*      +0.016       +0.035*      +0.002       +0.005       +0.003 
+  facloc_tokens − facloc_uniform            -0.007       +0.016       +0.044*      +0.061*      +0.051*      +0.059*      +0.096*
+  facloc_tokens − random                    +0.060       +0.046*      +0.066*      +0.073*      +0.077*      +0.086*      +0.074*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.124*      -0.007       +0.018       +0.018       +0.014       +0.022       +0.022 
+  mi_tokens − mi_uniform                    +0.136*      +0.076       +0.028       +0.024       +0.015       +0.028       +0.042*
+  mi_tokens − random                        +0.121       +0.039       +0.045*      +0.034       +0.026       +0.036       +0.029 
+  trace_tokens − trace_instances            +0.037       +0.020       +0.020       +0.015       -0.027*      -0.032*      -0.021 
+  trace_tokens − trace_uniform              +0.037       -0.002       +0.018       +0.006       -0.016       -0.001       -0.007 
+  trace_tokens − random                     +0.120       +0.051       +0.064*      +0.037       +0.023       +0.035       +0.036 
+  entropy_tokens − entropy_instances        +0.043       +0.028       +0.022       +0.015*      -0.024       -0.037*      -0.041 
+  entropy_tokens − entropy_uniform          +0.039       -0.004       +0.015       +0.032*      +0.003       -0.030       -0.053*
+  entropy_tokens − random                   +0.122       +0.048       +0.048*      +0.049*      +0.025       +0.031       +0.014 
+  facloc_tokens − facloc_instances          -0.010       +0.069*      +0.009       +0.007       -0.023       -0.037*      -0.022 
+  facloc_tokens − facloc_uniform            -0.010       +0.004       +0.019       +0.013       -0.015       -0.016       -0.009 
+  facloc_tokens − random                    +0.070       +0.041       +0.049*      +0.037       +0.027       +0.030       +0.031 
+
+== HELM MMLU [main, knap], fixed overhead c0 = 0.1 x median = 9151 tokens per benchmark (suite 1.082e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                0.704/0.692/2.0       0.746/0.728/4.0       0.804/0.768/9.7      0.845/0.784/17.0      0.891/0.796/26.9      0.907/0.808/30.2      0.907/0.809/30.3
+mi / instances             0.588/0.584/1.1       0.754/0.740/3.0       0.799/0.765/8.3      0.817/0.774/11.3      0.869/0.779/23.1      0.894/0.782/29.4      0.895/0.781/30.0
+mi / uniform               0.558/0.555/1.0       0.669/0.660/1.8       0.766/0.752/3.2       0.795/0.777/5.1      0.824/0.782/11.1      0.847/0.780/17.4      0.855/0.769/20.3
+trace / tokens             0.705/0.694/2.0       0.758/0.738/4.0       0.826/0.790/9.2      0.865/0.800/17.2      0.910/0.803/29.1      0.937/0.801/38.3      0.975/0.816/47.6
+trace / instances          0.669/0.663/1.0       0.748/0.734/3.0       0.810/0.779/7.3       0.829/0.790/9.5      0.903/0.819/24.8      0.936/0.833/33.0      0.969/0.839/45.3
+trace / uniform            0.669/0.663/1.0       0.766/0.753/3.0       0.790/0.772/4.5       0.817/0.792/7.0      0.858/0.810/13.1      0.873/0.811/16.3      0.904/0.824/24.2
+entropy / tokens           0.705/0.693/2.0       0.755/0.737/4.0      0.817/0.778/10.0      0.875/0.810/18.0      0.910/0.803/30.0      0.933/0.782/39.0      0.973/0.788/49.0
+entropy / instances        0.655/0.649/1.0       0.713/0.699/3.0       0.795/0.752/8.0      0.858/0.789/16.6      0.903/0.813/25.0      0.938/0.833/34.0      0.967/0.836/45.2
+entropy / uniform          0.669/0.663/1.0       0.715/0.704/2.0       0.782/0.755/5.6       0.807/0.776/6.9      0.848/0.795/12.3      0.915/0.833/24.8      0.968/0.844/42.5
+facloc / tokens            0.650/0.641/1.8       0.754/0.736/4.0       0.818/0.781/8.9      0.864/0.800/16.9      0.906/0.797/28.9      0.941/0.812/37.9      0.972/0.804/48.0
+facloc / instances         0.665/0.659/1.0       0.688/0.673/2.6       0.800/0.770/6.9      0.825/0.783/10.7      0.904/0.819/24.6      0.933/0.832/32.0      0.970/0.831/45.2
+facloc / uniform           0.665/0.659/1.0       0.735/0.725/2.0       0.782/0.767/3.9       0.804/0.782/6.0      0.856/0.813/12.5      0.883/0.816/18.4      0.884/0.819/19.6
+random                     0.602/0.590/1.4       0.700/0.686/2.6       0.755/0.730/4.9       0.799/0.767/8.5      0.834/0.773/15.7      0.855/0.773/20.8      0.900/0.776/32.0
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.116*      -0.008       +0.005       +0.029*      +0.022*      +0.013*      +0.012 
+  mi_tokens − mi_uniform                    +0.146*      +0.077       +0.039*      +0.050*      +0.067*      +0.060*      +0.052*
+  mi_tokens − random                        +0.102       +0.046       +0.050*      +0.047*      +0.057*      +0.051*      +0.008 
+  trace_tokens − trace_instances            +0.037       +0.009       +0.016       +0.036*      +0.007       +0.002       +0.007 
+  trace_tokens − trace_uniform              +0.037       -0.008       +0.035*      +0.048*      +0.051*      +0.064*      +0.072*
+  trace_tokens − random                     +0.103       +0.058*      +0.071*      +0.066*      +0.075*      +0.082*      +0.076*
+  entropy_tokens − entropy_instances        +0.050       +0.043*      +0.022       +0.017*      +0.007       -0.005       +0.007 
+  entropy_tokens − entropy_uniform          +0.037       +0.040*      +0.035       +0.068*      +0.062*      +0.018*      +0.005 
+  entropy_tokens − random                   +0.103       +0.055*      +0.062*      +0.076*      +0.075*      +0.078*      +0.074*
+  facloc_tokens − facloc_instances          -0.015       +0.066       +0.018       +0.039*      +0.002       +0.008*      +0.002 
+  facloc_tokens − facloc_uniform            -0.015       +0.019       +0.036*      +0.060*      +0.050*      +0.058*      +0.088*
+  facloc_tokens − random                    +0.048       +0.054*      +0.064*      +0.065*      +0.071*      +0.086*      +0.072*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.109*      -0.012       +0.003       +0.011       +0.018       +0.026*      +0.028*
+  mi_tokens − mi_uniform                    +0.138*      +0.068       +0.016       +0.008       +0.015       +0.028*      +0.040*
+  mi_tokens − random                        +0.103       +0.042       +0.038       +0.017       +0.024       +0.036       +0.033 
+  trace_tokens − trace_instances            +0.030       +0.004       +0.011       +0.010       -0.016       -0.032*      -0.023 
+  trace_tokens − trace_uniform              +0.030       -0.015       +0.017       +0.008       -0.007       -0.010       -0.007 
+  trace_tokens − random                     +0.104       +0.052       +0.059*      +0.033       +0.030       +0.029       +0.041 
+  entropy_tokens − entropy_instances        +0.044       +0.038*      +0.026       +0.022*      -0.010       -0.051*      -0.048*
+  entropy_tokens − entropy_uniform          +0.030       +0.032       +0.023       +0.035*      +0.008       -0.051*      -0.056*
+  entropy_tokens − random                   +0.103       +0.051       +0.048*      +0.044*      +0.030       +0.009       +0.012 
+  facloc_tokens − facloc_instances          -0.018       +0.063       +0.010       +0.018       -0.023       -0.021*      -0.027 
+  facloc_tokens − facloc_uniform            -0.018       +0.011       +0.013       +0.019       -0.016       -0.004       -0.014 
+  facloc_tokens − random                    +0.051       +0.050       +0.050*      +0.034*      +0.024       +0.039       +0.028 
+
+== HELM MMLU [main, knap], fixed overhead c0 = 0.5 x median = 4.576e+04 tokens per benchmark (suite 1.29e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                0.579/0.572/1.0       0.734/0.720/3.0       0.785/0.758/6.9      0.824/0.776/12.9      0.874/0.791/23.1      0.898/0.798/29.0      0.901/0.800/30.0
+mi / instances             0.579/0.572/1.0       0.730/0.721/2.0       0.786/0.763/5.8       0.809/0.778/8.5      0.851/0.779/18.6      0.884/0.783/26.5      0.894/0.780/29.6
+mi / uniform               0.579/0.572/1.0       0.657/0.649/1.6       0.763/0.751/3.0       0.791/0.772/5.0      0.825/0.784/10.8      0.846/0.782/16.7      0.858/0.767/21.6
+trace / tokens             0.558/0.549/1.0       0.735/0.719/3.0       0.801/0.772/6.9      0.848/0.799/13.0      0.892/0.804/24.0      0.922/0.802/33.0      0.967/0.818/45.2
+trace / instances          0.558/0.549/1.0       0.714/0.706/2.0       0.784/0.762/5.2       0.820/0.788/8.2      0.886/0.813/20.2      0.925/0.836/29.1      0.962/0.833/42.9
+trace / uniform            0.558/0.549/1.0       0.753/0.742/2.0       0.785/0.771/3.9       0.811/0.789/6.0      0.854/0.808/12.0      0.868/0.811/14.6      0.905/0.822/23.9
+entropy / tokens           0.540/0.535/1.0       0.721/0.704/3.0       0.800/0.769/7.0      0.851/0.803/13.9      0.894/0.804/24.9      0.920/0.796/34.0      0.965/0.776/47.0
+entropy / instances        0.619/0.612/1.0       0.684/0.673/2.0       0.779/0.746/6.0      0.841/0.784/13.0      0.893/0.806/23.5      0.924/0.824/30.9      0.964/0.847/42.9
+entropy / uniform          0.558/0.549/1.0       0.716/0.705/2.0       0.780/0.757/4.7       0.809/0.780/6.5      0.847/0.795/12.0      0.908/0.832/22.5      0.959/0.840/39.6
+facloc / tokens            0.557/0.549/1.0       0.738/0.723/2.9       0.787/0.760/6.1      0.838/0.788/12.1      0.888/0.800/23.6      0.921/0.805/32.2      0.965/0.815/44.8
+facloc / instances         0.557/0.549/1.0       0.690/0.681/2.0       0.766/0.742/5.3       0.816/0.777/9.3      0.886/0.814/19.8      0.920/0.824/28.7      0.965/0.837/42.6
+facloc / uniform           0.557/0.549/1.0       0.735/0.725/2.0       0.775/0.762/3.8       0.800/0.778/5.8      0.854/0.814/11.6      0.865/0.811/15.5      0.894/0.816/22.2
+random                     0.588/0.582/1.0       0.650/0.636/1.9       0.743/0.723/4.1       0.792/0.763/7.5      0.825/0.766/14.6      0.846/0.771/18.9      0.897/0.782/30.8
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.004       -0.001       +0.016       +0.024*      +0.015*      +0.007 
+  mi_tokens − mi_uniform                    +0.000       +0.077       +0.022       +0.033*      +0.050*      +0.052*      +0.042*
+  mi_tokens − random                        -0.010       +0.084       +0.042*      +0.032*      +0.050       +0.052*      +0.004 
+  trace_tokens − trace_instances            +0.000       +0.020       +0.017       +0.028       +0.006       -0.004       +0.005 
+  trace_tokens − trace_uniform              +0.000       -0.019       +0.016       +0.037*      +0.038*      +0.054*      +0.062*
+  trace_tokens − random                     -0.031       +0.084       +0.058*      +0.056*      +0.067*      +0.075*      +0.070*
+  entropy_tokens − entropy_instances        -0.078       +0.037       +0.020       +0.009       +0.001       -0.003       +0.001 
+  entropy_tokens − entropy_uniform          -0.017       +0.005       +0.020       +0.042*      +0.047*      +0.012       +0.006 
+  entropy_tokens − random                   -0.048       +0.071       +0.057*      +0.059*      +0.069*      +0.074*      +0.068*
+  facloc_tokens − facloc_instances          +0.000       +0.048*      +0.020       +0.022*      +0.002       +0.001       -0.001 
+  facloc_tokens − facloc_uniform            +0.000       +0.003       +0.011       +0.039*      +0.035*      +0.057*      +0.071*
+  facloc_tokens − random                    -0.031       +0.087       +0.044       +0.046*      +0.064*      +0.075*      +0.067*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       -0.001       -0.005       -0.002       +0.012       +0.015       +0.019 
+  mi_tokens − mi_uniform                    +0.000       +0.071       +0.007       +0.004       +0.007       +0.016       +0.033*
+  mi_tokens − random                        -0.009       +0.084       +0.035       +0.013       +0.026       +0.027       +0.017 
+  trace_tokens − trace_instances            +0.000       +0.013       +0.010       +0.011       -0.009       -0.034*      -0.015 
+  trace_tokens − trace_uniform              +0.000       -0.023       +0.001       +0.010       -0.004       -0.009       -0.004 
+  trace_tokens − random                     -0.032       +0.083       +0.048*      +0.037*      +0.038       +0.031       +0.035 
+  entropy_tokens − entropy_instances        -0.077       +0.031       +0.023       +0.019       -0.002       -0.028*      -0.070*
+  entropy_tokens − entropy_uniform          -0.014       -0.002       +0.012       +0.023       +0.009       -0.036*      -0.063*
+  entropy_tokens − random                   -0.047       +0.068       +0.046*      +0.040*      +0.039       +0.024       -0.006 
+  facloc_tokens − facloc_instances          +0.000       +0.042*      +0.018       +0.011       -0.013       -0.019       -0.022 
+  facloc_tokens − facloc_uniform            +0.000       -0.002       -0.002       +0.009       -0.013       -0.006       -0.001 
+  facloc_tokens − random                    -0.033       +0.087       +0.036       +0.025       +0.035       +0.033       +0.033 
+
+== HELM MMLU [main, knap], fixed overhead c0 = 1 x median = 9.151e+04 tokens per benchmark (suite 1.551e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                0.443/0.438/1.0       0.715/0.703/2.0       0.771/0.751/5.0      0.809/0.771/10.0      0.849/0.772/19.7      0.881/0.782/26.5      0.895/0.787/29.5
+mi / instances             0.443/0.438/1.0       0.716/0.707/2.0       0.773/0.756/4.3       0.806/0.780/6.9      0.843/0.783/15.7      0.869/0.776/23.7      0.891/0.779/29.2
+mi / uniform               0.443/0.438/1.0       0.585/0.577/1.5       0.762/0.750/2.9       0.794/0.776/4.7      0.822/0.781/10.6      0.843/0.781/16.2      0.860/0.765/22.4
+trace / tokens             0.645/0.638/1.0       0.660/0.650/1.9       0.773/0.750/5.0      0.834/0.794/10.4      0.880/0.802/20.8      0.910/0.804/29.0      0.958/0.816/42.8
+trace / instances          0.645/0.638/1.0       0.699/0.690/2.0       0.772/0.752/4.5       0.812/0.784/7.1      0.874/0.809/17.2      0.912/0.826/26.0      0.956/0.839/39.8
+trace / uniform            0.645/0.638/1.0       0.696/0.691/1.0       0.783/0.768/3.7       0.812/0.790/5.9      0.853/0.808/11.8      0.856/0.814/12.6      0.908/0.821/24.8
+entropy / tokens           0.540/0.535/1.0       0.707/0.695/2.0       0.776/0.750/5.0      0.832/0.789/11.0      0.883/0.806/21.0      0.909/0.798/30.0      0.958/0.804/44.0
+entropy / instances        0.619/0.612/1.0       0.699/0.690/2.0       0.764/0.738/5.0      0.822/0.772/10.0      0.876/0.797/20.0      0.911/0.820/27.0      0.958/0.850/40.0
+entropy / uniform          0.645/0.638/1.0       0.696/0.691/1.0       0.757/0.737/3.8       0.787/0.762/5.1      0.845/0.797/11.6      0.902/0.830/20.8      0.951/0.835/37.0
+facloc / tokens            0.645/0.638/1.0       0.691/0.685/1.2       0.757/0.735/5.0       0.820/0.778/9.8      0.877/0.800/19.9      0.906/0.801/28.0      0.959/0.827/42.1
+facloc / instances         0.645/0.638/1.0       0.694/0.686/1.9       0.751/0.731/4.4       0.812/0.779/8.3      0.873/0.810/16.9      0.910/0.819/25.7      0.958/0.843/39.8
+facloc / uniform           0.645/0.638/1.0       0.696/0.691/1.0       0.768/0.757/2.9       0.797/0.777/5.4      0.851/0.812/10.9      0.844/0.806/10.9      0.898/0.814/23.3
+random                     0.541/0.533/1.0       0.629/0.616/1.7       0.736/0.720/3.6       0.786/0.758/6.8      0.815/0.761/12.8      0.846/0.774/18.3      0.894/0.785/29.3
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       -0.002       -0.002       +0.003       +0.006       +0.012       +0.004 
+  mi_tokens − mi_uniform                    +0.000       +0.129*      +0.009       +0.015       +0.028*      +0.038*      +0.035*
+  mi_tokens − random                        -0.099       +0.085       +0.035       +0.024       +0.035       +0.035*      +0.001 
+  trace_tokens − trace_instances            +0.000       -0.039       +0.001       +0.022       +0.006       -0.002       +0.001 
+  trace_tokens − trace_uniform              +0.000       -0.036       -0.010       +0.023       +0.027*      +0.054*      +0.050*
+  trace_tokens − random                     +0.104       +0.030       +0.037       +0.049*      +0.065*      +0.064*      +0.064*
+  entropy_tokens − entropy_instances        -0.078       +0.008       +0.011       +0.010       +0.007       -0.002       -0.000 
+  entropy_tokens − entropy_uniform          -0.104*      +0.011       +0.019       +0.045*      +0.038*      +0.007       +0.007 
+  entropy_tokens − random                   -0.001       +0.077       +0.040       +0.046*      +0.068*      +0.063*      +0.064*
+  facloc_tokens − facloc_instances          +0.000       -0.004       +0.006       +0.008       +0.004       -0.004       +0.000 
+  facloc_tokens − facloc_uniform            +0.000       -0.005       -0.011       +0.023       +0.027*      +0.062*      +0.061*
+  facloc_tokens − random                    +0.104       +0.061       +0.021       +0.034       +0.063*      +0.060*      +0.065*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       -0.004       -0.005       -0.010       -0.011       +0.006       +0.009 
+  mi_tokens − mi_uniform                    +0.000       +0.126*      +0.001       -0.005       -0.010       +0.001       +0.023 
+  mi_tokens − random                        -0.096       +0.087       +0.031       +0.012       +0.011       +0.008       +0.002 
+  trace_tokens − trace_instances            +0.000       -0.040       -0.002       +0.009       -0.007       -0.022*      -0.023 
+  trace_tokens − trace_uniform              +0.000       -0.041       -0.018       +0.004       -0.006       -0.010       -0.005 
+  trace_tokens − random                     +0.105       +0.034       +0.031       +0.036*      +0.041       +0.030       +0.031 
+  entropy_tokens − entropy_instances        -0.077       +0.005       +0.012       +0.017       +0.010       -0.022*      -0.047*
+  entropy_tokens − entropy_uniform          -0.103*      +0.004       +0.012       +0.027       +0.009       -0.031*      -0.031 
+  entropy_tokens − random                   +0.002       +0.079       +0.030       +0.031       +0.045       +0.024       +0.018 
+  facloc_tokens − facloc_instances          +0.000       -0.001       +0.004       -0.001       -0.010       -0.018*      -0.016 
+  facloc_tokens − facloc_uniform            +0.000       -0.006       -0.022       +0.000       -0.012       -0.005       +0.013 
+  facloc_tokens − random                    +0.105       +0.069       +0.015       +0.019       +0.039       +0.027       +0.041 
+
+== HELM MMLU [main, knap], fixed overhead c0 = 2 x median = 1.83e+05 tokens per benchmark (suite 2.073e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                  0.000/nan/0.0       0.577/0.572/1.0       0.759/0.743/4.0       0.799/0.767/7.9      0.837/0.776/15.8      0.867/0.782/22.9      0.889/0.784/28.7
+mi / instances               0.000/nan/0.0       0.577/0.572/1.0       0.766/0.751/4.0       0.801/0.778/6.0      0.831/0.780/13.2      0.854/0.773/20.4      0.885/0.770/28.6
+mi / uniform                 0.000/nan/0.0       0.577/0.572/1.0       0.714/0.704/2.3       0.795/0.777/4.8      0.823/0.783/10.4      0.835/0.777/15.0      0.863/0.761/23.8
+trace / tokens               0.000/nan/0.0       0.696/0.691/1.0       0.755/0.736/4.0       0.823/0.790/8.1      0.863/0.796/16.8      0.897/0.805/24.7      0.945/0.816/38.4
+trace / instances            0.000/nan/0.0       0.696/0.691/1.0       0.783/0.768/4.0       0.807/0.785/6.3      0.870/0.816/14.9      0.902/0.826/22.6      0.947/0.838/36.2
+trace / uniform              0.000/nan/0.0       0.696/0.691/1.0       0.782/0.768/3.6       0.811/0.790/5.8       0.837/0.800/9.4      0.858/0.813/13.0      0.913/0.822/26.0
+entropy / tokens             0.000/nan/0.0       0.540/0.535/1.0       0.748/0.724/4.0       0.821/0.784/9.0      0.872/0.811/17.0      0.896/0.806/25.0      0.942/0.803/39.9
+entropy / instances          0.000/nan/0.0       0.655/0.649/1.0       0.745/0.722/4.0       0.807/0.764/8.0      0.863/0.795/16.8      0.901/0.819/24.0      0.952/0.846/37.0
+entropy / uniform            0.000/nan/0.0       0.696/0.691/1.0       0.747/0.729/3.0       0.787/0.762/5.0      0.841/0.795/11.2      0.895/0.824/19.5      0.943/0.832/34.1
+facloc / tokens              0.000/nan/0.0       0.696/0.691/1.0       0.741/0.724/4.0       0.809/0.777/8.0      0.856/0.788/16.0      0.893/0.800/23.9      0.941/0.809/37.4
+facloc / instances           0.000/nan/0.0       0.696/0.691/1.0       0.745/0.727/4.0       0.803/0.774/7.2      0.860/0.807/14.2      0.895/0.811/22.3      0.946/0.835/35.8
+facloc / uniform             0.000/nan/0.0       0.696/0.691/1.0       0.766/0.755/2.8       0.799/0.780/5.4      0.849/0.811/10.5      0.850/0.812/11.3      0.905/0.813/24.5
+random                       0.000/nan/0.0       0.601/0.595/1.0       0.725/0.708/3.3       0.780/0.754/6.3      0.814/0.763/12.0      0.840/0.771/17.4      0.890/0.781/28.8
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.000       -0.007       -0.002       +0.005       +0.013       +0.003 
+  mi_tokens − mi_uniform                    +0.000       +0.000       +0.045       +0.003       +0.014       +0.032*      +0.025*
+  mi_tokens − random                        +0.000       -0.024       +0.034       +0.019       +0.023       +0.028       -0.001 
+  trace_tokens − trace_instances            +0.000       +0.000       -0.029*      +0.016       -0.007       -0.005       -0.002 
+  trace_tokens − trace_uniform              +0.000       +0.000       -0.027       +0.012       +0.027*      +0.038*      +0.032*
+  trace_tokens − random                     +0.000       +0.094*      +0.030       +0.043*      +0.050       +0.057*      +0.055*
+  entropy_tokens − entropy_instances        +0.000       -0.115*      +0.004       +0.014       +0.009       -0.005       -0.009*
+  entropy_tokens − entropy_uniform          +0.000       -0.155*      +0.001       +0.034*      +0.032*      +0.001       -0.001 
+  entropy_tokens − random                   +0.000       -0.061       +0.023       +0.041*      +0.059       +0.057*      +0.052*
+  facloc_tokens − facloc_instances          +0.000       +0.000       -0.004       +0.006       -0.004       -0.002       -0.005 
+  facloc_tokens − facloc_uniform            +0.000       +0.000       -0.025       +0.010       +0.007       +0.043*      +0.036*
+  facloc_tokens − random                    +0.000       +0.094*      +0.016       +0.029       +0.042       +0.053*      +0.051*
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                      n/a      +0.000       -0.008       -0.011       -0.004       +0.009       +0.013 
+  mi_tokens − mi_uniform                        n/a      +0.000       +0.038       -0.010       -0.007       +0.005       +0.023 
+  mi_tokens − random                            n/a      -0.023       +0.035       +0.013       +0.013       +0.010       +0.003 
+  trace_tokens − trace_instances                n/a      +0.000       -0.032*      +0.005       -0.019       -0.020*      -0.022 
+  trace_tokens − trace_uniform                  n/a      +0.000       -0.032       -0.001       -0.003       -0.008       -0.006 
+  trace_tokens − random                         n/a      +0.096*      +0.028       +0.036       +0.034       +0.034       +0.035 
+  entropy_tokens − entropy_instances            n/a      -0.114*      +0.002       +0.021       +0.016       -0.013       -0.042*
+  entropy_tokens − entropy_uniform              n/a      -0.156*      -0.005       +0.022       +0.017       -0.018       -0.029*
+  entropy_tokens − random                       n/a      -0.060       +0.016       +0.031       +0.049       +0.034       +0.022 
+  facloc_tokens − facloc_instances              n/a      +0.000       -0.004       +0.003       -0.020       -0.012       -0.026 
+  facloc_tokens − facloc_uniform                n/a      +0.000       -0.031       -0.003       -0.024*      -0.012       -0.004 
+  facloc_tokens − random                        n/a      +0.096*      +0.016       +0.024       +0.025       +0.028       +0.028 
+
+checks: budget violations 0 (every level, design, method and budget); {o}_tokens vs direct knapsack mismatches 0; estimation failed on 0 splits
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/token_fixed_helm_mmlu.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/token_fixed_helm_mmlu_paired.csv
+Summary saved to ~/benchselect-runs/canonical-20261020/out/logs/token_fixed_helm_mmlu.json (8016 macros, 86 undefined statistics left out)
+HELM MMLU completed in 339s
+COST CAVEAT helm_classic OpenbookQA (mode impute: imputed costs in every scenario): published 2,598 tokens one request per instance, 20,784 with 8 requests per instance; HELM's '# prompt tokens' 5.10 is a calibration request's (meta caveat); ablation ratio original / calibration r = 2.851 -> imputed 39,656 tokens (79.3 per instance; x1.908), single 7,316
+HELM Classic: 67 models x 16 benchmarks (16 priced), 81.7% observed; total 3.474e+07 tokens (all requests), 17178 instances
+token cost range: 3.966e+04 (OpenbookQA) – 1.53e+07 (MS MARCO (regular))
+  overhead 0 x median: c0 = 0 tokens (0 instances) per benchmark, suite 3.47409e+07 tokens; 50 splits done (103.7s)
+  overhead 0.1 x median: c0 = 72148.8 tokens (82.7 instances) per benchmark, suite 3.58952e+07 tokens; 50 splits done (80.9s)
+  overhead 0.5 x median: c0 = 360744 tokens (413.5 instances) per benchmark, suite 4.05128e+07 tokens; 50 splits done (96.7s)
+  overhead 1 x median: c0 = 721488 tokens (827 instances) per benchmark, suite 4.62847e+07 tokens; 50 splits done (71.1s)
+  overhead 2 x median: c0 = 1.44298e+06 tokens (1654 instances) per benchmark, suite 5.78285e+07 tokens; 50 splits done (75.8s)
+
+== HELM Classic [main, knap], fixed overhead c0 = 0 x median = 0 tokens per benchmark (suite 3.474e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                0.513/0.453/2.0       0.542/0.430/3.0       0.603/0.439/5.0       0.683/0.451/7.0       0.711/0.422/8.0       0.736/0.459/8.7       0.756/0.451/8.8
+mi / instances             0.509/0.449/2.0       0.374/0.412/1.0       0.633/0.528/4.0       0.701/0.514/6.3       0.692/0.532/6.1       0.743/0.537/7.7       0.753/0.543/7.9
+mi / uniform               0.418/0.451/1.6       0.470/0.396/2.4       0.592/0.456/4.5       0.589/0.441/5.0       0.630/0.499/5.0       0.711/0.508/7.4       0.663/0.508/6.2
+trace / tokens             0.513/0.453/2.0       0.526/0.415/3.0       0.604/0.412/5.3       0.693/0.390/8.0      0.790/0.292/11.0     0.848/-0.322/13.0     0.894/-0.079/14.0
+trace / instances          0.499/0.447/1.9       0.285/0.413/1.0       0.634/0.527/4.0       0.717/0.415/7.7       0.694/0.538/6.1      0.818/0.517/10.4     0.894/-0.079/14.0
+trace / uniform            0.286/0.420/1.2       0.505/0.430/2.8       0.590/0.458/4.6       0.657/0.404/6.8       0.649/0.311/6.6       0.716/0.436/7.6      0.867/0.585/10.9
+entropy / tokens           0.513/0.453/2.0       0.551/0.440/3.0       0.631/0.387/6.0       0.699/0.391/8.0      0.805/0.348/11.0     0.848/-0.322/13.0     0.894/-0.079/14.0
+entropy / instances        0.509/0.449/2.0       0.448/0.412/1.0       0.638/0.528/4.1       0.728/0.423/8.0       0.698/0.543/6.0      0.810/0.479/10.6     0.894/-0.079/14.0
+entropy / uniform          0.286/0.420/1.2       0.450/0.369/2.8       0.603/0.486/4.3       0.674/0.442/6.7       0.691/0.514/6.1       0.680/0.476/7.2      0.926/0.647/12.5
+facloc / tokens            0.513/0.453/2.0       0.536/0.424/3.0       0.610/0.418/5.4       0.687/0.374/8.0      0.791/0.316/11.0     0.840/-0.224/12.6      0.889/0.084/13.7
+facloc / instances         0.471/0.443/1.7       0.331/0.394/1.0       0.636/0.521/4.2       0.724/0.419/7.9       0.700/0.544/6.0      0.816/0.500/10.3     0.894/-0.079/14.0
+facloc / uniform           0.328/0.418/1.3       0.524/0.438/2.9       0.595/0.459/4.5       0.679/0.430/6.9       0.668/0.448/6.4       0.712/0.462/8.0       0.802/0.561/8.7
+random                     0.432/0.419/1.6       0.526/0.444/2.5       0.576/0.455/4.0       0.653/0.468/5.8       0.716/0.354/8.5      0.796/0.206/10.7      0.861/0.519/11.4
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.004       +0.168*      -0.030       -0.018       +0.019       -0.007       +0.003 
+  mi_tokens − mi_uniform                    +0.094       +0.073       +0.011       +0.095*      +0.081*      +0.025       +0.093*
+  mi_tokens − random                        +0.081       +0.016       +0.027       +0.031       -0.005       -0.059       -0.105 
+  trace_tokens − trace_instances            +0.014       +0.241*      -0.030       -0.024       +0.096*      +0.030       +0.000 
+  trace_tokens − trace_uniform              +0.226*      +0.021       +0.014       +0.036       +0.141*      +0.132*      +0.027 
+  trace_tokens − random                     +0.081       -0.001       +0.029       +0.041       +0.074       +0.052       +0.034 
+  entropy_tokens − entropy_instances        +0.004       +0.103       -0.007       -0.029*      +0.107*      +0.038       +0.000 
+  entropy_tokens − entropy_uniform          +0.226*      +0.102       +0.028       +0.024       +0.115*      +0.168*      -0.031 
+  entropy_tokens − random                   +0.081       +0.025       +0.055       +0.046       +0.089       +0.052       +0.034 
+  facloc_tokens − facloc_instances          +0.041       +0.205*      -0.026       -0.037*      +0.091*      +0.024       -0.005 
+  facloc_tokens − facloc_uniform            +0.184*      +0.011       +0.015       +0.008       +0.123*      +0.128*      +0.087 
+  facloc_tokens − random                    +0.081       +0.009       +0.034       +0.035       +0.075       +0.045       +0.029 
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.004       +0.018       -0.089       -0.063       -0.110       -0.078       -0.092 
+  mi_tokens − mi_uniform                    +0.002       +0.034       -0.017       +0.009       -0.077       -0.049       -0.058 
+  mi_tokens − random                        +0.034       -0.015       -0.016       -0.017       +0.068       +0.253       -0.068 
+  trace_tokens − trace_instances            +0.005   +0.005 (48)      -0.115       -0.025       -0.246*      -0.839       +0.000 
+  trace_tokens − trace_uniform          +0.036 (48)      -0.015       -0.046       -0.014       -0.019       -0.759       -0.665 
+  trace_tokens − random                     +0.034       -0.030       -0.044       -0.078       -0.061       -0.529       -0.598 
+  entropy_tokens − entropy_instances        +0.004       +0.028       -0.141*      -0.031       -0.195       -0.801       +0.000 
+  entropy_tokens − entropy_uniform      +0.037 (48)      +0.070       -0.099       -0.050       -0.166       -0.798       -0.726 
+  entropy_tokens − random                   +0.034       -0.005       -0.068       -0.077       -0.006       -0.529       -0.598 
+  facloc_tokens − facloc_instances          +0.009   +0.035 (48)      -0.103       -0.045       -0.228*      -0.723       +0.164 
+  facloc_tokens − facloc_uniform        +0.038 (48)      -0.014       -0.041       -0.056       -0.132       -0.686       -0.476 
+  facloc_tokens − random                    +0.034       -0.020       -0.038       -0.094       -0.038       -0.430       -0.434 
+
+== HELM Classic [main, knap], fixed overhead c0 = 0.1 x median = 7.215e+04 tokens per benchmark (suite 3.59e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                0.462/0.440/1.0       0.551/0.440/3.0       0.598/0.429/4.8       0.671/0.443/6.9       0.709/0.431/7.9       0.720/0.476/8.3       0.753/0.467/8.8
+mi / instances             0.462/0.440/1.0       0.549/0.439/3.0       0.504/0.413/3.1       0.704/0.508/6.3       0.691/0.529/6.0       0.740/0.543/7.6       0.751/0.553/7.8
+mi / uniform               0.462/0.440/1.0       0.524/0.460/2.1       0.587/0.456/3.9       0.581/0.442/4.3       0.590/0.489/4.2       0.710/0.510/7.3       0.642/0.514/5.4
+trace / tokens             0.475/0.440/1.0       0.551/0.440/3.0       0.598/0.413/4.9       0.699/0.394/8.0      0.793/0.299/11.0      0.819/0.209/12.0     0.894/-0.079/14.0
+trace / instances          0.475/0.440/1.0       0.495/0.437/2.0       0.642/0.525/4.0       0.689/0.433/6.9       0.691/0.514/5.9      0.804/0.447/11.0     0.894/-0.079/14.0
+trace / uniform            0.475/0.440/1.0       0.525/0.464/2.0       0.592/0.464/4.0       0.648/0.457/5.7       0.629/0.319/5.6       0.703/0.419/6.7      0.853/0.596/10.3
+entropy / tokens           0.257/0.439/1.0       0.551/0.440/3.0       0.600/0.397/5.0       0.700/0.394/8.0      0.805/0.348/11.0      0.821/0.237/12.0     0.894/-0.079/14.0
+entropy / instances        0.257/0.439/1.0       0.495/0.437/2.0       0.469/0.379/3.0       0.701/0.464/7.0       0.689/0.537/5.4      0.810/0.426/11.0     0.894/-0.079/14.0
+entropy / uniform          0.475/0.440/1.0       0.523/0.456/2.0       0.546/0.436/4.0       0.645/0.473/5.4       0.679/0.515/5.4       0.670/0.477/6.8      0.910/0.680/11.7
+facloc / tokens            0.482/0.443/1.0       0.551/0.440/3.0       0.610/0.435/5.0       0.694/0.382/8.0      0.786/0.311/10.9      0.823/0.336/11.9      0.890/0.106/13.6
+facloc / instances         0.482/0.443/1.0       0.495/0.437/2.0       0.645/0.524/4.0       0.693/0.458/6.7       0.692/0.549/5.1      0.808/0.394/11.0     0.894/-0.079/14.0
+facloc / uniform           0.482/0.443/1.0       0.526/0.458/2.0       0.589/0.456/3.8       0.662/0.465/5.7       0.660/0.490/5.4       0.707/0.476/7.1       0.785/0.544/8.3
+random                     0.354/0.400/1.0       0.479/0.424/2.3       0.544/0.443/3.5       0.634/0.467/5.2       0.700/0.354/8.1      0.775/0.263/10.1      0.839/0.508/10.9
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.002       +0.095       -0.033       +0.018       -0.020       +0.002 
+  mi_tokens − mi_uniform                    +0.000       +0.027       +0.012       +0.090*      +0.119*      +0.010       +0.110*
+  mi_tokens − random                        +0.108       +0.072       +0.055       +0.037       +0.009       -0.056       -0.086 
+  trace_tokens − trace_instances            +0.000       +0.056       -0.044       +0.010       +0.103*      +0.015       +0.000 
+  trace_tokens − trace_uniform              +0.000       +0.027       +0.006       +0.050*      +0.164*      +0.116*      +0.042 
+  trace_tokens − random                     +0.120       +0.072       +0.054       +0.065       +0.093       +0.044       +0.055 
+  entropy_tokens − entropy_instances        +0.000       +0.056       +0.131*      -0.001       +0.116*      +0.011       +0.000 
+  entropy_tokens − entropy_uniform          -0.217*      +0.028       +0.054       +0.055       +0.126*      +0.151*      -0.016 
+  entropy_tokens − random                   -0.097       +0.072       +0.056       +0.066*      +0.105*      +0.046       +0.055 
+  facloc_tokens − facloc_instances          +0.000       +0.056       -0.035       +0.000       +0.094*      +0.015       -0.004 
+  facloc_tokens − facloc_uniform            +0.000       +0.026       +0.021       +0.031       +0.125*      +0.115*      +0.105 
+  facloc_tokens − random                    +0.128       +0.072       +0.066       +0.060       +0.085       +0.047       +0.051 
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.001       +0.016       -0.065       -0.098*      -0.067       -0.087 
+  mi_tokens − mi_uniform                    +0.000       -0.021       -0.027       +0.001       -0.058       -0.034       -0.047 
+  mi_tokens − random                    +0.041 (49)      +0.016       -0.013       -0.024       +0.078       +0.213       -0.041 
+  trace_tokens − trace_instances            +0.000       +0.003       -0.112*      -0.039       -0.215       -0.238*      +0.000 
+  trace_tokens − trace_uniform              +0.000       -0.024       -0.051       -0.063       -0.020       -0.210       -0.675 
+  trace_tokens − random                 +0.041 (49)      +0.016       -0.029       -0.073       -0.054       -0.054       -0.587 
+  entropy_tokens − entropy_instances    +0.000 (48)      +0.003       +0.018       -0.070       -0.189       -0.189       +0.000 
+  entropy_tokens − entropy_uniform      -0.005 (48)      -0.017       -0.040       -0.079       -0.166       -0.240       -0.759 
+  entropy_tokens − random               +0.037 (48)      +0.016       -0.046       -0.073       -0.005       -0.026       -0.587 
+  facloc_tokens − facloc_instances          +0.000       +0.003       -0.089       -0.076       -0.238*      -0.057       +0.185 
+  facloc_tokens − facloc_uniform            +0.000       -0.019       -0.021       -0.083       -0.180       -0.140       -0.439 
+  facloc_tokens − random                +0.044 (49)      +0.016       -0.008       -0.085       -0.043       +0.074       -0.402 
+
+== HELM Classic [main, knap], fixed overhead c0 = 0.5 x median = 3.607e+05 tokens per benchmark (suite 4.051e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                0.257/0.439/1.0       0.393/0.442/1.0       0.545/0.441/3.0       0.633/0.473/5.2       0.704/0.441/7.5       0.730/0.498/8.0       0.752/0.486/8.5
+mi / instances             0.257/0.439/1.0       0.393/0.442/1.0       0.614/0.533/2.7       0.653/0.497/5.0       0.655/0.523/4.7       0.733/0.547/7.2       0.754/0.545/7.9
+mi / uniform               0.257/0.439/1.0       0.393/0.442/1.0       0.522/0.433/2.8       0.581/0.475/3.3       0.581/0.484/4.1       0.682/0.515/6.6       0.662/0.522/5.6
+trace / tokens             0.257/0.439/1.0       0.289/0.417/1.0       0.529/0.435/3.0       0.621/0.400/6.0       0.724/0.374/9.0      0.789/0.314/11.0     0.894/-0.079/14.0
+trace / instances          0.257/0.439/1.0       0.289/0.417/1.0       0.625/0.559/2.0       0.650/0.505/5.0       0.665/0.541/4.7       0.765/0.556/8.5     0.894/-0.079/14.0
+trace / uniform            0.257/0.439/1.0       0.289/0.417/1.0       0.541/0.451/2.8       0.613/0.481/4.1       0.595/0.375/4.4       0.650/0.388/5.7       0.827/0.570/9.0
+entropy / tokens           0.257/0.439/1.0       0.257/0.439/1.0       0.551/0.440/3.0       0.631/0.387/6.0       0.728/0.372/9.0      0.806/0.353/11.0     0.895/-0.211/14.0
+entropy / instances        0.257/0.439/1.0       0.460/0.419/1.0       0.629/0.561/2.0       0.660/0.513/5.0       0.627/0.514/4.2       0.802/0.578/9.0     0.894/-0.079/14.0
+entropy / uniform          0.257/0.439/1.0       0.289/0.417/1.0       0.562/0.471/2.7       0.613/0.490/4.1       0.633/0.520/4.4       0.661/0.483/6.1      0.879/0.589/10.5
+facloc / tokens            0.257/0.439/1.0       0.339/0.402/1.0       0.534/0.428/3.0       0.625/0.412/6.0       0.732/0.381/9.0      0.799/0.387/10.8     0.888/-0.064/13.8
+facloc / instances         0.257/0.439/1.0       0.339/0.402/1.0       0.624/0.557/2.0       0.666/0.511/5.0       0.662/0.544/4.4       0.768/0.521/8.5     0.894/-0.079/14.0
+facloc / uniform           0.257/0.439/1.0       0.339/0.402/1.0       0.532/0.451/2.6       0.629/0.463/4.5       0.646/0.498/4.9       0.664/0.494/6.0       0.800/0.577/7.9
+random                     0.257/0.439/1.0       0.369/0.395/1.0       0.508/0.443/2.3       0.604/0.482/3.9       0.646/0.375/6.6       0.744/0.398/8.9      0.832/0.155/10.5
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.000       -0.068       -0.021       +0.049       -0.003       -0.002 
+  mi_tokens − mi_uniform                    +0.000       +0.000       +0.023       +0.052       +0.123*      +0.048       +0.090*
+  mi_tokens − random                        +0.000       +0.024       +0.037       +0.028       +0.058       -0.013       -0.080 
+  trace_tokens − trace_instances            +0.000       +0.000       -0.097*      -0.029       +0.059       +0.025       +0.000 
+  trace_tokens − trace_uniform              +0.000       +0.000       -0.012       +0.008       +0.129       +0.140*      +0.067 
+  trace_tokens − random                     +0.000       -0.080       +0.021       +0.017       +0.078       +0.046       +0.063 
+  entropy_tokens − entropy_instances        +0.000       -0.203*      -0.077       -0.029       +0.101*      +0.005       +0.001 
+  entropy_tokens − entropy_uniform          +0.000       -0.032       -0.010       +0.018       +0.095*      +0.145*      +0.016 
+  entropy_tokens − random                   +0.000       -0.111       +0.043       +0.027       +0.082       +0.063       +0.063 
+  facloc_tokens − facloc_instances          +0.000       +0.000       -0.090       -0.040       +0.070       +0.030       -0.006 
+  facloc_tokens − facloc_uniform            +0.000       +0.000       +0.002       -0.003       +0.086*      +0.135*      +0.088 
+  facloc_tokens − random                    +0.000       -0.030       +0.026       +0.021       +0.086       +0.055       +0.056 
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances              +0.000 (48)      +0.000       -0.093       -0.024       -0.081       -0.050       -0.059 
+  mi_tokens − mi_uniform                +0.000 (48)      +0.000       +0.008       -0.002       -0.043       -0.018       -0.036 
+  mi_tokens − random                    +0.000 (48)  +0.048 (49)      -0.002       -0.009       +0.067       +0.100       +0.332 
+  trace_tokens − trace_instances        +0.000 (48)  +0.000 (48)      -0.124*      -0.105       -0.167       -0.242*      +0.000 
+  trace_tokens − trace_uniform          +0.000 (48)  +0.000 (48)      -0.016       -0.081       -0.001       -0.074       -0.649 
+  trace_tokens − random                 +0.000 (48)  +0.020 (48)      -0.007       -0.082       -0.001       -0.084       -0.234 
+  entropy_tokens − entropy_instances    +0.000 (48)  +0.018 (48)      -0.121       -0.126*      -0.142       -0.226       -0.132 
+  entropy_tokens − entropy_uniform      +0.000 (48)  +0.022 (48)      -0.031       -0.103       -0.148       -0.130       -0.800 
+  entropy_tokens − random               +0.000 (48)  +0.042 (48)      -0.003       -0.094       -0.003       -0.045       -0.365 
+  facloc_tokens − facloc_instances      +0.000 (48)  +0.000 (48)      -0.129       -0.099       -0.163       -0.134       +0.015 
+  facloc_tokens − facloc_uniform        +0.000 (48)  +0.000 (48)      -0.023       -0.051       -0.117       -0.106       -0.640 
+  facloc_tokens − random                +0.000 (48)  +0.005 (48)      -0.015       -0.070       +0.006       -0.011       -0.218 
+
+== HELM Classic [main, knap], fixed overhead c0 = 1 x median = 7.215e+05 tokens per benchmark (suite 4.628e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                  0.000/nan/0.0       0.462/0.440/1.0       0.512/0.452/2.0       0.600/0.484/4.0       0.709/0.493/7.0       0.731/0.539/7.4       0.760/0.511/8.4
+mi / instances               0.000/nan/0.0       0.462/0.440/1.0       0.462/0.410/2.0       0.636/0.527/4.0       0.639/0.537/4.0       0.728/0.561/6.9       0.755/0.546/7.9
+mi / uniform                 0.000/nan/0.0       0.462/0.440/1.0       0.467/0.417/2.0       0.474/0.389/3.0       0.541/0.460/3.2       0.670/0.520/5.9       0.632/0.464/5.7
+trace / tokens               0.000/nan/0.0       0.475/0.440/1.0       0.490/0.436/2.0       0.579/0.452/4.0       0.692/0.380/7.8      0.757/0.341/10.0     0.844/-0.297/13.0
+trace / instances            0.000/nan/0.0       0.475/0.440/1.0       0.465/0.408/2.0       0.634/0.528/4.0       0.657/0.544/4.0       0.725/0.537/7.4      0.871/0.417/12.5
+trace / uniform              0.000/nan/0.0       0.475/0.440/1.0       0.507/0.447/2.0       0.592/0.476/3.7       0.592/0.384/4.0       0.639/0.396/5.4       0.809/0.537/8.8
+entropy / tokens             0.000/nan/0.0       0.257/0.439/1.0       0.525/0.463/2.0       0.562/0.386/4.0       0.699/0.391/8.0      0.769/0.370/10.0     0.848/-0.322/13.0
+entropy / instances          0.000/nan/0.0       0.257/0.439/1.0       0.465/0.408/2.0       0.633/0.527/4.0       0.649/0.541/4.0       0.743/0.516/8.0      0.877/0.505/12.2
+entropy / uniform            0.000/nan/0.0       0.475/0.440/1.0       0.452/0.387/2.0       0.604/0.496/3.8       0.621/0.518/4.0       0.644/0.495/5.0       0.854/0.604/9.4
+facloc / tokens              0.000/nan/0.0       0.482/0.443/1.0       0.483/0.431/2.0       0.584/0.455/4.0       0.693/0.385/7.8       0.762/0.390/9.8      0.866/0.402/12.9
+facloc / instances           0.000/nan/0.0       0.482/0.443/1.0       0.467/0.411/1.9       0.637/0.533/4.0       0.657/0.551/4.0       0.745/0.506/7.7      0.866/0.388/12.8
+facloc / uniform             0.000/nan/0.0       0.482/0.443/1.0       0.499/0.432/1.9       0.604/0.480/3.7       0.626/0.514/4.1       0.650/0.494/5.6       0.786/0.569/7.6
+random                       0.000/nan/0.0       0.354/0.432/1.0       0.463/0.424/1.8       0.553/0.445/3.3       0.631/0.407/5.6       0.717/0.448/7.5      0.800/0.255/10.1
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.000       +0.049       -0.036       +0.070*      +0.003       +0.005 
+  mi_tokens − mi_uniform                    +0.000       +0.000       +0.045       +0.126*      +0.169*      +0.061       +0.128 
+  mi_tokens − random                        +0.000       +0.108       +0.049       +0.048       +0.078       +0.014       -0.040 
+  trace_tokens − trace_instances            +0.000       +0.000       +0.026       -0.055       +0.035       +0.032       -0.027*
+  trace_tokens − trace_uniform              +0.000       +0.000       -0.017       -0.013       +0.099       +0.118*      +0.036 
+  trace_tokens − random                     +0.000       +0.121       +0.027       +0.026       +0.061       +0.040       +0.045 
+  entropy_tokens − entropy_instances        +0.000       +0.000       +0.061       -0.071       +0.050       +0.027       -0.029*
+  entropy_tokens − entropy_uniform          +0.000       -0.217*      +0.074       -0.042       +0.077       +0.126       -0.006 
+  entropy_tokens − random                   +0.000       -0.096       +0.062       +0.009       +0.068       +0.052       +0.048 
+  facloc_tokens − facloc_instances          +0.000       +0.000       +0.016       -0.053       +0.036       +0.017       +0.000 
+  facloc_tokens − facloc_uniform            +0.000       +0.000       -0.017       -0.020       +0.067       +0.112*      +0.081 
+  facloc_tokens − random                    +0.000       +0.128       +0.020       +0.031       +0.062       +0.045       +0.067 
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                      n/a      +0.000       +0.042       -0.044       -0.045       -0.022       -0.035 
+  mi_tokens − mi_uniform                        n/a      +0.000       +0.035       +0.095*      +0.033       +0.019       +0.047 
+  mi_tokens − random                            n/a  +0.009 (49)      +0.027       +0.038       +0.085       +0.091       +0.256 
+  trace_tokens − trace_instances                n/a      +0.000       +0.028       -0.077       -0.165       -0.196*      -0.714 
+  trace_tokens − trace_uniform                  n/a      +0.000       -0.011       -0.025       -0.004       -0.056       -0.834 
+  trace_tokens − random                         n/a  +0.010 (49)      +0.012       +0.006       -0.028       -0.108       -0.552 
+  entropy_tokens − entropy_instances            n/a  +0.000 (48)      +0.054       -0.141       -0.150       -0.146       -0.827 
+  entropy_tokens − entropy_uniform              n/a  -0.005 (48)      +0.076       -0.110       -0.128       -0.125       -0.926 
+  entropy_tokens − random                       n/a  +0.005 (48)      +0.038       -0.060       -0.017       -0.079       -0.577 
+  facloc_tokens − facloc_instances              n/a      +0.000       +0.021       -0.077       -0.167       -0.116       +0.014 
+  facloc_tokens − facloc_uniform                n/a      +0.000       -0.001       -0.025       -0.129       -0.104       -0.167 
+  facloc_tokens − random                        n/a  +0.012 (49)      +0.007       +0.010       -0.023       -0.059       +0.147 
+
+== HELM Classic [main, knap], fixed overhead c0 = 2 x median = 1.443e+06 tokens per benchmark (suite 5.783e+07): full-suite R² (primary) / R² / #selected vs true budget (means over 50 of 50 splits) ==
+method                                  1%                    2%                    5%                   10%                   20%                   30%                   50%
+mi / tokens                  0.000/nan/0.0         0.000/nan/0.0       0.382/0.415/1.0       0.568/0.478/3.0       0.668/0.486/5.8       0.713/0.523/6.9       0.762/0.522/8.4
+mi / instances               0.000/nan/0.0         0.000/nan/0.0       0.382/0.415/1.0       0.525/0.444/2.7       0.622/0.530/3.8       0.680/0.521/6.1       0.747/0.537/7.9
+mi / uniform                 0.000/nan/0.0         0.000/nan/0.0       0.382/0.415/1.0       0.476/0.413/2.1       0.537/0.458/3.1       0.301/0.370/1.9       0.652/0.426/6.1
+trace / tokens               0.000/nan/0.0         0.000/nan/0.0       0.285/0.413/1.0       0.540/0.444/3.0       0.629/0.414/5.8       0.709/0.380/8.2     0.846/-0.302/12.9
+trace / instances            0.000/nan/0.0         0.000/nan/0.0       0.285/0.413/1.0       0.625/0.529/3.0       0.653/0.557/4.0       0.714/0.567/6.0      0.843/0.527/11.2
+trace / uniform              0.000/nan/0.0         0.000/nan/0.0       0.285/0.413/1.0       0.590/0.512/3.0       0.602/0.366/4.0       0.627/0.371/4.6       0.749/0.418/7.8
+entropy / tokens             0.000/nan/0.0         0.000/nan/0.0       0.257/0.439/1.0       0.538/0.424/3.0       0.674/0.446/6.0       0.742/0.396/9.0     0.848/-0.322/13.0
+entropy / instances          0.000/nan/0.0         0.000/nan/0.0       0.448/0.412/1.0       0.576/0.473/3.0       0.627/0.532/3.7       0.713/0.524/6.5      0.853/0.549/11.0
+entropy / uniform            0.000/nan/0.0         0.000/nan/0.0       0.285/0.413/1.0       0.557/0.472/2.9       0.622/0.512/3.9       0.634/0.473/4.8       0.816/0.561/8.5
+facloc / tokens              0.000/nan/0.0         0.000/nan/0.0       0.329/0.386/1.0       0.558/0.465/3.0       0.652/0.427/5.9       0.715/0.451/7.7      0.830/0.335/11.9
+facloc / instances           0.000/nan/0.0         0.000/nan/0.0       0.329/0.386/1.0       0.640/0.536/3.0       0.652/0.560/3.9       0.705/0.509/6.2      0.850/0.527/11.3
+facloc / uniform             0.000/nan/0.0         0.000/nan/0.0       0.329/0.386/1.0       0.587/0.494/2.8       0.620/0.507/3.9       0.642/0.506/4.8       0.758/0.509/6.6
+random                       0.000/nan/0.0         0.000/nan/0.0       0.400/0.412/1.0       0.521/0.449/2.5       0.604/0.398/4.6       0.625/0.418/6.1       0.768/0.337/9.2
+paired r2_suite differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                  +0.000       +0.000       +0.000       +0.044       +0.047       +0.033       +0.015 
+  mi_tokens − mi_uniform                    +0.000       +0.000       +0.000       +0.093*      +0.131*      +0.412*      +0.110 
+  mi_tokens − random                        +0.000       +0.000       -0.018       +0.047       +0.064       +0.088       -0.006 
+  trace_tokens − trace_instances            +0.000       +0.000       +0.000       -0.084       -0.024       -0.006       +0.003 
+  trace_tokens − trace_uniform              +0.000       +0.000       +0.000       -0.050       +0.027       +0.082       +0.097 
+  trace_tokens − random                     +0.000       +0.000       -0.115       +0.019       +0.024       +0.084       +0.078 
+  entropy_tokens − entropy_instances        +0.000       +0.000       -0.191*      -0.037       +0.047       +0.029       -0.005 
+  entropy_tokens − entropy_uniform          +0.000       +0.000       -0.027       -0.019       +0.052       +0.109       +0.032 
+  entropy_tokens − random                   +0.000       +0.000       -0.142*      +0.017       +0.069       +0.117       +0.080 
+  facloc_tokens − facloc_instances          +0.000       +0.000       +0.000       -0.081*      -0.000       +0.009       -0.020 
+  facloc_tokens − facloc_uniform            +0.000       +0.000       +0.000       -0.029       +0.032       +0.072       +0.072 
+  facloc_tokens − random                    +0.000       +0.000       -0.071       +0.037       +0.048       +0.090       +0.062 
+paired r2 differences (mean; * = Nadeau–Bengio 95% CI excludes 0; (n) = paired splits where fewer than 50):
+  mi_tokens − mi_instances                      n/a          n/a      +0.000       +0.034       -0.043       +0.002       -0.015 
+  mi_tokens − mi_uniform                        n/a          n/a      +0.000       +0.065       +0.028   +0.154 (48)      +0.097 
+  mi_tokens − random                            n/a          n/a  +0.013 (49)      +0.030       +0.088       +0.105       +0.185 
+  trace_tokens − trace_instances                n/a          n/a  +0.000 (48)      -0.086       -0.144*      -0.187*      -0.829 
+  trace_tokens − trace_uniform                  n/a          n/a  +0.000 (48)      -0.068       +0.047       +0.009       -0.720 
+  trace_tokens − random                         n/a          n/a  -0.001 (48)      -0.005       +0.016       -0.037       -0.639 
+  entropy_tokens − entropy_instances            n/a          n/a  +0.018 (48)      -0.049       -0.086       -0.129       -0.872 
+  entropy_tokens − entropy_uniform              n/a          n/a  +0.026 (48)      -0.049       -0.065       -0.078       -0.883 
+  entropy_tokens − random                       n/a          n/a  +0.025 (48)      -0.025       +0.048       -0.022       -0.659 
+  facloc_tokens − facloc_instances              n/a          n/a  +0.000 (48)      -0.071       -0.133*      -0.058       -0.192 
+  facloc_tokens − facloc_uniform                n/a          n/a  +0.000 (48)      -0.030       -0.080       -0.055       -0.174 
+  facloc_tokens − random                        n/a          n/a  -0.027 (48)      +0.016       +0.029       +0.033       -0.003 
+
+checks: budget violations 0 (every level, design, method and budget); {o}_tokens vs direct knapsack mismatches 0; estimation failed on 0 splits
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/token_fixed_helm_classic.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/token_fixed_helm_classic_paired.csv
+Summary saved to ~/benchselect-runs/canonical-20261020/out/logs/token_fixed_helm_classic.json (7844 macros, 258 undefined statistics left out)
+HELM Classic completed in 432s
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/token_fixed.pdf
+
+All datasets completed in 814s
+
+# finished 2026-10-20T02:19:00Z  exit=0  status=ok

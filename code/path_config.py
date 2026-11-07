@@ -1,14 +1,8 @@
-"""Configurable paths for release experiment scripts.
+"""Configurable paths for experiment scripts.
 
-By default, scripts use the public release layout:
-  data/          input matrices and covariance caches
-  figures/      paper figures
-  figures_logit/ logit-space appendix figures
-  logs/         experiment logs
-  logs_logit/   logit-space logs
-
-Set BENCHSELECT_DATA_DIR and/or BENCHSELECT_EXPERIMENT_ROOT to redirect reads
-and writes for scratch runs.
+By default, scripts keep the historical repository layout. For scratch runs,
+set BENCHSELECT_DATA_DIR and/or BENCHSELECT_EXPERIMENT_ROOT to redirect reads
+and writes away from checked-in paper outputs and downloaded data.
 """
 
 import os
@@ -37,12 +31,12 @@ def _experiment_default(dirname, legacy_default):
 
 
 def figures_dir():
-    default = _experiment_default("figures", ROOT / "figures")
+    default = _experiment_default("figures", ROOT / "paper" / "figures")
     return _from_env("BENCHSELECT_FIGURES_DIR", default)
 
 
 def logit_figures_dir():
-    default = _experiment_default("figures_logit", ROOT / "figures_logit")
+    default = _experiment_default("figures_logit", ROOT / "paper" / "figures_logit")
     return _from_env("BENCHSELECT_LOGIT_FIGURES_DIR", default)
 
 

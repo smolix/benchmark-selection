@@ -1,0 +1,37 @@
+# Pinned CPU environment for every experiment except TabImpute: the full
+# lock (uv pip freeze) of ~/venvs/benchselect, identical on 4090-0, 4090-1
+# and 4090-2.maas (2026-10-17).  code/run_all.sh checks the interpreter
+# against every pin below and refuses to run on a mismatch (exit 3) unless
+# BENCHSELECT_ALLOW_UNPINNED=1.
+#
+#   python3.12 -m venv ~/venvs/benchselect
+#   ~/venvs/benchselect/bin/pip install -r requirements.txt
+#
+# python==3.12   (validated with 3.12.3 on Linux x86_64)
+#
+# numpy and scipy bundle their OpenBLAS.  The matplotlib dependencies are
+# pinned too: fonttools embeds the fonts in the PDF figures, so other
+# versions can change the figure bytes.  pandas is used only by the
+# download/build scripts in data/; pytest runs the unit tests
+# (RUN_ONLY=tests bash code/run_all.sh).
+numpy==2.4.6
+scipy==1.18.0
+matplotlib==3.11.1
+pandas==2.3.3
+pytest==9.1.1
+
+# Dependencies of the packages above.
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.67.0
+iniconfig==2.3.1
+kiwisolver==1.5.1
+packaging==26.3
+pillow==13.0.0
+pluggy==1.7.0
+pygments==2.21.0
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+pytz==2026.5
+six==1.17.0
+tzdata==2026.5

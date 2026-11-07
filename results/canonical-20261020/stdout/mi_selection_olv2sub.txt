@@ -1,0 +1,83 @@
+# job      mi_selection_olv2sub
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets olv2sub --repeats 5 --selections-json none
+# started  2026-10-20T02:47:00Z on 4090-1
+
+
+######################################################################
+# Dataset: OLV2SUB
+######################################################################
+4493 models x 42 tasks, 100.0% observed
+5 x 10-fold matched splits; selectable: >= 3 observed training models
+Holdout 10%
+
+  Rep 0 fold 0: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 0 fold 1: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 0 fold 2: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 0 fold 3: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 0 fold 4: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 0 fold 5: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 0 fold 6: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 0 fold 7: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 0 fold 8: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 0 fold 9: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 0: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 1: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 2: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 3: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 4: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 5: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 6: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 7: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 8: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 1 fold 9: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 0: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 1: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 2: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 3: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 4: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 5: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 6: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 7: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 8: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 2 fold 9: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 0: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 1: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 2: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 3: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 4: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 5: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 6: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 7: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 8: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 3 fold 9: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 0: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 1: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 2: 4043 train / 450 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 3: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 4: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 5: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 6: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 7: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 8: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+  Rep 4 fold 9: 4044 train / 449 test, 42/42 eligible  (0.0s)  top-5: ifeval/inst_level_loose_acc, math_hard/algebra, bbh/logical_deduction_five_objects, ifeval/prompt_level_strict_acc, math_hard/intermediate_algebra
+
+  OLL v2 sub-tasks MI, holdout 10%: 50 splits (reps 0, 1, 2, 3, 4), eligible 42–42, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mi_olv2sub.pdf
+  Top-10 by mean rank:
+    ifeval/inst_level_loose_acc               count=50/50  mean_rank=1.0
+    math_hard/algebra                         count=50/50  mean_rank=2.0
+    bbh/logical_deduction_five_objects        count=50/50  mean_rank=3.0
+    ifeval/prompt_level_strict_acc            count=50/50  mean_rank=4.0
+    math_hard/intermediate_algebra            count=50/50  mean_rank=5.0
+    bbh/reasoning_about_colored_objects       count=50/50  mean_rank=6.0
+    bbh/tracking_shuffled_objects_seven_objects  count=50/50  mean_rank=7.0
+    gpqa/extended                             count=49/50  mean_rank=8.2
+    bbh/boolean_expressions                   count=49/50  mean_rank=9.1
+    math_hard/counting_and_prob               count=50/50  mean_rank=10.1
+
+OLV2SUB completed in 2s
+
+
+Total time: 2s
+
+# finished 2026-10-20T02:47:03Z  exit=0  status=ok

@@ -1,0 +1,5351 @@
+{
+ "description": "valid score range of every benchmark column (protocol rule D2): the bound and its source (score_bounds.RULES); observed_* are a sanity check, never a source.  null = unbounded.",
+ "generated_by": "code/score_bounds.py --write",
+ "datasets": {
+  "mmlu": {
+   "n_columns": 57,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 57
+   },
+   "columns": [
+    {
+     "name": "abstract_algebra",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.17,
+     "observed_max": 0.76
+    },
+    {
+     "name": "anatomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1185185185185185,
+     "observed_max": 0.9037037037037036
+    },
+    {
+     "name": "astronomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.131578947368421,
+     "observed_max": 0.9539473684210528
+    },
+    {
+     "name": "business_ethics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.15,
+     "observed_max": 0.87
+    },
+    {
+     "name": "clinical_knowledge",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1622641509433962,
+     "observed_max": 0.9735849056603774
+    },
+    {
+     "name": "college_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1527777777777778,
+     "observed_max": 0.9861111111111112
+    },
+    {
+     "name": "college_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.11,
+     "observed_max": 0.78
+    },
+    {
+     "name": "college_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.11,
+     "observed_max": 0.86
+    },
+    {
+     "name": "college_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.14,
+     "observed_max": 0.78
+    },
+    {
+     "name": "college_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1329479768786127,
+     "observed_max": 0.9595375722543352
+    },
+    {
+     "name": "college_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1078431372549019,
+     "observed_max": 0.7745098039215687
+    },
+    {
+     "name": "computer_security",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.15,
+     "observed_max": 0.93
+    },
+    {
+     "name": "conceptual_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1617021276595744,
+     "observed_max": 0.9234042553191488
+    },
+    {
+     "name": "econometrics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1578947368421052,
+     "observed_max": 0.8421052631578947
+    },
+    {
+     "name": "electrical_engineering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1172413793103448,
+     "observed_max": 0.9172413793103448
+    },
+    {
+     "name": "elementary_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1798941798941798,
+     "observed_max": 0.8862433862433863
+    },
+    {
+     "name": "formal_logic",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1269841269841269,
+     "observed_max": 0.7380952380952381
+    },
+    {
+     "name": "global_facts",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.13,
+     "observed_max": 0.84
+    },
+    {
+     "name": "high_school_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.132258064516129,
+     "observed_max": 0.970967741935484
+    },
+    {
+     "name": "high_school_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1379310344827586,
+     "observed_max": 0.8472906403940886
+    },
+    {
+     "name": "high_school_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.13,
+     "observed_max": 0.94
+    },
+    {
+     "name": "high_school_european_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1333333333333333,
+     "observed_max": 0.9757575757575756
+    },
+    {
+     "name": "high_school_geography",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1515151515151515,
+     "observed_max": 0.98989898989899
+    },
+    {
+     "name": "high_school_government_and_politics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1502590673575129,
+     "observed_max": 0.9896373056994818
+    },
+    {
+     "name": "high_school_macroeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1666666666666666,
+     "observed_max": 0.9230769230769232
+    },
+    {
+     "name": "high_school_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.2,
+     "observed_max": 0.8074074074074075
+    },
+    {
+     "name": "high_school_microeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1596638655462184,
+     "observed_max": 0.9495798319327732
+    },
+    {
+     "name": "high_school_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.152317880794702,
+     "observed_max": 0.7947019867549668
+    },
+    {
+     "name": "high_school_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1155963302752293,
+     "observed_max": 0.9743119266055046
+    },
+    {
+     "name": "high_school_statistics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1203703703703703,
+     "observed_max": 0.8703703703703703
+    },
+    {
+     "name": "high_school_us_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.142156862745098,
+     "observed_max": 0.9901960784313726
+    },
+    {
+     "name": "high_school_world_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1223628691983122,
+     "observed_max": 0.9831223628691984
+    },
+    {
+     "name": "human_aging",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1031390134529148,
+     "observed_max": 0.9237668161434978
+    },
+    {
+     "name": "human_sexuality",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1297709923664122,
+     "observed_max": 0.9541984732824428
+    },
+    {
+     "name": "international_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.0991735537190082,
+     "observed_max": 0.9669421487603306
+    },
+    {
+     "name": "jurisprudence",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1296296296296296,
+     "observed_max": 0.9629629629629628
+    },
+    {
+     "name": "logical_fallacies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1779141104294478,
+     "observed_max": 0.9754601226993864
+    },
+    {
+     "name": "machine_learning",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.125,
+     "observed_max": 0.8482142857142857
+    },
+    {
+     "name": "management",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1262135922330097,
+     "observed_max": 0.9611650485436892
+    },
+    {
+     "name": "marketing",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1581196581196581,
+     "observed_max": 0.9871794871794872
+    },
+    {
+     "name": "medical_genetics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.11,
+     "observed_max": 0.99
+    },
+    {
+     "name": "miscellaneous",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1787994891443167,
+     "observed_max": 0.9578544061302682
+    },
+    {
+     "name": "moral_disputes",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1734104046242774,
+     "observed_max": 0.9248554913294798
+    },
+    {
+     "name": "moral_scenarios",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1698324022346368,
+     "observed_max": 0.905027932960894
+    },
+    {
+     "name": "nutrition",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1601307189542483,
+     "observed_max": 0.9411764705882352
+    },
+    {
+     "name": "philosophy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1479099678456591,
+     "observed_max": 0.9356913183279744
+    },
+    {
+     "name": "prehistory",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1358024691358024,
+     "observed_max": 0.9290123456790124
+    },
+    {
+     "name": "professional_accounting",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1702127659574468,
+     "observed_max": 0.8191489361702128
+    },
+    {
+     "name": "professional_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1936114732724902,
+     "observed_max": 0.8761408083441982
+    },
+    {
+     "name": "professional_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1544117647058823,
+     "observed_max": 0.9889705882352942
+    },
+    {
+     "name": "professional_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1862745098039215,
+     "observed_max": 0.9183006535947712
+    },
+    {
+     "name": "public_relations",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1363636363636363,
+     "observed_max": 0.8818181818181818
+    },
+    {
+     "name": "security_studies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1306122448979592,
+     "observed_max": 0.926530612244898
+    },
+    {
+     "name": "sociology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1442786069651741,
+     "observed_max": 0.9751243781094528
+    },
+    {
+     "name": "us_foreign_policy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.14,
+     "observed_max": 0.97
+    },
+    {
+     "name": "virology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1506024096385542,
+     "observed_max": 0.9096385542168676
+    },
+    {
+     "name": "world_religions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule mmlu: MMLU subject accuracy (Open LLM Leaderboard v1 harness acc)",
+     "n_obs": 5452,
+     "observed_min": 0.1345029239766081,
+     "observed_max": 0.9415204678362572
+    }
+   ]
+  },
+  "mteb": {
+   "n_columns": 56,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 45,
+    "[-1.0, 1.0]": 11
+   },
+   "columns": [
+    {
+     "name": "AmazonCounterfactualClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 220,
+     "observed_min": 0.494179,
+     "observed_max": 0.988657
+    },
+    {
+     "name": "AmazonPolarityClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 187,
+     "observed_min": 0.55023,
+     "observed_max": 0.9774185000000002
+    },
+    {
+     "name": "AmazonReviewsClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 183,
+     "observed_min": 0.21394,
+     "observed_max": 0.68802
+    },
+    {
+     "name": "ArguAna",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 235,
+     "observed_min": 0.00188,
+     "observed_max": 0.89786
+    },
+    {
+     "name": "ArxivClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 185,
+     "observed_min": 0.117473,
+     "observed_max": 0.609194
+    },
+    {
+     "name": "ArxivClusteringS2S",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 185,
+     "observed_min": 0.083576,
+     "observed_max": 0.552017
+    },
+    {
+     "name": "AskUbuntuDupQuestions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = map_at_1000 (MAP@1000)",
+     "n_obs": 209,
+     "observed_min": 0.38167,
+     "observed_max": 0.752801
+    },
+    {
+     "name": "BIOSSES",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 216,
+     "observed_min": -0.081267,
+     "observed_max": 0.969167
+    },
+    {
+     "name": "Banking77Classification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 217,
+     "observed_min": 0.012532,
+     "observed_max": 0.942695
+    },
+    {
+     "name": "BiorxivClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 184,
+     "observed_min": 0.066035,
+     "observed_max": 0.552194
+    },
+    {
+     "name": "BiorxivClusteringS2S",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 184,
+     "observed_min": 0.037969,
+     "observed_max": 0.509171
+    },
+    {
+     "name": "CQADupstackRetrieval",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 202,
+     "observed_min": 0.00054,
+     "observed_max": 0.683035
+    },
+    {
+     "name": "ClimateFEVER",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 199,
+     "observed_min": 0.0,
+     "observed_max": 0.56927
+    },
+    {
+     "name": "DBPedia",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 199,
+     "observed_min": 0.00157,
+     "observed_max": 0.53496
+    },
+    {
+     "name": "EmotionClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 186,
+     "observed_min": 0.18685,
+     "observed_max": 0.9387
+    },
+    {
+     "name": "FEVER",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 196,
+     "observed_min": 0.00101,
+     "observed_max": 0.96283
+    },
+    {
+     "name": "FiQA2018",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 224,
+     "observed_min": 0.0,
+     "observed_max": 0.8206
+    },
+    {
+     "name": "HotpotQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 197,
+     "observed_min": 0.00346,
+     "observed_max": 0.86958
+    },
+    {
+     "name": "ImdbClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 215,
+     "observed_min": 0.50098,
+     "observed_max": 0.97368
+    },
+    {
+     "name": "MSMARCO",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 175,
+     "observed_min": 0.00083,
+     "observed_max": 0.48119
+    },
+    {
+     "name": "MTOPDomainClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 209,
+     "observed_min": 0.090584,
+     "observed_max": 0.999544
+    },
+    {
+     "name": "MTOPIntentClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 177,
+     "observed_min": 0.010853,
+     "observed_max": 0.9551299589603284
+    },
+    {
+     "name": "MassiveIntentClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 233,
+     "observed_min": 0.016409,
+     "observed_max": 0.919435
+    },
+    {
+     "name": "MassiveScenarioClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 225,
+     "observed_min": 0.05427,
+     "observed_max": 0.992972
+    },
+    {
+     "name": "MedrxivClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 183,
+     "observed_min": 0.156143,
+     "observed_max": 0.515322
+    },
+    {
+     "name": "MedrxivClusteringS2S",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 184,
+     "observed_min": 0.128316,
+     "observed_max": 0.496911
+    },
+    {
+     "name": "MindSmallReranking",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = max_over_subqueries_map_at_1000 (MAP@1000)",
+     "n_obs": 207,
+     "observed_min": 0.23308,
+     "observed_max": 0.343727
+    },
+    {
+     "name": "NFCorpus",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 214,
+     "observed_min": 0.01591,
+     "observed_max": 0.55745
+    },
+    {
+     "name": "NQ",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 199,
+     "observed_min": 0.00037,
+     "observed_max": 0.82481
+    },
+    {
+     "name": "QuoraRetrieval",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 199,
+     "observed_min": 0.43754,
+     "observed_max": 0.92348
+    },
+    {
+     "name": "RedditClustering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 184,
+     "observed_min": 0.050484,
+     "observed_max": 0.771563
+    },
+    {
+     "name": "RedditClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 183,
+     "observed_min": 0.125996,
+     "observed_max": 0.7527316726548479
+    },
+    {
+     "name": "SCIDOCS",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 233,
+     "observed_min": 0.00024,
+     "observed_max": 0.59857
+    },
+    {
+     "name": "SICK-R",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 223,
+     "observed_min": -0.001918,
+     "observed_max": 0.946525
+    },
+    {
+     "name": "STS12",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 224,
+     "observed_min": 0.08441,
+     "observed_max": 0.954619
+    },
+    {
+     "name": "STS13",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 224,
+     "observed_min": -0.016979,
+     "observed_max": 0.977636
+    },
+    {
+     "name": "STS14",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 224,
+     "observed_min": 0.006327,
+     "observed_max": 0.975293
+    },
+    {
+     "name": "STS15",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 224,
+     "observed_min": 0.025899,
+     "observed_max": 0.981124
+    },
+    {
+     "name": "STS16",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 186,
+     "observed_min": 0.456633,
+     "observed_max": 0.976294
+    },
+    {
+     "name": "STS17",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 225,
+     "observed_min": 0.0093787415349975,
+     "observed_max": 0.958617
+    },
+    {
+     "name": "STS22",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 175,
+     "observed_min": 0.38329,
+     "observed_max": 0.730981
+    },
+    {
+     "name": "STSBenchmark",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 225,
+     "observed_min": 0.0097624863523355,
+     "observed_max": 0.950436
+    },
+    {
+     "name": "SciDocsRR",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = map_at_1000 (MAP@1000)",
+     "n_obs": 178,
+     "observed_min": 0.42456,
+     "observed_max": 0.911414
+    },
+    {
+     "name": "SciFact",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 212,
+     "observed_min": 0.00349,
+     "observed_max": 0.866
+    },
+    {
+     "name": "SprintDuplicateQuestions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = max_ap (average precision)",
+     "n_obs": 222,
+     "observed_min": 0.011443,
+     "observed_max": 0.983811
+    },
+    {
+     "name": "StackExchangeClustering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 184,
+     "observed_min": 0.085242,
+     "observed_max": 0.839531
+    },
+    {
+     "name": "StackExchangeClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 184,
+     "observed_min": 0.200454,
+     "observed_max": 0.515652
+    },
+    {
+     "name": "StackOverflowDupQuestions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = map_at_1000 (MAP@1000)",
+     "n_obs": 178,
+     "observed_min": 0.29716,
+     "observed_max": 0.590389
+    },
+    {
+     "name": "SummEval",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 185,
+     "observed_min": 0.246512,
+     "observed_max": 0.3359510652629926
+    },
+    {
+     "name": "TRECCOVID",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 238,
+     "observed_min": 0.00425,
+     "observed_max": 0.98328
+    },
+    {
+     "name": "Touche2020",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 197,
+     "observed_min": 0.0,
+     "observed_max": 0.39386
+    },
+    {
+     "name": "ToxicConversationsClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 222,
+     "observed_min": 0.491553,
+     "observed_max": 0.975928
+    },
+    {
+     "name": "TweetSentimentExtractionClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 214,
+     "observed_min": 0.338115,
+     "observed_max": 0.882343
+    },
+    {
+     "name": "TwentyNewsgroupsClustering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 184,
+     "observed_min": 0.074305,
+     "observed_max": 0.83486
+    },
+    {
+     "name": "TwitterSemEval2015",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = max_ap (average precision)",
+     "n_obs": 212,
+     "observed_min": 0.234837,
+     "observed_max": 0.894592
+    },
+    {
+     "name": "TwitterURLCorpus",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = max_ap (average precision)",
+     "n_obs": 220,
+     "observed_min": 0.254395,
+     "observed_max": 0.957069
+    }
+   ]
+  },
+  "merged": {
+   "n_columns": 114,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 77,
+    "[0.0, 100.0]": 18,
+    "[-80.0, 100.0]": 11,
+    "[1.0, 10.0]": 8
+   },
+   "columns": [
+    {
+     "name": "mmlu/abstract_algebra",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.28,
+     "observed_max": 0.58
+    },
+    {
+     "name": "mmlu/anatomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3777777777777777,
+     "observed_max": 0.8
+    },
+    {
+     "name": "mmlu/astronomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3355263157894737,
+     "observed_max": 0.9342105263157896
+    },
+    {
+     "name": "mmlu/business_ethics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.48,
+     "observed_max": 0.86
+    },
+    {
+     "name": "mmlu/clinical_knowledge",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4226415094339623,
+     "observed_max": 0.8679245283018868
+    },
+    {
+     "name": "mmlu/college_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3402777777777778,
+     "observed_max": 0.9097222222222222
+    },
+    {
+     "name": "mmlu/college_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.22,
+     "observed_max": 0.6
+    },
+    {
+     "name": "mmlu/college_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.31,
+     "observed_max": 0.7
+    },
+    {
+     "name": "mmlu/college_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.26,
+     "observed_max": 0.58
+    },
+    {
+     "name": "mmlu/college_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3583815028901734,
+     "observed_max": 0.815028901734104
+    },
+    {
+     "name": "mmlu/college_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.1862745098039215,
+     "observed_max": 0.5980392156862745
+    },
+    {
+     "name": "mmlu/computer_security",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.45,
+     "observed_max": 0.86
+    },
+    {
+     "name": "mmlu/conceptual_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3531914893617021,
+     "observed_max": 0.851063829787234
+    },
+    {
+     "name": "mmlu/econometrics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2807017543859649,
+     "observed_max": 0.7280701754385965
+    },
+    {
+     "name": "mmlu/electrical_engineering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4206896551724138,
+     "observed_max": 0.8
+    },
+    {
+     "name": "mmlu/elementary_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2486772486772486,
+     "observed_max": 0.7645502645502645
+    },
+    {
+     "name": "mmlu/formal_logic",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.246031746031746,
+     "observed_max": 0.6666666666666666
+    },
+    {
+     "name": "mmlu/global_facts",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.22,
+     "observed_max": 0.62
+    },
+    {
+     "name": "mmlu/high_school_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3161290322580645,
+     "observed_max": 0.9096774193548388
+    },
+    {
+     "name": "mmlu/high_school_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2906403940886699,
+     "observed_max": 0.7389162561576355
+    },
+    {
+     "name": "mmlu/high_school_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.37,
+     "observed_max": 0.92
+    },
+    {
+     "name": "mmlu/high_school_european_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4606060606060606,
+     "observed_max": 0.8909090909090909
+    },
+    {
+     "name": "mmlu/high_school_geography",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4595959595959596,
+     "observed_max": 0.9292929292929292
+    },
+    {
+     "name": "mmlu/high_school_government_and_politics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4766839378238341,
+     "observed_max": 0.9844559585492229
+    },
+    {
+     "name": "mmlu/high_school_macroeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3282051282051282,
+     "observed_max": 0.8384615384615385
+    },
+    {
+     "name": "mmlu/high_school_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2,
+     "observed_max": 0.5555555555555556
+    },
+    {
+     "name": "mmlu/high_school_microeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3403361344537815,
+     "observed_max": 0.9243697478991596
+    },
+    {
+     "name": "mmlu/high_school_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2582781456953642,
+     "observed_max": 0.6291390728476821
+    },
+    {
+     "name": "mmlu/high_school_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.5100917431192661,
+     "observed_max": 0.9412844036697248
+    },
+    {
+     "name": "mmlu/high_school_statistics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2037037037037037,
+     "observed_max": 0.7361111111111112
+    },
+    {
+     "name": "mmlu/high_school_us_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4264705882352941,
+     "observed_max": 0.9215686274509804
+    },
+    {
+     "name": "mmlu/high_school_world_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.5189873417721519,
+     "observed_max": 0.9282700421940928
+    },
+    {
+     "name": "mmlu/human_aging",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3901345291479821,
+     "observed_max": 0.820627802690583
+    },
+    {
+     "name": "mmlu/human_sexuality",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4274809160305343,
+     "observed_max": 0.9083969465648856
+    },
+    {
+     "name": "mmlu/international_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.5206611570247934,
+     "observed_max": 0.9256198347107438
+    },
+    {
+     "name": "mmlu/jurisprudence",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4629629629629629,
+     "observed_max": 0.8888888888888888
+    },
+    {
+     "name": "mmlu/logical_fallacies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3619631901840491,
+     "observed_max": 0.8711656441717791
+    },
+    {
+     "name": "mmlu/machine_learning",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2946428571428571,
+     "observed_max": 0.7053571428571429
+    },
+    {
+     "name": "mmlu/management",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4466019417475728,
+     "observed_max": 0.8932038834951457
+    },
+    {
+     "name": "mmlu/marketing",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.594017094017094,
+     "observed_max": 0.9401709401709402
+    },
+    {
+     "name": "mmlu/medical_genetics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.39,
+     "observed_max": 0.92
+    },
+    {
+     "name": "mmlu/miscellaneous",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4623243933588761,
+     "observed_max": 0.9386973180076628
+    },
+    {
+     "name": "mmlu/moral_disputes",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.407514450867052,
+     "observed_max": 0.846820809248555
+    },
+    {
+     "name": "mmlu/moral_scenarios",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2312849162011173,
+     "observed_max": 0.7731843575418994
+    },
+    {
+     "name": "mmlu/nutrition",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4509803921568627,
+     "observed_max": 0.8790849673202614
+    },
+    {
+     "name": "mmlu/philosophy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4019292604501607,
+     "observed_max": 0.8263665594855305
+    },
+    {
+     "name": "mmlu/prehistory",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4074074074074074,
+     "observed_max": 0.9012345679012346
+    },
+    {
+     "name": "mmlu/professional_accounting",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3049645390070922,
+     "observed_max": 0.6702127659574468
+    },
+    {
+     "name": "mmlu/professional_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3187744458930899,
+     "observed_max": 0.6414602346805737
+    },
+    {
+     "name": "mmlu/professional_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2022058823529411,
+     "observed_max": 0.8897058823529411
+    },
+    {
+     "name": "mmlu/professional_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3823529411764705,
+     "observed_max": 0.8529411764705882
+    },
+    {
+     "name": "mmlu/public_relations",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4181818181818181,
+     "observed_max": 0.7909090909090909
+    },
+    {
+     "name": "mmlu/security_studies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4326530612244898,
+     "observed_max": 0.8448979591836735
+    },
+    {
+     "name": "mmlu/sociology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4378109452736318,
+     "observed_max": 0.9203980099502488
+    },
+    {
+     "name": "mmlu/us_foreign_policy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.64,
+     "observed_max": 0.96
+    },
+    {
+     "name": "mmlu/virology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4096385542168674,
+     "observed_max": 0.6265060240963856
+    },
+    {
+     "name": "mmlu/world_religions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4385964912280701,
+     "observed_max": 0.9064327485380116
+    },
+    {
+     "name": "open_llm/IFEval",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 60,
+     "observed_min": 0.0499075785582255,
+     "observed_max": 0.8798521256931608
+    },
+    {
+     "name": "open_llm/BBH",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 60,
+     "observed_min": 0.3022044783891685,
+     "observed_max": 0.7255684776948447
+    },
+    {
+     "name": "open_llm/MATH_Lvl5",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 60,
+     "observed_min": 0.0120845921450151,
+     "observed_max": 0.5981873111782477
+    },
+    {
+     "name": "open_llm/GPQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 60,
+     "observed_min": 0.2315436241610738,
+     "observed_max": 0.4060402684563758
+    },
+    {
+     "name": "open_llm/MUSR",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 60,
+     "observed_min": 0.3333333333333333,
+     "observed_max": 0.5026455026455027
+    },
+    {
+     "name": "open_llm/MMLU-PRO",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 60,
+     "observed_min": 0.1155252659574468,
+     "observed_max": 0.5678191489361702
+    },
+    {
+     "name": "helm/GSM8K",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.055,
+     "observed_max": 0.932
+    },
+    {
+     "name": "helm/LegalBench",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.346112465866886,
+     "observed_max": 0.7127682635939792
+    },
+    {
+     "name": "helm/MATH",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.0437872907273152,
+     "observed_max": 0.856862689420829
+    },
+    {
+     "name": "helm/MMLU",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.288140350877193,
+     "observed_max": 0.734842105263158
+    },
+    {
+     "name": "helm/Mean win rate",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.0551724137931034,
+     "observed_max": 0.9620689655172414
+    },
+    {
+     "name": "helm/MedQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.2544731610337972,
+     "observed_max": 0.8170974155069582
+    },
+    {
+     "name": "helm/NarrativeQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.61587810486012,
+     "observed_max": 0.7821540048974333
+    },
+    {
+     "name": "helm/NaturalQuestions (closed-book)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.2851947987098367,
+     "observed_max": 0.4595602930170799
+    },
+    {
+     "name": "helm/NaturalQuestions (open-book)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.5804092414377209,
+     "observed_max": 0.7896684683368644
+    },
+    {
+     "name": "helm/OpenbookQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.26,
+     "observed_max": 0.96
+    },
+    {
+     "name": "helm/WMT 2014",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.0881786096035731,
+     "observed_max": 0.2190073987873645
+    },
+    {
+     "name": "alpaca_eval/win_rate",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source alpaca_eval/: AlpacaEval 2 win rate in %",
+     "n_obs": 60,
+     "observed_min": 2.146617553167702,
+     "observed_max": 65.86422561532919
+    },
+    {
+     "name": "alpaca_eval/discrete_win_rate",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source alpaca_eval/: AlpacaEval 2 win rate in %",
+     "n_obs": 60,
+     "observed_min": 2.111801242236025,
+     "observed_max": 67.14285714285714
+    },
+    {
+     "name": "alpaca_eval/length_controlled_winrate",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source alpaca_eval/: AlpacaEval 2 win rate in %",
+     "n_obs": 60,
+     "observed_min": 2.588498849185137,
+     "observed_max": 72.3508446939842
+    },
+    {
+     "name": "arena_hard/score",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source arena_hard/: Arena-Hard-Auto win rate against the baseline in %",
+     "n_obs": 52,
+     "observed_min": 3.0,
+     "observed_max": 82.63
+    },
+    {
+     "name": "livebench/coding",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source livebench/: LiveBench category score stored as a fraction",
+     "n_obs": 73,
+     "observed_min": 0.0,
+     "observed_max": 0.65625
+    },
+    {
+     "name": "livebench/instruction_following",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source livebench/: LiveBench category score stored as a fraction",
+     "n_obs": 73,
+     "observed_min": 0.2996794871794871,
+     "observed_max": 0.8669871794871795
+    },
+    {
+     "name": "livebench/language",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source livebench/: LiveBench category score stored as a fraction",
+     "n_obs": 73,
+     "observed_min": 0.0270487240119598,
+     "observed_max": 0.563598532725614
+    },
+    {
+     "name": "wildbench/Advice seeking",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 10.0,
+     "observed_max": 64.5378151260504
+    },
+    {
+     "name": "wildbench/Brainstorming",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 1.904761904761898,
+     "observed_max": 65.23809523809526
+    },
+    {
+     "name": "wildbench/Coding & Debugging",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -17.725118483412317,
+     "observed_max": 60.47393364928912
+    },
+    {
+     "name": "wildbench/Creative Writing",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 7.7500000000000036,
+     "observed_max": 60.66390041493776
+    },
+    {
+     "name": "wildbench/Data Analysis",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -9.037037037037036,
+     "observed_max": 60.0
+    },
+    {
+     "name": "wildbench/Editing",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 8.943089430894311,
+     "observed_max": 58.064516129032256
+    },
+    {
+     "name": "wildbench/Information seeking",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -5.688073394495419,
+     "observed_max": 59.8776758409786
+    },
+    {
+     "name": "wildbench/Math",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -31.304347826086953,
+     "observed_max": 55.18518518518519
+    },
+    {
+     "name": "wildbench/Planning",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 2.611940298507456,
+     "observed_max": 62.156133828996296
+    },
+    {
+     "name": "wildbench/Reasoning",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -6.9941060903732755,
+     "observed_max": 60.15717092337919
+    },
+    {
+     "name": "wildbench/Role playing",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 4.285714285714288,
+     "observed_max": 62.14285714285715
+    },
+    {
+     "name": "mt_bench/coding",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 6.25,
+     "observed_max": 8.55
+    },
+    {
+     "name": "mt_bench/extraction",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 8.8,
+     "observed_max": 9.375
+    },
+    {
+     "name": "mt_bench/humanities",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 9.55,
+     "observed_max": 9.95
+    },
+    {
+     "name": "mt_bench/math",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 4.8,
+     "observed_max": 6.8
+    },
+    {
+     "name": "mt_bench/reasoning",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 5.65,
+     "observed_max": 9.0
+    },
+    {
+     "name": "mt_bench/roleplay",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 8.4,
+     "observed_max": 8.9
+    },
+    {
+     "name": "mt_bench/stem",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 8.7,
+     "observed_max": 9.7
+    },
+    {
+     "name": "mt_bench/writing",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 9.2,
+     "observed_max": 9.65
+    },
+    {
+     "name": "bigcode/Computation_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 27.0,
+     "observed_max": 64.9
+    },
+    {
+     "name": "bigcode/Computation_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 17.5,
+     "observed_max": 51.4
+    },
+    {
+     "name": "bigcode/Cryptography_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 29.3,
+     "observed_max": 65.7
+    },
+    {
+     "name": "bigcode/Cryptography_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 22.2,
+     "observed_max": 61.6
+    },
+    {
+     "name": "bigcode/General_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 28.4,
+     "observed_max": 65.9
+    },
+    {
+     "name": "bigcode/General_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 21.9,
+     "observed_max": 57.1
+    },
+    {
+     "name": "bigcode/Network_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 10.7,
+     "observed_max": 42.9
+    },
+    {
+     "name": "bigcode/Network_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 11.4,
+     "observed_max": 36.4
+    },
+    {
+     "name": "bigcode/System_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 26.2,
+     "observed_max": 55.2
+    },
+    {
+     "name": "bigcode/System_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 20.3,
+     "observed_max": 46.3
+    },
+    {
+     "name": "bigcode/Time_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 25.0,
+     "observed_max": 56.6
+    },
+    {
+     "name": "bigcode/Time_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 14.7,
+     "observed_max": 49.3
+    },
+    {
+     "name": "bigcode/Visualization_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 24.6,
+     "observed_max": 62.2
+    },
+    {
+     "name": "bigcode/Visualization_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 16.0,
+     "observed_max": 47.2
+    }
+   ]
+  },
+  "merged_v1": {
+   "n_columns": 114,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 77,
+    "[0.0, 100.0]": 18,
+    "[-80.0, 100.0]": 11,
+    "[1.0, 10.0]": 8
+   },
+   "columns": [
+    {
+     "name": "mmlu/abstract_algebra",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.28,
+     "observed_max": 0.58
+    },
+    {
+     "name": "mmlu/anatomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3777777777777777,
+     "observed_max": 0.8
+    },
+    {
+     "name": "mmlu/astronomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3355263157894737,
+     "observed_max": 0.9342105263157896
+    },
+    {
+     "name": "mmlu/business_ethics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.48,
+     "observed_max": 0.86
+    },
+    {
+     "name": "mmlu/clinical_knowledge",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4226415094339623,
+     "observed_max": 0.8679245283018868
+    },
+    {
+     "name": "mmlu/college_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3402777777777778,
+     "observed_max": 0.9097222222222222
+    },
+    {
+     "name": "mmlu/college_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.22,
+     "observed_max": 0.6
+    },
+    {
+     "name": "mmlu/college_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.31,
+     "observed_max": 0.7
+    },
+    {
+     "name": "mmlu/college_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.26,
+     "observed_max": 0.58
+    },
+    {
+     "name": "mmlu/college_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3583815028901734,
+     "observed_max": 0.815028901734104
+    },
+    {
+     "name": "mmlu/college_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.1862745098039215,
+     "observed_max": 0.5980392156862745
+    },
+    {
+     "name": "mmlu/computer_security",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.45,
+     "observed_max": 0.86
+    },
+    {
+     "name": "mmlu/conceptual_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3531914893617021,
+     "observed_max": 0.851063829787234
+    },
+    {
+     "name": "mmlu/econometrics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2807017543859649,
+     "observed_max": 0.7280701754385965
+    },
+    {
+     "name": "mmlu/electrical_engineering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4206896551724138,
+     "observed_max": 0.8
+    },
+    {
+     "name": "mmlu/elementary_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2486772486772486,
+     "observed_max": 0.7645502645502645
+    },
+    {
+     "name": "mmlu/formal_logic",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.246031746031746,
+     "observed_max": 0.6666666666666666
+    },
+    {
+     "name": "mmlu/global_facts",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.22,
+     "observed_max": 0.62
+    },
+    {
+     "name": "mmlu/high_school_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3161290322580645,
+     "observed_max": 0.9096774193548388
+    },
+    {
+     "name": "mmlu/high_school_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2906403940886699,
+     "observed_max": 0.7389162561576355
+    },
+    {
+     "name": "mmlu/high_school_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.37,
+     "observed_max": 0.92
+    },
+    {
+     "name": "mmlu/high_school_european_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4606060606060606,
+     "observed_max": 0.8909090909090909
+    },
+    {
+     "name": "mmlu/high_school_geography",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4595959595959596,
+     "observed_max": 0.9292929292929292
+    },
+    {
+     "name": "mmlu/high_school_government_and_politics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4766839378238341,
+     "observed_max": 0.9844559585492229
+    },
+    {
+     "name": "mmlu/high_school_macroeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3282051282051282,
+     "observed_max": 0.8384615384615385
+    },
+    {
+     "name": "mmlu/high_school_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2,
+     "observed_max": 0.5555555555555556
+    },
+    {
+     "name": "mmlu/high_school_microeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3403361344537815,
+     "observed_max": 0.9243697478991596
+    },
+    {
+     "name": "mmlu/high_school_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2582781456953642,
+     "observed_max": 0.6291390728476821
+    },
+    {
+     "name": "mmlu/high_school_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.5100917431192661,
+     "observed_max": 0.9412844036697248
+    },
+    {
+     "name": "mmlu/high_school_statistics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2037037037037037,
+     "observed_max": 0.7361111111111112
+    },
+    {
+     "name": "mmlu/high_school_us_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4264705882352941,
+     "observed_max": 0.9215686274509804
+    },
+    {
+     "name": "mmlu/high_school_world_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.5189873417721519,
+     "observed_max": 0.9282700421940928
+    },
+    {
+     "name": "mmlu/human_aging",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3901345291479821,
+     "observed_max": 0.820627802690583
+    },
+    {
+     "name": "mmlu/human_sexuality",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4274809160305343,
+     "observed_max": 0.9083969465648856
+    },
+    {
+     "name": "mmlu/international_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.5206611570247934,
+     "observed_max": 0.9256198347107438
+    },
+    {
+     "name": "mmlu/jurisprudence",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4629629629629629,
+     "observed_max": 0.8888888888888888
+    },
+    {
+     "name": "mmlu/logical_fallacies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3619631901840491,
+     "observed_max": 0.8711656441717791
+    },
+    {
+     "name": "mmlu/machine_learning",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2946428571428571,
+     "observed_max": 0.7053571428571429
+    },
+    {
+     "name": "mmlu/management",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4466019417475728,
+     "observed_max": 0.8932038834951457
+    },
+    {
+     "name": "mmlu/marketing",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.594017094017094,
+     "observed_max": 0.9401709401709402
+    },
+    {
+     "name": "mmlu/medical_genetics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.39,
+     "observed_max": 0.92
+    },
+    {
+     "name": "mmlu/miscellaneous",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4623243933588761,
+     "observed_max": 0.9386973180076628
+    },
+    {
+     "name": "mmlu/moral_disputes",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.407514450867052,
+     "observed_max": 0.846820809248555
+    },
+    {
+     "name": "mmlu/moral_scenarios",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2312849162011173,
+     "observed_max": 0.7731843575418994
+    },
+    {
+     "name": "mmlu/nutrition",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4509803921568627,
+     "observed_max": 0.8790849673202614
+    },
+    {
+     "name": "mmlu/philosophy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4019292604501607,
+     "observed_max": 0.8263665594855305
+    },
+    {
+     "name": "mmlu/prehistory",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4074074074074074,
+     "observed_max": 0.9012345679012346
+    },
+    {
+     "name": "mmlu/professional_accounting",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3049645390070922,
+     "observed_max": 0.6702127659574468
+    },
+    {
+     "name": "mmlu/professional_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3187744458930899,
+     "observed_max": 0.6414602346805737
+    },
+    {
+     "name": "mmlu/professional_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.2022058823529411,
+     "observed_max": 0.8897058823529411
+    },
+    {
+     "name": "mmlu/professional_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.3823529411764705,
+     "observed_max": 0.8529411764705882
+    },
+    {
+     "name": "mmlu/public_relations",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4181818181818181,
+     "observed_max": 0.7909090909090909
+    },
+    {
+     "name": "mmlu/security_studies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4326530612244898,
+     "observed_max": 0.8448979591836735
+    },
+    {
+     "name": "mmlu/sociology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4378109452736318,
+     "observed_max": 0.9203980099502488
+    },
+    {
+     "name": "mmlu/us_foreign_policy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.64,
+     "observed_max": 0.96
+    },
+    {
+     "name": "mmlu/virology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4096385542168674,
+     "observed_max": 0.6265060240963856
+    },
+    {
+     "name": "mmlu/world_religions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source mmlu/: MMLU subject accuracy",
+     "n_obs": 31,
+     "observed_min": 0.4385964912280701,
+     "observed_max": 0.9064327485380116
+    },
+    {
+     "name": "open_llm/IFEval",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 58,
+     "observed_min": 0.0499075785582255,
+     "observed_max": 0.8798521256931608
+    },
+    {
+     "name": "open_llm/BBH",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 60,
+     "observed_min": 0.3022044783891685,
+     "observed_max": 0.7255684776948447
+    },
+    {
+     "name": "open_llm/MATH_Lvl5",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 60,
+     "observed_min": 0.0120845921450151,
+     "observed_max": 0.5981873111782477
+    },
+    {
+     "name": "open_llm/GPQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 58,
+     "observed_min": 0.2315436241610738,
+     "observed_max": 0.4060402684563758
+    },
+    {
+     "name": "open_llm/MUSR",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 58,
+     "observed_min": 0.3333333333333333,
+     "observed_max": 0.5026455026455027
+    },
+    {
+     "name": "open_llm/MMLU-PRO",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source open_llm/: lm-eval-harness metric in [0, 1] (data/README.md)",
+     "n_obs": 58,
+     "observed_min": 0.1155252659574468,
+     "observed_max": 0.5678191489361702
+    },
+    {
+     "name": "helm/GSM8K",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.055,
+     "observed_max": 0.932
+    },
+    {
+     "name": "helm/LegalBench",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.346112465866886,
+     "observed_max": 0.7127682635939792
+    },
+    {
+     "name": "helm/MATH",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.0437872907273152,
+     "observed_max": 0.856862689420829
+    },
+    {
+     "name": "helm/MMLU",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.288140350877193,
+     "observed_max": 0.734842105263158
+    },
+    {
+     "name": "helm/Mean win rate",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.0551724137931034,
+     "observed_max": 0.9620689655172414
+    },
+    {
+     "name": "helm/MedQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.2544731610337972,
+     "observed_max": 0.8170974155069582
+    },
+    {
+     "name": "helm/NarrativeQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.61587810486012,
+     "observed_max": 0.7821540048974333
+    },
+    {
+     "name": "helm/NaturalQuestions (closed-book)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.2851947987098367,
+     "observed_max": 0.4595602930170799
+    },
+    {
+     "name": "helm/NaturalQuestions (open-book)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.5804092414377209,
+     "observed_max": 0.7896684683368644
+    },
+    {
+     "name": "helm/OpenbookQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.26,
+     "observed_max": 0.96
+    },
+    {
+     "name": "helm/WMT 2014",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source helm/: HELM Lite leaderboard value (EM / F1 / BLEU-4 / mean win rate, fractions)",
+     "n_obs": 17,
+     "observed_min": 0.0881786096035731,
+     "observed_max": 0.2190073987873645
+    },
+    {
+     "name": "alpaca_eval/win_rate",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source alpaca_eval/: AlpacaEval 2 win rate in %",
+     "n_obs": 60,
+     "observed_min": 2.146617553167702,
+     "observed_max": 65.86422561532919
+    },
+    {
+     "name": "alpaca_eval/discrete_win_rate",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source alpaca_eval/: AlpacaEval 2 win rate in %",
+     "n_obs": 60,
+     "observed_min": 2.111801242236025,
+     "observed_max": 67.14285714285714
+    },
+    {
+     "name": "alpaca_eval/length_controlled_winrate",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source alpaca_eval/: AlpacaEval 2 win rate in %",
+     "n_obs": 60,
+     "observed_min": 2.588498849185137,
+     "observed_max": 72.3508446939842
+    },
+    {
+     "name": "arena_hard/score",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source arena_hard/: Arena-Hard-Auto win rate against the baseline in %",
+     "n_obs": 52,
+     "observed_min": 3.0,
+     "observed_max": 82.63
+    },
+    {
+     "name": "livebench/coding",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source livebench/: LiveBench category score stored as a fraction",
+     "n_obs": 73,
+     "observed_min": 0.0,
+     "observed_max": 0.65625
+    },
+    {
+     "name": "livebench/instruction_following",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source livebench/: LiveBench category score stored as a fraction",
+     "n_obs": 73,
+     "observed_min": 0.2996794871794871,
+     "observed_max": 0.8669871794871795
+    },
+    {
+     "name": "livebench/language",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule merged source livebench/: LiveBench category score stored as a fraction",
+     "n_obs": 73,
+     "observed_min": 0.0270487240119598,
+     "observed_max": 0.563598532725614
+    },
+    {
+     "name": "wildbench/Advice seeking",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 10.0,
+     "observed_max": 64.5378151260504
+    },
+    {
+     "name": "wildbench/Brainstorming",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 1.904761904761898,
+     "observed_max": 65.23809523809526
+    },
+    {
+     "name": "wildbench/Coding & Debugging",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -17.725118483412317,
+     "observed_max": 60.47393364928912
+    },
+    {
+     "name": "wildbench/Creative Writing",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 7.7500000000000036,
+     "observed_max": 60.66390041493776
+    },
+    {
+     "name": "wildbench/Data Analysis",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -9.037037037037036,
+     "observed_max": 60.0
+    },
+    {
+     "name": "wildbench/Editing",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 8.943089430894311,
+     "observed_max": 58.064516129032256
+    },
+    {
+     "name": "wildbench/Information seeking",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -5.688073394495419,
+     "observed_max": 59.8776758409786
+    },
+    {
+     "name": "wildbench/Math",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -31.304347826086953,
+     "observed_max": 55.18518518518519
+    },
+    {
+     "name": "wildbench/Planning",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 2.611940298507456,
+     "observed_max": 62.156133828996296
+    },
+    {
+     "name": "wildbench/Reasoning",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": -6.9941060903732755,
+     "observed_max": 60.15717092337919
+    },
+    {
+     "name": "wildbench/Role playing",
+     "lo": -80.0,
+     "hi": 100.0,
+     "source": "rule merged source wildbench/: WildBench WB-Score = 20 (mean judge score - 5), judge scores on the 1-10 scale",
+     "n_obs": 50,
+     "observed_min": 4.285714285714288,
+     "observed_max": 62.14285714285715
+    },
+    {
+     "name": "mt_bench/coding",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 6.25,
+     "observed_max": 8.55
+    },
+    {
+     "name": "mt_bench/extraction",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 8.8,
+     "observed_max": 9.375
+    },
+    {
+     "name": "mt_bench/humanities",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 9.55,
+     "observed_max": 9.95
+    },
+    {
+     "name": "mt_bench/math",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 4.8,
+     "observed_max": 6.8
+    },
+    {
+     "name": "mt_bench/reasoning",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 5.65,
+     "observed_max": 9.0
+    },
+    {
+     "name": "mt_bench/roleplay",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 8.4,
+     "observed_max": 8.9
+    },
+    {
+     "name": "mt_bench/stem",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 8.7,
+     "observed_max": 9.7
+    },
+    {
+     "name": "mt_bench/writing",
+     "lo": 1.0,
+     "hi": 10.0,
+     "source": "rule merged source mt_bench/: MT-Bench GPT-4 judge score on the 1-10 scale",
+     "n_obs": 3,
+     "observed_min": 9.2,
+     "observed_max": 9.65
+    },
+    {
+     "name": "bigcode/Computation_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 27.0,
+     "observed_max": 64.9
+    },
+    {
+     "name": "bigcode/Computation_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 17.5,
+     "observed_max": 51.4
+    },
+    {
+     "name": "bigcode/Cryptography_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 29.3,
+     "observed_max": 65.7
+    },
+    {
+     "name": "bigcode/Cryptography_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 22.2,
+     "observed_max": 61.6
+    },
+    {
+     "name": "bigcode/General_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 28.4,
+     "observed_max": 65.9
+    },
+    {
+     "name": "bigcode/General_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 21.9,
+     "observed_max": 57.1
+    },
+    {
+     "name": "bigcode/Network_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 10.7,
+     "observed_max": 42.9
+    },
+    {
+     "name": "bigcode/Network_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 11.4,
+     "observed_max": 36.4
+    },
+    {
+     "name": "bigcode/System_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 26.2,
+     "observed_max": 55.2
+    },
+    {
+     "name": "bigcode/System_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 20.3,
+     "observed_max": 46.3
+    },
+    {
+     "name": "bigcode/Time_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 25.0,
+     "observed_max": 56.6
+    },
+    {
+     "name": "bigcode/Time_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 14.7,
+     "observed_max": 49.3
+    },
+    {
+     "name": "bigcode/Visualization_complete",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 24.6,
+     "observed_max": 62.2
+    },
+    {
+     "name": "bigcode/Visualization_instruct",
+     "lo": 0.0,
+     "hi": 100.0,
+     "source": "rule merged source bigcode/: BigCodeBench pass@1 in %",
+     "n_obs": 61,
+     "observed_min": 16.0,
+     "observed_max": 47.2
+    }
+   ]
+  },
+  "olv2sub": {
+   "n_columns": 42,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 42
+   },
+   "columns": [
+    {
+     "name": "ifeval/prompt_level_strict_acc",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.8798521256931608
+    },
+    {
+     "name": "ifeval/inst_level_strict_acc",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.919664268585132
+    },
+    {
+     "name": "ifeval/prompt_level_loose_acc",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.8927911275415896
+    },
+    {
+     "name": "ifeval/inst_level_loose_acc",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.9280575539568345
+    },
+    {
+     "name": "bbh/boolean_expressions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.408,
+     "observed_max": 0.96
+    },
+    {
+     "name": "bbh/causal_judgement",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.4117647058823529,
+     "observed_max": 0.8770053475935828
+    },
+    {
+     "name": "bbh/date_understanding",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.06,
+     "observed_max": 0.948
+    },
+    {
+     "name": "bbh/disambiguation_qa",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.128,
+     "observed_max": 0.976
+    },
+    {
+     "name": "bbh/formal_fallacies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.396,
+     "observed_max": 0.98
+    },
+    {
+     "name": "bbh/geometric_shapes",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.692
+    },
+    {
+     "name": "bbh/hyperbaton",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.348,
+     "observed_max": 0.996
+    },
+    {
+     "name": "bbh/logical_deduction_five_objects",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.06,
+     "observed_max": 0.82
+    },
+    {
+     "name": "bbh/logical_deduction_seven_objects",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.06,
+     "observed_max": 0.86
+    },
+    {
+     "name": "bbh/logical_deduction_three_objects",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.044,
+     "observed_max": 0.984
+    },
+    {
+     "name": "bbh/movie_recommendation",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 1.0
+    },
+    {
+     "name": "bbh/navigate",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.396,
+     "observed_max": 0.872
+    },
+    {
+     "name": "bbh/object_counting",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.892
+    },
+    {
+     "name": "bbh/penguins_in_a_table",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0684931506849315,
+     "observed_max": 0.8561643835616438
+    },
+    {
+     "name": "bbh/reasoning_about_colored_objects",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.908
+    },
+    {
+     "name": "bbh/ruin_names",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.976
+    },
+    {
+     "name": "bbh/salient_translation_error_detection",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.024,
+     "observed_max": 0.976
+    },
+    {
+     "name": "bbh/snarks",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.20224719101123595,
+     "observed_max": 0.9662921348314607
+    },
+    {
+     "name": "bbh/sports_understanding",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.416,
+     "observed_max": 0.976
+    },
+    {
+     "name": "bbh/temporal_sequences",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.016,
+     "observed_max": 1.0
+    },
+    {
+     "name": "bbh/tracking_shuffled_objects_five_objects",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.108,
+     "observed_max": 0.604
+    },
+    {
+     "name": "bbh/tracking_shuffled_objects_seven_objects",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.076,
+     "observed_max": 0.548
+    },
+    {
+     "name": "bbh/tracking_shuffled_objects_three_objects",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.192,
+     "observed_max": 0.796
+    },
+    {
+     "name": "bbh/web_of_lies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.416,
+     "observed_max": 0.932
+    },
+    {
+     "name": "math_hard/algebra",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.9022801302931596
+    },
+    {
+     "name": "math_hard/counting_and_prob",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.6910569105691057
+    },
+    {
+     "name": "math_hard/geometry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.5454545454545454
+    },
+    {
+     "name": "math_hard/intermediate_algebra",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.5321428571428571
+    },
+    {
+     "name": "math_hard/num_theory",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.7792207792207793
+    },
+    {
+     "name": "math_hard/prealgebra",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.8549222797927462
+    },
+    {
+     "name": "math_hard/precalculus",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.0,
+     "observed_max": 0.5777777777777777
+    },
+    {
+     "name": "gpqa/diamond",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.16161616161616163,
+     "observed_max": 0.45454545454545453
+    },
+    {
+     "name": "gpqa/extended",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.21062271062271062,
+     "observed_max": 0.4725274725274725
+    },
+    {
+     "name": "gpqa/main",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.19642857142857142,
+     "observed_max": 0.5044642857142857
+    },
+    {
+     "name": "musr/murder_mysteries",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.46,
+     "observed_max": 0.724
+    },
+    {
+     "name": "musr/object_placements",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.18359375,
+     "observed_max": 0.4921875
+    },
+    {
+     "name": "musr/team_allocation",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.152,
+     "observed_max": 0.86
+    },
+    {
+     "name": "mmlu_pro",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv2sub: raw lm-eval-harness metric in [0, 1] (meta score_definition.scale)",
+     "n_obs": 4493,
+     "observed_min": 0.10255984042553191,
+     "observed_max": 0.7303025265957447
+    }
+   ]
+  },
+  "olv1items": {
+   "n_columns": 62,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 62
+   },
+   "columns": [
+    {
+     "name": "abstract_algebra",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.19,
+     "observed_max": 0.51
+    },
+    {
+     "name": "anatomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2222222222222222,
+     "observed_max": 0.762962962962963
+    },
+    {
+     "name": "astronomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.17105263157894737,
+     "observed_max": 0.9078947368421053
+    },
+    {
+     "name": "business_ethics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.26,
+     "observed_max": 0.83
+    },
+    {
+     "name": "clinical_knowledge",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.27547169811320754,
+     "observed_max": 0.8603773584905661
+    },
+    {
+     "name": "college_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2222222222222222,
+     "observed_max": 0.9305555555555556
+    },
+    {
+     "name": "college_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.15,
+     "observed_max": 0.65
+    },
+    {
+     "name": "college_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2,
+     "observed_max": 0.74
+    },
+    {
+     "name": "college_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.21,
+     "observed_max": 0.59
+    },
+    {
+     "name": "college_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.23699421965317918,
+     "observed_max": 0.8092485549132948
+    },
+    {
+     "name": "college_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.13725490196078433,
+     "observed_max": 0.6764705882352942
+    },
+    {
+     "name": "computer_security",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.29,
+     "observed_max": 0.88
+    },
+    {
+     "name": "conceptual_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2127659574468085,
+     "observed_max": 0.8
+    },
+    {
+     "name": "econometrics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.18421052631578946,
+     "observed_max": 0.6491228070175439
+    },
+    {
+     "name": "electrical_engineering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.23448275862068965,
+     "observed_max": 0.8068965517241379
+    },
+    {
+     "name": "elementary_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.21693121693121692,
+     "observed_max": 0.746031746031746
+    },
+    {
+     "name": "formal_logic",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.19047619047619047,
+     "observed_max": 0.6190476190476191
+    },
+    {
+     "name": "global_facts",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2,
+     "observed_max": 0.64
+    },
+    {
+     "name": "high_school_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2064516129032258,
+     "observed_max": 0.9225806451612903
+    },
+    {
+     "name": "high_school_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.20689655172413793,
+     "observed_max": 0.7142857142857143
+    },
+    {
+     "name": "high_school_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.23,
+     "observed_max": 0.85
+    },
+    {
+     "name": "high_school_european_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.20606060606060606,
+     "observed_max": 0.9151515151515152
+    },
+    {
+     "name": "high_school_geography",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2222222222222222,
+     "observed_max": 0.9444444444444444
+    },
+    {
+     "name": "high_school_government_and_politics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.32124352331606215,
+     "observed_max": 0.9792746113989638
+    },
+    {
+     "name": "high_school_macroeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.25384615384615383,
+     "observed_max": 0.8333333333333334
+    },
+    {
+     "name": "high_school_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2111111111111111,
+     "observed_max": 0.5888888888888889
+    },
+    {
+     "name": "high_school_microeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.25630252100840334,
+     "observed_max": 0.8739495798319328
+    },
+    {
+     "name": "high_school_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2251655629139073,
+     "observed_max": 0.6688741721854304
+    },
+    {
+     "name": "high_school_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.26055045871559634,
+     "observed_max": 0.9321100917431193
+    },
+    {
+     "name": "high_school_statistics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.17592592592592593,
+     "observed_max": 0.7037037037037037
+    },
+    {
+     "name": "high_school_us_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2549019607843137,
+     "observed_max": 0.9607843137254902
+    },
+    {
+     "name": "high_school_world_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.25316455696202533,
+     "observed_max": 0.9240506329113924
+    },
+    {
+     "name": "human_aging",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.13452914798206278,
+     "observed_max": 0.8385650224215246
+    },
+    {
+     "name": "human_sexuality",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2595419847328244,
+     "observed_max": 0.9007633587786259
+    },
+    {
+     "name": "international_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2644628099173554,
+     "observed_max": 0.9173553719008265
+    },
+    {
+     "name": "jurisprudence",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.21296296296296297,
+     "observed_max": 0.8981481481481481
+    },
+    {
+     "name": "logical_fallacies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.25153374233128833,
+     "observed_max": 0.9202453987730062
+    },
+    {
+     "name": "machine_learning",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.19642857142857142,
+     "observed_max": 0.6607142857142857
+    },
+    {
+     "name": "management",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.23300970873786409,
+     "observed_max": 0.9320388349514563
+    },
+    {
+     "name": "marketing",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.31196581196581197,
+     "observed_max": 0.9444444444444444
+    },
+    {
+     "name": "medical_genetics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.26,
+     "observed_max": 0.91
+    },
+    {
+     "name": "miscellaneous",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.3001277139208174,
+     "observed_max": 0.9182630906768838
+    },
+    {
+     "name": "moral_disputes",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.24277456647398843,
+     "observed_max": 0.8410404624277457
+    },
+    {
+     "name": "moral_scenarios",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2,
+     "observed_max": 0.8067039106145252
+    },
+    {
+     "name": "nutrition",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2777777777777778,
+     "observed_max": 0.869281045751634
+    },
+    {
+     "name": "philosophy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2861736334405145,
+     "observed_max": 0.8553054662379421
+    },
+    {
+     "name": "prehistory",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.30864197530864196,
+     "observed_max": 0.8919753086419753
+    },
+    {
+     "name": "professional_accounting",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.24113475177304963,
+     "observed_max": 0.7092198581560284
+    },
+    {
+     "name": "professional_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.258148631029987,
+     "observed_max": 0.7073011734028684
+    },
+    {
+     "name": "professional_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.1948529411764706,
+     "observed_max": 0.8713235294117647
+    },
+    {
+     "name": "professional_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.24836601307189543,
+     "observed_max": 0.8333333333333334
+    },
+    {
+     "name": "public_relations",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2909090909090909,
+     "observed_max": 0.8909090909090909
+    },
+    {
+     "name": "security_studies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.24081632653061225,
+     "observed_max": 0.8653061224489796
+    },
+    {
+     "name": "sociology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.15920398009950248,
+     "observed_max": 0.9203980099502488
+    },
+    {
+     "name": "us_foreign_policy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.25,
+     "observed_max": 0.95
+    },
+    {
+     "name": "virology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2289156626506024,
+     "observed_max": 0.8012048192771084
+    },
+    {
+     "name": "world_religions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2982456140350877,
+     "observed_max": 0.9415204678362573
+    },
+    {
+     "name": "arc_challenge",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.2645051194539249,
+     "observed_max": 0.7337883959044369
+    },
+    {
+     "name": "hellaswag",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.31836287592113127,
+     "observed_max": 0.9011153156741685
+    },
+    {
+     "name": "truthfulqa_mc2",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.3089869590457097,
+     "observed_max": 0.7252131907680065
+    },
+    {
+     "name": "winogrande",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.5887924230465666,
+     "observed_max": 0.8666140489344909
+    },
+    {
+     "name": "gsm8k",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "rule olv1items: task score = mean item score, items in [0, 1] (meta)",
+     "n_obs": 395,
+     "observed_min": 0.0,
+     "observed_max": 0.7680060652009097
+    }
+   ]
+  },
+  "helm_lite": {
+   "n_columns": 10,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 10
+   },
+   "columns": [
+    {
+     "name": "GSM8K",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.GSM8K.metric_name = final_number_exact_match (fraction)",
+     "n_obs": 90,
+     "observed_min": 0.028,
+     "observed_max": 0.956
+    },
+    {
+     "name": "LegalBench",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.LegalBench.metric_name = quasi_exact_match (fraction)",
+     "n_obs": 91,
+     "observed_min": 0.33102715605674365,
+     "observed_max": 0.7572377274443406
+    },
+    {
+     "name": "MATH",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.MATH.metric_name = math_equiv_chain_of_thought (fraction)",
+     "n_obs": 91,
+     "observed_min": 0.026258799453413896,
+     "observed_max": 0.9199326830293783
+    },
+    {
+     "name": "MMLU",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.MMLU.metric_name = exact_match (fraction)",
+     "n_obs": 91,
+     "observed_min": 0.2433684210526316,
+     "observed_max": 0.8094035087719298
+    },
+    {
+     "name": "MedQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.MedQA.metric_name = quasi_exact_match (fraction)",
+     "n_obs": 91,
+     "observed_min": 0.2286282306163022,
+     "observed_max": 0.8628230616302187
+    },
+    {
+     "name": "NarrativeQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.NarrativeQA.metric_name = f1_score (fraction)",
+     "n_obs": 91,
+     "observed_min": 0.11135505083090322,
+     "observed_max": 0.8039471342235485
+    },
+    {
+     "name": "NaturalQuestions (closed-book)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.NaturalQuestions (closed-book).metric_name = f1_score (fraction)",
+     "n_obs": 91,
+     "observed_min": 0.02834914415532957,
+     "observed_max": 0.5015987604513761
+    },
+    {
+     "name": "NaturalQuestions (open-book)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.NaturalQuestions (open-book).metric_name = f1_score (fraction)",
+     "n_obs": 91,
+     "observed_min": 0.07170782292313307,
+     "observed_max": 0.8290083446435023
+    },
+    {
+     "name": "OpenbookQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.OpenbookQA.metric_name = exact_match (fraction)",
+     "n_obs": 91,
+     "observed_min": 0.222,
+     "observed_max": 0.972
+    },
+    {
+     "name": "WMT 2014",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_lite.meta.json benchmarks.WMT 2014.metric_name = bleu_4 (fraction)",
+     "n_obs": 91,
+     "observed_min": 0.022554531557801464,
+     "observed_max": 0.2618576157125692
+    }
+   ]
+  },
+  "helm_mmlu": {
+   "n_columns": 57,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 57
+   },
+   "columns": [
+    {
+     "name": "abstract_algebra",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.abstract_algebra.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.21,
+     "observed_max": 0.84
+    },
+    {
+     "name": "anatomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.anatomy.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.2222222222222222,
+     "observed_max": 0.9111111111111111
+    },
+    {
+     "name": "astronomy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.astronomy.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.34210526315789475,
+     "observed_max": 0.9736842105263158
+    },
+    {
+     "name": "business_ethics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.business_ethics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.24,
+     "observed_max": 0.89
+    },
+    {
+     "name": "clinical_knowledge",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.clinical_knowledge.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.26037735849056604,
+     "observed_max": 0.9283018867924528
+    },
+    {
+     "name": "college_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.college_biology.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.2361111111111111,
+     "observed_max": 0.9722222222222222
+    },
+    {
+     "name": "college_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.college_chemistry.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.27,
+     "observed_max": 0.67
+    },
+    {
+     "name": "college_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.college_computer_science.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.35,
+     "observed_max": 0.84
+    },
+    {
+     "name": "college_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.college_mathematics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.22,
+     "observed_max": 0.8
+    },
+    {
+     "name": "college_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.college_medicine.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.26011560693641617,
+     "observed_max": 0.861271676300578
+    },
+    {
+     "name": "college_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.college_physics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.19607843137254902,
+     "observed_max": 0.8627450980392157
+    },
+    {
+     "name": "computer_security",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.computer_security.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.3,
+     "observed_max": 0.89
+    },
+    {
+     "name": "conceptual_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.conceptual_physics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.3191489361702128,
+     "observed_max": 0.948936170212766
+    },
+    {
+     "name": "econometrics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.econometrics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.30701754385964913,
+     "observed_max": 0.8070175438596491
+    },
+    {
+     "name": "electrical_engineering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.electrical_engineering.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.2896551724137931,
+     "observed_max": 0.8689655172413793
+    },
+    {
+     "name": "elementary_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.elementary_mathematics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.25396825396825395,
+     "observed_max": 0.9417989417989417
+    },
+    {
+     "name": "formal_logic",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.formal_logic.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.2698412698412698,
+     "observed_max": 0.7857142857142857
+    },
+    {
+     "name": "global_facts",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.global_facts.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.25,
+     "observed_max": 0.8
+    },
+    {
+     "name": "high_school_biology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_biology.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.33548387096774196,
+     "observed_max": 0.9580645161290322
+    },
+    {
+     "name": "high_school_chemistry",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_chemistry.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.3103448275862069,
+     "observed_max": 0.8325123152709359
+    },
+    {
+     "name": "high_school_computer_science",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_computer_science.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.22,
+     "observed_max": 0.96
+    },
+    {
+     "name": "high_school_european_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_european_history.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.23636363636363636,
+     "observed_max": 0.9151515151515152
+    },
+    {
+     "name": "high_school_geography",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_geography.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.22727272727272727,
+     "observed_max": 0.9595959595959596
+    },
+    {
+     "name": "high_school_government_and_politics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_government_and_politics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.35751295336787564,
+     "observed_max": 0.9896373056994818
+    },
+    {
+     "name": "high_school_macroeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_macroeconomics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.33589743589743587,
+     "observed_max": 0.9128205128205128
+    },
+    {
+     "name": "high_school_mathematics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_mathematics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.09259259259259259,
+     "observed_max": 0.7666666666666667
+    },
+    {
+     "name": "high_school_microeconomics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_microeconomics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.29411764705882354,
+     "observed_max": 0.9705882352941176
+    },
+    {
+     "name": "high_school_physics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_physics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.2582781456953642,
+     "observed_max": 0.8344370860927153
+    },
+    {
+     "name": "high_school_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_psychology.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.25871559633027524,
+     "observed_max": 0.9669724770642202
+    },
+    {
+     "name": "high_school_statistics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_statistics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.25925925925925924,
+     "observed_max": 0.8842592592592593
+    },
+    {
+     "name": "high_school_us_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_us_history.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.25,
+     "observed_max": 0.9607843137254902
+    },
+    {
+     "name": "high_school_world_history",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.high_school_world_history.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.25316455696202533,
+     "observed_max": 0.9578059071729957
+    },
+    {
+     "name": "human_aging",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.human_aging.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.27802690582959644,
+     "observed_max": 0.8878923766816144
+    },
+    {
+     "name": "human_sexuality",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.human_sexuality.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.26717557251908397,
+     "observed_max": 0.9389312977099237
+    },
+    {
+     "name": "international_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.international_law.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.30578512396694213,
+     "observed_max": 0.9586776859504132
+    },
+    {
+     "name": "jurisprudence",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.jurisprudence.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.25,
+     "observed_max": 0.9074074074074074
+    },
+    {
+     "name": "logical_fallacies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.logical_fallacies.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.26380368098159507,
+     "observed_max": 0.9263803680981595
+    },
+    {
+     "name": "machine_learning",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.machine_learning.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.2857142857142857,
+     "observed_max": 0.8392857142857143
+    },
+    {
+     "name": "management",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.management.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.27184466019417475,
+     "observed_max": 0.941747572815534
+    },
+    {
+     "name": "marketing",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.marketing.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.2692307692307692,
+     "observed_max": 0.9615384615384616
+    },
+    {
+     "name": "medical_genetics",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.medical_genetics.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.28,
+     "observed_max": 0.98
+    },
+    {
+     "name": "miscellaneous",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.miscellaneous.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.29246487867177523,
+     "observed_max": 0.9642401021711366
+    },
+    {
+     "name": "moral_disputes",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.moral_disputes.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.27167630057803466,
+     "observed_max": 0.8872832369942196
+    },
+    {
+     "name": "moral_scenarios",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.moral_scenarios.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.23128491620111732,
+     "observed_max": 0.9016759776536313
+    },
+    {
+     "name": "nutrition",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.nutrition.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.33986928104575165,
+     "observed_max": 0.9281045751633987
+    },
+    {
+     "name": "philosophy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.philosophy.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.3247588424437299,
+     "observed_max": 0.9003215434083601
+    },
+    {
+     "name": "prehistory",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.prehistory.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.31790123456790126,
+     "observed_max": 0.9506172839506173
+    },
+    {
+     "name": "professional_accounting",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.professional_accounting.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.22340425531914893,
+     "observed_max": 0.8404255319148937
+    },
+    {
+     "name": "professional_law",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.professional_law.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.2379400260756193,
+     "observed_max": 0.7535853976531942
+    },
+    {
+     "name": "professional_medicine",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.professional_medicine.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.4485294117647059,
+     "observed_max": 0.9595588235294118
+    },
+    {
+     "name": "professional_psychology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.professional_psychology.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.23202614379084968,
+     "observed_max": 0.9215686274509803
+    },
+    {
+     "name": "public_relations",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.public_relations.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.34545454545454546,
+     "observed_max": 0.8545454545454545
+    },
+    {
+     "name": "security_studies",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.security_studies.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.40816326530612246,
+     "observed_max": 0.8857142857142857
+    },
+    {
+     "name": "sociology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.sociology.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.38308457711442784,
+     "observed_max": 0.9601990049751243
+    },
+    {
+     "name": "us_foreign_policy",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.us_foreign_policy.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.26,
+     "observed_max": 0.97
+    },
+    {
+     "name": "virology",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.virology.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.39156626506024095,
+     "observed_max": 0.6024096385542169
+    },
+    {
+     "name": "world_religions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_mmlu.meta.json benchmarks.world_religions.metric_name = exact_match (fraction)",
+     "n_obs": 79,
+     "observed_min": 0.23391812865497075,
+     "observed_max": 0.9239766081871345
+    }
+   ]
+  },
+  "helm_classic": {
+   "n_columns": 16,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 16
+   },
+   "columns": [
+    {
+     "name": "BoolQ",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.BoolQ.metric_name = quasi_exact_match (fraction)",
+     "n_obs": 67,
+     "observed_min": 0.0,
+     "observed_max": 0.8963333333333333
+    },
+    {
+     "name": "CNN/DailyMail",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.CNN/DailyMail.metric_name = rouge_2 (fraction)",
+     "n_obs": 42,
+     "observed_min": 0.01716275077615623,
+     "observed_max": 0.16105469330622088
+    },
+    {
+     "name": "CivilComments",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.CivilComments.metric_name = quasi_exact_match (fraction)",
+     "n_obs": 67,
+     "observed_min": 0.007510704420678352,
+     "observed_max": 0.6963552742267919
+    },
+    {
+     "name": "HellaSwag",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.HellaSwag.metric_name = exact_match (fraction)",
+     "n_obs": 32,
+     "observed_min": 0.429,
+     "observed_max": 0.822
+    },
+    {
+     "name": "IMDB",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.IMDB.metric_name = quasi_exact_match (fraction)",
+     "n_obs": 67,
+     "observed_min": 0.20733333333333334,
+     "observed_max": 0.962
+    },
+    {
+     "name": "MMLU",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.MMLU.metric_name = exact_match (fraction)",
+     "n_obs": 67,
+     "observed_min": 0.22873684210526318,
+     "observed_max": 0.6090994152046784
+    },
+    {
+     "name": "MS MARCO (TREC)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.MS MARCO (TREC).metric_name = NDCG@10 (fraction)",
+     "n_obs": 31,
+     "observed_min": 0.2902649241990923,
+     "observed_max": 0.7622522766616928
+    },
+    {
+     "name": "MS MARCO (regular)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.MS MARCO (regular).metric_name = RR@10 (fraction)",
+     "n_obs": 30,
+     "observed_min": 0.10209867724867722,
+     "observed_max": 0.47209722222222167
+    },
+    {
+     "name": "NarrativeQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.NarrativeQA.metric_name = f1_score (fraction)",
+     "n_obs": 66,
+     "observed_min": 0.08275131240180192,
+     "observed_max": 0.7699314267415824
+    },
+    {
+     "name": "NaturalQuestions (closed-book)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.NaturalQuestions (closed-book).metric_name = f1_score (fraction)",
+     "n_obs": 67,
+     "observed_min": 0.024961683090918712,
+     "observed_max": 0.458395947831016
+    },
+    {
+     "name": "NaturalQuestions (open-book)",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.NaturalQuestions (open-book).metric_name = f1_score (fraction)",
+     "n_obs": 66,
+     "observed_min": 0.1488303775311016,
+     "observed_max": 0.7702290061206396
+    },
+    {
+     "name": "OpenbookQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.OpenbookQA.metric_name = exact_match (fraction)",
+     "n_obs": 32,
+     "observed_min": 0.346,
+     "observed_max": 0.646
+    },
+    {
+     "name": "QuAC",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.QuAC.metric_name = f1_score (fraction)",
+     "n_obs": 66,
+     "observed_min": 0.11593672613200567,
+     "observed_max": 0.5247817678036986
+    },
+    {
+     "name": "RAFT",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.RAFT.metric_name = quasi_exact_match (fraction)",
+     "n_obs": 67,
+     "observed_min": 0.11818181818181818,
+     "observed_max": 0.7681818181818181
+    },
+    {
+     "name": "TruthfulQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.TruthfulQA.metric_name = exact_match (fraction)",
+     "n_obs": 67,
+     "observed_min": 0.13200815494393478,
+     "observed_max": 0.6156982670744139
+    },
+    {
+     "name": "XSUM",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta helm_classic.meta.json benchmarks.XSUM.metric_name = rouge_2 (fraction)",
+     "n_obs": 42,
+     "observed_min": 0.014554209854519893,
+     "observed_max": 0.1815971021083342
+    }
+   ]
+  },
+  "mteb2026": {
+   "n_columns": 56,
+   "counts_by_bound": {
+    "[0.0, 1.0]": 45,
+    "[-1.0, 1.0]": 11
+   },
+   "columns": [
+    {
+     "name": "AmazonCounterfactualClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 272,
+     "observed_min": 0.3998325426949467,
+     "observed_max": 0.988657
+    },
+    {
+     "name": "AmazonPolarityClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 209,
+     "observed_min": 0.55023,
+     "observed_max": 0.9774185000000002
+    },
+    {
+     "name": "AmazonReviewsClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 202,
+     "observed_min": 0.21394,
+     "observed_max": 0.68802
+    },
+    {
+     "name": "ArguAna",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 303,
+     "observed_min": 0.00188,
+     "observed_max": 0.89786
+    },
+    {
+     "name": "ArxivClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 207,
+     "observed_min": 0.117473,
+     "observed_max": 0.609194
+    },
+    {
+     "name": "ArxivClusteringS2S",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 207,
+     "observed_min": 0.083576,
+     "observed_max": 0.552017
+    },
+    {
+     "name": "AskUbuntuDupQuestions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = map_at_1000 (MAP@1000)",
+     "n_obs": 246,
+     "observed_min": 0.38167,
+     "observed_max": 0.752801
+    },
+    {
+     "name": "BIOSSES",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 262,
+     "observed_min": -0.081267,
+     "observed_max": 0.969167
+    },
+    {
+     "name": "Banking77Classification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 263,
+     "observed_min": 0.012532,
+     "observed_max": 0.942695
+    },
+    {
+     "name": "BiorxivClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 206,
+     "observed_min": 0.066035,
+     "observed_max": 0.697027
+    },
+    {
+     "name": "BiorxivClusteringS2S",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 206,
+     "observed_min": 0.037969,
+     "observed_max": 0.668866
+    },
+    {
+     "name": "CQADupstackRetrieval",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 235,
+     "observed_min": 0.00054,
+     "observed_max": 0.683035
+    },
+    {
+     "name": "ClimateFEVER",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 236,
+     "observed_min": 0.0,
+     "observed_max": 0.56927
+    },
+    {
+     "name": "DBPedia",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 236,
+     "observed_min": 0.00157,
+     "observed_max": 0.53496
+    },
+    {
+     "name": "EmotionClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 208,
+     "observed_min": 0.18685,
+     "observed_max": 0.9387
+    },
+    {
+     "name": "FEVER",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 233,
+     "observed_min": 0.00101,
+     "observed_max": 0.96283
+    },
+    {
+     "name": "FiQA2018",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 282,
+     "observed_min": 0.0,
+     "observed_max": 0.8206
+    },
+    {
+     "name": "HotpotQA",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 234,
+     "observed_min": 0.00346,
+     "observed_max": 0.86958
+    },
+    {
+     "name": "ImdbClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 261,
+     "observed_min": 0.50098,
+     "observed_max": 0.97368
+    },
+    {
+     "name": "MSMARCO",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 205,
+     "observed_min": 0.00083,
+     "observed_max": 0.48119
+    },
+    {
+     "name": "MTOPDomainClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 252,
+     "observed_min": 0.090584,
+     "observed_max": 0.999544
+    },
+    {
+     "name": "MTOPIntentClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 196,
+     "observed_min": 0.010853,
+     "observed_max": 0.963771
+    },
+    {
+     "name": "MassiveIntentClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 283,
+     "observed_min": 0.016409,
+     "observed_max": 0.919435
+    },
+    {
+     "name": "MassiveScenarioClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 267,
+     "observed_min": 0.05427,
+     "observed_max": 0.992972
+    },
+    {
+     "name": "MedrxivClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 205,
+     "observed_min": 0.156143,
+     "observed_max": 0.559598
+    },
+    {
+     "name": "MedrxivClusteringS2S",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 206,
+     "observed_min": 0.128316,
+     "observed_max": 0.544399
+    },
+    {
+     "name": "MindSmallReranking",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = max_over_subqueries_map_at_1000 (MAP@1000)",
+     "n_obs": 243,
+     "observed_min": 0.23308,
+     "observed_max": 0.343727
+    },
+    {
+     "name": "NFCorpus",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 253,
+     "observed_min": 0.01591,
+     "observed_max": 0.55745
+    },
+    {
+     "name": "NQ",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 236,
+     "observed_min": 0.00037,
+     "observed_max": 0.82481
+    },
+    {
+     "name": "QuoraRetrieval",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 236,
+     "observed_min": 0.43754,
+     "observed_max": 0.92348
+    },
+    {
+     "name": "RedditClustering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 206,
+     "observed_min": 0.050484,
+     "observed_max": 0.771563
+    },
+    {
+     "name": "RedditClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 205,
+     "observed_min": 0.125996,
+     "observed_max": 0.7527316726548479
+    },
+    {
+     "name": "SCIDOCS",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 301,
+     "observed_min": 0.00024,
+     "observed_max": 0.59857
+    },
+    {
+     "name": "SICK-R",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 278,
+     "observed_min": -0.001918,
+     "observed_max": 0.946525
+    },
+    {
+     "name": "STS12",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 279,
+     "observed_min": 0.08441,
+     "observed_max": 0.954619
+    },
+    {
+     "name": "STS13",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 279,
+     "observed_min": -0.016979,
+     "observed_max": 0.977636
+    },
+    {
+     "name": "STS14",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 279,
+     "observed_min": 0.006327,
+     "observed_max": 0.975293
+    },
+    {
+     "name": "STS15",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 279,
+     "observed_min": 0.025899,
+     "observed_max": 0.981124
+    },
+    {
+     "name": "STS16",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 209,
+     "observed_min": 0.456633,
+     "observed_max": 0.976294
+    },
+    {
+     "name": "STS17",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 280,
+     "observed_min": 0.009378741534997558,
+     "observed_max": 0.958617
+    },
+    {
+     "name": "STS22",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 195,
+     "observed_min": 0.38329,
+     "observed_max": 0.730981
+    },
+    {
+     "name": "STSBenchmark",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 280,
+     "observed_min": 0.009762486352335524,
+     "observed_max": 0.950436
+    },
+    {
+     "name": "SciDocsRR",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = map_at_1000 (MAP@1000)",
+     "n_obs": 189,
+     "observed_min": 0.42063,
+     "observed_max": 0.911414
+    },
+    {
+     "name": "SciFact",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 251,
+     "observed_min": 0.00349,
+     "observed_max": 0.866
+    },
+    {
+     "name": "SprintDuplicateQuestions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = max_ap (average precision)",
+     "n_obs": 277,
+     "observed_min": 0.011443,
+     "observed_max": 1.0
+    },
+    {
+     "name": "StackExchangeClustering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 206,
+     "observed_min": 0.085242,
+     "observed_max": 0.839531
+    },
+    {
+     "name": "StackExchangeClusteringP2P",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 206,
+     "observed_min": 0.200454,
+     "observed_max": 0.515652
+    },
+    {
+     "name": "StackOverflowDupQuestions",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = map_at_1000 (MAP@1000)",
+     "n_obs": 189,
+     "observed_min": 0.29716,
+     "observed_max": 0.590389
+    },
+    {
+     "name": "SummEval",
+     "lo": -1.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = cosine_spearman (Spearman correlation)",
+     "n_obs": 206,
+     "observed_min": 0.246512,
+     "observed_max": 0.3359510652629926
+    },
+    {
+     "name": "TRECCOVID",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 307,
+     "observed_min": 0.00425,
+     "observed_max": 0.98328
+    },
+    {
+     "name": "Touche2020",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = ndcg_at_10 (nDCG@10)",
+     "n_obs": 234,
+     "observed_min": 0.0,
+     "observed_max": 0.39781
+    },
+    {
+     "name": "ToxicConversationsClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 277,
+     "observed_min": 0.12610869387810816,
+     "observed_max": 0.975928
+    },
+    {
+     "name": "TweetSentimentExtractionClassification",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = accuracy (accuracy)",
+     "n_obs": 260,
+     "observed_min": 0.338115,
+     "observed_max": 0.882343
+    },
+    {
+     "name": "TwentyNewsgroupsClustering",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = v_measure (V-measure)",
+     "n_obs": 206,
+     "observed_min": 0.074305,
+     "observed_max": 0.83486
+    },
+    {
+     "name": "TwitterSemEval2015",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = max_ap (average precision)",
+     "n_obs": 257,
+     "observed_min": 0.234837,
+     "observed_max": 0.901244
+    },
+    {
+     "name": "TwitterURLCorpus",
+     "lo": 0.0,
+     "hi": 1.0,
+     "source": "meta mteb2026.meta.json benchmarks[].main_score = max_ap (average precision)",
+     "n_obs": 274,
+     "observed_min": 0.254395,
+     "observed_max": 0.957069
+    }
+   ]
+  }
+ },
+ "release_note": "benchpress and epoch removed from this copy: their observed values are not redistributed (DATA_LICENSES.md). After data/download_benchpress.py and data/build_epoch.py, `python code/score_bounds.py --write data/score_bounds.json` regenerates the full audit; the bounds themselves come from score_bounds.RULES, not from this file."
+}

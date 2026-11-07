@@ -8,7 +8,7 @@ For each dataset:
   4. Generate a combined figure: histogram of W statistics + Q-Q plot
      of Mahalanobis distances.
 
-Saves figures to figures/ and a summary JSON to logs/.
+Saves figures to paper/figures/ and a summary JSON to logs/.
 """
 
 import pathlib

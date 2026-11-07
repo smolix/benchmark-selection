@@ -1,0 +1,192 @@
+# job      benchfam_olv1items
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_benchfamily_holdout.py --datasets olv1items --repeats 5
+# started  2026-10-20T02:45:15Z on 4090-1
+
+
+######################################################################
+# Dataset: OLV1ITEMS
+######################################################################
+395 models × 62 benchmarks, 100.0% observed; 5 × 10-fold CV, 10% holdout, k ≤ 10, blind covariance: refit
+families (MMLU supercategory (hendrycks/test)): stem 18, humanities 13, social_sciences 12, other 14, arc_challenge 1, hellaswag 1, truthfulqa_mc2 1, winogrande 1, gsm8k 1
+  Rep 0 fold 0: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.784  mi_aware 0.781  trace_blind 0.787  trace_aware 0.796  facloc_blind 0.781  facloc_aware 0.784  random 0.751  (1.2s)
+  Rep 0 fold 1: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.846  mi_aware 0.847  trace_blind 0.849  trace_aware 0.857  facloc_blind 0.845  facloc_aware 0.845  random 0.811  (1.2s)
+  Rep 0 fold 2: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.840  mi_aware 0.846  trace_blind 0.844  trace_aware 0.855  facloc_blind 0.841  facloc_aware 0.857  random 0.821  (1.3s)
+  Rep 0 fold 3: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.830  mi_aware 0.829  trace_blind 0.825  trace_aware 0.831  facloc_blind 0.825  facloc_aware 0.836  random 0.796  (1.3s)
+  Rep 0 fold 4: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.839  mi_aware 0.836  trace_blind 0.834  trace_aware 0.843  facloc_blind 0.839  facloc_aware 0.841  random 0.815  (1.3s)
+  Rep 0 fold 5: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.831  mi_aware 0.830  trace_blind 0.843  trace_aware 0.853  facloc_blind 0.831  facloc_aware 0.840  random 0.828  (1.3s)
+  Rep 0 fold 6: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.812  mi_aware 0.809  trace_blind 0.809  trace_aware 0.813  facloc_blind 0.812  facloc_aware 0.810  random 0.796  (1.3s)
+  Rep 0 fold 7: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.875  mi_aware 0.882  trace_blind 0.869  trace_aware 0.878  facloc_blind 0.871  facloc_aware 0.877  random 0.852  (1.3s)
+  Rep 0 fold 8: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.847  mi_aware 0.843  trace_blind 0.843  trace_aware 0.856  facloc_blind 0.839  facloc_aware 0.852  random 0.814  (1.3s)
+  Rep 0 fold 9: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.827  mi_aware 0.826  trace_blind 0.815  trace_aware 0.832  facloc_blind 0.817  facloc_aware 0.832  random 0.789  (1.3s)
+  Rep 1 fold 0: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.700  mi_aware 0.704  trace_blind 0.726  trace_aware 0.727  facloc_blind 0.701  facloc_aware 0.705  random 0.698  (1.3s)
+  Rep 1 fold 1: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.864  mi_aware 0.862  trace_blind 0.867  trace_aware 0.879  facloc_blind 0.865  facloc_aware 0.875  random 0.824  (1.4s)
+  Rep 1 fold 2: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.850  mi_aware 0.853  trace_blind 0.840  trace_aware 0.849  facloc_blind 0.836  facloc_aware 0.848  random 0.833  (1.4s)
+  Rep 1 fold 3: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.845  mi_aware 0.846  trace_blind 0.843  trace_aware 0.846  facloc_blind 0.839  facloc_aware 0.849  random 0.822  (1.4s)
+  Rep 1 fold 4: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.871  mi_aware 0.868  trace_blind 0.873  trace_aware 0.882  facloc_blind 0.873  facloc_aware 0.880  random 0.851  (1.4s)
+  Rep 1 fold 5: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.849  mi_aware 0.847  trace_blind 0.848  trace_aware 0.858  facloc_blind 0.848  facloc_aware 0.855  random 0.830  (1.4s)
+  Rep 1 fold 6: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.847  mi_aware 0.848  trace_blind 0.826  trace_aware 0.838  facloc_blind 0.839  facloc_aware 0.850  random 0.798  (1.3s)
+  Rep 1 fold 7: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.809  mi_aware 0.815  trace_blind 0.805  trace_aware 0.822  facloc_blind 0.797  facloc_aware 0.813  random 0.751  (1.4s)
+  Rep 1 fold 8: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.826  mi_aware 0.821  trace_blind 0.825  trace_aware 0.828  facloc_blind 0.822  facloc_aware 0.831  random 0.775  (1.4s)
+  Rep 1 fold 9: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.843  mi_aware 0.840  trace_blind 0.840  trace_aware 0.847  facloc_blind 0.836  facloc_aware 0.847  random 0.793  (1.3s)
+  Rep 2 fold 0: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.842  mi_aware 0.846  trace_blind 0.843  trace_aware 0.850  facloc_blind 0.842  facloc_aware 0.854  random 0.832  (1.3s)
+  Rep 2 fold 1: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.830  mi_aware 0.831  trace_blind 0.825  trace_aware 0.843  facloc_blind 0.823  facloc_aware 0.839  random 0.784  (1.3s)
+  Rep 2 fold 2: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.806  mi_aware 0.810  trace_blind 0.805  trace_aware 0.818  facloc_blind 0.799  facloc_aware 0.806  random 0.791  (1.3s)
+  Rep 2 fold 3: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.865  mi_aware 0.863  trace_blind 0.868  trace_aware 0.879  facloc_blind 0.864  facloc_aware 0.871  random 0.849  (1.3s)
+  Rep 2 fold 4: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.873  mi_aware 0.876  trace_blind 0.865  trace_aware 0.873  facloc_blind 0.864  facloc_aware 0.868  random 0.833  (1.3s)
+  Rep 2 fold 5: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.791  mi_aware 0.797  trace_blind 0.798  trace_aware 0.814  facloc_blind 0.796  facloc_aware 0.816  random 0.773  (1.3s)
+  Rep 2 fold 6: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.874  mi_aware 0.872  trace_blind 0.873  trace_aware 0.868  facloc_blind 0.870  facloc_aware 0.874  random 0.859  (1.3s)
+  Rep 2 fold 7: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.848  mi_aware 0.848  trace_blind 0.845  trace_aware 0.861  facloc_blind 0.840  facloc_aware 0.861  random 0.823  (1.3s)
+  Rep 2 fold 8: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.776  mi_aware 0.778  trace_blind 0.791  trace_aware 0.793  facloc_blind 0.776  facloc_aware 0.783  random 0.776  (1.3s)
+  Rep 2 fold 9: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.826  mi_aware 0.823  trace_blind 0.816  trace_aware 0.813  facloc_blind 0.818  facloc_aware 0.826  random 0.788  (1.3s)
+  Rep 3 fold 0: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.853  mi_aware 0.855  trace_blind 0.852  trace_aware 0.862  facloc_blind 0.853  facloc_aware 0.862  random 0.830  (1.3s)
+  Rep 3 fold 1: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.862  mi_aware 0.859  trace_blind 0.850  trace_aware 0.869  facloc_blind 0.849  facloc_aware 0.865  random 0.827  (1.3s)
+  Rep 3 fold 2: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.809  mi_aware 0.799  trace_blind 0.824  trace_aware 0.825  facloc_blind 0.808  facloc_aware 0.807  random 0.796  (1.3s)
+  Rep 3 fold 3: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.820  mi_aware 0.821  trace_blind 0.798  trace_aware 0.822  facloc_blind 0.809  facloc_aware 0.820  random 0.802  (1.3s)
+  Rep 3 fold 4: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.805  mi_aware 0.804  trace_blind 0.794  trace_aware 0.816  facloc_blind 0.798  facloc_aware 0.811  random 0.757  (1.3s)
+  Rep 3 fold 5: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.844  mi_aware 0.840  trace_blind 0.832  trace_aware 0.842  facloc_blind 0.838  facloc_aware 0.848  random 0.783  (1.3s)
+  Rep 3 fold 6: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.858  mi_aware 0.857  trace_blind 0.861  trace_aware 0.860  facloc_blind 0.860  facloc_aware 0.867  random 0.812  (1.3s)
+  Rep 3 fold 7: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.831  mi_aware 0.835  trace_blind 0.828  trace_aware 0.837  facloc_blind 0.829  facloc_aware 0.835  random 0.796  (1.3s)
+  Rep 3 fold 8: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.832  mi_aware 0.832  trace_blind 0.825  trace_aware 0.836  facloc_blind 0.826  facloc_aware 0.832  random 0.815  (1.2s)
+  Rep 3 fold 9: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.846  mi_aware 0.848  trace_blind 0.855  trace_aware 0.863  facloc_blind 0.843  facloc_aware 0.850  random 0.814  (1.2s)
+  Rep 4 fold 0: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.859  mi_aware 0.860  trace_blind 0.850  trace_aware 0.864  facloc_blind 0.848  facloc_aware 0.859  random 0.812  (1.2s)
+  Rep 4 fold 1: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.810  mi_aware 0.808  trace_blind 0.811  trace_aware 0.824  facloc_blind 0.811  facloc_aware 0.818  random 0.784  (1.2s)
+  Rep 4 fold 2: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.827  mi_aware 0.829  trace_blind 0.836  trace_aware 0.832  facloc_blind 0.821  facloc_aware 0.828  random 0.820  (1.2s)
+  Rep 4 fold 3: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.832  mi_aware 0.831  trace_blind 0.837  trace_aware 0.848  facloc_blind 0.831  facloc_aware 0.840  random 0.807  (1.0s)
+  Rep 4 fold 4: 355 train / 40 val, 62/62 eligible; all-family R²@5: mi_blind 0.812  mi_aware 0.809  trace_blind 0.796  trace_aware 0.802  facloc_blind 0.795  facloc_aware 0.813  random 0.736  (0.8s)
+  Rep 4 fold 5: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.851  mi_aware 0.854  trace_blind 0.862  trace_aware 0.871  facloc_blind 0.853  facloc_aware 0.863  random 0.821  (0.7s)
+  Rep 4 fold 6: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.861  mi_aware 0.859  trace_blind 0.860  trace_aware 0.868  facloc_blind 0.858  facloc_aware 0.863  random 0.824  (0.7s)
+  Rep 4 fold 7: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.827  mi_aware 0.826  trace_blind 0.821  trace_aware 0.831  facloc_blind 0.816  facloc_aware 0.820  random 0.798  (0.7s)
+  Rep 4 fold 8: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.860  mi_aware 0.858  trace_blind 0.853  trace_aware 0.870  facloc_blind 0.852  facloc_aware 0.865  random 0.846  (0.7s)
+  Rep 4 fold 9: 356 train / 39 val, 62/62 eligible; all-family R²@5: mi_blind 0.848  mi_aware 0.845  trace_blind 0.838  trace_aware 0.851  facloc_blind 0.840  facloc_aware 0.853  random 0.823  (0.7s)
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/benchfamily_holdout_olv1items.npz
+
+== OLL v1 tasks: R² on the held-out family's cells, blind / aware (mean over the 50 splits' common support; blind covariance refit, families mmlu_category) ==
+
+-- stem (18 benchmarks, 395 models)
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.712/0.712     0.745/0.745     0.765/0.759     0.789/0.794
+Entropy (Alg. 1)           0.710/0.712     0.734/0.735     0.764/0.766     0.791/0.791
+Greedy trace min.          0.710/0.712     0.734/0.750     0.769/0.776     0.793/0.798
+PCA subset (CSSP)          0.710/0.712     0.691/0.620     0.728/0.744     0.787/0.783
+Hub correlation            0.712/0.712     0.721/0.737     0.745/0.750     0.772/0.761
+Facility location          0.712/0.712     0.743/0.749     0.764/0.778     0.793/0.796
+Random                           0.616           0.706           0.738           0.773
+  blind - random (mi trace ent fl)     k=1: +0.10* +0.09* +0.09* +0.10*  k=3: +0.04 +0.03 +0.03 +0.04  k=5: +0.03* +0.03* +0.03* +0.03*  k=10: +0.02* +0.02* +0.02* +0.02*
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: -0.00 +0.02* +0.00 +0.01  k=5: -0.01 +0.01 +0.00 +0.01*  k=10: +0.01 +0.01* +0.00 +0.00
+
+-- humanities (13 benchmarks, 395 models)
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.843/0.843     0.887/0.889     0.891/0.893     0.898/0.899
+Entropy (Alg. 1)           0.843/0.843     0.857/0.857     0.865/0.865     0.875/0.875
+Greedy trace min.          0.843/0.843     0.865/0.880     0.886/0.893     0.893/0.900
+PCA subset (CSSP)          0.843/0.843     0.794/0.808     0.808/0.831     0.878/0.877
+Hub correlation            0.843/0.843     0.852/0.852     0.864/0.864     0.878/0.878
+Facility location          0.843/0.843     0.864/0.888     0.891/0.891     0.899/0.898
+Random                           0.705           0.838           0.861           0.885
+  blind - random (mi trace ent fl)     k=1: +0.14* +0.14* +0.14* +0.14*  k=3: +0.05* +0.03* +0.02 +0.03*  k=5: +0.03* +0.03* +0.00 +0.03*  k=10: +0.01* +0.01 -0.01 +0.01*
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: +0.00 +0.01* +0.00 +0.02*  k=5: +0.00 +0.01* +0.00 -0.00  k=10: +0.00 +0.01* +0.00 -0.00
+
+-- social_sciences (12 benchmarks, 395 models)
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.841/0.841     0.890/0.890     0.910/0.905     0.919/0.920
+Entropy (Alg. 1)           0.866/0.866     0.869/0.869     0.872/0.872     0.890/0.890
+Greedy trace min.          0.866/0.866     0.882/0.884     0.892/0.907     0.913/0.913
+PCA subset (CSSP)          0.866/0.866     0.809/0.850     0.815/0.843     0.897/0.897
+Hub correlation            0.866/0.866     0.887/0.886     0.896/0.897     0.914/0.913
+Facility location          0.866/0.866     0.881/0.881     0.885/0.901     0.912/0.912
+Random                           0.709           0.860           0.891           0.912
+  blind - random (mi trace ent fl)     k=1: +0.13* +0.16* +0.16* +0.16*  k=3: +0.03 +0.02 +0.01 +0.02  k=5: +0.02* +0.00 -0.02* -0.01  k=10: +0.01 +0.00 -0.02* -0.00
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: +0.00 +0.00 +0.00 -0.00  k=5: -0.01* +0.02* +0.00 +0.02*  k=10: +0.00 +0.00 +0.00 +0.00
+
+-- other (14 benchmarks, 395 models)
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.830/0.830     0.862/0.867     0.870/0.872     0.883/0.883
+Entropy (Alg. 1)           0.830/0.830     0.840/0.840     0.843/0.843     0.863/0.863
+Greedy trace min.          0.830/0.830     0.848/0.862     0.874/0.876     0.880/0.883
+PCA subset (CSSP)          0.830/0.830     0.789/0.804     0.780/0.807     0.850/0.857
+Hub correlation            0.830/0.830     0.841/0.841     0.849/0.850     0.871/0.871
+Facility location          0.830/0.830     0.847/0.868     0.869/0.869     0.880/0.880
+Random                           0.684           0.824           0.848           0.872
+  blind - random (mi trace ent fl)     k=1: +0.15* +0.15* +0.15* +0.15*  k=3: +0.04* +0.02 +0.02 +0.02  k=5: +0.02* +0.03* -0.00 +0.02*  k=10: +0.01* +0.01 -0.01 +0.01
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: +0.01* +0.01* +0.00 +0.02*  k=5: +0.00 +0.00 +0.00 +0.00  k=10: -0.00 +0.00 +0.00 +0.00
+
+-- arc_challenge (1 benchmarks, 395 models)
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.647/0.647     0.680/0.680     0.693/0.708     0.849/0.854
+Entropy (Alg. 1)           0.647/0.647     0.713/0.713     0.770/0.770     0.867/0.867
+Greedy trace min.          0.647/0.647     0.689/0.692     0.782/0.831     0.865/0.865
+PCA subset (CSSP)          0.647/0.647     0.715/0.709     0.831/0.836     0.859/0.859
+Hub correlation            0.647/0.647     0.659/0.659     0.664/0.667     0.697/0.697
+Facility location          0.647/0.647     0.684/0.686     0.765/0.766     0.866/0.884
+Random                           0.519           0.649           0.692           0.732
+  blind - random (mi trace ent fl)     k=1: +0.13 +0.13 +0.13 +0.13  k=3: +0.03 +0.04 +0.06 +0.04  k=5: +0.00 +0.09* +0.08* +0.07*  k=10: +0.12* +0.13* +0.14* +0.13*
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: +0.00 +0.00 +0.00 +0.00  k=5: +0.01 +0.05* +0.00 +0.00  k=10: +0.01 -0.00 +0.00 +0.02*
+
+-- hellaswag (1 benchmarks, 395 models)
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.510/0.510     0.602/0.609     0.677/0.767     0.777/0.785
+Entropy (Alg. 1)           0.510/0.510     0.568/0.568     0.578/0.578     0.674/0.674
+Greedy trace min.          0.510/0.510     0.633/0.633     0.645/0.754     0.771/0.767
+PCA subset (CSSP)          0.510/0.510     0.573/0.576     0.602/0.727     0.734/0.732
+Hub correlation            0.510/0.510     0.557/0.557     0.563/0.561     0.603/0.602
+Facility location          0.510/0.510     0.629/0.634     0.645/0.766     0.734/0.761
+Random                           0.394           0.525           0.578           0.584
+  blind - random (mi trace ent fl)     k=1: +0.12 +0.12 +0.12 +0.12  k=3: +0.08 +0.11* +0.04 +0.10  k=5: +0.10 +0.07 +0.00 +0.07  k=10: +0.19* +0.19* +0.09 +0.15*
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: +0.01 +0.00 +0.00 +0.01  k=5: +0.09* +0.11* +0.00 +0.12*  k=10: +0.01 -0.00 +0.00 +0.03
+
+-- truthfulqa_mc2 (1 benchmarks, 395 models)
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.401/0.401     0.364/0.374     0.519/0.524     0.543/0.556
+Entropy (Alg. 1)           0.401/0.401     0.447/0.447     0.536/0.536     0.557/0.557
+Greedy trace min.          0.401/0.401     0.403/0.414     0.538/0.516     0.553/0.536
+PCA subset (CSSP)          0.401/0.401     0.515/0.509     0.544/0.536     0.558/0.551
+Hub correlation            0.401/0.401     0.425/0.425     0.439/0.435     0.445/0.442
+Facility location          0.401/0.401     0.401/0.390     0.527/0.531     0.580/0.579
+Random                           0.353           0.418           0.438           0.477
+  blind - random (mi trace ent fl)     k=1: +0.05 +0.05 +0.05 +0.05  k=3: -0.05 -0.02 +0.03 -0.02  k=5: +0.08 +0.10* +0.10* +0.09  k=10: +0.07 +0.08 +0.08 +0.10
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: +0.01 +0.01 +0.00 -0.01  k=5: +0.00 -0.02 +0.00 +0.00  k=10: +0.01 -0.02 +0.00 -0.00
+
+-- winogrande (1 benchmarks, 395 models)
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.687/0.688     0.696/0.703     0.795/0.816     0.819/0.817
+Entropy (Alg. 1)           0.688/0.688     0.709/0.709     0.716/0.716     0.756/0.756
+Greedy trace min.          0.688/0.688     0.699/0.701     0.766/0.740     0.753/0.741
+PCA subset (CSSP)          0.688/0.688     0.688/0.688     0.717/0.734     0.735/0.736
+Hub correlation            0.688/0.688     0.689/0.689     0.689/0.689     0.701/0.700
+Facility location          0.688/0.688     0.697/0.696     0.810/0.814     0.809/0.809
+Random                           0.566           0.659           0.680           0.704
+  blind - random (mi trace ent fl)     k=1: +0.12 +0.12 +0.12 +0.12  k=3: +0.04 +0.04 +0.05 +0.04  k=5: +0.12* +0.09* +0.04 +0.13*  k=10: +0.11* +0.05 +0.05 +0.10*
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: +0.01 +0.00 +0.00 -0.00  k=5: +0.02 -0.03 +0.00 +0.00  k=10: -0.00 -0.01 +0.00 +0.00
+
+-- gsm8k (1 benchmarks, 395 models)
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.491/0.491     0.517/0.518     0.633/0.635     0.688/0.690
+Entropy (Alg. 1)           0.491/0.491     0.521/0.521     0.609/0.609     0.634/0.634
+Greedy trace min.          0.491/0.491     0.513/0.523     0.628/0.661     0.685/0.707
+PCA subset (CSSP)          0.491/0.491     0.562/0.584     0.596/0.591     0.662/0.669
+Hub correlation            0.491/0.491     0.513/0.513     0.568/0.568     0.608/0.609
+Facility location          0.491/0.491     0.511/0.514     0.627/0.627     0.690/0.717
+Random                           0.445           0.525           0.572           0.628
+  blind - random (mi trace ent fl)     k=1: +0.05 +0.05 +0.05 +0.05  k=3: -0.01 -0.01 -0.00 -0.01  k=5: +0.06* +0.06 +0.04 +0.06  k=10: +0.06 +0.06 +0.01 +0.06
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: +0.00 +0.01 +0.00 +0.00  k=5: +0.00 +0.03 +0.00 -0.00  k=10: +0.00 +0.02 +0.00 +0.03*
+
+-- all: R² pooled over the cells of 9 families
+method                             k=1             k=3             k=5            k=10
+Mutual Info (Alg. 2)       0.776/0.776     0.814/0.816     0.834/0.834     0.853/0.856
+Entropy (Alg. 1)           0.780/0.781     0.797/0.797     0.813/0.813     0.836/0.836
+Greedy trace min.          0.780/0.781     0.802/0.814     0.832/0.842     0.851/0.854
+PCA subset (CSSP)          0.780/0.781     0.749/0.744     0.767/0.790     0.834/0.835
+Hub correlation            0.781/0.781     0.794/0.798     0.808/0.810     0.830/0.827
+Facility location          0.781/0.781     0.804/0.816     0.830/0.839     0.852/0.855
+Random                           0.654           0.777           0.805           0.834
+  blind - random (mi trace ent fl)     k=1: +0.12* +0.13* +0.13* +0.13*  k=3: +0.04* +0.03* +0.02* +0.03*  k=5: +0.03* +0.03* +0.01 +0.02*  k=10: +0.02* +0.02* +0.00 +0.02*
+  aware - blind (mi trace ent fl)      k=1: +0.00 +0.00 +0.00 +0.00  k=3: +0.00* +0.01* +0.00 +0.01*  k=5: -0.00 +0.01* +0.00 +0.01*  k=10: +0.00 +0.00 +0.00 +0.00*
+(* = Nadeau–Bengio 95% interval excludes 0)
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/benchfamily_holdout_olv1items.pdf
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/benchfamily_holdout_olv1items_paired.csv
+Summary saved to ~/benchselect-runs/canonical-20261020/out/logs/benchfamily_holdout_olv1items.json (3024 macros)
+OLL v1 tasks completed in 65s
+
+All datasets completed in 65s
+
+# finished 2026-10-20T02:46:22Z  exit=0  status=ok

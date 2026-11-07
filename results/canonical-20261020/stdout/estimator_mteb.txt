@@ -1,0 +1,228 @@
+# job      estimator_mteb
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_estimator_ablation.py --datasets mteb --repeats 5
+# started  2026-10-20T01:44:59Z on 4090-1
+
+
+######################################################################
+# Dataset: MTEB
+######################################################################
+263 models x 56 benchmarks, 77.3% observed; 5 x 10-fold CV, 10% holdout; 20 settings x 5 methods, k <= 10
+  Rep 0 fold 0: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.850  entropy=0.823  trace=0.877  random=0.863  facloc=0.875  (52.8s)
+  Rep 0 fold 1: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.765  entropy=0.726  trace=0.787  random=0.752  facloc=0.787  (36.3s)
+  Rep 0 fold 2: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.780  entropy=0.799  trace=0.845  random=0.787  facloc=0.818  (36.8s)
+  Rep 0 fold 3: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.834  entropy=0.848  trace=0.875  random=0.814  facloc=0.867  (42.5s)
+  Rep 0 fold 4: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.814  entropy=0.717  trace=0.730  random=0.790  facloc=0.701  (33.6s)
+  Rep 0 fold 5: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.838  entropy=0.840  trace=0.865  random=0.784  facloc=0.876  (21.8s)
+  Rep 0 fold 6: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.767  entropy=0.774  trace=0.823  random=0.779  facloc=0.815  (35.8s)
+  Rep 0 fold 7: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.706  entropy=0.720  trace=0.766  random=0.681  facloc=0.756  (35.3s)
+  Rep 0 fold 8: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.531  entropy=0.502  trace=0.524  random=0.535  facloc=0.479  (33.7s)
+  Rep 0 fold 9: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.776  entropy=0.809  trace=0.814  random=0.798  facloc=0.800  (38.1s)
+  Rep 1 fold 0: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.840  entropy=0.841  trace=0.879  random=0.824  facloc=0.865  (34.1s)
+  Rep 1 fold 1: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.674  entropy=0.686  trace=0.740  random=0.667  facloc=0.728  (41.2s)
+  Rep 1 fold 2: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.724  entropy=0.694  trace=0.768  random=0.766  facloc=0.748  (30.4s)
+  Rep 1 fold 3: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.737  entropy=0.756  trace=0.800  random=0.733  facloc=0.793  (28.1s)
+  Rep 1 fold 4: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.777  entropy=0.799  trace=0.829  random=0.777  facloc=0.789  (22.5s)
+  Rep 1 fold 5: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.793  entropy=0.706  trace=0.761  random=0.819  facloc=0.702  (21.5s)
+  Rep 1 fold 6: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.885  entropy=0.869  trace=0.898  random=0.874  facloc=0.892  (40.7s)
+  Rep 1 fold 7: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.828  entropy=0.722  trace=0.794  random=0.781  facloc=0.853  (43.0s)
+  Rep 1 fold 8: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.680  entropy=0.733  trace=0.733  random=0.492  facloc=0.412  (15.2s)
+  Rep 1 fold 9: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.790  entropy=0.787  trace=0.809  random=0.770  facloc=0.823  (45.3s)
+  Rep 2 fold 0: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.860  entropy=0.810  trace=0.873  random=0.852  facloc=0.867  (37.6s)
+  Rep 2 fold 1: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.619  entropy=0.445  trace=0.562  random=0.544  facloc=0.016  (39.4s)
+  Rep 2 fold 2: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.831  entropy=0.770  trace=0.778  random=0.720  facloc=0.837  (38.7s)
+  Rep 2 fold 3: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.749  entropy=0.736  trace=0.735  random=0.661  facloc=0.709  (35.1s)
+  Rep 2 fold 4: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.635  entropy=0.606  trace=0.749  random=0.601  facloc=0.742  (34.0s)
+  Rep 2 fold 5: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.704  entropy=0.701  trace=0.758  random=0.721  facloc=0.747  (28.8s)
+  Rep 2 fold 6: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.831  entropy=0.842  trace=0.872  random=0.781  facloc=0.857  (35.5s)
+  Rep 2 fold 7: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.766  entropy=0.725  trace=0.789  random=0.774  facloc=0.796  (42.7s)
+  Rep 2 fold 8: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.823  entropy=0.795  trace=0.827  random=0.798  facloc=0.820  (36.5s)
+  Rep 2 fold 9: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.864  entropy=0.849  trace=0.884  random=0.827  facloc=0.881  (22.6s)
+  Rep 3 fold 0: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.839  entropy=0.802  trace=0.844  random=0.782  facloc=0.828  (37.5s)
+  Rep 3 fold 1: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.803  entropy=0.762  trace=0.835  random=0.769  facloc=0.834  (43.8s)
+  Rep 3 fold 2: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.624  entropy=0.654  trace=0.650  random=0.597  facloc=0.635  (36.7s)
+  Rep 3 fold 3: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.847  entropy=0.842  trace=0.872  random=0.819  facloc=0.863  (20.6s)
+  Rep 3 fold 4: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.618  entropy=0.660  trace=0.681  random=0.617  facloc=0.668  (43.8s)
+  Rep 3 fold 5: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.645  entropy=0.524  trace=0.624  random=0.580  facloc=0.637  (47.8s)
+  Rep 3 fold 6: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.813  entropy=0.810  trace=0.854  random=0.812  facloc=0.847  (42.4s)
+  Rep 3 fold 7: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.811  entropy=0.782  trace=0.829  random=0.811  facloc=0.831  (42.6s)
+  Rep 3 fold 8: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.839  entropy=0.859  trace=0.875  random=0.824  facloc=0.859  (46.1s)
+  Rep 3 fold 9: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.812  entropy=0.816  trace=0.862  random=0.826  facloc=0.856  (40.4s)
+  Rep 4 fold 0: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.726  entropy=0.648  trace=0.673  random=0.621  facloc=0.749  (41.7s)
+  Rep 4 fold 1: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.668  entropy=0.626  trace=0.714  random=0.676  facloc=0.678  (37.7s)
+  Rep 4 fold 2: 236 train / 27 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.676  entropy=0.679  trace=0.688  random=0.696  facloc=0.697  (41.2s)
+  Rep 4 fold 3: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.865  entropy=0.845  trace=0.882  random=0.864  facloc=0.877  (45.1s)
+  Rep 4 fold 4: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.746  entropy=0.681  trace=0.777  random=0.620  facloc=0.783  (43.8s)
+  Rep 4 fold 5: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.846  entropy=0.856  trace=0.895  random=0.883  facloc=0.887  (22.7s)
+  Rep 4 fold 6: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.841  entropy=0.791  trace=0.851  random=0.833  facloc=0.847  (56.6s)
+  Rep 4 fold 7: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.816  entropy=0.809  trace=0.841  random=0.822  facloc=0.830  (40.4s)
+  Rep 4 fold 8: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.794  entropy=0.790  trace=0.796  random=0.763  facloc=0.796  (40.8s)
+  Rep 4 fold 9: 237 train / 26 val, 56 eligible; 10 fits, 10 settings = default; default R²@5 mi=0.661  entropy=0.652  trace=0.706  random=0.605  facloc=0.700  (21.1s)
+
+== MTEB: R² difference setting − default (mean over the paired splits of 50; * = NB 95% interval excludes 0; n = low-n cell, fewer than 45 pairs) and Jaccard with the default's set ==
+setting       mi@1            mi@5            mi@10           entropy@1       entropy@5       entropy@10      trace@1         trace@5         trace@10        facloc@1        facloc@5        facloc@10       random@1        random@5        random@10       
+default       0.650           0.767           0.821           0.646           0.746           0.817           0.646           0.790           0.839           0.659           0.767           0.826           0.502           0.744           0.784           
+pairwise      -0.028   J0.00  -0.034   J0.18  -0.048   J0.22  +0.009   J0.22  +0.006   J0.66  -0.010   J0.55  +0.009   J0.22  -0.016   J0.38  -0.020   J0.42  -0.008   J0.16  -0.034   J0.19  -0.027   J0.41  -0.002   J1.00  -0.008   J1.00  -0.022   J1.00  
+em            (= default on every split)
+shrink_x0     (= default on every split)
+shrink_x0.25  (= default on every split)
+shrink_x4     (= default on every split)
+alpha_0.01    +0.013   J0.62  -0.002   J0.71  +0.003   J0.66  +0.002   J0.94  +0.001   J0.97  +0.001   J0.96  +0.002   J0.94  -0.001   J0.87  +0.001   J0.87  -0.001   J0.98  +0.001   J0.98  +0.002   J0.97  -0.000   J1.00  +0.001   J1.00  +0.004   J1.00  
+alpha_0.1     -0.021   J0.46  +0.003   J0.35  +0.005   J0.36  +0.003   J0.84  -0.003   J0.93  -0.003   J0.84  +0.003   J0.84  -0.018   J0.42  -0.013   J0.45  -0.006   J0.86  -0.001   J0.58  -0.001   J0.70  -0.005   J1.00  -0.003   J1.00  +0.007   J1.00  
+alpha_0.3     -0.133*  J0.04  -0.015   J0.07  -0.024*  J0.18  -0.041*  J0.52  -0.038*  J0.76  -0.025*  J0.64  -0.041*  J0.52  -0.034*  J0.28  -0.037*  J0.32  -0.049*  J0.56  -0.026   J0.47  -0.029   J0.56  -0.043*  J1.00  -0.027*  J1.00  -0.012   J1.00  
+psd_1e-6      (= default on every split)
+psd_1e-4      +0.001   J0.96  -0.000   J0.98  +0.000   J0.97  +0.000   J0.98  +0.000   J0.98  +0.001   J0.99  +0.000   J0.98  +0.001   J0.97  -0.000   J0.96  -0.002   J0.98  +0.000   J0.99  -0.000   J0.97  -0.000   J1.00  -0.000   J1.00  +0.000   J1.00  
+psd_1e-3      +0.001   J0.96  -0.000   J0.97  +0.000   J0.97  +0.001   J0.92  +0.000   J0.96  +0.001   J0.96  +0.001   J0.92  +0.001   J0.93  -0.000   J0.92  -0.002   J0.98  +0.000   J0.99  -0.000   J0.97  -0.000   J1.00  -0.000   J1.00  +0.000   J1.00  
+psd_1e-2      +0.012   J0.62  -0.001   J0.70  +0.002   J0.68  +0.015   J0.74  +0.007   J0.90  +0.002   J0.89  +0.015   J0.74  +0.002   J0.87  +0.001   J0.82  +0.004   J0.92  +0.006   J0.90  +0.006   J0.91  -0.000   J1.00  +0.000   J1.00  +0.001   J1.00  
+tol_5e-3      +0.003   J0.90  +0.001   J0.77  -0.003   J0.78  +0.003   J0.66  +0.001   J0.84  -0.001   J0.79  +0.003   J0.66  -0.008   J0.74  -0.003   J0.75  +0.004   J0.68  -0.017   J0.69  -0.024   J0.75  -0.000   J1.00  +0.002   J1.00  -0.000   J1.00  
+tol_5e-5      +0.001   J0.94  -0.007   J0.95  -0.006   J0.94  +0.001   J0.92  +0.000   J0.96  +0.001   J0.96  +0.001   J0.92  -0.003   J0.92  -0.001   J0.90  -0.002   J0.98  -0.002   J0.96  -0.000   J0.96  -0.000   J1.00  -0.000   J1.00  -0.000   J1.00  
+iter_x4       (= default on every split)
+elig_1        (= default on every split)
+elig_2        (= default on every split)
+elig_5        (= default on every split)
+elig_10       (= default on every split)
+
+selection only (the setting's selection imputed with the default estimate):
+setting       mi@1            mi@5            mi@10           entropy@1       entropy@5       entropy@10      trace@1         trace@5         trace@10        facloc@1        facloc@5        facloc@10       random@1        random@5        random@10       
+default       0.650           0.767           0.821           0.646           0.746           0.817           0.646           0.790           0.839           0.659           0.767           0.826           0.502           0.744           0.784           
+pairwise      -0.029          -0.026          -0.028          +0.006          +0.011          +0.001          +0.006          -0.006          -0.006          -0.011          -0.027          -0.006          +0.000          +0.000          +0.000          
+em            (= default on every split)
+shrink_x0     (= default on every split)
+shrink_x0.25  (= default on every split)
+shrink_x4     (= default on every split)
+alpha_0.01    +0.012          -0.002          +0.002          +0.001          +0.000          +0.000          +0.001          -0.001          +0.000          -0.002          -0.001          -0.001          +0.000          +0.000          +0.000          
+alpha_0.1     -0.021          +0.002          +0.005          +0.003          +0.002          -0.001          +0.003          -0.026          -0.016          -0.007          -0.005          -0.001          +0.000          +0.000          +0.000          
+alpha_0.3     -0.097*         -0.000          -0.008          -0.000          +0.003          -0.006          -0.000          -0.023          -0.021          -0.010          -0.010          -0.003          +0.000          +0.000          +0.000          
+psd_1e-6      (= default on every split)
+psd_1e-4      +0.001          -0.000          +0.000          +0.000          +0.000          +0.000          +0.000          +0.001          -0.000          -0.002          +0.000          -0.000          +0.000          +0.000          +0.000          
+psd_1e-3      +0.001          -0.000          +0.000          +0.001          +0.000          +0.001          +0.001          +0.001          -0.000          -0.002          +0.000          -0.000          +0.000          +0.000          +0.000          
+psd_1e-2      +0.012          -0.002          +0.001          +0.016          +0.007          +0.002          +0.016          +0.002          +0.001          +0.005          +0.005          +0.005          +0.000          +0.000          +0.000          
+tol_5e-3      +0.002          +0.001          -0.003          +0.002          -0.000          -0.001          +0.002          -0.009          -0.004          +0.003          -0.016          -0.023          +0.000          +0.000          +0.000          
+tol_5e-5      +0.001          -0.007          -0.005          +0.001          +0.000          +0.001          +0.001          -0.003          -0.001          -0.002          -0.002          -0.000          +0.000          +0.000          +0.000          
+iter_x4       (= default on every split)
+elig_1        (= default on every split)
+elig_2        (= default on every split)
+elig_5        (= default on every split)
+elig_10       (= default on every split)
+
+setting         EM  =def alias    iter  noconv   alpha  |dR|/|R|   lam_min  n_elig
+default         50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+pairwise         0     0     0       -       0   0.000  7.67e-02  9.74e-07    56.0
+em              50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+shrink_x0       50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+shrink_x0.25    50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+shrink_x4       50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+alpha_0.01      50     0     0      36       0   0.010  1.06e-02  1.10e-02    56.0
+alpha_0.1       50     0     0      34       0   0.100  9.88e-02  9.33e-02    56.0
+alpha_0.3       50     0     0      30       0   0.300  2.96e-01  2.72e-01    56.0
+psd_1e-6        50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+psd_1e-4        50     0     0      37       0   0.000  2.47e-03  1.29e-03    56.0
+psd_1e-3        50     0     0      37       0   0.000  2.69e-03  1.29e-03    56.0
+psd_1e-2        50     0     0      34       0   0.000  6.19e-03  8.85e-03    56.0
+tol_5e-3        50     0     0      12       0   0.000  2.23e-02  1.33e-03    56.0
+tol_5e-5        50     0     0      85       0   0.000  4.00e-03  1.28e-03    56.0
+iter_x4         50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+elig_1          50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+elig_2          50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+elig_5          50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+elig_10         50    50    50      37       0   0.000  0.00e+00  1.28e-03    56.0
+
+largest |mean difference| per factor (non-alias cells with enough pairs; low-n cells listed separately):
+ methods other than facloc:
+  estimator       k=1   0.0276 (pairwise, mi); min Jaccard 0.00; significant +0 / -0 of 4; 4 alias, 0 low-n cells
+  estimator       k=3   0.0430 (pairwise, mi); min Jaccard 0.16; significant +0 / -0 of 4; 4 alias, 0 low-n cells
+  estimator       k=5   0.0336 (pairwise, mi); min Jaccard 0.18; significant +0 / -0 of 4; 4 alias, 0 low-n cells
+  estimator       k=10  0.0477 (pairwise, mi); min Jaccard 0.22; significant +0 / -0 of 4; 4 alias, 0 low-n cells
+  shrinkage       k=1   0.1326 (alpha_0.3, mi); min Jaccard 0.04; significant +0 / -4 of 12; largest significant 0.1326 (alpha_0.3, mi); 12 alias, 0 low-n cells
+  shrinkage       k=3   0.0513 (alpha_0.3, entropy); min Jaccard 0.01; significant +0 / -2 of 12; largest significant 0.0325 (alpha_0.3, trace); 12 alias, 0 low-n cells
+  shrinkage       k=5   0.0380 (alpha_0.3, entropy); min Jaccard 0.07; significant +0 / -3 of 12; largest significant 0.0380 (alpha_0.3, entropy); 12 alias, 0 low-n cells
+  shrinkage       k=10  0.0373 (alpha_0.3, trace); min Jaccard 0.18; significant +0 / -3 of 12; largest significant 0.0373 (alpha_0.3, trace); 12 alias, 0 low-n cells
+  psd_floor       k=1   0.0153 (psd_1e-2, entropy); min Jaccard 0.62; significant +0 / -0 of 12; 4 alias, 0 low-n cells
+  psd_floor       k=3   0.0100 (psd_1e-2, entropy); min Jaccard 0.68; significant +0 / -0 of 12; 4 alias, 0 low-n cells
+  psd_floor       k=5   0.0071 (psd_1e-2, entropy); min Jaccard 0.70; significant +0 / -0 of 12; 4 alias, 0 low-n cells
+  psd_floor       k=10  0.0017 (psd_1e-2, entropy); min Jaccard 0.68; significant +0 / -0 of 12; 4 alias, 0 low-n cells
+  em_convergence  k=1   0.0034 (tol_5e-3, entropy); min Jaccard 0.66; significant +0 / -0 of 8; 4 alias, 0 low-n cells
+  em_convergence  k=3   0.0095 (tol_5e-3, entropy); min Jaccard 0.72; significant +0 / -0 of 8; 4 alias, 0 low-n cells
+  em_convergence  k=5   0.0079 (tol_5e-3, trace); min Jaccard 0.74; significant +0 / -0 of 8; 4 alias, 0 low-n cells
+  em_convergence  k=10  0.0056 (tol_5e-5, mi); min Jaccard 0.75; significant +0 / -0 of 8; 4 alias, 0 low-n cells
+  eligibility     k=1   0.0000 (None, None); min Jaccard 1.00; significant +0 / -0 of 0; 16 alias, 0 low-n cells
+  eligibility     k=3   0.0000 (None, None); min Jaccard 1.00; significant +0 / -0 of 0; 16 alias, 0 low-n cells
+  eligibility     k=5   0.0000 (None, None); min Jaccard 1.00; significant +0 / -0 of 0; 16 alias, 0 low-n cells
+  eligibility     k=10  0.0000 (None, None); min Jaccard 1.00; significant +0 / -0 of 0; 16 alias, 0 low-n cells
+  (all factors)   k=1   0.1326 (alpha_0.3, mi); min Jaccard 0.00; significant +0 / -4 of 36; largest significant 0.1326 (alpha_0.3, mi); 40 alias, 0 low-n cells
+  (all factors)   k=3   0.0513 (alpha_0.3, entropy); min Jaccard 0.01; significant +0 / -2 of 36; largest significant 0.0325 (alpha_0.3, trace); 40 alias, 0 low-n cells
+  (all factors)   k=5   0.0380 (alpha_0.3, entropy); min Jaccard 0.07; significant +0 / -3 of 36; largest significant 0.0380 (alpha_0.3, entropy); 40 alias, 0 low-n cells
+  (all factors)   k=10  0.0477 (pairwise, mi); min Jaccard 0.18; significant +0 / -3 of 36; largest significant 0.0373 (alpha_0.3, trace); 40 alias, 0 low-n cells
+ facloc only:
+  estimator       k=1   0.0084 (pairwise, facloc); min Jaccard 0.16; significant +0 / -0 of 1; 1 alias, 0 low-n cells
+  estimator       k=3   0.0119 (pairwise, facloc); min Jaccard 0.09; significant +0 / -0 of 1; 1 alias, 0 low-n cells
+  estimator       k=5   0.0342 (pairwise, facloc); min Jaccard 0.19; significant +0 / -0 of 1; 1 alias, 0 low-n cells
+  estimator       k=10  0.0274 (pairwise, facloc); min Jaccard 0.41; significant +0 / -0 of 1; 1 alias, 0 low-n cells
+  shrinkage       k=1   0.0493 (alpha_0.3, facloc); min Jaccard 0.56; significant +0 / -1 of 3; largest significant 0.0493 (alpha_0.3, facloc); 3 alias, 0 low-n cells
+  shrinkage       k=3   0.0194 (alpha_0.1, facloc); min Jaccard 0.30; significant +0 / -0 of 3; 3 alias, 0 low-n cells
+  shrinkage       k=5   0.0258 (alpha_0.3, facloc); min Jaccard 0.47; significant +0 / -0 of 3; 3 alias, 0 low-n cells
+  shrinkage       k=10  0.0288 (alpha_0.3, facloc); min Jaccard 0.56; significant +0 / -0 of 3; 3 alias, 0 low-n cells
+  psd_floor       k=1   0.0043 (psd_1e-2, facloc); min Jaccard 0.92; significant +0 / -0 of 3; 1 alias, 0 low-n cells
+  psd_floor       k=3   0.0091 (psd_1e-2, facloc); min Jaccard 0.89; significant +0 / -0 of 3; 1 alias, 0 low-n cells
+  psd_floor       k=5   0.0057 (psd_1e-2, facloc); min Jaccard 0.90; significant +0 / -0 of 3; 1 alias, 0 low-n cells
+  psd_floor       k=10  0.0061 (psd_1e-2, facloc); min Jaccard 0.91; significant +0 / -0 of 3; 1 alias, 0 low-n cells
+  em_convergence  k=1   0.0038 (tol_5e-3, facloc); min Jaccard 0.68; significant +0 / -0 of 2; 1 alias, 0 low-n cells
+  em_convergence  k=3   0.0244 (tol_5e-3, facloc); min Jaccard 0.64; significant +0 / -0 of 2; 1 alias, 0 low-n cells
+  em_convergence  k=5   0.0168 (tol_5e-3, facloc); min Jaccard 0.69; significant +0 / -0 of 2; 1 alias, 0 low-n cells
+  em_convergence  k=10  0.0239 (tol_5e-3, facloc); min Jaccard 0.75; significant +0 / -0 of 2; 1 alias, 0 low-n cells
+  eligibility     k=1   0.0000 (None, None); min Jaccard 1.00; significant +0 / -0 of 0; 4 alias, 0 low-n cells
+  eligibility     k=3   0.0000 (None, None); min Jaccard 1.00; significant +0 / -0 of 0; 4 alias, 0 low-n cells
+  eligibility     k=5   0.0000 (None, None); min Jaccard 1.00; significant +0 / -0 of 0; 4 alias, 0 low-n cells
+  eligibility     k=10  0.0000 (None, None); min Jaccard 1.00; significant +0 / -0 of 0; 4 alias, 0 low-n cells
+  (all factors)   k=1   0.0493 (alpha_0.3, facloc); min Jaccard 0.16; significant +0 / -1 of 9; largest significant 0.0493 (alpha_0.3, facloc); 10 alias, 0 low-n cells
+  (all factors)   k=3   0.0244 (tol_5e-3, facloc); min Jaccard 0.09; significant +0 / -0 of 9; 10 alias, 0 low-n cells
+  (all factors)   k=5   0.0342 (pairwise, facloc); min Jaccard 0.19; significant +0 / -0 of 9; 10 alias, 0 low-n cells
+  (all factors)   k=10  0.0288 (alpha_0.3, facloc); min Jaccard 0.41; significant +0 / -0 of 9; 10 alias, 0 low-n cells
+
+method pairs: 10 of 40 default differences significant; 0 (setting, pair, k) reversals
+  mi − entropy k=1: default +0.0034 [-0.0320, +0.0389]
+      gained: alpha_0.3
+  mi − trace k=1: default +0.0034 [-0.0320, +0.0389]
+      gained: alpha_0.3
+  mi − facloc k=1: default -0.0092 [-0.0474, +0.0290]
+      gained: alpha_0.3
+  mi − random k=1: default +0.1478 [+0.0293, +0.2663]
+      lost: alpha_0.1, alpha_0.3
+  mi − entropy k=3: default +0.0431 [-0.0029, +0.0891]
+      gained: alpha_0.1, alpha_0.3
+  mi − random k=3: default +0.0587 [-0.0014, +0.1188]
+      gained: alpha_0.01, alpha_0.3, psd_1e-2, tol_5e-5
+  entropy − trace k=3: default -0.0531 [-0.0944, -0.0118]
+      lost: pairwise, alpha_0.1
+  entropy − facloc k=3: default -0.0158 [-0.0868, +0.0552]
+      gained: alpha_0.3
+  trace − random k=3: default +0.0687 [+0.0074, +0.1301]
+      lost: pairwise, alpha_0.1
+  facloc − random k=3: default +0.0314 [-0.0482, +0.1111]
+      gained: alpha_0.3
+  mi − entropy k=5: default +0.0208 [-0.0110, +0.0526]
+      gained: alpha_0.3
+  entropy − trace k=5: default -0.0435 [-0.0655, -0.0215]
+      lost: pairwise, alpha_0.1
+  entropy − facloc k=5: default -0.0207 [-0.0861, +0.0447]
+      gained: alpha_0.3
+  trace − random k=5: default +0.0461 [+0.0111, +0.0812]
+      lost: pairwise, alpha_0.1
+  mi − trace k=10: default -0.0180 [-0.0299, -0.0062]
+      lost: pairwise, alpha_0.01, alpha_0.1, alpha_0.3, psd_1e-2, tol_5e-3, tol_5e-5
+  entropy − trace k=10: default -0.0219 [-0.0394, -0.0044]
+      lost: pairwise, alpha_0.1, alpha_0.3, tol_5e-3
+  trace − random k=10: default +0.0546 [-0.0066, +0.1159]
+      gained: alpha_0.1, alpha_0.3
+  facloc − random k=10: default +0.0423 [-0.0187, +0.1034]
+      gained: alpha_0.1, alpha_0.3
+  no setting reverses a significant method difference of the default
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/estimator_ablation_mteb.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/estimator_ablation_mteb.npz
+Paired rows saved to ~/benchselect-runs/canonical-20261020/out/logs/estimator_ablation_mteb_paired.csv
+Summary saved to ~/benchselect-runs/canonical-20261020/out/logs/estimator_ablation_mteb.json
+
+MTEB completed in 1832s (sum over splits 1832s, 500 estimator fits)
+
+All datasets completed in 1836s
+
+# finished 2026-10-20T02:15:36Z  exit=0  status=ok

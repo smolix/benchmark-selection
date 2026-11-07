@@ -1,0 +1,163 @@
+{
+ "name": "mteb2026",
+ "fetched_by": "build_mteb2026.py --dump-mteb-pkg (mteb venv, offline) then --fetch into an empty raw dir; anonymous (no HF token, git credential helpers disabled)",
+ "licenses": {
+  "hf:mteb/results": "cc0-1.0",
+  "github:embeddings-benchmark/results": "CC0-1.0",
+  "pypi:mteb==2.18.7": "Apache-2.0"
+ },
+ "inputs": [
+  {
+   "name": "hf:mteb/results/data/train-00000-of-00004.parquet",
+   "local_path": "hf_mteb_results/data/train-00000-of-00004.parquet",
+   "url": "https://huggingface.co/datasets/mteb/results/resolve/9d3f92b432d3e1d9c35b375650747f0afb4d35c5/data/train-00000-of-00004.parquet",
+   "revision": "9d3f92b432d3e1d9c35b375650747f0afb4d35c5",
+   "size": 28339399,
+   "sha256": "7414cd5a89e667fb14ab9c574602a597568549387d40933af2fc2dedacca3e8b",
+   "fetched_at": "2026-10-18T00:47:53Z",
+   "license": "cc0-1.0"
+  },
+  {
+   "name": "hf:mteb/results/data/train-00001-of-00004.parquet",
+   "local_path": "hf_mteb_results/data/train-00001-of-00004.parquet",
+   "url": "https://huggingface.co/datasets/mteb/results/resolve/9d3f92b432d3e1d9c35b375650747f0afb4d35c5/data/train-00001-of-00004.parquet",
+   "revision": "9d3f92b432d3e1d9c35b375650747f0afb4d35c5",
+   "size": 29018815,
+   "sha256": "2f0ea9020405387b62e83966bf611826d69db7d4f45e6f097d843eb1bd6fc767",
+   "fetched_at": "2026-10-18T00:47:53Z",
+   "license": "cc0-1.0"
+  },
+  {
+   "name": "hf:mteb/results/data/train-00002-of-00004.parquet",
+   "local_path": "hf_mteb_results/data/train-00002-of-00004.parquet",
+   "url": "https://huggingface.co/datasets/mteb/results/resolve/9d3f92b432d3e1d9c35b375650747f0afb4d35c5/data/train-00002-of-00004.parquet",
+   "revision": "9d3f92b432d3e1d9c35b375650747f0afb4d35c5",
+   "size": 27541497,
+   "sha256": "4d8eed80f1b926e2c27ddab2b8fd53fd3c8748619a65c81852f3dcdc77bb0a46",
+   "fetched_at": "2026-10-18T00:47:53Z",
+   "license": "cc0-1.0"
+  },
+  {
+   "name": "hf:mteb/results/data/train-00003-of-00004.parquet",
+   "local_path": "hf_mteb_results/data/train-00003-of-00004.parquet",
+   "url": "https://huggingface.co/datasets/mteb/results/resolve/9d3f92b432d3e1d9c35b375650747f0afb4d35c5/data/train-00003-of-00004.parquet",
+   "revision": "9d3f92b432d3e1d9c35b375650747f0afb4d35c5",
+   "size": 28144003,
+   "sha256": "b29341f23f75bdadbb83cdba47767d23936891715900e8f3d6d0d7ad80a0706f",
+   "fetched_at": "2026-10-18T00:47:53Z",
+   "license": "cc0-1.0"
+  },
+  {
+   "name": "hf:mteb/results/README.md",
+   "local_path": "hf_mteb_results/README.md",
+   "url": "https://huggingface.co/datasets/mteb/results/resolve/9d3f92b432d3e1d9c35b375650747f0afb4d35c5/README.md",
+   "revision": "9d3f92b432d3e1d9c35b375650747f0afb4d35c5",
+   "size": 857,
+   "sha256": "c7ab3f030120876270b811609538a69bcb973034b39636e0079c06df2baf4974",
+   "fetched_at": "2026-10-18T00:47:53Z",
+   "license": "cc0-1.0"
+  },
+  {
+   "name": "hf:mteb/results commit list (API)",
+   "local_path": "hf_commits.json",
+   "url": "https://huggingface.co/api/datasets/mteb/results/commits/main?p=0..3&limit=50",
+   "revision": "9d3f92b432d3e1d9c35b375650747f0afb4d35c5",
+   "size": 50267,
+   "sha256": "6b965791dd40922684bbaf79680a91bebcb941c9f568ee874d4509daf30a499e",
+   "fetched_at": "2026-10-18T00:48:03Z",
+   "n_commits": 165,
+   "license": "cc0-1.0",
+   "note": "HF dataset history starts 2026-06-02; used only to document that it cannot reproduce the March-2026 snapshot. The list grows with every new upstream commit, so its sha256 identifies this fetch only."
+  },
+  {
+   "name": "github:embeddings-benchmark/results (blobless clone + sparse checkout of model_meta.json, the 56 task JSONs and result files not named after a registered mteb task, at both commits)",
+   "local_path": "results_git",
+   "url": "https://github.com/embeddings-benchmark/results.git",
+   "revision": "039756031720de6d3f2e084e562f2b52233eeeda",
+   "snapshot_commit": "37dfa3b5a3adb370d181ad168470cd86d35a4ead",
+   "head_commit_info": {
+    "sha": "039756031720de6d3f2e084e562f2b52233eeeda",
+    "committer_date": "2026-10-18T00:53:49+03:00",
+    "title": "Add ColUltraVBERT ViDoRe V1-V3 results (#783)"
+   },
+   "snapshot_commit_info": {
+    "sha": "37dfa3b5a3adb370d181ad168470cd86d35a4ead",
+    "committer_date": "2026-03-13T12:02:55+00:00",
+    "title": "Rerun qwen results (#443)"
+   },
+   "fetched_at": "2026-10-18T00:48:03Z",
+   "size": 32305144,
+   "pack_files": [
+    {
+     "file": "pack-7cc50dedb45fa6d7555f5974eb5627535246b60f.pack",
+     "size": 7457299,
+     "sha256": "6857cf99e2c343b5ee2edc8e25f4c895360472dd3dc3d8cd578f1779501a4e47"
+    },
+    {
+     "file": "pack-a99dfa7766e74c872994808637cb36785366a8b1.pack",
+     "size": 216,
+     "sha256": "be7ec91c2a99424c7decc2d45e1466e551df25aa73d94a7d5ef76743adf17566"
+    },
+    {
+     "file": "pack-ef84cf0d86df47b7abe5e5b9896778008079a217.pack",
+     "size": 15590596,
+     "sha256": "6d2673d7507999c53912bc64e9f103817d73ca9a13945c75a1e49e1eaa9e1b17"
+    },
+    {
+     "file": "pack-f9a0ed33679563716d2f137ead55006b057549b5.pack",
+     "size": 9257033,
+     "sha256": "0008f60fe9bfdc3ca6402636cebeb3a6019099147c2a97f7d554ac0ae45e66e1"
+    }
+   ],
+   "blobs_used": 29143,
+   "sha256": "e837eca076b0b27688248ef4cceffb32e15d848eaae3d153ea67932881dbce18",
+   "sha256_note": "sha256 of the sorted '<commit> <path> <git blob oid>' listing of all blobs read at both commits (git oids are content hashes); together with the two commit shas this is the reproducible identity of the clone content",
+   "pack_files_note": "pack file names, count, sizes and sha256 depend on server-side pack generation and on the number of fetches (one per sparse checkout); they identify this local copy only and differ on every re-fetch",
+   "license": "CC0-1.0"
+  },
+  {
+   "name": "github:embeddings-benchmark/results LICENSE",
+   "local_path": "results_git (git blob)",
+   "url": "https://github.com/embeddings-benchmark/results/blob/039756031720de6d3f2e084e562f2b52233eeeda/LICENSE",
+   "revision": "039756031720de6d3f2e084e562f2b52233eeeda",
+   "git_oid": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+   "size": 7048,
+   "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+   "fetched_at": "2026-10-18T00:48:03Z",
+   "license": "CC0-1.0"
+  },
+  {
+   "name": "mteb==2.18.7 package dump: mteb_eng_classic_tasks.json",
+   "local_path": "mteb_pkg/mteb_eng_classic_tasks.json",
+   "url": "https://pypi.org/project/mteb/2.18.7/",
+   "revision": "2.18.7",
+   "size": 79668,
+   "sha256": "edb04162e69362819d3e42cc73ce1323e59bfc787a6ae82beb41bf4a2bf77628",
+   "fetched_at": "2026-10-18T00:47:33Z",
+   "license": "Apache-2.0",
+   "note": "MTEB(eng, classic) task metadata; generated offline (HF_HUB_OFFLINE=1) from the installed package, not downloaded"
+  },
+  {
+   "name": "mteb==2.18.7 package dump: mteb_model_metas.json",
+   "local_path": "mteb_pkg/mteb_model_metas.json",
+   "url": "https://pypi.org/project/mteb/2.18.7/",
+   "revision": "2.18.7",
+   "size": 671572,
+   "sha256": "7a58ce8dba92e12e2d5183d7672e0b618e10e05a81e324adeb9ffc7b65a1810a",
+   "fetched_at": "2026-10-18T00:47:33Z",
+   "license": "Apache-2.0",
+   "note": "ModelMeta registry (name, revision, release_date, ...); generated offline (HF_HUB_OFFLINE=1) from the installed package, not downloaded"
+  },
+  {
+   "name": "mteb==2.18.7 package dump: mteb_package_license.json",
+   "local_path": "mteb_pkg/mteb_package_license.json",
+   "url": "https://pypi.org/project/mteb/2.18.7/",
+   "revision": "2.18.7",
+   "size": 14265,
+   "sha256": "9dd59167e34faae147586fe0e2678fd24ea32aad887c5b7fd960a52f2dc0dffa",
+   "fetched_at": "2026-10-18T00:47:33Z",
+   "license": "Apache-2.0",
+   "note": "mteb package license metadata/files and task dataset licenses; generated offline (HF_HUB_OFFLINE=1) from the installed package, not downloaded"
+  }
+ ]
+}

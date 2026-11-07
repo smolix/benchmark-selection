@@ -1,0 +1,24 @@
+{
+ "name": "merged_v1",
+ "description": "Pre-fix Merged matrix, kept for comparison: byte copies of data/merged.matrix.{npz,csv} as built on 2026-05-03 (commit b59dd54) from the 2026-03-13 per-source snapshot, i.e. with data/open_llm_v1.csv. Not used by the paper's pipeline. See data/README.md.",
+ "frozen_on": "2026-10-18",
+ "shape": [118, 114],
+ "observed_cells": 4185,
+ "files": {
+  "merged_v1.matrix.npz": {"sha256": "68ced5b62799c5cd5cac9058f93614ec77ca9f7399b4d401a8b3a0d1e27deb91"},
+  "merged_v1.matrix.csv": {"sha256": "fcb1a53d1efcb7a8d9cc26c9ee123e4c28b6ab844a380b0c5b866c81a8de5c22"}
+ },
+ "pre_fix_covariance_sha256": {"merged.cov.npz": "abbb88c8d47b4a3779f3af8c824fdbf7141546ef52d870ca13bb1bea693d2a2a"},
+ "differs_from_merged_matrix": "exactly the 8 open_llm/* cells below, all missing in v1 and observed in data/merged.matrix.npz (same models, columns and order); every other cell is bitwise equal. The BBH and MATH_Lvl5 values of both models are unchanged: they are the leaderboard's values, from the 2025-02-13 partial re-upload.",
+ "observed_cells_fixed": 4193,
+ "cells": [
+  {"model": "gemma-7b-it", "column": "open_llm/IFEval", "v1": null, "fixed": 0.321626617375231},
+  {"model": "gemma-7b-it", "column": "open_llm/GPQA", "v1": null, "fixed": 0.2843959731543624},
+  {"model": "gemma-7b-it", "column": "open_llm/MUSR", "v1": null, "fixed": 0.4259259259259259},
+  {"model": "gemma-7b-it", "column": "open_llm/MMLU-PRO", "v1": null, "fixed": 0.1694647606382978},
+  {"model": "zephyr-7b-alpha", "column": "open_llm/IFEval", "v1": null, "fixed": 0.4639556377079482},
+  {"model": "zephyr-7b-alpha", "column": "open_llm/GPQA", "v1": null, "fixed": 0.2978187919463087},
+  {"model": "zephyr-7b-alpha", "column": "open_llm/MUSR", "v1": null, "fixed": 0.3941798941798942},
+  {"model": "zephyr-7b-alpha", "column": "open_llm/MMLU-PRO", "v1": null, "fixed": 0.2795046542553192}
+ ]
+}

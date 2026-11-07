@@ -1,0 +1,126 @@
+# job      baselines_olv1items
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_baselines.py --datasets olv1items --repeats 5
+# started  2026-10-20T02:46:49Z on 4090-1
+
+
+######################################################################
+# Dataset: OLV1ITEMS
+######################################################################
+395 models × 62 tasks, 100.0% observed
+5 × 10-fold CV = 50 matched splits, holdout 0.1, selectable: >= 3 training observations, targets: >= 2, prediction clip: True
+  Split 0 (rep 0, fold 0): 355 train / 40 test, 62/62 eligible  entropy:0.796  mi:0.782  random:0.766  hub:0.737  pca:0.740  trace:0.799  facloc:0.793  facloc_abs:0.793  facloc_sq:0.793  (0.1s)
+  Split 1 (rep 0, fold 1): 355 train / 40 test, 62/62 eligible  entropy:0.846  mi:0.849  random:0.801  hub:0.810  pca:0.839  trace:0.857  facloc:0.852  facloc_abs:0.852  facloc_sq:0.852  (0.1s)
+  Split 2 (rep 0, fold 2): 355 train / 40 test, 62/62 eligible  entropy:0.846  mi:0.861  random:0.830  hub:0.806  pca:0.847  trace:0.867  facloc:0.862  facloc_abs:0.862  facloc_sq:0.864  (0.1s)
+  Split 3 (rep 0, fold 3): 355 train / 40 test, 62/62 eligible  entropy:0.820  mi:0.837  random:0.794  hub:0.792  pca:0.774  trace:0.840  facloc:0.841  facloc_abs:0.841  facloc_sq:0.841  (0.1s)
+  Split 4 (rep 0, fold 4): 355 train / 40 test, 62/62 eligible  entropy:0.835  mi:0.835  random:0.826  hub:0.792  pca:0.828  trace:0.835  facloc:0.845  facloc_abs:0.845  facloc_sq:0.836  (0.1s)
+  Split 5 (rep 0, fold 5): 356 train / 39 test, 62/62 eligible  entropy:0.842  mi:0.849  random:0.836  hub:0.804  pca:0.790  trace:0.856  facloc:0.851  facloc_abs:0.851  facloc_sq:0.851  (0.1s)
+  Split 6 (rep 0, fold 6): 356 train / 39 test, 62/62 eligible  entropy:0.808  mi:0.808  random:0.797  hub:0.775  pca:0.779  trace:0.815  facloc:0.812  facloc_abs:0.812  facloc_sq:0.812  (0.1s)
+  Split 7 (rep 0, fold 7): 356 train / 39 test, 62/62 eligible  entropy:0.847  mi:0.882  random:0.837  hub:0.828  pca:0.783  trace:0.880  facloc:0.886  facloc_abs:0.886  facloc_sq:0.886  (0.1s)
+  Split 8 (rep 0, fold 8): 356 train / 39 test, 62/62 eligible  entropy:0.854  mi:0.850  random:0.808  hub:0.803  pca:0.820  trace:0.860  facloc:0.863  facloc_abs:0.863  facloc_sq:0.863  (0.1s)
+  Split 9 (rep 0, fold 9): 356 train / 39 test, 62/62 eligible  entropy:0.826  mi:0.831  random:0.805  hub:0.782  pca:0.749  trace:0.836  facloc:0.838  facloc_abs:0.838  facloc_sq:0.838  (0.1s)
+  Split 10 (rep 1, fold 0): 355 train / 40 test, 62/62 eligible  entropy:0.750  mi:0.723  random:0.695  hub:0.698  pca:0.716  trace:0.747  facloc:0.729  facloc_abs:0.729  facloc_sq:0.729  (0.1s)
+  Split 11 (rep 1, fold 1): 355 train / 40 test, 62/62 eligible  entropy:0.863  mi:0.871  random:0.837  hub:0.838  pca:0.846  trace:0.878  facloc:0.884  facloc_abs:0.884  facloc_sq:0.884  (0.1s)
+  Split 12 (rep 1, fold 2): 355 train / 40 test, 62/62 eligible  entropy:0.833  mi:0.846  random:0.835  hub:0.824  pca:0.810  trace:0.846  facloc:0.849  facloc_abs:0.849  facloc_sq:0.849  (0.1s)
+  Split 13 (rep 1, fold 3): 355 train / 40 test, 62/62 eligible  entropy:0.842  mi:0.856  random:0.830  hub:0.809  pca:0.837  trace:0.859  facloc:0.856  facloc_abs:0.856  facloc_sq:0.856  (0.1s)
+  Split 14 (rep 1, fold 4): 355 train / 40 test, 62/62 eligible  entropy:0.872  mi:0.876  random:0.845  hub:0.833  pca:0.815  trace:0.878  facloc:0.879  facloc_abs:0.879  facloc_sq:0.879  (0.1s)
+  Split 15 (rep 1, fold 5): 356 train / 39 test, 62/62 eligible  entropy:0.846  mi:0.855  random:0.838  hub:0.806  pca:0.827  trace:0.863  facloc:0.861  facloc_abs:0.861  facloc_sq:0.861  (0.1s)
+  Split 16 (rep 1, fold 6): 356 train / 39 test, 62/62 eligible  entropy:0.824  mi:0.851  random:0.822  hub:0.806  pca:0.728  trace:0.847  facloc:0.855  facloc_abs:0.855  facloc_sq:0.855  (0.1s)
+  Split 17 (rep 1, fold 7): 356 train / 39 test, 62/62 eligible  entropy:0.798  mi:0.823  random:0.762  hub:0.743  pca:0.764  trace:0.830  facloc:0.827  facloc_abs:0.827  facloc_sq:0.827  (0.1s)
+  Split 18 (rep 1, fold 8): 356 train / 39 test, 62/62 eligible  entropy:0.821  mi:0.810  random:0.787  hub:0.774  pca:0.816  trace:0.833  facloc:0.813  facloc_abs:0.813  facloc_sq:0.813  (0.1s)
+  Split 19 (rep 1, fold 9): 356 train / 39 test, 62/62 eligible  entropy:0.844  mi:0.839  random:0.783  hub:0.795  pca:0.797  trace:0.852  facloc:0.850  facloc_abs:0.850  facloc_sq:0.850  (0.1s)
+  Split 20 (rep 2, fold 0): 355 train / 40 test, 62/62 eligible  entropy:0.838  mi:0.852  random:0.839  hub:0.781  pca:0.800  trace:0.853  facloc:0.857  facloc_abs:0.857  facloc_sq:0.857  (0.1s)
+  Split 21 (rep 2, fold 1): 355 train / 40 test, 62/62 eligible  entropy:0.838  mi:0.847  random:0.803  hub:0.795  pca:0.802  trace:0.848  facloc:0.849  facloc_abs:0.849  facloc_sq:0.849  (0.1s)
+  Split 22 (rep 2, fold 2): 355 train / 40 test, 62/62 eligible  entropy:0.776  mi:0.801  random:0.783  hub:0.773  pca:0.735  trace:0.821  facloc:0.809  facloc_abs:0.809  facloc_sq:0.809  (0.1s)
+  Split 23 (rep 2, fold 3): 355 train / 40 test, 62/62 eligible  entropy:0.862  mi:0.870  random:0.848  hub:0.831  pca:0.840  trace:0.885  facloc:0.876  facloc_abs:0.876  facloc_sq:0.876  (0.1s)
+  Split 24 (rep 2, fold 4): 355 train / 40 test, 62/62 eligible  entropy:0.858  mi:0.869  random:0.846  hub:0.828  pca:0.797  trace:0.874  facloc:0.871  facloc_abs:0.871  facloc_sq:0.871  (0.1s)
+  Split 25 (rep 2, fold 5): 356 train / 39 test, 62/62 eligible  entropy:0.823  mi:0.804  random:0.781  hub:0.745  pca:0.778  trace:0.815  facloc:0.819  facloc_abs:0.819  facloc_sq:0.816  (0.1s)
+  Split 26 (rep 2, fold 6): 356 train / 39 test, 62/62 eligible  entropy:0.862  mi:0.876  random:0.858  hub:0.839  pca:0.845  trace:0.876  facloc:0.875  facloc_abs:0.875  facloc_sq:0.875  (0.1s)
+  Split 27 (rep 2, fold 7): 356 train / 39 test, 62/62 eligible  entropy:0.843  mi:0.859  random:0.836  hub:0.809  pca:0.863  trace:0.866  facloc:0.865  facloc_abs:0.865  facloc_sq:0.865  (0.1s)
+  Split 28 (rep 2, fold 8): 356 train / 39 test, 62/62 eligible  entropy:0.798  mi:0.779  random:0.792  hub:0.759  pca:0.758  trace:0.792  facloc:0.798  facloc_abs:0.798  facloc_sq:0.798  (0.1s)
+  Split 29 (rep 2, fold 9): 356 train / 39 test, 62/62 eligible  entropy:0.814  mi:0.813  random:0.800  hub:0.773  pca:0.809  trace:0.808  facloc:0.819  facloc_abs:0.819  facloc_sq:0.819  (0.1s)
+  Split 30 (rep 3, fold 0): 355 train / 40 test, 62/62 eligible  entropy:0.849  mi:0.859  random:0.845  hub:0.820  pca:0.829  trace:0.862  facloc:0.868  facloc_abs:0.868  facloc_sq:0.868  (0.1s)
+  Split 31 (rep 3, fold 1): 355 train / 40 test, 62/62 eligible  entropy:0.835  mi:0.860  random:0.854  hub:0.812  pca:0.839  trace:0.868  facloc:0.867  facloc_abs:0.867  facloc_sq:0.867  (0.1s)
+  Split 32 (rep 3, fold 2): 355 train / 40 test, 62/62 eligible  entropy:0.806  mi:0.823  random:0.817  hub:0.758  pca:0.778  trace:0.834  facloc:0.828  facloc_abs:0.828  facloc_sq:0.828  (0.1s)
+  Split 33 (rep 3, fold 3): 355 train / 40 test, 62/62 eligible  entropy:0.820  mi:0.818  random:0.807  hub:0.787  pca:0.786  trace:0.820  facloc:0.821  facloc_abs:0.821  facloc_sq:0.821  (0.1s)
+  Split 34 (rep 3, fold 4): 355 train / 40 test, 62/62 eligible  entropy:0.819  mi:0.809  random:0.784  hub:0.752  pca:0.759  trace:0.820  facloc:0.818  facloc_abs:0.818  facloc_sq:0.816  (0.1s)
+  Split 35 (rep 3, fold 5): 356 train / 39 test, 62/62 eligible  entropy:0.833  mi:0.847  random:0.785  hub:0.808  pca:0.809  trace:0.850  facloc:0.855  facloc_abs:0.855  facloc_sq:0.853  (0.1s)
+  Split 36 (rep 3, fold 6): 356 train / 39 test, 62/62 eligible  entropy:0.870  mi:0.869  random:0.824  hub:0.829  pca:0.851  trace:0.871  facloc:0.871  facloc_abs:0.871  facloc_sq:0.871  (0.1s)
+  Split 37 (rep 3, fold 7): 356 train / 39 test, 62/62 eligible  entropy:0.824  mi:0.837  random:0.810  hub:0.795  pca:0.783  trace:0.838  facloc:0.841  facloc_abs:0.841  facloc_sq:0.841  (0.1s)
+  Split 38 (rep 3, fold 8): 356 train / 39 test, 62/62 eligible  entropy:0.829  mi:0.826  random:0.803  hub:0.794  pca:0.761  trace:0.837  facloc:0.830  facloc_abs:0.830  facloc_sq:0.830  (0.1s)
+  Split 39 (rep 3, fold 9): 356 train / 39 test, 62/62 eligible  entropy:0.844  mi:0.845  random:0.832  hub:0.804  pca:0.825  trace:0.864  facloc:0.854  facloc_abs:0.854  facloc_sq:0.854  (0.1s)
+  Split 40 (rep 4, fold 0): 355 train / 40 test, 62/62 eligible  entropy:0.827  mi:0.866  random:0.819  hub:0.803  pca:0.769  trace:0.864  facloc:0.862  facloc_abs:0.862  facloc_sq:0.862  (0.1s)
+  Split 41 (rep 4, fold 1): 355 train / 40 test, 62/62 eligible  entropy:0.808  mi:0.814  random:0.776  hub:0.768  pca:0.803  trace:0.822  facloc:0.824  facloc_abs:0.824  facloc_sq:0.824  (0.1s)
+  Split 42 (rep 4, fold 2): 355 train / 40 test, 62/62 eligible  entropy:0.811  mi:0.833  random:0.823  hub:0.813  pca:0.804  trace:0.843  facloc:0.837  facloc_abs:0.837  facloc_sq:0.837  (0.1s)
+  Split 43 (rep 4, fold 3): 355 train / 40 test, 62/62 eligible  entropy:0.833  mi:0.836  random:0.810  hub:0.793  pca:0.821  trace:0.849  facloc:0.845  facloc_abs:0.845  facloc_sq:0.845  (0.1s)
+  Split 44 (rep 4, fold 4): 355 train / 40 test, 62/62 eligible  entropy:0.801  mi:0.814  random:0.783  hub:0.747  pca:0.728  trace:0.806  facloc:0.820  facloc_abs:0.820  facloc_sq:0.820  (0.1s)
+  Split 45 (rep 4, fold 5): 356 train / 39 test, 62/62 eligible  entropy:0.869  mi:0.852  random:0.844  hub:0.807  pca:0.836  trace:0.866  facloc:0.862  facloc_abs:0.862  facloc_sq:0.862  (0.1s)
+  Split 46 (rep 4, fold 6): 356 train / 39 test, 62/62 eligible  entropy:0.856  mi:0.850  random:0.829  hub:0.833  pca:0.849  trace:0.866  facloc:0.855  facloc_abs:0.855  facloc_sq:0.855  (0.1s)
+  Split 47 (rep 4, fold 7): 356 train / 39 test, 62/62 eligible  entropy:0.822  mi:0.822  random:0.794  hub:0.785  pca:0.809  trace:0.838  facloc:0.836  facloc_abs:0.836  facloc_sq:0.830  (0.1s)
+  Split 48 (rep 4, fold 8): 356 train / 39 test, 62/62 eligible  entropy:0.852  mi:0.864  random:0.851  hub:0.822  pca:0.846  trace:0.873  facloc:0.870  facloc_abs:0.870  facloc_sq:0.870  (0.1s)
+  Split 49 (rep 4, fold 9): 356 train / 39 test, 62/62 eligible  entropy:0.860  mi:0.855  random:0.847  hub:0.817  pca:0.823  trace:0.857  facloc:0.857  facloc_abs:0.857  facloc_sq:0.857  (0.1s)
+
+== OLL v1 tasks: imputation R² (mean ± std over 50 splits) ==
+method                    k=1           k=3           k=5           k=10          k=15          
+Entropy (Alg. 1)          0.777±0.027   0.810±0.026   0.832±0.024   0.871±0.019   0.894±0.019   
+Mutual Info (Alg. 2)      0.777±0.027   0.819±0.032   0.838±0.029   0.850±0.028   0.853±0.027   
+Random                    0.660±0.132   0.783±0.038   0.813±0.030   0.840±0.030   0.854±0.027   
+Hub correlation           0.777±0.027   0.791±0.029   0.795±0.030   0.804±0.032   0.803±0.032   
+PCA subset (CSSP)         0.777±0.027   0.775±0.037   0.801±0.037   0.870±0.022   0.894±0.020   
+Greedy trace min.         0.777±0.027   0.819±0.029   0.845±0.027   0.883±0.022   0.899±0.020   
+Facility location         0.777±0.027   0.821±0.030   0.844±0.028   0.879±0.022   0.899±0.020   
+Facility location, |r|    0.777±0.027   0.821±0.030   0.844±0.028   0.879±0.022   0.899±0.020   
+Facility location, r²     0.777±0.027   0.821±0.031   0.844±0.028   0.878±0.022   0.899±0.020   
+eligible benchmarks per split: min 62, median 62, max 62 of 62
+index ties (picks decided by column order) at k = 15, splits affected / total picks: entropy 0/0, mi 0/0, random 0/0, hub 0/0, pca 0/0, trace 0/0, facloc 0/0, facloc_abs 0/0, facloc_sq 0/0
+PCA basis: 0 splits with eigenvector directions skipped for lack of eligible loading (max 0), 0 with a repeated eigenvalue's eigenspace completed
+
+== OLL v1 tasks: paired R² differences a − b (Nadeau–Bengio 95% CI, win rate) ==
+  k=5        mi − entropy    +0.006  [-0.004, +0.016]  win 0.70  (n=50)
+  k=5        mi − trace      -0.007  [-0.012, -0.002]  win 0.10  (n=50)
+  k=5        mi − pca        +0.037  [+0.017, +0.058]  win 0.96  (n=50)
+  k=5        mi − hub        +0.043  [+0.034, +0.053]  win 1.00  (n=50)
+  k=5        mi − facloc     -0.006  [-0.009, -0.003]  win 0.06  (n=50)
+  k=5        mi − facloc_abs -0.006  [-0.009, -0.003]  win 0.06  (n=50)
+  k=5        mi − facloc_sq  -0.006  [-0.009, -0.003]  win 0.06  (n=50)
+  k=5        mi − random     +0.025  [+0.014, +0.036]  win 0.98  (n=50)
+  k=5   entropy − trace      -0.013  [-0.022, -0.005]  win 0.14  (n=50)
+  k=5   entropy − pca        +0.031  [+0.014, +0.049]  win 0.94  (n=50)
+  k=5   entropy − hub        +0.037  [+0.026, +0.048]  win 0.98  (n=50)
+  k=5   entropy − facloc     -0.012  [-0.021, -0.003]  win 0.18  (n=50)
+  k=5   entropy − facloc_abs -0.012  [-0.021, -0.003]  win 0.18  (n=50)
+  k=5   entropy − facloc_sq  -0.012  [-0.021, -0.003]  win 0.18  (n=50)
+  k=5   entropy − random     +0.019  [+0.006, +0.032]  win 0.88  (n=50)
+  k=5     trace − facloc     +0.001  [-0.004, +0.006]  win 0.58  (n=50)
+  k=5       pca − facloc     -0.043  [-0.063, -0.023]  win 0.02  (n=50)
+  k=5       hub − facloc     -0.049  [-0.059, -0.040]  win 0.00  (n=50)
+  k=5    facloc − facloc_abs +0.000  [+0.000, +0.000]  win 0.00  (n=50)
+  k=5    facloc − facloc_sq  +0.000  [-0.001, +0.001]  win 0.14  (n=50)
+  k=5    facloc − random     +0.031  [+0.020, +0.042]  win 1.00  (n=50)
+  k=10       mi − entropy    -0.020  [-0.030, -0.011]  win 0.06  (n=50)
+  k=10       mi − trace      -0.033  [-0.040, -0.025]  win 0.00  (n=50)
+  k=10       mi − pca        -0.020  [-0.029, -0.011]  win 0.02  (n=50)
+  k=10       mi − hub        +0.047  [+0.037, +0.057]  win 1.00  (n=50)
+  k=10       mi − facloc     -0.028  [-0.035, -0.022]  win 0.00  (n=50)
+  k=10       mi − facloc_abs -0.028  [-0.035, -0.022]  win 0.00  (n=50)
+  k=10       mi − facloc_sq  -0.028  [-0.034, -0.021]  win 0.00  (n=50)
+  k=10       mi − random     +0.011  [-0.001, +0.022]  win 0.80  (n=50)
+  k=10  entropy − trace      -0.012  [-0.018, -0.006]  win 0.06  (n=50)
+  k=10  entropy − pca        +0.000  [-0.008, +0.009]  win 0.56  (n=50)
+  k=10  entropy − hub        +0.067  [+0.053, +0.082]  win 1.00  (n=50)
+  k=10  entropy − facloc     -0.008  [-0.014, -0.001]  win 0.22  (n=50)
+  k=10  entropy − facloc_abs -0.008  [-0.014, -0.001]  win 0.22  (n=50)
+  k=10  entropy − facloc_sq  -0.007  [-0.014, -0.001]  win 0.24  (n=50)
+  k=10  entropy − random     +0.031  [+0.018, +0.044]  win 0.98  (n=50)
+  k=10    trace − facloc     +0.004  [+0.001, +0.008]  win 0.82  (n=50)
+  k=10      pca − facloc     -0.008  [-0.015, -0.001]  win 0.10  (n=50)
+  k=10      hub − facloc     -0.075  [-0.087, -0.063]  win 0.00  (n=50)
+  k=10   facloc − facloc_abs +0.000  [+0.000, +0.000]  win 0.00  (n=50)
+  k=10   facloc − facloc_sq  +0.000  [-0.001, +0.002]  win 0.18  (n=50)
+  k=10   facloc − random     +0.039  [+0.027, +0.051]  win 0.98  (n=50)
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/baselines_olv1items.pdf
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/baselines_olv1items_paired.csv
+OLV1ITEMS completed in 8s
+
+All datasets completed in 8s
+
+# finished 2026-10-20T02:47:00Z  exit=0  status=ok

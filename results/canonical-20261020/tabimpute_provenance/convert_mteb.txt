@@ -1,0 +1,44 @@
+Combining the logs ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_{ds}.npz (no TabImpute)
+
+MTEB: eligible benchmarks per split 56–56 of 56 (0/50 splits restricted)
+index ties (entropy, k ≤ 15): 0 picks in 0/50 splits
+index ties (mi, k ≤ 15): 0 picks in 0/50 splits
+index ties (random, k ≤ 15): 0 picks in 0/50 splits
+index ties (facloc, k ≤ 15): 0 picks in 0/50 splits
+context: 236–237 training rows (0/50 splits subsampled, Split.seed(SEED + 20))
+valid-range prediction clip (entropy): 0 of 711614 scored predictions, in 0/50 splits
+valid-range prediction clip (mi): 14 of 719292 scored predictions, in 7/50 splits
+valid-range prediction clip (random): 19 of 719813 scored predictions, in 7/50 splits
+valid-range prediction clip (facloc): 4 of 720902 scored predictions, in 2/50 splits
+Paired R² differences a − b over 50 splits (Nadeau–Bengio 95% CI, win rate):
+  k=5        mi − entropy    +0.006  [-0.011, +0.023]  win 0.68  (n=50)
+  k=5        mi − facloc     -0.006  [-0.021, +0.010]  win 0.32  (n=50)
+  k=5        mi − random     +0.008  [-0.013, +0.030]  win 0.62  (n=50)
+  k=5   entropy − facloc     -0.012  [-0.029, +0.005]  win 0.36  (n=50)
+  k=5   entropy − random     +0.003  [-0.022, +0.027]  win 0.54  (n=50)
+  k=5    facloc − random     +0.014  [-0.011, +0.039]  win 0.72  (n=50)
+  k=10       mi − entropy    +0.005  [-0.018, +0.027]  win 0.60  (n=50)
+  k=10       mi − facloc     -0.014  [-0.032, +0.005]  win 0.28  (n=50)
+  k=10       mi − random     -0.004  [-0.029, +0.021]  win 0.44  (n=50)
+  k=10  entropy − facloc     -0.018  [-0.037, +0.000]  win 0.18  (n=50)
+  k=10  entropy − random     -0.009  [-0.032, +0.015]  win 0.36  (n=50)
+  k=10   facloc − random     +0.009  [-0.015, +0.034]  win 0.62  (n=50)
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/tabimpute_r2_mteb.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_mteb.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_mteb_paired.csv
+
+MTEB completed in 1s
+
+======================================================================
+SUMMARY: Mean R² at k = 5, 10, 15 (TabImpute V2 imputation)
+======================================================================
+Dataset      Method         R²@5    R²@10    R²@15
+---------------------------------------------------
+MTEB         entropy      0.3253   0.4255   0.5345
+MTEB         mi           0.3311   0.4300   0.5253
+MTEB         random       0.3226   0.4342   0.5185
+MTEB         facloc       0.3370   0.4436   0.5242
+---------------------------------------------------
+
+All datasets completed in 1s

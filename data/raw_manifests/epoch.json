@@ -1,0 +1,593 @@
+{
+ "name": "epoch",
+ "description": "Epoch AI Benchmarking Hub bulk download (benchmark_data.zip)",
+ "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+ "inputs": [
+  {
+   "url": "https://epoch.ai/data/benchmark_data.zip",
+   "local_path": "~/benchselect-data/raw/epoch/benchmark_data.zip",
+   "revision": "unversioned living dataset; snapshot pinned by sha256 (plus HTTP ETag and zip-member generation time)",
+   "etag": "42074755daa96fd78abe382ba976dbe6",
+   "http_date": "Sat, 17 Oct 2026 23:56:28 GMT",
+   "zip_generated_at": "2026-10-17T23:13:36",
+   "size": 2401423,
+   "sha256": "e1ce578cc525c6e565ae31bd65618027f8bbf68309a8e6dd168ee75c61100818",
+   "sha256_matches_pinned": true,
+   "fetched_at": "2026-10-17T23:56:28Z"
+  },
+  {
+   "url": null,
+   "derived_from": "https://epoch.ai/data/benchmark_data.zip",
+   "local_path": "~/benchselect-data/raw/epoch/headers.txt",
+   "role": "HTTP response headers of the fetch (curl -D); source of etag/http_date",
+   "revision": "written by the fetch of the zip above",
+   "size": 655,
+   "sha256": "6f9ff300263935930bfd779ab793e923d54b37668e26edb79c1b03c4fba4c37d",
+   "fetched_at": "2026-10-17T23:56:28Z"
+  },
+  {
+   "url": null,
+   "derived_from": "https://epoch.ai/data/benchmark_data.zip",
+   "local_path": "~/benchselect-data/raw/epoch/fetched_at.txt",
+   "role": "UTC fetch timestamp (date -u); source of fetched_at",
+   "revision": "written by the fetch of the zip above",
+   "size": 21,
+   "sha256": "500841d85c8b8ace2e32e1721b5abd6e2e0b5b1879bc3a0eada2d0679a4806ba",
+   "fetched_at": "2026-10-17T23:56:28Z"
+  }
+ ],
+ "zip_members": [
+  {
+   "name": "README.md",
+   "size": 582,
+   "sha256": "43f5df3edacb9701b66626b13e78a52e2f823f0fa68db997e7fac40bacfa3e71",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "adversarial_nli_external.csv",
+   "size": 7856,
+   "sha256": "d4ff30fc512c5568f8910b22d53218ae6c91ccc01d4efa266f5199886774cebf",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "aider_polyglot_external.csv",
+   "size": 27984,
+   "sha256": "7098e228b42baf59a173b1d14335875724b37103be741f57c2f7fd753e887765",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "ale_bench_external.csv",
+   "size": 26129,
+   "sha256": "9f3861563a5ca1474e9da4c9669fc865cda4558c18064506a39d98bdd7c4c5e0",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "algotune_external.csv",
+   "size": 3492,
+   "sha256": "192ad9eb6d9d7a6af4ac3f7afb8042ecd3f58209e094a3e303b570f33a4e805f",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "apex_agents_external.csv",
+   "size": 9220,
+   "sha256": "85df564be1dcfab4cd240c6f40422c402490b9e8678dfef2395fdf997dc44337",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "arc_agi_2_external.csv",
+   "size": 51816,
+   "sha256": "839466ba377fd3dced7736c7b7786131b7c84f8d62c85b27e1719efbbd956e7f",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "arc_agi_external.csv",
+   "size": 63255,
+   "sha256": "d176e6aa4e90284d668ec6f9f1ed72e143532478729862195d450b37864fcb28",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "arc_ai2_external.csv",
+   "size": 47496,
+   "sha256": "cd7d28c3bd17b03fd2fcfdb9e220831932a5ab1669096e8b9d115feb043b4eea",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "balrog_external.csv",
+   "size": 18765,
+   "sha256": "db56bbbf769d9f48fcf6770983424afc7e42dc8df59daf09f234379477fea457",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "bbh_external.csv",
+   "size": 27620,
+   "sha256": "fa536f0eb125ce6574ad3b3ab7e2e2535f2a70eb14581d5c4c6e915b0c4a8c41",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "benchmark_metadata.csv",
+   "size": 6516,
+   "sha256": "f227d481009ddc34ee529645d8ba124aaac2630724686c40e8e9115a0245c766",
+   "date_time": "2026-10-17T23:13:36"
+  },
+  {
+   "name": "blueprint_bench_2_external.csv",
+   "size": 6535,
+   "sha256": "6e5226fec01406d790cde49d307298f995061a78988f72f8a904e29bbb96bd69",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "bool_q_external.csv",
+   "size": 57081,
+   "sha256": "36802c8082e551d93fd5c4ba02d104938ee4ede29963b0406df6e2c67899de9e",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "btf3_external.csv",
+   "size": 3541,
+   "sha256": "4f8b3678c840770d904c0a6284d853a23a44f96318a2eb49d72e56f330a293b5",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "cad_eval_external.csv",
+   "size": 5518,
+   "sha256": "bbdb9610edb3a9dddf3aac4a3fc5b182986519e24fdc04de0605f59938d27496",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "chess_puzzles.csv",
+   "size": 29649,
+   "sha256": "fa0a449c370b0cceaf273d9472078cce3e5aef6be7009bddf115e6df7f930c54",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "cl_bench_external.csv",
+   "size": 6892,
+   "sha256": "d05a8ad3fad268c407c9c44aa648f74781f375a19f784eecc29724e93f04ba7e",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "cl_bench_life_external.csv",
+   "size": 4875,
+   "sha256": "a89c7e55d87cb0861df86660deefaadfd06f9deef12634213de58f24ab676584",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "common_sense_qa_2_external.csv",
+   "size": 3537,
+   "sha256": "19373551d52c9b68eaa760521573247206c0da3aadacc4bb8e71656c1d680f0a",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "critpt_external.csv",
+   "size": 43231,
+   "sha256": "540a2ff1b757580460f1326a46b9953ced8b66e527d4af4bef5665bf11ada128",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "cursorbench_external.csv",
+   "size": 12160,
+   "sha256": "a124161f044eacad7f241b0d1a53c72d61ca5aa4c0799c8287ba8025b8b66128",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "cybench_external.csv",
+   "size": 10969,
+   "sha256": "58a64c603ee77d89228ce4aa605188c0bc4055aa3572d2325b37c74bb25a055c",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "deepresearchbench_external.csv",
+   "size": 9048,
+   "sha256": "c9f9671f73f47d7c9c101806bb2b488b52d32cf6592263361d7d478182df72d6",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "deepswe_external.csv",
+   "size": 20634,
+   "sha256": "1cf010b60a9ab513cee9330ad2315b0f766b2854399cd310e7ccb0e52f60f048",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "dtbench_external.csv",
+   "size": 50843,
+   "sha256": "3dc1e152c48d4f6978afe6572143af80f139dde75996f14e94d93a2e124e0612",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "ebr_bench.csv",
+   "size": 5220,
+   "sha256": "15ec96ff8e424623e6a7452956d849312f595f2b5cb4ebe70ec47831f9087b44",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "enigma_eval_external.csv",
+   "size": 15403,
+   "sha256": "4dd784ed5fc2349b1070e63cf2080e4f0f496efcfd388e00135780cfb6aaef27",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "epoch_capabilities_index/eci_bootstraps.json",
+   "size": 3976688,
+   "sha256": "6ec1e8e1fbffeb27ed8678948703f80091a720dd30e15a9aef5b970204342af5",
+   "date_time": "2026-10-17T23:13:36"
+  },
+  {
+   "name": "epoch_capabilities_index/eci_scores.csv",
+   "size": 34152,
+   "sha256": "2f47e90bef5a2559a0acc08aa65d4d98064c04b7fa964428746fa421e8399109",
+   "date_time": "2026-10-17T23:13:36"
+  },
+  {
+   "name": "epoch_capabilities_index/edi_scores.csv",
+   "size": 4261,
+   "sha256": "ddca171775e3b9bc2e4502db1b6556fcfcbc167e66679d0e0b15330c3234e39e",
+   "date_time": "2026-10-17T23:13:36"
+  },
+  {
+   "name": "epoch_capabilities_index/processed_data_for_eci.csv",
+   "size": 378268,
+   "sha256": "6a7172d69a88a928da3c38027706a9a067ba669097bb30f15baccd7741f31c7a",
+   "date_time": "2026-10-17T23:13:36"
+  },
+  {
+   "name": "exploitbench_external.csv",
+   "size": 3123,
+   "sha256": "f9c9556febdd8975d997636da196fb94b7558f462f7ffdf8470840539353abd9",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "fictionlivebench_external.csv",
+   "size": 26313,
+   "sha256": "6089e850435fab33d727c54059322ab73ed6b921686058e8e44434179d977af5",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "forecastbench_external.csv",
+   "size": 28177,
+   "sha256": "cf4986086bc87ae89374fe1eb1a53cf293775588362d03058e5398c55bffcea5",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "frontiercode_external.csv",
+   "size": 9842,
+   "sha256": "c45dd5e7023ed070f272897b82bae2c3a9582fccf14146a13f7ce695ddff4a71",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "frontiermath.csv",
+   "size": 36580,
+   "sha256": "f5c92f0f0b9103abb02308fd428c0806e7c21b91e8a14d43edb8af77ce941598",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "frontiermath_erdos.csv",
+   "size": 1610,
+   "sha256": "2c64b0e5c58196cb229f5e764c01fcee9b6aeef10e1838096bd4d6a1c6da03ec",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "frontiermath_tier_4.csv",
+   "size": 21777,
+   "sha256": "c928e5adccd6e0995d50ede183fb99728d6c5be01951434a3077429ffb5802b2",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "frontiermath_tier_4_v2.csv",
+   "size": 28888,
+   "sha256": "48b886c828092231989fba6e3819efb7462e89ef681b7b306b4bfa3505829e4a",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "frontiermath_tiers_1_3_v2.csv",
+   "size": 48838,
+   "sha256": "6e31ece7503f8f89dffe8af33010ed7d1d6f0aa3a80cff14fa79f9b34a7b258f",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "frontierswe_external.csv",
+   "size": 6279,
+   "sha256": "2569650aec43695acac69b794f3e4838b505c0233d90cdc7282528a2797688a7",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "furniture_assembly.csv",
+   "size": 6901,
+   "sha256": "d62ab28005a1b7ab0e57b227d04b0cf86c70a5d8a1981addb26d2ac41c116865",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "gbaeval_external.csv",
+   "size": 8693,
+   "sha256": "cfc9e3029a36cf29ee6b7f968cd6bb48e1152d154ee802e544107ac95dcf434c",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "gdp_pdf_external.csv",
+   "size": 13697,
+   "sha256": "8f3ad0da9d69882c05d714d9cede75c3d91b5281464dd07a0ef8e42b9f3e4336",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "gdpval_external.csv",
+   "size": 2806,
+   "sha256": "0421e702386009e334aa5608c970400f1a795d36c19126f715ae8bfcac71de4c",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "geobench_external.csv",
+   "size": 11353,
+   "sha256": "d2b54d880631e9d29a125b91f5778b81912f713c74dd2a01611d69596fe1cfdb",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "gpqa_diamond.csv",
+   "size": 157304,
+   "sha256": "4b2dd8376cdd249a2c3065603575208fa726c15eabbb1622689a9abc146ba29a",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "gsm8k_external.csv",
+   "size": 61569,
+   "sha256": "beeb35978c1c8fd82788c8406d82a6610d82b8880e1e1221d3160eb640b9304f",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "gso_external.csv",
+   "size": 10081,
+   "sha256": "638898d77b1dbb5aa332e9c59f4e8b4454855fd5946a97f551c1009c61fdd6ce",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "hella_swag_external.csv",
+   "size": 43332,
+   "sha256": "be11d87b05df3741471d2af809f7bb344cdc26f19d1f2d353d0f23440add7ebf",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "hle_external.csv",
+   "size": 14121,
+   "sha256": "35f2fff3bc75e63ebb634d7b6637e3f564e0ac9b7d5455c24288c29f58e3bfac",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "lambada_external.csv",
+   "size": 20880,
+   "sha256": "f178e797a392e20755a1f314aa6bc6c0308f080c76009c1009cbb86dcb7f51f2",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "lech_mazur_writing_external.csv",
+   "size": 27528,
+   "sha256": "f483d62baba755af3bd4f79778d8e3291c6cbc9faf50d1d99a217efc5d123ef9",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "live_bench_external.csv",
+   "size": 20888,
+   "sha256": "6962569c06918588138b5d00e5707f13956edec4768f62421571643216a3a418",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "lmca_external.csv",
+   "size": 35506,
+   "sha256": "860f78bcce03568e102ac4d91612bcf5394fdbcfba2b0129c8be710c34152670",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "math_level_5.csv",
+   "size": 49349,
+   "sha256": "041b4bcb991a81d66152327113ef6d38e64cd8cce93d1e6ec821d1b9e47c1de3",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "metr_time_horizons_external.csv",
+   "size": 18950,
+   "sha256": "c793ffdd7fad8941f2c290bbd30104a5f777f7640c6909f8f3f84c05fdabe97c",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "mindcube_external.csv",
+   "size": 1124,
+   "sha256": "c21d9a3d5ed20d584aa82d1b46402c5763eee9c34999126f5d499a2f22d55fc0",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "mirrorcode.csv",
+   "size": 2082,
+   "sha256": "5c31ffdeca24dd23e8d1dc40da67f2ec3e2e6f6d63e1a2b2791239e29f5b454e",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "mmlu_external.csv",
+   "size": 79823,
+   "sha256": "e4752463b5520b42e95cac34cc94b1b6e69cb41d4833c4c677f0350f963802cb",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "model_metadata.csv",
+   "size": 121418,
+   "sha256": "31aae0df7498635de7453739a2cc889adf01f5f3af736118c6b51904378c43bf",
+   "date_time": "2026-10-17T23:13:36"
+  },
+  {
+   "name": "mystery_game_puzzles.csv",
+   "size": 36034,
+   "sha256": "795b977bc82c460a5e2c1d6dd7b2569ddb21853f3829c4f6fdd16edfaf47bfcf",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "open_book_qa_external.csv",
+   "size": 27871,
+   "sha256": "a631f2dd7e6344f8a3c0f7b86cc11f135239f0d252a4419d6265e2318af4dc4f",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "os_world_external.csv",
+   "size": 9434,
+   "sha256": "ba86a536e49028f75def7fb65151767173057c5b8903f4c86c5d11bf35d09657",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "osworld_2_external.csv",
+   "size": 2870,
+   "sha256": "c032d6754876e28792bf654ba9cb3a7cf02b2dadd7b2b9fd0c9e476a37d1a115",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "otis_mock_aime_2024_2025.csv",
+   "size": 143232,
+   "sha256": "5b411612f91e155dff4b09d09b548b42f7936482ea8b3c00b510bd46e2f6bc2c",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "piqa_external.csv",
+   "size": 44827,
+   "sha256": "372c170454897f5221eb1eea69b5f3e1c018ba74506f6a1d670f275698db15c9",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "posttrainbench_external.csv",
+   "size": 2259,
+   "sha256": "c386efa4d4d5a5b8a14e83f7afe1f4ec15f94be2949acb7a285fac8695ce1442",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "proofbench_external.csv",
+   "size": 27188,
+   "sha256": "7e1e3975411640ad28894756825888fbab4d26466e8b13e47d30da631e31cdb1",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "rli_external.csv",
+   "size": 3015,
+   "sha256": "832c411831a056036237c27cf3fbf1f911a5fd05c9d999aa73cf0503f3dfde73",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "scicode_external.csv",
+   "size": 55030,
+   "sha256": "4e2cbf9c5cf0eb572a775f6b9ccd8cd96b632590e20b12b249afcdf45759988b",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "science_qa_external.csv",
+   "size": 16537,
+   "sha256": "7829478ee0ebdfb42013ccb84bb91e4c86d3417abfb1a3b6f2975dedb1423862",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "simplebench_external.csv",
+   "size": 26477,
+   "sha256": "b189ddb6486beb1631ebb27c358d1b69949a649a9514ef7e3147f210e9390c12",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "simpleqa_verified.csv",
+   "size": 34809,
+   "sha256": "d4ef3a7d6ccc9c611a30e98d0561021e903c0f4a224851311a7c420862154dd8",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "spatialviz_bench_external.csv",
+   "size": 3740,
+   "sha256": "709ff308ee856feaf8a7842b5f39f67d332d381d87ba5de13f7e9edc934533c3",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "spireclimb.csv",
+   "size": 2087,
+   "sha256": "8bb2bda1fd232b776c132133a46df08f18ceabdc5552e9d61eb5802dc85f4a5e",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "spireclimb_sts1_a20_heart.csv",
+   "size": 1708,
+   "sha256": "9f9bf8bc141a58481ccc455b27c998c8f166e548a1fb5212d3fd02d44fddc663",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "spireclimb_sts2_a10.csv",
+   "size": 1846,
+   "sha256": "c3c4a33329d86d6fef394350d97cbf1b453f0a7e4bda4823944562b73a04812a",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "superglue_external.csv",
+   "size": 3281,
+   "sha256": "cc8024909446cbbbcfaa727dea2753a2401616eb9eec560d47bc56519dd89143",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "surface_evolver_bench_external.csv",
+   "size": 7345,
+   "sha256": "1a101b522cd5dc88d386275bba6bd30463265cc10529beeadaa285abec975716",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "swe_bench_verified.csv",
+   "size": 16671,
+   "sha256": "6480176a5d9b1573676fcacc5df5e8c58f9e5fce34025600a19b3bf60617561c",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "terminalbench_external.csv",
+   "size": 65747,
+   "sha256": "2ddde74508edf86412d288942c9eae6d2157080f623eda6f5a7c6d9997fa2f74",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "the_agent_company_external.csv",
+   "size": 9425,
+   "sha256": "fdc459c051a06ba8a4b316f11d291532e18aaa9c9a49b0bd6ff716a0bc83ba20",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "trivia_qa_external.csv",
+   "size": 42584,
+   "sha256": "39f98187506371e7e4c24392acb523a28b0a6c8e7fcace4bc704da344224de3d",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "vending_bench_2_external.csv",
+   "size": 10983,
+   "sha256": "85e5ce791a8aae78c17d4fc37772102b539e02cd0a8b3fc8adaac774924b4db4",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "video_mme_external.csv",
+   "size": 12901,
+   "sha256": "f5bcf2df0a0201935d3a0ccf1c019497e15c2cfc660a9eb37e768d4948f4216c",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "vpct_external.csv",
+   "size": 9136,
+   "sha256": "02d50564b13f06ff6e499acddcdb1dea2b18c4e699c8ab9385e2cbbaafdc4c43",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "webdev_arena_external.csv",
+   "size": 31259,
+   "sha256": "7e7c272cb56539922472be8fda9f38a84e35b7042169d92e2df790ad5791bc15",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "weirdml_external.csv",
+   "size": 51776,
+   "sha256": "5df92cd037d9aa19560fca64e0012f52919e0f6165d80b8ad71943636b1faca6",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "weirdml_v3_external.csv",
+   "size": 6583,
+   "sha256": "a960687b2f73e8c961c224cea114c6d30a26ab0036c3cb3f3558fa60a34bb249",
+   "date_time": "2026-10-17T23:13:34"
+  },
+  {
+   "name": "wino_grande_external.csv",
+   "size": 53104,
+   "sha256": "22ec3c23bb019996b409f6add2694cf6eb226594e5fdbfd6e41282d737db3136",
+   "date_time": "2026-10-17T23:13:34"
+  }
+ ]
+}

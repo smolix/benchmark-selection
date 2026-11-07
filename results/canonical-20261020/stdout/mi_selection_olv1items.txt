@@ -1,0 +1,83 @@
+# job      mi_selection_olv1items
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_mi_selection_all.py --datasets olv1items --repeats 5 --selections-json none
+# started  2026-10-20T02:47:01Z on 4090-1
+
+
+######################################################################
+# Dataset: OLV1ITEMS
+######################################################################
+395 models x 62 tasks, 100.0% observed
+5 x 10-fold matched splits; selectable: >= 3 observed training models
+Holdout 10%
+
+  Rep 0 fold 0: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 0 fold 1: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 0 fold 2: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, arc_challenge, elementary_mathematics, high_school_biology
+  Rep 0 fold 3: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, high_school_biology, arc_challenge
+  Rep 0 fold 4: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 0 fold 5: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, arc_challenge, elementary_mathematics, high_school_biology
+  Rep 0 fold 6: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 0 fold 7: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 0 fold 8: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 0 fold 9: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 1 fold 0: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, arc_challenge, elementary_mathematics, high_school_biology
+  Rep 1 fold 1: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, arc_challenge, elementary_mathematics, high_school_us_history
+  Rep 1 fold 2: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 1 fold 3: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 1 fold 4: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 1 fold 5: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, arc_challenge, elementary_mathematics, high_school_biology
+  Rep 1 fold 6: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 1 fold 7: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 1 fold 8: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 1 fold 9: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 2 fold 0: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, high_school_biology, arc_challenge
+  Rep 2 fold 1: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 2 fold 2: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 2 fold 3: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 2 fold 4: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 2 fold 5: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 2 fold 6: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 2 fold 7: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, arc_challenge, elementary_mathematics, high_school_biology
+  Rep 2 fold 8: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, arc_challenge, elementary_mathematics, high_school_us_history
+  Rep 2 fold 9: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 3 fold 0: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 3 fold 1: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 3 fold 2: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, arc_challenge, elementary_mathematics, high_school_biology
+  Rep 3 fold 3: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 3 fold 4: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 3 fold 5: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 3 fold 6: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 3 fold 7: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 3 fold 8: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 3 fold 9: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 4 fold 0: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 4 fold 1: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 4 fold 2: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, arc_challenge, elementary_mathematics, high_school_us_history
+  Rep 4 fold 3: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 4 fold 4: 355 train / 40 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, high_school_biology, arc_challenge
+  Rep 4 fold 5: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 4 fold 6: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 4 fold 7: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_us_history
+  Rep 4 fold 8: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+  Rep 4 fold 9: 356 train / 39 test, 62/62 eligible  (0.0s)  top-5: professional_psychology, miscellaneous, elementary_mathematics, arc_challenge, high_school_biology
+
+  OLL v1 tasks MI, holdout 10%: 50 splits (reps 0, 1, 2, 3, 4), eligible 62–62, index-decided picks (k <= 15) 0 in 0 splits
+Saved ~/benchselect-runs/canonical-20261020/out/figures/selection_order_mi_olv1items.pdf
+  Top-10 by mean rank:
+    professional_psychology                   count=50/50  mean_rank=1.0
+    miscellaneous                             count=50/50  mean_rank=2.0
+    elementary_mathematics                    count=50/50  mean_rank=3.2
+    arc_challenge                             count=50/50  mean_rank=3.9
+    high_school_us_history                    count=50/50  mean_rank=5.6
+    high_school_biology                       count=47/50  mean_rank=6.0
+    high_school_geography                     count=46/50  mean_rank=8.7
+    college_medicine                          count=38/50  mean_rank=9.4
+    moral_scenarios                           count=37/50  mean_rank=11.2
+    philosophy                                count=39/50  mean_rank=12.0
+
+OLV1ITEMS completed in 2s
+
+
+Total time: 2s
+
+# finished 2026-10-20T02:47:04Z  exit=0  status=ok

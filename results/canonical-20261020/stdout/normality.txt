@@ -1,0 +1,72 @@
+# job      normality
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python run_normality.py
+# started  2026-10-20T02:47:05Z on 4090-1
+
+
+############################################################
+# MMLU
+############################################################
+5452 models × 57 tasks, 100.0% observed
+
+Shapiro-Wilk (α=0.05):
+  W range: [0.6587, 0.9762]
+  Median W: 0.8386
+  Rejections: 57/57 (Bonferroni), 57/57 (BH)
+  Worst 5 benchmarks:
+    marketing                           W=0.6587  p_BH=2.3498e-70  FAIL
+    world_religions                     W=0.7033  p_BH=7.8146e-68  FAIL
+    us_foreign_policy                   W=0.7056  p_BH=7.8146e-68  FAIL
+    high_school_psychology              W=0.7135  p_BH=2.0460e-67  FAIL
+    miscellaneous                       W=0.7181  p_BH=3.4475e-67  FAIL
+
+Mardia test (5452 complete rows):
+  Skewness β̂₁ = 944.22, p = 0.0000e+00 REJECT
+  Kurtosis β̂₂ = 6373.67 (expected 3363), z = 1355.29, p = 0.0000e+00 REJECT
+  Mahalanobis d² range: [7.6, 1641.8]
+
+############################################################
+# MTEB
+############################################################
+263 models × 56 tasks, 77.3% observed
+
+Shapiro-Wilk (α=0.05):
+  W range: [0.4649, 0.9775]
+  Median W: 0.8910
+  Rejections: 54/56 (Bonferroni), 56/56 (BH)
+  Worst 5 benchmarks:
+    SprintDuplicateQuestions            W=0.4649  p_BH=1.2847e-23  FAIL
+    STS17                               W=0.4988  p_BH=2.1740e-23  FAIL
+    TwitterURLCorpus                    W=0.5192  p_BH=6.9332e-23  FAIL
+    QuoraRetrieval                      W=0.5961  p_BH=1.7359e-20  FAIL
+    MTOPDomainClassification            W=0.6123  p_BH=1.6519e-20  FAIL
+
+Mardia test (133 complete rows):
+  Skewness β̂₁ = 2126.77, p = 0.0000e+00 REJECT
+  Kurtosis β̂₂ = 3644.76 (expected 3248), z = 28.39, p = 0.0000e+00 REJECT
+  Mahalanobis d² range: [15.7, 119.5]
+
+############################################################
+# MERGED
+############################################################
+118 models × 114 tasks, 31.2% observed
+
+Shapiro-Wilk (α=0.05):
+  W range: [0.7056, 0.9903]
+  Median W: 0.9280
+  Rejections: 23/114 (Bonferroni), 60/114 (BH)
+  Worst 5 benchmarks:
+    mmlu/world_religions                W=0.7056  p_BH=6.7732e-05  FAIL
+    mmlu/marketing                      W=0.7124  p_BH=6.7732e-05  FAIL
+    mmlu/logical_fallacies              W=0.7431  p_BH=1.2249e-04  FAIL
+    mmlu/sociology                      W=0.7495  p_BH=1.2373e-04  FAIL
+    mt_bench/stem                       W=0.7500  p_BH=0.0000e+00  FAIL
+
+Mardia test: skipped (0 complete rows, need > 119)
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/normality_diagnostics.pdf
+
+Summary saved to ~/benchselect-runs/canonical-20261020/out/logs/normality_summary.json
+
+Done.
+
+# finished 2026-10-20T02:47:09Z  exit=0  status=ok

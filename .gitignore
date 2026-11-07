@@ -1,8 +1,15 @@
 __pycache__/
 *.pyc
 .DS_Store
-figures/*.pdf
-figures_logit/*.pdf
-logs/*.json
-logs/*.npz
-logs_logit/*.npz
+.env
+# the parent repository ignores *.pdf and *.log; keep the shipped ones
+!*.pdf
+!*.log
+# downloaded / rebuilt locally, not redistributed (see DATA_LICENSES.md)
+data/benchpress.json
+data/benchpress.matrix.npz
+data/epoch.matrix.csv
+data/epoch.matrix.npz
+data/epoch.meta.json
+# extracted log archives
+results/canonical-20261020/logs/

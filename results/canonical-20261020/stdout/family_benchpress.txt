@@ -1,0 +1,84 @@
+# job      family_benchpress
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_family_holdout.py --datasets benchpress --repeats 5
+# started  2026-10-20T02:45:15Z on 4090-1
+
+
+######################################################################
+# Dataset: BENCHPRESS — family holdout
+######################################################################
+83 models × 49 tasks; keyword families, 7 models 'other' (always trained on)
+holding out families: claude(9), deepseek(6), gemini(6), gpt(13), llama(6), qwen(14)
+Families of ≥ 6 models; selectable: benchmarks with ≥ 3 training models; 5 repetition(s) of the random streams
+  Holdout claude: 74 train / 9 test, 47/49 eligible  entropy:-0.094  mi:0.015  random:0.088  hub:0.028  pca:-0.242  trace:-0.072  facloc:-0.129  (22.2s)
+  Holdout deepseek: 77 train / 6 test, 47/49 eligible  entropy:0.060  mi:-0.724  random:0.163  hub:0.069  pca:-0.005  trace:0.167  facloc:0.180  (10.1s)
+  Holdout gemini: 77 train / 6 test, 46/49 eligible  entropy:0.206  mi:-0.823  random:0.336  hub:0.342  pca:0.050  trace:0.173  facloc:0.301  (9.2s)
+  Holdout gpt: 70 train / 13 test, 46/49 eligible  entropy:-0.018  mi:-0.189  random:0.198  hub:-0.491  pca:0.118  trace:-0.253  facloc:0.121  (28.3s)
+  Holdout llama: 77 train / 6 test, 47/49 eligible  entropy:0.070  mi:nan  random:0.447  hub:-0.326  pca:-0.025  trace:-0.122  facloc:-0.264  (16.6s)
+  Holdout qwen: 69 train / 14 test, 47/49 eligible  entropy:0.088  mi:0.063  random:0.488  hub:0.474  pca:-0.408  trace:0.109  facloc:0.109  (7.3s)
+  Holdout claude rep 1:  random:0.097  (0.0s)
+  Holdout deepseek rep 1:  random:0.093  (0.0s)
+  Holdout gemini rep 1:  random:0.095  (0.0s)
+  Holdout gpt rep 1:  random:0.051  (0.0s)
+  Holdout llama rep 1:  random:nan  (0.0s)
+  Holdout qwen rep 1:  random:0.415  (0.0s)
+  Holdout claude rep 2:  random:0.038  (0.0s)
+  Holdout deepseek rep 2:  random:-0.002  (0.0s)
+  Holdout gemini rep 2:  random:0.324  (0.0s)
+  Holdout gpt rep 2:  random:-0.483  (0.0s)
+  Holdout llama rep 2:  random:0.099  (0.0s)
+  Holdout qwen rep 2:  random:0.800  (0.0s)
+  Holdout claude rep 3:  random:-0.012  (0.0s)
+  Holdout deepseek rep 3:  random:0.118  (0.0s)
+  Holdout gemini rep 3:  random:0.200  (0.0s)
+  Holdout gpt rep 3:  random:0.117  (0.0s)
+  Holdout llama rep 3:  random:0.021  (0.0s)
+  Holdout qwen rep 3:  random:0.136  (0.0s)
+  Holdout claude rep 4:  random:-0.097  (0.0s)
+  Holdout deepseek rep 4:  random:0.179  (0.0s)
+  Holdout gemini rep 4:  random:0.365  (0.0s)
+  Holdout gpt rep 4:  random:0.020  (0.0s)
+  Holdout llama rep 4:  random:0.133  (0.0s)
+  Holdout qwen rep 4:  random:0.494  (0.0s)
+
+== BenchPress: family-holdout imputation R² (mean ± std over 6 families) ==
+   (random: per family, mean over 5 draws)
+method                k=1          k=3          k=5          k=10         k=15         
+Entropy (Alg. 1)      -0.235±0.588 -0.235±0.576 0.052±0.093  0.213±0.185  0.256±0.178  
+Mutual Info (Alg. 2)  -0.141±0.260 -0.322±0.345 -0.332±0.372 0.042±0.243  -0.064±0.488 
+Random                0.124±0.225  0.136±0.196  0.170±0.162  0.113±0.177  0.046±0.328  
+Hub correlation       -0.276±0.642 0.156±0.205  0.016±0.340  0.109±0.296  0.078±0.204  
+PCA subset (CSSP)     -0.244±0.580 -0.029±0.182 -0.085±0.182 0.131±0.214  0.175±0.255  
+Greedy trace min.     -0.235±0.588 -0.239±0.585 0.000±0.160  0.179±0.264  0.117±0.310  
+Facility location     -0.302±0.620 0.112±0.190  0.053±0.191  0.120±0.213  0.119±0.296  
+
+   Per-family R² at k=5:
+   family          entropy     mi          random      hub         pca         trace       facloc      
+   claude          -0.094      0.015       0.023       0.028       -0.242      -0.072      -0.129      
+   deepseek        0.060       -0.724      0.110       0.069       -0.005      0.167       0.180       
+   gemini          0.206       -0.823      0.264       0.342       0.050       0.173       0.301       
+   gpt             -0.018      -0.189      -0.019      -0.491      0.118       -0.253      0.121       
+   llama           0.070       nan         0.175       -0.326      -0.025      -0.122      -0.264      
+   qwen            0.088       0.063       0.467       0.474       -0.408      0.109       0.109       
+
+   Selection stability (Jaccard vs full-data selection):
+   Entropy (Alg. 1)      k=5: 0.13  k=10: 0.27  k=15: 0.33
+   Mutual Info (Alg. 2)  k=5: 0.21  k=10: 0.24  k=15: 0.30
+   Hub correlation       k=5: 0.20  k=10: 0.46  k=15: 0.52
+   PCA subset (CSSP)     k=5: 0.09  k=10: 0.30  k=15: 0.39
+   Greedy trace min.     k=5: 0.07  k=10: 0.15  k=15: 0.22
+   Facility location     k=5: 0.14  k=10: 0.13  k=15: 0.30
+
+   Eligible benchmarks (≥ 3 training models): all models 47/49; families claude 47, deepseek 47, gemini 46, gpt 46, llama 47, qwen 47 of 49, others all
+   entropy     k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 30 in 30/30; all-model reference: 0 index ties
+   mi          k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: 0 index ties
+   random      k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: n/a
+   hub         k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: 0 index ties
+   pca         k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: 0 index ties
+   trace       k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 0 in 0/30; all-model reference: 0 index ties
+   facloc      k ≤ 15: index ties 0 picks in 0/30 splits, near-tie breaks 45 in 30/30; all-model reference: 0 index ties
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/family_holdout_benchpress.pdf
+BENCHPRESS completed in 132s
+
+All datasets completed in 132s
+
+# finished 2026-10-20T02:47:29Z  exit=0  status=ok

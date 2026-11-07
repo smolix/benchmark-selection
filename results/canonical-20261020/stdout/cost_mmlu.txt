@@ -1,0 +1,98 @@
+# job      cost_mmlu
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python eval_cost_budget.py --dataset mmlu --counts ~/benchselect-runs/canonical-20261020/tree/data/mmlu_test_counts.json --budgets 0.01 0.02 0.03 0.05 0.08 0.12 0.20 --repeats 5 --plot-trace
+# started  2026-10-20T02:46:28Z on 4090-1
+
+MMLU: 5452 models × 57 tasks, total cost 14042 examples
+cost range: 100 (abstract_algebra) – 1534 (professional_law)
+budgets: [140, 280, 421, 702, 1123, 1685, 2808]
+5 × 10-fold CV = 50 matched splits, 10% holdout, selectable: benchmarks with >= 3 training models
+  rep 0 fold 0 done (0.2s), 57/57 eligible
+  rep 0 fold 1 done (0.2s), 57/57 eligible
+  rep 0 fold 2 done (0.2s), 57/57 eligible
+  rep 0 fold 3 done (0.2s), 57/57 eligible
+  rep 0 fold 4 done (0.2s), 57/57 eligible
+  rep 0 fold 5 done (0.2s), 57/57 eligible
+  rep 0 fold 6 done (0.2s), 57/57 eligible
+  rep 0 fold 7 done (0.2s), 57/57 eligible
+  rep 0 fold 8 done (0.2s), 57/57 eligible
+  rep 0 fold 9 done (0.2s), 57/57 eligible
+  rep 1 fold 0 done (0.2s), 57/57 eligible
+  rep 1 fold 1 done (0.2s), 57/57 eligible
+  rep 1 fold 2 done (0.2s), 57/57 eligible
+  rep 1 fold 3 done (0.2s), 57/57 eligible
+  rep 1 fold 4 done (0.2s), 57/57 eligible
+  rep 1 fold 5 done (0.2s), 57/57 eligible
+  rep 1 fold 6 done (0.2s), 57/57 eligible
+  rep 1 fold 7 done (0.2s), 57/57 eligible
+  rep 1 fold 8 done (0.2s), 57/57 eligible
+  rep 1 fold 9 done (0.2s), 57/57 eligible
+  rep 2 fold 0 done (0.2s), 57/57 eligible
+  rep 2 fold 1 done (0.2s), 57/57 eligible
+  rep 2 fold 2 done (0.2s), 57/57 eligible
+  rep 2 fold 3 done (0.2s), 57/57 eligible
+  rep 2 fold 4 done (0.2s), 57/57 eligible
+  rep 2 fold 5 done (0.2s), 57/57 eligible
+  rep 2 fold 6 done (0.2s), 57/57 eligible
+  rep 2 fold 7 done (0.2s), 57/57 eligible
+  rep 2 fold 8 done (0.2s), 57/57 eligible
+  rep 2 fold 9 done (0.2s), 57/57 eligible
+  rep 3 fold 0 done (0.2s), 57/57 eligible
+  rep 3 fold 1 done (0.2s), 57/57 eligible
+  rep 3 fold 2 done (0.2s), 57/57 eligible
+  rep 3 fold 3 done (0.2s), 57/57 eligible
+  rep 3 fold 4 done (0.2s), 57/57 eligible
+  rep 3 fold 5 done (0.2s), 57/57 eligible
+  rep 3 fold 6 done (0.2s), 57/57 eligible
+  rep 3 fold 7 done (0.2s), 57/57 eligible
+  rep 3 fold 8 done (0.2s), 57/57 eligible
+  rep 3 fold 9 done (0.2s), 57/57 eligible
+  rep 4 fold 0 done (0.2s), 57/57 eligible
+  rep 4 fold 1 done (0.2s), 57/57 eligible
+  rep 4 fold 2 done (0.2s), 57/57 eligible
+  rep 4 fold 3 done (0.2s), 57/57 eligible
+  rep 4 fold 4 done (0.2s), 57/57 eligible
+  rep 4 fold 5 done (0.2s), 57/57 eligible
+  rep 4 fold 6 done (0.2s), 57/57 eligible
+  rep 4 fold 7 done (0.2s), 57/57 eligible
+  rep 4 fold 8 done (0.2s), 57/57 eligible
+  rep 4 fold 9 done (0.2s), 57/57 eligible
+
+== MMLU: imputation R² vs example budget (mean over 50 splits) ==
+method                                140 (1%)        280 (2%)        421 (3%)        702 (5%)       1123 (8%)      1685 (12%)      2808 (20%)
+Knapsack entropy (B.3)                 0.832/1         0.853/2         0.877/4         0.903/7        0.929/11        0.940/16        0.952/24
+Knapsack MI (heuristic)                0.809/1         0.869/2         0.897/3         0.902/6         0.921/9        0.930/13        0.940/21
+Cost-blind entropy                     0.373/1         0.512/2         0.713/4         0.860/1         0.914/6         0.927/9        0.939/11
+Cost-blind MI                          0.537/1         0.799/1         0.681/1         0.860/1         0.869/3         0.883/3         0.906/6
+Cheapest first                         0.832/1         0.857/2         0.896/4         0.920/7        0.930/11        0.939/16        0.950/24
+Random                                 0.707/1         0.819/2         0.853/2         0.877/4         0.888/5         0.899/7        0.913/12
+Knapsack trace                         0.836/1         0.857/2         0.896/4         0.921/7        0.938/10        0.948/14        0.960/22
+Cost-blind trace                       0.373/1         0.799/1         0.681/1         0.860/1         0.897/3         0.927/6         0.942/9
+Knapsack facility location             0.836/1         0.852/1         0.889/3         0.915/6        0.934/10        0.946/14        0.958/20
+Cost-blind facility location           0.373/1         0.512/2         0.681/1         0.860/1         0.897/3         0.921/7        0.946/11
+(cell = mean R² / mean #benchmarks selected)
+eligible benchmarks per split: 57–57 of 57 (0/50 splits restricted)
+index ties (picks decided by column order), cells affected / total picks over budgets × splits: knap_entropy 0/0, knap_mi 0/0, card_entropy 0/0, card_mi 0/0, cheap_first 0/0, random 0/0, knap_trace 0/0, card_trace 0/0, knap_facloc 0/0, card_facloc 0/0
+best-singleton fallback won (budget × split cells): knap_entropy 0, knap_mi 0, knap_trace 50, knap_facloc 98
+
+== MMLU: paired R² differences a − b (mean; * = Nadeau–Bengio 95% CI excludes 0) ==
+pair                                      1%        2%        3%        5%        8%       12%       20%
+knap_mi − knap_entropy               -0.023*   +0.015*   +0.019*   -0.000    -0.008*   -0.010*   -0.012*
+knap_entropy − card_entropy          +0.458*   +0.341*   +0.164*   +0.043*   +0.015*   +0.013*   +0.013*
+knap_entropy − cheap_first           +0.000    -0.003    -0.018*   -0.017*   -0.001*   +0.001*   +0.002*
+knap_entropy − random                +0.125*   +0.034    +0.024*   +0.026*   +0.042*   +0.041*   +0.039*
+knap_mi − card_mi                    +0.272*   +0.069*   +0.215*   +0.043*   +0.052*   +0.047*   +0.033*
+knap_mi − cheap_first                -0.023*   +0.012*   +0.001    -0.018*   -0.009*   -0.009*   -0.010*
+knap_mi − random                     +0.102    +0.050*   +0.044*   +0.025*   +0.034*   +0.031*   +0.026*
+knap_mi − knap_trace                 -0.027*   +0.012*   +0.001    -0.019*   -0.016*   -0.018*   -0.021*
+knap_trace − card_trace              +0.463*   +0.058*   +0.214*   +0.061*   +0.041*   +0.021*   +0.018*
+knap_trace − random                  +0.129*   +0.038    +0.043*   +0.044*   +0.050*   +0.049*   +0.047*
+knap_facloc − card_facloc            +0.463*   +0.340*   +0.208*   +0.055*   +0.037*   +0.025*   +0.012*
+knap_facloc − random                 +0.129*   +0.033    +0.036*   +0.038*   +0.046*   +0.047*   +0.045*
+cheap_first − knap_facloc            -0.004*   +0.004*   +0.006*   +0.005*   -0.004*   -0.007*   -0.008*
+knap_mi − knap_facloc                -0.027*   +0.017*   +0.007*   -0.012*   -0.013*   -0.016*   -0.018*
+knap_trace − knap_facloc             +0.000    +0.004*   +0.006*   +0.006*   +0.004*   +0.002*   +0.002*
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/cost_budget_mmlu.pdf
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/cost_budget_mmlu_paired.csv
+MMLU completed in 10s
+
+# finished 2026-10-20T02:46:39Z  exit=0  status=ok

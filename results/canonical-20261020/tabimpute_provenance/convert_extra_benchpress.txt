@@ -1,0 +1,29 @@
+Combining the logs ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_extra_{ds}.npz ~/benchselect-runs/tabimpute-full/B_out/logs/tabimpute_{ds}.npz (no TabImpute)
+
+BenchPress: eligible benchmarks per split 46–47 of 49 (50/50 splits restricted)
+index ties (hub, k ≤ 15): 0 picks in 0/50 splits
+index ties (pca, k ≤ 15): 0 picks in 0/50 splits
+index ties (trace, k ≤ 15): 0 picks in 0/50 splits
+context: 74–75 training rows (0/50 splits subsampled, Split.seed(SEED + 20))
+valid-range prediction clip (hub): 1 of 69660 scored predictions, in 1/50 splits
+valid-range prediction clip (pca): 0 of 72400 scored predictions, in 0/50 splits
+valid-range prediction clip (trace): 0 of 71624 scored predictions, in 0/50 splits
+Paired R² differences a − b over 50 splits (Nadeau–Bengio 95% CI, win rate):
+
+Plot saved to ~/benchselect-runs/canonical-20261020/out/figures/tabimpute_r2_extra_benchpress.pdf
+Results saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_extra_benchpress.npz
+Paired statistics saved to ~/benchselect-runs/canonical-20261020/out/logs/tabimpute_extra_benchpress_paired.csv
+
+BENCHPRESS completed in 1s
+
+======================================================================
+SUMMARY: Mean R² at k = 5, 10, 15 (TabImpute V2 imputation)
+======================================================================
+Dataset      Method         R²@5    R²@10    R²@15
+---------------------------------------------------
+BenchPress   hub          0.1579   0.2226   0.2451
+BenchPress   pca          0.0777   0.1296   0.2298
+BenchPress   trace        0.0923   0.1471   0.2054
+---------------------------------------------------
+
+All datasets completed in 1s

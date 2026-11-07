@@ -1,0 +1,17 @@
+# job      eigenspectrum
+# command  cd ~/benchselect-runs/canonical-20261020/tree/code && ~/venvs/benchselect/bin/python plot_eigenspectrum.py
+# started  2026-10-20T02:47:05Z on 4090-1
+
+mmlu    : 90% variance at k=2
+mmlu    : 95% variance at k=6
+mmlu    : 99% variance at k=27
+mteb    : 90% variance at k=6
+mteb    : 95% variance at k=11
+mteb    : 99% variance at k=27
+merged  : 90% variance at k=8
+merged  : 95% variance at k=13
+merged  : 99% variance at k=22
+
+Saved to ~/benchselect-runs/canonical-20261020/out/figures/eigenspectrum.pdf
+
+# finished 2026-10-20T02:47:07Z  exit=0  status=ok
